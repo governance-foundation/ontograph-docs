@@ -1,0 +1,62 @@
+[
+  {
+    "path": "gufo.ttl",
+    "sourceSha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66",
+    "harvestSha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66",
+    "equal": true
+  },
+  {
+    "path": "examples/01-endurant-types/ontology.ttl",
+    "sourceSha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+    "harvestSha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+    "equal": true
+  },
+  {
+    "path": "examples/02-objects-and-parts/ontology.ttl",
+    "sourceSha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+    "harvestSha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+    "equal": true
+  },
+  {
+    "path": "examples/03-qualities/ontology.ttl",
+    "sourceSha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+    "harvestSha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+    "equal": true
+  },
+  {
+    "path": "examples/04-relators/ontology.ttl",
+    "sourceSha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+    "harvestSha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+    "equal": true
+  },
+  {
+    "path": "examples/05-events/ontology.ttl",
+    "sourceSha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+    "harvestSha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+    "equal": true
+  },
+  {
+    "path": "examples/06-situations/ontology.ttl",
+    "sourceSha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+    "harvestSha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+    "equal": true
+  },
+  {
+    "path": "examples/07-higher-order-types/ontology.ttl",
+    "sourceSha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+    "harvestSha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+    "equal": true
+  },
+  {
+    "path": "examples/01-endurant-types/invalid-example.ttl",
+    "sourceSha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+    "harvestSha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+    "equal": true
+  },
+  {
+    "path": "examples/07-higher-order-types/invalid-example.ttl",
+    "sourceSha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+    "harvestSha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+    "equal": true
+  }
+]

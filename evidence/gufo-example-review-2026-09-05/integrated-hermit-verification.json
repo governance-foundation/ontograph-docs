@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "ontograph.gufo.hermit-corpus-evidence-verification.v1",
+  "issueRef": "#2099",
+  "status": "pass",
+  "evidenceDigest": "sha256:abb3f8f643ca5fbcb508594841fce4df46f7c32a564bf605af9107d66b52da6c",
+  "checks": {
+    "caseCount": 9,
+    "actualOwlReceiptCount": 18,
+    "persistedReloadedCount": 18,
+    "negativeOwlShaclSeparationCount": 2,
+    "cliApiReceiptParity": true,
+    "sourceNonmutationVerified": true,
+    "unsupportedResidueRetained": true
+  },
+  "errors": [],
+  "boundary": {
+    "verificationIsExecutionEvidenceOnly": true,
+    "canonicalStateMutated": false,
+    "adoptionConformancePromotionOrReleaseApprovalCreated": false
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "sourceXmlSha256": "03564b5bc62456c195b64f698202a478736308b3c489b683af8f152b7a4d4deb",
+  "normalization": "retain-test-names-and-outcomes-omit-hostname-timing-local-paths-v1",
+  "count": 26,
+  "passed": 26,
+  "tests": [
+    {
+      "name": "test_examples_were_discovered",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[01-endurant-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[02-objects-and-parts]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[03-qualities]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[04-relators]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[05-events]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[06-situations]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_ontology_ttl_parses[07-higher-order-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[01-endurant-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[02-objects-and-parts]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[03-qualities]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[04-relators]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[05-events]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[06-situations]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_is_owl_consistent_and_satisfiable[07-higher-order-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[01-endurant-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[02-objects-and-parts]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[03-qualities]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[04-relators]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[05-events]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[06-situations]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_example_conforms_to_gufo_shapes[07-higher-order-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_invalid_example_is_flagged_by_shapes[01-endurant-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_invalid_example_is_flagged_by_shapes[07-higher-order-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_invalid_example_is_still_owl_consistent[01-endurant-types]",
+      "outcome": "passed"
+    },
+    {
+      "name": "test_invalid_example_is_still_owl_consistent[07-higher-order-types]",
+      "outcome": "passed"
+    }
+  ]
+}

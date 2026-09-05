@@ -1,0 +1,2915 @@
+{
+  "schemaVersion": "ontograph.gufo.shacl-sparql-actual-evidence.v1",
+  "issueRef": "governance-foundation/ontograph#2060",
+  "productCommit": "aabd3c61b5bff159b4d908ef7e919897e841a9f6",
+  "platform": "windows-x86_64",
+  "installedBinaryDigest": "sha256:15c9239129f5e83aa5aac980d752dcb452888fbae4d59842d147a19aa2081ef5",
+  "acquisitionReceiptDigest": "sha256:c5dcb346c2e8960938ff9bc2bde7ab55f2e59efa8e9479b8375692983307c8e8",
+  "toolPinRef": "shacl-sparql:apache-jena-6.2.0",
+  "actualStandardsExecution": true,
+  "counts": {
+    "cases": 9,
+    "shaclExecutions": 9,
+    "conformant": 7,
+    "nonconformant": 2,
+    "sparqlExecutions": 9,
+    "persistedReloaded": 18,
+    "roundTripEqual": 18
+  },
+  "cases": [
+    {
+      "caseRef": "EXT-GUFO-001-ENDURANT-TYPES",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/01-endurant-types/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/01-endurant-types.ttl",
+        "bytes": 5841,
+        "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:f5513874b470087b038623498e7050e63ebdfae20119324ca4938ded02f09fbc"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Phase",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Category",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-228"
+          ]
+        },
+        {
+          "termRef": "gufo:RoleMixin",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-230"
+          ]
+        },
+        {
+          "termRef": "gufo:PhaseMixin",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-231"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:Relator"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-001:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-001:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:c6ac55d3e666c231cf80c0cb24fcfb30cbd330a72afe7773b3ddbbdfd9564b85",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:945307e3dbe8b365f6b4dcc1bdbeb95f2be08f2d09c6e2a176ed21a136cc7ee8",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Category",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Phase",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#PhaseMixin",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Role",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#RoleMixin",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#SubKind",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/d7abd794a7b15bb7d2f0368b23c4db52f9beea4c3601160f830742801885f429/result.json",
+          "resultDigest": "sha256:02401bc62489a26d1a7c5e57ffafdc6526b8389f5fe17f4d6eb0f68fafff3017",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/d7abd794a7b15bb7d2f0368b23c4db52f9beea4c3601160f830742801885f429/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/d7abd794a7b15bb7d2f0368b23c4db52f9beea4c3601160f830742801885f429/receipt.json",
+          "receiptDigest": "sha256:2bacff1a2cfc83695c84ed4542bb346e2f86162ab63032fcc208f0ed746585ea",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/0928733217e26ccc6f203ba164ee6e8dc094de268543b84c0c4e744631321a18/result.json",
+          "resultDigest": "sha256:94dfd1ae64606519507f03eea861a5a5f1e68bcd9549a81a0d7d61d520da8e1a",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/0928733217e26ccc6f203ba164ee6e8dc094de268543b84c0c4e744631321a18/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:eddddb07910558530e37336ab12899d1074bf06d2c9c14613873c98d5af1e39f",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/0928733217e26ccc6f203ba164ee6e8dc094de268543b84c0c4e744631321a18/receipt.json",
+          "receiptDigest": "sha256:8d1e4c7ae57d361d1b5484f1839b08738ae752949280966ed5f8937e2486fb65",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:c6ac55d3e666c231cf80c0cb24fcfb30cbd330a72afe7773b3ddbbdfd9564b85",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-001-endurant-types",
+            "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Category\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Phase\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#PhaseMixin\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Role\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#RoleMixin\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#SubKind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:9be6c327c9e32ef71b4505c1cc6d9b7803235ca2868983b95637f689c10cab80",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:945307e3dbe8b365f6b4dcc1bdbeb95f2be08f2d09c6e2a176ed21a136cc7ee8",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Category",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Phase",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#PhaseMixin",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Role",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#RoleMixin",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#SubKind",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-001-endurant-types",
+            "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/001-endurant-types-shacl.json",
+          "executions/001-endurant-types-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-002-OBJECTS-AND-PARTS",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/02-objects-and-parts/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/02-objects-and-parts.ttl",
+        "bytes": 12747,
+        "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:21974ea911beba6726d8de79ae3cf9c1f65f2da1374a8f0e1dc64dc553a40755"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Collection",
+          "gufo:ConcreteIndividual",
+          "gufo:FunctionalComplex",
+          "gufo:historicallyDependsOn",
+          "gufo:isCollectionMemberOf",
+          "gufo:isComponentOf",
+          "gufo:isProperPartOf",
+          "gufo:isSubCollectionOf",
+          "gufo:isSubQuantityOf",
+          "gufo:Object",
+          "gufo:Quantity",
+          "gufo:VariableCollection"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-002:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-002:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:b66ecce338d8ae824942fed528b1f15cf07676b9ec690a606e1c061c2c0cb423",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:304b9edcd9731f4e2d50eb69b21d75a2e7f2085651cdaa5e8464ee47a3783e25",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "8",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/dce3be8679b327a437cd91440d0299fdc71bb59b0019b9c2326a2e817edca5f9/result.json",
+          "resultDigest": "sha256:708fbc2bac96c69269b9e64eb3fab6aa3706bb89aedc1148317700831fc7b3be",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/dce3be8679b327a437cd91440d0299fdc71bb59b0019b9c2326a2e817edca5f9/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/dce3be8679b327a437cd91440d0299fdc71bb59b0019b9c2326a2e817edca5f9/receipt.json",
+          "receiptDigest": "sha256:1b5b4aa0fcec8ff7882055ac49a90de284e94f3ab5740bbbfd8052118b3bf06b",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/6ca99a8ba2684aa56318a6c7a2cae39f9f07432ecf5582cdfa33368c726ff02f/result.json",
+          "resultDigest": "sha256:951f85629b0141f56c8d37e8dab76096386b26bc8cba262a72622c1e179e97d6",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/6ca99a8ba2684aa56318a6c7a2cae39f9f07432ecf5582cdfa33368c726ff02f/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:cf3d7badb1dba75034c92c57e0b5f0409ab3c386a1e5488099b709d4ff62464d",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/6ca99a8ba2684aa56318a6c7a2cae39f9f07432ecf5582cdfa33368c726ff02f/receipt.json",
+          "receiptDigest": "sha256:d60d41623fb10a775dbcd8170a8e25c5676db2496e4523bbb59bda4512658948",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:b66ecce338d8ae824942fed528b1f15cf07676b9ec690a606e1c061c2c0cb423",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-002-objects-and-parts",
+            "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"8\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:21e3edfb08a36c25411aedfb8cab332d468c4d3ca84f974048c9ccaf8e1583f7",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:304b9edcd9731f4e2d50eb69b21d75a2e7f2085651cdaa5e8464ee47a3783e25",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "8",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-002-objects-and-parts",
+            "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/002-objects-and-parts-shacl.json",
+          "executions/002-objects-and-parts-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-003-QUALITIES",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/03-qualities/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/03-qualities.ttl",
+        "bytes": 6040,
+        "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:2825ec490ec2f2052b236fb04e08b84cf5d6dbc786458d187f84f80b4442d9e0"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:hasQualityValue",
+          "gufo:hasReifiedQualityValue",
+          "gufo:hasValueComponent",
+          "gufo:inheresIn",
+          "gufo:Quality",
+          "gufo:QualityValue"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-003:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-003:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:2a5fbfd2cb33f4f6e5f7e63772ce18f2019a36bdddab12617d866c6c26d24ee1",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:33cad7cfc5bb3d187a1ab4aeee6db7300cc8954f5dfaf26e2f92aad15e828556",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "3",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/b4935f094f7c2885d167d5d5e17dce09d90c7cb1e33790844e7efc2c53e00a6c/result.json",
+          "resultDigest": "sha256:4da2160b73fb889092cdf41059fdcfa9478fa6c15a7029710d97ea25a4aa2b87",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/b4935f094f7c2885d167d5d5e17dce09d90c7cb1e33790844e7efc2c53e00a6c/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/b4935f094f7c2885d167d5d5e17dce09d90c7cb1e33790844e7efc2c53e00a6c/receipt.json",
+          "receiptDigest": "sha256:c6050fd699c2081e9dc9735a882be5fb68ace814cce9e04f1d8d839886e72321",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/e5d63e4e5d0bb11e1fe316c586165b1cbc59ba839b2487d812b9b30c1f2db149/result.json",
+          "resultDigest": "sha256:612a2d2bd418de0dbfb3d917fc975dc91f0189988edf1575ddad590db1bfdcd0",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/e5d63e4e5d0bb11e1fe316c586165b1cbc59ba839b2487d812b9b30c1f2db149/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:a7638cf256d329a0486f4e9280bb9af887606d199da026fc4b1dd4aa48384096",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/e5d63e4e5d0bb11e1fe316c586165b1cbc59ba839b2487d812b9b30c1f2db149/receipt.json",
+          "receiptDigest": "sha256:92c4606283f139a85e6aa3526c0a1005e912655366a1caa62d3292e2f1a01d75",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:2a5fbfd2cb33f4f6e5f7e63772ce18f2019a36bdddab12617d866c6c26d24ee1",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-003-qualities",
+            "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"3\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:880cf7bf2cf39a811c3b6adcace53eb1c129911ef00a4f8984fd3245142d5c67",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:33cad7cfc5bb3d187a1ab4aeee6db7300cc8954f5dfaf26e2f92aad15e828556",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "3",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-003-qualities",
+            "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/003-qualities-shacl.json",
+          "executions/003-qualities-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-004-RELATORS",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/04-relators/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/04-relators.ttl",
+        "bytes": 6498,
+        "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:37c0f9df54e5af8fb0f398340dfe1818c83f1ffda51c7f5e95a61018eed843fa"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:externallyDependsOn",
+          "gufo:ExtrinsicMode",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:inheresIn",
+          "gufo:isAspectProperPartOf",
+          "gufo:isDerivedFrom",
+          "gufo:MaterialRelationshipType",
+          "gufo:mediates",
+          "gufo:Relator"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-004:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-004:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:e7de97eeda7e8860efad45310fadfb3740065243682bcfc3972405ba70b6b291",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:057be69fa82e7f2aa21e9f5df9e153e30421f65c930d0e6824bff21b21f7c730",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#MaterialRelationshipType",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Role",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/8f15fc83138068a13ab71153da275997919a0e37b28935edd750cbf9714eee79/result.json",
+          "resultDigest": "sha256:a15e4ab93159099c80d1d5604f63367c495dcd5ce75918274bdde1e5e333e0eb",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/8f15fc83138068a13ab71153da275997919a0e37b28935edd750cbf9714eee79/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/8f15fc83138068a13ab71153da275997919a0e37b28935edd750cbf9714eee79/receipt.json",
+          "receiptDigest": "sha256:3aae7652c78316bb9464f4e2e135be7342bd76d0cd76b56999ab9f17ae775986",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/ada006a5da478cc2fedeaad3bc5c8e81a7b93bab57768cb39de422d1026d3c0a/result.json",
+          "resultDigest": "sha256:46f2a3a53312d450f66da4d4e1117560586484e4fc088cde9ae36b0d87384df1",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/ada006a5da478cc2fedeaad3bc5c8e81a7b93bab57768cb39de422d1026d3c0a/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:83dcb14cf603b5529f1d6bde0151ebfc389a33e19a01a257f70171511fd27d03",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/ada006a5da478cc2fedeaad3bc5c8e81a7b93bab57768cb39de422d1026d3c0a/receipt.json",
+          "receiptDigest": "sha256:a7147c9d48ee61154e12563bbe63b731127a8e0fcf63c78a21122b61847cc954",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:e7de97eeda7e8860efad45310fadfb3740065243682bcfc3972405ba70b6b291",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-004-relators",
+            "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#MaterialRelationshipType\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Role\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:c94cb3cba815b53fc25d530b35d4ab7c6549ab728bd310d86cc150ce76b884be",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:057be69fa82e7f2aa21e9f5df9e153e30421f65c930d0e6824bff21b21f7c730",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#MaterialRelationshipType",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Role",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-004-relators",
+            "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/004-relators-shacl.json",
+          "executions/004-relators-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-005-EVENTS",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/05-events/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/05-events.ttl",
+        "bytes": 6202,
+        "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:ec832da4c19f643c66d54f74fa464dc8785e34eb11378fdffc9ce6b8eff46e85"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:historicallyDependsOn",
+          "gufo:inheresIn",
+          "gufo:IntrinsicMode",
+          "gufo:isEventProperPartOf",
+          "gufo:manifestedIn",
+          "gufo:participatedIn",
+          "gufo:Participation",
+          "gufo:wasCreatedIn",
+          "gufo:wasTerminatedIn"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-005:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-005:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:179c12687997b4d2a61811d61251627b39fe12f1a8737de4b034ba3591735e95",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:06d38feb5ef67625c266a58407e188468275a8abb84c38bad8c6d4c05b604c44",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Participation",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/e6bb1a30d09a06d626111ed87f595c2ef2183c3e12b5821779cb8a6941152cf4/result.json",
+          "resultDigest": "sha256:62af2c46ec85bdba07e47701a7c17a57041089f7e82eb42f88f319610f7fd391",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/e6bb1a30d09a06d626111ed87f595c2ef2183c3e12b5821779cb8a6941152cf4/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/e6bb1a30d09a06d626111ed87f595c2ef2183c3e12b5821779cb8a6941152cf4/receipt.json",
+          "receiptDigest": "sha256:0782fe70091031e2a96bb86adf170aee11872373a218f687aa73a2ab3c11e081",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/c28a3a86032207fed712208a26114dd5eeb5a60c17bbe94e1fd159b4bd66dd3d/result.json",
+          "resultDigest": "sha256:e36b9b35f676b968b869253ffcbd83e25659edce0bb1506ff52e961b24f37443",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/c28a3a86032207fed712208a26114dd5eeb5a60c17bbe94e1fd159b4bd66dd3d/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:f45822147d02b14690090cdcc17412ae8338dbe7b856580a18049c2fe8483ba2",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/c28a3a86032207fed712208a26114dd5eeb5a60c17bbe94e1fd159b4bd66dd3d/receipt.json",
+          "receiptDigest": "sha256:ae3671a44b755bf050d21ec28d63dcf62774b3c347c1fe33f7901590e87e416b",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:179c12687997b4d2a61811d61251627b39fe12f1a8737de4b034ba3591735e95",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-005-events",
+            "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Participation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:72b6ce56d0ae1bec17a85c715fa848bbaeccaf932decad885208e94a940aaa71",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:06d38feb5ef67625c266a58407e188468275a8abb84c38bad8c6d4c05b604c44",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Participation",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-005-events",
+            "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/005-events-shacl.json",
+          "executions/005-events-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-006-SITUATIONS",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/06-situations/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/06-situations.ttl",
+        "bytes": 10101,
+        "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:0af18302aa6146e6280075e17b74e5e32c2d71d59189f595f76dd41e565d47b4"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Phase",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:broughtAbout",
+          "gufo:ComparativeRelationshipType",
+          "gufo:concernsConstitutedEndurant",
+          "gufo:concernsNonRigidType",
+          "gufo:concernsQualityType",
+          "gufo:concernsQualityValue",
+          "gufo:concernsRelatedEndurant",
+          "gufo:concernsRelationshipType",
+          "gufo:concernsTemporaryWhole",
+          "gufo:contributedToTrigger",
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:hasBeginPointInXSDDateTimeStamp",
+          "gufo:hasEndPointInXSDDate",
+          "gufo:hasEndPointInXSDDateTimeStamp",
+          "gufo:hasQualityValue",
+          "gufo:isDerivedFrom",
+          "gufo:Quality",
+          "gufo:QualityValueAttributionSituation",
+          "gufo:Quantity",
+          "gufo:Situation",
+          "gufo:standsInQualifiedAttribution",
+          "gufo:standsInQualifiedConstitution",
+          "gufo:standsInQualifiedInstantiation",
+          "gufo:standsInQualifiedParthood",
+          "gufo:standsInQualifiedRelationship",
+          "gufo:TemporaryConstitutionSituation",
+          "gufo:TemporaryInstantiationSituation",
+          "gufo:TemporaryParthoodSituation",
+          "gufo:TemporaryRelationshipSituation"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-006:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-006:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:c07247ed32ecb2a3a64f149e0d75b64b3b6c825ee2ed196ab8d95d2f7cba7d65",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:f2fb34e7236eb5710b8a6f6f80d191b57948feb186697661ba93eb0e1e7ef749",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#ComparativeRelationshipType",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "5",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Phase",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#QualityValueAttributionSituation",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#TemporaryConstitutionSituation",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#TemporaryInstantiationSituation",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#TemporaryParthoodSituation",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#TemporaryRelationshipSituation",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/0ae22e0c08080f58ac4a2a5a8210b4aad8c2859a1f215df4ba3162b3f8a59a3b/result.json",
+          "resultDigest": "sha256:c7fb02b467b4991970bb0acaa88099431bc73f0779b31d44a3869eee3a81b095",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/0ae22e0c08080f58ac4a2a5a8210b4aad8c2859a1f215df4ba3162b3f8a59a3b/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/0ae22e0c08080f58ac4a2a5a8210b4aad8c2859a1f215df4ba3162b3f8a59a3b/receipt.json",
+          "receiptDigest": "sha256:d1dde39625232b4f6fe0bd2335c9aa5e7eb1705b1f333e2f27d54faa954aa1c4",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/287cab85e6a0233b34a4db8d3deee3245b2b591976a66ca4e3c17f8e6ebe1eb9/result.json",
+          "resultDigest": "sha256:2c134ccf1a48166e6c5299a1d386c1339c022063960c5bc5abb429356760fb53",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/287cab85e6a0233b34a4db8d3deee3245b2b591976a66ca4e3c17f8e6ebe1eb9/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:4bd5d5c5a35f1cc2f2e9e0c5869eb0390275377ca35a20da9dfbe13daafa2f1f",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/287cab85e6a0233b34a4db8d3deee3245b2b591976a66ca4e3c17f8e6ebe1eb9/receipt.json",
+          "receiptDigest": "sha256:d78968e8ebe80957aafdadcaa598f7803cffc04161f00bc03c0f8e9af1828527",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:c07247ed32ecb2a3a64f149e0d75b64b3b6c825ee2ed196ab8d95d2f7cba7d65",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-006-situations",
+            "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#ComparativeRelationshipType\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"5\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Phase\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#QualityValueAttributionSituation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#TemporaryConstitutionSituation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#TemporaryInstantiationSituation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#TemporaryParthoodSituation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#TemporaryRelationshipSituation\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:d8e1be40cbd58e96f3f3e0788e70211c700f1b2476597480e0522fd0e3038597",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:f2fb34e7236eb5710b8a6f6f80d191b57948feb186697661ba93eb0e1e7ef749",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#ComparativeRelationshipType",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "5",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Phase",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#QualityValueAttributionSituation",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#TemporaryConstitutionSituation",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#TemporaryInstantiationSituation",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#TemporaryParthoodSituation",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#TemporaryRelationshipSituation",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-006-situations",
+            "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/006-situations-shacl.json",
+          "executions/006-situations-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/07-higher-order-types/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/07-higher-order-types.ttl",
+        "bytes": 4689,
+        "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:7c765465d02f132ac712d6b39ff284551dc5cf33147526215215b40ab5591951"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:categorizes",
+          "gufo:ConcreteIndividualType",
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-007:owl:046",
+        "externalOracleState": "consistent-and-satisfiable",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-007:shacl:046",
+        "externalOracleState": "conformant",
+        "actualResultRef": "shacl-sparql-result:c2aa0b4f19d0f4b73a7856af0741fde6a7942472e65efac76d33125da6009ecc",
+        "actualState": "conformant",
+        "conforms": true,
+        "resultRows": [],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:860d7b01d060ae6bd8c4ebb505a1fe557615a7e58ea1eb61ceb05d1d183dc1d3",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Type",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "success",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/207f8e44c09fb457b8b25795c57c4af76f32b6f49a91fb13fd49afebf0419c3b/result.json",
+          "resultDigest": "sha256:d60a6a77e8aa12be6eb041d766fa7a6c56935959b6bb824df669c95f58c35a40",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/207f8e44c09fb457b8b25795c57c4af76f32b6f49a91fb13fd49afebf0419c3b/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:1ee0fc2465a908220e908771ad0af6e1ec03eb67acc474c1e55d304d442898cc",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/207f8e44c09fb457b8b25795c57c4af76f32b6f49a91fb13fd49afebf0419c3b/receipt.json",
+          "receiptDigest": "sha256:0e924b89967b444537943e7dbcf6f0fca33ab85947aae7158afce0d564158372",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/5dbe1871089a16b6c13174c771536ee465724975d87d5d450c86fa0a30b3b414/result.json",
+          "resultDigest": "sha256:c9d5eddd7cd1ffe94b7fb34bc6dd356656e8d1b5c79c156deeda23359a269e8f",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/5dbe1871089a16b6c13174c771536ee465724975d87d5d450c86fa0a30b3b414/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:e2fb9f99bca78581cd40f4307410cb4cc12182b7a7cb5668cd34b209b58eff22",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/5dbe1871089a16b6c13174c771536ee465724975d87d5d450c86fa0a30b3b414/receipt.json",
+          "receiptDigest": "sha256:ebf2c0c73fa04278ba73f61b084f6526ad4444cd451fe05878d7605ced727c56",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:   <http://www.w3.org/ns/shacl#>\nPREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  true\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"true\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:20c224ac49a8eef5fda0153cebac3b94a2e7d12a5e41422ae5eb209a2815e05e",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:c2aa0b4f19d0f4b73a7856af0741fde6a7942472e65efac76d33125da6009ecc",
+          "operation": "shacl-validation",
+          "semanticStatus": "conformant",
+          "conforms": true,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-007-higher-order-types",
+            "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Type\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:b24db96dbccf0c7b3a241e61026c2e82319af36f28ccd5cc8d21ad1364db579a",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:860d7b01d060ae6bd8c4ebb505a1fe557615a7e58ea1eb61ceb05d1d183dc1d3",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Type",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-007-higher-order-types",
+            "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/007-higher-order-types-shacl.json",
+          "executions/007-higher-order-types-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/01-endurant-types/invalid-example.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/08-invalid-endurant-types.ttl",
+        "bytes": 2166,
+        "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:68075002f1b8c96cdf3338c03fff209d35174ffdbed27c226761f6cf0eef7df8"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Category",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-228"
+          ]
+        },
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-008:owl:046",
+        "externalOracleState": "consistent",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-008:shacl:046",
+        "externalOracleState": "nonconformant",
+        "actualResultRef": "shacl-sparql-result:65d6a3e8b292022e495ac6520df914d4e20e4bd30266cba2a98c64d8e935f7d0",
+        "actualState": "nonconformant",
+        "conforms": false,
+        "resultRows": [
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+            "sourceShapeKind": "blank-node",
+            "sourceShape": null,
+            "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+            "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee",
+            "message": "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle)."
+          },
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+            "sourceShapeKind": "blank-node",
+            "sourceShape": null,
+            "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+            "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee",
+            "message": "Rigid and semi-rigid types can't specialize anti-rigid types."
+          }
+        ],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:80f272d5e79900b241f07d452ed1be1c494c14936ac091fa671f518826ac8224",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Category",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Role",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "semantic-failure",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/9d5877ffa91b8f8d339b77866573196e348f83a1ac8c6375ff841cd960eec063/result.json",
+          "resultDigest": "sha256:af6de364befc59977132b2405d256df1a5f954e687f3a0e158d87195add9bc3c",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/9d5877ffa91b8f8d339b77866573196e348f83a1ac8c6375ff841cd960eec063/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:41161c9630175de9ce5bd33e8047393de26253881cf1d8a147a8dafe5ba78686",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/9d5877ffa91b8f8d339b77866573196e348f83a1ac8c6375ff841cd960eec063/receipt.json",
+          "receiptDigest": "sha256:4ab409fa0c94bddff98a53da9f8129662b27d9164f1c38ec4e1fd8da41702e8a",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/580df57d003fc12a4e1dd6f845c8ea7630694e790bf903cdb18a333183ba3b67/result.json",
+          "resultDigest": "sha256:0298f9049bc654ff6ad0ef5d709a07ad86c779f5e48d42b474cf778311f81697",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/580df57d003fc12a4e1dd6f845c8ea7630694e790bf903cdb18a333183ba3b67/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:e336aa12693fbbe7ebeb153438522b6fee9f988b99e03277734b3cb90f0755e1",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/580df57d003fc12a4e1dd6f845c8ea7630694e790bf903cdb18a333183ba3b67/receipt.json",
+          "receiptDigest": "sha256:5af1e1c1e3383244accf941ea17e6fc9c0491ceb03aee818ac72140b8d4d0a3d",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX :           <https://purl.org/nemo/gufo-examples/endurant-types-invalid#>\nPREFIX ex:         <https://purl.org/nemo/gufo-examples/endurant-types#>\nPREFIX gufo:       <http://purl.org/nemo/gufo#>\nPREFIX gufoshapes: <https://w3id.org/nemo/gufoshapes#>\nPREFIX owl:        <http://www.w3.org/2002/07/owl#>\nPREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:         <http://www.w3.org/ns/shacl#>\nPREFIX time:       <http://www.w3.org/2006/time#>\nPREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  false;\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :Manager;\n                 sh:resultMessage              \"Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle).\";\n                 sh:resultPath                 rdfs:subClassOf;\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraintComponent  sh:NotConstraintComponent;\n                 sh:sourceShape                [] ;\n                 sh:value                      :Employee\n               ];\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :Manager;\n                 sh:resultMessage              \"Rigid and semi-rigid types can't specialize anti-rigid types.\";\n                 sh:resultPath                 rdfs:subClassOf;\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraintComponent  sh:NotConstraintComponent;\n                 sh:sourceShape                [] ;\n                 sh:value                      :Employee\n               ]\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"blank-node\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#NotConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle).\" }\n      } ,\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"blank-node\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#NotConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Rigid and semi-rigid types can't specialize anti-rigid types.\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:98753a8132cd6536c99554d1bcd91283b8b0c8f9ea15f77fe9bd0b786b4876e4",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:34c24e1fe7868416daf6cfbc92e3d68f25fd3fe8db4ff809da52361d89d34630",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:65d6a3e8b292022e495ac6520df914d4e20e4bd30266cba2a98c64d8e935f7d0",
+          "operation": "shacl-validation",
+          "semanticStatus": "nonconformant",
+          "conforms": false,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+              "sourceShapeKind": "blank-node",
+              "sourceShape": null,
+              "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+              "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee",
+              "message": "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle)."
+            },
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+              "sourceShapeKind": "blank-node",
+              "sourceShape": null,
+              "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+              "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee",
+              "message": "Rigid and semi-rigid types can't specialize anti-rigid types."
+            }
+          ],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-008-invalid-endurant-types",
+            "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Category\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"2\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Role\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:e7e3b365c7aff327482d679561bbcd246f846afa83e6d65efa15bb78ccd4ff04",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:80f272d5e79900b241f07d452ed1be1c494c14936ac091fa671f518826ac8224",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Category",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "2",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Role",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-008-invalid-endurant-types",
+            "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/008-invalid-endurant-types-shacl.json",
+          "executions/008-invalid-endurant-types-sparql.json"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-009-INVALID-HIGHER-ORDER-TYPES",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/07-higher-order-types/invalid-example.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/09-invalid-higher-order-types.ttl",
+        "bytes": 2215,
+        "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:102e8d73b9b249b81545672fbf509db88f2bb024aca5f308db812a7286fd1021"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "externalOracleResultRef": "result:ext-gufo-009:owl:046",
+        "externalOracleState": "consistent",
+        "actualOntographResultRef": null,
+        "actualStandardsExecution": false,
+        "responsibleIssue": "#2099"
+      },
+      "shacl": {
+        "externalOracleResultRef": "result:ext-gufo-009:shacl:046",
+        "externalOracleState": "nonconformant",
+        "actualResultRef": "shacl-sparql-result:81d764760737ffdad97e405f706ebf7417691f37836a54c3d6f3c5c033a31cb4",
+        "actualState": "nonconformant",
+        "conforms": false,
+        "resultRows": [
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "sourceShapeKind": "iri",
+            "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "resultPath": null,
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+          },
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "sourceShapeKind": "iri",
+            "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "resultPath": null,
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+          },
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "sourceShapeKind": "iri",
+            "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "resultPath": null,
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+          },
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "sourceShapeKind": "iri",
+            "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "resultPath": null,
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+          },
+          {
+            "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "sourceShapeKind": "iri",
+            "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "resultPath": null,
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "valueKind": "iri",
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+            "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+          }
+        ],
+        "comparison": "match"
+      },
+      "sparql": {
+        "queryRef": "query:gufo-type-counts:v1",
+        "actualResultRef": "shacl-sparql-result:d447e2e48e7fabcfdb2debe6dfc1d166c6a3a446652cd2301382019990b784ff",
+        "variables": [
+          "type",
+          "subjectCount"
+        ],
+        "rows": [
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Kind",
+              "datatype": null,
+              "language": null
+            }
+          },
+          {
+            "subjectCount": {
+              "kind": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+              "language": null
+            },
+            "type": {
+              "kind": "uri",
+              "value": "http://purl.org/nemo/gufo#Type",
+              "datatype": null,
+              "language": null
+            }
+          }
+        ]
+      },
+      "toolExecutionHealth": {
+        "shaclStatus": "semantic-failure",
+        "sparqlStatus": "success",
+        "shaclActualStandardsExecution": true,
+        "sparqlActualStandardsExecution": true,
+        "claimLevel": "bounded-actual-shacl-sparql-execution"
+      },
+      "persistenceAndReload": {
+        "shacl": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/4685036d135370f9e361ee037aa69876c20e5530f61bb18428fbc2ff37c1a7df/result.json",
+          "resultDigest": "sha256:d8a6b6ceb448bacdc6301ca866d082edc8909389cb7304cc9896b704c3f7766f",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/4685036d135370f9e361ee037aa69876c20e5530f61bb18428fbc2ff37c1a7df/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:40010a1ce58432340bfddf969bf633f3548d1ac4404f211dec642225dbc0c9a9",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/4685036d135370f9e361ee037aa69876c20e5530f61bb18428fbc2ff37c1a7df/receipt.json",
+          "receiptDigest": "sha256:b45d948b213881b80d826176d2de8c500799c382cd422a9384350ec7e7e02a49",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "sparql": {
+          "status": "persisted-reloaded",
+          "storeRef": "receipt-store:5b7d4be1702cc00d0ac12e9f746dbbb437b2d5d62790cfc4602f54aeadb642da",
+          "resultPath": ".tmp/pinned-shacl-sparql/store/6659ecb69399d7ebd1a764e3dc42d3577128f7fadc5c8b9923718a64ef25476d/result.json",
+          "resultDigest": "sha256:f614009fdb93430e3e2a9b4a000494a62364ad24c9cea490038ce8ed716c839e",
+          "rawEvidencePath": ".tmp/pinned-shacl-sparql/store/6659ecb69399d7ebd1a764e3dc42d3577128f7fadc5c8b9923718a64ef25476d/raw-evidence.json",
+          "rawEvidenceDigest": "sha256:e2fb9f99bca78581cd40f4307410cb4cc12182b7a7cb5668cd34b209b58eff22",
+          "receiptPath": ".tmp/pinned-shacl-sparql/store/6659ecb69399d7ebd1a764e3dc42d3577128f7fadc5c8b9923718a64ef25476d/receipt.json",
+          "receiptDigest": "sha256:50358760bbefa5b696b4e131e7c8cb6db370dffa7aa358fb880ad6586878a7a8",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "shacl": true,
+        "sparql": true
+      },
+      "retainedEvidence": {
+        "shaclRaw": {
+          "primaryStdout": "PREFIX :           <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#>\nPREFIX ex:         <https://purl.org/nemo/gufo-examples/higher-order-types#>\nPREFIX gufo:       <http://purl.org/nemo/gufo#>\nPREFIX gufoshapes: <https://w3id.org/nemo/gufoshapes#>\nPREFIX owl:        <http://www.w3.org/2002/07/owl#>\nPREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sh:         <http://www.w3.org/ns/shacl#>\nPREFIX time:       <http://www.w3.org/2006/time#>\nPREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>\n\n[ rdf:type     sh:ValidationReport;\n  sh:conforms  false;\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :AnimalSpecies;\n                 sh:resultMessage              \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\";\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;\n                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:value                      :AnimalSpecies\n               ];\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :AnimalSpecies;\n                 sh:resultMessage              \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\";\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;\n                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:value                      :AnimalSpecies\n               ];\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :AnimalSpecies;\n                 sh:resultMessage              \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\";\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;\n                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:value                      :AnimalSpecies\n               ];\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :AnimalSpecies;\n                 sh:resultMessage              \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\";\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;\n                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:value                      :AnimalSpecies\n               ];\n  sh:result    [ rdf:type                      sh:ValidationResult;\n                 sh:focusNode                  :AnimalSpecies;\n                 sh:resultMessage              \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\";\n                 sh:resultSeverity             sh:Violation;\n                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;\n                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;\n                 sh:value                      :AnimalSpecies\n               ]\n] .\n",
+          "primaryStderr": "",
+          "normalizationStdout": "{ \"head\": {\n    \"vars\": [ \"conforms\" , \"focusNode\" , \"sourceShapeKind\" , \"sourceShape\" , \"constraintComponent\" , \"resultPath\" , \"severity\" , \"valueKind\" , \"value\" , \"message\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#SPARQLConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\" }\n      } ,\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#SPARQLConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\" }\n      } ,\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#SPARQLConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\" }\n      } ,\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#SPARQLConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\" }\n      } ,\n      { \n        \"conforms\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#boolean\" , \"value\": \"false\" } ,\n        \"focusNode\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"sourceShapeKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"sourceShape\": { \"type\": \"literal\" , \"value\": \"https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape\" } ,\n        \"constraintComponent\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#SPARQLConstraintComponent\" } ,\n        \"resultPath\": { \"type\": \"literal\" , \"value\": \"\" } ,\n        \"severity\": { \"type\": \"literal\" , \"value\": \"http://www.w3.org/ns/shacl#Violation\" } ,\n        \"valueKind\": { \"type\": \"literal\" , \"value\": \"iri\" } ,\n        \"value\": { \"type\": \"literal\" , \"value\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\" } ,\n        \"message\": { \"type\": \"literal\" , \"value\": \"Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.\" }\n      }\n    ]\n  }\n}\n",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:2ac9c5f365f5a53674991c97b19c6c69f297dbc61503a4a48279615cc34d1a5c",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:f783d887aa0332fa3900fa5bb8d708297445325fa222dbb7789786d01cac7f29",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shaclNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:81d764760737ffdad97e405f706ebf7417691f37836a54c3d6f3c5c033a31cb4",
+          "operation": "shacl-validation",
+          "semanticStatus": "nonconformant",
+          "conforms": false,
+          "variables": [
+            "conforms",
+            "focusNode",
+            "sourceShapeKind",
+            "sourceShape",
+            "constraintComponent",
+            "resultPath",
+            "severity",
+            "valueKind",
+            "value",
+            "message"
+          ],
+          "rows": [],
+          "shaclResults": [
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "sourceShapeKind": "iri",
+              "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+              "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+              "resultPath": null,
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+            },
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "sourceShapeKind": "iri",
+              "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+              "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+              "resultPath": null,
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+            },
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "sourceShapeKind": "iri",
+              "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+              "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+              "resultPath": null,
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+            },
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "sourceShapeKind": "iri",
+              "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+              "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+              "resultPath": null,
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+            },
+            {
+              "focusNode": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "sourceShapeKind": "iri",
+              "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+              "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+              "resultPath": null,
+              "severity": "http://www.w3.org/ns/shacl#Violation",
+              "valueKind": "iri",
+              "value": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+              "message": "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+            }
+          ],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-009-invalid-higher-order-types",
+            "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417"
+          },
+          "definitionArtifact": {
+            "artifactRef": "artifact:gufoshapes-standalone-b95e14b",
+            "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "sparqlRaw": {
+          "primaryStdout": "{ \"head\": {\n    \"vars\": [ \"type\" , \"subjectCount\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Kind\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      } ,\n      { \n        \"type\": { \"type\": \"uri\" , \"value\": \"http://purl.org/nemo/gufo#Type\" } ,\n        \"subjectCount\": { \"type\": \"literal\" , \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\" , \"value\": \"1\" }\n      }\n    ]\n  }\n}\n",
+          "primaryStderr": "",
+          "normalizationStdout": "",
+          "normalizationStderr": "",
+          "primaryStdoutDigest": "sha256:b24db96dbccf0c7b3a241e61026c2e82319af36f28ccd5cc8d21ad1364db579a",
+          "primaryStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStdoutDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "normalizationStderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sparqlNormalizedResult": {
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "resultRef": "shacl-sparql-result:d447e2e48e7fabcfdb2debe6dfc1d166c6a3a446652cd2301382019990b784ff",
+          "operation": "sparql-select",
+          "semanticStatus": "completed",
+          "conforms": null,
+          "variables": [
+            "type",
+            "subjectCount"
+          ],
+          "rows": [
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Kind",
+                "datatype": null,
+                "language": null
+              }
+            },
+            {
+              "subjectCount": {
+                "kind": "literal",
+                "value": "1",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "language": null
+              },
+              "type": {
+                "kind": "uri",
+                "value": "http://purl.org/nemo/gufo#Type",
+                "datatype": null,
+                "language": null
+              }
+            }
+          ],
+          "shaclResults": [],
+          "dataArtifact": {
+            "artifactRef": "artifact:ext-gufo-009-invalid-higher-order-types",
+            "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417"
+          },
+          "definitionArtifact": {
+            "artifactRef": "query:gufo-type-counts:v1",
+            "digest": "sha256:4ae21923c1f22cfa96f161b78197fff528d9f7a561acb2ca1d08b828656a31d1"
+          },
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "boundary": {
+            "actualStandardsExecution": true,
+            "sourceMutated": false,
+            "canonicalStateMutated": false,
+            "createsDecisionOrPromotion": false,
+            "claimsComprehensiveConformance": false
+          }
+        },
+        "executionFiles": [
+          "executions/009-invalid-higher-order-types-shacl.json",
+          "executions/009-invalid-higher-order-types-sparql.json"
+        ]
+      }
+    }
+  ],
+  "installedSurface": {
+    "cliExecutions": 18,
+    "loopbackApiExecutions": [
+      {
+        "request": "001-endurant-types-shacl.json",
+        "statusCode": 200,
+        "executed": true,
+        "resultRef": "shacl-sparql-result:c6ac55d3e666c231cf80c0cb24fcfb30cbd330a72afe7773b3ddbbdfd9564b85",
+        "normalizedResultParity": true
+      },
+      {
+        "request": "008-invalid-endurant-types-shacl.json",
+        "statusCode": 200,
+        "executed": true,
+        "resultRef": "shacl-sparql-result:65d6a3e8b292022e495ac6520df914d4e20e4bd30266cba2a98c64d8e935f7d0",
+        "normalizedResultParity": true
+      },
+      {
+        "request": "001-endurant-types-sparql.json",
+        "statusCode": 200,
+        "executed": true,
+        "resultRef": "shacl-sparql-result:945307e3dbe8b365f6b4dcc1bdbeb95f2be08f2d09c6e2a176ed21a136cc7ee8",
+        "normalizedResultParity": true
+      }
+    ]
+  },
+  "boundary": {
+    "fixtureExpectationPresentedAsActual": false,
+    "owlAndShaclCollapsed": false,
+    "executionHealthAndSemanticOutcomeCollapsed": false,
+    "unsupportedResidueRetained": true,
+    "sourceMutated": false,
+    "canonicalStateMutated": false,
+    "adoptionConformancePromotionOrReleaseApprovalCreated": false
+  }
+}
