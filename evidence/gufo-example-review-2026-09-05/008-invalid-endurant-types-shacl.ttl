@@ -1,0 +1,32 @@
+PREFIX :           <https://purl.org/nemo/gufo-examples/endurant-types-invalid#>
+PREFIX ex:         <https://purl.org/nemo/gufo-examples/endurant-types#>
+PREFIX gufo:       <http://purl.org/nemo/gufo#>
+PREFIX gufoshapes: <https://w3id.org/nemo/gufoshapes#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:         <http://www.w3.org/ns/shacl#>
+PREFIX time:       <http://www.w3.org/2006/time#>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+
+[ rdf:type     sh:ValidationReport;
+  sh:conforms  false;
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :Manager;
+                 sh:resultMessage              "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle).";
+                 sh:resultPath                 rdfs:subClassOf;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:NotConstraintComponent;
+                 sh:sourceShape                [] ;
+                 sh:value                      :Employee
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :Manager;
+                 sh:resultMessage              "Rigid and semi-rigid types can't specialize anti-rigid types.";
+                 sh:resultPath                 rdfs:subClassOf;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:NotConstraintComponent;
+                 sh:sourceShape                [] ;
+                 sh:value                      :Employee
+               ]
+] .
