@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "ontograph.cartridge-source-verification.v1",
+  "requirements": [
+    "CP-SRC-001",
+    "CP-SRC-002",
+    "CP-SRC-003",
+    "CP-SRC-004",
+    "CP-SRC-005",
+    "CP-SRC-006",
+    "CP-SRC-007"
+  ],
+  "scope": "source-observations-only-not-reviewed-classification-or-qualified-packages",
+  "sourceReportSha256": "b1c2faabfa299ed1847e2f81728f5cd7aadd70e030e3414851a5f15128c94509",
+  "byteIdenticalReplay": true,
+  "matrixByteIdenticalReplay": true,
+  "frozenFamilyCount": 11,
+  "frozenModelCount": 197,
+  "artifactCount": 5308,
+  "localTests": 7,
+  "allStageGatesPassed": false
+}
