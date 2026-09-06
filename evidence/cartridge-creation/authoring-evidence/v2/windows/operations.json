@@ -1,0 +1,95 @@
+[
+  {
+    "case": "build-a",
+    "command": [
+      "C:\\data\\apps\\#dev\\python\\3.14.6\\python.exe",
+      "D:\\projects\\governance-foundation\\ontograph\\.tmp\\worktrees\\2149-cartridge-execution\\scripts\\build_cartridge.py",
+      "--input",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\inputs\\authoring.json",
+      "--binary",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "--output",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\build-a"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"candidate\": \"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\build-a\\\\cartridge.json\", \"runtimeProcessState\": \"exited\", \"qualification\": \"unqualified-draft\"}\r\n"
+  },
+  {
+    "case": "build-b",
+    "command": [
+      "C:\\data\\apps\\#dev\\python\\3.14.6\\python.exe",
+      "D:\\projects\\governance-foundation\\ontograph\\.tmp\\worktrees\\2149-cartridge-execution\\scripts\\build_cartridge.py",
+      "--input",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\inputs\\authoring.json",
+      "--binary",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "--output",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\build-b"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"candidate\": \"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\build-b\\\\cartridge.json\", \"runtimeProcessState\": \"exited\", \"qualification\": \"unqualified-draft\"}\r\n"
+  },
+  {
+    "case": "untrusted-install",
+    "command": [
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "cartridge",
+      "install",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\build-a\\cartridge.json",
+      "--registry",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\registry.json",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":false,\"registryPath\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\registry.json\",\"trustMode\":{\"mode\":\"manifest\"}},\"fixture\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\build-a\\\\cartridge.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[{\"code\":\"CARTRIDGE_UNTRUSTED\",\"message\":\"trust policy blocks cartridge installation or activation\",\"refId\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"severity\":\"error\"}],\"ok\":false,\"status\":\"fail\",\"validationResult\":\"failed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "explicit-local-test-trust",
+    "command": [
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "cartridge",
+      "install",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\build-a\\cartridge.json",
+      "--registry",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\registry.json",
+      "--trust-local",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":true,\"registryPath\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\registry.json\",\"trustMode\":{\"mode\":\"trust-local\"}},\"fixture\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\build-a\\\\cartridge.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[],\"ok\":true,\"registryRecord\":{\"cartridgeId\":\"test:authoring\",\"contentDigest\":\"sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"dependencyPins\":[],\"publisher\":\"synthetic-tests\",\"trustDecisionRef\":\"trust:local-cli-operator\",\"version\":\"1.0.0\"},\"status\":\"installed\",\"validationResult\":\"installed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "reopen-list",
+    "command": [
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "cartridge",
+      "list",
+      "--registry",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\registry.json",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"canonicalMutationAttempted\":false,\"persistentRegistryState\":true,\"registryPath\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\registry.json\"},\"fixture\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\registry.json\",\"localApi\":{\"method\":\"GET\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges\"},\"operation\":\"list\",\"report\":{\"activeActivations\":[],\"activeCount\":0,\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"installed\":[{\"cartridgeId\":\"test:authoring\",\"contentDigest\":\"sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"dependencyPins\":[],\"publisher\":\"synthetic-tests\",\"trustDecisionRef\":\"trust:local-cli-operator\",\"version\":\"1.0.0\"}],\"installedCount\":1,\"ok\":true,\"status\":\"listed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "tampered-install",
+    "command": [
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-installed-windows\\ontograph.exe",
+      "cartridge",
+      "install",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\tampered.json",
+      "--registry",
+      "D:\\projects\\governance-foundation\\.tmp\\cartridge-2150-proof-windows-v2\\registry.json",
+      "--trust-local",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":false,\"registryPath\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\registry.json\",\"trustMode\":{\"mode\":\"trust-local\"}},\"fixture\":\"D:\\\\projects\\\\governance-foundation\\\\.tmp\\\\cartridge-2150-proof-windows-v2\\\\tampered.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[{\"code\":\"CARTRIDGE_DIGEST_MISMATCH\",\"message\":\"recomputed normalized payload digest differs from manifest digest\",\"refId\":\"manifest=sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554, computed=sha256:9ff136ff770cf84fe170ffadab83991ae695da8b0462f0ba44715ae6960509e4\",\"severity\":\"error\"}],\"ok\":false,\"status\":\"fail\",\"validationResult\":\"failed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  }
+]

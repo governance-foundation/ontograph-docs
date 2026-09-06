@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "ontograph.local-documentation-publication.v1",
+  "sourceCommit": "2f437d575eef97871e789774ec23ad3052ae209b",
+  "mode": "local-verification-and-pull-request",
+  "githubActionsTestArtifactsClaimed": false,
+  "referenceQueriesPassed": 38,
+  "referenceCasesPassed": 2,
+  "referenceQuestionsPassed": 6,
+  "coreBinarySha256": "5bb1cb85eeadc6ece09b9e261b40601e06f76f0726403c031515b872d1ab48d0",
+  "artifacts": [
+    {
+      "path": "evidence/local-publication/2f437d575eef97871e789774ec23ad3052ae209b/reference-query-suite.json",
+      "sha256": "75802bd1112fc8e8dfdbde44df9234a5eccdfac416e5e5a6bd557865713f788f",
+      "bytes": 185667
+    },
+    {
+      "path": "evidence/local-publication/2f437d575eef97871e789774ec23ad3052ae209b/reference-case-suite.json",
+      "sha256": "ddcb3104836bd76a88a12ac4d13fd0e58c6873da880bfeac008728380817f74d",
+      "bytes": 50646
+    },
+    {
+      "path": "evidence/local-publication/2f437d575eef97871e789774ec23ad3052ae209b/local-http-verification.json",
+      "sha256": "89b838f44e9755dbbd0a58bd264c1863585501f9795045fb2a4965081b2051fb",
+      "bytes": 3179
+    }
+  ],
+  "programmeComplete": false,
+  "qualifiedCartridges": 0
+}
