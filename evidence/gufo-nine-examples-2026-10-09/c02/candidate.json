@@ -1,0 +1,1572 @@
+{
+  "entities": {
+    "_:riog00000001": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "language": null,
+        "lexical": "1"
+      },
+      "ranges": [],
+      "restriction": true,
+      "restrictionClass": "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol",
+      "restrictionProperty": "_:riog00000002",
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "_:riog00000002": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf"
+      ],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "_:riog00000003": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "language": null,
+        "lexical": "1"
+      },
+      "ranges": [],
+      "restriction": true,
+      "restrictionClass": "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate",
+      "restrictionProperty": "_:riog00000004",
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "_:riog00000004": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf"
+      ],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "_:riog00000005": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "language": null,
+        "lexical": "1"
+      },
+      "ranges": [],
+      "restriction": true,
+      "restrictionClass": "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene",
+      "restrictionProperty": "_:riog00000006",
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "_:riog00000006": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf"
+      ],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A small ontology of cars, their components, a fleet, and fuel, illustrating gUFO's classification of complex objects and its part-whole properties."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [
+        "https://purl.org/nemo/gufo#"
+      ],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "gUFO example 02: Objects and their parts (Car fleet)"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": true,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A functional complex whose components (engine, wheels, ...) each play a different role in making the whole work."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Car"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car 001"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet",
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Engine"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car 001's engine"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car 001's front-left wheel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car 001's front-right wheel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Car"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Car 002"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Asserted as a sub-quantity of the distillate only. Because gufo:isSubQuantityOf is transitive, a reasoner also derives that this benzene is a sub-quantity of :Car002FuelTankContents -- which is what one means by saying the fuel in the tank contains benzene."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Benzene portion of Car 002's fuel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Distillate portion of Car 002's fuel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A legitimate sub-quantity: it is a portion of a different stuff (ethanol, not gasoline), so it is a maximally self-connected quantity in its own right even while blended into the whole."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Ethanol portion of Car 002's fuel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The gasoline in Car 002's tank: one maximally self-connected portion of stuff, whose sub-quantities are the portions of ethanol and distillate blended into it."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Contents of Car 002's fuel tank"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#historicallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "CityWheels fleet"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Once the delivery is pumped into the tank, the two portions are in contact and hence one maximally self-connected portion of gasoline -- a new quantity. Neither input is a sub-quantity of it: they are of the same kind as the whole, and after mixing neither is a maximally self-connected portion any more. Nor did :DepotSupplyBeforeTuesday simply grow: quantities are extensional, so a change of parts is a change of whole, and their parts are essential. What links them is history, not parthood."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Depot supply after Tuesday's delivery"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#historicallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday",
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The gasoline sitting in the depot's underground tank up to Tuesday morning."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Depot supply before Tuesday's delivery"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "All members of the electric sub-fleet are, by definition of isSubCollectionOf, also members of the whole fleet."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "CityWheels electric sub-fleet"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isSubCollectionOf": [
+          "https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Engine": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Engine"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A collection of cars with uniform structure (every member plays the same 'fleet member' role) and variable membership: cars are added when purchased and removed when retired, without the fleet losing its identity."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Fleet"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#VariableCollection"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A maximally self-connected portion of benzene. Present here to exercise the transitivity of gufo:isSubQuantityOf: benzene is a sub-quantity of the distillate, which is a sub-quantity of the gasoline, so the benzene is a sub-quantity of the gasoline too."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol",
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline",
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Quantity of benzene"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Quantity"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A maximally self-connected portion of ethanol. Disjoint from :QuantityOfGasoline: the two are distinct kinds, obeying distinct principles of identity, and no portion of stuff is an instance of both."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Quantity of ethanol"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Quantity"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A maximally self-connected portion of the blended gasoline CityWheels pumps into its cars. Everything below follows from 'maximally self-connected': any two portions of gasoline in contact are one quantity, not two, so a quantity of gasoline never has a smaller quantity of gasoline as a part. Its sub-quantities are portions of the *different* stuffs it is a blend of -- ethanol and petroleum distillate. (Named 'QuantityOfGasoline', not 'Gasoline': instances of this class are individual portions of the stuff, not the material itself.)"
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Quantity of gasoline"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "_:riog00000001",
+        "_:riog00000003",
+        "http://purl.org/nemo/gufo#Quantity"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A maximally self-connected portion of the petroleum-derived distillate that is blended with ethanol to make the gasoline sold at the pump. Itself a mixture: benzene is one of the stuffs it contains."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol",
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Quantity of petroleum distillate"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "_:riog00000005",
+        "http://purl.org/nemo/gufo#Quantity"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The gasoline that arrived on Tuesday's truck, while still a separate portion in the truck."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Tuesday's delivery lot"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Wheel"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is benzene portion of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [
+        "http://www.w3.org/2002/07/owl#AsymmetricProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty",
+        "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+      ],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isSubQuantityOf"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is distillate portion of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [
+        "http://www.w3.org/2002/07/owl#AsymmetricProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty",
+        "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+      ],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isSubQuantityOf"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Engine"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is engine of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Car"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isComponentOf"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is ethanol portion of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [
+        "http://www.w3.org/2002/07/owl#AsymmetricProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty",
+        "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+      ],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isSubQuantityOf"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Car"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is fleet member of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isCollectionMemberOf"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "is wheel of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/objects-and-parts#Car"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#isComponentOf"
+      ],
+      "valueAssertions": {}
+    }
+  },
+  "schemaVersion": "ontograph.gufo.typed-source-candidate.v2",
+  "sourceAssertionCount": 153,
+  "sourceBytes": 12747,
+  "sourceDigest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0"
+}

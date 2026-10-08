@@ -1,0 +1,240 @@
+{
+  "entities": {
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Deliberately invalid variant of example 01, used by the test suite to show that OWL alone does not catch sortality mistakes that the gUFO SHACL shapes do catch."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [
+        "https://purl.org/nemo/gufo#"
+      ],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": true,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Category"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee",
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Dana"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Role"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Manager"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    }
+  },
+  "schemaVersion": "ontograph.gufo.typed-source-candidate.v2",
+  "sourceAssertionCount": 20,
+  "sourceBytes": 2166,
+  "sourceDigest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463"
+}
