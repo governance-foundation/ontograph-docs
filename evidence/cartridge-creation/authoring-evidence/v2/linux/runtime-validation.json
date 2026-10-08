@@ -1,0 +1,53 @@
+{
+  "binarySha256": "a55070e8849286cef42a2bb24eb24c59172465372d563f301bf9e39ebe4783e2",
+  "command": [
+    "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+    "cartridge",
+    "validate",
+    "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json",
+    "--json"
+  ],
+  "exitCode": 0,
+  "packageSha256": "3860e91f5aaedc787a225a043a0d51dea57c00e2b1234a96e75eb6625743da1d",
+  "processState": "exited",
+  "qualification": "unqualified-draft",
+  "response": {
+    "extras": {
+      "canonicalMutationAttempted": false,
+      "createsApproval": false,
+      "createsEvidence": false,
+      "createsPromotion": false
+    },
+    "fixture": "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json",
+    "localApi": {
+      "method": "POST",
+      "parity": "same validation and lifecycle report payload as CLI",
+      "path": "/cartridges/validate"
+    },
+    "operation": "validate",
+    "report": {
+      "boundary": {
+        "canonicalMutationAttempted": false,
+        "createsApproval": false,
+        "createsEvidence": false,
+        "createsPromotion": false
+      },
+      "cartridgeRef": "test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554",
+      "diagnostics": [
+        {
+          "code": "CARTRIDGE_UNTRUSTED",
+          "message": "trust policy blocks cartridge installation or activation",
+          "refId": "test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554",
+          "severity": "error"
+        }
+      ],
+      "ok": false,
+      "status": "fail",
+      "validationResult": "failed"
+    },
+    "reportKind": "ontograph.cartridge.lifecycle.cli-local-api-report.v0.1"
+  },
+  "schemaVersion": "ontograph.cartridge-build-runtime-validation.v1",
+  "stderr": "",
+  "stdout": "{\"extras\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"fixture\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/validate\"},\"operation\":\"validate\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[{\"code\":\"CARTRIDGE_UNTRUSTED\",\"message\":\"trust policy blocks cartridge installation or activation\",\"refId\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"severity\":\"error\"}],\"ok\":false,\"status\":\"fail\",\"validationResult\":\"failed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+}

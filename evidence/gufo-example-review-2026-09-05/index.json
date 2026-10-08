@@ -1,0 +1,94 @@
+{
+  "evidenceKind": "external-reference-and-bounded-installed-local-execution",
+  "reviewedAt": "2026-09-05",
+  "productBaseline": "c513459cc7179cf8b0af00b3c112300a04a08ea7",
+  "upstream": "https://github.com/nemo-ufes/gufo/tree/f4122544133544eb4c6c467ba316302ab20b754a",
+  "publicSourceGuide": "https://github.com/nemo-ufes/gufo/blob/f4122544133544eb4c6c467ba316302ab20b754a/examples/tests/README.md",
+  "attribution": "gUFO contributors; upstream ontology and examples CC BY 4.0. Raw reports include source identifiers and executed shape diagnostics.",
+  "files": {
+    "source-harvest-proof.json": {
+      "bytes": 2563,
+      "sha256": "4e0987b798652b59bf0bfa184182327fd20511c6749426ff6eb4c94febb80331"
+    },
+    "upstream-tests.json": {
+      "bytes": 3087,
+      "sha256": "5ca877e784702726353df7b4512c7a020635204575249ed429cfae6406b0e78c"
+    },
+    "independent-shacl-proof.json": {
+      "bytes": 4835,
+      "sha256": "48b7e4a91d1f124b98a2025e926b8a9619151c37f069b0bd379542b29931a5da"
+    },
+    "toolchain.json": {
+      "bytes": 1962,
+      "sha256": "8926f7d4ddbf77c242b65671e0f9615c2fa66e664ea6dc32bdfcc608b34468dc"
+    },
+    "jena-acquisition.json": {
+      "bytes": 1331,
+      "sha256": "b7313a306678e5211d4e0df6ea0c1e4398f2cd57bdbe08b94dbd5361b30bf5d3"
+    },
+    "001-endurant-types-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "002-objects-and-parts-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "003-qualities-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "004-relators-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "005-events-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "006-situations-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "007-higher-order-types-shacl.ttl": {
+      "bytes": 265,
+      "sha256": "0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    "008-invalid-endurant-types-shacl.ttl": {
+      "bytes": 1815,
+      "sha256": "98753a8132cd6536c99554d1bcd91283b8b0c8f9ea15f77fe9bd0b786b4876e4"
+    },
+    "009-invalid-higher-order-types-shacl.ttl": {
+      "bytes": 5024,
+      "sha256": "2ac9c5f365f5a53674991c97b19c6c69f297dbc61503a4a48279615cc34d1a5c"
+    },
+    "integrated-local-proof.json": {
+      "bytes": 2501,
+      "sha256": "73bb73b47fd4c4e35a6092683bd6d3a80ed268d8a8b81ed7d70e6ad872e4f511"
+    },
+    "integrated-hermit-full.json": {
+      "bytes": 86680,
+      "sha256": "abb3f8f643ca5fbcb508594841fce4df46f7c32a564bf605af9107d66b52da6c"
+    },
+    "integrated-hermit-verification.json": {
+      "bytes": 664,
+      "sha256": "7eab2b8430ea948d6c6dd87341762a315a1317cd0395f4f7ec8598deb051a3dc"
+    },
+    "integrated-jena.json": {
+      "bytes": 154525,
+      "sha256": "80d11ea549beae6ae086b1c62afc68a92d63c18b80a99285aa6252d64ec8549e"
+    },
+    "integrated-jena-verification.json": {
+      "bytes": 353,
+      "sha256": "dacb533c963fe1ccab85e5fc49b46d0f8adb876167d9519a7ab83a768c17e068"
+    },
+    "integrated-catalog-verification.json": {
+      "bytes": 491,
+      "sha256": "06c718ba0be181cb53bb347218e5f638ef98751d3103a5d5cc2e9fea44d42b4b"
+    },
+    "integrated-local-checks.json": {
+      "bytes": 2647,
+      "sha256": "72333c5a7cdcc1ab350e91874a859273cf3b73c41d03dc09e74575176bfd4d7a"
+    }
+  }
+}

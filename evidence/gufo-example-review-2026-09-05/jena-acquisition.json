@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "ontograph.shacl-sparql.acquisition.v1",
+  "issue": "#2060",
+  "pinRef": "shacl-sparql:apache-jena-6.2.0",
+  "sourceMode": "downloaded",
+  "assetUrl": "https://archive.apache.org/dist/jena/binaries/apache-jena-6.2.0.zip",
+  "archive": {
+    "bytes": 24172203,
+    "sha256": "sha256:d2a6dadc586282f5be7d15010793a336eb8fac4db68eb49209ca5a5656e620b0",
+    "sha512": "sha512:fb97634215b4667124bdbe4f42efc25d4dc4e9046b70bfa702d7a71e1a8aed049ec79a38eb469cf0e13b18724cc024adec3cc35113a24e8fa62aa66091d7431e"
+  },
+  "installation": {
+    "jenaHome": ".tmp/pinned-shacl-sparql/extract/apache-jena-6.2.0",
+    "classpathFiles": 43,
+    "classpathManifestDigest": "sha256:8ce9769e6ba928fc9d2ab136d773d5c0305018ba13e8019e924d5506649b5136"
+  },
+  "entryPoints": [
+    {
+      "operation": "shacl-validation",
+      "className": "shacl.shacl",
+      "classDigest": "sha256:381ad892ef90a023b394b45d6b6a1ec417e858d58056c649419cde523b9d1d68"
+    },
+    {
+      "operation": "sparql-select",
+      "className": "arq.arq",
+      "classDigest": "sha256:8e0b63539545121c3d28ec6fde3b8761962814a07a34c0c68cc4b0a80ee69a5d"
+    }
+  ],
+  "boundary": {
+    "explicitEvidenceAction": true,
+    "ordinaryBuildFetch": false,
+    "archiveCheckedIn": false,
+    "archiveUploadedAsEvidence": false,
+    "redistributionAuthorized": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "ontograph.gufo.review-local-checks.v1",
+  "productCommit": "aabd3c61b5bff159b4d908ef7e919897e841a9f6",
+  "platform": "windows-x86_64-pc-windows-gnullvm",
+  "installedBinaryDigest": "sha256:15c9239129f5e83aa5aac980d752dcb452888fbae4d59842d147a19aa2081ef5",
+  "toolchain": {
+    "rust": "1.98.1",
+    "llvm": "22.1.8",
+    "hermitJava": "17.0.6",
+    "jenaJava": "21.0.7",
+    "jena": "6.2.0",
+    "robotJarDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105"
+  },
+  "checks": {
+    "rustWorkspace": {
+      "logSha256": "25d9f3e32941554c37a911a814efc2a0a5af43c1c02b461d27ca1cb8086f72f8",
+      "passed": 2146,
+      "failed": 0,
+      "optionalExternalToolTests": 2,
+      "status": "pass"
+    },
+    "python": {
+      "logSha256": "d8fa5672d5e446a26e6351e2849f06151f53e590926dcb63f0e203922f96addd",
+      "passed": 240,
+      "failed": 0,
+      "status": "pass"
+    },
+    "node": {
+      "logSha256": "461fdad9df0ab6de6662aebc5c488a706d445c929fc4f69c7d00e0a56ae3c5a4",
+      "passed": 15,
+      "failed": 0,
+      "status": "pass"
+    },
+    "format": {
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    "actualExternalTools": {
+      "status": "pass",
+      "passed": 2,
+      "failed": 0,
+      "logSha256": "213e29dcddd5ee163dc9c140c6e7f51131c7094223353aeca0e7cbefada41c9f"
+    },
+    "clippy": {
+      "status": "pass",
+      "warningsDenied": true,
+      "scope": "workspace-all-targets",
+      "logSha256": "259eadb07a7b2c48ae77f0f352839882c21027778f9c82d28321be33be8257bf"
+    },
+    "standaloneStart": {
+      "status": "pass",
+      "pathContainsOnlyWindowsSystemDirectories": true,
+      "adjacentRuntime": "libunwind.dll"
+    }
+  },
+  "ci": {
+    "usedAsEvidence": false,
+    "requiredForThisReview": false,
+    "basis": "Owner explicitly requested local tests and waived GitHub CI."
+  },
+  "linux": {
+    "status": "not-qualified",
+    "attemptedSourceCommit": "86cb8d8e66ab6315ee3f74ebfe56496dc778fb8a",
+    "image": "rust:slim-trixie@sha256:17d1ba895198f9934c6314ec5346a0d5115372f3243390c3d731e242f35c2f27",
+    "result": "Container build stopped progressing during core compilation; Docker status and stop requests did not return. No Linux acceptance result is claimed.",
+    "sharedServiceRestarted": false
+  },
+  "boundaries": [
+    "Bounded reviewed workflows only; no arbitrary OntoUML/Turtle transformation claim.",
+    "All 366 validator rows retain explicit gaps across 13 rules.",
+    "Full gUFO HermiT datatype support remains unavailable.",
+    "No certification or release readiness claim."
+  ]
+}

@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": "ontograph.cartridge-pilot-obligation-review.v1",
+  "status": "implementer-proposal-not-reviewed",
+  "sources": [
+    {
+      "id": "GEN",
+      "repository": "governance-foundation/ontograph",
+      "commit": "760e442325b44d65ee82cc6c44d6661ec389ce5b",
+      "path": "fixtures/gufo-interoperability/catalog-roundtrip/raw/ontouml-models/models/genealogy2013/ontology.json",
+      "sha256": "d0f0014a7ad7f92c0856d0165a1f7436e385b1728924daec661c464d219063f0",
+      "role": "retained-source-or-product-seed-not-adoption"
+    },
+    {
+      "id": "SEON",
+      "repository": "governance-foundation/ontograph",
+      "commit": "760e442325b44d65ee82cc6c44d6661ec389ce5b",
+      "path": "fixtures/canonical/networked-import-manifest-extension.json",
+      "sha256": "cebf648f5a2a1b65ae7c926f4567b2a6bcbf0a69fbf0a3d85a0409748b8008b9",
+      "role": "retained-source-or-product-seed-not-adoption"
+    },
+    {
+      "id": "BPMN",
+      "repository": "governance-foundation/ontograph",
+      "commit": "760e442325b44d65ee82cc6c44d6661ec389ce5b",
+      "path": "fixtures/framework-lenses/bpmn-seed-valid.json",
+      "sha256": "0bae6108aa805a9386e0957f836e072b309e79179cfeb93ff9eb5e15a97555cb",
+      "role": "retained-source-or-product-seed-not-adoption"
+    },
+    {
+      "id": "research:seon-networked-ontology-review",
+      "repository": "governance-foundation/ontograph-research",
+      "commit": "d501c11baaf517fc503e96ebfbbc4c1d1495bc9a",
+      "path": "docs/seon-networked-ontology-review.md",
+      "sha256": "0732d0d3d931f08947481272b3623075ad17049e2bc84ad6ee3fe1537f360b11",
+      "role": "research-note-or-bounded-handoff-not-pilot-adoption"
+    },
+    {
+      "id": "research:seon-source-bundle-preservation-model",
+      "repository": "governance-foundation/ontograph-research",
+      "commit": "d501c11baaf517fc503e96ebfbbc4c1d1495bc9a",
+      "path": "docs/seon-source-bundle-preservation-model.md",
+      "sha256": "16a4194800548c5a89501ffc838620c5110cd9b1673cc40b31f84ba284d55238",
+      "role": "research-note-or-bounded-handoff-not-pilot-adoption"
+    },
+    {
+      "id": "research:bpmn-lens-seed-fixture",
+      "repository": "governance-foundation/ontograph-research",
+      "commit": "d501c11baaf517fc503e96ebfbbc4c1d1495bc9a",
+      "path": "docs/bpmn-lens-seed-fixture.md",
+      "sha256": "fae449263b4e37d98cd6f6b478281308126b5bab844cacf38ad2e50d9027784b",
+      "role": "research-note-or-bounded-handoff-not-pilot-adoption"
+    },
+    {
+      "id": "research:catalog-vocabulary-roundtrip-handoff-v1",
+      "repository": "governance-foundation/ontograph-research",
+      "commit": "d501c11baaf517fc503e96ebfbbc4c1d1495bc9a",
+      "path": "docs/handoffs/catalog-vocabulary-roundtrip-handoff-v1.json",
+      "sha256": "aa0e1d43a66abd12e26d725d39d4d7e865a51428ab1a8e330c3b2e9555835e69",
+      "role": "research-note-or-bounded-handoff-not-pilot-adoption"
+    }
+  ],
+  "sourceAnchors": [
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/1",
+      "id": "1H_33OGFS_j2pM9i",
+      "type": "Class",
+      "name": "Father",
+      "stereotype": "role"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/2",
+      "id": "DH_33OGFS_j2pM9k",
+      "type": "Class",
+      "name": "FemalePerson",
+      "stereotype": "subkind"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/3",
+      "id": "LH_33OGFS_j2pM9m",
+      "type": "Class",
+      "name": "MalePerson",
+      "stereotype": "subkind"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/4",
+      "id": "LH_33OGFS_j2pM9n",
+      "type": "Class",
+      "name": "Mother",
+      "stereotype": "role"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/5",
+      "id": "rH_33OGFS_j2pM9o",
+      "type": "Class",
+      "name": "Offspring",
+      "stereotype": "role"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/6",
+      "id": "bH_33OGFS_j2pM9p",
+      "type": "Class",
+      "name": "Parent",
+      "stereotype": "role"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/7",
+      "id": "7H_33OGFS_j2pM9q",
+      "type": "Class",
+      "name": "Person",
+      "stereotype": "kind"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/8",
+      "id": "vH_33OGFS_j2pM9s",
+      "type": "Class",
+      "name": "Registration",
+      "stereotype": "relator"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/9",
+      "id": "cv_33OGFS_j2pM.z",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/10",
+      "id": "iv_33OGFS_j2pM..",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/11",
+      "id": "Sv_33OGFS_j2pM._",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/12",
+      "id": "Sv_33OGFS_j2pM_A",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/13",
+      "id": "yv_33OGFS_j2pM_B",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/14",
+      "id": "yv_33OGFS_j2pM_C",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/15",
+      "id": "yv_33OGFS_j2pM_D",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/16",
+      "id": "qv_33OGFS_j2pM_J",
+      "type": "Generalization",
+      "name": null,
+      "stereotype": null
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/17",
+      "id": "Iv_33OGFS_j2pM.d",
+      "type": "Relation",
+      "name": "parentOf",
+      "stereotype": "material"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/18",
+      "id": "Mv_33OGFS_j2pM.p",
+      "type": "Relation",
+      "name": null,
+      "stereotype": "mediation"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/19",
+      "id": "Cv_33OGFS_j2pM.5",
+      "type": "Relation",
+      "name": null,
+      "stereotype": "mediation"
+    },
+    {
+      "sourceId": "GEN",
+      "pointer": "/model/contents/20",
+      "id": "o__33OGFS_j2pNE4",
+      "type": "Relation",
+      "name": "AssociationClass1",
+      "stereotype": "derivation"
+    },
+    {
+      "sourceId": "SEON",
+      "pointer": "/appends/alignmentArtifacts/0",
+      "id": "alignment:seon-reqon-requirement-artifact-overlap",
+      "state": "challenged"
+    },
+    {
+      "sourceId": "SEON",
+      "pointer": "/appends/semanticGaps/0",
+      "id": "semantic-gap:seon-reqon-requirement-artifact-overlap",
+      "blocksPromotion": true
+    },
+    {
+      "sourceId": "BPMN",
+      "pointer": "/lens",
+      "id": "framework-lens:bpmn",
+      "status": "candidate"
+    }
+  ],
+  "obligations": [
+    {
+      "id": "CP-GEN-RIGHTS",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Review source rights and proposed package/component boundary",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/cartridges/source-reconciliation.md"
+      ],
+      "deliveryIssue": 2149,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-GEN-MAPPING",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Review Person identity, source-specific subkinds, Registration relator, role dependence, parentOf material relation, mediations/derivation and source multiplicities; do not equate registration with birth event or artifact.",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/ontouml/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-COLLECTION",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Execute novel user-instance collection/import through an approved operation, not a metamodel-node listing or known fixture recognizer",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/cartridges/authoring.md",
+        "specs/brain-run/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-VALIDATION",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Positive/adverse/boundary tests over reviewed domain constraints with independent expected outcomes",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/canonical-model/README.md",
+        "specs/ontouml/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-EXPORT-COMPARISON",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Export/reimport comparison preserves stable identity, source assertions, uncertainty and typed residue; no omitted mandatory capability",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/semantic-diff/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-PERSISTENCE",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Persist and reopen novel records with unchanged semantic/provenance identity and query answers",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-WINDOWS",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Installed Windows positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-LINUX",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Installed Linux positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-REVIEW",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Independent reviewer freezes expected results and signs the exact mapping/scope; implementer proposals are insufficient",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/governance/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-GEN-PERMISSIONS",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Explicit local/single-user profile; any organizational claim requires authorization across queries/counts/export",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/policy/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-QUERY-1",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Which recorded parents of a selected person are supported by which sources, with challenge/uncertainty retained?",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-QUERY-2",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Which registrations involve the same person in distinct parent/offspring roles?",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-GEN-QUERY-3",
+      "pilot": "GEN",
+      "mandatory": true,
+      "intent": "Which asserted family links lack required registration/evidence context or conflict with the selected source profile?",
+      "sourceRefs": [
+        "GEN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-GEN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-RIGHTS",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Review source rights and proposed package/component boundary",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/cartridges/source-reconciliation.md"
+      ],
+      "deliveryIssue": 2149,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-SEON-MAPPING",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Resolve challenged Requirement Artifact overlap with Assertion/Evidence. Preserve UFO/SPO/COM/ReqON/GORO contexts. Source module dependency is not equivalence.",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/ontouml/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-COLLECTION",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Execute novel user-instance collection/import through an approved operation, not a metamodel-node listing or known fixture recognizer",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/cartridges/authoring.md",
+        "specs/brain-run/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-VALIDATION",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Positive/adverse/boundary tests over reviewed domain constraints with independent expected outcomes",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/canonical-model/README.md",
+        "specs/ontouml/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-EXPORT-COMPARISON",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Export/reimport comparison preserves stable identity, source assertions, uncertainty and typed residue; no omitted mandatory capability",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/semantic-diff/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-PERSISTENCE",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Persist and reopen novel records with unchanged semantic/provenance identity and query answers",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-WINDOWS",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Installed Windows positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-LINUX",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Installed Linux positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-REVIEW",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Independent reviewer freezes expected results and signs the exact mapping/scope; implementer proposals are insufficient",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/governance/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-SEON-PERMISSIONS",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Explicit local/single-user profile; any organizational claim requires authorization across queries/counts/export",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/policy/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-QUERY-1",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Which requirement carriers have source/version/context and which interpretations lack evidence or are disputed?",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-QUERY-2",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Which requirements connect to a selected process/activity by accepted scoped traceability, versus candidate links?",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-SEON-QUERY-3",
+      "pilot": "SEON",
+      "mandatory": true,
+      "intent": "Which interpretations and consumers become stale after source/mapping changes without rewriting previous claims?",
+      "sourceRefs": [
+        "SEON"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-RIGHTS",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Review source rights and proposed package/component boundary",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/source-reconciliation.md"
+      ],
+      "deliveryIssue": 2149,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-BPMN-MAPPING",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Review notation versus activity/event occurrence and source-specific task/start/gateway/flow mappings. Seed version 2026.1 is not BPMN specification version 2.0.2.",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/ontouml/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-COLLECTION",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Execute novel user-instance collection/import through an approved operation, not a metamodel-node listing or known fixture recognizer",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/authoring.md",
+        "specs/brain-run/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-VALIDATION",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Positive/adverse/boundary tests over reviewed domain constraints with independent expected outcomes",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/canonical-model/README.md",
+        "specs/ontouml/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-EXPORT-COMPARISON",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Export/reimport comparison preserves stable identity, source assertions, uncertainty and typed residue; no omitted mandatory capability",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/semantic-diff/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-PERSISTENCE",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Persist and reopen novel records with unchanged semantic/provenance identity and query answers",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/provenance/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-WINDOWS",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Installed Windows positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-LINUX",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Installed Linux positive/adverse/boundary qualification outside checkout",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-REVIEW",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Independent reviewer freezes expected results and signs the exact mapping/scope; implementer proposals are insufficient",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/governance/README.md"
+      ],
+      "deliveryIssue": 2151,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": []
+    },
+    {
+      "id": "CP-BPMN-PERMISSIONS",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Explicit local/single-user profile; any organizational claim requires authorization across queries/counts/export",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/policy/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-QUERY-1",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Which described tasks have accepted, candidate or absent requirement traceability?",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-QUERY-2",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Which described paths lead from a selected start symbol to a task under explicit sequence-flow/gateway conditions?",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-BPMN-QUERY-3",
+      "pilot": "BPMN",
+      "mandatory": true,
+      "intent": "Which diagram elements lack interpretation or incur export/reimport loss, preserving original IDs/spans?",
+      "sourceRefs": [
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/query-application/README.md"
+      ],
+      "deliveryIssue": 2152,
+      "state": "unfulfilled",
+      "existingEvidenceScope": "source/seed/lifecycle only; no complete pilot proof",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-SHARED-IDENTITY",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "shared-identity",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-SAME-LABEL-DIFFERENT-IDENTITY",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "same-label-different-identity",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-PERSPECTIVE-DISTINCTION",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "perspective-distinction",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-CONFLICTING-ASSERTIONS",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "conflicting-assertions",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-ABSENT-MAPPING",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "absent-mapping",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-PERSISTENT-QUERY-AND-LENS-SWITCH",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "persistent-query-and-lens-switch",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-VERSION-INCOMPATIBILITY",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "version-incompatibility",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-DEPENDENCY-SUBSTITUTION",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "dependency-substitution",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-ACTIVATION-SCOPE-COLLISION",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "activation-scope-collision",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-REPLACEMENT-AND-SUPPORTED-ROLLBACK",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "replacement-and-supported-rollback",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-DEACTIVATION-PRESERVES-KNOWLEDGE",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "deactivation-preserves-knowledge",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    },
+    {
+      "id": "CP-COMPOSE-MAPPING-UPGRADE-PRESERVES-OLD-MEANING",
+      "pilot": "SEON+BPMN",
+      "mandatory": true,
+      "intent": "mapping-upgrade-preserves-old-meaning",
+      "sourceRefs": [
+        "SEON",
+        "BPMN"
+      ],
+      "specRefs": [
+        "specs/cartridges/README.md",
+        "specs/alignment/README.md"
+      ],
+      "deliveryIssue": 2153,
+      "state": "unfulfilled",
+      "expectedResultRef": null,
+      "independentReviewer": null,
+      "semanticDecisionRef": null,
+      "blockerRefs": [
+        "CP-SEON-REVIEW",
+        "CP-BPMN-REVIEW"
+      ]
+    }
+  ],
+  "mandatoryObligationCount": 51,
+  "reviewedObligations": 0,
+  "qualifiedPilots": 0,
+  "approvedScopeReduction": false,
+  "upstreamOwners": {
+    "semanticConformance": [
+      2128,
+      2047
+    ],
+    "existingCatalogRoundtrip": 2066,
+    "installedStandardsProof": 2067,
+    "catalogApplicationPlan": 2138,
+    "visualization": 2137
+  },
+  "reviewRecordTemplate": {
+    "reviewer": null,
+    "independenceDisclosure": null,
+    "packetSha256": null,
+    "sourcePins": [],
+    "obligationIds": [],
+    "decision": null,
+    "rationale": null,
+    "canonicalTargets": [],
+    "expectedResults": [],
+    "limitations": [],
+    "reReviewTriggers": []
+  }
+}

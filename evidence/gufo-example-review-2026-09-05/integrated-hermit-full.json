@@ -1,0 +1,1885 @@
+{
+  "schemaVersion": "ontograph.gufo.hermit-corpus-actual-evidence.v1",
+  "issueRef": "#2099",
+  "productCommit": "aabd3c61b5bff159b4d908ef7e919897e841a9f6",
+  "platform": "windows-x86_64",
+  "manifestRef": "gufo-hermit-corpus:f412254:9-examples",
+  "actualStandardsExecution": true,
+  "installedBinaryDigest": "sha256:15c9239129f5e83aa5aac980d752dcb452888fbae4d59842d147a19aa2081ef5",
+  "pinnedPackageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+  "assumptions": [
+    "ignore-unsupported-datatypes"
+  ],
+  "counts": {
+    "cases": 9,
+    "owlConsistencyExecutions": 9,
+    "owlEntailmentExecutions": 9,
+    "actualOwlExecutions": 18,
+    "actualShaclResultReferences": 9,
+    "persistedReloaded": 18,
+    "roundTripEqual": 18,
+    "positiveExamples": 7,
+    "negativeShaclExamples": 2
+  },
+  "installedSurface": {
+    "cliExecutions": 18,
+    "loopbackApiExecutions": 3,
+    "cliApiReceiptParity": true,
+    "apiReceiptRefs": [
+      "standards-tool-receipt:642d49c20af45bf3e80deaf0d0a8ba0cfaa1e717a22b8d781e3627e1c3aecf35",
+      "standards-tool-receipt:84ed33d7f6913b2c9342138c1fc377aacb4b0ea2ff710ac18533ec376fc0ad7a",
+      "standards-tool-receipt:4f7e0eb053dae7859b6aec350918c909829e604d1ac43e4d933eb5615d978669"
+    ]
+  },
+  "cases": [
+    {
+      "caseRef": "EXT-GUFO-001-ENDURANT-TYPES",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/01-endurant-types/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/01-endurant-types.ttl",
+        "bytes": 5841,
+        "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:642d49c20af45bf3e80deaf0d0a8ba0cfaa1e717a22b8d781e3627e1c3aecf35"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Phase",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Category",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-228"
+          ]
+        },
+        {
+          "termRef": "gufo:RoleMixin",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-230"
+          ]
+        },
+        {
+          "termRef": "gufo:PhaseMixin",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-231"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:Relator"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:001-endurant-types-consistency",
+          "receiptRef": "standards-tool-receipt:642d49c20af45bf3e80deaf0d0a8ba0cfaa1e717a22b8d781e3627e1c3aecf35",
+          "resultRef": "artifact:actual-owl-reasoner-output:b4650422741cbd7906456010b02ae3f5d27b86ed864ff32370386d9ee5ef4a07",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:40ee87c4c24e7d65353d143427f07f765d5ab0bf7e2fbf7bc25b9b48da97b8e0",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:001-endurant-types-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:84ed33d7f6913b2c9342138c1fc377aacb4b0ea2ff710ac18533ec376fc0ad7a",
+          "resultRef": "artifact:actual-owl-reasoner-output:68a02b9cf7999004b33aa17d22a4b4765f06c585d46245434bacb2496694787b",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:40ee87c4c24e7d65353d143427f07f765d5ab0bf7e2fbf7bc25b9b48da97b8e0",
+            "conclusionDigest": "sha256:f200c0fba9b32bebd1ec918e67d7e42931154957218be856ee6aef9f95004835",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:c6ac55d3e666c231cf80c0cb24fcfb30cbd330a72afe7773b3ddbbdfd9564b85",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/001-endurant-types/consistency/receipt.json",
+          "receiptDigest": "sha256:fc126b03525d264e25768e3d2ee1dd760fc24340def39c8c28df3b17d385e589",
+          "resultPath": "store/001-endurant-types/consistency/result.json",
+          "resultDigest": "sha256:d14e06bec13a3df75c1855d9cd5f97b9184806ec9f8fb32e1980f2cbd9c8e1f6",
+          "rawEvidencePath": "store/001-endurant-types/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/001-endurant-types/entailment/receipt.json",
+          "receiptDigest": "sha256:908dc56e2497bede8e209bed584fd9b4695b426e7a20cb4f6eaf4066b332620c",
+          "resultPath": "store/001-endurant-types/entailment/result.json",
+          "resultDigest": "sha256:ee014bc9209f756220c712ab5f060ecd7baed117ce553d632a6fc1d42ff8c6fb",
+          "rawEvidencePath": "store/001-endurant-types/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/01-endurant-types.ttl",
+          "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/001-endurant-types.ttl",
+          "digest": "sha256:40ee87c4c24e7d65353d143427f07f765d5ab0bf7e2fbf7bc25b9b48da97b8e0"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/001-endurant-types.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/001-endurant-types-sortal.ttl",
+          "bytes": 322,
+          "digest": "sha256:f200c0fba9b32bebd1ec918e67d7e42931154957218be856ee6aef9f95004835"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-002-OBJECTS-AND-PARTS",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/02-objects-and-parts/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/02-objects-and-parts.ttl",
+        "bytes": 12747,
+        "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:fed45b3a527f794e993784a55fd19e67a55e98f489918c255fc21f7b7e066877"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Collection",
+          "gufo:ConcreteIndividual",
+          "gufo:FunctionalComplex",
+          "gufo:historicallyDependsOn",
+          "gufo:isCollectionMemberOf",
+          "gufo:isComponentOf",
+          "gufo:isProperPartOf",
+          "gufo:isSubCollectionOf",
+          "gufo:isSubQuantityOf",
+          "gufo:Object",
+          "gufo:Quantity",
+          "gufo:VariableCollection"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:002-objects-and-parts-consistency",
+          "receiptRef": "standards-tool-receipt:fed45b3a527f794e993784a55fd19e67a55e98f489918c255fc21f7b7e066877",
+          "resultRef": "artifact:actual-owl-reasoner-output:bb9d83ab06c27e2fe8b72cca9295c4c76ebdc8819783c9dbb80236dad009d3d3",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:59838464f969f6b106c7616bdadfcaf0aff687cde703148b04f031b82fcb3ed5",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:002-objects-and-parts-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:40ef3db482415aea542d3760441d082799f911f8718ceac05185b16c54f289c1",
+          "resultRef": "artifact:actual-owl-reasoner-output:067fabe74352a7f2a14e7b501c563ba7d6397431ad8c56999ce03b562dcab010",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:59838464f969f6b106c7616bdadfcaf0aff687cde703148b04f031b82fcb3ed5",
+            "conclusionDigest": "sha256:d4bfd1c92ac95f883bdf8bcd3534c48f66622b635c37b00720055d87116062d0",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:b66ecce338d8ae824942fed528b1f15cf07676b9ec690a606e1c061c2c0cb423",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/002-objects-and-parts/consistency/receipt.json",
+          "receiptDigest": "sha256:b775a85303a67c7d01a4fb202099390b87003f73ade7e3fcd5660e55f98cca7a",
+          "resultPath": "store/002-objects-and-parts/consistency/result.json",
+          "resultDigest": "sha256:ccacf46e0d88aa18209d2d016b2fe2e4820602f9e913cfce856f8be3227fc961",
+          "rawEvidencePath": "store/002-objects-and-parts/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/002-objects-and-parts/entailment/receipt.json",
+          "receiptDigest": "sha256:a423b0fcc19ba11454bca3e5140b4c2cb043b0b784283793f7764bed86100ef6",
+          "resultPath": "store/002-objects-and-parts/entailment/result.json",
+          "resultDigest": "sha256:f9726c8322ae150ebce804d8987d55f3574275b914ac9702d1e065602189e738",
+          "rawEvidencePath": "store/002-objects-and-parts/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/02-objects-and-parts.ttl",
+          "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/002-objects-and-parts.ttl",
+          "digest": "sha256:59838464f969f6b106c7616bdadfcaf0aff687cde703148b04f031b82fcb3ed5"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/002-objects-and-parts.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/002-objects-and-parts-sortal.ttl",
+          "bytes": 322,
+          "digest": "sha256:d4bfd1c92ac95f883bdf8bcd3534c48f66622b635c37b00720055d87116062d0"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-003-QUALITIES",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/03-qualities/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/03-qualities.ttl",
+        "bytes": 6040,
+        "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:2bc150f99b3653cadd9483518e9d76c2134d74a081c9619f40f0d1a8542470c6"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:hasQualityValue",
+          "gufo:hasReifiedQualityValue",
+          "gufo:hasValueComponent",
+          "gufo:inheresIn",
+          "gufo:Quality",
+          "gufo:QualityValue"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:003-qualities-consistency",
+          "receiptRef": "standards-tool-receipt:2bc150f99b3653cadd9483518e9d76c2134d74a081c9619f40f0d1a8542470c6",
+          "resultRef": "artifact:actual-owl-reasoner-output:a2c854afae6c5d9193f2cf44ff4d591663fd51e5de72ca879432d1da39b1cb61",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:f09300f72a0d7c71e219406bc4b53489c05254c738ff4d30024ff1a5c780a359",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:003-qualities-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:157fedadda4147bfbab1a0ee12128f7612e4f0786b0aefde4e0bda3aebb3b533",
+          "resultRef": "artifact:actual-owl-reasoner-output:6f118d03aa062d1bf5225a6488e2d09d14339ede657d5f7d653a465f6277f448",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:f09300f72a0d7c71e219406bc4b53489c05254c738ff4d30024ff1a5c780a359",
+            "conclusionDigest": "sha256:1009365f28434702fe094adddb604b85c4956dc36f673447043e55abfdd795c3",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:2a5fbfd2cb33f4f6e5f7e63772ce18f2019a36bdddab12617d866c6c26d24ee1",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/003-qualities/consistency/receipt.json",
+          "receiptDigest": "sha256:8838479b8275a8c988ae1a583111e33bc07162f553cb8e0bb77777b6892f7101",
+          "resultPath": "store/003-qualities/consistency/result.json",
+          "resultDigest": "sha256:c3c01c6aa8cf9f1b8d197c829faa8188bdefa430486b83939303621a702a81cd",
+          "rawEvidencePath": "store/003-qualities/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/003-qualities/entailment/receipt.json",
+          "receiptDigest": "sha256:60bf02b1c1a1810bc3a5320b6a77c646ed813e549939f7a917bb3514aa9d75f3",
+          "resultPath": "store/003-qualities/entailment/result.json",
+          "resultDigest": "sha256:9f4b319d480e84f0ae8fd154789a38687b3605b4668268885828227ef937cf34",
+          "rawEvidencePath": "store/003-qualities/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/03-qualities.ttl",
+          "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/003-qualities.ttl",
+          "digest": "sha256:f09300f72a0d7c71e219406bc4b53489c05254c738ff4d30024ff1a5c780a359"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/003-qualities.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/003-qualities-sortal.ttl",
+          "bytes": 319,
+          "digest": "sha256:1009365f28434702fe094adddb604b85c4956dc36f673447043e55abfdd795c3"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-004-RELATORS",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/04-relators/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/04-relators.ttl",
+        "bytes": 6498,
+        "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:f2061ad99fc14266f850ef35ecdc0e0e32a871a38d5de700082dc25f06a1da32"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:externallyDependsOn",
+          "gufo:ExtrinsicMode",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:inheresIn",
+          "gufo:isAspectProperPartOf",
+          "gufo:isDerivedFrom",
+          "gufo:MaterialRelationshipType",
+          "gufo:mediates",
+          "gufo:Relator"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:004-relators-consistency",
+          "receiptRef": "standards-tool-receipt:f2061ad99fc14266f850ef35ecdc0e0e32a871a38d5de700082dc25f06a1da32",
+          "resultRef": "artifact:actual-owl-reasoner-output:2d4a25c6743b52a40298567ebc88ca18a3adaeb3c7474b3070aaa1dfe3abf779",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:ae208b4d489793cc5516d2ae323b842411adae9260c4b33fe5cdccb792578ac8",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:004-relators-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:9b9cc933837b074bac8fced0c2a47cf87033b5fe597f8731e1594f76e40b5851",
+          "resultRef": "artifact:actual-owl-reasoner-output:5f67be0e63fca84a14724aaa6faf90b91215ee3bccbe02986a1e4c4f0bcf2c31",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:ae208b4d489793cc5516d2ae323b842411adae9260c4b33fe5cdccb792578ac8",
+            "conclusionDigest": "sha256:912ad4e1dacb1bbd40f50ddaf29047d89f092847980ae01667d498db3ff4fce5",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:e7de97eeda7e8860efad45310fadfb3740065243682bcfc3972405ba70b6b291",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/004-relators/consistency/receipt.json",
+          "receiptDigest": "sha256:95b96f2a37babd02667970fc8754833b237656c7faedb68c48d5252ec2d5ecf3",
+          "resultPath": "store/004-relators/consistency/result.json",
+          "resultDigest": "sha256:660b926aa4e0166a062f5f395543165e6f49fa1cdd0bd84cd7cbb726b1ced409",
+          "rawEvidencePath": "store/004-relators/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/004-relators/entailment/receipt.json",
+          "receiptDigest": "sha256:7a1188ee5a2b81fa416eab587e3c9588c9724b7b15822aa4e55711b0f6dcbf5d",
+          "resultPath": "store/004-relators/entailment/result.json",
+          "resultDigest": "sha256:fdee3c8007071ea9985286f4ffc0b6bfc245b46d95f720d5ca38f2e5ba62ab79",
+          "rawEvidencePath": "store/004-relators/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/04-relators.ttl",
+          "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/004-relators.ttl",
+          "digest": "sha256:ae208b4d489793cc5516d2ae323b842411adae9260c4b33fe5cdccb792578ac8"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/004-relators.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/004-relators-sortal.ttl",
+          "bytes": 316,
+          "digest": "sha256:912ad4e1dacb1bbd40f50ddaf29047d89f092847980ae01667d498db3ff4fce5"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-005-EVENTS",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/05-events/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/05-events.ttl",
+        "bytes": 6202,
+        "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:05b8d4051028c448fc10b026f57cb070431c92ba307435e0485ae9b5521ce0f3"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:historicallyDependsOn",
+          "gufo:inheresIn",
+          "gufo:IntrinsicMode",
+          "gufo:isEventProperPartOf",
+          "gufo:manifestedIn",
+          "gufo:participatedIn",
+          "gufo:Participation",
+          "gufo:wasCreatedIn",
+          "gufo:wasTerminatedIn"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:005-events-consistency",
+          "receiptRef": "standards-tool-receipt:05b8d4051028c448fc10b026f57cb070431c92ba307435e0485ae9b5521ce0f3",
+          "resultRef": "artifact:actual-owl-reasoner-output:081a3561bca6706a406fe2fb28210ba650a583dbcb42992e9e10be1cb53c16db",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:e11263e0e1dbfeac59d77eb891402ae872130063331b37233ca55e0f644e4165",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:005-events-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:e9ee53064e4e7281649aeeaaa91015a16e29af82853b9faff01633f5ca874461",
+          "resultRef": "artifact:actual-owl-reasoner-output:b60735d2adcd631c20b34b8a4d300a948df271d1762ac99889290158edc368c0",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:e11263e0e1dbfeac59d77eb891402ae872130063331b37233ca55e0f644e4165",
+            "conclusionDigest": "sha256:d1a5598241401eb01a10870340b20f149a2cd29deabb49e26d7df61968ffe444",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:179c12687997b4d2a61811d61251627b39fe12f1a8737de4b034ba3591735e95",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/005-events/consistency/receipt.json",
+          "receiptDigest": "sha256:88ab3c016700e28da994e81b1c418882dbf5bd3c616eb2f39bfe595ce6672435",
+          "resultPath": "store/005-events/consistency/result.json",
+          "resultDigest": "sha256:a168d4f01563bf257cf02ba570f75bf9433a6a5d588306866ade736f9678c450",
+          "rawEvidencePath": "store/005-events/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/005-events/entailment/receipt.json",
+          "receiptDigest": "sha256:7b735a8cd8c6ade7b539113b9b3efacbeaacec339766dba896c6caabefa9da60",
+          "resultPath": "store/005-events/entailment/result.json",
+          "resultDigest": "sha256:72d465b48a01fac99ef2dbe922d319df35caaef9f599df71538423fca55de98b",
+          "rawEvidencePath": "store/005-events/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/05-events.ttl",
+          "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/005-events.ttl",
+          "digest": "sha256:e11263e0e1dbfeac59d77eb891402ae872130063331b37233ca55e0f644e4165"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/005-events.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/005-events-sortal.ttl",
+          "bytes": 314,
+          "digest": "sha256:d1a5598241401eb01a10870340b20f149a2cd29deabb49e26d7df61968ffe444"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-006-SITUATIONS",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/06-situations/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/06-situations.ttl",
+        "bytes": 10101,
+        "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:850c636a9073f23f019364e49ba2b6158c5db8d1c76c44000b899d35d8285953"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Phase",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:broughtAbout",
+          "gufo:ComparativeRelationshipType",
+          "gufo:concernsConstitutedEndurant",
+          "gufo:concernsNonRigidType",
+          "gufo:concernsQualityType",
+          "gufo:concernsQualityValue",
+          "gufo:concernsRelatedEndurant",
+          "gufo:concernsRelationshipType",
+          "gufo:concernsTemporaryWhole",
+          "gufo:contributedToTrigger",
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:hasBeginPointInXSDDateTimeStamp",
+          "gufo:hasEndPointInXSDDate",
+          "gufo:hasEndPointInXSDDateTimeStamp",
+          "gufo:hasQualityValue",
+          "gufo:isDerivedFrom",
+          "gufo:Quality",
+          "gufo:QualityValueAttributionSituation",
+          "gufo:Quantity",
+          "gufo:Situation",
+          "gufo:standsInQualifiedAttribution",
+          "gufo:standsInQualifiedConstitution",
+          "gufo:standsInQualifiedInstantiation",
+          "gufo:standsInQualifiedParthood",
+          "gufo:standsInQualifiedRelationship",
+          "gufo:TemporaryConstitutionSituation",
+          "gufo:TemporaryInstantiationSituation",
+          "gufo:TemporaryParthoodSituation",
+          "gufo:TemporaryRelationshipSituation"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:006-situations-consistency",
+          "receiptRef": "standards-tool-receipt:850c636a9073f23f019364e49ba2b6158c5db8d1c76c44000b899d35d8285953",
+          "resultRef": "artifact:actual-owl-reasoner-output:e6b4a2bdaa0a182ff165f3d130122682a09086935977517b3ee306fdc0272197",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:61c7ad440a101631ea676af447b1fa38da13657b53b37133bee5f8a22b025b2e",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:006-situations-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:2b62ed5b524d2bde39efa40b695e52ad3faa575974f91c37aaf18a039fd82277",
+          "resultRef": "artifact:actual-owl-reasoner-output:76d6bffc45bbb85692947a8c81ebe7d9bdff5e1a1d2668d5189a48f052e4ca4c",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:61c7ad440a101631ea676af447b1fa38da13657b53b37133bee5f8a22b025b2e",
+            "conclusionDigest": "sha256:6e733b59eb0ecacf10ef54c173b89c3b175da3eddcebf07c6193ab12e123acdc",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:c07247ed32ecb2a3a64f149e0d75b64b3b6c825ee2ed196ab8d95d2f7cba7d65",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/006-situations/consistency/receipt.json",
+          "receiptDigest": "sha256:6526a4a3514e9ffa639ae1166a710300f8d338c68ef4fa004d90262731db507a",
+          "resultPath": "store/006-situations/consistency/result.json",
+          "resultDigest": "sha256:016060debe3b123877df4edd0a06efd1c1c51c9a6b3a1f5826107b73be19ac86",
+          "rawEvidencePath": "store/006-situations/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/006-situations/entailment/receipt.json",
+          "receiptDigest": "sha256:cb8275e9787b8b795c164bdc989e14b6032785c98a502ab79c6bd8e22cd753f1",
+          "resultPath": "store/006-situations/entailment/result.json",
+          "resultDigest": "sha256:9cb246f7b35fd7e595405849e244fed5c75cf9269ad83c28ebb683532e93c983",
+          "rawEvidencePath": "store/006-situations/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/06-situations.ttl",
+          "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/006-situations.ttl",
+          "digest": "sha256:61c7ad440a101631ea676af447b1fa38da13657b53b37133bee5f8a22b025b2e"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/006-situations.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/006-situations-sortal.ttl",
+          "bytes": 319,
+          "digest": "sha256:6e733b59eb0ecacf10ef54c173b89c3b175da3eddcebf07c6193ab12e123acdc"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+      "caseKind": "positive-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/07-higher-order-types/ontology.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/07-higher-order-types.ttl",
+        "bytes": 4689,
+        "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:087a4f51b828be66afd08df4050e98e1caf08db3043ab574c5c8212cd51c2c38"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:categorizes",
+          "gufo:ConcreteIndividualType",
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:007-higher-order-types-consistency",
+          "receiptRef": "standards-tool-receipt:087a4f51b828be66afd08df4050e98e1caf08db3043ab574c5c8212cd51c2c38",
+          "resultRef": "artifact:actual-owl-reasoner-output:39b789912fcc1428d63e79345d32364aba11468ea86ee6ba442247f48d16a676",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:2c38cfd846187ea95a93816bd320c34e3acc9415e1f3ad4d42270953ee8d4e05",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:007-higher-order-types-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:654f8fb7658f3c76df3536f8aff5c88bf4e23ec7ee0bb8676935558d14c0336f",
+          "resultRef": "artifact:actual-owl-reasoner-output:a60f7d9eebef216ab8b28ba1be0d4875f6bf10fdc888af2cf2a756c8d438d465",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:2c38cfd846187ea95a93816bd320c34e3acc9415e1f3ad4d42270953ee8d4e05",
+            "conclusionDigest": "sha256:377a9c24f99b7513bf0994d9c7ec4d7959e60233f7672bed293c2a2c2c0aa42f",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "conformant",
+        "resultRef": "shacl-sparql-result:c2aa0b4f19d0f4b73a7856af0741fde6a7942472e65efac76d33125da6009ecc",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/007-higher-order-types/consistency/receipt.json",
+          "receiptDigest": "sha256:b1be6f6c0d332c750f9a3f91258e25887d762a91cab33d98928095d966b6e0d0",
+          "resultPath": "store/007-higher-order-types/consistency/result.json",
+          "resultDigest": "sha256:f365888d190abe31a0c65a40181a945aee840ece60e68e9a299811670c063fd8",
+          "rawEvidencePath": "store/007-higher-order-types/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/007-higher-order-types/entailment/receipt.json",
+          "receiptDigest": "sha256:5a58d23b71759a5ba6f3cbd26074be5d9aead978b41b932e948df3f403f05e1a",
+          "resultPath": "store/007-higher-order-types/entailment/result.json",
+          "resultDigest": "sha256:c9423bdf270517b8e045f43c5c76e46a710f880c87383be866002ea87f352884",
+          "rawEvidencePath": "store/007-higher-order-types/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/07-higher-order-types.ttl",
+          "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/007-higher-order-types.ttl",
+          "digest": "sha256:2c38cfd846187ea95a93816bd320c34e3acc9415e1f3ad4d42270953ee8d4e05"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/007-higher-order-types.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/007-higher-order-types-sortal.ttl",
+          "bytes": 326,
+          "digest": "sha256:377a9c24f99b7513bf0994d9c7ec4d7959e60233f7672bed293c2a2c2c0aa42f"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+      "caseKind": "negative-shacl-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/01-endurant-types/invalid-example.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/08-invalid-endurant-types.ttl",
+        "bytes": 2166,
+        "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:4f7e0eb053dae7859b6aec350918c909829e604d1ac43e4d933eb5615d978669"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Category",
+          "batchRef": "ONTOUML-CANON-BATCH-039",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-228"
+          ]
+        },
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:Role",
+          "batchRef": "ONTOUML-CANON-BATCH-038",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-227"
+          ]
+        },
+        {
+          "termRef": "gufo:SubKind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:008-invalid-endurant-types-consistency",
+          "receiptRef": "standards-tool-receipt:4f7e0eb053dae7859b6aec350918c909829e604d1ac43e4d933eb5615d978669",
+          "resultRef": "artifact:actual-owl-reasoner-output:6739ea7226edc43e2ba624e74e3c14b36e6ea53f5360cdc8a873a430ce6c4ea3",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:7c6adc10645cc00d74e803000e2608c0c0d9735512f1bf5da2147cb4164f674b",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:008-invalid-endurant-types-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:150eb85f80c40cc8443f4ae33115ad4cd699c68a350b2a1d0e3fe64c99f9dcfa",
+          "resultRef": "artifact:actual-owl-reasoner-output:befdb88068b9b7a2ae175f30ad208c6416ff0a0ef51283d9b04836cd4642bad6",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:7c6adc10645cc00d74e803000e2608c0c0d9735512f1bf5da2147cb4164f674b",
+            "conclusionDigest": "sha256:6af25a9b955559b6a1373deb59fc5caae7f1b6b38f13467d06c5ab090d0543b4",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "nonconformant",
+        "resultRef": "shacl-sparql-result:65d6a3e8b292022e495ac6520df914d4e20e4bd30266cba2a98c64d8e935f7d0",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/008-invalid-endurant-types/consistency/receipt.json",
+          "receiptDigest": "sha256:4cd4b6d487e9bd3bf241b6a97cbecc09394061b26a550fa1c3261c29994087d5",
+          "resultPath": "store/008-invalid-endurant-types/consistency/result.json",
+          "resultDigest": "sha256:63a407e718ab6b150823f4e52125964d18d9bce4a1a013527a2cbee1af150dc9",
+          "rawEvidencePath": "store/008-invalid-endurant-types/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/008-invalid-endurant-types/entailment/receipt.json",
+          "receiptDigest": "sha256:9e17f2289f33526222175ce4431113a71424d02351b66be5f2dd07e6de20551b",
+          "resultPath": "store/008-invalid-endurant-types/entailment/result.json",
+          "resultDigest": "sha256:024ce2a0dbf25e57cc8e48b42b25f8428f156555a3e6e062496e9247b0f70feb",
+          "rawEvidencePath": "store/008-invalid-endurant-types/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/08-invalid-endurant-types.ttl",
+          "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/008-invalid-endurant-types.ttl",
+          "digest": "sha256:7c6adc10645cc00d74e803000e2608c0c0d9735512f1bf5da2147cb4164f674b"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/008-invalid-endurant-types.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/008-invalid-endurant-types-sortal.ttl",
+          "bytes": 330,
+          "digest": "sha256:6af25a9b955559b6a1373deb59fc5caae7f1b6b38f13467d06c5ab090d0543b4"
+        }
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-009-INVALID-HIGHER-ORDER-TYPES",
+      "caseKind": "negative-shacl-example",
+      "source": {
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "upstreamPath": "examples/07-higher-order-types/invalid-example.ttl",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/09-invalid-higher-order-types.ttl",
+        "bytes": 2215,
+        "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+        "licenseExpression": "CC-BY-4.0",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "attributionRequired": true
+      },
+      "parse": {
+        "state": "parsed",
+        "actualExecutionReceiptRef": "standards-tool-receipt:1915e24f8b4a02e24453cec1497935783ba9c646a9229ffb34ecad93066b21cf"
+      },
+      "supportedOntographProjection": [
+        {
+          "termRef": "gufo:Kind",
+          "batchRef": "ONTOUML-CANON-BATCH-037",
+          "matrixRowRefs": [
+            "MATRIX-ITEM-226",
+            "MATRIX-ITEM-227"
+          ]
+        }
+      ],
+      "unsupportedResidue": {
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ],
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false
+      },
+      "owl": {
+        "consistency": {
+          "requestRef": "owl-reasoner-request:009-invalid-higher-order-types-consistency",
+          "receiptRef": "standards-tool-receipt:1915e24f8b4a02e24453cec1497935783ba9c646a9229ffb34ecad93066b21cf",
+          "resultRef": "artifact:actual-owl-reasoner-output:7700ae0bef100479e65355df2a3e9fecec1d52b0368a7277efd3902a9db87e83",
+          "semanticStatus": "consistent",
+          "consistent": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+            "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "consistency",
+            "semanticStatus": "consistent",
+            "entailed": null,
+            "consistent": true,
+            "premiseDigest": "sha256:8706db3c285a25a2b7ac6bb85fb809465c4c253fa198c4fecd02e9e48d6d0a77",
+            "conclusionDigest": null,
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.\r\n",
+              "stdoutDigest": "sha256:5c4fd109cfac1b313fb2afa428950a2659d48b23fad2d67508e5883664075f37",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        },
+        "entailment": {
+          "requestRef": "owl-reasoner-request:009-invalid-higher-order-types-sortal-entailment",
+          "receiptRef": "standards-tool-receipt:f826979f4876906a732955f62c5914a76b6c6b4f65c64088ade71e383827d112",
+          "resultRef": "artifact:actual-owl-reasoner-output:c4e50466de66678943ea136a56d6c443e8c457ef354bdb10d098f71380e119a4",
+          "semanticStatus": "entailed",
+          "entailed": true,
+          "actualStandardsExecution": true,
+          "assumptions": [
+            "ignore-unsupported-datatypes"
+          ],
+          "rawEngineEvidence": {
+            "stdout": "true\r\n",
+            "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+            "stderr": "",
+            "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "normalizedResult": {
+            "schemaVersion": "ontograph.owl-reasoner.result.v1",
+            "operation": "entailment",
+            "semanticStatus": "entailed",
+            "entailed": true,
+            "consistent": null,
+            "premiseDigest": "sha256:8706db3c285a25a2b7ac6bb85fb809465c4c253fa198c4fecd02e9e48d6d0a77",
+            "conclusionDigest": "sha256:4942994d2380ecd2be12663a877c7eb56e974d6eea461a04c8f93de5eee3b558",
+            "pinRef": "owl-reasoner:hermit-1.4.5.456-via-robot-1.9.10",
+            "packageDigest": "sha256:16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+            "runtimeDigest": "sha256:870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+            "assumptions": [
+              "ignore-unsupported-datatypes"
+            ],
+            "rawEngineEvidence": {
+              "stdout": "true\r\n",
+              "stdoutDigest": "sha256:49628009a4b6e1f4b66b9f3b6842423d60085f9ec94467f3ccbbf28862d78f7a",
+              "stderr": "",
+              "stderrDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "boundary": {
+              "actualOwlExecution": true,
+              "sourceMutated": false,
+              "canonicalStateMutated": false,
+              "createsDecisionOrPromotion": false,
+              "claimsTruthOrConformance": false
+            }
+          }
+        }
+      },
+      "shacl": {
+        "state": "nonconformant",
+        "resultRef": "shacl-sparql-result:81d764760737ffdad97e405f706ebf7417691f37836a54c3d6f3c5c033a31cb4",
+        "actualStandardsExecution": true,
+        "responsibleIssue": "#2060"
+      },
+      "toolExecutionHealth": {
+        "consistency": "success",
+        "entailment": "success",
+        "actualStandardsExecution": true
+      },
+      "persistenceAndReload": {
+        "consistency": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/009-invalid-higher-order-types/consistency/receipt.json",
+          "receiptDigest": "sha256:e5afd22e489b7ab1d35c7a6e2c22c36838497d75fac7e1716b12df6b217dce65",
+          "resultPath": "store/009-invalid-higher-order-types/consistency/result.json",
+          "resultDigest": "sha256:24f54c87ba41b3439618517b18752cd3b1eefa1e7ba9b1a2e0f9d7d04427519d",
+          "rawEvidencePath": "store/009-invalid-higher-order-types/consistency/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:bddac571bfcbdf51120f69ba6f37d8ec6c39e3d1d32207a23d834bee61c6de20",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        },
+        "entailment": {
+          "status": "persisted-reloaded",
+          "receiptPath": "store/009-invalid-higher-order-types/entailment/receipt.json",
+          "receiptDigest": "sha256:c48fa766f1d99d36fe974a3e7ce3093c156da31508de675191ae56eec6ba701d",
+          "resultPath": "store/009-invalid-higher-order-types/entailment/result.json",
+          "resultDigest": "sha256:0edbf84b934624ae97b5f21583ff1efc9d51535ddc55841ccf56ee4d2c55cdf5",
+          "rawEvidencePath": "store/009-invalid-higher-order-types/entailment/raw-engine-evidence.json",
+          "rawEvidenceDigest": "sha256:2e6f903f35f92f197fc5cab9cc4160bbae3b9d176d190aacd4394e2b0b22e4da",
+          "reloadVerified": true,
+          "roundTripEqual": true
+        }
+      },
+      "roundTripComparison": {
+        "consistency": true,
+        "entailment": true
+      },
+      "retainedEvidence": {
+        "sourceRaw": {
+          "path": "fixtures/gufo-interoperability/shacl-sparql/examples/09-invalid-higher-order-types.ttl",
+          "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417"
+        },
+        "normalizedPremise": {
+          "path": ".tmp/local-qualified-current/hermit-full/premises/009-invalid-higher-order-types.ttl",
+          "digest": "sha256:8706db3c285a25a2b7ac6bb85fb809465c4c253fa198c4fecd02e9e48d6d0a77"
+        },
+        "normalizationReceiptPath": ".tmp/local-qualified-current/hermit-full/normalization/009-invalid-higher-order-types.json",
+        "conclusion": {
+          "path": "fixtures/gufo-interoperability/owl-reasoner/external-corpus/conclusions/009-invalid-higher-order-types-sortal.ttl",
+          "bytes": 334,
+          "digest": "sha256:4942994d2380ecd2be12663a877c7eb56e974d6eea461a04c8f93de5eee3b558"
+        }
+      }
+    }
+  ],
+  "adverse": {
+    "publicationDrift": {
+      "sourceCaseRef": "EXT-GUFO-010-PUBLISHED-COPY-DRIFT",
+      "disposition": "review-needed",
+      "silentMergeAllowed": false,
+      "responsibleIssue": "#2058"
+    },
+    "toolchainFailure": {
+      "status": "unsupported",
+      "receiptRef": "standards-tool-receipt:da1baae064597d31a99cfc649a67f609655a4cdce15a5710c2d51c92563507b4",
+      "actualStandardsExecution": false,
+      "semanticFailure": false
+    },
+    "persistenceTamper": {
+      "expectedDigest": "sha256:fc126b03525d264e25768e3d2ee1dd760fc24340def39c8c28df3b17d385e589",
+      "tamperedDigest": "sha256:3813d81d99587a25ecc9d4e898d7e4b9a94bbbeec3038fb60cbee9d04a68425a",
+      "detected": true
+    }
+  },
+  "boundary": {
+    "fixtureExpectationPresentedAsActual": false,
+    "owlAndShaclCollapsed": false,
+    "toolFailurePresentedAsSemanticFailure": false,
+    "unsupportedResidueMayBeDropped": false,
+    "rawAndNormalizedEvidenceRequired": true,
+    "sourceMutated": false,
+    "canonicalStateMutated": false,
+    "createsAdoptionConformancePromotionOrReleaseApproval": false,
+    "sourceNonmutationVerified": true,
+    "installedCliAndLoopbackApiExercised": true,
+    "allUnsupportedResidueRetained": true
+  }
+}
