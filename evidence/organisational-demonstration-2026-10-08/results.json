@@ -1,0 +1,1607 @@
+{
+  "adopted": false,
+  "candidateSemantics": true,
+  "cases": [
+    {
+      "activeRoles": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalDataDigest": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalDataUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphDigest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89",
+      "id": "valid",
+      "instanceDigest": "sha256:44b1c567a655afbd4798a01638f95fc97696643c65ed9775212d3b2dc5574458",
+      "owlConsistent": true,
+      "reimportEqual": true,
+      "reloadGraphIsomorphic": true,
+      "shaclConforms": true,
+      "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceModelDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "typedLoss": [
+        "full modal rigidity and identity axioms",
+        "complete normative interaction inventory",
+        "all unsupported source families and qualified association cardinalities",
+        "independent preservation proof and installed qualification"
+      ]
+    },
+    {
+      "activeRoles": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalDataDigest": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalDataUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphDigest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd",
+      "id": "missing-cwa",
+      "instanceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "owlConsistent": true,
+      "reimportEqual": true,
+      "reloadGraphIsomorphic": true,
+      "shaclConforms": false,
+      "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceModelDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceOutcome": "invalid",
+      "typedLoss": [
+        "full modal rigidity and identity axioms",
+        "complete normative interaction inventory",
+        "all unsupported source families and qualified association cardinalities",
+        "independent preservation proof and installed qualification"
+      ]
+    },
+    {
+      "activeRoles": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalDataDigest": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalDataUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphDigest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd",
+      "id": "missing-owa",
+      "instanceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "owlConsistent": true,
+      "reimportEqual": true,
+      "reloadGraphIsomorphic": true,
+      "shaclConforms": false,
+      "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceModelDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceOutcome": "unknown",
+      "typedLoss": [
+        "full modal rigidity and identity axioms",
+        "complete normative interaction inventory",
+        "all unsupported source families and qualified association cardinalities",
+        "independent preservation proof and installed qualification"
+      ]
+    },
+    {
+      "activeRoles": [
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalDataDigest": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalDataUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphDigest": "sha256:5862a18ce3fef64a975d5a4fbcd2a1b7dbe697e3e3e42ed506088432b50e1d89",
+      "id": "end-boundary",
+      "instanceDigest": "sha256:44b1c567a655afbd4798a01638f95fc97696643c65ed9775212d3b2dc5574458",
+      "owlConsistent": true,
+      "reimportEqual": true,
+      "reloadGraphIsomorphic": true,
+      "shaclConforms": true,
+      "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceModelDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "typedLoss": [
+        "full modal rigidity and identity axioms",
+        "complete normative interaction inventory",
+        "all unsupported source families and qualified association cardinalities",
+        "independent preservation proof and installed qualification"
+      ]
+    },
+    {
+      "activeRoles": [],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:2b1011c1ce1f38c7174832a6348d800f492c2eabb9d7cdf1c408296ea6b3fd5b"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:2b1011c1ce1f38c7174832a6348d800f492c2eabb9d7cdf1c408296ea6b3fd5b"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:2b1011c1ce1f38c7174832a6348d800f492c2eabb9d7cdf1c408296ea6b3fd5b"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalDataDigest": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalDataUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphDigest": "sha256:2b1011c1ce1f38c7174832a6348d800f492c2eabb9d7cdf1c408296ea6b3fd5b",
+      "id": "empty-role",
+      "instanceDigest": "sha256:9373931104d1d90517c08324a44622eafc75a548ab29ec21cec3043504082526",
+      "owlConsistent": true,
+      "reimportEqual": true,
+      "reloadGraphIsomorphic": true,
+      "shaclConforms": true,
+      "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceModelDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "typedLoss": [
+        "full modal rigidity and identity axioms",
+        "complete normative interaction inventory",
+        "all unsupported source families and qualified association cardinalities",
+        "independent preservation proof and installed qualification"
+      ]
+    }
+  ],
+  "cliApiParity": [
+    "composition-project",
+    "composition-readback",
+    "OWL-consistency",
+    "SHACL",
+    "organisational-SELECT"
+  ],
+  "comparison": "identical importer report and generated bytes after source-assisted reimport; RDF isomorphism and selected query answers after persisted reload; no target-only inverse",
+  "comprehensiveStagesPassed": 0,
+  "examples": [
+    {
+      "caseRef": "EXT-GUFO-001-ENDURANT-TYPES",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 5841,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/01-endurant-types.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/01-endurant-types/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:Relator"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-002-OBJECTS-AND-PARTS",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 12747,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/02-objects-and-parts.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/02-objects-and-parts/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Collection",
+          "gufo:ConcreteIndividual",
+          "gufo:FunctionalComplex",
+          "gufo:historicallyDependsOn",
+          "gufo:isCollectionMemberOf",
+          "gufo:isComponentOf",
+          "gufo:isProperPartOf",
+          "gufo:isSubCollectionOf",
+          "gufo:isSubQuantityOf",
+          "gufo:Object",
+          "gufo:Quantity",
+          "gufo:VariableCollection"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-003-QUALITIES",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 6040,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/03-qualities.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/03-qualities/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:hasQualityValue",
+          "gufo:hasReifiedQualityValue",
+          "gufo:hasValueComponent",
+          "gufo:inheresIn",
+          "gufo:Quality",
+          "gufo:QualityValue"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-004-RELATORS",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 6498,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/04-relators.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/04-relators/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:externallyDependsOn",
+          "gufo:ExtrinsicMode",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:inheresIn",
+          "gufo:isAspectProperPartOf",
+          "gufo:isDerivedFrom",
+          "gufo:MaterialRelationshipType",
+          "gufo:mediates",
+          "gufo:Relator"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-005-EVENTS",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 6202,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/05-events.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/05-events/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:historicallyDependsOn",
+          "gufo:inheresIn",
+          "gufo:IntrinsicMode",
+          "gufo:isEventProperPartOf",
+          "gufo:manifestedIn",
+          "gufo:participatedIn",
+          "gufo:Participation",
+          "gufo:wasCreatedIn",
+          "gufo:wasTerminatedIn"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-006-SITUATIONS",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 10101,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/06-situations.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/06-situations/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:broughtAbout",
+          "gufo:ComparativeRelationshipType",
+          "gufo:concernsConstitutedEndurant",
+          "gufo:concernsNonRigidType",
+          "gufo:concernsQualityType",
+          "gufo:concernsQualityValue",
+          "gufo:concernsRelatedEndurant",
+          "gufo:concernsRelationshipType",
+          "gufo:concernsTemporaryWhole",
+          "gufo:contributedToTrigger",
+          "gufo:Event",
+          "gufo:FunctionalComplex",
+          "gufo:hasBeginPointInXSDDate",
+          "gufo:hasBeginPointInXSDDateTimeStamp",
+          "gufo:hasEndPointInXSDDate",
+          "gufo:hasEndPointInXSDDateTimeStamp",
+          "gufo:hasQualityValue",
+          "gufo:isDerivedFrom",
+          "gufo:Quality",
+          "gufo:QualityValueAttributionSituation",
+          "gufo:Quantity",
+          "gufo:Situation",
+          "gufo:standsInQualifiedAttribution",
+          "gufo:standsInQualifiedConstitution",
+          "gufo:standsInQualifiedInstantiation",
+          "gufo:standsInQualifiedParthood",
+          "gufo:standsInQualifiedRelationship",
+          "gufo:TemporaryConstitutionSituation",
+          "gufo:TemporaryInstantiationSituation",
+          "gufo:TemporaryParthoodSituation",
+          "gufo:TemporaryRelationshipSituation"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": true,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "conformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 4689,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/07-higher-order-types.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/07-higher-order-types/ontology.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:categorizes",
+          "gufo:ConcreteIndividualType",
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": false,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "nonconformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 2166,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/08-invalid-endurant-types.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/01-endurant-types/invalid-example.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex"
+        ]
+      }
+    },
+    {
+      "caseRef": "EXT-GUFO-009-INVALID-HIGHER-ORDER-TYPES",
+      "currentProductGeneration": {
+        "capability": "general transformation of this complete upstream example unsupported",
+        "state": "not-executed"
+      },
+      "currentProductReferenceGraph": {
+        "conforms": false,
+        "operation": "Jena SHACL",
+        "persistenceReload": true,
+        "state": "executed"
+      },
+      "currentReferenceBaseline": {
+        "reason": "historical upstream Pellet/pySHACL retained separately",
+        "state": "not-executed"
+      },
+      "historicalReference": {
+        "date": "2026-09-05",
+        "evidence": "docs/acceptance/gufo-example-review-2026-09-05.md",
+        "owl": "consistent",
+        "shacl": "nonconformant"
+      },
+      "source": {
+        "attributionRequired": true,
+        "bytes": 2215,
+        "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+        "digest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+        "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/09-invalid-higher-order-types.ttl",
+        "licenseExpression": "CC-BY-4.0",
+        "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+        "rightsStatus": "reviewed-copy-permitted-with-attribution",
+        "upstreamPath": "examples/07-higher-order-types/invalid-example.ttl"
+      },
+      "unsupportedResidue": {
+        "disposition": "retain-addressable-without-coercion",
+        "mayBeDropped": false,
+        "state": "structured-capability-gap",
+        "termRefs": [
+          "gufo:FunctionalComplex",
+          "gufo:partitions",
+          "gufo:Type"
+        ]
+      }
+    }
+  ],
+  "heldOut": false,
+  "inputNonmutation": true,
+  "installedWindows": true,
+  "linux": "not-executed: supplementary; #2067/C6 unchanged",
+  "repeatEquivalent": true,
+  "runtimeCandidate": "66ca35dcc91bec9bbf583844e772e3955fb8c810",
+  "schemaVersion": "ontograph.organisational-demo-results.public-v1"
+}

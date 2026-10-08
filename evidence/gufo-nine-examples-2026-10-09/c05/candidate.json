@@ -1,0 +1,1046 @@
+{
+  "entities": {
+    "https://purl.org/nemo/gufo-examples/events#": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A small ontology of a football tournament, illustrating gUFO's representation of events, their parts, and their relations to the endurants that participate in, are created or terminated in, or manifest aspects in them."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [
+        "https://purl.org/nemo/gufo#"
+      ],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "gUFO example 05: Events"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": true,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#AlexRivera": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Player"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Alex Rivera"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/events#participatedInMatch": [
+          "https://purl.org/nemo/gufo-examples/events#Final2026",
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal1"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Club": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Club"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Final": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/events#SemiFinal"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Final"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/events#Match"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Final2026": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Final"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Historically depends on both semi-finals: it could not have taken place, with these two finalists, without them."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "2026 World Championship final"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#historicallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal1",
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal2"
+        ],
+        "http://purl.org/nemo/gufo#isEventProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/events#WorldChampionship2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {
+        "http://purl.org/nemo/gufo#hasBeginPointInXSDDate": [
+          {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "language": null,
+            "lexical": "2026-07-19"
+          }
+        ]
+      }
+    },
+    "https://purl.org/nemo/gufo-examples/events#JordanLee": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Player"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Jordan Lee"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/events#participatedInMatch": [
+          "https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal",
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal1"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#JordanLeeKneeInjury": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#KneeInjury"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The injury is a standing intrinsic mode of Jordan Lee; it flared up (manifested) specifically during semi-final 1, which is why Jordan Lee did not take part in the final."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Jordan Lee's knee injury"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#manifestedIn": [
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal1"
+        ],
+        "https://purl.org/nemo/gufo-examples/events#hadKneeInjury": [
+          "https://purl.org/nemo/gufo-examples/events#JordanLee"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "http://purl.org/nemo/gufo#Participation"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The alternative, reified pattern for participation: rather than asserting :JordanLee :participatedInMatch :Final2026 directly, the participation itself is a sub-event of the final, which is useful when the participation needs its own properties (e.g. minutes played)."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Jordan Lee's participation in the 2026 final"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isEventProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/events#Final2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#KneeInjury": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A lasting intrinsic mode of a player, which may manifest itself in specific matches (see gufo:manifestedIn below) without that manifestation being the injury's only occurrence."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Knee injury"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#IntrinsicMode"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Match": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Match"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Event"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#OpeningCeremony": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Opening ceremony"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Event"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#OpeningCeremony"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "2026 World Championship opening ceremony"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isEventProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/events#WorldChampionship2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Player": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Player"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#RiverportCityFC": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Club"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The rebranded successor, brought into existence in the same ceremony that terminated Riverport United FC."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Riverport City FC"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#wasCreatedIn": [
+          "https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#RiverportUnitedFC": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Club"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "The host club, rebranded at the opening ceremony: this organization ceases to exist there."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Riverport United FC"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#wasTerminatedIn": [
+          "https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#SamOkafor": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Player"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Sam Okafor"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/events#participatedInMatch": [
+          "https://purl.org/nemo/gufo-examples/events#Final2026",
+          "https://purl.org/nemo/gufo-examples/events#SemiFinal2"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#SemiFinal": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Semi-final"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/events#Match"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#SemiFinal1": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#SemiFinal"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "2026 World Championship, semi-final 1"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isEventProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/events#WorldChampionship2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#SemiFinal2": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#SemiFinal"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "2026 World Championship, semi-final 2"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isEventProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/events#WorldChampionship2026"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#Tournament": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Tournament"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Event"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#WorldChampionship2026": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/events#Tournament"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "2026 World Championship"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#hadKneeInjury": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/events#KneeInjury"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "knee injury of"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/events#Player"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#inheresIn"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/events#participatedInMatch": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/events#Player"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "participated in match"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/events#Match"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#participatedIn"
+      ],
+      "valueAssertions": {}
+    }
+  },
+  "schemaVersion": "ontograph.gufo.typed-source-candidate.v2",
+  "sourceAssertionCount": 89,
+  "sourceBytes": 6202,
+  "sourceDigest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212"
+}

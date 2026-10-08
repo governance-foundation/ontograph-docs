@@ -1,0 +1,177 @@
+{
+  "baseIri": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#",
+  "caseRef": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+  "entailments": [
+    {
+      "expected": true,
+      "object": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+    },
+    {
+      "expected": true,
+      "object": "http://purl.org/nemo/gufo#FunctionalComplex",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+    },
+    {
+      "expected": false,
+      "object": "http://purl.org/nemo/gufo#Role",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+    }
+  ],
+  "owlConsistent": true,
+  "owlScope": "complete source-generated graph plus exact f412254 root ontology; separately labelled offline import materialization",
+  "queries": [
+    {
+      "name": "classifications",
+      "rows": [
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Category"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Role"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person"
+          }
+        }
+      ],
+      "text": "SELECT ?subject ?class WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?class . FILTER(isIRI(?subject) && !STRSTARTS(STR(?class), \"http://www.w3.org/2002/07/owl#\")) } ORDER BY ?subject ?class",
+      "variables": [
+        "subject",
+        "class"
+      ]
+    },
+    {
+      "name": "feature-facts",
+      "rows": [],
+      "text": "SELECT ?subject ?property ?value WHERE { ?subject ?property ?value . FILTER(isIRI(?subject) && !isBlank(?value) && ?property IN (<urn:no-source-property>)) } ORDER BY ?subject ?property ?value",
+      "variables": [
+        "subject",
+        "property",
+        "value"
+      ]
+    }
+  ],
+  "shaclConforms": false,
+  "shaclSignatures": [
+    {
+      "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+      "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+      "message": "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle).",
+      "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "severity": "http://www.w3.org/ns/shacl#Violation",
+      "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee"
+    },
+    {
+      "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+      "focusNode": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+      "message": "Rigid and semi-rigid types can't specialize anti-rigid types.",
+      "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "severity": "http://www.w3.org/ns/shacl#Violation",
+      "value": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee"
+    }
+  ],
+  "source": {
+    "attributionRequired": true,
+    "bytes": 2166,
+    "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "digest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+    "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/08-invalid-endurant-types.ttl",
+    "licenseExpression": "CC-BY-4.0",
+    "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+    "rightsStatus": "reviewed-copy-permitted-with-attribution",
+    "upstreamPath": "examples/01-endurant-types/invalid-example.ttl"
+  },
+  "tripleCount": 20
+}
