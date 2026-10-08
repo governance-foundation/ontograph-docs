@@ -1,0 +1,1131 @@
+{
+  "entities": {
+    "_:riog00000001": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": true,
+      "restrictionClass": null,
+      "restrictionProperty": "http://purl.org/nemo/gufo#mediates",
+      "someValuesFrom": "https://purl.org/nemo/gufo-examples/relators#Person",
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "An ontology of employment and marriage, illustrating gUFO's representation of relators, the roles they connect, and the rights and duties they are composed of."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [
+        "https://purl.org/nemo/gufo#"
+      ],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "gUFO example 04: Relators and extrinsic aspects"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": true,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Dana": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Employee",
+        "https://purl.org/nemo/gufo-examples/relators#Person"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Dana"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/relators#employedBy": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Employment"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Dana's employment at Globex Corp."
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "https://purl.org/nemo/gufo-examples/relators#involvesEmployee": [
+          "https://purl.org/nemo/gufo-examples/relators#Dana"
+        ],
+        "https://purl.org/nemo/gufo-examples/relators#involvesEmployer": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {
+        "http://purl.org/nemo/gufo#hasBeginPointInXSDDate": [
+          {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "language": null,
+            "lexical": "2020-01-06"
+          }
+        ]
+      }
+    },
+    "https://purl.org/nemo/gufo-examples/relators#DanasDutyToWork": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#DutyToWork"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#externallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ],
+        "http://purl.org/nemo/gufo#inheresIn": [
+          "https://purl.org/nemo/gufo-examples/relators#Dana"
+        ],
+        "http://purl.org/nemo/gufo#isAspectProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#DanasRightToSalary": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#RightToSalary"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#externallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ],
+        "http://purl.org/nemo/gufo#inheresIn": [
+          "https://purl.org/nemo/gufo-examples/relators#Dana"
+        ],
+        "http://purl.org/nemo/gufo#isAspectProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Inheres in the employer; the reciprocal of RightToSalary."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Duty to pay salary"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#ExtrinsicMode"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#DutyToWork": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Inheres in the employee; externally depends on the employer."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Duty to work"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#ExtrinsicMode"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Employee": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Applies to a person in virtue of an employment relationship -- see :Employment below."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Employee"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Role"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/relators#Person"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Employer": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Employer"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Role"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/relators#Organization"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Employment": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A relator mediating an employee and an employer. Being a gufo:Relator, it exists in its own right (it has a begin date, and could have others of its own qualities), rather than being a bare fact about the two parties."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Employment"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Relator"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#GlobexCorp": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Employer",
+        "https://purl.org/nemo/gufo-examples/relators#Organization"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Globex Corp."
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#GlobexsDutyToPaySalary": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#externallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/relators#Dana"
+        ],
+        "http://purl.org/nemo/gufo#inheresIn": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ],
+        "http://purl.org/nemo/gufo#isAspectProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#GlobexsRightToLabor": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#RightToLabor"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#externallyDependsOn": [
+          "https://purl.org/nemo/gufo-examples/relators#Dana"
+        ],
+        "http://purl.org/nemo/gufo#inheresIn": [
+          "https://purl.org/nemo/gufo-examples/relators#GlobexCorp"
+        ],
+        "http://purl.org/nemo/gufo#isAspectProperPartOf": [
+          "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#John": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Person"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "John"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#JohnMaryMarriage": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Marriage"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "John and Mary's marriage"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#mediates": [
+          "https://purl.org/nemo/gufo-examples/relators#John",
+          "https://purl.org/nemo/gufo-examples/relators#Mary"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {
+        "http://purl.org/nemo/gufo#hasBeginPointInXSDDate": [
+          {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "language": null,
+            "lexical": "2001-12-12"
+          }
+        ]
+      }
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Marriage": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A simpler relator pattern: no sub-properties of gufo:mediates for each spouse's role, at the cost of not being able to distinguish the parties' roles in the data alone."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Marriage"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "_:riog00000001",
+        "http://purl.org/nemo/gufo#Relator"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Mary": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/relators#Person"
+      ],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Mary"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Organization": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/relators#Person"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Organization"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#Person": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Person"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#RightToLabor": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Inheres in the employer; the reciprocal of DutyToWork."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Right to labor"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#ExtrinsicMode"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#RightToSalary": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Inheres in the employee; externally depends on the employer; part of the employment."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Right to salary"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#ExtrinsicMode"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#employedBy": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "A shortcut binary relation standing for 'there exists an Employment relator mediating these two'. Declaring it a gufo:MaterialRelationshipType and linking it with gufo:isDerivedFrom records that provenance explicitly, rather than leaving it an unexplained plain object property."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/relators#Employee"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "employed by"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#MaterialRelationshipType"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#isDerivedFrom": [
+          "https://purl.org/nemo/gufo-examples/relators#Employment"
+        ]
+      },
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/relators#Employer"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#involvesEmployee": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/relators#Employment"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "involves employee"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/relators#Employee"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#mediates"
+      ],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/relators#involvesEmployer": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [
+        "https://purl.org/nemo/gufo-examples/relators#Employment"
+      ],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "involves employer"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": true,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [
+        "https://purl.org/nemo/gufo-examples/relators#Employer"
+      ],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [
+        "http://purl.org/nemo/gufo#mediates"
+      ],
+      "valueAssertions": {}
+    }
+  },
+  "schemaVersion": "ontograph.gufo.typed-source-candidate.v2",
+  "sourceAssertionCount": 104,
+  "sourceBytes": 6498,
+  "sourceDigest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e"
+}
