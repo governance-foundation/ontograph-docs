@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "ontograph.research.explorer-recording.v1",
+  "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+  "producerSourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+  "runtimeIdentity": {
+    "sourceCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+    "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d"
+  },
+  "inputDigests": {
+    "model": "b4d83f97ffb5f13d42cde732b99279293198c99dd290bf42c2c856350eb5c9bf",
+    "instances": "ae360805cfaee1ea90565f2a8f4a7b7d411f4963369697ab9c6b2b7253e2196e",
+    "expectations": "23accd8d2df4eaf9b7ecc62624763df644a87f3b2e6fce13ef59e9cea73348e7"
+  },
+  "cases": [
+    {
+      "id": "valid",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "organisationAppointments": 2,
+      "evidenceHref": "data/recorded/results.json"
+    },
+    {
+      "id": "missing-cwa",
+      "sourceOutcome": "invalid",
+      "owlConsistent": true,
+      "shaclConforms": false,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "organisationAppointments": 1,
+      "evidenceHref": "data/recorded/results.json"
+    },
+    {
+      "id": "missing-owa",
+      "sourceOutcome": "unknown",
+      "owlConsistent": true,
+      "shaclConforms": false,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "organisationAppointments": 1,
+      "evidenceHref": "data/recorded/results.json"
+    },
+    {
+      "id": "end-boundary",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "activeRoleIds": [
+        "membership:two"
+      ],
+      "organisationAppointments": 2,
+      "evidenceHref": "data/recorded/results.json"
+    },
+    {
+      "id": "empty-role",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "activeRoleIds": [],
+      "organisationAppointments": 2,
+      "evidenceHref": "data/recorded/results.json"
+    }
+  ],
+  "receiptHref": "data/recorded/verification.json",
+  "publicProducerReceiptHref": "https://github.com/governance-foundation/ontograph/blob/72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c/docs/acceptance/research-demonstration/organisation/verification.json",
+  "reviewState": "independently-reviewed",
+  "limitations": [
+    "Selected source constraints only; generic SHACL does not enforce each typed mediation minimum.",
+    "Explicit half-open membership records; no temporal role commitment inferred from labels.",
+    "Persistence is staged candidate readback/regeneration; reimport requires original source.",
+    "No live connection or accepted canonical revision.",
+    "Original input file hashes and product serialized instanceSource digest are separate domains.",
+    "The independent journey review does not supply explorer UI acceptance."
+  ],
+  "reviewReceiptHref": "data/recorded/independent-review.json",
+  "reviewSourceCommit": "ac31d78e74a026f1e2052da6384b0ce9827d8ab9",
+  "reviewScope": "Bounded RD-4 organisational journey only; independent explorer technical acceptance remains separate."
+}

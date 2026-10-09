@@ -6,7 +6,7 @@ const descriptions = {
   organisational: 'People and organisations connect through separately identified appointments. Membership and participation have their own explicit qualifications.',
   'owl-gufo': 'Expected generated IRIs connect to source identities. Runtime observations are separately labelled; a generated representation is not an accepted canonical object.'
 };
-let data, state, dataVerified = false;
+let data, state, dataVerified = false, diagramBlobUrl = null;
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -24,6 +24,9 @@ function link(label, href) {
   if (url.protocol !== 'https:' && !(url.origin === location.origin && ['http:', 'file:'].includes(url.protocol))) throw new Error('Unsafe evidence link');
   node.href = href;
   return node;
+}
+function packagedEvidence(href) {
+  return typeof href === 'string' && (/^data\/recorded\/[a-zA-Z0-9_.-]+$/.test(href) || /^https:\/\//.test(href));
 }
 function bulletList(items) {
   const ul = element('ul');
@@ -95,8 +98,30 @@ function validateData() {
       assert(r.inputDigests[key] === file.sha256, `Recording/source mismatch: ${key}`);
     }
     assert(/^[0-9a-f]{40}$/.test(r.sourceCommit) && /^[0-9a-f]{40}$/.test(r.runtimeIdentity.sourceCommit) && /^[0-9a-f]{64}$/.test(r.runtimeIdentity.binarySha256), 'Incomplete recorded runtime identity');
-    assert(Array.isArray(r.cases) && r.cases.length === 5 && r.receiptHref?.startsWith('https://'), 'Incomplete recorded journey');
-    assert(r.cases.every(c => typeof c.owlConsistent === 'boolean' && typeof c.shaclConforms === 'boolean' && Array.isArray(c.activeRoleIds) && c.evidenceHref?.startsWith('https://')), 'Incomplete recorded observations');
+    assert(Array.isArray(r.cases) && r.cases.length === 5 && packagedEvidence(r.receiptHref), 'Incomplete recorded journey');
+    assert(r.cases.every(c => typeof c.owlConsistent === 'boolean' && typeof c.shaclConforms === 'boolean' && Array.isArray(c.activeRoleIds) && packagedEvidence(c.evidenceHref)), 'Incomplete recorded observations');
+    unique(r.cases, 'recorded case');
+    const actual = data.actualResults, verification = data.actualVerification;
+    assert(actual.mode === 'actual' && actual.adopted === false && actual.comprehensiveGateCredit === 0, 'Unexpected recorded authority claim');
+    assert(actual.modelSha256 === r.inputDigests.model && actual.instanceSha256 === r.inputDigests.instances && actual.oracleSha256 === r.inputDigests.expectations, 'Actual result/source digest mismatch');
+    assert(verification.inputSourceCommit === r.sourceCommit && verification.runtimeCommit === r.runtimeIdentity.sourceCommit && actual.runtimeCommit === r.runtimeIdentity.sourceCommit && actual.binarySha256 === r.runtimeIdentity.binarySha256, 'Actual result/runtime identity mismatch');
+    for (const c of r.cases) {
+      const a = actual.cases.find(a => a.id === c.id);
+      assert(a && a.sourceOutcome === c.sourceOutcome && a.owlConsistent === c.owlConsistent && a.shacl.conforms === c.shaclConforms && a.answers.organisationAppointments.rows.length === c.organisationAppointments && JSON.stringify(a.activeRoleIds) === JSON.stringify(c.activeRoleIds), 'Observation overlay does not match retained actual output');
+    }
+    const valid = actual.cases.find(c => c.id === 'valid');
+    assert(data.files.get('recorded-graph').file.sha256 === valid.graphSha256 && data.actualComposition.graphDigest === `sha256:${valid.graphSha256}`, 'Recorded generated graph digest mismatch');
+    assert(data.actualComposition.canonicalStateMutated === false && data.actualComposition.comprehensiveConformance === false, 'Unexpected recorded composition authority');
+    if (r.reviewState === 'independently-reviewed') {
+      const review = data.actualIndependentReview;
+      assert(review && review.schemaVersion === 'ontograph.research.independent-review.v1' && review.independent === true && review.outcome === 'accepted-bounded-organisational-journey' && review.findings.length === 0, 'Missing accepted independent journey receipt');
+      assert(review.reviewedHead === r.producerSourceCommit && review.runtimeCommit === r.runtimeIdentity.sourceCommit && review.binarySha256 === r.runtimeIdentity.binarySha256 && review.semanticCasesExactAuthorEquality === true, 'Independent review/producer identity mismatch');
+      assert(packagedEvidence(r.reviewReceiptHref), 'Invalid independent review evidence link');
+      for (const c of r.cases) {
+        const reviewed = review.cases.find(a => a.id === c.id);
+        assert(reviewed && reviewed.sourceOutcome === c.sourceOutcome && reviewed.owlConsistent === c.owlConsistent && reviewed.shaclConforms === c.shaclConforms && JSON.stringify(reviewed.activeRoleIds) === JSON.stringify(c.activeRoleIds), 'Independent reviewed outcomes mismatch');
+      }
+    }
   }
 }
 
@@ -112,7 +137,8 @@ async function load() {
     const verified = await Promise.all(manifest.files.map(verifiedFile));
     const files = new Map(verified.map(f => [f.file.id, f]));
     const get = id => { assert(files.has(id), `Required artifact missing: ${id}`); return JSON.parse(files.get(id).text); };
-    data = { manifest, files, dossier: get('dossier'), model: get('model'), instances: get('instances'), expectations: get('expectations'), mappings: get('mappings'), claims: get('claims'), gaps: get('gaps'), viewpoints: Object.fromEntries(views.map(v => [v, get(`viewpoint-${v}`)])), recording: manifest.recordingRef ? get(manifest.recordingRef) : null };
+    data = { manifest, files, dossier: get('dossier'), model: get('model'), instances: get('instances'), expectations: get('expectations'), mappings: get('mappings'), claims: get('claims'), gaps: get('gaps'), viewpoints: Object.fromEntries(views.map(v => [v, get(`viewpoint-${v}`)])), recording: manifest.recordingRef ? get(manifest.recordingRef) : null, actualResults: manifest.recordingRef ? get('recorded-results') : null, actualVerification: manifest.recordingRef ? get('recorded-verification') : null, actualComposition: manifest.recordingRef ? get('recorded-composition') : null };
+    data.actualIndependentReview = files.has('recorded-independent-review') ? get('recorded-independent-review') : null;
     validateData(); dataVerified = true;
     $('#loading').hidden = true; $('#application').hidden = false;
     renderMode(); state = readState(); render();
@@ -126,18 +152,20 @@ function readState() {
   const params = new URLSearchParams(location.search);
   const requested = params.get('id');
   return {
-    view: views.includes(params.get('view')) ? params.get('view') : 'organisational',
+    view: params.has('view') ? params.get('view') : 'organisational',
     id: requested === null ? 'identity:person:a' : requested,
     query: params.get('q') || '', domain: ['source-model', 'source-instance'].includes(params.get('domain')) ? params.get('domain') : 'all'
   };
 }
 function navigate(next, replace = false) {
+  const changedIdentity = next.id !== undefined && next.id !== state.id;
   state = { ...state, ...next };
   const params = new URLSearchParams({ view: state.view, id: state.id });
   if (state.query) params.set('q', state.query);
   if (state.domain !== 'all') params.set('domain', state.domain);
   history[replace ? 'replaceState' : 'pushState'](null, '', `${location.pathname}?${params}`);
   render();
+  if (changedIdentity) $('#inspector').scrollTop = 0;
 }
 function choose(id) {
   navigate({ id });
@@ -168,7 +196,8 @@ function renderVisual() {
   const box = $('#view-visual'); box.replaceChildren();
   if (state.view === 'conceptual') {
     const img = element('img');
-    img.src = URL.createObjectURL(new Blob([data.files.get('diagram-svg').bytes], { type: 'image/svg+xml' }));
+    if (!diagramBlobUrl) diagramBlobUrl = URL.createObjectURL(new Blob([data.files.get('diagram-svg').bytes], { type: 'image/svg+xml' }));
+    img.src = diagramBlobUrl;
     img.alt = 'Explicit source diagram: Person and Organization Kinds, Researcher Role, Appointment Relator with separate minimum-one mediations, Mass Quality and Seminar Event. Full text alternative follows.';
     const details = element('details'); details.append(element('summary', 'Complete diagram text alternative'), paragraph(data.files.get('diagram-text').text));
     box.append(img, details);
@@ -187,6 +216,14 @@ function renderVisual() {
 }
 function render() {
   if (!dataVerified) return;
+  if (!views.includes(state.view)) {
+    for (const button of document.querySelectorAll('[data-view]')) { button.setAttribute('aria-selected', 'false'); button.tabIndex = 0; }
+    $('#view-kind').textContent = 'Unsupported viewpoint';
+    $('#view-title').textContent = 'Requested viewpoint is unavailable';
+    $('#view-description').textContent = `This package does not represent “${state.view}”. Choose a supported conceptual, organisational or OWL/gUFO tab. No live mode is supplied.`;
+    $('#view-visual').replaceChildren(); $('#records').replaceChildren(); $('#record-table-wrap').hidden = true; $('#empty').hidden = true; $('#result-count').textContent = 'No substitute view is shown.';
+    $('#selection-state').textContent = 'Identity selection is retained in the URL. Choose a supported viewpoint to inspect it.'; $('#inspection').replaceChildren(); $('#view-limitations').replaceChildren(paragraph('Unsupported views do not become a nearby supported view.')); return;
+  }
   for (const button of document.querySelectorAll('[data-view]')) {
     const active = button.dataset.view === state.view;
     button.setAttribute('aria-selected', String(active)); button.tabIndex = active ? 0 : -1;
@@ -210,7 +247,7 @@ function render() {
     const th = element('th'); th.scope = 'row';
     const button = element('button', undefined, 'identity-button'); button.type = 'button'; button.dataset.identity = item.id;
     button.setAttribute('aria-pressed', String(item.id === state.id)); button.append(element('strong', sourceLabel(obj)), code(obj.id)); button.addEventListener('click', () => choose(item.id)); th.append(button);
-    const status = element('td'); status.append(badge(state.view === 'owl-gufo' ? 'Proposed' : 'Fixture'));
+    const status = element('td'); status.append(badge(state.view === 'owl-gufo' ? 'Source proposal' : 'Source fixture'));
     tr.append(th, element('td', kindLabel(obj)), status); body.append(tr);
   }
   $('#view-limitations').replaceChildren(bulletList(data.viewpoints[state.view].limitations), paragraph('Class-specific mediation minima and full modal/normative preservation remain explicit gaps.'));
@@ -243,7 +280,7 @@ function renderInspector(visibleRows) {
   }
   root.append(cross);
   if (obj.classRef) {
-    const parent = element('button', `Inspect declared type ${obj.classRef}`, 'identity-button'); parent.type = 'button'; parent.addEventListener('click', () => navigate({ id: `identity:${obj.classRef}`, view: 'conceptual' }));
+    const parent = element('button', `Inspect declared type ${obj.classRef}`, 'identity-button'); parent.type = 'button'; parent.addEventListener('click', () => { navigate({ id: `identity:${obj.classRef}`, view: 'conceptual' }); $('#inspector').focus({ preventScroll: true }); });
     root.append(paragraph('The declared type has a separate identity; it is not this individual.'), parent);
   }
   root.append(element('h3', 'Source statement'));
@@ -264,24 +301,45 @@ function renderInspector(visibleRows) {
   for (const claim of data.claims.claims.filter(c => c.id === 'claim:source-case' || c.id === (state.view === 'owl-gufo' ? 'claim:projection' : 'claim:temporal'))) {
     const card = element('article', undefined, 'claim-card'); card.append(badge(claim.status, claim.status === 'open' ? 'open' : ''), paragraph(claim.statement), paragraph(`Review state in original source receipt: ${claim.reviewState}. Runtime observations below do not rewrite this receipt.`, 'scope-text')); root.append(card);
   }
-  renderRecording(root);
-  root.append(element('h3', 'Explicit gaps'));
+  renderRecording(root, item);
+  root.append(element('h3', 'Original source gap register'));
   const selectedGaps = new Set([...item.gapRefs, ...mappings.flatMap(m => m.gapRefs), 'gap:typed-mediations']);
   for (const gap of data.gaps.gaps.filter(g => selectedGaps.has(g.id))) {
-    const card = element('article', undefined, 'gap-card'); card.append(code(gap.id), paragraph(gap.statement)); root.append(card);
+    const card = element('article', undefined, 'gap-card'); card.append(code(gap.id), paragraph(gap.statement));
+    if (gap.id === 'gap:runtime-unexecuted' && data.recording) card.append(paragraph('Historical gap at source authoring. The separately retained recorded journey above now supplies actual observations for these exact input hashes; the original source record is preserved.', 'small'));
+    root.append(card);
   }
 }
-function renderRecording(root) {
+function renderRecording(root, item) {
   root.append(element('h3', 'Recorded observations'));
   if (!data.recording) {
     root.append(paragraph('Not supplied for these source bytes. Expected outcomes are not observed results. No live or canonical revision is invented.')); return;
   }
   const r = data.recording;
-  root.append(badge('Recorded · read-only', 'recorded'), paragraph('The immutable journey binds these exact source input hashes. Observations are specific to its declared runtime and cases; they confer no canonical adoption or normative authority.'), link('Exact recorded evidence receipt', r.receiptHref));
+  root.append(badge('Recorded · read-only', 'recorded'), paragraph('The immutable journey binds these exact source input hashes. Observations are specific to its declared runtime and cases; they confer no canonical adoption or normative authority.'), paragraph(`Recorded output review state: ${r.reviewState || 'unreviewed'}. The source DTO receipt above remains unchanged.`), link('Exact recorded producer receipt', r.receiptHref));
+  if (r.reviewReceiptHref) root.append(paragraph(r.reviewScope), link('Independent bounded-journey review', r.reviewReceiptHref));
   const facts = element('dl', undefined, 'identity-facts'); facts.append(factRow('Source commit', code(r.sourceCommit)), factRow('Runtime commit', code(r.runtimeIdentity.sourceCommit)), factRow('Binary SHA-256', code(r.runtimeIdentity.binarySha256)), factRow('Canonical revision', 'Not established by this source-candidate journey')); root.append(facts);
+  const obj = sourceObject(item.sourceElementRef);
+  const actualMappings = data.actualComposition.sourceTargetMappings.filter(m => m.sourceId === obj.id && item.projectionRefs.includes(m.targetIri) && data.files.get('recorded-graph').text.includes(`<${m.targetIri}>`));
+  if (actualMappings.length) {
+    root.append(element('h3', 'Recorded generated identity'), paragraph('The valid-case product mapping names this source ID and a target IRI present in the exact retained generated graph. This is a generated identity, not an accepted canonical object.'), link('Exact generated graph', 'data/recorded/generated.ttl'), document.createTextNode(' · '), link('Exact product mapping report', 'data/recorded/composition.json'));
+    for (const m of actualMappings) {
+      const card = element('article', undefined, 'mapping-card'); card.append(code(m.targetIri), paragraph(`Mapping rule: ${m.ruleRef}; product source pointer: ${m.sourcePointer}.`), paragraph(`Product mapping source digest: ${m.sourceDigest}.`, 'small')); root.append(card);
+    }
+    root.append(paragraph(`Original input-file SHA-256: ${sourceFile(item.sourceElementRef).sha256}. Product mapping source digest may bind serialized instanceSource bytes; the two digest domains are not assumed equal.`, 'small'));
+  } else root.append(paragraph('No generated node identity is proved for this selected source record by the retained target-IRI mapping. It remains a source fixture; property-end/generalization commitments may be represented as axioms without their own target node.'));
+  root.append(element('h3', 'Case-level journey context'), paragraph('These observations describe the case, not a claim that every result applies to this selected identity.'));
   for (const c of r.cases) {
+    const actual = data.actualResults.cases.find(a => a.id === c.id);
     const card = element('article', undefined, 'claim-card');
-    card.append(element('strong', c.id), paragraph(`Source validation: ${c.sourceOutcome}. OWL: ${c.owlConsistent ? 'consistent' : 'inconsistent'}. SHACL: ${c.shaclConforms ? 'conformant' : 'nonconformant'}.`), paragraph(`Declared active membership IDs: ${c.activeRoleIds.length ? c.activeRoleIds.join(', ') : 'none'}. Complete recorded appointment links: ${c.organisationAppointments}.`), link('Case evidence', c.evidenceHref)); root.append(card);
+    card.append(element('strong', c.id), paragraph(`Source validation: ${c.sourceOutcome}. OWL: ${c.owlConsistent ? 'consistent' : 'inconsistent'}. SHACL: ${c.shaclConforms ? 'conformant' : 'nonconformant'}.`), paragraph(`Declared active membership IDs: ${c.activeRoleIds.length ? c.activeRoleIds.join(', ') : 'none'}. Complete recorded appointment links: ${c.organisationAppointments}.`));
+    const explain = element('details'); explain.append(element('summary', 'Reasoning, selected query rows and diagnostics'));
+    explain.append(paragraph(`Positive mediation entailment: ${actual.entailments.mediation}. Timeless-role entailment: ${actual.entailments['timeless-role']}. Quality-equality entailment: ${actual.entailments['quality-equality']}. False here means non-entailment, not negation.`));
+    const matched = Object.entries(actual.answers).flatMap(([name, answer]) => (answer.rows || []).filter(row => Object.values(row).some(term => item.projectionRefs.includes(term.value))).map(row => ({ query: name, row })));
+    explain.append(paragraph(matched.length ? 'Exact typed query bindings that mention this selected generated identity:' : 'No retained query row binds this selected identity; no nearby result is substituted.'));
+    if (matched.length) explain.append(element('pre', JSON.stringify(matched, null, 2)));
+    explain.append(paragraph('Actual SHACL diagnostics (case-level; inspect focusNode to determine relevance):'), element('pre', JSON.stringify(actual.shacl.shaclResults, null, 2)));
+    card.append(explain, paragraph(`Staged reload graph isomorphic: ${actual.reloadIsomorphic}. Source-assisted reimport equal: ${actual.sourceAssistedReimportEqual}. Canonical bytes unchanged: ${actual.canonicalUnchanged}.`), link('Exact full case output', c.evidenceHref)); root.append(card);
   }
   root.append(bulletList(r.limitations));
 }

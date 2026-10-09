@@ -3,8 +3,8 @@
   "caseRef": "case:research-appointments-v1",
   "sourceRepository": "https://github.com/governance-foundation/ontograph",
   "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
-  "mode": "fixture",
-  "recordingRef": null,
+  "mode": "recorded-observations-with-source-fixture-views",
+  "recordingRef": "recording",
   "files": [
     {
       "id": "license",
@@ -148,6 +148,61 @@
       "sha256": "b4d83f97ffb5f13d42cde732b99279293198c99dd290bf42c2c856350eb5c9bf",
       "sourcePath": "fixtures/research-demonstration/organisation/model.json",
       "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-results",
+      "path": "data/recorded/results.json",
+      "bytes": 46862,
+      "sha256": "04b97da83189e6451222084a215c016cf4b0d157af40c5455a7a763f9e8ae3d0",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/results.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-verification",
+      "path": "data/recorded/verification.json",
+      "bytes": 3617,
+      "sha256": "c8546b9bfae8b90da9d0c153b807cbb1ec03c0d2f94a70cfe8145646fdb4b40a",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/verification.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-composition",
+      "path": "data/recorded/composition.json",
+      "bytes": 188423,
+      "sha256": "c427eea4d8ecb51998753f29ca8da1d1048857af2b578e53f97ad9f195cc1f8b",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/run-1/valid/composition.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-graph",
+      "path": "data/recorded/generated.ttl",
+      "bytes": 14351,
+      "sha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/run-1/valid/generated.ttl",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recording",
+      "path": "data/recorded/recording.json",
+      "bytes": 3283,
+      "sha256": "763c1dbcaffecbd919c62e3fe314f604d557d4068b5f70f2ebf0702b9597f9e7",
+      "sourcePath": null,
+      "sourceCommit": null,
+      "licenseStatus": "UNLICENSED",
+      "derivation": "Explorer-owned compact observation adapter derived from hash-bound actual results, producer verification and successor independent review; not an original producer DTO."
+    },
+    {
+      "id": "recorded-independent-review",
+      "path": "data/recorded/independent-review.json",
+      "bytes": 4249,
+      "sha256": "3b91849e1392fc5f21dc63dc30cbcd67a110a46f9c5c9f86e9289c8bdb7470a3",
+      "sourcePath": "docs/acceptance/research-demonstration/integration/rd4/verification.json",
+      "sourceCommit": "ac31d78e74a026f1e2052da6384b0ce9827d8ab9",
       "licenseStatus": "UNLICENSED"
     }
   ],

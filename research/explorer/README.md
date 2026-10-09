@@ -51,15 +51,37 @@ original repository path, source commit, exact byte count/digest and undeclared
 project-data license status. The manifest excludes its own recursive digest;
 the external PR/review/package index binds it.
 
-An optional `recordingRef` names a checksum-bound `recording.json` with schema
+The `recordingRef` names a checksum-bound `recording.json` with schema
 `ontograph.research.explorer-recording.v1`: sourceCommit, runtimeIdentity
 (sourceCommit and binarySha256), inputDigests (model, instances, expectations),
 cases (id, sourceOutcome, owlConsistent, shaclConforms, activeRoleIds,
 organisationAppointments, evidenceHref), receiptHref and limitations. A recorded
 overlay must match source digests and link actual retained evidence. It supplies
-neither a canonical revision nor a live connection. Until supplied, fixture
-mode is explicit and no actual outcome is shown.
+neither a canonical revision nor a live connection. If omitted, fixture mode
+is explicit and no actual outcome is shown.
 
+The supplied actual overlay derives from RD-4 source delivery
+`72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c`, runtime
+`1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5`, binary SHA-256
+`688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d`.
+Its exact full results, producer verification, valid-case composition report
+and generated graph are packaged under `data/recorded/` with byte hashes.
+The original source DTOs remain unchanged. The inspector distinguishes actual
+target-IRI mappings for supported source identities from source-only records
+without a generated node. It displays typed matching query rows, positive and
+forbidden entailment outcomes, actual SHACL diagnostics and bounded staged
+reload/reimport observations separately. Product-reported mapping source
+digests may bind serialized instanceSource bytes; they are not silently equated
+with original input-file digests. The independent bounded-journey review at
+source `ac31d78e74a026f1e2052da6384b0ce9827d8ab9` is separately copied and
+hash-bound as `data/recorded/independent-review.json`. It verifies the exact
+producer head/runtime and semantic case outcomes; it is not independent
+acceptance of the explorer interface. The original producer receipt retains
+its historical pending review state. The overlay alone reports the successor
+journey's independently reviewed status and its narrow scope.
+
+Exact producer bytes under `data/**` are marked `-text` in the subtree's Git
+attributes to prevent checkout line-ending normalization from breaking hashes.
 Data and authored SVG license grants remain **UNLICENSED / undeclared**; the
 [original case notice](data/case/LICENSE.md) is retained. No third-party artwork,
 framework or font distribution is bundled. Scholarly vocabulary references keep

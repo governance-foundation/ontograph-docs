@@ -9,6 +9,16 @@
       "evidence": "12 organisational records; no accepted canonical revision; default source identity person:a."
     },
     {
+      "scenario": "Type versus individual tracing",
+      "result": "passed",
+      "evidence": "Following classRef selects a separate model identity in conceptual view; returning selects the original individual explicitly."
+    },
+    {
+      "scenario": "Recorded output and source-only distinction",
+      "result": "passed",
+      "evidence": "Exact typed decimal rows, actual SHACL diagnostics and existing evidence links; source property retains fixture status without a fabricated generated node."
+    },
+    {
       "scenario": "Cross-view selection and absent representation",
       "result": "passed",
       "evidence": "Conceptual absence retains person:a; OWL/gUFO shows same identity; no nearby-record substitution."
@@ -34,6 +44,11 @@
       "evidence": "Unknown stays unresolved; no default identity is substituted."
     },
     {
+      "scenario": "Unsupported viewpoint deep link",
+      "result": "passed",
+      "evidence": "Unrepresented live view shows an explicit gap, retains ID and offers supported tabs without substitute output."
+    },
+    {
       "scenario": "Desktop layout and runtime errors",
       "result": "passed",
       "evidence": "1440×1000; no document overflow or uncaught page errors."
@@ -52,6 +67,11 @@
       "scenario": "Missing manifest",
       "result": "passed",
       "evidence": "HTTP 404 produces explicit failure and no partial view."
+    },
+    {
+      "scenario": "Semantically mismatched recording despite valid asset hash",
+      "result": "passed",
+      "evidence": "Changed source digest with recomputed recording-asset checksum is rejected before any view; actual input binding is required."
     }
   ],
   "limitations": [
