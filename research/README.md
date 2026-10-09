@@ -1,40 +1,15 @@
-# Research section preparation
+# Research demonstration candidate
 
-Issue: governance-foundation/ontograph#2780; epic #2774. RDR-010/013/017.
+Issue governance-foundation/ontograph#2780; epic #2774. RDR-010/013/017.
 
-Authored additive source subtree for a review candidate in the requested docs
-repository. `index.html` and `styles.css` have no build dependencies, scripts,
-external fonts or runtime operations. Existing generated routes remain intact.
-This does not change the accepted source/distribution arrangement: existing
-OntoGraph `website/` publication can replace the complete destination tree.
-The coordinator must resolve long-term source custody and pipeline preservation
-before merging/publication. **PREPARATION — DO NOT MERGE:** destination develop
-is the live GitHub Pages branch.
+This additive academic surface is authored in the requested ontograph-docs repository. **PREPARATION — DO NOT MERGE:** develop serves GitHub Pages. Source publication-boundary draft ontograph#2821 reserves the root research/ subtree from the existing generated product-docs publisher; ADR-2783 records the proposed arrangement. Product documentation remains sourced from ontograph/website/. Publication requires the user's final decision and fresh served-byte checks.
 
-Content uses the integrated historical nine-source catalogue, RD-1 audit PR #2794,
-the proposed RD-2 source dossier and author-verified RD-3 sample. The new RD-2
-bytes were uncommitted when inspected and are explicitly proposed here, not a
-pinned demonstration. RD-3 source observation: c5543d4754f08a48cf467383615527cf8430ae63;
-independent acceptance pending. Coordinator must bind final source/result
-identities and update review states before publication. Existing evidence links
-target actual checked-in files. Package/note availability is visibly pending;
-no fictitious downloads or explorer results are linked.
+The home page now presents the reviewed conceptual dossier, actual five-case organisational results, independently reproduced general OWL exchange, and supporting nine-source suite. The source candidate and generated projection identities remain distinct from accepted canonical state. No C0-C7 credit, normative staffing authority, general inverse, second backend or expert endorsement is asserted.
 
-Own only authored research pages/styles/diagrams. `research/downloads/**` belongs
-to final package integration; `research/explorer/**` belongs to RD-6. New project
-copy/diagram source has no invented license grant; upstream corpus attribution
-and separate project/provider rights remain explicit.
+Downloads include the accepted six-page PDF, exact organisational observations and independent receipt, and the checksum-bound v1.1 reproduction candidate with standalone verifier, complete instructions, prerequisite identities and license notices. The first v1 archive failed because a pinned SHACL normalization query was omitted; v1.1 adds the exact dependency and retains the failure history. Full archive reproduction is being completed separately. No claim of complete package acceptance follows from download integrity alone.
 
-Preview by serving the checkout as a static root, then visit `/research/`.
-Visual/keyboard/link verification is recorded in the PR and source issue. This
-candidate does not discharge independent semantic, accessibility, package or
-publication acceptance by itself.
+research/explorer/ belongs to RD6 docs PR9 and is reviewed at its own exact source head. The coordinator's combined local preview maps the two held PR trees read-only; it is not live publication. All substantive explorer data has source/recorded distinctions and accessible table alternatives. No browser-side runtime or live dataset is fabricated.
 
-Local verification: Chromium screenshots inspected at 1440×1000 and 390×844
-(hero, conceptual case, projections, methods, evidence and package sections).
-Seventeen local navigation/evidence links resolve with no missing anchor or HTTP
-failure. No page JavaScript errors; mobile document has no horizontal overflow.
-Keyboard skip link reaches main, disclosure opens with Enter, and focused figure/
-table overflow regions respond to ArrowRight. SVG has a title/description plus
-complete expandable text alternative; tables have captions and scoped headers.
-No claim of full WCAG certification or distinct independent acceptance is made.
+The pages have no external fonts or site build dependencies. Preview them as static files. Complete methods and exact licensed/prerequisite boundaries are in the download instructions; providers and executables are not redistributed. New project material has no declared general reuse grant; upstream attribution remains explicit.
+
+Coordinator checks on the combined candidate: 27 local navigation/download links resolve, keyboard skip/disclosures work, no browser errors, and no document overflow at390x844. Desktop1440x1000 and mobile screenshots inspected. Independent final home review, archive reproduction and publication acceptance are separately recorded; local checks alone do not close the epic.
