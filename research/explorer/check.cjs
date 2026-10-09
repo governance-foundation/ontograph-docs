@@ -27,6 +27,10 @@ let browser;
   await page.getByRole('tab', { name: /Organisational/ }).click();
   await page.locator('button[data-identity="identity:person:a"]').click();
   assert.equal(new URL(page.url()).searchParams.get('id'), 'identity:person:a');
+  await page.locator('#inspection').getByRole('button', { name: 'OWL / gUFO', exact: true }).click();
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'tab-owl-gufo');
+  await page.locator('#inspection').getByRole('button', { name: 'Organisational', exact: true }).click();
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'tab-organisational');
   record('Type versus individual tracing', 'Following classRef selects a separate model identity in conceptual view; returning selects the original individual explicitly.');
   const hasRecording = (await page.request.get(new URL('data/manifest.json', base).href)).ok() && (await (await page.request.get(new URL('data/manifest.json', base).href)).json()).recordingRef;
   if (hasRecording) {
@@ -128,6 +132,7 @@ let browser;
   await broken.screenshot({ path: path.join(output, 'integrity-error.png') });
   await broken.unroute('**/data/case/mappings.json'); await broken.getByRole('button', { name: 'Retry data loading' }).click();
   await broken.locator('#application').waitFor({ state: 'visible' });
+  assert.equal(await broken.evaluate(() => document.activeElement.id), 'view-panel');
   record('Artifact-integrity failure and retry', 'Altered mapping bytes fail closed before rendering; retry recovers from actual correct artifacts.');
 
   const missing = await desktop.newPage();

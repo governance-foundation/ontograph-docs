@@ -275,7 +275,7 @@ function renderInspector(visibleRows) {
     const present = viewRows(view).some(r => r.identityMapRef === item.id);
     if (present) {
       const button = element('button', view === 'owl-gufo' ? 'OWL / gUFO' : view[0].toUpperCase() + view.slice(1)); button.type = 'button'; button.setAttribute('aria-pressed', String(view === state.view));
-      button.addEventListener('click', () => navigate({ view })); cross.append(button);
+      button.addEventListener('click', () => { navigate({ view }); $(`#tab-${view}`).focus({ preventScroll: true }); }); cross.append(button);
     } else cross.append(element('span', `${view === 'owl-gufo' ? 'OWL / gUFO' : view}: no same-identity row`, 'absent'));
   }
   root.append(cross);
@@ -358,6 +358,6 @@ $('#filters').addEventListener('submit', event => event.preventDefault());
 $('#search').addEventListener('input', event => navigate({ query: event.target.value }, true));
 $('#domain').addEventListener('change', event => navigate({ domain: event.target.value }));
 $('#clear-filter').addEventListener('click', () => { navigate({ query: '', domain: 'all' }); $('#search').focus(); });
-$('#retry').addEventListener('click', load);
-addEventListener('popstate', () => { if (dataVerified) { state = readState(); render(); } });
+$('#retry').addEventListener('click', async () => { await load(); if (dataVerified) $('#view-panel').focus({ preventScroll: true }); });
+addEventListener('popstate', () => { if (dataVerified) { state = readState(); render(); $('#view-panel').focus({ preventScroll: true }); } });
 load();
