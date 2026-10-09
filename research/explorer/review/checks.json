@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "ontograph.research.explorer-local-checks.v1",
+  "browser": "Playwright Chromium",
+  "independent": false,
+  "results": [
+    {
+      "scenario": "Verified source loading and explicit mode",
+      "result": "passed",
+      "evidence": "12 organisational records; no accepted canonical revision; default source identity person:a."
+    },
+    {
+      "scenario": "Cross-view selection and absent representation",
+      "result": "passed",
+      "evidence": "Conceptual absence retains person:a; OWL/gUFO shows same identity; no nearby-record substitution."
+    },
+    {
+      "scenario": "Keyboard tabs and table selection",
+      "result": "passed",
+      "evidence": "Home/ArrowRight switches tabs; Enter selects exact appointment:two; inspector receives focus."
+    },
+    {
+      "scenario": "No-match and domain filters",
+      "result": "passed",
+      "evidence": "No-match state is explicit; selected identity survives; clear restores 12 records."
+    },
+    {
+      "scenario": "Browser back/forward",
+      "result": "passed",
+      "evidence": "View and exact selected source ID restore both directions."
+    },
+    {
+      "scenario": "Unknown identity deep link",
+      "result": "passed",
+      "evidence": "Unknown stays unresolved; no default identity is substituted."
+    },
+    {
+      "scenario": "Desktop layout and runtime errors",
+      "result": "passed",
+      "evidence": "1440×1000; no document overflow or uncaught page errors."
+    },
+    {
+      "scenario": "Mobile selection and responsive table alternative",
+      "result": "passed",
+      "evidence": "390×844; inspector focus/scroll; conceptual view; no document overflow or page errors."
+    },
+    {
+      "scenario": "Artifact-integrity failure and retry",
+      "result": "passed",
+      "evidence": "Altered mapping bytes fail closed before rendering; retry recovers from actual correct artifacts."
+    },
+    {
+      "scenario": "Missing manifest",
+      "result": "passed",
+      "evidence": "HTTP 404 produces explicit failure and no partial view."
+    }
+  ],
+  "limitations": [
+    "Author verification, not independent acceptance or full accessibility certification.",
+    "Local preview assembles read-only research home PR8 with this exclusive explorer. No publication."
+  ]
+}
