@@ -7,7 +7,7 @@ Use Windows with Python 3.14.6 and RDFLib 7.6.0, assertions enabled. Separately 
 Obtain the ZIP and its external SHA-256 from the reviewed download index. Run the supplied standalone package_verify.py from beside the ZIP to verify its external digest, complete member allowlist and per-file hashes before extracting. Replace the uppercase placeholders below with actual installed paths and the published digest. EXTRACTED_ROOT and FRESH_WORK must be new absolute paths outside any Git checkout, separate from each other and from the installed package. Never reuse a prior evidence directory.
 
 ```powershell
-python package_verify.py --archive semantic-viewpoints-reproduction-v1.zip --sha256 ARCHIVE_SHA256 --extract EXTRACTED_ROOT
+python package_verify.py --archive REPRODUCTION_ZIP --sha256 ARCHIVE_SHA256 --extract EXTRACTED_ROOT
 python EXTRACTED_ROOT/scripts/research-demonstration/package_journey.py --root EXTRACTED_ROOT --binary INSTALLED_PACKAGE/ontograph.exe --java JAVA17/bin/java.exe --tools OWNED_OWL_PROVIDER --jena-home APACHE_JENA_6_2_0 --jena-java JAVA21/bin/java.exe --work-dir FRESH_WORK
 ```
 

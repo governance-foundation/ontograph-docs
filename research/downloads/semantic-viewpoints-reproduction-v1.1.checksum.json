@@ -1,9 +1,9 @@
 {
-  "bytes": 5048046,
-  "members": 282,
-  "path": "semantic-viewpoints-reproduction-v1.zip",
+  "bytes": 5053947,
+  "members": 285,
+  "path": "semantic-viewpoints-reproduction-v1.1.zip",
   "schemaVersion": "ontograph.research.archive-checksum.v1",
-  "sha256": "3d35e20ea75ac5cf8b865dee0f31c185a30cf8c41bcb76daa3be7d3629d46e62",
+  "sha256": "309129345b9df2f77a40ab358330bd23f73586a6a187cbd8f297e29c09aba9f7",
   "standaloneVerifier": {
     "bytes": 5738,
     "path": "package_verify.py",
