@@ -1,4 +1,4 @@
-*.json -text
-*.zip -text
-*.pdf -text
-*.txt -text
+*.json -text whitespace=cr-at-eol
+*.zip binary
+*.pdf binary
+*.txt -text whitespace=cr-at-eol

@@ -1,0 +1,79 @@
+{
+  "bibliography": {
+    "recommendedGufoCitationVerified": true,
+    "source": "https://nemo-ufes.github.io/gufo/"
+  },
+  "environmentNotes": [
+    "Default system Python lacked ReportLab; verification succeeded with bundled dependency Python.",
+    "Poppler reported unavailable display-font fallbacks for Symbol/ArialUnicode; rendered pages match inspected glyph-complete PNGs exactly."
+  ],
+  "finalHeadDelta": "README prerequisite clarification only: ReportLab4.4.9 and pypdf6.10.0; PDF, builder, metadata and visual-review unchanged.",
+  "findings": [],
+  "freshBuildByteIdentical": true,
+  "freshRenderHashesMatchInspectedPages": true,
+  "independent": true,
+  "issue": 2782,
+  "limitations": [
+    "This approves the exact six-page note, not independent whole-download-package reproduction or live publication.",
+    "Uses exact producer two-run actual results; fresh independent RD4 one-pass outcome retained separately.",
+    "No canonical adoption, C0-C7, expert endorsement, second backend, runtime release or production deployment."
+  ],
+  "outcome": "accepted-technical-note-bounded-content-and-visual-scope",
+  "pageRenders": [
+    {
+      "bytes": 193929,
+      "path": "page-1.png",
+      "sha256": "6ec54a265075c9b71117c98a1a3a88c68c178e7bdecf195915fadc8bd9c7b403"
+    },
+    {
+      "bytes": 199289,
+      "path": "page-2.png",
+      "sha256": "0d92a7eed54e86aeb4a0ef7de32243ad479287062297c082e2fd399f59bd9411"
+    },
+    {
+      "bytes": 203323,
+      "path": "page-3.png",
+      "sha256": "e3fa72fc86847a70835b20979abefdc0f9d4a11180e82659d49d0edf88ac0cd8"
+    },
+    {
+      "bytes": 193410,
+      "path": "page-4.png",
+      "sha256": "2f2d9cba73fc73a1529e76ab3e7bc2f22eff2ecb6d46ff039fc121ff163c38f3"
+    },
+    {
+      "bytes": 206795,
+      "path": "page-5.png",
+      "sha256": "8a69f35debcd05ce3a6f0a36a4e68fc6e5b555afddaa55e6f8e595dbbbf701f6"
+    },
+    {
+      "bytes": 233097,
+      "path": "page-6.png",
+      "sha256": "5f724a53b65f51f6011b136cf3ed5031f2369c27a29d1e14f1e2acc4cd16af54"
+    }
+  ],
+  "pages": 6,
+  "pdfSha256": "5c6f496bc48b425fc5361a847a684b1e8e3336ea8598a143cdd09e96b61fae9f",
+  "priorPdfBuilderReviewedHead": "9e77835ff3f02267655e61cd2c1fe1bba3608799",
+  "pullRequest": 2820,
+  "resultInputSha256": "04b97da83189e6451222084a215c016cf4b0d157af40c5455a7a763f9e8ae3d0",
+  "reviewedHead": "a1a4a25a9071fd8e5d0964ca084b859586a2d795",
+  "reviewerRole": "contract_inspection independent coordinator subagent; separate from note builder",
+  "schemaVersion": "ontograph.research.independent-review.v1",
+  "semanticChecks": [
+    "Separate non-gUFO18/22/4 subset and gUFO organisational journey",
+    "Correct independent source IDs, half-open roles and atemporal link-query distinction",
+    "Actual CWA invalid/OWA unknown vs OWL consistent/SHACL nonconformant",
+    "Non-entailment not negation, generic typed mediation gap disclosed",
+    "Nine-source candidate suite and distinct successor review scoped correctly",
+    "Source/candidate/canonical identities and unadopted/null canonicalRef explicit",
+    "Rich canonical semantics not reduced to OWL expressive ceiling",
+    "UNLICENSED new material separate from CC BY upstream",
+    "Static/explorer/package/publication acceptance gates separate"
+  ],
+  "visualChecks": [
+    "All six individual pages inspected",
+    "Readable narrative, tables, diagrams and exact-identity rows",
+    "No clipping, overlaps, missing glyphs or footer collisions",
+    "Consistent margins, page numbers, typography and intended page boundaries"
+  ]
+}

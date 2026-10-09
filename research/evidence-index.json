@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "ontograph.research.evidence.v1",
+  "artifacts": [
+    {
+      "id": "downloads/license-notices.txt",
+      "path": "downloads/license-notices.txt",
+      "mediaType": "text/plain",
+      "bytes": 3341,
+      "sha256": "a1c2f10212fce0ee4a31b78671c0ac9eadbb464a7ea233feeea5b5304bdab78c",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "LICENSE-NOTICES.md"
+    },
+    {
+      "id": "downloads/organisation-independent-review.json",
+      "path": "downloads/organisation-independent-review.json",
+      "mediaType": "application/json",
+      "bytes": 4249,
+      "sha256": "3b91849e1392fc5f21dc63dc30cbcd67a110a46f9c5c9f86e9289c8bdb7470a3",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/rd4/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/organisation-results.json",
+      "path": "downloads/organisation-results.json",
+      "mediaType": "application/json",
+      "bytes": 46862,
+      "sha256": "04b97da83189e6451222084a215c016cf4b0d157af40c5455a7a763f9e8ae3d0",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c/docs/acceptance/research-demonstration/organisation/results.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/package_verify.py",
+      "path": "downloads/package_verify.py",
+      "mediaType": "text/x-python",
+      "bytes": 5738,
+      "sha256": "467a2f1453aaeb68ededbaf3745dcd08b08f4fa9d98e8499864a8a294bb96fb5",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/package_verify.py",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/prerequisites.json",
+      "path": "downloads/prerequisites.json",
+      "mediaType": "application/json",
+      "bytes": 15980,
+      "sha256": "9acc89552e01b69b5091ac66be7b941c770056b920ab1020e71055c54486b81d",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "prerequisites/tool-identities.json"
+    },
+    {
+      "id": "downloads/reproduction-README.txt",
+      "path": "downloads/reproduction-README.txt",
+      "mediaType": "text/plain",
+      "bytes": 5632,
+      "sha256": "e7cc68f421f104e3826632a37546607dbbc058058880ef6d5729309c80dfa30e",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "README.md"
+    },
+    {
+      "id": "downloads/reviews/explorer/asset-checks.json",
+      "path": "downloads/reviews/explorer/asset-checks.json",
+      "mediaType": "application/json",
+      "bytes": 6623,
+      "sha256": "a3ac98e5e72ade83c085b9a85731f97753ffc3a9cb04232ff234c947a3309719",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/explorer/asset-checks.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/reviews/explorer/verification.json",
+      "path": "downloads/reviews/explorer/verification.json",
+      "mediaType": "application/json",
+      "bytes": 3167,
+      "sha256": "0b36adf62da772cfe9270639b974d9469f93c833d9fb8c99b8dc46bcc84d5b84",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/explorer/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/reviews/note/verification.json",
+      "path": "downloads/reviews/note/verification.json",
+      "mediaType": "application/json",
+      "bytes": 3612,
+      "sha256": "1ed730c93c7b64d704057df540667292a7cc4083bc2600acbae0a7086432d20a",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/note/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "path": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "mediaType": "application/json",
+      "bytes": 401,
+      "sha256": "bd79f296140ba480823f67a7913152a59c284258888bf4cb7855fe6b5226c7bf",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/semantic-viewpoints-reproduction-v1.1.zip",
+      "path": "downloads/semantic-viewpoints-reproduction-v1.1.zip",
+      "mediaType": "application/zip",
+      "bytes": 5053947,
+      "sha256": "309129345b9df2f77a40ab358330bd23f73586a6a187cbd8f297e29c09aba9f7",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/technical-note.pdf",
+      "path": "downloads/technical-note.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19017,
+      "sha256": "5c6f496bc48b425fc5361a847a684b1e8e3336ea8598a143cdd09e96b61fae9f",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/a1a4a25a9071fd8e5d0964ca084b859586a2d795/docs/research-demonstration/technical-note/technical-note.pdf",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "explorer-manifest",
+      "path": "explorer/data/manifest.json",
+      "mediaType": "application/json",
+      "bytes": 9043,
+      "sha256": "28fef8e6a6c224c077f4424f7cf022b74086e6cae77a158ef0b6aafa4111a414",
+      "sourceRef": "https://github.com/governance-foundation/ontograph-docs/blob/b5dd47b99c9411dee8594892ad997b49b80eeca5/research/explorer/data/manifest.json",
+      "licenseRef": "downloads/license-notices.txt"
+    }
+  ],
+  "executions": [],
+  "reviews": [
+    {
+      "id": "organisational-independent",
+      "reviewedArtifactRefs": [
+        "downloads/organisation-results.json"
+      ],
+      "reviewerRole": "separate contract reviewer",
+      "independent": true,
+      "outcome": "accepted-bounded-organisational-journey",
+      "receiptRef": "downloads/organisation-independent-review.json"
+    },
+    {
+      "id": "note-independent",
+      "reviewedArtifactRefs": [
+        "downloads/technical-note.pdf"
+      ],
+      "reviewerRole": "separate contract reviewer",
+      "independent": true,
+      "outcome": "accepted-six-page-content-visual-and-rebuild-scope",
+      "receiptRef": "downloads/reviews/note/verification.json"
+    },
+    {
+      "id": "explorer-independent",
+      "reviewedArtifactRefs": [
+        "explorer-manifest"
+      ],
+      "reviewerRole": "separate contract reviewer",
+      "independent": true,
+      "outcome": "accepted-bounded-recorded-explorer-technical-scope",
+      "receiptRef": "downloads/reviews/explorer/verification.json"
+    }
+  ],
+  "checksumExclusion": [
+    "evidence-index.json"
+  ],
+  "limitations": [
+    "Artifact custody index: actual execution details remain in the indexed receipts and archive.",
+    "The two held docs PRs provide the combined site and explorer; no live publication accepted.",
+    "Whole archive independent reproduction is still pending; download integrity alone does not establish runtime success."
+  ]
+}
