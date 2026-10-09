@@ -86,6 +86,15 @@
       "licenseRef": "downloads/license-notices.txt"
     },
     {
+      "id": "downloads/reviews/package/verification.json",
+      "path": "downloads/reviews/package/verification.json",
+      "mediaType": "application/json",
+      "bytes": 10144,
+      "sha256": "0c022cb61b5447483ad2e8bbb4fe23abb92e6b2b7ff078387066be61a13d7e9f",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/62f89131650efd65ce53a891f9dbed571ad06fa9/docs/acceptance/research-demonstration/integration/package/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
       "id": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
       "path": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
       "mediaType": "application/json",
@@ -122,7 +131,31 @@
       "licenseRef": "downloads/license-notices.txt"
     }
   ],
-  "executions": [],
+  "executions": [
+    {
+      "id": "independent-complete-v1.1",
+      "mode": "recorded",
+      "inputRefs": [
+        "downloads/semantic-viewpoints-reproduction-v1.1.zip"
+      ],
+      "outputRefs": [
+        "downloads/reviews/package/verification.json"
+      ],
+      "sourceCommit": "3e67a10ec450fd58bccf5cf7a328690b0b749fd2",
+      "runtimeIdentityRef": "downloads/prerequisites.json",
+      "toolIdentityRefs": [
+        "downloads/prerequisites.json"
+      ],
+      "commandRef": "downloads/reproduction-README.txt",
+      "exitCode": 0,
+      "outcome": "passed-complete-declared-journey",
+      "limitations": [
+        "220 actual operations include18 expected nonzero drift rejections; the complete journey command exits zero.",
+        "Only the package and declared prerequisites were used; provider/runtime distributions remain excluded.",
+        "No live publication, canonical adoption or C0-C7 credit."
+      ]
+    }
+  ],
   "reviews": [
     {
       "id": "organisational-independent",
@@ -153,14 +186,24 @@
       "independent": true,
       "outcome": "accepted-bounded-recorded-explorer-technical-scope",
       "receiptRef": "downloads/reviews/explorer/verification.json"
+    },
+    {
+      "id": "package-independent",
+      "reviewedArtifactRefs": [
+        "downloads/semantic-viewpoints-reproduction-v1.1.zip"
+      ],
+      "reviewerRole": "independent package reviewer separate from package author",
+      "independent": true,
+      "outcome": "passed-complete-declared-journey",
+      "receiptRef": "downloads/reviews/package/verification.json"
     }
   ],
   "checksumExclusion": [
     "evidence-index.json"
   ],
   "limitations": [
-    "Artifact custody index: actual execution details remain in the indexed receipts and archive.",
+    "Actual execution details remain in the indexed receipts and archive.",
     "The two held docs PRs provide the combined site and explorer; no live publication accepted.",
-    "Whole archive independent reproduction is still pending; download integrity alone does not establish runtime success."
+    "Artifact custody and complete independent reproduction are distinct accepted checks."
   ]
 }
