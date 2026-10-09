@@ -3,10 +3,10 @@
   "schemaVersion": "ontograph.documentation-publication.v0.1",
   "sourceRepository": "governance-foundation/ontograph",
   "sourceBranch": "develop",
-  "sourceCommit": "04eb62de6685b8c8c7e0a1c77dcb5610977f6409",
+  "sourceCommit": "a1e8cd56a43828120dc86d8d033a5b632eefcaf0",
   "destinationRepository": "governance-foundation/ontograph-docs",
   "destinationBranch": "develop",
-  "referenceSuiteArtifact": "reference-query-suite-04eb62de6685b8c8c7e0a1c77dcb5610977f6409",
-  "referenceCaseSuiteArtifact": "reference-case-suite-04eb62de6685b8c8c7e0a1c77dcb5610977f6409",
-  "compiledSiteArtifact": "docusaurus-site-develop-04eb62de6685b8c8c7e0a1c77dcb5610977f6409"
+  "referenceSuiteArtifact": "reference-query-suite-a1e8cd56a43828120dc86d8d033a5b632eefcaf0",
+  "referenceCaseSuiteArtifact": "reference-case-suite-a1e8cd56a43828120dc86d8d033a5b632eefcaf0",
+  "compiledSiteArtifact": "docusaurus-site-develop-a1e8cd56a43828120dc86d8d033a5b632eefcaf0"
 }
