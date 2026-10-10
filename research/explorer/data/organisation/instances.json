@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "ontograph.gufo.source-composition.v1",
+  "modelRef": "model:research-organisation-v1",
+  "evidenceRef": "evidence:research-organisation-v1",
+  "individuals": [
+    {
+      "id": "person:a",
+      "classRef": "class:person",
+      "label": "Research participant"
+    },
+    {
+      "id": "person:b",
+      "classRef": "class:person",
+      "label": "Research participant"
+    },
+    {
+      "id": "event:seminar",
+      "classRef": "class:seminar",
+      "label": "Seminar"
+    },
+    {
+      "id": "organization:one",
+      "classRef": "class:organization",
+      "label": "Research Institute"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "quality:mass-a",
+      "classRef": "class:mass",
+      "bearerRef": "person:a",
+      "characterizationRef": "relation:characterization",
+      "value": {
+        "lexical": "70.0",
+        "datatype": "xsd:decimal"
+      }
+    },
+    {
+      "id": "quality:mass-b",
+      "classRef": "class:mass",
+      "bearerRef": "person:b",
+      "characterizationRef": "relation:characterization",
+      "value": {
+        "lexical": "70.00",
+        "datatype": "xsd:decimal"
+      }
+    }
+  ],
+  "relators": [
+    {
+      "id": "appointment:one",
+      "classRef": "class:appointment",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      },
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": [
+            "organization:one"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appointment:two",
+      "classRef": "class:appointment",
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      },
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": [
+            "organization:one"
+          ]
+        }
+      ]
+    }
+  ],
+  "roleMemberships": [
+    {
+      "id": "membership:one",
+      "individualRef": "person:a",
+      "roleRef": "class:researcher",
+      "relatorRef": "appointment:one",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      }
+    },
+    {
+      "id": "membership:two",
+      "individualRef": "person:a",
+      "roleRef": "class:researcher",
+      "relatorRef": "appointment:two",
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      }
+    }
+  ],
+  "participations": [
+    {
+      "id": "participation:one",
+      "participantRef": "person:a",
+      "eventRef": "event:seminar",
+      "participationRef": "relation:participation",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T11:00:00Z"
+      }
+    },
+    {
+      "id": "participation:two",
+      "participantRef": "person:b",
+      "eventRef": "event:seminar",
+      "participationRef": "relation:participation",
+      "interval": {
+        "begin": "2024-02-29T10:30:00Z",
+        "end": "2024-02-29T11:30:00Z"
+      }
+    }
+  ],
+  "differentIndividuals": []
+}

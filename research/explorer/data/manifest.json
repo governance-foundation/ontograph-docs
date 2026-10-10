@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "ontograph.research.explorer-assets.v1",
+  "caseRef": "case:research-appointments-v1",
+  "sourceRepository": "https://github.com/governance-foundation/ontograph",
+  "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+  "mode": "recorded-observations-with-source-fixture-views",
+  "recordingRef": "recording",
+  "files": [
+    {
+      "id": "license",
+      "path": "data/case/LICENSE.md",
+      "bytes": 1815,
+      "sha256": "b56d4bc8639efb4108c337d0c28c21374fba19f1c7404ac4f5140927d2742f5e",
+      "sourcePath": "docs/research-demonstration/case/LICENSE.md",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "README",
+      "path": "data/case/README.md",
+      "bytes": 5040,
+      "sha256": "6aec51b4eee7d9793b17d9893db93a09b0a6e2c590803a003955ac6c5e40416d",
+      "sourcePath": "docs/research-demonstration/case/README.md",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "dossier",
+      "path": "data/case/case-dossier.json",
+      "bytes": 19683,
+      "sha256": "fb769a0c7944b0f87bb05b34e5c8c11aa9f804bfd8dccee64ee166b90d5e5a34",
+      "sourcePath": "docs/research-demonstration/case/case-dossier.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "claims",
+      "path": "data/case/claims.json",
+      "bytes": 3609,
+      "sha256": "8abc5ae00233c4ba7755e8cb0305497915c9f1f4f7ff748ccc68347885634ebf",
+      "sourcePath": "docs/research-demonstration/case/claims.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "diagram-svg",
+      "path": "data/case/conceptual.svg",
+      "bytes": 3479,
+      "sha256": "174f617ecc727b782e3c31475e091b79fd008efdc0c308f5be5e4f379501062e",
+      "sourcePath": "docs/research-demonstration/case/conceptual.svg",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "diagram-text",
+      "path": "data/case/diagram.md",
+      "bytes": 1617,
+      "sha256": "d70e4dadc79dbd53b1e562ad5b1ebbf10781fc443192b8a9b03585018797db9f",
+      "sourcePath": "docs/research-demonstration/case/diagram.md",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "evidence-index",
+      "path": "data/case/evidence-index.json",
+      "bytes": 5529,
+      "sha256": "f00631025789b6df49cf506ad90f5dfb33809ab969c0a370de6d1101b227c9a1",
+      "sourcePath": "docs/research-demonstration/case/evidence-index.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "gaps",
+      "path": "data/case/gaps.json",
+      "bytes": 1396,
+      "sha256": "133962c89bbe27ec98d730b6de39b8aaf50ad572aa999704e780674f6c0251f1",
+      "sourcePath": "docs/research-demonstration/case/gaps.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "mappings",
+      "path": "data/case/mappings.json",
+      "bytes": 29112,
+      "sha256": "967ccaf1c5b9938f85aea20020737784a4b13aa727634d28f68350dade7fca95",
+      "sourcePath": "docs/research-demonstration/case/mappings.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "sources",
+      "path": "data/case/sources.json",
+      "bytes": 1117,
+      "sha256": "a62aa5dd940e32257d9cd540607783d1519d676d8454d1ad3799a93864ad2d73",
+      "sourcePath": "docs/research-demonstration/case/sources.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "viewpoint-conceptual",
+      "path": "data/case/viewpoint-conceptual.json",
+      "bytes": 7929,
+      "sha256": "6b2801a7df4e6cd24041c93d21de157b5a61516124d8517bf1971d9a3d5ee453",
+      "sourcePath": "docs/research-demonstration/case/viewpoint-conceptual.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "viewpoint-organisational",
+      "path": "data/case/viewpoint-organisational.json",
+      "bytes": 5024,
+      "sha256": "6a89359a79a523e1b8915fb419dab019e6084afdd2d971ea0d7a145041ba1af3",
+      "sourcePath": "docs/research-demonstration/case/viewpoint-organisational.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "viewpoint-owl-gufo",
+      "path": "data/case/viewpoint-owl-gufo.json",
+      "bytes": 10649,
+      "sha256": "379db60bfc731e7ab7703b04d79dbe41d5d4f3425e6063f5c4949aa294eb8394",
+      "sourcePath": "docs/research-demonstration/case/viewpoint-owl-gufo.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "expectations",
+      "path": "data/organisation/expectations.json",
+      "bytes": 15230,
+      "sha256": "23accd8d2df4eaf9b7ecc62624763df644a87f3b2e6fce13ef59e9cea73348e7",
+      "sourcePath": "fixtures/research-demonstration/organisation/expectations.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "instances",
+      "path": "data/organisation/instances.json",
+      "bytes": 3369,
+      "sha256": "ae360805cfaee1ea90565f2a8f4a7b7d411f4963369697ab9c6b2b7253e2196e",
+      "sourcePath": "fixtures/research-demonstration/organisation/instances.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "model",
+      "path": "data/organisation/model.json",
+      "bytes": 11885,
+      "sha256": "b4d83f97ffb5f13d42cde732b99279293198c99dd290bf42c2c856350eb5c9bf",
+      "sourcePath": "fixtures/research-demonstration/organisation/model.json",
+      "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-results",
+      "path": "data/recorded/results.json",
+      "bytes": 46862,
+      "sha256": "04b97da83189e6451222084a215c016cf4b0d157af40c5455a7a763f9e8ae3d0",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/results.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-verification",
+      "path": "data/recorded/verification.json",
+      "bytes": 3617,
+      "sha256": "c8546b9bfae8b90da9d0c153b807cbb1ec03c0d2f94a70cfe8145646fdb4b40a",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/verification.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-composition",
+      "path": "data/recorded/composition.json",
+      "bytes": 188423,
+      "sha256": "c427eea4d8ecb51998753f29ca8da1d1048857af2b578e53f97ad9f195cc1f8b",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/run-1/valid/composition.json",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recorded-graph",
+      "path": "data/recorded/generated.ttl",
+      "bytes": 14351,
+      "sha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec",
+      "sourcePath": "docs/acceptance/research-demonstration/organisation/run-1/valid/generated.ttl",
+      "sourceCommit": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+      "licenseStatus": "UNLICENSED"
+    },
+    {
+      "id": "recording",
+      "path": "data/recorded/recording.json",
+      "bytes": 3283,
+      "sha256": "763c1dbcaffecbd919c62e3fe314f604d557d4068b5f70f2ebf0702b9597f9e7",
+      "sourcePath": null,
+      "sourceCommit": null,
+      "licenseStatus": "UNLICENSED",
+      "derivation": "Explorer-owned compact observation adapter derived from hash-bound actual results, producer verification and successor independent review; not an original producer DTO."
+    },
+    {
+      "id": "recorded-independent-review",
+      "path": "data/recorded/independent-review.json",
+      "bytes": 4249,
+      "sha256": "3b91849e1392fc5f21dc63dc30cbcd67a110a46f9c5c9f86e9289c8bdb7470a3",
+      "sourcePath": "docs/acceptance/research-demonstration/integration/rd4/verification.json",
+      "sourceCommit": "ac31d78e74a026f1e2052da6384b0ce9827d8ab9",
+      "licenseStatus": "UNLICENSED"
+    }
+  ],
+  "limitations": [
+    "Source DTOs retain historical unreviewed/proposed state and are not rewritten by explorer observations.",
+    "No live service, accepted canonical state or canonical revision.",
+    "Exact source data grant is undeclared/UNLICENSED.",
+    "Manifest excludes its own digest; external preparation/review records bind this file."
+  ]
+}

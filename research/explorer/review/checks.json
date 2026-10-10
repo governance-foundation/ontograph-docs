@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "ontograph.research.explorer-local-checks.v1",
+  "browser": "Playwright Chromium",
+  "independent": false,
+  "results": [
+    {
+      "scenario": "Verified source loading and explicit mode",
+      "result": "passed",
+      "evidence": "12 organisational records; no accepted canonical revision; default source identity person:a."
+    },
+    {
+      "scenario": "Type versus individual tracing",
+      "result": "passed",
+      "evidence": "Following classRef selects a separate model identity in conceptual view; returning selects the original individual explicitly."
+    },
+    {
+      "scenario": "Recorded output and source-only distinction",
+      "result": "passed",
+      "evidence": "Exact typed decimal rows, actual SHACL diagnostics and existing evidence links; source property retains fixture status without a fabricated generated node."
+    },
+    {
+      "scenario": "Cross-view selection and absent representation",
+      "result": "passed",
+      "evidence": "Conceptual absence retains person:a; OWL/gUFO shows same identity; no nearby-record substitution."
+    },
+    {
+      "scenario": "Keyboard tabs and table selection",
+      "result": "passed",
+      "evidence": "Home/ArrowRight switches tabs; Enter selects exact appointment:two; inspector receives focus."
+    },
+    {
+      "scenario": "No-match and domain filters",
+      "result": "passed",
+      "evidence": "No-match state is explicit; selected identity survives; clear restores 12 records."
+    },
+    {
+      "scenario": "Browser back/forward",
+      "result": "passed",
+      "evidence": "View and exact selected source ID restore both directions."
+    },
+    {
+      "scenario": "Unknown identity deep link",
+      "result": "passed",
+      "evidence": "Unknown stays unresolved; no default identity is substituted."
+    },
+    {
+      "scenario": "Unsupported viewpoint deep link",
+      "result": "passed",
+      "evidence": "Unrepresented live view shows an explicit gap, retains ID and offers supported tabs without substitute output."
+    },
+    {
+      "scenario": "Desktop layout and runtime errors",
+      "result": "passed",
+      "evidence": "1440×1000; no document overflow or uncaught page errors."
+    },
+    {
+      "scenario": "Mobile selection and responsive table alternative",
+      "result": "passed",
+      "evidence": "390×844; inspector focus/scroll; conceptual view; no document overflow or page errors."
+    },
+    {
+      "scenario": "Artifact-integrity failure and retry",
+      "result": "passed",
+      "evidence": "Altered mapping bytes fail closed before rendering; retry recovers from actual correct artifacts."
+    },
+    {
+      "scenario": "Missing manifest",
+      "result": "passed",
+      "evidence": "HTTP 404 produces explicit failure and no partial view."
+    },
+    {
+      "scenario": "Semantically mismatched recording despite valid asset hash",
+      "result": "passed",
+      "evidence": "Changed source digest with recomputed recording-asset checksum is rejected before any view; actual input binding is required."
+    }
+  ],
+  "limitations": [
+    "Author verification, not independent acceptance or full accessibility certification.",
+    "Local preview assembles read-only research home PR8 with this exclusive explorer. No publication."
+  ]
+}
