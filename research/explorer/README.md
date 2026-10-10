@@ -89,13 +89,12 @@ their separate pins/notices; they do not license project-owned fixtures.
 
 ## Local checks and preview
 
-The sibling research home belongs to preparation PR
+The sibling research home was independently delivered through merged PR
 governance-foundation/ontograph-docs#8 at
-`3c9ea11b53676aeea78db300e658aad785f71a0b`; it is read-only to this lane. Preview
-assembles its `research/index.html` and `styles.css` with this explorer in a
-disposable local staging tree. These are separate branches from integrated
-`develop`, never stacked delivery branches. The eventual `../` research link
-requires coordinated integration of both prepared surfaces.
+`21ad826167bb8ac4551447174ccbf61355eac88b`. Both surfaces are integrated on
+`develop`, and the `../` research link is verified live. The historical candidate
+preview assembled the separately reviewed branches in a disposable local staging
+tree; that frozen review remains separate from the published surface.
 
 Serve the assembled static root on localhost. The development-only browser
 harness `check.cjs` requires Node, Playwright and its Chromium browser:
