@@ -1,9 +1,9 @@
 # Read-only research viewpoint explorer
 
-Preparation for product issue governance-foundation/ontograph#2781 under epic
-#2774; RDR-003, RDR-014, RDR-015, RDR-016 and RDR-017. **Do not merge this PR
-before the coordinator's final publication decision:** destination `develop`
-automatically publishes GitHub Pages.
+Published for product issue governance-foundation/ontograph#2781 under epic
+#2774; RDR-003, RDR-014, RDR-015, RDR-016 and RDR-017. Merged docs PR9 is
+published from develop through GitHub Pages. Independent live asset and browser
+checks passed on 10 October 2026 under the accepted research-site delivery plan.
 
 This standalone, dependency-free browser surface reads exact copies of the
 accepted RD-2 source dossier at
@@ -89,13 +89,12 @@ their separate pins/notices; they do not license project-owned fixtures.
 
 ## Local checks and preview
 
-The sibling research home belongs to preparation PR
+The sibling research home was independently delivered through merged PR
 governance-foundation/ontograph-docs#8 at
-`3c9ea11b53676aeea78db300e658aad785f71a0b`; it is read-only to this lane. Preview
-assembles its `research/index.html` and `styles.css` with this explorer in a
-disposable local staging tree. These are separate branches from integrated
-`develop`, never stacked delivery branches. The eventual `../` research link
-requires coordinated integration of both prepared surfaces.
+`21ad826167bb8ac4551447174ccbf61355eac88b`. Both surfaces are integrated on
+`develop`, and the `../` research link is verified live. The historical candidate
+preview assembled the separately reviewed branches in a disposable local staging
+tree; that frozen review remains separate from the published surface.
 
 Serve the assembled static root on localhost. The development-only browser
 harness `check.cjs` requires Node, Playwright and its Chromium browser:
