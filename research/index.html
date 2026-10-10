@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A research demonstration of connected conceptual identities and purpose-specific OWL and gUFO views, with explicit evidence and limitations.">
+<title>Semantic viewpoints · OntoGraph Research</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to research content</a>
+<header class="masthead">
+<a class="brand" href="../">
+<span class="brand-mark" aria-hidden="true">O</span>OntoGraph <span>Research</span>
+</a>
+<nav aria-label="Primary">
+<a href="#case">The case</a>
+<a href="#projections">Two projections</a>
+<a href="#evidence">Evidence</a>
+<a href="#reproduce">Reproduce</a>
+<a href="../docs/intro.html">Documentation ↗</a>
+</nav>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="title">
+<div class="eyebrow">Research demonstration · preparation edition</div>
+<div class="hero-grid">
+<div>
+<h1 id="title">One conceptual model.<br>
+<em>Several useful views.</em>
+</h1>
+<p class="lead">What survives when rich organisational meaning becomes an operational view or an OWL representation?</p>
+<p class="hero-intro">Follow connected identities from an OntoUML-grounded case into purpose-specific projections. Inspect what is preserved, what is reduced, and what the evidence can actually establish.</p>
+<div class="hero-actions">
+<a class="button" href="#case">Explore the worked case <span aria-hidden="true">↓</span>
+</a>
+<a class="text-link" href="#claims">Read the claim boundaries →</a>
+<a class="text-link" href="explorer/">Inspect the recorded viewpoint explorer →</a>
+</div>
+</div>
+<aside class="research-question">
+<span class="small-label">The research question</span>
+<p>Can distinct views retain the same conceptual identities without treating a projection as the limit of the model?</p>
+<div class="rule">
+</div>
+<p class="small">Identity · dependence · mediation<br>Evidence · interpretation · reduction</p>
+</aside>
+</div>
+<div class="preparation">
+<strong>Review candidate.</strong> The conceptual case, complete reproduction archive and recorded explorer have separate independent reviews. The six-page technical note is visually checked and independently rebuilt. Live publication and served-download verification await a separate decision.</div>
+</section>
+
+<section class="section" id="architecture" aria-labelledby="architecture-title">
+<div class="section-heading">
+<span class="section-number">01 / Approach</span>
+<h2 id="architecture-title">Rich meaning first.<br>Views with a declared purpose.</h2>
+<p>OntoGraph’s canonical architecture retains distinctions about identity, dependence, roles, events and provenance. A view selects what helps answer a question; it carries its source and reduction history with it.</p>
+</div>
+<div class="view-flow" aria-label="Proposed architecture: conceptual sources feed a rich canonical model; conceptual, organisational and OWL views are purpose-specific outputs.">
+<div class="flow-source">
+<span class="small-label">Explicit sources</span>
+<strong>Conceptual commitments<br>+ instance evidence</strong>
+<span>Keep assertion and interpretation distinct.</span>
+</div>
+<div class="flow-core">
+<span class="small-label">Canonical authority</span>
+<strong>Connected identities<br>and provenance</strong>
+<span>Preserve meaning across revisions.</span>
+</div>
+<div class="flow-views">
+<div>
+<strong>Conceptual</strong>
+<span>Identity and dependence</span>
+</div>
+<div>
+<strong>Organisational</strong>
+<span>Appointments and membership</span>
+</div>
+<div>
+<strong>OWL / gUFO</strong>
+<span>Exchange and selected reasoning</span>
+</div>
+</div>
+</div>
+<p class="caption">
+<span class="badge proposed">Proposed architecture</span> This diagram expresses the intended authority boundary. Source admission and generated outputs below do not establish canonical adoption.</p>
+</section>
+
+<section class="section case-section" id="case" aria-labelledby="case-title">
+<div class="section-heading">
+<span class="section-number">02 / Worked conceptual case</span>
+<h2 id="case-title">A person is more than<br>their appointment.</h2>
+<p>Personnel and research staffing describe the same people through different concerns. The source explicitly distinguishes a Person, a Researcher role and the Appointment that grounds participation in an organisation.</p>
+</div>
+<div class="case-status">
+<span class="badge recorded">Recorded case · independently reproduced</span>
+<span>Reviewed source candidate with actual operations; canonical adoption is not established.</span>
+</div>
+<figure class="conceptual" tabindex="0" aria-label="Conceptual diagram, horizontally scrollable on small screens; complete text alternative follows">
+<svg viewBox="0 0 1040 380" role="img" aria-labelledby="model-title model-desc">
+<title id="model-title">Research appointment conceptual model</title>
+<desc id="model-desc">Person and Organization are Kinds. Researcher is a Role specializing Person. Appointment is a Relator that mediates at least one Person and at least one Organization through separate identified relations. A Person or Organization may have zero or more appointments. These source cardinalities are one to many, not exact one.</desc>
+<defs>
+<marker id="arrow" markerWidth="16" markerHeight="12" refX="12" refY="6" orient="auto">
+<path d="M1 1 L12 6 L1 11 Z" fill="#fbfaf6" stroke="#365d54" stroke-width="1.5"/>
+</marker>
+</defs>
+<g class="diagram-lines">
+<path d="M260 143 H407"/>
+<path d="M633 143 H780"/>
+<path d="M147 280 V193" marker-end="url(#arrow)"/>
+</g>
+<g class="diagram-card">
+<rect x="34" y="84" width="226" height="110" rx="8"/>
+<rect x="407" y="84" width="226" height="110" rx="8"/>
+<rect x="780" y="84" width="226" height="110" rx="8"/>
+<rect x="34" y="280" width="226" height="78" rx="8"/>
+</g>
+<g class="diagram-stereotype">
+<text x="147" y="118">«kind»</text>
+<text x="520" y="118">«relator»</text>
+<text x="893" y="118">«kind»</text>
+<text x="147" y="308">«role»</text>
+</g>
+<g class="diagram-name">
+<text x="147" y="153">Person</text>
+<text x="520" y="153">Appointment</text>
+<text x="893" y="153">Organization</text>
+<text x="147" y="337">Researcher</text>
+</g>
+<g class="diagram-label">
+<text x="334" y="113">mediates</text>
+<text x="706" y="113">mediates</text>
+<text x="283" y="170">1..*</text>
+<text x="384" y="170">0..*</text>
+<text x="656" y="170">0..*</text>
+<text x="757" y="170">1..*</text>
+<text x="227" y="243">specializes</text>
+</g>
+<text class="diagram-note" x="520" y="270">Separate participant relations preserve their own identities.</text>
+<text class="diagram-note" x="520" y="298">Labels do not supply identity, rigidity or authority.</text>
+</svg>
+<figcaption>
+<strong>Legend.</strong> «kind» declares an identity-bearing type; «role» is a dependent way a person participates; «relator» explicitly represents relational dependence. The open triangle indicates specialization. Each appointment requires at least one participant of each stated type.</figcaption>
+</figure>
+<details class="text-alternative">
+<summary>Read the complete diagram text alternative</summary>
+<p>Person and Organization are explicitly declared Kinds. Researcher is explicitly declared a Role specializing Person. Appointment is a Relator with two separately identified mediation relations: one to Person and one to Organization. Each appointment has 1..* Person participants and 1..* Organization participants. Each person and organisation may participate in 0..* appointments. These are source commitments, not a claim that generated generic SHACL enforces each typed minimum.</p>
+</details>
+<div class="case-grid">
+<article>
+<span class="small-label">Identity</span>
+<h3>Two people, one label</h3>
+<p>
+<code>person:a</code> and <code>person:b</code> share a display label. That does not merge their source identities or assert OWL inequality. Only the first has declared research membership.</p>
+</article>
+<article>
+<span class="small-label">Dependence</span>
+<h3>Two grounding records</h3>
+<p>Two overlapping appointments connect <code>person:a</code> with <code>organization:one</code>. An appointment is represented explicitly, rather than flattened into an unexplained edge.</p>
+</article>
+<article>
+<span class="small-label">Time</span>
+<h3>Membership is qualified</h3>
+<p>The actual query returns two active membership records at 10:30Z and one at noon. This comes from explicit membership intervals; an end date alone does not establish a role transition.</p>
+</article>
+</div>
+<div class="callout">
+<strong>A validation gap worth examining</strong>
+<p>Generic generated SHACL checks a total minimum of two mediation values. It does not independently enforce one class-correct participant for each source relation. A generic pass therefore cannot establish the source’s complete grounding commitment.</p>
+</div>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Actual five-case results, horizontally scrollable">
+<table><caption>Actual five-case observations · independently reproduced</caption>
+<thead><tr><th scope="col">Scenario</th><th scope="col">Source validation</th><th scope="col">Active memberships</th><th scope="col">Appointment bindings</th><th scope="col">SHACL</th><th scope="col">OWL</th></tr></thead>
+<tbody>
+<tr><th scope="row">Valid</th><td>Selected checks satisfied</td><td>2</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
+<tr><th scope="row">Missing participant · closed world</th><td>Invalid</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
+<tr><th scope="row">Missing participant · open world</th><td>Unknown</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
+<tr><th scope="row">End boundary</th><td>Selected checks satisfied</td><td>1</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
+<tr><th scope="row">Empty role</th><td>Selected checks satisfied</td><td>0</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
+</tbody></table></div>
+<p>Actual OWL checks entail the supplied mediation conclusion, but do not entail a timeless Researcher assertion or equality of the two qualities. Non-entailment is not proof of negation. Queries preserve exact typed bindings before and after source-assisted reload; source and canonical data remain unchanged.</p>
+<p class="source-note">Inspect the <a href="downloads/organisation-results.json">actual results</a> and <a href="downloads/organisation-independent-review.json">fresh independent receipt</a>. Source candidate: <a href="https://github.com/governance-foundation/ontograph/issues/2777">RD-2 modelling dossier</a>. Earlier, separate recorded journey: <a href="../docs/organisational-demonstration.html">personnel and research appointments</a>.</p>
+</section>
+
+<section class="section" id="projections" aria-labelledby="projections-title">
+<div class="section-heading">
+<span class="section-number">03 / Purpose-specific projections</span>
+<h2 id="projections-title">OWL exchange and gUFO mapping<br>answer different questions.</h2>
+<p>OWL provides an interoperability and reasoning language. gUFO adds a particular foundational vocabulary. Neither licenses reconstructing missing conceptual commitments from a class label.</p>
+</div>
+<div class="projection-grid">
+<article class="projection">
+<span class="badge recorded">Recorded · independently reproduced</span>
+<h3>General OWL exchange</h3>
+<p class="question">What structure does a narrow foreign-OWL bridge preserve?</p>
+<p>The separate non-gUFO sample contains classes, two object properties and an existential affiliation restriction. Four actual bridge operations retain an 18-triple subset from 22 original triples; the four-triple restriction is omitted. Independent reproduction matches the retained outputs.</p>
+<p>The original source remains a package responsibility. The exported subset cannot reconstruct the missing existential commitment. RDF comparison supplies neither a reasoning result nor conceptual endorsement.</p>
+<a class="text-link" href="https://github.com/governance-foundation/ontograph/issues/2778">Inspect RD-3 evidence and review state →</a>
+</article>
+<article class="projection">
+<span class="badge recorded">Demonstrated · retained independent execution</span>
+<h3>gUFO source admission</h3>
+<p class="question">Can pinned gUFO source assertions survive typed admission and regeneration?</p>
+<p>Nine Turtle examples retain 808 source assertions through the recorded candidate journey. The distinct independent receipt repeats the complete suite; seven positive inputs conform to upstream SHACL and two expected-invalid inputs produce diagnostics.</p>
+<p>This demonstrates direct Turtle admission. It does not establish a general OntoUML JSON-to-gUFO transformation or accepted canonical assertions.</p>
+<a class="text-link" href="../docs/concepts/gufo-nine-examples.html">Inspect the nine-example evidence →</a>
+</article>
+</div>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Preservation and reduction comparison, horizontally scrollable">
+<table>
+<caption>Preservation and reduction: target purpose must be explicit</caption>
+<thead>
+<tr>
+<th scope="col">View</th>
+<th scope="col">Retains or foregrounds</th>
+<th scope="col">Reduction / unresolved commitment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Conceptual case</th>
+<td>Explicit type distinctions, mediation identities and qualified facts</td>
+<td>Reviewed source commitments remain bounded; no normative rights/duties established</td>
+</tr>
+<tr>
+<th scope="row">Organisational view</th>
+<td>People, organisations, appointments and membership intervals</td>
+<td>Declared membership alone does not establish valid grounding or staffing authority</td>
+</tr>
+<tr>
+<th scope="row">General OWL bridge</th>
+<td>Selected named class/property structure in the measured sample</td>
+<td>Existential restriction omitted; source staging is not canonical semantic lift</td>
+</tr>
+<tr>
+<th scope="row">gUFO representation</th>
+<td>Recorded source-derived assertions and selected query/validation evidence</td>
+<td>Full modal rigidity, identity provision and arbitrary inverse remain unproved</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section methods" id="methods" aria-labelledby="methods-title">
+<div class="section-heading">
+<span class="section-number">04 / Interpreting results</span>
+<h2 id="methods-title">A consistent graph can still<br>describe an invalid model.</h2>
+<p>Keep the questions separate. A passing tool result has meaning only in relation to its inputs, assumptions and expected conclusion.</p>
+</div>
+<div class="method-grid">
+<article>
+<span>01</span>
+<h3>Consistency</h3>
+<p>Do the selected OWL axioms admit an interpretation? Missing recorded participants may still have unnamed witnesses under an open-world interpretation.</p>
+</article>
+<article>
+<span>02</span>
+<h3>Entailment</h3>
+<p>Does every interpretation satisfy the supplied conclusion? A conclusion that is not entailed has not thereby been disproved.</p>
+</article>
+<article>
+<span>03</span>
+<h3>Validation</h3>
+<p>Does this finite recorded graph satisfy these SHACL shapes? Diagnostic signatures point to specific facts and constraints.</p>
+</article>
+<article>
+<span>04</span>
+<h3>Query answers</h3>
+<p>Which bindings match the stated query? A timeless appointment-link query does not answer a time-qualified staffing question.</p>
+</article>
+</div>
+<p class="caption">Conceptual correctness needs independent modelling judgement and justified commitments in addition to tool outcomes.</p>
+</section>
+
+<section class="section" id="evidence" aria-labelledby="evidence-title">
+<div class="section-heading">
+<span class="section-number">05 / Supporting evidence appendix</span>
+<h2 id="evidence-title">Nine examples.<br>A bounded, inspectable result.</h2>
+<p>The supporting suite covers selected source structures and expected invalidity. These cases are evidence for the declared journey, not a denominator for all of UFO, OntoUML or gUFO.</p>
+</div>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Nine-source results, horizontally scrollable">
+<table>
+<caption>Retained independent nine-source execution</caption>
+<thead>
+<tr>
+<th scope="col">Source example</th>
+<th scope="col">Assertions</th>
+<th scope="col">OWL</th>
+<th scope="col">Upstream SHACL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Endurant types</th>
+<td>89</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Objects and parts</th>
+<td>153</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Qualities</th>
+<td>125</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Relators</th>
+<td>104</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Events</th>
+<td>89</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Situations</th>
+<td>137</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Higher-order types</th>
+<td>66</td>
+<td>Consistent</td>
+<td>Conforms</td>
+</tr>
+<tr>
+<th scope="row">Invalid endurant types</th>
+<td>20</td>
+<td>Consistent</td>
+<td>2 expected diagnostics</td>
+</tr>
+<tr>
+<th scope="row">Invalid higher-order types</th>
+<td>25</td>
+<td>Consistent</td>
+<td>5 expected diagnostics</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="evidence-links">
+<a href="../evidence/gufo-nine-examples-2026-10-09/independent-review.json">Independent receipt <span>JSON ↗</span>
+</a>
+<a href="../evidence/gufo-nine-examples-2026-10-09/checksums.json">Artifact integrity manifest <span>JSON ↗</span>
+</a>
+<a href="../evidence/gufo-nine-examples-2026-10-09/c08/oracle.json">Expected-invalid oracle <span>JSON ↗</span>
+</a>
+</div>
+<details>
+<summary>Execution method, identities and historical counters</summary>
+<p>Each recorded run contains 146 operations, including 18 expected fail-closed drift rejections. All 36 candidate/admission/RDF/shape artifact pairs are byte-identical across author and independent runs. Frozen oracles contain 35 entailment checks and 19 typed queries.</p>
+<p>Runtime source: <code>1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5</code>. The embedded descriptor’s compiler-input coverage remains partial. Original single-run and two-run receipts retain historical independent-review counters of 0/9. The separate successor receipt records 9/9 independent review; historical records are not rewritten.</p>
+<p>The sources are pinned to gUFO <code>f4122544133544eb4c6c467ba316302ab20b754a</code> and gufoshapes <code>b95e14b034c93c42323e8beb8c08f697b026e553</code>, under CC BY 4.0. Preserve <a href="https://github.com/nemo-ufes/gufo/tree/f4122544133544eb4c6c467ba316302ab20b754a">gUFO author attribution</a> and <a href="https://github.com/nemo-ufes/gufoshapes/tree/b95e14b034c93c42323e8beb8c08f697b026e553">gufoshapes author attribution</a>. Upstream licenses do not grant rights to project or provider distributions.</p>
+</details>
+</section>
+
+<section class="section" id="claims" aria-labelledby="claims-title">
+<div class="section-heading">
+<span class="section-number">06 / Claims and open research</span>
+<h2 id="claims-title">Make the boundary<br>part of the contribution.</h2>
+</div>
+<div class="claim-grid">
+<article>
+<span class="badge recorded">Demonstrated</span>
+<h3>Pinned recorded journeys</h3>
+<p>Inspect the new five-case organisational journey, separate general OWL exchange and retained nine-source suite. Each has distinct exact-input evidence and independent review.</p>
+</article>
+<article>
+<span class="badge proposed">Proposed</span>
+<h3>Rich canonical authority</h3>
+<p>Connected source identities and generated mappings are inspectable. Canonical adoption, normative rights and duties, and stronger semantic preservation remain proposed or open.</p>
+</article>
+<article>
+<span class="badge open">Open</span>
+<h3>Stronger preservation</h3>
+<p>What evidence establishes modal identity, anti-rigidity and normative meaning? What counterexamples reveal a projection’s unacceptable reductions?</p>
+</article>
+</div>
+<div class="boundary">
+<strong>Separate acceptance boundaries</strong>
+<p>No full C0–C7 acceptance, second-backend qualification, expert endorsement, general inverse reconstruction, product release or production deployment is established here. No accepted enrichment is claimed without a recorded decision and authority.</p>
+</div>
+</section>
+
+<section class="section reproduce" id="reproduce" aria-labelledby="reproduce-title">
+<div class="section-heading">
+<span class="section-number">07 / Reproduction and review</span>
+<h2 id="reproduce-title">Inspect the methods.<br>Question the reductions.</h2>
+<p>Scientific review needs the original inputs, mapping decisions, exact outputs, expected results and executable methods—not screenshots alone.</p>
+</div>
+<div class="package-grid">
+<article>
+<span class="small-label">Available recorded evidence</span>
+<h3>Source and outcome inspection</h3>
+<p>The linked public suite includes executed Turtle, typed candidates, generated RDF/SHACL, oracles, checksums and the independent receipt. These are inspection artifacts, not an installed runtime distribution.</p>
+<a class="button secondary" href="../docs/concepts/gufo-nine-examples.html">Open the evidence catalogue →</a>
+</article>
+<article class="package-pending">
+<span class="badge recorded">Six-page note reviewed</span>
+<h3>Technical note + reproduction archive</h3>
+<p>Read the conceptual case, actual results, nine-example appendix and research questions in the <a href="downloads/technical-note.pdf">six-page technical note</a>. All pages were visually checked; an independent deterministic rebuild matches the retained PDF.</p>
+<p>The <a href="downloads/semantic-viewpoints-reproduction-v1.1.zip">versioned reproduction archive</a> contains the exact sources, expectations, mappings, outputs and executable three-lane method. A fresh independent run completed all 220 operations: four OWL bridge operations, 70 across five organisational cases and 146 across all nine corpus cases. Exactly 18 expected drift rejections occurred, with no unexpected failures.</p>
+<p><a href="downloads/reproduction-README.txt">Read the complete instructions</a>, inspect the <a href="downloads/prerequisites.json">exact prerequisites</a> and <a href="downloads/license-notices.txt">license notices</a>, then obtain the <a href="downloads/package_verify.py">standalone verifier</a> and <a href="downloads/semantic-viewpoints-reproduction-v1.1.checksum.json">external archive/verifier checksums</a>. Verify before extraction.</p>
+<p class="small">The <a href="evidence-index.json">site evidence index</a> binds exact download bytes and separate <a href="downloads/reviews/note/verification.json">note review</a>, <a href="downloads/reviews/explorer/verification.json">recorded explorer review</a> and <a href="downloads/reviews/package/verification.json">complete independent archive receipt</a>. Every indexed artifact and the ZIP remained unchanged through reproduction.</p>
+<p class="small">Required prerequisites include the qualified runtime, exact provider/tool dependencies and lawful distribution terms. Public instructions will not rely on private local paths.</p>
+</article>
+</div>
+<div class="feedback">
+<h3>Questions for scholarly feedback</h3>
+<ol>
+<li>Are the separate minimum-one mediation commitments justified for this appointment case?</li>
+<li>Which reductions are acceptable for a staffing view while preserving the distinction between membership and valid grounding?</li>
+<li>What additional commitments and counterexamples would support modal or normative preservation claims?</li>
+</ol>
+</div>
+</section>
+</main>
+<footer>
+<a class="brand" href="../">OntoGraph <span>Research</span>
+</a>
+<p>Explicit meaning. Connected evidence. Purpose-specific views.</p>
+<p class="small">Preparation for <a href="https://github.com/governance-foundation/ontograph/issues/2774">research demonstration #2774</a> · <a href="../docs/published-limitations.html">Published limitations</a> · Publication decision and live served-byte verification pending.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+{
+  "allOperationsExitZero": true,
+  "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+  "cases": [
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "id": "valid",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    },
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "id": "missing-cwa",
+      "owlConsistent": true,
+      "shaclConforms": false,
+      "sourceOutcome": "invalid"
+    },
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "id": "missing-owa",
+      "owlConsistent": true,
+      "shaclConforms": false,
+      "sourceOutcome": "unknown"
+    },
+    {
+      "activeRoleIds": [
+        "membership:two"
+      ],
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "id": "end-boundary",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    },
+    {
+      "activeRoleIds": [],
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "id": "empty-role",
+      "owlConsistent": true,
+      "shaclConforms": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    }
+  ],
+  "comparison": {
+    "normalizedResultExceptions": [
+      "operationCount: independent70 vs producer140",
+      "repeats: independent1 vs producer2"
+    ],
+    "producerArtifactsByteEqual": 15,
+    "readbackOnlyDifferingField": "identity.persistedReportDigest",
+    "readbackRecords": 5,
+    "reason": "The complete persisted import report includes actual modelPath. Fresh and producer reports were compared recursively: only modelPath differs. Each distinct readback digest equals its own retained persisted record reportDigest; every other readback field equals producer. No assertion of independent all-artifact byte equality.",
+    "typedAnswersAndAllCaseSemanticFieldsUnchanged": true
+  },
+  "executedRunnerSha256": "0bad9d2a2826ebbdd2b0e59cb2b025615966f0969970dd33970414e6a05b8faa",
+  "findings": [],
+  "independent": true,
+  "indexedPublicArtifactsExactGitBlobHashes": 47,
+  "issue": 2779,
+  "limitations": [
+    "Selected source constraints and per-relation qualified OWL minimum1 only; generic SHACL does not enforce class-specific minima.",
+    "Existing pinned installed runtime and providers, no independent rebuild or complete compiler-input proof.",
+    "No API parity, adopted canonical state, normative staffing authority, inverse transformation, C0-C7 or publication credit."
+  ],
+  "operationCount": 70,
+  "outcome": "accepted-bounded-organisational-journey",
+  "pullRequest": 2818,
+  "rawCustody": {
+    "bytes": 286864,
+    "path": "independent-raw-execution.zip",
+    "sha256": "64dda420a32569b4d212b5a3ff686f1876ba09f837cc788bf8569d9a71db2295",
+    "visibility": "internal only; raw process transcripts contain host paths and are excluded from public package"
+  },
+  "repeats": 1,
+  "resultsSha256": "a88d68dcaa52b5a0516b1e99e2cde2217362b33d583f6afe890b715fa843c252",
+  "reviewedHead": "72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c",
+  "reviewerRole": "contract_inspection independent coordinator subagent, separate from RD4 author",
+  "runtimeCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+  "schemaVersion": "ontograph.research.independent-review.v1",
+  "semanticCasesExactAuthorEquality": true,
+  "sourceSchemaCanonicalNonmutation": true,
+  "toolIdentitiesExactAuthorEquality": true,
+  "toolIdentitiesSha256": "d92206283c645613227244f8fea11fbe6ff224385940e3ce93651dd0b29992ca"
+}
