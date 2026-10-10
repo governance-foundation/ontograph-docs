@@ -1,9 +1,9 @@
 # Read-only research viewpoint explorer
 
-Preparation for product issue governance-foundation/ontograph#2781 under epic
-#2774; RDR-003, RDR-014, RDR-015, RDR-016 and RDR-017. **Do not merge this PR
-before the coordinator's final publication decision:** destination `develop`
-automatically publishes GitHub Pages.
+Published for product issue governance-foundation/ontograph#2781 under epic
+#2774; RDR-003, RDR-014, RDR-015, RDR-016 and RDR-017. Merged docs PR9 is
+published from develop through GitHub Pages. Independent live asset and browser
+checks passed on 10 October 2026 under the accepted research-site delivery plan.
 
 This standalone, dependency-free browser surface reads exact copies of the
 accepted RD-2 source dossier at
