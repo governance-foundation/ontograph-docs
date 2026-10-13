@@ -1,0 +1,483 @@
+{
+  "id": "model:research-organisation-v1",
+  "created": "2026-10-09",
+  "modified": null,
+  "name": {
+    "en": "Research appointments and shared personnel identity"
+  },
+  "alternativeNames": [],
+  "description": {
+    "en": "Synthetic source case: explicit appointment grounding and qualified research memberships; no adopted staffing policy."
+  },
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "type": "Project",
+  "elements": [
+    {
+      "id": "class:person",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Person"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:researcher",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Researcher"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "role",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:appointment",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Appointment"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "relator",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "relator"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:mass",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Mass"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "quality",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "quality"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:seminar",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Seminar"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "event",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "event"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "generalization:researcher-person",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Researcher specializes Person"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:person",
+      "specific": "class:researcher"
+    },
+    {
+      "id": "property:mediation-source",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "source"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "0..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:appointment"
+    },
+    {
+      "id": "property:mediation-target",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "target"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "1..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:person"
+    },
+    {
+      "id": "relation:mediation",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "mediation"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "mediation",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:mediation-source",
+        "property:mediation-target"
+      ],
+      "type": "BinaryRelation"
+    },
+    {
+      "id": "property:characterization-source",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "source"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "0..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:mass"
+    },
+    {
+      "id": "property:characterization-target",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "target"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "1",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:person"
+    },
+    {
+      "id": "relation:characterization",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "characterization"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "characterization",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:characterization-source",
+        "property:characterization-target"
+      ],
+      "type": "BinaryRelation"
+    },
+    {
+      "id": "property:participation-source",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "source"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "0..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:person"
+    },
+    {
+      "id": "property:participation-target",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "target"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "0..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:seminar"
+    },
+    {
+      "id": "relation:participation",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "participation"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "participation",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:participation-source",
+        "property:participation-target"
+      ],
+      "type": "BinaryRelation"
+    },
+    {
+      "id": "class:organization",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "Organization"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "type": "Class",
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:organization-source",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "source"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "0..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:appointment"
+    },
+    {
+      "id": "property:organization-target",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "target"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": null,
+      "isDerived": false,
+      "type": "Property",
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": "1..*",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:organization"
+    },
+    {
+      "id": "relation:organization-mediation",
+      "created": "2026-09-06",
+      "modified": null,
+      "name": {
+        "en": "mediation"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "stereotype": "mediation",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:organization-source",
+        "property:organization-target"
+      ],
+      "type": "BinaryRelation"
+    }
+  ],
+  "root": null,
+  "publisher": null,
+  "designedForTasks": [],
+  "license": null,
+  "accessRights": [],
+  "themes": [],
+  "contexts": [],
+  "ontologyTypes": [],
+  "representationStyle": null,
+  "namespace": "https://example.org/research-demonstration/organisation/",
+  "landingPages": [],
+  "sources": [],
+  "bibliographicCitations": [],
+  "keywords": [],
+  "acronyms": [],
+  "languages": [
+    "en"
+  ]
+}

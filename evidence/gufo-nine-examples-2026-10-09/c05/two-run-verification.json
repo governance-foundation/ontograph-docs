@@ -1,0 +1,47 @@
+{
+  "caseRef": "EXT-GUFO-005-EVENTS",
+  "deterministicArtifacts": [
+    {
+      "artifact": "candidate.json",
+      "byteIdentical": true,
+      "sha256": "2541aa1224159f447f0be4bf8a11f516706810673b08d1dff7bd41c93eb75135"
+    },
+    {
+      "artifact": "admission.json",
+      "byteIdentical": true,
+      "sha256": "a31b5454bbc46fc292925dd64074cfc4144a8c32abd41e5d0ca2ddb532764340"
+    },
+    {
+      "artifact": "generated.ttl",
+      "byteIdentical": true,
+      "sha256": "b009543c893a6b97d0ac8bcb5d1465fa3c1558be5b0ca001bf43f26652e0c6b2"
+    },
+    {
+      "artifact": "generated-shapes.ttl",
+      "byteIdentical": true,
+      "sha256": "76f951ee2196ad019db2f3f8cc33ad4a7e634132d641302d332ab56ccb790abe"
+    }
+  ],
+  "evidenceDirectory": "c05",
+  "expectedInvalidityDetected": false,
+  "fullyDemonstrated": true,
+  "implemented": true,
+  "independentlyReviewed": false,
+  "installedRuns": 2,
+  "nextAction": "independent complete reproduction #2741",
+  "owlConsistent": true,
+  "shaclDiagnosticCount": 0,
+  "source": {
+    "attributionRequired": true,
+    "bytes": 6202,
+    "commitSha": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "digest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+    "fixturePath": "fixtures/gufo-interoperability/shacl-sparql/examples/05-events.ttl",
+    "licenseExpression": "CC-BY-4.0",
+    "repositoryUrl": "https://github.com/nemo-ufes/gufo",
+    "rightsStatus": "reviewed-copy-permitted-with-attribution",
+    "upstreamPath": "examples/05-events/ontology.ttl"
+  },
+  "sourceAssertions": 89,
+  "upstreamShaclConforms": true
+}

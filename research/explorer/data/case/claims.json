@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "ontograph.research.claims.v1",
+  "caseRef": "case:research-appointments-v1",
+  "claims": [
+    {
+      "id": "claim:source-case",
+      "statement": "The neutral source case preserves explicit type, participant and qualified-fact identities.",
+      "status": "proposed",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-002",
+        "RDR-003"
+      ],
+      "evidenceRefs": [
+        "artifact:expectations"
+      ],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:independent-review"
+      ]
+    },
+    {
+      "id": "claim:projection",
+      "statement": "Supported product composition will generate the expected identity-preserving gUFO/composition representation from these exact inputs.",
+      "status": "proposed",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-003",
+        "RDR-006"
+      ],
+      "evidenceRefs": [
+        "artifact:expectations"
+      ],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "claim:diagnostic",
+      "statement": "The missing-organisation cases will distinguish incomplete grounding from OWL consistency.",
+      "status": "proposed",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-007"
+      ],
+      "evidenceRefs": [
+        "artifact:expectations"
+      ],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:runtime-unexecuted",
+        "gap:typed-mediations"
+      ]
+    },
+    {
+      "id": "claim:temporal",
+      "statement": "Explicit qualified membership intervals will preserve two memberships at 10:30Z and one at noon without timeless Researcher membership.",
+      "status": "proposed",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-006",
+        "RDR-007"
+      ],
+      "evidenceRefs": [
+        "artifact:expectations"
+      ],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "claim:modal",
+      "statement": "What further source commitments and preservation tests establish modal and normative appointment meaning?",
+      "status": "open",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-004"
+      ],
+      "evidenceRefs": [],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:modal-normative"
+      ]
+    },
+    {
+      "id": "claim:licensing",
+      "statement": "What project-owner redistribution grant is required for a public reproduction archive?",
+      "status": "open",
+      "scope": "new source candidate only",
+      "requirementRefs": [
+        "RDR-002",
+        "RDR-013"
+      ],
+      "evidenceRefs": [],
+      "reviewState": "unreviewed",
+      "nonclaims": [
+        "canonical adoption",
+        "full C0-C7",
+        "normative staffing authority"
+      ],
+      "gapRefs": [
+        "gap:license"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "ontograph.research.package-independent-review.v1",
+  "issue": 2782,
+  "requirementRefs": [
+    "RDR-007",
+    "RDR-011",
+    "RDR-012",
+    "RDR-013",
+    "RDR-017"
+  ],
+  "reviewerRole": "independent-package-reviewer",
+  "independent": true,
+  "outcome": "passed-complete-declared-journey",
+  "archive": {
+    "name": "semantic-viewpoints-reproduction-v1.1.zip",
+    "sha256": "309129345b9df2f77a40ab358330bd23f73586a6a187cbd8f297e29c09aba9f7",
+    "bytes": 5053947,
+    "members": 285,
+    "indexedArtifactsVerified": 283,
+    "archiveProducerCommit": "17326955910581892fba0363b7447fb17faeeee7",
+    "reviewedDeliveryCommit": "3e67a10ec450fd58bccf5cf7a328690b0b749fd2",
+    "archiveUnchangedAfterExecution": true,
+    "extractedPackageUnchangedAfterExecution": true,
+    "manifestSha256": "f67e3059762d5d93fc14e1c1a1f0307039a6244b4818b246a263d9061ecc16bf",
+    "indexSha256": "06ec836499f2e42763bd41f17a0a04a6c8088c5f6dec843c5adcb93f4a2410e6",
+    "standaloneVerifierSha256": "467a2f1453aaeb68ededbaf3745dcd08b08f4fa9d98e8499864a8a294bb96fb5"
+  },
+  "execution": {
+    "actual": true,
+    "sourceCheckoutUsed": false,
+    "freshOutsideGitRoots": true,
+    "declaredPrerequisitesOnly": true,
+    "runtimeCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+    "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+    "totalOperations": 220,
+    "expectedNonzeroOperations": 18,
+    "unexpectedFailures": 0
+  },
+  "prerequisites": {
+    "schemaVersion": "ontograph.research.package-prerequisite-review.v1",
+    "reviewerRole": "independent-package-reviewer",
+    "runtimeExecuted": false,
+    "runtimeSourceCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+    "releaseManifestSha256": "b7ce55a1e2553168ba00b5ac6a7b41e55e46a29c50285cbd81632204f9444168",
+    "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+    "releaseManifestFilesVerified": 79,
+    "owlProviderFilesVerified": 78,
+    "jenaClasspathFilesVerified": 43,
+    "jenaClasspathExtraFiles": 0,
+    "java17Sha256": "870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7",
+    "java21Sha256": "d82117d83c6a27cda42126bca1bf9a2dea4f92195ba9e72ced0352fb52d5be2f",
+    "toolIdentityManifestSha256": "9acc89552e01b69b5091ac66be7b941c770056b920ab1020e71055c54486b81d",
+    "pythonVersion": "3.14.6",
+    "rdflibVersion": "7.6.0",
+    "result": "passed",
+    "limits": [
+      "Private custody preflight; final package archive and producer revision not yet bound.",
+      "No public distribution authority or project license grant inferred."
+    ]
+  },
+  "lanes": [
+    {
+      "id": "owl",
+      "operations": 4,
+      "outcome": "passed",
+      "sourceTriples": 22,
+      "preservedTriples": 18,
+      "omittedTriples": 4,
+      "comparisonEqualsArchivedAuthor": true,
+      "receiptSha256": "9f01e6098e2cd209872b55f72fca9c27ac45059649fc0f5cb633394b60c5e5b6",
+      "rawCommandsSha256": "973db4013f131571437066eef66e358f03c5db6360e6e9eaf86b04b9f70da5b7"
+    },
+    {
+      "id": "organisation",
+      "operations": 70,
+      "cases": 5,
+      "repeats": 1,
+      "outcome": "passed",
+      "semanticCasesEqualArchivedAuthor": true,
+      "inputNonmutation": true,
+      "receiptSha256": "a88d68dcaa52b5a0516b1e99e2cde2217362b33d583f6afe890b715fa843c252",
+      "rawCommandsSha256": "6610d0892a7888242f2f6a1a4cbcc5498b2a1cebf3e4c6c5fef07c130bbf9de0"
+    },
+    {
+      "id": "nine",
+      "operations": 146,
+      "cases": 9,
+      "sourceAssertions": 808,
+      "outcome": "passed",
+      "expectedNonzeroOperationNames": [
+        "c01-pin-drift",
+        "c01-candidate-drift",
+        "c02-pin-drift",
+        "c02-candidate-drift",
+        "c03-pin-drift",
+        "c03-candidate-drift",
+        "c04-pin-drift",
+        "c04-candidate-drift",
+        "c05-pin-drift",
+        "c05-candidate-drift",
+        "c06-pin-drift",
+        "c06-candidate-drift",
+        "c07-pin-drift",
+        "c07-candidate-drift",
+        "c08-pin-drift",
+        "c08-candidate-drift",
+        "c09-pin-drift",
+        "c09-candidate-drift"
+      ],
+      "receiptSha256": "a19cad695768b3e282102fe5a3cf61fa8003661a64d58bea7b241d11d641a80b",
+      "rawCommandsSha256": "b4a5caec352cfd89ce0f6f23efa5195ed1cd9e10a5b44cecd344f7a9d00e761c",
+      "semanticCasesEqualArchivedAuthor": true,
+      "publicArtifactFamiliesCompared": 27,
+      "publicArtifactFamiliesByteEqual": true,
+      "caseResults": [
+        {
+          "caseRef": "EXT-GUFO-001-ENDURANT-TYPES",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 89,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-002-OBJECTS-AND-PARTS",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 153,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-003-QUALITIES",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 125,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-004-RELATORS",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 104,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-005-EVENTS",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 89,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-006-SITUATIONS",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 137,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 66,
+          "owlConsistent": true,
+          "upstreamShaclConforms": true,
+          "upstreamDiagnosticCount": 0,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 20,
+          "owlConsistent": true,
+          "upstreamShaclConforms": false,
+          "upstreamDiagnosticCount": 2,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        },
+        {
+          "caseRef": "EXT-GUFO-009-INVALID-HIGHER-ORDER-TYPES",
+          "semanticResultEqualsArchivedAuthor": true,
+          "sourceAssertions": 25,
+          "owlConsistent": true,
+          "upstreamShaclConforms": false,
+          "upstreamDiagnosticCount": 5,
+          "generatedCoverageConforms": true,
+          "completeSourceIsomorphic": true,
+          "sourceCanonicalNonmutation": true,
+          "deterministicReloadReimport": true
+        }
+      ]
+    }
+  ],
+  "verifierNegativeChecks": {
+    "changed-byte": "rejected",
+    "extra-file": "rejected",
+    "missing-file": "rejected",
+    "path-traversal": "rejected",
+    "absolute-path": "rejected",
+    "case-collision": "rejected",
+    "file-directory-prefix": "rejected",
+    "unresolved-journey-reference": "rejected"
+  },
+  "rightsAndPublicPathReview": {
+    "noticeBindingsResolveToUpstreamFamilies": true,
+    "projectGrantRemains": "UNLICENSED",
+    "runtimeProviderDistributionsExcluded": true,
+    "indexedTextPrivateWindowsPathScanFindings": 0,
+    "publicDistributionAuthorisedByThisReview": false
+  },
+  "limitations": [
+    "Acceptance covers the complete documented Windows package journey with exact separately installed declared prerequisites; it does not supply their acquisition or redistribution grants.",
+    "Full conceptual correctness, modal identity/rigidity, normative authority and typed-mediation validation gaps remain separate.",
+    "No comprehensive C0-C7 credit, second-backend qualification, arbitrary inverse, product release or site publication approval.",
+    "PDF visual acceptance and site/explorer accessibility acceptance remain distinct reviewer records.",
+    "Raw local execution outputs contain host paths and remain private evidence; no restricted pilot program was executed."
+  ]
+}

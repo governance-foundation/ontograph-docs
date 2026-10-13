@@ -1,0 +1,1302 @@
+{
+  "adopted": false,
+  "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+  "cases": [
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalSha256": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphSha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec",
+      "id": "valid",
+      "owlConsistent": true,
+      "reloadIsomorphic": true,
+      "shacl": {
+        "boundary": {
+          "actualStandardsExecution": true,
+          "canonicalStateMutated": false,
+          "claimsComprehensiveConformance": false,
+          "createsDecisionOrPromotion": false,
+          "sourceMutated": false
+        },
+        "conforms": true,
+        "dataArtifact": {
+          "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+        },
+        "definitionArtifact": {
+          "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+        },
+        "operation": "shacl-validation",
+        "pinRef": "shacl-sparql:apache-jena-6.2.0",
+        "rows": [],
+        "schemaVersion": "ontograph.shacl-sparql.result.v1",
+        "semanticStatus": "conformant",
+        "shaclResults": [],
+        "variables": [
+          "conforms",
+          "focusNode",
+          "sourceShapeKind",
+          "sourceShape",
+          "constraintComponent",
+          "resultPath",
+          "severity",
+          "valueKind",
+          "value",
+          "message"
+        ]
+      },
+      "shapesSha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceAssistedReimportEqual": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    },
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalSha256": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphSha256": "dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e",
+      "id": "missing-cwa",
+      "owlConsistent": true,
+      "reloadIsomorphic": true,
+      "shacl": {
+        "boundary": {
+          "actualStandardsExecution": true,
+          "canonicalStateMutated": false,
+          "claimsComprehensiveConformance": false,
+          "createsDecisionOrPromotion": false,
+          "sourceMutated": false
+        },
+        "conforms": false,
+        "dataArtifact": {
+          "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+        },
+        "definitionArtifact": {
+          "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+        },
+        "operation": "shacl-validation",
+        "pinRef": "shacl-sparql:apache-jena-6.2.0",
+        "rows": [],
+        "schemaVersion": "ontograph.shacl-sparql.result.v1",
+        "semanticStatus": "nonconformant",
+        "shaclResults": [
+          {
+            "constraintComponent": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+            "focusNode": "https://example.org/composition/individual/appointment%3Aone",
+            "message": "minCount[2]: Invalid cardinality: expected min 2: Got count = 1",
+            "resultPath": "http://purl.org/nemo/gufo#mediates",
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "sourceShape": null,
+            "sourceShapeKind": "blank-node",
+            "value": null,
+            "valueKind": "absent"
+          }
+        ],
+        "variables": [
+          "conforms",
+          "focusNode",
+          "sourceShapeKind",
+          "sourceShape",
+          "constraintComponent",
+          "resultPath",
+          "severity",
+          "valueKind",
+          "value",
+          "message"
+        ]
+      },
+      "shapesSha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceAssistedReimportEqual": true,
+      "sourceOutcome": "invalid"
+    },
+    {
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalSha256": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphSha256": "dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e",
+      "id": "missing-owa",
+      "owlConsistent": true,
+      "reloadIsomorphic": true,
+      "shacl": {
+        "boundary": {
+          "actualStandardsExecution": true,
+          "canonicalStateMutated": false,
+          "claimsComprehensiveConformance": false,
+          "createsDecisionOrPromotion": false,
+          "sourceMutated": false
+        },
+        "conforms": false,
+        "dataArtifact": {
+          "digest": "sha256:dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+        },
+        "definitionArtifact": {
+          "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+        },
+        "operation": "shacl-validation",
+        "pinRef": "shacl-sparql:apache-jena-6.2.0",
+        "rows": [],
+        "schemaVersion": "ontograph.shacl-sparql.result.v1",
+        "semanticStatus": "nonconformant",
+        "shaclResults": [
+          {
+            "constraintComponent": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+            "focusNode": "https://example.org/composition/individual/appointment%3Aone",
+            "message": "minCount[2]: Invalid cardinality: expected min 2: Got count = 1",
+            "resultPath": "http://purl.org/nemo/gufo#mediates",
+            "severity": "http://www.w3.org/ns/shacl#Violation",
+            "sourceShape": null,
+            "sourceShapeKind": "blank-node",
+            "value": null,
+            "valueKind": "absent"
+          }
+        ],
+        "variables": [
+          "conforms",
+          "focusNode",
+          "sourceShapeKind",
+          "sourceShape",
+          "constraintComponent",
+          "resultPath",
+          "severity",
+          "valueKind",
+          "value",
+          "message"
+        ]
+      },
+      "shapesSha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceAssistedReimportEqual": true,
+      "sourceOutcome": "unknown"
+    },
+    {
+      "activeRoleIds": [
+        "membership:two"
+      ],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalSha256": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphSha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec",
+      "id": "end-boundary",
+      "owlConsistent": true,
+      "reloadIsomorphic": true,
+      "shacl": {
+        "boundary": {
+          "actualStandardsExecution": true,
+          "canonicalStateMutated": false,
+          "claimsComprehensiveConformance": false,
+          "createsDecisionOrPromotion": false,
+          "sourceMutated": false
+        },
+        "conforms": true,
+        "dataArtifact": {
+          "digest": "sha256:a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+        },
+        "definitionArtifact": {
+          "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+        },
+        "operation": "shacl-validation",
+        "pinRef": "shacl-sparql:apache-jena-6.2.0",
+        "rows": [],
+        "schemaVersion": "ontograph.shacl-sparql.result.v1",
+        "semanticStatus": "conformant",
+        "shaclResults": [],
+        "variables": [
+          "conforms",
+          "focusNode",
+          "sourceShapeKind",
+          "sourceShape",
+          "constraintComponent",
+          "resultPath",
+          "severity",
+          "valueKind",
+          "value",
+          "message"
+        ]
+      },
+      "shapesSha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceAssistedReimportEqual": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    },
+    {
+      "activeRoleIds": [],
+      "answers": {
+        "organisationAppointments": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:b8357c2bc192c276fe95a25387216da7b528ea95c27814fa2047e5e67a6ed180"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Aone"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "appointment": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/appointment%3Atwo"
+              },
+              "organisation": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/organization%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "appointment",
+            "person",
+            "organisation"
+          ]
+        },
+        "participations": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:2c1e34ea892e9f57d9e178fa2fb3bfaaf756f9a0a79a552a906190e04a125e10"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Aone"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              }
+            },
+            {
+              "event": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/event%3Aseminar"
+              },
+              "fact": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/fact/participation%3Atwo"
+              },
+              "person": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "fact",
+            "person",
+            "event"
+          ]
+        },
+        "qualities": {
+          "boundary": {
+            "actualStandardsExecution": true,
+            "canonicalStateMutated": false,
+            "claimsComprehensiveConformance": false,
+            "createsDecisionOrPromotion": false,
+            "sourceMutated": false
+          },
+          "conforms": null,
+          "dataArtifact": {
+            "digest": "sha256:4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262"
+          },
+          "definitionArtifact": {
+            "digest": "sha256:ab004bf4acc697fbb3b4adc83937f9b61e20680969e2da06ebb3b11805193968"
+          },
+          "operation": "sparql-select",
+          "pinRef": "shacl-sparql:apache-jena-6.2.0",
+          "rows": [
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Aa"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-a"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.0"
+              }
+            },
+            {
+              "bearer": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/person%3Ab"
+              },
+              "quality": {
+                "datatype": null,
+                "kind": "uri",
+                "language": null,
+                "value": "https://example.org/composition/individual/quality%3Amass-b"
+              },
+              "value": {
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "kind": "literal",
+                "language": null,
+                "value": "70.00"
+              }
+            }
+          ],
+          "schemaVersion": "ontograph.shacl-sparql.result.v1",
+          "semanticStatus": "completed",
+          "shaclResults": [],
+          "variables": [
+            "quality",
+            "bearer",
+            "value"
+          ]
+        }
+      },
+      "canonicalSha256": "ebe489c0b5dbdcc490aca7bf76516d3e988e4eaa49ab172500532f003ef6902d",
+      "canonicalUnchanged": true,
+      "entailments": {
+        "mediation": true,
+        "quality-equality": false,
+        "timeless-role": false
+      },
+      "graphSha256": "4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262",
+      "id": "empty-role",
+      "owlConsistent": true,
+      "reloadIsomorphic": true,
+      "shacl": {
+        "boundary": {
+          "actualStandardsExecution": true,
+          "canonicalStateMutated": false,
+          "claimsComprehensiveConformance": false,
+          "createsDecisionOrPromotion": false,
+          "sourceMutated": false
+        },
+        "conforms": true,
+        "dataArtifact": {
+          "digest": "sha256:4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262"
+        },
+        "definitionArtifact": {
+          "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+        },
+        "operation": "shacl-validation",
+        "pinRef": "shacl-sparql:apache-jena-6.2.0",
+        "rows": [],
+        "schemaVersion": "ontograph.shacl-sparql.result.v1",
+        "semanticStatus": "conformant",
+        "shaclResults": [],
+        "variables": [
+          "conforms",
+          "focusNode",
+          "sourceShapeKind",
+          "sourceShape",
+          "constraintComponent",
+          "resultPath",
+          "severity",
+          "valueKind",
+          "value",
+          "message"
+        ]
+      },
+      "shapesSha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+      "sourceAssistedReimportEqual": true,
+      "sourceOutcome": "selected-constraints-satisfied"
+    }
+  ],
+  "comprehensiveGateCredit": 0,
+  "inputNonmutation": true,
+  "instanceSha256": "ae360805cfaee1ea90565f2a8f4a7b7d411f4963369697ab9c6b2b7253e2196e",
+  "limitations": [
+    "Selected source constraints only; generic SHACL does not enforce each typed mediation minimum.",
+    "Explicit half-open membership records; no temporal role commitment inferred from labels.",
+    "Persistence is staged candidate readback/regeneration; reimport requires original source."
+  ],
+  "mode": "actual",
+  "modelSha256": "b4d83f97ffb5f13d42cde732b99279293198c99dd290bf42c2c856350eb5c9bf",
+  "operationCount": 140,
+  "oracleSha256": "23accd8d2df4eaf9b7ecc62624763df644a87f3b2e6fce13ef59e9cea73348e7",
+  "repeatEqual": true,
+  "repeats": 2,
+  "runtimeCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+  "schemaVersion": "ontograph.research.organisation-results.v1"
+}

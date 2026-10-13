@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "ontograph.research.viewpoint.v1",
+  "id": "viewpoint:organisational",
+  "caseRef": "case:research-appointments-v1",
+  "kind": "organisational",
+  "mode": "fixture",
+  "datasetRef": null,
+  "revisionRef": null,
+  "entities": [
+    {
+      "id": "display:person:a",
+      "identityMapRef": "identity:person:a",
+      "sourceRefs": [
+        "source:instances#/individuals/0"
+      ],
+      "mappingRefs": [
+        "mapping:person:a"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Research participant"
+    },
+    {
+      "id": "display:person:b",
+      "identityMapRef": "identity:person:b",
+      "sourceRefs": [
+        "source:instances#/individuals/1"
+      ],
+      "mappingRefs": [
+        "mapping:person:b"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Research participant"
+    },
+    {
+      "id": "display:event:seminar",
+      "identityMapRef": "identity:event:seminar",
+      "sourceRefs": [
+        "source:instances#/individuals/2"
+      ],
+      "mappingRefs": [
+        "mapping:event:seminar"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Seminar"
+    },
+    {
+      "id": "display:organization:one",
+      "identityMapRef": "identity:organization:one",
+      "sourceRefs": [
+        "source:instances#/individuals/3"
+      ],
+      "mappingRefs": [
+        "mapping:organization:one"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Research Institute"
+    },
+    {
+      "id": "display:quality:mass-a",
+      "identityMapRef": "identity:quality:mass-a",
+      "sourceRefs": [
+        "source:instances#/qualities/0"
+      ],
+      "mappingRefs": [
+        "mapping:quality:mass-a"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "quality:mass-a"
+    },
+    {
+      "id": "display:quality:mass-b",
+      "identityMapRef": "identity:quality:mass-b",
+      "sourceRefs": [
+        "source:instances#/qualities/1"
+      ],
+      "mappingRefs": [
+        "mapping:quality:mass-b"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "quality:mass-b"
+    },
+    {
+      "id": "display:appointment:one",
+      "identityMapRef": "identity:appointment:one",
+      "sourceRefs": [
+        "source:instances#/relators/0"
+      ],
+      "mappingRefs": [
+        "mapping:appointment:one"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "appointment:one"
+    },
+    {
+      "id": "display:appointment:two",
+      "identityMapRef": "identity:appointment:two",
+      "sourceRefs": [
+        "source:instances#/relators/1"
+      ],
+      "mappingRefs": [
+        "mapping:appointment:two"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "appointment:two"
+    },
+    {
+      "id": "display:membership:one",
+      "identityMapRef": "identity:membership:one",
+      "sourceRefs": [
+        "source:instances#/roleMemberships/0"
+      ],
+      "mappingRefs": [
+        "mapping:membership:one"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "membership:one"
+    },
+    {
+      "id": "display:membership:two",
+      "identityMapRef": "identity:membership:two",
+      "sourceRefs": [
+        "source:instances#/roleMemberships/1"
+      ],
+      "mappingRefs": [
+        "mapping:membership:two"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "membership:two"
+    },
+    {
+      "id": "display:participation:one",
+      "identityMapRef": "identity:participation:one",
+      "sourceRefs": [
+        "source:instances#/participations/0"
+      ],
+      "mappingRefs": [
+        "mapping:participation:one"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "participation:one"
+    },
+    {
+      "id": "display:participation:two",
+      "identityMapRef": "identity:participation:two",
+      "sourceRefs": [
+        "source:instances#/participations/1"
+      ],
+      "mappingRefs": [
+        "mapping:participation:two"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "participation:two"
+    }
+  ],
+  "relations": [],
+  "claimRefs": [
+    "claim:source-case"
+  ],
+  "limitations": [
+    "Illustrative source fixture; not live or recorded runtime output",
+    "Null canonical references; generated IRIs are proposed only",
+    "See gap:typed-mediations and gap:modal-normative"
+  ]
+}

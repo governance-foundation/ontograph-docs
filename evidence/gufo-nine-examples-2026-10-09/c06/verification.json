@@ -1,0 +1,1469 @@
+{
+  "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+  "candidate": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+  "caseRef": "EXT-GUFO-006-SITUATIONS",
+  "completeSourceIsomorphic": true,
+  "deterministicReloadReimport": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "http://purl.org/nemo/gufo#Situation",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": true,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission",
+        "predicate": "http://purl.org/nemo/gufo#standsInQualifiedInstantiation",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "result": {
+        "assertedEntailmentObligations": 1,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": true,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 0,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/situations#FebrilePatient",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": false,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/situations#Miguel",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": false,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    }
+  ],
+  "generatedShacl": {
+    "boundary": {
+      "actualStandardsExecution": true,
+      "canonicalStateMutated": false,
+      "claimsComprehensiveConformance": false,
+      "createsDecisionOrPromotion": false,
+      "sourceMutated": false
+    },
+    "conforms": true,
+    "dataArtifact": {
+      "artifactRef": "nine:c06-coverage",
+      "digest": "sha256:9ec6d6e9c891729f53f347c626781a6f5af5f5c388479d6572e4d472c80111aa"
+    },
+    "definitionArtifact": {
+      "artifactRef": "nine:c06-coverage-definition",
+      "digest": "sha256:b9dc61630f199c379c28086d634c1998f3f4041b6dafdf753c840e07365c22cd"
+    },
+    "operation": "shacl-validation",
+    "pinRef": "shacl-sparql:apache-jena-6.2.0",
+    "resultRef": "shacl-sparql-result:e4c49ff18c4a9e8661659b10c664cb5f885247cdfcdcfe135d1c89b0fda226c2",
+    "rows": [],
+    "schemaVersion": "ontograph.shacl-sparql.result.v1",
+    "semanticStatus": "conformant",
+    "shaclResults": [],
+    "variables": [
+      "conforms",
+      "focusNode",
+      "sourceShapeKind",
+      "sourceShape",
+      "constraintComponent",
+      "resultPath",
+      "severity",
+      "valueKind",
+      "value",
+      "message"
+    ]
+  },
+  "independentReview": "pending",
+  "limits": [
+    "source-derived candidate only; no adoption or modal identity/rigidity proof",
+    "generated shapes check explicit named classification/object/value coverage; anonymous expression closure uses the complete independent graph oracle; upstream shapes are separate",
+    "CLI-only admission; corresponding API capability not implemented"
+  ],
+  "owl": {
+    "assertedEntailmentObligations": 0,
+    "closureOntologies": 1,
+    "conclusionDateDatatypeExtension": false,
+    "conclusionOriginalProfileError": null,
+    "conclusionOriginalProfileReport": null,
+    "conclusionOriginalProfileViolationCount": null,
+    "conclusionOwl2DlProfile": null,
+    "conclusionPartialCalendarDatatypeExtension": false,
+    "conclusionProfileLexicalCorrections": 0,
+    "conclusionTimeDatatypeExtension": false,
+    "consistent": true,
+    "dateDatatypeExtension": true,
+    "entailed": null,
+    "fullDatatypeReasoning": true,
+    "ignoreUnsupportedAxioms": false,
+    "originalProfileError": null,
+    "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+    "originalProfileViolationCount": 0,
+    "owl2DlProfile": true,
+    "partialCalendarDatatypeExtension": false,
+    "partialCalendarFundamentalFacetsQualified": false,
+    "profileLexicalCorrections": 0,
+    "profileViolationCount": 0,
+    "qualifiedProfile": true,
+    "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+    "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+    "queriedEntailmentObligations": 0,
+    "satisfiable": null,
+    "standardDatatypeMapQualified": false,
+    "status": "executed",
+    "timeDatatypeExtension": false,
+    "uncorrectedProfileViolations": 0,
+    "undefinedDatatypeHandling": "exception",
+    "uniqueNameAssumption": false
+  },
+  "queries": [
+    {
+      "name": "classifications",
+      "rows": [
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#CompositeResinQuantity"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#DentalCrown"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Heart"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#DonorHeart881"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Phase"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#FebrilePatient"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Heart"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Patient"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Miguel"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Patient"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#DentalCrown"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrown"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryConstitutionSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownIsResin"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryConstitutionSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownWasPorcelain"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryParthoodSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHadNativeHeart"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryParthoodSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHasDonorHeart"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#HeartTransplantSurgery"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeartTransplant20240305"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryRelationshipSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Heart"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraNativeHeart"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryInstantiationSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#TemporaryInstantiationSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasOverweightUntilJune2023"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#QualityValueAttributionSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs75KgIn2024"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#QualityValueAttributionSituation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#PorcelainQuantity"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#OriginalPorcelainBatch"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Phase"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#OverweightPerson"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Patient"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#PorcelainQuantity"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#CompositeResinQuantity"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#ReplacementResinBatch"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#SepsisAlert"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#SepsisAlert20240202"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#ComparativeRelationshipType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#heavierThan"
+          }
+        }
+      ],
+      "variables": [
+        "subject",
+        "class"
+      ]
+    },
+    {
+      "name": "feature-facts",
+      "rows": [
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedParthood"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#DonorHeart881"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHasDonorHeart"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedAttribution"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs75KgIn2024"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedAttribution"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedInstantiation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedInstantiation"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasOverweightUntilJune2023"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#standsAsHeavierPatient"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsConstitutedEndurant"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownIsResin"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrown"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownIsResin"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2022-11-21"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsConstitutedEndurant"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownWasPorcelain"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrown"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownWasPorcelain"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2022-11-20"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsTemporaryWhole"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHadNativeHeart"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHadNativeHeart"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-03-05"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsTemporaryWhole"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHasDonorHeart"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Nora"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHasDonorHeart"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-03-05"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#broughtAbout"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeartTransplant20240305"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHasDonorHeart"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeartTransplant20240305"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-03-05"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsRelationshipType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#heavierThan"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-01-15"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-01-15"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#concernsLighterPatient"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHeavierThanMiguelOn20240115"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Miguel"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedParthood"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraNativeHeart"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraHadNativeHeart"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsNonRigidType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#FebrilePatient"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#contributedToTrigger"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#SepsisAlert20240202"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-02-02T08:00:00Z"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-02-02T14:00:00Z"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsNonRigidType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasOverweightUntilJune2023"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#OverweightPerson"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasOverweightUntilJune2023"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2020-03-01"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWasOverweightUntilJune2023"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2023-06-30"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsQualityType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs75KgIn2024"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Weight"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsQualityValue"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs75KgIn2024"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#double",
+            "kind": "literal",
+            "language": null,
+            "value": "75.0"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs75KgIn2024"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-01-15"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsQualityType"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Weight"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#concernsQualityValue"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#double",
+            "kind": "literal",
+            "language": null,
+            "value": "82.0"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2023-01-10"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasEndPointInXSDDate"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraWeighs82KgIn2023"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#date",
+            "kind": "literal",
+            "language": null,
+            "value": "2023-06-30"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedConstitution"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#OriginalPorcelainBatch"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownWasPorcelain"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#standsInQualifiedConstitution"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#ReplacementResinBatch"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#NoraCrownIsResin"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#SepsisAlert20240202"
+          },
+          "value": {
+            "datatype": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+            "kind": "literal",
+            "language": null,
+            "value": "2024-02-02T14:05:00Z"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#isDerivedFrom"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#heavierThan"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/situations#Weight"
+          }
+        }
+      ],
+      "variables": [
+        "subject",
+        "property",
+        "value"
+      ]
+    }
+  ],
+  "sourceAssertions": 137,
+  "sourceCanonicalNonmutation": true,
+  "status": "passed",
+  "upstreamShacl": {
+    "boundary": {
+      "actualStandardsExecution": true,
+      "canonicalStateMutated": false,
+      "claimsComprehensiveConformance": false,
+      "createsDecisionOrPromotion": false,
+      "sourceMutated": false
+    },
+    "conforms": true,
+    "dataArtifact": {
+      "artifactRef": "nine:c06-shacl",
+      "digest": "sha256:9ec6d6e9c891729f53f347c626781a6f5af5f5c388479d6572e4d472c80111aa"
+    },
+    "definitionArtifact": {
+      "artifactRef": "nine:c06-shacl-definition",
+      "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+    },
+    "operation": "shacl-validation",
+    "pinRef": "shacl-sparql:apache-jena-6.2.0",
+    "resultRef": "shacl-sparql-result:b81619ea11a1e57dff81c246e310304a63a5211af109a75981b8550983625a22",
+    "rows": [],
+    "schemaVersion": "ontograph.shacl-sparql.result.v1",
+    "semanticStatus": "conformant",
+    "shaclResults": [],
+    "variables": [
+      "conforms",
+      "focusNode",
+      "sourceShapeKind",
+      "sourceShape",
+      "constraintComponent",
+      "resultPath",
+      "severity",
+      "valueKind",
+      "value",
+      "message"
+    ]
+  }
+}

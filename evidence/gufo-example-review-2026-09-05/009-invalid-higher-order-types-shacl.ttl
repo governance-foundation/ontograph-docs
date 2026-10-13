@@ -1,0 +1,59 @@
+PREFIX :           <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#>
+PREFIX ex:         <https://purl.org/nemo/gufo-examples/higher-order-types#>
+PREFIX gufo:       <http://purl.org/nemo/gufo#>
+PREFIX gufoshapes: <https://w3id.org/nemo/gufoshapes#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:         <http://www.w3.org/ns/shacl#>
+PREFIX time:       <http://www.w3.org/2006/time#>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+
+[ rdf:type     sh:ValidationReport;
+  sh:conforms  false;
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :AnimalSpecies;
+                 sh:resultMessage              "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.";
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;
+                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:value                      :AnimalSpecies
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :AnimalSpecies;
+                 sh:resultMessage              "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.";
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;
+                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:value                      :AnimalSpecies
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :AnimalSpecies;
+                 sh:resultMessage              "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.";
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;
+                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:value                      :AnimalSpecies
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :AnimalSpecies;
+                 sh:resultMessage              "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.";
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;
+                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:value                      :AnimalSpecies
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  :AnimalSpecies;
+                 sh:resultMessage              "Instances <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger> and <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint.";
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraint           gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent;
+                 sh:sourceShape                gufoshapes:PartitionPairwiseDisjointnessShape;
+                 sh:value                      :AnimalSpecies
+               ]
+] .

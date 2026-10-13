@@ -1,0 +1,3914 @@
+{
+  "canonicalStateMutated": false,
+  "comprehensiveConformance": false,
+  "diagnostics": [
+    {
+      "code": "COMP-MISSING-MEDIATION",
+      "outcome": "invalid",
+      "owlVerdict": null,
+      "sourceId": "appointment:one"
+    }
+  ],
+  "graph": "@prefix gufo: <http://purl.org/nemo/gufo#> .\n@prefix comp: <https://ontograph.dev/vocab/composition#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n<https://example.org/composition/class/class%3Aappointment> a gufo:EndurantType .\n<https://example.org/composition/class/class%3Aappointment> a owl:Class .\n<https://example.org/composition/class/class%3Aappointment> comp:sourceId \"class:appointment\" .\n<https://example.org/composition/class/class%3Aappointment> rdfs:label \"Appointment\"@en .\n<https://example.org/composition/class/class%3Aappointment> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <https://example.org/composition/relation/relation%3Amediation> ; owl:onClass <https://example.org/composition/class/class%3Aperson> ; owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ] .\n<https://example.org/composition/class/class%3Aappointment> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <https://example.org/composition/relation/relation%3Aorganization-mediation> ; owl:onClass <https://example.org/composition/class/class%3Aorganization> ; owl:minQualifiedCardinality \"2\"^^xsd:nonNegativeInteger ] .\n<https://example.org/composition/class/class%3Aappointment> rdfs:subClassOf gufo:Relator .\n<https://example.org/composition/class/class%3Amass> a gufo:EndurantType .\n<https://example.org/composition/class/class%3Amass> a owl:Class .\n<https://example.org/composition/class/class%3Amass> comp:sourceId \"class:mass\" .\n<https://example.org/composition/class/class%3Amass> rdfs:label \"Mass\"@en .\n<https://example.org/composition/class/class%3Amass> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <https://example.org/composition/relation/relation%3Acharacterization> ; owl:onClass <https://example.org/composition/class/class%3Aperson> ; owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ] .\n<https://example.org/composition/class/class%3Amass> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <https://example.org/composition/relation/relation%3Acharacterization> ; owl:onClass <https://example.org/composition/class/class%3Aperson> ; owl:minQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ] .\n<https://example.org/composition/class/class%3Amass> rdfs:subClassOf gufo:Quality .\n<https://example.org/composition/class/class%3Aorganization> a gufo:Kind .\n<https://example.org/composition/class/class%3Aorganization> a owl:Class .\n<https://example.org/composition/class/class%3Aorganization> comp:sourceId \"class:organization\" .\n<https://example.org/composition/class/class%3Aorganization> rdfs:label \"Organization\"@en .\n<https://example.org/composition/class/class%3Aorganization> rdfs:subClassOf gufo:FunctionalComplex .\n<https://example.org/composition/class/class%3Aperson> a gufo:Kind .\n<https://example.org/composition/class/class%3Aperson> a owl:Class .\n<https://example.org/composition/class/class%3Aperson> comp:sourceId \"class:person\" .\n<https://example.org/composition/class/class%3Aperson> rdfs:label \"Person\"@en .\n<https://example.org/composition/class/class%3Aperson> rdfs:subClassOf gufo:FunctionalComplex .\n<https://example.org/composition/class/class%3Aresearcher> a gufo:Role .\n<https://example.org/composition/class/class%3Aresearcher> a owl:Class .\n<https://example.org/composition/class/class%3Aresearcher> comp:sourceId \"class:researcher\" .\n<https://example.org/composition/class/class%3Aresearcher> rdfs:label \"Researcher\"@en .\n<https://example.org/composition/class/class%3Aresearcher> rdfs:subClassOf <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/class/class%3Aresearcher> rdfs:subClassOf gufo:FunctionalComplex .\n<https://example.org/composition/class/class%3Aseminar> a gufo:EventType .\n<https://example.org/composition/class/class%3Aseminar> a owl:Class .\n<https://example.org/composition/class/class%3Aseminar> comp:sourceId \"class:seminar\" .\n<https://example.org/composition/class/class%3Aseminar> rdfs:label \"Seminar\"@en .\n<https://example.org/composition/class/class%3Aseminar> rdfs:subClassOf gufo:Event .\n<https://example.org/composition/fact/membership%3Aone> a comp:RoleMembership .\n<https://example.org/composition/fact/membership%3Aone> comp:begin \"2024-02-29T10:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/membership%3Aone> comp:end \"2024-02-29T12:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/membership%3Aone> comp:individual <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/fact/membership%3Aone> comp:relator <https://example.org/composition/individual/appointment%3Aone> .\n<https://example.org/composition/fact/membership%3Aone> comp:role <https://example.org/composition/class/class%3Aresearcher> .\n<https://example.org/composition/fact/membership%3Atwo> a comp:RoleMembership .\n<https://example.org/composition/fact/membership%3Atwo> comp:begin \"2024-03-01T00:00:00+14:00\"^^xsd:dateTime .\n<https://example.org/composition/fact/membership%3Atwo> comp:end \"2024-03-01T03:00:00+14:00\"^^xsd:dateTime .\n<https://example.org/composition/fact/membership%3Atwo> comp:individual <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/fact/membership%3Atwo> comp:relator <https://example.org/composition/individual/appointment%3Atwo> .\n<https://example.org/composition/fact/membership%3Atwo> comp:role <https://example.org/composition/class/class%3Aresearcher> .\n<https://example.org/composition/fact/participation%3Aone> a comp:QualifiedParticipation .\n<https://example.org/composition/fact/participation%3Aone> comp:begin \"2024-02-29T10:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/participation%3Aone> comp:end \"2024-02-29T11:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/participation%3Aone> comp:event <https://example.org/composition/individual/event%3Aseminar> .\n<https://example.org/composition/fact/participation%3Aone> comp:participant <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/fact/participation%3Aone> comp:relationType <https://example.org/composition/relation/relation%3Aparticipation> .\n<https://example.org/composition/fact/participation%3Atwo> a comp:QualifiedParticipation .\n<https://example.org/composition/fact/participation%3Atwo> comp:begin \"2024-02-29T10:30:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/participation%3Atwo> comp:end \"2024-02-29T11:30:00Z\"^^xsd:dateTime .\n<https://example.org/composition/fact/participation%3Atwo> comp:event <https://example.org/composition/individual/event%3Aseminar> .\n<https://example.org/composition/fact/participation%3Atwo> comp:participant <https://example.org/composition/individual/person%3Ab> .\n<https://example.org/composition/fact/participation%3Atwo> comp:relationType <https://example.org/composition/relation/relation%3Aparticipation> .\n<https://example.org/composition/individual/appointment%3Aone> <https://example.org/composition/relation/relation%3Amediation> <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/appointment%3Aone> a <https://example.org/composition/class/class%3Aappointment> .\n<https://example.org/composition/individual/appointment%3Aone> a gufo:Relator .\n<https://example.org/composition/individual/appointment%3Aone> comp:begin \"2024-02-29T10:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/individual/appointment%3Aone> comp:end \"2024-02-29T12:00:00Z\"^^xsd:dateTime .\n<https://example.org/composition/individual/appointment%3Aone> gufo:mediates <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/appointment%3Atwo> <https://example.org/composition/relation/relation%3Amediation> <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/appointment%3Atwo> <https://example.org/composition/relation/relation%3Aorganization-mediation> <https://example.org/composition/individual/organization%3Aone> .\n<https://example.org/composition/individual/appointment%3Atwo> a <https://example.org/composition/class/class%3Aappointment> .\n<https://example.org/composition/individual/appointment%3Atwo> a gufo:Relator .\n<https://example.org/composition/individual/appointment%3Atwo> comp:begin \"2024-03-01T00:00:00+14:00\"^^xsd:dateTime .\n<https://example.org/composition/individual/appointment%3Atwo> comp:end \"2024-03-01T03:00:00+14:00\"^^xsd:dateTime .\n<https://example.org/composition/individual/appointment%3Atwo> gufo:mediates <https://example.org/composition/individual/organization%3Aone> .\n<https://example.org/composition/individual/appointment%3Atwo> gufo:mediates <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/event%3Aseminar> a <https://example.org/composition/class/class%3Aseminar> .\n<https://example.org/composition/individual/event%3Aseminar> comp:sourceId \"event:seminar\" .\n<https://example.org/composition/individual/event%3Aseminar> rdfs:label \"Seminar\" .\n<https://example.org/composition/individual/organization%3Aone> a <https://example.org/composition/class/class%3Aorganization> .\n<https://example.org/composition/individual/organization%3Aone> comp:sourceId \"organization:one\" .\n<https://example.org/composition/individual/organization%3Aone> rdfs:label \"Research Institute\" .\n<https://example.org/composition/individual/person%3Aa> a <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/individual/person%3Aa> comp:sourceId \"person:a\" .\n<https://example.org/composition/individual/person%3Aa> rdfs:label \"Alex\" .\n<https://example.org/composition/individual/person%3Ab> a <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/individual/person%3Ab> comp:sourceId \"person:b\" .\n<https://example.org/composition/individual/person%3Ab> rdfs:label \"Alex\" .\n<https://example.org/composition/individual/quality%3Amass-a> <https://example.org/composition/relation/relation%3Acharacterization> <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/quality%3Amass-a> a <https://example.org/composition/class/class%3Amass> .\n<https://example.org/composition/individual/quality%3Amass-a> a gufo:Quality .\n<https://example.org/composition/individual/quality%3Amass-a> gufo:hasQualityValue \"70.0\"^^xsd:decimal .\n<https://example.org/composition/individual/quality%3Amass-a> gufo:inheresIn <https://example.org/composition/individual/person%3Aa> .\n<https://example.org/composition/individual/quality%3Amass-b> <https://example.org/composition/relation/relation%3Acharacterization> <https://example.org/composition/individual/person%3Ab> .\n<https://example.org/composition/individual/quality%3Amass-b> a <https://example.org/composition/class/class%3Amass> .\n<https://example.org/composition/individual/quality%3Amass-b> a gufo:Quality .\n<https://example.org/composition/individual/quality%3Amass-b> gufo:hasQualityValue \"70.00\"^^xsd:decimal .\n<https://example.org/composition/individual/quality%3Amass-b> gufo:inheresIn <https://example.org/composition/individual/person%3Ab> .\n<https://example.org/composition/relation/relation%3Acharacterization> a owl:ObjectProperty .\n<https://example.org/composition/relation/relation%3Acharacterization> rdfs:domain <https://example.org/composition/class/class%3Amass> .\n<https://example.org/composition/relation/relation%3Acharacterization> rdfs:label \"characterization\"@en .\n<https://example.org/composition/relation/relation%3Acharacterization> rdfs:range <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/relation/relation%3Acharacterization> rdfs:subPropertyOf gufo:inheresIn .\n<https://example.org/composition/relation/relation%3Amediation> a owl:ObjectProperty .\n<https://example.org/composition/relation/relation%3Amediation> rdfs:domain <https://example.org/composition/class/class%3Aappointment> .\n<https://example.org/composition/relation/relation%3Amediation> rdfs:label \"mediation\"@en .\n<https://example.org/composition/relation/relation%3Amediation> rdfs:range <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/relation/relation%3Amediation> rdfs:subPropertyOf gufo:mediates .\n<https://example.org/composition/relation/relation%3Aorganization-mediation> a owl:ObjectProperty .\n<https://example.org/composition/relation/relation%3Aorganization-mediation> rdfs:domain <https://example.org/composition/class/class%3Aappointment> .\n<https://example.org/composition/relation/relation%3Aorganization-mediation> rdfs:label \"mediation\"@en .\n<https://example.org/composition/relation/relation%3Aorganization-mediation> rdfs:range <https://example.org/composition/class/class%3Aorganization> .\n<https://example.org/composition/relation/relation%3Aorganization-mediation> rdfs:subPropertyOf gufo:mediates .\n<https://example.org/composition/relation/relation%3Aparticipation> a owl:ObjectProperty .\n<https://example.org/composition/relation/relation%3Aparticipation> rdfs:domain <https://example.org/composition/class/class%3Aperson> .\n<https://example.org/composition/relation/relation%3Aparticipation> rdfs:label \"participation\"@en .\n<https://example.org/composition/relation/relation%3Aparticipation> rdfs:range <https://example.org/composition/class/class%3Aseminar> .\n<https://example.org/composition/relation/relation%3Aparticipation> rdfs:subPropertyOf gufo:participatedIn .\ncomp:QualifiedParticipation a owl:Class .\ncomp:RoleMembership a owl:Class .\ncomp:begin a owl:DatatypeProperty .\ncomp:end a owl:DatatypeProperty .\ncomp:event a owl:ObjectProperty .\ncomp:individual a owl:ObjectProperty .\ncomp:participant a owl:ObjectProperty .\ncomp:relationType a owl:ObjectProperty .\ncomp:relator a owl:ObjectProperty .\ncomp:role a owl:ObjectProperty .\ncomp:sourceId a owl:AnnotationProperty .\n",
+  "graphDigest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd",
+  "instanceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+  "instanceSource": "{\"schemaVersion\": \"ontograph.gufo.source-composition.v1\", \"modelRef\": \"model:source-composition-2128\", \"evidenceRef\": \"evidence:2695-personnel-research\", \"individuals\": [{\"id\": \"person:a\", \"classRef\": \"class:person\", \"label\": \"Alex\"}, {\"id\": \"person:b\", \"classRef\": \"class:person\", \"label\": \"Alex\"}, {\"id\": \"event:seminar\", \"classRef\": \"class:seminar\", \"label\": \"Seminar\"}, {\"id\": \"organization:one\", \"classRef\": \"class:organization\", \"label\": \"Research Institute\"}], \"qualities\": [{\"id\": \"quality:mass-a\", \"classRef\": \"class:mass\", \"bearerRef\": \"person:a\", \"characterizationRef\": \"relation:characterization\", \"value\": {\"lexical\": \"70.0\", \"datatype\": \"xsd:decimal\"}}, {\"id\": \"quality:mass-b\", \"classRef\": \"class:mass\", \"bearerRef\": \"person:b\", \"characterizationRef\": \"relation:characterization\", \"value\": {\"lexical\": \"70.00\", \"datatype\": \"xsd:decimal\"}}], \"relators\": [{\"id\": \"appointment:one\", \"classRef\": \"class:appointment\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T12:00:00Z\"}, \"mediations\": [{\"mediationRef\": \"relation:mediation\", \"participantRefs\": [\"person:a\"]}, {\"mediationRef\": \"relation:organization-mediation\", \"participantRefs\": []}]}, {\"id\": \"appointment:two\", \"classRef\": \"class:appointment\", \"interval\": {\"begin\": \"2024-03-01T00:00:00+14:00\", \"end\": \"2024-03-01T03:00:00+14:00\"}, \"mediations\": [{\"mediationRef\": \"relation:mediation\", \"participantRefs\": [\"person:a\"]}, {\"mediationRef\": \"relation:organization-mediation\", \"participantRefs\": [\"organization:one\"]}]}], \"roleMemberships\": [{\"id\": \"membership:one\", \"individualRef\": \"person:a\", \"roleRef\": \"class:researcher\", \"relatorRef\": \"appointment:one\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T12:00:00Z\"}}, {\"id\": \"membership:two\", \"individualRef\": \"person:a\", \"roleRef\": \"class:researcher\", \"relatorRef\": \"appointment:two\", \"interval\": {\"begin\": \"2024-03-01T00:00:00+14:00\", \"end\": \"2024-03-01T03:00:00+14:00\"}}], \"participations\": [{\"id\": \"participation:one\", \"participantRef\": \"person:a\", \"eventRef\": \"event:seminar\", \"participationRef\": \"relation:participation\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T11:00:00Z\"}}, {\"id\": \"participation:two\", \"participantRef\": \"person:b\", \"eventRef\": \"event:seminar\", \"participationRef\": \"relation:participation\", \"interval\": {\"begin\": \"2024-02-29T10:30:00Z\", \"end\": \"2024-02-29T11:30:00Z\"}}], \"differentIndividuals\": []}",
+  "modelSource": {
+    "canonicalStateMutated": false,
+    "comprehensiveConformance": false,
+    "exchangeDiagnostics": [],
+    "exchangeOutcome": "valid",
+    "exchangeSchema": {
+      "schemaDigest": "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e",
+      "schemaId": "https://w3id.org/ontouml/schema/v1.0.2",
+      "serializationProfileRef": "ontouml-schema@1.0.2",
+      "sourceElementCount": 19,
+      "sourceModelRef": "model:source-composition-2128",
+      "sourceVersionRef": "SB-193@ontouml-schema-v1.0.2",
+      "upstreamCommit": "7a0fe7ef7d4caea8d62f2782fb3681261a75f452"
+    },
+    "fields": [
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='OKte7WGEEWSo8zKD']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "kind"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "kind",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#functionalComplexNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "functional-complex"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:person",
+        "sourcePointer": "/elements/0/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='Uzne7WGEEWSo8zLR']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "role"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "role",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#functionalComplexNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "functional-complex"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:researcher",
+        "sourcePointer": "/elements/1/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='UwHe7WGEEWSo8zLF']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "relator"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "relator",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#relatorNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "relator"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:appointment",
+        "sourcePointer": "/elements/2/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='w2He7WGEEWSo8zLI']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "quality"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "quality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#qualityNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "quality"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:mass",
+        "sourcePointer": "/elements/3/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='eSVe7WGEEWSo8zJx']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "event"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "event",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#eventNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "event"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:seminar",
+        "sourcePointer": "/elements/4/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "0..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:appointment"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:appointment",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-source",
+        "sourcePointer": "/elements/6/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "2",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "2..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:person"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:person",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:mediation-target",
+        "sourcePointer": "/elements/7/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='1nk.7WGEEWSo8zND']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "mediation"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "mediation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:mediation",
+        "sourcePointer": "/elements/8/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:mediation",
+        "sourcePointer": "/elements/8/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:mediation",
+        "sourcePointer": "/elements/8/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": [
+            "property:mediation-source",
+            "property:mediation-target"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "property:mediation-source",
+          "property:mediation-target"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:mediation",
+        "sourcePointer": "/elements/8/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "0..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:mass"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:mass",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-source",
+        "sourcePointer": "/elements/9/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "1",
+          "upper": {
+            "kind": "finite",
+            "value": "1"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:person"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:person",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:characterization-target",
+        "sourcePointer": "/elements/10/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='daU.7WGEEWSo8zNG']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "characterization"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "characterization",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:characterization",
+        "sourcePointer": "/elements/11/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:characterization",
+        "sourcePointer": "/elements/11/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:characterization",
+        "sourcePointer": "/elements/11/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": [
+            "property:characterization-source",
+            "property:characterization-target"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "property:characterization-source",
+          "property:characterization-target"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:characterization",
+        "sourcePointer": "/elements/11/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "0..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:person"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:person",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-source",
+        "sourcePointer": "/elements/12/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "0..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:seminar"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:seminar",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:participation-target",
+        "sourcePointer": "/elements/13/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='zby.7WGEEWSo8zNh']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "participation"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "participation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:participation",
+        "sourcePointer": "/elements/14/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:participation",
+        "sourcePointer": "/elements/14/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:participation",
+        "sourcePointer": "/elements/14/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": [
+            "property:participation-source",
+            "property:participation-target"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "property:participation-source",
+          "property:participation-target"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:participation",
+        "sourcePointer": "/elements/14/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='OKte7WGEEWSo8zKD']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "kind"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "kind",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:restrictedTo"
+        ],
+        "derivationRule": "eleven-nature-name-correspondences",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "restrictedTo",
+        "normalizedValue": {
+          "kind": "nature-set",
+          "values": [
+            "https://w3id.org/ontouml#functionalComplexNature"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "functional-complex"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/restrictedTo"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:order"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "order",
+        "normalizedValue": {
+          "kind": "concrete-order",
+          "value": "1"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "1",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/order"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isPowertype"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isPowertype",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/isPowertype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/properties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:literals"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Class",
+        "field": "literals",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "class:organization",
+        "sourcePointer": "/elements/15/literals"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "0..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:appointment"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:appointment",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-source",
+        "sourcePointer": "/elements/16/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype"
+        ],
+        "derivationRule": "no-default-invented",
+        "disposition": "unspecified",
+        "elementType": "Property",
+        "field": "stereotype",
+        "normalizedValue": {
+          "kind": "unknown"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:aggregationKind"
+        ],
+        "derivationRule": "schema-1.0.2-null-aggregation-none",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "aggregationKind",
+        "normalizedValue": {
+          "kind": "aggregation",
+          "value": "NONE"
+        },
+        "outstandingSemantics": [],
+        "presence": "null",
+        "rawValue": null,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/aggregationKind"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:cardinality"
+        ],
+        "derivationRule": "numeric-cardinality",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "cardinality",
+        "normalizedValue": {
+          "kind": "cardinality",
+          "lower": "2",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "2..*",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/cardinality"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isOrdered"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isOrdered",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/isOrdered"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isReadOnly"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isReadOnly",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/isReadOnly"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:propertyType"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "propertyType",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": "class:organization"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "class:organization",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/propertyType"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:subsettedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "subsettedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/subsettedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:redefinedProperties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "Property",
+        "field": "redefinedProperties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": []
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "property:organization-target",
+        "sourcePointer": "/elements/17/redefinedProperties"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:stereotype",
+          "metamodel:a76f8adef3b615d81645a558078bfe2bc98c7fc0#/Project/Models//*[@Id='1nk.7WGEEWSo8zND']"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "stereotype",
+        "normalizedValue": {
+          "admission": "recognized",
+          "kind": "stereotype",
+          "value": "mediation"
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": "mediation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:organization-mediation",
+        "sourcePointer": "/elements/18/stereotype"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isAbstract"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isAbstract",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:organization-mediation",
+        "sourcePointer": "/elements/18/isAbstract"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:isDerived"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "isDerived",
+        "normalizedValue": {
+          "kind": "boolean",
+          "value": false
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": false,
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:organization-mediation",
+        "sourcePointer": "/elements/18/isDerived"
+      },
+      {
+        "authorityRefs": [
+          "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e#field:properties"
+        ],
+        "derivationRule": "supplied-field",
+        "disposition": "normalized",
+        "elementType": "BinaryRelation",
+        "field": "properties",
+        "normalizedValue": {
+          "kind": "retained-source-field",
+          "value": [
+            "property:organization-source",
+            "property:organization-target"
+          ]
+        },
+        "outstandingSemantics": [],
+        "presence": "supplied",
+        "rawValue": [
+          "property:organization-source",
+          "property:organization-target"
+        ],
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceElementId": "relation:organization-mediation",
+        "sourcePointer": "/elements/18/properties"
+      }
+    ],
+    "fullLanguageOutcome": "unsupported",
+    "fullProfileAdopted": false,
+    "metamodelInventoryDigest": "sha256:e8f1c1736fcc5d6662b9bbf06a7e32b5c9297dca4741cb7b9e1ea1ef30f74399",
+    "normalizationOutcome": "normalized",
+    "profileRef": "ontograph.ontouml-exchange-normalization.v1",
+    "referenceIntegrity": {
+      "boundary": {
+        "certifiesOntoumlConformance": false,
+        "createsDecision": false,
+        "createsPromotion": false,
+        "exchangeSchemaValidityIsSeparate": true,
+        "fetchesExternalTargets": false,
+        "infersSemanticMeaning": false,
+        "mutatesCanonicalState": false,
+        "repairsReferences": false,
+        "sourcePayloadPreserved": true,
+        "validatesCanonRules": false
+      },
+      "checkedReferenceCount": 18,
+      "findingCount": 0,
+      "findings": [],
+      "schemaRef": "ontograph.ontouml-project.reference-integrity.v1",
+      "serializationProfileRef": "ontouml-schema@1.0.2",
+      "serializationSchemaDigest": "sha256:f24705c3a39e5bd4576b8fd0f0b9447ce9f54320444d7b59973add2b8caaec0e",
+      "serializationSchemaId": "https://w3id.org/ontouml/schema/v1.0.2",
+      "sourceContentDigest": "sha256:cb183292af7fb6d823675adcc75d8fe92b81123678af34495e881b358fbf3c79",
+      "sourceElementCount": 19,
+      "sourceModelRef": "model:source-composition-2128",
+      "status": "satisfied"
+    },
+    "relationContexts": [
+      {
+        "ends": [
+          {
+            "position": 0,
+            "propertyId": "property:mediation-source",
+            "propertyPointer": "/elements/6",
+            "sourcePointer": "/elements/8/properties/0",
+            "typeId": "class:appointment",
+            "typeKind": "Class",
+            "typePointer": "/elements/2"
+          },
+          {
+            "position": 1,
+            "propertyId": "property:mediation-target",
+            "propertyPointer": "/elements/7",
+            "sourcePointer": "/elements/8/properties/1",
+            "typeId": "class:person",
+            "typeKind": "Class",
+            "typePointer": "/elements/0"
+          }
+        ],
+        "findings": [],
+        "orderedBindingDigest": "sha256:ca3dd63a8ce16e1784cba1aa9fda82420e6cabb31a1d156296d83005d749b197",
+        "outcome": "normalized",
+        "relationId": "relation:mediation",
+        "relationKind": "BinaryRelation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourcePointer": "/elements/8/properties"
+      },
+      {
+        "ends": [
+          {
+            "position": 0,
+            "propertyId": "property:characterization-source",
+            "propertyPointer": "/elements/9",
+            "sourcePointer": "/elements/11/properties/0",
+            "typeId": "class:mass",
+            "typeKind": "Class",
+            "typePointer": "/elements/3"
+          },
+          {
+            "position": 1,
+            "propertyId": "property:characterization-target",
+            "propertyPointer": "/elements/10",
+            "sourcePointer": "/elements/11/properties/1",
+            "typeId": "class:person",
+            "typeKind": "Class",
+            "typePointer": "/elements/0"
+          }
+        ],
+        "findings": [],
+        "orderedBindingDigest": "sha256:e374ea9289252c45714eeb84b6b8cf4bacd3ef3cf8c5c2eb9214d3bfe4ce2a3b",
+        "outcome": "normalized",
+        "relationId": "relation:characterization",
+        "relationKind": "BinaryRelation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourcePointer": "/elements/11/properties"
+      },
+      {
+        "ends": [
+          {
+            "position": 0,
+            "propertyId": "property:participation-source",
+            "propertyPointer": "/elements/12",
+            "sourcePointer": "/elements/14/properties/0",
+            "typeId": "class:person",
+            "typeKind": "Class",
+            "typePointer": "/elements/0"
+          },
+          {
+            "position": 1,
+            "propertyId": "property:participation-target",
+            "propertyPointer": "/elements/13",
+            "sourcePointer": "/elements/14/properties/1",
+            "typeId": "class:seminar",
+            "typeKind": "Class",
+            "typePointer": "/elements/4"
+          }
+        ],
+        "findings": [],
+        "orderedBindingDigest": "sha256:07bc78f62c38a6b8b73e54b2d5599e519dba3e455d43e7ff0220986024560f92",
+        "outcome": "normalized",
+        "relationId": "relation:participation",
+        "relationKind": "BinaryRelation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourcePointer": "/elements/14/properties"
+      },
+      {
+        "ends": [
+          {
+            "position": 0,
+            "propertyId": "property:organization-source",
+            "propertyPointer": "/elements/16",
+            "sourcePointer": "/elements/18/properties/0",
+            "typeId": "class:appointment",
+            "typeKind": "Class",
+            "typePointer": "/elements/2"
+          },
+          {
+            "position": 1,
+            "propertyId": "property:organization-target",
+            "propertyPointer": "/elements/17",
+            "sourcePointer": "/elements/18/properties/1",
+            "typeId": "class:organization",
+            "typeKind": "Class",
+            "typePointer": "/elements/15"
+          }
+        ],
+        "findings": [],
+        "orderedBindingDigest": "sha256:af9ad36a6b0ff212ff58b347f4a679166527d6b1e9401af1aefedef009785a9c",
+        "outcome": "normalized",
+        "relationId": "relation:organization-mediation",
+        "relationKind": "BinaryRelation",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourcePointer": "/elements/18/properties"
+      }
+    ],
+    "schemaVersion": "ontograph.ontouml-exchange-normalization-report.v1",
+    "sourceBytes": 12388,
+    "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+    "sourceModelMutated": false,
+    "sourceText": "{\r\n  \"id\": \"model:source-composition-2128\",\r\n  \"created\": \"2026-08-16\",\r\n  \"modified\": null,\r\n  \"name\": {\r\n    \"en\": \"Personnel and research appointments\"\r\n  },\r\n  \"alternativeNames\": [],\r\n  \"description\": {\r\n    \"en\": \"Personnel identity and research staffing viewpoints share explicit Appointment relators; candidate demonstration, not adopted organisational policy.\"\r\n  },\r\n  \"editorialNotes\": [],\r\n  \"creators\": [],\r\n  \"contributors\": [],\r\n  \"type\": \"Project\",\r\n  \"elements\": [\r\n    {\r\n      \"id\": \"class:person\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Person\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"kind\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"functional-complex\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"class:researcher\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Researcher\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"role\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"functional-complex\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"class:appointment\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Appointment\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"relator\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"relator\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"class:mass\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Mass\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"quality\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"quality\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"class:seminar\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Seminar\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"event\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"event\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"generalization:researcher-person\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Researcher specializes Person\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"type\": \"Generalization\",\r\n      \"general\": \"class:person\",\r\n      \"specific\": \"class:researcher\"\r\n    },\r\n    {\r\n      \"id\": \"property:mediation-source\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"source\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"0..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:appointment\"\r\n    },\r\n    {\r\n      \"id\": \"property:mediation-target\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"target\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"2..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:person\"\r\n    },\r\n    {\r\n      \"id\": \"relation:mediation\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"mediation\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"mediation\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [\r\n        \"property:mediation-source\",\r\n        \"property:mediation-target\"\r\n      ],\r\n      \"type\": \"BinaryRelation\"\r\n    },\r\n    {\r\n      \"id\": \"property:characterization-source\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"source\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"0..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:mass\"\r\n    },\r\n    {\r\n      \"id\": \"property:characterization-target\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"target\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"1\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:person\"\r\n    },\r\n    {\r\n      \"id\": \"relation:characterization\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"characterization\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"characterization\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [\r\n        \"property:characterization-source\",\r\n        \"property:characterization-target\"\r\n      ],\r\n      \"type\": \"BinaryRelation\"\r\n    },\r\n    {\r\n      \"id\": \"property:participation-source\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"source\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"0..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:person\"\r\n    },\r\n    {\r\n      \"id\": \"property:participation-target\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"target\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"0..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:seminar\"\r\n    },\r\n    {\r\n      \"id\": \"relation:participation\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"participation\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"participation\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [\r\n        \"property:participation-source\",\r\n        \"property:participation-target\"\r\n      ],\r\n      \"type\": \"BinaryRelation\"\r\n    },\r\n    {\r\n      \"id\": \"class:organization\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"Organization\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"kind\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [],\r\n      \"type\": \"Class\",\r\n      \"literals\": [],\r\n      \"restrictedTo\": [\r\n        \"functional-complex\"\r\n      ],\r\n      \"isPowertype\": false,\r\n      \"order\": \"1\"\r\n    },\r\n    {\r\n      \"id\": \"property:organization-source\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"source\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"0..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:appointment\"\r\n    },\r\n    {\r\n      \"id\": \"property:organization-target\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"target\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": null,\r\n      \"isDerived\": false,\r\n      \"type\": \"Property\",\r\n      \"subsettedProperties\": [],\r\n      \"redefinedProperties\": [],\r\n      \"aggregationKind\": null,\r\n      \"cardinality\": \"2..*\",\r\n      \"isOrdered\": false,\r\n      \"isReadOnly\": false,\r\n      \"propertyType\": \"class:organization\"\r\n    },\r\n    {\r\n      \"id\": \"relation:organization-mediation\",\r\n      \"created\": \"2026-09-06\",\r\n      \"modified\": null,\r\n      \"name\": {\r\n        \"en\": \"mediation\"\r\n      },\r\n      \"alternativeNames\": [],\r\n      \"description\": null,\r\n      \"editorialNotes\": [],\r\n      \"creators\": [],\r\n      \"contributors\": [],\r\n      \"customProperties\": {},\r\n      \"stereotype\": \"mediation\",\r\n      \"isDerived\": false,\r\n      \"isAbstract\": false,\r\n      \"properties\": [\r\n        \"property:organization-source\",\r\n        \"property:organization-target\"\r\n      ],\r\n      \"type\": \"BinaryRelation\"\r\n    }\r\n  ],\r\n  \"root\": null,\r\n  \"publisher\": null,\r\n  \"designedForTasks\": [],\r\n  \"license\": null,\r\n  \"accessRights\": [],\r\n  \"themes\": [],\r\n  \"contexts\": [],\r\n  \"ontologyTypes\": [],\r\n  \"representationStyle\": null,\r\n  \"namespace\": \"https://example.org/ontograph/property-structure-preservation/\",\r\n  \"landingPages\": [],\r\n  \"sources\": [],\r\n  \"bibliographicCitations\": [],\r\n  \"keywords\": [],\r\n  \"acronyms\": [],\r\n  \"languages\": [\r\n    \"en\"\r\n  ]\r\n}\r\n"
+  },
+  "options": {
+    "assumption": "cwa",
+    "at": "2024-02-29T10:30:00Z",
+    "baseIri": "https://example.org/composition/",
+    "instanceSource": "{\"schemaVersion\": \"ontograph.gufo.source-composition.v1\", \"modelRef\": \"model:source-composition-2128\", \"evidenceRef\": \"evidence:2695-personnel-research\", \"individuals\": [{\"id\": \"person:a\", \"classRef\": \"class:person\", \"label\": \"Alex\"}, {\"id\": \"person:b\", \"classRef\": \"class:person\", \"label\": \"Alex\"}, {\"id\": \"event:seminar\", \"classRef\": \"class:seminar\", \"label\": \"Seminar\"}, {\"id\": \"organization:one\", \"classRef\": \"class:organization\", \"label\": \"Research Institute\"}], \"qualities\": [{\"id\": \"quality:mass-a\", \"classRef\": \"class:mass\", \"bearerRef\": \"person:a\", \"characterizationRef\": \"relation:characterization\", \"value\": {\"lexical\": \"70.0\", \"datatype\": \"xsd:decimal\"}}, {\"id\": \"quality:mass-b\", \"classRef\": \"class:mass\", \"bearerRef\": \"person:b\", \"characterizationRef\": \"relation:characterization\", \"value\": {\"lexical\": \"70.00\", \"datatype\": \"xsd:decimal\"}}], \"relators\": [{\"id\": \"appointment:one\", \"classRef\": \"class:appointment\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T12:00:00Z\"}, \"mediations\": [{\"mediationRef\": \"relation:mediation\", \"participantRefs\": [\"person:a\"]}, {\"mediationRef\": \"relation:organization-mediation\", \"participantRefs\": []}]}, {\"id\": \"appointment:two\", \"classRef\": \"class:appointment\", \"interval\": {\"begin\": \"2024-03-01T00:00:00+14:00\", \"end\": \"2024-03-01T03:00:00+14:00\"}, \"mediations\": [{\"mediationRef\": \"relation:mediation\", \"participantRefs\": [\"person:a\"]}, {\"mediationRef\": \"relation:organization-mediation\", \"participantRefs\": [\"organization:one\"]}]}], \"roleMemberships\": [{\"id\": \"membership:one\", \"individualRef\": \"person:a\", \"roleRef\": \"class:researcher\", \"relatorRef\": \"appointment:one\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T12:00:00Z\"}}, {\"id\": \"membership:two\", \"individualRef\": \"person:a\", \"roleRef\": \"class:researcher\", \"relatorRef\": \"appointment:two\", \"interval\": {\"begin\": \"2024-03-01T00:00:00+14:00\", \"end\": \"2024-03-01T03:00:00+14:00\"}}], \"participations\": [{\"id\": \"participation:one\", \"participantRef\": \"person:a\", \"eventRef\": \"event:seminar\", \"participationRef\": \"relation:participation\", \"interval\": {\"begin\": \"2024-02-29T10:00:00Z\", \"end\": \"2024-02-29T11:00:00Z\"}}, {\"id\": \"participation:two\", \"participantRef\": \"person:b\", \"eventRef\": \"event:seminar\", \"participationRef\": \"relation:participation\", \"interval\": {\"begin\": \"2024-02-29T10:30:00Z\", \"end\": \"2024-02-29T11:30:00Z\"}}], \"differentIndividuals\": []}",
+    "profileRef": "ontograph.gufo.source-composition.v1"
+  },
+  "profileRef": "ontograph.gufo.source-composition.v1",
+  "provenanceManifest": {
+    "artifacts": {
+      "evidence": {
+        "digest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "role": "instance-evidence",
+        "scope": "raw supplied evidence bytes"
+      },
+      "graph": {
+        "digest": "sha256:1c5841f37a05d6ee717c246896eea81411985ee26285965cd8ae0ddda15999cd",
+        "role": "selected-generated-graph"
+      },
+      "model": {
+        "digest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "role": "source-model",
+        "scope": "raw admitted source bytes"
+      },
+      "shapes": {
+        "digest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+        "role": "selected-generated-shapes"
+      }
+    },
+    "identityContract": {
+      "implicitCrossDomainJoin": false,
+      "labelsSelectIdentity": false,
+      "targetIriKey": "typed source ID encoded as UTF-8 percent octets",
+      "unicodeNormalizationSelectsIdentity": false
+    },
+    "mappings": [
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:characterization-source",
+        "sourcePointer": "/elements/9/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+        "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Acharacterization> ]"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:mediation-source",
+        "sourcePointer": "/elements/6/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+        "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Amediation> ]"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:organization-source",
+        "sourcePointer": "/elements/16/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aorganization>",
+        "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Aorganization-mediation> ]"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:participation-source",
+        "sourcePointer": "/elements/12/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aseminar>",
+        "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Aparticipation> ]"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "0",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:participation-target",
+        "sourcePointer": "/elements/13/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+        "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Aparticipation>"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "1",
+          "upper": {
+            "kind": "finite",
+            "value": "1"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:characterization-target",
+        "sourcePointer": "/elements/10/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Amass>",
+        "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Acharacterization>"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "2",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:mediation-target",
+        "sourcePointer": "/elements/7/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aappointment>",
+        "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Amediation>"
+      },
+      {
+        "normalizedCardinality": {
+          "kind": "cardinality",
+          "lower": "2",
+          "upper": {
+            "kind": "unbounded"
+          }
+        },
+        "ruleRef": "COMP-002.association-end-cardinality",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "property:organization-target",
+        "sourcePointer": "/elements/17/cardinality",
+        "targetOwnerIri": "<https://example.org/composition/class/class%3Aappointment>",
+        "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Aorganization-mediation>"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:appointment",
+        "sourcePointer": "/elements/2",
+        "targetIri": "https://example.org/composition/class/class%3Aappointment"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:mass",
+        "sourcePointer": "/elements/3",
+        "targetIri": "https://example.org/composition/class/class%3Amass"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:organization",
+        "sourcePointer": "/elements/15",
+        "targetIri": "https://example.org/composition/class/class%3Aorganization"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:person",
+        "sourcePointer": "/elements/0",
+        "targetIri": "https://example.org/composition/class/class%3Aperson"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:researcher",
+        "sourcePointer": "/elements/1",
+        "targetIri": "https://example.org/composition/class/class%3Aresearcher"
+      },
+      {
+        "ruleRef": "COMP-002.class-nature-candidate",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "class:seminar",
+        "sourcePointer": "/elements/4",
+        "targetIri": "https://example.org/composition/class/class%3Aseminar"
+      },
+      {
+        "ruleRef": "COMP-002.generalization",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "generalization:researcher-person",
+        "sourcePointer": "/elements/5",
+        "targetIri": "https://example.org/composition/class/class%3Aresearcher"
+      },
+      {
+        "ruleRef": "COMP-002.individual",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "event:seminar",
+        "sourcePointer": "/individuals/2",
+        "targetIri": "https://example.org/composition/individual/event%3Aseminar"
+      },
+      {
+        "ruleRef": "COMP-002.individual",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "organization:one",
+        "sourcePointer": "/individuals/3",
+        "targetIri": "https://example.org/composition/individual/organization%3Aone"
+      },
+      {
+        "ruleRef": "COMP-002.individual",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "person:a",
+        "sourcePointer": "/individuals/0",
+        "targetIri": "https://example.org/composition/individual/person%3Aa"
+      },
+      {
+        "ruleRef": "COMP-002.individual",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "person:b",
+        "sourcePointer": "/individuals/1",
+        "targetIri": "https://example.org/composition/individual/person%3Ab"
+      },
+      {
+        "ruleRef": "COMP-002.reified-quality",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "quality:mass-a",
+        "sourcePointer": "/qualities/0",
+        "targetIri": "https://example.org/composition/individual/quality%3Amass-a"
+      },
+      {
+        "ruleRef": "COMP-002.reified-quality",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "quality:mass-b",
+        "sourcePointer": "/qualities/1",
+        "targetIri": "https://example.org/composition/individual/quality%3Amass-b"
+      },
+      {
+        "ruleRef": "COMP-002.typed-association",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "relation:characterization",
+        "sourcePointer": "/elements/11",
+        "targetIri": "https://example.org/composition/relation/relation%3Acharacterization"
+      },
+      {
+        "ruleRef": "COMP-002.typed-association",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "relation:mediation",
+        "sourcePointer": "/elements/8",
+        "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+      },
+      {
+        "ruleRef": "COMP-002.typed-association",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "relation:organization-mediation",
+        "sourcePointer": "/elements/18",
+        "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+      },
+      {
+        "ruleRef": "COMP-002.typed-association",
+        "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+        "sourceId": "relation:participation",
+        "sourcePointer": "/elements/14",
+        "targetIri": "https://example.org/composition/relation/relation%3Aparticipation"
+      },
+      {
+        "ruleRef": "COMP-003.qualified-participation-no-direct-edge",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "participation:one",
+        "sourcePointer": "/participations/0",
+        "targetIri": "https://example.org/composition/fact/participation%3Aone"
+      },
+      {
+        "ruleRef": "COMP-003.qualified-participation-no-direct-edge",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "participation:two",
+        "sourcePointer": "/participations/1",
+        "targetIri": "https://example.org/composition/fact/participation%3Atwo"
+      },
+      {
+        "ruleRef": "COMP-003.qualified-role-no-timeless-type",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "membership:one",
+        "sourcePointer": "/roleMemberships/0",
+        "targetIri": "https://example.org/composition/fact/membership%3Aone"
+      },
+      {
+        "ruleRef": "COMP-003.qualified-role-no-timeless-type",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "membership:two",
+        "sourcePointer": "/roleMemberships/1",
+        "targetIri": "https://example.org/composition/fact/membership%3Atwo"
+      },
+      {
+        "ruleRef": "COMP-003.relator-qualified-existence",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:one",
+        "sourcePointer": "/relators/0",
+        "targetIri": "https://example.org/composition/individual/appointment%3Aone"
+      },
+      {
+        "ruleRef": "COMP-003.relator-qualified-existence",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:two",
+        "sourcePointer": "/relators/1",
+        "targetIri": "https://example.org/composition/individual/appointment%3Atwo"
+      },
+      {
+        "ruleRef": "COMP-009.mediated-participant",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "organization:one",
+        "sourcePointer": "/relators/1/mediations/1/participantRefs/0",
+        "targetIri": "https://example.org/composition/individual/organization%3Aone"
+      },
+      {
+        "ruleRef": "COMP-009.mediated-participant",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "person:a",
+        "sourcePointer": "/relators/0/mediations/0/participantRefs/0",
+        "targetIri": "https://example.org/composition/individual/person%3Aa"
+      },
+      {
+        "ruleRef": "COMP-009.mediated-participant",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "person:a",
+        "sourcePointer": "/relators/1/mediations/0/participantRefs/0",
+        "targetIri": "https://example.org/composition/individual/person%3Aa"
+      },
+      {
+        "ruleRef": "COMP-009.mediation-binding",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:one",
+        "sourcePointer": "/relators/0/mediations/0",
+        "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+      },
+      {
+        "ruleRef": "COMP-009.mediation-binding",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:one",
+        "sourcePointer": "/relators/0/mediations/1",
+        "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+      },
+      {
+        "ruleRef": "COMP-009.mediation-binding",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:two",
+        "sourcePointer": "/relators/1/mediations/0",
+        "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+      },
+      {
+        "ruleRef": "COMP-009.mediation-binding",
+        "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+        "sourceId": "appointment:two",
+        "sourcePointer": "/relators/1/mediations/1",
+        "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+      }
+    ],
+    "profileRef": "ontograph.gufo.source-composition.v1",
+    "qualifiedFactContract": {
+      "bareTimelessEdgeEntailed": false,
+      "bindingRelationEndpointsAndIntervalRetained": true,
+      "owlDifferentIndividualsDerivedFromDistinctIds": false,
+      "relatorIdentity": "typed relator source ID"
+    },
+    "reorderingContract": {
+      "mayRemainStableWhenOnlyDeclarationsReorder": [
+        "typed target IRIs",
+        "selected graph",
+        "shapes"
+      ],
+      "mustReflectRawSourceChange": [
+        "model digest",
+        "source pointers",
+        "provenance manifest"
+      ],
+      "sameExactInputs": [
+        "graph",
+        "shapes",
+        "provenanceManifest"
+      ]
+    },
+    "schemaVersion": "ontograph.source-composition.provenance-manifest.v2",
+    "sourceDomain": "https://example.org/composition/"
+  },
+  "provenanceManifestDigest": "sha256:2c463697096f4fcd87e5e7bdc6d4075b13464cec8dacb302ead9ca15dd3d29a1",
+  "queryRecords": [
+    {
+      "bearerRef": "person:a",
+      "characterizationRef": "relation:characterization",
+      "kind": "quality",
+      "sourceId": "quality:mass-a",
+      "value": {
+        "datatype": "xsd:decimal",
+        "lexical": "70.0"
+      }
+    },
+    {
+      "bearerRef": "person:b",
+      "characterizationRef": "relation:characterization",
+      "kind": "quality",
+      "sourceId": "quality:mass-b",
+      "value": {
+        "datatype": "xsd:decimal",
+        "lexical": "70.00"
+      }
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-02-29T10:00:00Z",
+          "end": "2024-02-29T12:00:00Z"
+        },
+        "sourceDigest": "sha256:6e9bbb7d287580186fd510ce94f08ebd420b094dd4336dfa9c70b801fb38688b",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:00:00Z",
+            "timelineSeconds": "63876420000",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T12:00:00Z",
+            "timelineSeconds": "63876427200",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      },
+      "kind": "relator",
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": []
+        }
+      ],
+      "participantRefs": [
+        "person:a"
+      ],
+      "sourceId": "appointment:one"
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-03-01T00:00:00+14:00",
+          "end": "2024-03-01T03:00:00+14:00"
+        },
+        "sourceDigest": "sha256:7efc6f6edf9fbcdda78759e840966eb487520e536e0e19a3e700f5d14c689c19",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-03-01T00:00:00+14:00",
+            "timelineSeconds": "63876420000",
+            "timezoneMinutes": 840
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-03-01T03:00:00+14:00",
+            "timelineSeconds": "63876430800",
+            "timezoneMinutes": 840
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      },
+      "kind": "relator",
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": [
+            "organization:one"
+          ]
+        }
+      ],
+      "participantRefs": [
+        "organization:one",
+        "person:a"
+      ],
+      "sourceId": "appointment:two"
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-02-29T10:00:00Z",
+          "end": "2024-02-29T12:00:00Z"
+        },
+        "sourceDigest": "sha256:6e9bbb7d287580186fd510ce94f08ebd420b094dd4336dfa9c70b801fb38688b",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:00:00Z",
+            "timelineSeconds": "63876420000",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T12:00:00Z",
+            "timelineSeconds": "63876427200",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "individualRef": "person:a",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      },
+      "kind": "roleMembership",
+      "relatorRef": "appointment:one",
+      "roleRef": "class:researcher",
+      "sourceId": "membership:one"
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-03-01T00:00:00+14:00",
+          "end": "2024-03-01T03:00:00+14:00"
+        },
+        "sourceDigest": "sha256:7efc6f6edf9fbcdda78759e840966eb487520e536e0e19a3e700f5d14c689c19",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-03-01T00:00:00+14:00",
+            "timelineSeconds": "63876420000",
+            "timezoneMinutes": 840
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-03-01T03:00:00+14:00",
+            "timelineSeconds": "63876430800",
+            "timezoneMinutes": 840
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "individualRef": "person:a",
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      },
+      "kind": "roleMembership",
+      "relatorRef": "appointment:two",
+      "roleRef": "class:researcher",
+      "sourceId": "membership:two"
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-02-29T10:00:00Z",
+          "end": "2024-02-29T11:00:00Z"
+        },
+        "sourceDigest": "sha256:3530a17c50062c2261bde27673fcb5573490fd602ca27e5e158e3b82d31b24d1",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:00:00Z",
+            "timelineSeconds": "63876420000",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T11:00:00Z",
+            "timelineSeconds": "63876423600",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "eventRef": "event:seminar",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T11:00:00Z"
+      },
+      "kind": "participation",
+      "participantRef": "person:a",
+      "participationRef": "relation:participation",
+      "sourceId": "participation:one"
+    },
+    {
+      "evaluation": {
+        "canonicalStateMutated": false,
+        "comprehensiveConformance": false,
+        "intervalOrder": "less",
+        "membership": "inside",
+        "profileRef": "ontograph.ontouml-qualified-time.v1",
+        "request": {
+          "at": "2024-02-29T10:30:00Z",
+          "begin": "2024-02-29T10:30:00Z",
+          "end": "2024-02-29T11:30:00Z"
+        },
+        "sourceDigest": "sha256:df8f57df9e9d39fae07aa880dc8b008a0085f5c5565db818b94c311e88bd8bb0",
+        "sourceModelMutated": false,
+        "values": [
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T11:30:00Z",
+            "timelineSeconds": "63876425400",
+            "timezoneMinutes": 0
+          },
+          {
+            "fractionalDigits": "",
+            "lexical": "2024-02-29T10:30:00Z",
+            "timelineSeconds": "63876421800",
+            "timezoneMinutes": 0
+          }
+        ]
+      },
+      "eventRef": "event:seminar",
+      "interval": {
+        "begin": "2024-02-29T10:30:00Z",
+        "end": "2024-02-29T11:30:00Z"
+      },
+      "kind": "participation",
+      "participantRef": "person:b",
+      "participationRef": "relation:participation",
+      "sourceId": "participation:two"
+    }
+  ],
+  "semanticGaps": [
+    "full modal rigidity and identity axioms",
+    "complete normative interaction inventory",
+    "all unsupported source families and qualified association cardinalities",
+    "independent preservation proof and installed qualification"
+  ],
+  "shapes": "@prefix gufo: <http://purl.org/nemo/gufo#> .\n@prefix comp: <https://ontograph.dev/vocab/composition#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\ncomp:RelatorShape a sh:NodeShape; sh:targetClass gufo:Relator; sh:property [ sh:path gufo:mediates; sh:minCount 2 ] .\ncomp:QualityShape a sh:NodeShape; sh:targetClass gufo:Quality; sh:property [ sh:path gufo:inheresIn; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path gufo:hasQualityValue; sh:minCount 1 ] .\ncomp:ParticipationShape a sh:NodeShape; sh:targetClass comp:QualifiedParticipation; sh:property [ sh:path comp:participant; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:event; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:begin; sh:minCount 1; sh:maxCount 1; sh:datatype xsd:dateTime ]; sh:property [ sh:path comp:end; sh:minCount 1; sh:maxCount 1; sh:datatype xsd:dateTime ] .\ncomp:RoleShape a sh:NodeShape; sh:targetClass comp:RoleMembership; sh:property [ sh:path comp:individual; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:role; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:relator; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:begin; sh:minCount 1; sh:datatype xsd:dateTime ]; sh:property [ sh:path comp:end; sh:minCount 1; sh:datatype xsd:dateTime ] .\n",
+  "shapesDigest": "sha256:f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81",
+  "sourceModelMutated": false,
+  "sourceTargetMappings": [
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "0",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:characterization-source",
+      "sourcePointer": "/elements/9/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+      "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Acharacterization> ]"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "0",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:mediation-source",
+      "sourcePointer": "/elements/6/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+      "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Amediation> ]"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "0",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:organization-source",
+      "sourcePointer": "/elements/16/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aorganization>",
+      "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Aorganization-mediation> ]"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "0",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:participation-source",
+      "sourcePointer": "/elements/12/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aseminar>",
+      "targetPropertyExpression": "[ owl:inverseOf <https://example.org/composition/relation/relation%3Aparticipation> ]"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "0",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:participation-target",
+      "sourcePointer": "/elements/13/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aperson>",
+      "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Aparticipation>"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "1",
+        "upper": {
+          "kind": "finite",
+          "value": "1"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:characterization-target",
+      "sourcePointer": "/elements/10/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Amass>",
+      "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Acharacterization>"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "2",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:mediation-target",
+      "sourcePointer": "/elements/7/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aappointment>",
+      "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Amediation>"
+    },
+    {
+      "normalizedCardinality": {
+        "kind": "cardinality",
+        "lower": "2",
+        "upper": {
+          "kind": "unbounded"
+        }
+      },
+      "ruleRef": "COMP-002.association-end-cardinality",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "property:organization-target",
+      "sourcePointer": "/elements/17/cardinality",
+      "targetOwnerIri": "<https://example.org/composition/class/class%3Aappointment>",
+      "targetPropertyExpression": "<https://example.org/composition/relation/relation%3Aorganization-mediation>"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:appointment",
+      "sourcePointer": "/elements/2",
+      "targetIri": "https://example.org/composition/class/class%3Aappointment"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:mass",
+      "sourcePointer": "/elements/3",
+      "targetIri": "https://example.org/composition/class/class%3Amass"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:organization",
+      "sourcePointer": "/elements/15",
+      "targetIri": "https://example.org/composition/class/class%3Aorganization"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:person",
+      "sourcePointer": "/elements/0",
+      "targetIri": "https://example.org/composition/class/class%3Aperson"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:researcher",
+      "sourcePointer": "/elements/1",
+      "targetIri": "https://example.org/composition/class/class%3Aresearcher"
+    },
+    {
+      "ruleRef": "COMP-002.class-nature-candidate",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "class:seminar",
+      "sourcePointer": "/elements/4",
+      "targetIri": "https://example.org/composition/class/class%3Aseminar"
+    },
+    {
+      "ruleRef": "COMP-002.generalization",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "generalization:researcher-person",
+      "sourcePointer": "/elements/5",
+      "targetIri": "https://example.org/composition/class/class%3Aresearcher"
+    },
+    {
+      "ruleRef": "COMP-002.individual",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "event:seminar",
+      "sourcePointer": "/individuals/2",
+      "targetIri": "https://example.org/composition/individual/event%3Aseminar"
+    },
+    {
+      "ruleRef": "COMP-002.individual",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "organization:one",
+      "sourcePointer": "/individuals/3",
+      "targetIri": "https://example.org/composition/individual/organization%3Aone"
+    },
+    {
+      "ruleRef": "COMP-002.individual",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "person:a",
+      "sourcePointer": "/individuals/0",
+      "targetIri": "https://example.org/composition/individual/person%3Aa"
+    },
+    {
+      "ruleRef": "COMP-002.individual",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "person:b",
+      "sourcePointer": "/individuals/1",
+      "targetIri": "https://example.org/composition/individual/person%3Ab"
+    },
+    {
+      "ruleRef": "COMP-002.reified-quality",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "quality:mass-a",
+      "sourcePointer": "/qualities/0",
+      "targetIri": "https://example.org/composition/individual/quality%3Amass-a"
+    },
+    {
+      "ruleRef": "COMP-002.reified-quality",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "quality:mass-b",
+      "sourcePointer": "/qualities/1",
+      "targetIri": "https://example.org/composition/individual/quality%3Amass-b"
+    },
+    {
+      "ruleRef": "COMP-002.typed-association",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "relation:characterization",
+      "sourcePointer": "/elements/11",
+      "targetIri": "https://example.org/composition/relation/relation%3Acharacterization"
+    },
+    {
+      "ruleRef": "COMP-002.typed-association",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "relation:mediation",
+      "sourcePointer": "/elements/8",
+      "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+    },
+    {
+      "ruleRef": "COMP-002.typed-association",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "relation:organization-mediation",
+      "sourcePointer": "/elements/18",
+      "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+    },
+    {
+      "ruleRef": "COMP-002.typed-association",
+      "sourceDigest": "sha256:4697aafcc47f3b4cf52d1597a7d87760365d95c13a08f1d43ee7a91d9b22d50c",
+      "sourceId": "relation:participation",
+      "sourcePointer": "/elements/14",
+      "targetIri": "https://example.org/composition/relation/relation%3Aparticipation"
+    },
+    {
+      "ruleRef": "COMP-003.qualified-participation-no-direct-edge",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "participation:one",
+      "sourcePointer": "/participations/0",
+      "targetIri": "https://example.org/composition/fact/participation%3Aone"
+    },
+    {
+      "ruleRef": "COMP-003.qualified-participation-no-direct-edge",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "participation:two",
+      "sourcePointer": "/participations/1",
+      "targetIri": "https://example.org/composition/fact/participation%3Atwo"
+    },
+    {
+      "ruleRef": "COMP-003.qualified-role-no-timeless-type",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "membership:one",
+      "sourcePointer": "/roleMemberships/0",
+      "targetIri": "https://example.org/composition/fact/membership%3Aone"
+    },
+    {
+      "ruleRef": "COMP-003.qualified-role-no-timeless-type",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "membership:two",
+      "sourcePointer": "/roleMemberships/1",
+      "targetIri": "https://example.org/composition/fact/membership%3Atwo"
+    },
+    {
+      "ruleRef": "COMP-003.relator-qualified-existence",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:one",
+      "sourcePointer": "/relators/0",
+      "targetIri": "https://example.org/composition/individual/appointment%3Aone"
+    },
+    {
+      "ruleRef": "COMP-003.relator-qualified-existence",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:two",
+      "sourcePointer": "/relators/1",
+      "targetIri": "https://example.org/composition/individual/appointment%3Atwo"
+    },
+    {
+      "ruleRef": "COMP-009.mediated-participant",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "organization:one",
+      "sourcePointer": "/relators/1/mediations/1/participantRefs/0",
+      "targetIri": "https://example.org/composition/individual/organization%3Aone"
+    },
+    {
+      "ruleRef": "COMP-009.mediated-participant",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "person:a",
+      "sourcePointer": "/relators/0/mediations/0/participantRefs/0",
+      "targetIri": "https://example.org/composition/individual/person%3Aa"
+    },
+    {
+      "ruleRef": "COMP-009.mediated-participant",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "person:a",
+      "sourcePointer": "/relators/1/mediations/0/participantRefs/0",
+      "targetIri": "https://example.org/composition/individual/person%3Aa"
+    },
+    {
+      "ruleRef": "COMP-009.mediation-binding",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:one",
+      "sourcePointer": "/relators/0/mediations/0",
+      "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+    },
+    {
+      "ruleRef": "COMP-009.mediation-binding",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:one",
+      "sourcePointer": "/relators/0/mediations/1",
+      "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+    },
+    {
+      "ruleRef": "COMP-009.mediation-binding",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:two",
+      "sourcePointer": "/relators/1/mediations/0",
+      "targetIri": "https://example.org/composition/relation/relation%3Amediation"
+    },
+    {
+      "ruleRef": "COMP-009.mediation-binding",
+      "sourceDigest": "sha256:8681c883a838d93422beca15ba0a0d848b3daeac24636bc17136740af7a1926f",
+      "sourceId": "appointment:two",
+      "sourcePointer": "/relators/1/mediations/1",
+      "targetIri": "https://example.org/composition/relation/relation%3Aorganization-mediation"
+    }
+  ],
+  "sourceValidationOutcome": "invalid",
+  "targetVocabularyDigest": "sha256:b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027"
+}

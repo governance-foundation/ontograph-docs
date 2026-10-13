@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "ontograph.research.sources.v1",
+  "caseRef": "case:research-appointments-v1",
+  "sources": [
+    {
+      "id": "source:model",
+      "artifactRef": "artifact:model",
+      "origin": "project-authored synthetic adaptation",
+      "licenseRef": "license:project-data",
+      "historicalPath": "fixtures/giancarlo-demonstration/model.json",
+      "historicalCommit": "4ad41d737358134abfe9c30fcc202fa88a601a3d"
+    },
+    {
+      "id": "source:instances",
+      "artifactRef": "artifact:instances",
+      "origin": "project-authored synthetic adaptation",
+      "licenseRef": "license:project-data",
+      "historicalPath": "fixtures/giancarlo-demonstration/instances.json",
+      "historicalCommit": "4ad41d737358134abfe9c30fcc202fa88a601a3d"
+    },
+    {
+      "id": "source:rd2-authorship",
+      "origin": "new synthetic dossier authored for RD-2 #2777 under RDR-002..004",
+      "licenseRef": "license:project-data"
+    }
+  ],
+  "licenses": [
+    {
+      "id": "license:project-data",
+      "status": "UNLICENSED",
+      "noticeArtifactRef": "artifact:license",
+      "grant": null
+    }
+  ]
+}

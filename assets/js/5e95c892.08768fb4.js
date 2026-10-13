@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_governance_foundation_ontograph_docs||=[]).push([[9647],{7121(e,r,s){s.r(r),s.d(r,{default:()=>d});s(6540);var a=s(4164),n=s(7559),o=s(5500),c=s(2831),t=s(1656),u=s(4848);function d(e){return(0,u.jsx)(o.e3,{className:(0,a.A)(n.G.wrapper.docsPages),children:(0,u.jsx)(t.A,{children:(0,c.v)(e.route.routes)})})}}}]);

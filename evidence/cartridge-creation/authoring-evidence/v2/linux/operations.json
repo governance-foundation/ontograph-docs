@@ -1,0 +1,95 @@
+[
+  {
+    "case": "build-a",
+    "command": [
+      "/usr/bin/python3",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/build_cartridge.py",
+      "--input",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/inputs/authoring.json",
+      "--binary",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "--output",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"candidate\": \"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json\", \"runtimeProcessState\": \"exited\", \"qualification\": \"unqualified-draft\"}\n"
+  },
+  {
+    "case": "build-b",
+    "command": [
+      "/usr/bin/python3",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/build_cartridge.py",
+      "--input",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/inputs/authoring.json",
+      "--binary",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "--output",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-b"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"candidate\": \"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-b/cartridge.json\", \"runtimeProcessState\": \"exited\", \"qualification\": \"unqualified-draft\"}\n"
+  },
+  {
+    "case": "untrusted-install",
+    "command": [
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "cartridge",
+      "install",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json",
+      "--registry",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":false,\"registryPath\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json\",\"trustMode\":{\"mode\":\"manifest\"}},\"fixture\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[{\"code\":\"CARTRIDGE_UNTRUSTED\",\"message\":\"trust policy blocks cartridge installation or activation\",\"refId\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"severity\":\"error\"}],\"ok\":false,\"status\":\"fail\",\"validationResult\":\"failed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "explicit-local-test-trust",
+    "command": [
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "cartridge",
+      "install",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json",
+      "--registry",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json",
+      "--trust-local",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":true,\"registryPath\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json\",\"trustMode\":{\"mode\":\"trust-local\"}},\"fixture\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/build-a/cartridge.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[],\"ok\":true,\"registryRecord\":{\"cartridgeId\":\"test:authoring\",\"contentDigest\":\"sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"dependencyPins\":[],\"publisher\":\"synthetic-tests\",\"trustDecisionRef\":\"trust:local-cli-operator\",\"version\":\"1.0.0\"},\"status\":\"installed\",\"validationResult\":\"installed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "reopen-list",
+    "command": [
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "cartridge",
+      "list",
+      "--registry",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"canonicalMutationAttempted\":false,\"persistentRegistryState\":true,\"registryPath\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json\"},\"fixture\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json\",\"localApi\":{\"method\":\"GET\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges\"},\"operation\":\"list\",\"report\":{\"activeActivations\":[],\"activeCount\":0,\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"installed\":[{\"cartridgeId\":\"test:authoring\",\"contentDigest\":\"sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"dependencyPins\":[],\"publisher\":\"synthetic-tests\",\"trustDecisionRef\":\"trust:local-cli-operator\",\"version\":\"1.0.0\"}],\"installedCount\":1,\"ok\":true,\"status\":\"listed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  },
+  {
+    "case": "tampered-install",
+    "command": [
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/ontograph",
+      "cartridge",
+      "install",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/tampered.json",
+      "--registry",
+      "/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json",
+      "--trust-local",
+      "--json"
+    ],
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\"extras\":{\"atomicInstallReport\":true,\"persistentRegistryState\":false,\"registryPath\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/registry.json\",\"trustMode\":{\"mode\":\"trust-local\"}},\"fixture\":\"/home/maxbarrass/.tmp/cartridge-2150-installed-linux-v2/proof/tampered.json\",\"localApi\":{\"method\":\"POST\",\"parity\":\"same validation and lifecycle report payload as CLI\",\"path\":\"/cartridges/install\"},\"operation\":\"install\",\"report\":{\"boundary\":{\"canonicalMutationAttempted\":false,\"createsApproval\":false,\"createsEvidence\":false,\"createsPromotion\":false},\"cartridgeRef\":\"test:authoring@1.0.0#sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554\",\"diagnostics\":[{\"code\":\"CARTRIDGE_DIGEST_MISMATCH\",\"message\":\"recomputed normalized payload digest differs from manifest digest\",\"refId\":\"manifest=sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554, computed=sha256:9ff136ff770cf84fe170ffadab83991ae695da8b0462f0ba44715ae6960509e4\",\"severity\":\"error\"}],\"ok\":false,\"status\":\"fail\",\"validationResult\":\"failed\"},\"reportKind\":\"ontograph.cartridge.lifecycle.cli-local-api-report.v0.1\"}\n"
+  }
+]

@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "ontograph.research.viewpoint.v1",
+  "id": "viewpoint:owl-gufo",
+  "caseRef": "case:research-appointments-v1",
+  "kind": "owl-gufo",
+  "mode": "fixture",
+  "datasetRef": null,
+  "revisionRef": null,
+  "entities": [
+    {
+      "id": "projection-display:class:person",
+      "identityMapRef": "identity:class:person",
+      "sourceRefs": [
+        "source:model#/elements/0"
+      ],
+      "mappingRefs": [
+        "mapping:class:person"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Person — expected https://example.org/composition/class/class%3Aperson"
+    },
+    {
+      "id": "projection-display:class:researcher",
+      "identityMapRef": "identity:class:researcher",
+      "sourceRefs": [
+        "source:model#/elements/1"
+      ],
+      "mappingRefs": [
+        "mapping:class:researcher"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Researcher — expected https://example.org/composition/class/class%3Aresearcher"
+    },
+    {
+      "id": "projection-display:class:appointment",
+      "identityMapRef": "identity:class:appointment",
+      "sourceRefs": [
+        "source:model#/elements/2"
+      ],
+      "mappingRefs": [
+        "mapping:class:appointment"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Appointment — expected https://example.org/composition/class/class%3Aappointment"
+    },
+    {
+      "id": "projection-display:class:mass",
+      "identityMapRef": "identity:class:mass",
+      "sourceRefs": [
+        "source:model#/elements/3"
+      ],
+      "mappingRefs": [
+        "mapping:class:mass"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Mass — expected https://example.org/composition/class/class%3Amass"
+    },
+    {
+      "id": "projection-display:class:seminar",
+      "identityMapRef": "identity:class:seminar",
+      "sourceRefs": [
+        "source:model#/elements/4"
+      ],
+      "mappingRefs": [
+        "mapping:class:seminar"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Seminar — expected https://example.org/composition/class/class%3Aseminar"
+    },
+    {
+      "id": "projection-display:relation:mediation",
+      "identityMapRef": "identity:relation:mediation",
+      "sourceRefs": [
+        "source:model#/elements/8"
+      ],
+      "mappingRefs": [
+        "mapping:relation:mediation"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "mediation — expected https://example.org/composition/relation/relation%3Amediation"
+    },
+    {
+      "id": "projection-display:relation:characterization",
+      "identityMapRef": "identity:relation:characterization",
+      "sourceRefs": [
+        "source:model#/elements/11"
+      ],
+      "mappingRefs": [
+        "mapping:relation:characterization"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "characterization — expected https://example.org/composition/relation/relation%3Acharacterization"
+    },
+    {
+      "id": "projection-display:relation:participation",
+      "identityMapRef": "identity:relation:participation",
+      "sourceRefs": [
+        "source:model#/elements/14"
+      ],
+      "mappingRefs": [
+        "mapping:relation:participation"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "participation — expected https://example.org/composition/relation/relation%3Aparticipation"
+    },
+    {
+      "id": "projection-display:class:organization",
+      "identityMapRef": "identity:class:organization",
+      "sourceRefs": [
+        "source:model#/elements/15"
+      ],
+      "mappingRefs": [
+        "mapping:class:organization"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Organization — expected https://example.org/composition/class/class%3Aorganization"
+    },
+    {
+      "id": "projection-display:relation:organization-mediation",
+      "identityMapRef": "identity:relation:organization-mediation",
+      "sourceRefs": [
+        "source:model#/elements/18"
+      ],
+      "mappingRefs": [
+        "mapping:relation:organization-mediation"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "mediation — expected https://example.org/composition/relation/relation%3Aorganization-mediation"
+    },
+    {
+      "id": "projection-display:person:a",
+      "identityMapRef": "identity:person:a",
+      "sourceRefs": [
+        "source:instances#/individuals/0"
+      ],
+      "mappingRefs": [
+        "mapping:person:a"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Research participant — expected https://example.org/composition/individual/person%3Aa"
+    },
+    {
+      "id": "projection-display:person:b",
+      "identityMapRef": "identity:person:b",
+      "sourceRefs": [
+        "source:instances#/individuals/1"
+      ],
+      "mappingRefs": [
+        "mapping:person:b"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Research participant — expected https://example.org/composition/individual/person%3Ab"
+    },
+    {
+      "id": "projection-display:event:seminar",
+      "identityMapRef": "identity:event:seminar",
+      "sourceRefs": [
+        "source:instances#/individuals/2"
+      ],
+      "mappingRefs": [
+        "mapping:event:seminar"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Seminar — expected https://example.org/composition/individual/event%3Aseminar"
+    },
+    {
+      "id": "projection-display:organization:one",
+      "identityMapRef": "identity:organization:one",
+      "sourceRefs": [
+        "source:instances#/individuals/3"
+      ],
+      "mappingRefs": [
+        "mapping:organization:one"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "Research Institute — expected https://example.org/composition/individual/organization%3Aone"
+    },
+    {
+      "id": "projection-display:quality:mass-a",
+      "identityMapRef": "identity:quality:mass-a",
+      "sourceRefs": [
+        "source:instances#/qualities/0"
+      ],
+      "mappingRefs": [
+        "mapping:quality:mass-a"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "quality:mass-a — expected https://example.org/composition/individual/quality%3Amass-a"
+    },
+    {
+      "id": "projection-display:quality:mass-b",
+      "identityMapRef": "identity:quality:mass-b",
+      "sourceRefs": [
+        "source:instances#/qualities/1"
+      ],
+      "mappingRefs": [
+        "mapping:quality:mass-b"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "quality:mass-b — expected https://example.org/composition/individual/quality%3Amass-b"
+    },
+    {
+      "id": "projection-display:appointment:one",
+      "identityMapRef": "identity:appointment:one",
+      "sourceRefs": [
+        "source:instances#/relators/0"
+      ],
+      "mappingRefs": [
+        "mapping:appointment:one"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "appointment:one — expected https://example.org/composition/individual/appointment%3Aone"
+    },
+    {
+      "id": "projection-display:appointment:two",
+      "identityMapRef": "identity:appointment:two",
+      "sourceRefs": [
+        "source:instances#/relators/1"
+      ],
+      "mappingRefs": [
+        "mapping:appointment:two"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "appointment:two — expected https://example.org/composition/individual/appointment%3Atwo"
+    },
+    {
+      "id": "projection-display:membership:one",
+      "identityMapRef": "identity:membership:one",
+      "sourceRefs": [
+        "source:instances#/roleMemberships/0"
+      ],
+      "mappingRefs": [
+        "mapping:membership:one"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "membership:one — expected https://example.org/composition/fact/membership%3Aone"
+    },
+    {
+      "id": "projection-display:membership:two",
+      "identityMapRef": "identity:membership:two",
+      "sourceRefs": [
+        "source:instances#/roleMemberships/1"
+      ],
+      "mappingRefs": [
+        "mapping:membership:two"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "membership:two — expected https://example.org/composition/fact/membership%3Atwo"
+    },
+    {
+      "id": "projection-display:participation:one",
+      "identityMapRef": "identity:participation:one",
+      "sourceRefs": [
+        "source:instances#/participations/0"
+      ],
+      "mappingRefs": [
+        "mapping:participation:one"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "participation:one — expected https://example.org/composition/fact/participation%3Aone"
+    },
+    {
+      "id": "projection-display:participation:two",
+      "identityMapRef": "identity:participation:two",
+      "sourceRefs": [
+        "source:instances#/participations/1"
+      ],
+      "mappingRefs": [
+        "mapping:participation:two"
+      ],
+      "claimRefs": [
+        "claim:projection"
+      ],
+      "status": "proposed projection fixture",
+      "label": "participation:two — expected https://example.org/composition/fact/participation%3Atwo"
+    }
+  ],
+  "relations": [],
+  "claimRefs": [
+    "claim:projection"
+  ],
+  "limitations": [
+    "Illustrative source fixture; not live or recorded runtime output",
+    "Null canonical references; generated IRIs are proposed only",
+    "See gap:typed-mediations and gap:modal-normative"
+  ]
+}

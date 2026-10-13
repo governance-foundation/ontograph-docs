@@ -1,0 +1,98 @@
+{
+  "actualReasoning": true,
+  "actualShacl": true,
+  "allExitsZero": true,
+  "calibration": "Earlier two-pass run checked consistency/query/SHACL but not the full entailment/restriction oracle; retained internally and superseded by this complete invocation.",
+  "canonicalAdoption": false,
+  "cases": 5,
+  "deterministicPairs": [
+    {
+      "path": "empty-role/composition.json",
+      "sha256": "d8d9379195e9ac92f95b3d89de63b5ffac47dc55de21a217b2bcdd61c0551e0a"
+    },
+    {
+      "path": "empty-role/generated-shapes.ttl",
+      "sha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+    },
+    {
+      "path": "empty-role/generated.ttl",
+      "sha256": "4352c0516592e57a94d17449d0adac538da4a826a68c67c5f284ce5403e1d262"
+    },
+    {
+      "path": "empty-role/readback.json",
+      "sha256": "ea19759a86da4b2a5a37fb22734fb32bda3185918de62a49748dc40820352de8"
+    },
+    {
+      "path": "end-boundary/composition.json",
+      "sha256": "8e6f64b8aa600eda17d9c6eb9dc77c972540fd8cc9a5e66ed3c1ca0290875479"
+    },
+    {
+      "path": "end-boundary/generated-shapes.ttl",
+      "sha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+    },
+    {
+      "path": "end-boundary/generated.ttl",
+      "sha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+    },
+    {
+      "path": "end-boundary/readback.json",
+      "sha256": "01337e15eaf94964b7ff23b5ed035b3ce11f532c587625782203ffdfffe8e121"
+    },
+    {
+      "path": "missing-cwa/composition.json",
+      "sha256": "4fcf7edb96296175933706be0c2f24286a87fcbccc4c61ad099340f5317a44ff"
+    },
+    {
+      "path": "missing-cwa/generated-shapes.ttl",
+      "sha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+    },
+    {
+      "path": "missing-cwa/generated.ttl",
+      "sha256": "dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+    },
+    {
+      "path": "missing-cwa/readback.json",
+      "sha256": "a320d55abe9b9ac7416cac77ec61e28dde3f7548cccf7c4698e2dd55a42e5666"
+    },
+    {
+      "path": "missing-owa/composition.json",
+      "sha256": "7e396ac9d103b7d1a49094435f884e0a76085b5d9b807c085d3984a751fb14d7"
+    },
+    {
+      "path": "missing-owa/generated-shapes.ttl",
+      "sha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+    },
+    {
+      "path": "missing-owa/generated.ttl",
+      "sha256": "dfd30b2bb0a65fc85c283f3c434061caf4d3b2204ff27b7a46f20feaf5e9c05e"
+    },
+    {
+      "path": "missing-owa/readback.json",
+      "sha256": "b86f80fae7c6896caf33a638df88fed39a3184f6ac459ccc8adba29d164d914a"
+    },
+    {
+      "path": "valid/composition.json",
+      "sha256": "c427eea4d8ecb51998753f29ca8da1d1048857af2b578e53f97ad9f195cc1f8b"
+    },
+    {
+      "path": "valid/generated-shapes.ttl",
+      "sha256": "f5e0e4d5710e8632dbf083f10452f618ff3b4325f2624d408aff343aac6e1d81"
+    },
+    {
+      "path": "valid/generated.ttl",
+      "sha256": "a59dbab210699a566d112bd045c30b442a39e5322f47dca91fc29e0f41f2a2ec"
+    },
+    {
+      "path": "valid/readback.json",
+      "sha256": "f314cf2d1ed87e29af535fa78f62a913a3a4aa0939e19b407dee73c377f780d5"
+    }
+  ],
+  "independentReview": "pending",
+  "inputSourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
+  "mode": "actual",
+  "operations": 140,
+  "repeats": 2,
+  "runnerSha256": "0bad9d2a2826ebbdd2b0e59cb2b025615966f0969970dd33970414e6a05b8faa",
+  "runtimeCommit": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+  "schemaVersion": "ontograph.research.organisation-verification.v1"
+}

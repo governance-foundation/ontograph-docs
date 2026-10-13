@@ -1,0 +1,55 @@
+{
+  "python": "3.11.14",
+  "platform": "Windows x86_64",
+  "packages": {
+    "colorama": "0.4.6",
+    "html5rdf": "1.2.1",
+    "importlib_metadata": "9.0.1",
+    "iniconfig": "2.3.0",
+    "owlready2": "0.46",
+    "owlrl": "7.6.2",
+    "packaging": "26.3",
+    "pluggy": "1.6.0",
+    "prettytable": "3.18.0",
+    "Pygments": "2.21.0",
+    "pyparsing": "3.3.2",
+    "pyshacl": "0.40.1",
+    "pytest": "9.1.1",
+    "rdflib": "7.6.0",
+    "wcwidth": "0.8.3",
+    "zipp": "4.1.0"
+  },
+  "upstreamOwlAndShaclJava": {
+    "version": "java version \"17.0.6\" 2023-01-17 LTS\nJava(TM) SE Runtime Environment (build 17.0.6+9-LTS-190)\nJava HotSpot(TM) 64-Bit Server VM (build 17.0.6+9-LTS-190, mixed mode, sharing)",
+    "executableSha256": "870244ba088941b7cf6df8ab85fc3f896c9978129eeaa896a139ef998ce8d6b7"
+  },
+  "independentJenaJava": {
+    "version": "java version \"21.0.7\" 2025-04-15 LTS\nJava(TM) SE Runtime Environment (build 21.0.7+8-LTS-245)\nJava HotSpot(TM) 64-Bit Server VM (build 21.0.7+8-LTS-245, mixed mode, sharing)",
+    "executableSha256": "d82117d83c6a27cda42126bca1bf9a2dea4f92195ba9e72ced0352fb52d5be2f"
+  },
+  "upstreamFiles": [
+    {
+      "path": "gufo.ttl",
+      "sha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66"
+    },
+    {
+      "path": "examples/common/gufoshapes.ttl",
+      "sha256": "84b56419cca76dd6b91ff368061706915f73ff75726b0f2a20a48a9d7b100033"
+    },
+    {
+      "path": "examples/tests/test_examples.py",
+      "sha256": "a531544f7efc647ad75bbe920d164227686d71cf05dc8adaa95d42c3148f759b"
+    },
+    {
+      "path": "examples/tests/gufo_test_utils.py",
+      "sha256": "bf623422a7a514cd42f82555049a0046155d88d434edf354cd35ef9c957c09e8"
+    },
+    {
+      "path": "examples/tests/requirements.txt",
+      "sha256": "3dc20b4338b7de76a06e947512422314ad320fa8dceb8663ae5e5ae4f7bd1cea"
+    }
+  ],
+  "productContractPython": "Python 3.14.6",
+  "installedOntographExecution": false,
+  "linuxExecution": false
+}

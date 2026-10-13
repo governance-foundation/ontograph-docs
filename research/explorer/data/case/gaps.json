@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "ontograph.research.gaps.v1",
+  "caseRef": "case:research-appointments-v1",
+  "gaps": [
+    {
+      "id": "gap:typed-mediations",
+      "statement": "Generic generated SHACL does not enforce class-specific minima for each identified mediation relation.",
+      "state": "open"
+    },
+    {
+      "id": "gap:canonical-adoption",
+      "statement": "No canonical adoption, accepted enrichment, Decision or Promotion exists for these candidate sources.",
+      "state": "open"
+    },
+    {
+      "id": "gap:runtime-unexecuted",
+      "statement": "RD-4 has not executed these new bytes; proposed generated identities and outcomes are expectations.",
+      "state": "open"
+    },
+    {
+      "id": "gap:modal-normative",
+      "statement": "Full rigidity, identity provision, anti-rigidity and appointment rights/duties remain unproved.",
+      "state": "open"
+    },
+    {
+      "id": "gap:license",
+      "statement": "Project-authored fixture redistribution grant is undeclared; source status remains UNLICENSED.",
+      "state": "open"
+    },
+    {
+      "id": "gap:inverse",
+      "statement": "Arbitrary target-only inversion and full semantic equivalence are not claimed.",
+      "state": "open"
+    },
+    {
+      "id": "gap:independent-review",
+      "statement": "Independent semantic review of this new source candidate is pending.",
+      "state": "open"
+    }
+  ]
+}

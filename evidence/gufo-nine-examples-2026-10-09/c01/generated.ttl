@@ -1,0 +1,89 @@
+<https://purl.org/nemo/gufo-examples/endurant-types#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.org/nemo/gufo-examples/endurant-types#> <http://www.w3.org/2000/01/rdf-schema#comment> "A small ontology of people and organizations, illustrating gUFO's taxonomy of endurant types (sortals and non-sortals, rigid and anti-rigid types)."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#> <http://www.w3.org/2000/01/rdf-schema#label> "gUFO example 01: Endurant types (People & Organizations)"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#> <http://www.w3.org/2002/07/owl#imports> <https://purl.org/nemo/gufo#> .
+<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#University> .
+<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity> <http://www.w3.org/2000/01/rdf-schema#label> "Acme University"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#PhaseMixin> .
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "An anti-rigid phase, applicable in virtue of an intrinsic condition (being currently operative), that both persons and organizations may go through. Cuts across Person and Organization, hence specializes the non-sortal Agent."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Active Agent"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Phase> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/2000/01/rdf-schema#comment> "The complementary phase to Child."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/2000/01/rdf-schema#label> "Adult"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/endurant-types#Child> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Category> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-sortal that captures what is common to persons and organizations (both can, e.g., own property or be party to a contract) without itself providing a principle of identity. Persons and organizations obtain their identity from their own kinds, not from Agent."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#FunctionalComplex> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Adult> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Customer> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Student> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> <http://www.w3.org/2000/01/rdf-schema#label> "Alice"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Bob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Child> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Bob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Bob> <http://www.w3.org/2000/01/rdf-schema#comment> "Bob is a person and, currently, a child; he is neither a student nor an employee yet."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Bob> <http://www.w3.org/2000/01/rdf-schema#label> "Bob"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Carol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Carol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Adult> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Carol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Employee> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Carol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Carol> <http://www.w3.org/2000/01/rdf-schema#label> "Carol"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Phase> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> <http://www.w3.org/2000/01/rdf-schema#comment> "An anti-rigid phase of Person: a given person may be a child at one time and stop being one later, without ceasing to be that person. Applies in virtue of an intrinsic property (age)."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> <http://www.w3.org/2000/01/rdf-schema#label> "Child"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#RoleMixin> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "An anti-rigid, relationally-dependent role that both persons and organizations may play (in the scope of a purchase); it cuts across the Person and Organization kinds, which is why it specializes the non-sortal Agent rather than either kind directly. See example 04 for the relator (Purchase) that would substantiate this role."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Customer"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Role> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> <http://www.w3.org/2000/01/rdf-schema#comment> "An anti-rigid role of Person, applicable in virtue of an employment relationship. See example 04, which reifies that relationship as a gufo:Relator."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> <http://www.w3.org/2000/01/rdf-schema#label> "Employee"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Customer> .
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Organization> .
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization playing the Customer role -- demonstrating that gufo:RoleMixin, unlike gufo:Role, applies across more than one kind."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> <http://www.w3.org/2000/01/rdf-schema#label> "Globex Corp."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#PhaseMixin> .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "The complementary phase to Active Agent (e.g., a deceased person or a dissolved organization)."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Inactive Agent"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/endurant-types#Organization> .
+<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters> <http://www.w3.org/2000/01/rdf-schema#comment> "A dissolved organization: inactive, but still an instance of Organization, since organizations do not lose their kind when they cease operating."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters> <http://www.w3.org/2000/01/rdf-schema#label> "Old Town Printers"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid sortal, disjoint from Person: no individual is both a person and an organization."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid sortal: every person is necessarily a person, and Person supplies the principle of identity for persons."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Role> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "An anti-rigid role of Person, applicable in virtue of a relational (extrinsic) property -- here, enrollment at a university. A person is a student only relative to some university."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+<https://purl.org/nemo/gufo-examples/endurant-types#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#SubKind> .
+<https://purl.org/nemo/gufo-examples/endurant-types#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/endurant-types#University> <http://www.w3.org/2000/01/rdf-schema#comment> "A rigid specialization of Organization: every organization that is a university is necessarily so, but University does not supply a new principle of identity (it inherits Organization's)."@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#University> <http://www.w3.org/2000/01/rdf-schema#label> "University"@en .
+<https://purl.org/nemo/gufo-examples/endurant-types#University> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/nemo/gufo-examples/endurant-types#Organization> .

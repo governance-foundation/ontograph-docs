@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "ontograph.research.viewpoint.v1",
+  "id": "viewpoint:conceptual",
+  "caseRef": "case:research-appointments-v1",
+  "kind": "conceptual",
+  "mode": "fixture",
+  "datasetRef": null,
+  "revisionRef": null,
+  "entities": [
+    {
+      "id": "display:class:person",
+      "identityMapRef": "identity:class:person",
+      "sourceRefs": [
+        "source:model#/elements/0"
+      ],
+      "mappingRefs": [
+        "mapping:class:person"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Person"
+    },
+    {
+      "id": "display:class:researcher",
+      "identityMapRef": "identity:class:researcher",
+      "sourceRefs": [
+        "source:model#/elements/1"
+      ],
+      "mappingRefs": [
+        "mapping:class:researcher"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Researcher"
+    },
+    {
+      "id": "display:class:appointment",
+      "identityMapRef": "identity:class:appointment",
+      "sourceRefs": [
+        "source:model#/elements/2"
+      ],
+      "mappingRefs": [
+        "mapping:class:appointment"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Appointment"
+    },
+    {
+      "id": "display:class:mass",
+      "identityMapRef": "identity:class:mass",
+      "sourceRefs": [
+        "source:model#/elements/3"
+      ],
+      "mappingRefs": [
+        "mapping:class:mass"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Mass"
+    },
+    {
+      "id": "display:class:seminar",
+      "identityMapRef": "identity:class:seminar",
+      "sourceRefs": [
+        "source:model#/elements/4"
+      ],
+      "mappingRefs": [
+        "mapping:class:seminar"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Seminar"
+    },
+    {
+      "id": "display:property:mediation-source",
+      "identityMapRef": "identity:property:mediation-source",
+      "sourceRefs": [
+        "source:model#/elements/6"
+      ],
+      "mappingRefs": [
+        "mapping:property:mediation-source"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "source"
+    },
+    {
+      "id": "display:property:mediation-target",
+      "identityMapRef": "identity:property:mediation-target",
+      "sourceRefs": [
+        "source:model#/elements/7"
+      ],
+      "mappingRefs": [
+        "mapping:property:mediation-target"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "target"
+    },
+    {
+      "id": "display:property:characterization-source",
+      "identityMapRef": "identity:property:characterization-source",
+      "sourceRefs": [
+        "source:model#/elements/9"
+      ],
+      "mappingRefs": [
+        "mapping:property:characterization-source"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "source"
+    },
+    {
+      "id": "display:property:characterization-target",
+      "identityMapRef": "identity:property:characterization-target",
+      "sourceRefs": [
+        "source:model#/elements/10"
+      ],
+      "mappingRefs": [
+        "mapping:property:characterization-target"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "target"
+    },
+    {
+      "id": "display:property:participation-source",
+      "identityMapRef": "identity:property:participation-source",
+      "sourceRefs": [
+        "source:model#/elements/12"
+      ],
+      "mappingRefs": [
+        "mapping:property:participation-source"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "source"
+    },
+    {
+      "id": "display:property:participation-target",
+      "identityMapRef": "identity:property:participation-target",
+      "sourceRefs": [
+        "source:model#/elements/13"
+      ],
+      "mappingRefs": [
+        "mapping:property:participation-target"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "target"
+    },
+    {
+      "id": "display:class:organization",
+      "identityMapRef": "identity:class:organization",
+      "sourceRefs": [
+        "source:model#/elements/15"
+      ],
+      "mappingRefs": [
+        "mapping:class:organization"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Organization"
+    },
+    {
+      "id": "display:property:organization-source",
+      "identityMapRef": "identity:property:organization-source",
+      "sourceRefs": [
+        "source:model#/elements/16"
+      ],
+      "mappingRefs": [
+        "mapping:property:organization-source"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "source"
+    },
+    {
+      "id": "display:property:organization-target",
+      "identityMapRef": "identity:property:organization-target",
+      "sourceRefs": [
+        "source:model#/elements/17"
+      ],
+      "mappingRefs": [
+        "mapping:property:organization-target"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "target"
+    }
+  ],
+  "relations": [
+    {
+      "id": "display:generalization:researcher-person",
+      "identityMapRef": "identity:generalization:researcher-person",
+      "sourceRefs": [
+        "source:model#/elements/5"
+      ],
+      "mappingRefs": [
+        "mapping:generalization:researcher-person"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "Researcher specializes Person"
+    },
+    {
+      "id": "display:relation:mediation",
+      "identityMapRef": "identity:relation:mediation",
+      "sourceRefs": [
+        "source:model#/elements/8"
+      ],
+      "mappingRefs": [
+        "mapping:relation:mediation"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "mediation"
+    },
+    {
+      "id": "display:relation:characterization",
+      "identityMapRef": "identity:relation:characterization",
+      "sourceRefs": [
+        "source:model#/elements/11"
+      ],
+      "mappingRefs": [
+        "mapping:relation:characterization"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "characterization"
+    },
+    {
+      "id": "display:relation:participation",
+      "identityMapRef": "identity:relation:participation",
+      "sourceRefs": [
+        "source:model#/elements/14"
+      ],
+      "mappingRefs": [
+        "mapping:relation:participation"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "participation"
+    },
+    {
+      "id": "display:relation:organization-mediation",
+      "identityMapRef": "identity:relation:organization-mediation",
+      "sourceRefs": [
+        "source:model#/elements/18"
+      ],
+      "mappingRefs": [
+        "mapping:relation:organization-mediation"
+      ],
+      "claimRefs": [
+        "claim:source-case"
+      ],
+      "status": "source-declared fixture",
+      "label": "mediation"
+    }
+  ],
+  "claimRefs": [
+    "claim:source-case"
+  ],
+  "limitations": [
+    "Illustrative source fixture; not live or recorded runtime output",
+    "Null canonical references; generated IRIs are proposed only",
+    "See gap:typed-mediations and gap:modal-normative"
+  ]
+}

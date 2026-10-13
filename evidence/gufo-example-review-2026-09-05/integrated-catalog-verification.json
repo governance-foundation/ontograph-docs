@@ -1,0 +1,16 @@
+{
+  "aggregateDigest": "40aa86e4dd58c20e0baab5710c33610761913ce19be8fb0fd524e048b9d5ede1",
+  "artifactCount": 34,
+  "issueRef": "#2066",
+  "nonmutation": "preserved",
+  "persistenceReload": "persisted-reloaded",
+  "propositions": {
+    "ambiguous": 3,
+    "negative": 5,
+    "positive": 6
+  },
+  "reimport": "accepted-with-profile-scoped-equality",
+  "schemaVersion": "ontograph.gufo.catalog-roundtrip-verification.v1",
+  "status": "verified",
+  "vppCapabilityGapCount": 3
+}
