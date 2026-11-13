@@ -1,0 +1,108 @@
+{
+  "productCommit": "c513459cc7179cf8b0af00b3c112300a04a08ea7",
+  "evidenceKind": "independent-Jena-execution-not-installed-OntoGraph-proof",
+  "javaDigest": "sha256:d82117d83c6a27cda42126bca1bf9a2dea4f92195ba9e72ced0352fb52d5be2f",
+  "cases": [
+    {
+      "case": "EXT-GUFO-001-ENDURANT-TYPES",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "001-endurant-types-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-002-OBJECTS-AND-PARTS",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "002-objects-and-parts-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-003-QUALITIES",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "003-qualities-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-004-RELATORS",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "004-relators-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-005-EVENTS",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "005-events-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-006-SITUATIONS",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "006-situations-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+      "observed": "conformant",
+      "expected": "conformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "007-higher-order-types-shacl.ttl",
+      "outputDigest": "sha256:0ee6381c4000944bea7501fd4c89d7e0465f2f40ded3dbbfbb2b2f3bae8e4f64"
+    },
+    {
+      "case": "EXT-GUFO-008-INVALID-ENDURANT-TYPES",
+      "observed": "nonconformant",
+      "expected": "nonconformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "008-invalid-endurant-types-shacl.ttl",
+      "outputDigest": "sha256:98753a8132cd6536c99554d1bcd91283b8b0c8f9ea15f77fe9bd0b786b4876e4"
+    },
+    {
+      "case": "EXT-GUFO-009-INVALID-HIGHER-ORDER-TYPES",
+      "observed": "nonconformant",
+      "expected": "nonconformant",
+      "matches": true,
+      "exitCode": 0,
+      "inputDigest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+      "shapesDigest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "output": "009-invalid-higher-order-types-shacl.ttl",
+      "outputDigest": "sha256:2ac9c5f365f5a53674991c97b19c6c69f297dbc61503a4a48279615cc34d1a5c"
+    }
+  ],
+  "passCount": 9,
+  "caseCount": 9
+}

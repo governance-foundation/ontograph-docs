@@ -1,0 +1,28 @@
+{
+  "binarySha256": "a55070e8849286cef42a2bb24eb24c59172465372d563f301bf9e39ebe4783e2",
+  "cases": [
+    "build-a",
+    "build-b",
+    "untrusted-install",
+    "explicit-local-test-trust",
+    "reopen-list",
+    "tampered-install"
+  ],
+  "deterministicPackageAndReceipt": true,
+  "domainPilotQualified": false,
+  "draftRejectedAsUntrusted": true,
+  "expectedResults": "implementer-authored-synthetic-tooling-tests",
+  "explicitSyntheticTrustInstallAndReopen": true,
+  "packageSha256": "3860e91f5aaedc787a225a043a0d51dea57c00e2b1234a96e75eb6625743da1d",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "pythonVersion": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]",
+  "schemaVersion": "ontograph.installed-cartridge-authoring-proof.v1",
+  "scope": "compiler-and-installed-lifecycle-boundary-only",
+  "semanticReview": "not-performed",
+  "tamperRejectedWithoutMutation": true,
+  "toolSources": {
+    "build_cartridge.py": "4272fb40d650e731762e6710859c7b9d1601eadb73119fb553b6a8dacec4916d",
+    "run_installed_cartridge_authoring.py": "333e44cb2d584dcde9adca3d37dd9464d8d32f5e49c7180a6ec3bd5d99ab3e52",
+    "test_cartridge_authoring.py": "8725c259702d650f07ae31c5e1d49bca6fc873941eaa239477d0f1f0e75c412f"
+  }
+}

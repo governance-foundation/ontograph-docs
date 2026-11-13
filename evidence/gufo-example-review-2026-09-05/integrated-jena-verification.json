@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "ontograph.gufo.shacl-sparql-evidence-verification.v1",
+  "status": "pass",
+  "evidenceDigest": "sha256:80d11ea549beae6ae086b1c62afc68a92d63c18b80a99285aa6252d64ec8549e",
+  "caseCount": 9,
+  "actualShaclExecutions": 9,
+  "actualSparqlExecutions": 9,
+  "unsupportedResidueRetained": true,
+  "installedCliApiParity": true
+}

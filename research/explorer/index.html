@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Inspect one organisational source case across conceptual, organisational and OWL/gUFO viewpoints, with explicit source identities, mapping decisions and limitations.">
+  <title>Viewpoint explorer · OntoGraph Research</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="explorer.js"></script>
+</head>
+<body>
+  <a class="skip" href="#explorer">Skip to explorer</a>
+  <header class="masthead">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">O</span> OntoGraph <span>Research</span></a>
+    <nav aria-label="Research navigation"><a href="../">Research overview</a><a href="#limitations">Scope &amp; limitations</a><a href="data/manifest.json">Data manifest</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A traceable, read-only research case</p>
+      <h1 id="page-title">One case,<br><em>three viewpoints.</em></h1>
+      <p class="lead">Follow a person, an appointment or a modelling commitment across views. Inspect what the source says, how it maps, and where interpretation remains open.</p>
+      <p class="boundary">The case preserves the difference between a person and a role, an appointment and a bare relationship, and recorded membership and organisational authority.</p>
+      <div id="mode-note" class="callout"><strong>Loading the evidence boundary…</strong></div>
+    </section>
+
+    <section id="explorer" class="workspace" aria-label="Viewpoint explorer" tabindex="-1">
+      <div id="load-error" class="error" role="alert" hidden><h2>Explorer data could not be verified</h2><p id="error-detail"></p><p>No partial or unverified view is shown.</p><button id="retry" type="button">Retry data loading</button></div>
+      <p id="loading" role="status">Verifying the source dossier and its artifact checksums…</p>
+      <div id="application" hidden>
+        <div class="view-tabs" role="tablist" aria-label="Case viewpoint">
+          <button id="tab-conceptual" role="tab" type="button" aria-controls="view-panel" aria-selected="false" tabindex="-1" data-view="conceptual"><span>01</span> Conceptual</button>
+          <button id="tab-organisational" role="tab" type="button" aria-controls="view-panel" aria-selected="true" tabindex="0" data-view="organisational"><span>02</span> Organisational</button>
+          <button id="tab-owl-gufo" role="tab" type="button" aria-controls="view-panel" aria-selected="false" tabindex="-1" data-view="owl-gufo"><span>03</span> OWL / gUFO</button>
+        </div>
+        <div class="workspace-grid">
+          <section id="view-panel" class="view-panel" role="tabpanel" aria-labelledby="tab-organisational" tabindex="0">
+            <div class="panel-heading"><p class="eyebrow" id="view-kind">Organisational viewpoint</p><h2 id="view-title">Appointments and people</h2><p id="view-description"></p></div>
+            <div id="view-visual" class="view-visual"></div>
+            <form id="filters" class="filters" role="search" aria-label="Filter source identities">
+              <div><label for="search">Find in this view</label><input id="search" type="search" placeholder="Label, source ID or mapping…" autocomplete="off" aria-describedby="filter-help"></div>
+              <div><label for="domain">Identity domain</label><select id="domain"><option value="all">All domains</option><option value="source-model">Model declarations</option><option value="source-instance">Instance / qualified facts</option></select></div>
+            </form>
+            <p id="filter-help" class="small">Labels help you find records; stable source IDs establish the selected identity.</p>
+            <p id="result-count" class="result-count" role="status" aria-live="polite" aria-atomic="true"></p>
+            <div id="empty" class="empty" hidden><h3>No matching records in this view</h3><p>The selected identity is retained. Try another view or clear the filter.</p><button id="clear-filter" type="button">Clear filters</button></div>
+            <div id="record-table-wrap" class="table-wrap" tabindex="0" role="region" aria-label="Source identity records; horizontally scrollable">
+              <table id="record-table"><caption>Source identities in the selected viewpoint</caption><thead><tr><th scope="col">Inspect identity</th><th scope="col">Source declaration</th><th scope="col">Status</th></tr></thead><tbody id="records"></tbody></table>
+            </div>
+            <details class="view-scope"><summary>What this view retains and reduces</summary><div id="view-limitations"></div></details>
+          </section>
+
+          <aside id="inspector" class="inspector" aria-labelledby="inspection-title" tabindex="-1">
+            <p class="eyebrow">Shared identity inspector</p><h2 id="inspection-title">Identity &amp; evidence</h2>
+            <div id="selection-state" class="selection-state" role="status" aria-live="polite"></div>
+            <div id="inspection"></div>
+          </aside>
+        </div>
+      </div>
+      <noscript><div class="callout"><strong>This explorer needs JavaScript for selection and filters.</strong><p>Its underlying records remain inspectable as <a href="data/case/case-dossier.json">the source identity dossier</a>, <a href="data/case/mappings.json">mapping records</a>, <a href="data/case/claims.json">claim register</a> and <a href="data/case/diagram.md">diagram text alternative</a>. These source records are fixture data, not canonical acceptance.</p></div></noscript>
+    </section>
+
+    <section id="limitations" class="scope" aria-labelledby="scope-title">
+      <p class="eyebrow">Interpretation has boundaries</p><h2 id="scope-title">Inspect the evidence. Keep the distinctions.</h2>
+      <div class="scope-grid">
+        <article><h3>Source identity ≠ acceptance</h3><p>Distinct source identifiers remain connected across views. Null canonical references mean no accepted canonical object is demonstrated. Equal labels and values imply neither identity nor inequality.</p></article>
+        <article><h3>A projection has a purpose</h3><p>OWL/gUFO presents selected meaning. Explicit temporal facts also use composition vocabulary. Modal identity, anti-rigidity, rights and duties are not proved by a class label or a diagram.</p></article>
+        <article><h3>Validation is specific</h3><p>The two mediation relations each declare a minimum of one participant. Generic SHACL’s minimum of two total <code>gufo:mediates</code> values does not independently enforce those typed minima.</p></article>
+      </div>
+      <p class="small">This browser reads packaged research data only. Selection and rendering create no Assertion, Evidence, Review, Decision or Promotion. No live service mode, command execution, storage access, comprehensive C0–C7 acceptance, release or publication authority is supplied.</p>
+    </section>
+  </main>
+  <footer><a href="../">← Research overview</a><p>Traceable source. Purpose-specific views. Explicit open questions.</p><p class="small">Preparation artifact; deployment and independent acceptance remain separately governed. <a href="data/case/LICENSE.md">Source license status</a> · <a href="README.md">Method and verification</a></p></footer>
+</body>
+</html>

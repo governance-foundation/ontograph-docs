@@ -1,0 +1,28 @@
+{
+  "binarySha256": "6e8a058fc03988651d42b45ea5bbff89051b3385f8a9007550ee19379692507d",
+  "cases": [
+    "build-a",
+    "build-b",
+    "untrusted-install",
+    "explicit-local-test-trust",
+    "reopen-list",
+    "tampered-install"
+  ],
+  "deterministicPackageAndReceipt": true,
+  "domainPilotQualified": false,
+  "draftRejectedAsUntrusted": true,
+  "expectedResults": "implementer-authored-synthetic-tooling-tests",
+  "explicitSyntheticTrustInstallAndReopen": true,
+  "packageSha256": "3860e91f5aaedc787a225a043a0d51dea57c00e2b1234a96e75eb6625743da1d",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pythonVersion": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "schemaVersion": "ontograph.installed-cartridge-authoring-proof.v1",
+  "scope": "compiler-and-installed-lifecycle-boundary-only",
+  "semanticReview": "not-performed",
+  "tamperRejectedWithoutMutation": true,
+  "toolSources": {
+    "build_cartridge.py": "4272fb40d650e731762e6710859c7b9d1601eadb73119fb553b6a8dacec4916d",
+    "run_installed_cartridge_authoring.py": "333e44cb2d584dcde9adca3d37dd9464d8d32f5e49c7180a6ec3bd5d99ab3e52",
+    "test_cartridge_authoring.py": "8725c259702d650f07ae31c5e1d49bca6fc873941eaa239477d0f1f0e75c412f"
+  }
+}

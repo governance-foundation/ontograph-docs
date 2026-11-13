@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "ontograph.cartridge-pilot-review-freeze.v1",
+  "status": "unreviewed-implementer-proposal",
+  "files": [
+    {
+      "path": "docs/acceptance/cartridge-creation/pilot-review.md",
+      "sha256": "9977036829b6c2d1ba5d499eddbbc07fd8338dbe71eb6e27dceed0b01215467c"
+    },
+    {
+      "path": "docs/acceptance/cartridge-creation/pilot-obligations.v1.json",
+      "sha256": "ade4fb0ab497014f1ae7603e95c9e59dd6fca76f36790f44fe014e6e1460f06d"
+    }
+  ],
+  "reviewer": null,
+  "claimsQualification": false
+}

@@ -1,0 +1,559 @@
+{
+  "binarySha256": "688c5fc66d6b61963877fe5bd29324938f3cb03216eec58e0994137e0ee34a9d",
+  "candidate": "1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5",
+  "caseRef": "EXT-GUFO-007-HIGHER-ORDER-TYPES",
+  "completeSourceIsomorphic": true,
+  "deterministicReloadReimport": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Animal",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Kesi"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": true,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+      },
+      "result": {
+        "assertedEntailmentObligations": 1,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": true,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 0,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": false,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Kesi"
+      },
+      "result": {
+        "assertedEntailmentObligations": 0,
+        "closureOntologies": 1,
+        "conclusionDateDatatypeExtension": false,
+        "conclusionOriginalProfileError": null,
+        "conclusionOriginalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "conclusionOriginalProfileViolationCount": 0,
+        "conclusionOwl2DlProfile": true,
+        "conclusionPartialCalendarDatatypeExtension": false,
+        "conclusionProfileLexicalCorrections": 0,
+        "conclusionTimeDatatypeExtension": false,
+        "consistent": true,
+        "dateDatatypeExtension": true,
+        "entailed": false,
+        "fullDatatypeReasoning": true,
+        "ignoreUnsupportedAxioms": false,
+        "originalProfileError": null,
+        "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+        "originalProfileViolationCount": 0,
+        "owl2DlProfile": true,
+        "partialCalendarDatatypeExtension": false,
+        "partialCalendarFundamentalFacetsQualified": false,
+        "profileLexicalCorrections": 0,
+        "profileViolationCount": 0,
+        "qualifiedProfile": true,
+        "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+        "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+        "queriedEntailmentObligations": 1,
+        "satisfiable": null,
+        "standardDatatypeMapQualified": false,
+        "status": "executed",
+        "timeDatatypeExtension": false,
+        "uncorrectedProfileViolations": 0,
+        "undefinedDatatypeHandling": "exception",
+        "uniqueNameAssumption": false
+      }
+    }
+  ],
+  "generatedShacl": {
+    "boundary": {
+      "actualStandardsExecution": true,
+      "canonicalStateMutated": false,
+      "claimsComprehensiveConformance": false,
+      "createsDecisionOrPromotion": false,
+      "sourceMutated": false
+    },
+    "conforms": true,
+    "dataArtifact": {
+      "artifactRef": "nine:c07-coverage",
+      "digest": "sha256:022c79cf1639dae8f2ec35803fc9070452553f15c4b5e028581d5bd6819a3560"
+    },
+    "definitionArtifact": {
+      "artifactRef": "nine:c07-coverage-definition",
+      "digest": "sha256:dc65de62a99628d8a81e1079adf7c821d7bc3b1b7aef6ad35247db39a0000788"
+    },
+    "operation": "shacl-validation",
+    "pinRef": "shacl-sparql:apache-jena-6.2.0",
+    "resultRef": "shacl-sparql-result:b320ae3d9d2805d5c6db2b0c11792b4b08521c6646b06120802e783dc3445094",
+    "rows": [],
+    "schemaVersion": "ontograph.shacl-sparql.result.v1",
+    "semanticStatus": "conformant",
+    "shaclResults": [],
+    "variables": [
+      "conforms",
+      "focusNode",
+      "sourceShapeKind",
+      "sourceShape",
+      "constraintComponent",
+      "resultPath",
+      "severity",
+      "valueKind",
+      "value",
+      "message"
+    ]
+  },
+  "independentReview": "pending",
+  "limits": [
+    "source-derived candidate only; no adoption or modal identity/rigidity proof",
+    "generated shapes check explicit named classification/object/value coverage; anonymous expression closure uses the complete independent graph oracle; upstream shapes are separate",
+    "CLI-only admission; corresponding API capability not implemented"
+  ],
+  "owl": {
+    "assertedEntailmentObligations": 0,
+    "closureOntologies": 1,
+    "conclusionDateDatatypeExtension": false,
+    "conclusionOriginalProfileError": null,
+    "conclusionOriginalProfileReport": null,
+    "conclusionOriginalProfileViolationCount": null,
+    "conclusionOwl2DlProfile": null,
+    "conclusionPartialCalendarDatatypeExtension": false,
+    "conclusionProfileLexicalCorrections": 0,
+    "conclusionTimeDatatypeExtension": false,
+    "consistent": true,
+    "dateDatatypeExtension": true,
+    "entailed": null,
+    "fullDatatypeReasoning": true,
+    "ignoreUnsupportedAxioms": false,
+    "originalProfileError": null,
+    "originalProfileReport": "OWL 2 DL Profile Report: [Ontology and imports closure in profile]\n",
+    "originalProfileViolationCount": 0,
+    "owl2DlProfile": true,
+    "partialCalendarDatatypeExtension": false,
+    "partialCalendarFundamentalFacetsQualified": false,
+    "profileLexicalCorrections": 0,
+    "profileViolationCount": 0,
+    "qualifiedProfile": true,
+    "qualifiedProfileName": "OntoGraph XSD1.1 DATE and TIME extensions candidate1",
+    "qualifiedProfileReport": "OntoGraph XSD1.1 DATE and TIME extensions candidate1 Profile Report: [Ontology and imports closure in profile]\n",
+    "queriedEntailmentObligations": 0,
+    "satisfiable": null,
+    "standardDatatypeMapQualified": false,
+    "status": "executed",
+    "timeDatatypeExtension": false,
+    "uncorrectedProfileViolations": 0,
+    "undefinedDatatypeHandling": "exception",
+    "uniqueNameAssumption": false
+  },
+  "queries": [
+    {
+      "name": "classifications",
+      "rows": [
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Kind"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Animal"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#Type"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Elephant"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Endangered"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Kesi"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#LeastConcern"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Nia"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Elephant"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Tembo"
+          }
+        },
+        {
+          "class": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Vulnerable"
+          }
+        }
+      ],
+      "variables": [
+        "subject",
+        "class"
+      ]
+    },
+    {
+      "name": "feature-facts",
+      "rows": [
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "http://purl.org/nemo/gufo#partitions"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Animal"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#hasConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Elephant"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Vulnerable"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#hasConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#LeastConcern"
+          }
+        },
+        {
+          "property": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#hasConservationStatus"
+          },
+          "subject": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+          },
+          "value": {
+            "datatype": null,
+            "kind": "uri",
+            "language": null,
+            "value": "https://purl.org/nemo/gufo-examples/higher-order-types#Endangered"
+          }
+        }
+      ],
+      "variables": [
+        "subject",
+        "property",
+        "value"
+      ]
+    }
+  ],
+  "sourceAssertions": 66,
+  "sourceCanonicalNonmutation": true,
+  "status": "passed",
+  "upstreamShacl": {
+    "boundary": {
+      "actualStandardsExecution": true,
+      "canonicalStateMutated": false,
+      "claimsComprehensiveConformance": false,
+      "createsDecisionOrPromotion": false,
+      "sourceMutated": false
+    },
+    "conforms": true,
+    "dataArtifact": {
+      "artifactRef": "nine:c07-shacl",
+      "digest": "sha256:022c79cf1639dae8f2ec35803fc9070452553f15c4b5e028581d5bd6819a3560"
+    },
+    "definitionArtifact": {
+      "artifactRef": "nine:c07-shacl-definition",
+      "digest": "sha256:b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3"
+    },
+    "operation": "shacl-validation",
+    "pinRef": "shacl-sparql:apache-jena-6.2.0",
+    "resultRef": "shacl-sparql-result:d46b4813ab15340fa726b671d90b4c4b8e2de5a94a9c913ef888afd1ef8ca05e",
+    "rows": [],
+    "schemaVersion": "ontograph.shacl-sparql.result.v1",
+    "semanticStatus": "conformant",
+    "shaclResults": [],
+    "variables": [
+      "conforms",
+      "focusNode",
+      "sourceShapeKind",
+      "sourceShape",
+      "constraintComponent",
+      "resultPath",
+      "severity",
+      "valueKind",
+      "value",
+      "message"
+    ]
+  }
+}

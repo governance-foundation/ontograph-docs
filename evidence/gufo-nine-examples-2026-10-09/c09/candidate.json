@@ -1,0 +1,287 @@
+{
+  "entities": {
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Deliberately invalid variant of example 07, used by the test suite to show that OWL alone does not catch a missing disjointness declaration between partition members that gufoshapes does catch."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [
+        "https://purl.org/nemo/gufo#"
+      ],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": true,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Kind"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#FunctionalComplex"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies": {
+      "allDisjointClasses": false,
+      "classifications": [],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [
+        "http://purl.org/nemo/gufo#Type"
+      ],
+      "namedIndividual": false,
+      "objectAssertions": {
+        "http://purl.org/nemo/gufo#partitions": [
+          "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal"
+        ]
+      },
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "http://purl.org/nemo/gufo#Type"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      ],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion"
+      ],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      ],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Rajah": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion",
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger"
+      ],
+      "classifier": false,
+      "comments": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Perfectly fine as far as OWL is concerned: an individual that is both a lion and a tiger, because nothing declares the two disjoint."
+        }
+      ],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Rajah"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [],
+      "superproperties": [],
+      "valueAssertions": {}
+    },
+    "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger": {
+      "allDisjointClasses": false,
+      "classifications": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      ],
+      "classifier": true,
+      "comments": [],
+      "dataProperty": false,
+      "disjointClasses": [],
+      "disjointMembers": null,
+      "domains": [],
+      "enumeration": null,
+      "equivalentClasses": [],
+      "imports": [],
+      "inverseProperties": [],
+      "labels": [
+        {
+          "datatype": null,
+          "language": "en",
+          "lexical": "Tiger"
+        }
+      ],
+      "listFirst": null,
+      "listRest": null,
+      "metatypes": [],
+      "namedIndividual": false,
+      "objectAssertions": {},
+      "objectProperty": false,
+      "ontology": false,
+      "propertyCharacteristics": [],
+      "qualifiedCardinality": null,
+      "ranges": [],
+      "restriction": false,
+      "restrictionClass": null,
+      "restrictionProperty": null,
+      "someValuesFrom": null,
+      "superclasses": [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal"
+      ],
+      "superproperties": [],
+      "valueAssertions": {}
+    }
+  },
+  "schemaVersion": "ontograph.gufo.typed-source-candidate.v2",
+  "sourceAssertionCount": 25,
+  "sourceBytes": 2215,
+  "sourceDigest": "sha256:6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417"
+}

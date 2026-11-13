@@ -1,0 +1,123 @@
+{
+  "boundary": {
+    "adoptionApproved": false,
+    "canonicalStateMutated": false,
+    "comprehensiveConformance": false,
+    "createsDecision": false,
+    "createsEvidence": false,
+    "createsPromotion": false,
+    "createsReview": false,
+    "createsVersion": false,
+    "infersRoleTransition": false,
+    "infersTimelessRoleMembership": false,
+    "persistedSourceRecordsRemainStaged": true,
+    "readOnly": true,
+    "releaseApproved": false,
+    "validatesSemantics": false
+  },
+  "identity": {
+    "importRecordPath": "imports/ontouml/ontouml-import-model-source-composition-2128.json",
+    "importRef": "ontouml-import:model-source-composition-2128",
+    "instanceDigest": "sha256:44b1c567a655afbd4798a01638f95fc97696643c65ed9775212d3b2dc5574458",
+    "persistedReportDigest": "sha256:d7ae6ba9f1938157d6111f71f29060a2c369098b0d7d4102383f89ce80b71d3f",
+    "profileRef": "ontograph.gufo.source-composition.v1",
+    "provenanceManifestDigest": "sha256:4b034fbd576a8ef5b22819eaaf786531687d90fbdfaf8dd0ada775b7cf20a116",
+    "sourceArtifactRef": "artifact:2695-personnel-research",
+    "sourceModelDigest": "sha256:cb183292af7fb6d823675adcc75d8fe92b81123678af34495e881b358fbf3c79",
+    "sourceModelRef": "model:source-composition-2128"
+  },
+  "individuals": [
+    {
+      "classRef": "class:seminar",
+      "id": "event:seminar",
+      "label": "Seminar"
+    },
+    {
+      "classRef": "class:organization",
+      "id": "organization:one",
+      "label": "Research Institute"
+    },
+    {
+      "classRef": "class:person",
+      "id": "person:a",
+      "label": "Alex"
+    },
+    {
+      "classRef": "class:person",
+      "id": "person:b",
+      "label": "Alex"
+    }
+  ],
+  "relators": [
+    {
+      "classRef": "class:appointment",
+      "id": "appointment:one",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      },
+      "label": null,
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": [
+            "organization:one"
+          ]
+        }
+      ]
+    },
+    {
+      "classRef": "class:appointment",
+      "id": "appointment:two",
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      },
+      "label": null,
+      "mediations": [
+        {
+          "mediationRef": "relation:mediation",
+          "participantRefs": [
+            "person:a"
+          ]
+        },
+        {
+          "mediationRef": "relation:organization-mediation",
+          "participantRefs": [
+            "organization:one"
+          ]
+        }
+      ]
+    }
+  ],
+  "reportKind": "ontouml-persisted-composition-readback",
+  "reportVersion": "ontograph.ontouml-persisted-composition-readback.v1",
+  "roleMemberships": [
+    {
+      "id": "membership:one",
+      "individualRef": "person:a",
+      "interval": {
+        "begin": "2024-02-29T10:00:00Z",
+        "end": "2024-02-29T12:00:00Z"
+      },
+      "relatorRef": "appointment:one",
+      "roleRef": "class:researcher"
+    },
+    {
+      "id": "membership:two",
+      "individualRef": "person:a",
+      "interval": {
+        "begin": "2024-03-01T00:00:00+14:00",
+        "end": "2024-03-01T03:00:00+14:00"
+      },
+      "relatorRef": "appointment:two",
+      "roleRef": "class:researcher"
+    }
+  ]
+}

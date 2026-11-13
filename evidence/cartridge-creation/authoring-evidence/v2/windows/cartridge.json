@@ -1,0 +1,62 @@
+{
+  "boundary": {
+    "canonicalMutationAttempted": false,
+    "createsApproval": false,
+    "createsEvidence": false,
+    "createsPromotion": false
+  },
+  "manifest": {
+    "capabilities": {
+      "cognitivePackageRefs": [
+        "synthetic:cognitivePackageRefs"
+      ],
+      "evaluationFixtureRefs": [
+        "synthetic:evaluationFixtureRefs"
+      ],
+      "lensRefs": [
+        "synthetic:lensRefs"
+      ],
+      "mappingRefs": [
+        "synthetic:mappingRefs"
+      ],
+      "questionPatternRefs": [
+        "synthetic:questionPatternRefs"
+      ],
+      "sentinelContractRefs": [
+        "synthetic:sentinelContractRefs"
+      ],
+      "thresholdRefs": [
+        "synthetic:thresholdRefs"
+      ]
+    },
+    "cartridgeId": "test:authoring",
+    "contentDigest": "sha256:cb2da5369ff80d79185318a3a31edca7608359f11a615721b0246462e1895554",
+    "createdAt": "2026-09-06T00:00:00Z",
+    "dependencies": [],
+    "ontographCompatibility": ">=0.1.0 <0.5.0",
+    "publisher": "synthetic-tests",
+    "sourceRefs": [
+      "synthetic:source"
+    ],
+    "trust": {
+      "decisionRef": "pending:explicit-local-trust",
+      "policyRef": "policy:cartridge-authoring-draft",
+      "trusted": false
+    },
+    "version": "1.0.0"
+  },
+  "normalizedPayload": [
+    {
+      "content": "{\"id\":\"synthetic-tooling-only\"}\r\n",
+      "path": "cognitive-packages/synthetic.json"
+    },
+    {
+      "content": "{\n  \"authorRef\": \"synthetic:unit-test-implementer\",\n  \"expectedResults\": [\n    {\n      \"id\": \"synthetic:expectation\",\n      \"inputPath\": \"expected.json\",\n      \"reviewRef\": null,\n      \"sha256\": \"6a18dc0feb31688cc25ecc1bde5655ec2a10a799b6f5d69deb5b3d5d483804b7\"\n    }\n  ],\n  \"mappings\": [\n    {\n      \"alignmentState\": \"proposed\",\n      \"id\": \"synthetic:mapping\",\n      \"lossDecisionRef\": null,\n      \"preconditions\": [],\n      \"reviewRef\": null,\n      \"sourceAnchor\": \"line:1\",\n      \"sourceId\": \"synthetic:source\",\n      \"targetRef\": \"synthetic:unadopted\",\n      \"typedLoss\": [\n        \"not-a-semantic-mapping\"\n      ]\n    }\n  ],\n  \"profile\": {\n    \"collection\": [\n      \"synthetic:tooling-only-collection\"\n    ],\n    \"comparison\": [\n      \"synthetic:tooling-only-comparison\"\n    ],\n    \"connections\": [\n      \"synthetic:tooling-only-connections\"\n    ],\n    \"experiences\": [\n      \"synthetic:tooling-only-experiences\"\n    ],\n    \"exports\": [\n      \"synthetic:tooling-only-exports\"\n    ],\n    \"id\": \"synthetic:compiler-only\",\n    \"limitations\": [\n      \"synthetic:tooling-only-limitations\"\n    ],\n    \"mandatoryRequirements\": [\n      \"synthetic:tooling-only-mandatoryRequirements\"\n    ],\n    \"persistence\": [\n      \"synthetic:tooling-only-persistence\"\n    ],\n    \"queries\": [\n      \"synthetic:tooling-only-queries\"\n    ],\n    \"requestedAccess\": [\n      \"synthetic:tooling-only-requestedAccess\"\n    ],\n    \"validation\": [\n      \"synthetic:tooling-only-validation\"\n    ]\n  },\n  \"qualification\": \"unqualified-draft\",\n  \"reviewAuthentication\": \"not-performed\",\n  \"schemaVersion\": \"ontograph.cartridge-authoring.v2\",\n  \"sources\": [\n    {\n      \"id\": \"synthetic:source\",\n      \"inputPath\": \"source.txt\",\n      \"license\": \"synthetic-test-input\",\n      \"path\": \"source.txt\",\n      \"repository\": \"synthetic:test\",\n      \"revision\": \"synthetic-v1\",\n      \"rightsReviewRef\": null,\n      \"sha256\": \"560313e696113e45d67bdbeae271922862689074ef6361bd9c1b784d246d1923\"\n    }\n  ]\n}\n",
+      "path": "docs/authoring.json"
+    }
+  ],
+  "registry": {
+    "activations": [],
+    "installed": []
+  }
+}

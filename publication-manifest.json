@@ -1,0 +1,12 @@
+{
+  "publicationKind": "OntoGraphDocumentationPublication",
+  "schemaVersion": "ontograph.documentation-publication.v0.1",
+  "sourceRepository": "governance-foundation/ontograph",
+  "sourceBranch": "develop",
+  "sourceCommit": "6d400737845a1aad8b2a410197f9e806f7402afa",
+  "destinationRepository": "governance-foundation/ontograph-docs",
+  "destinationBranch": "develop",
+  "referenceSuiteArtifact": "reference-query-suite-6d400737845a1aad8b2a410197f9e806f7402afa",
+  "referenceCaseSuiteArtifact": "reference-case-suite-6d400737845a1aad8b2a410197f9e806f7402afa",
+  "compiledSiteArtifact": "docusaurus-site-develop-6d400737845a1aad8b2a410197f9e806f7402afa"
+}
