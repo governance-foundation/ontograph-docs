@@ -1,0 +1,153 @@
+<https://purl.org/nemo/gufo-examples/objects-and-parts#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#> <http://www.w3.org/2000/01/rdf-schema#comment> "A small ontology of cars, their components, a fleet, and fuel, illustrating gUFO's classification of complex objects and its part-whole properties."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#> <http://www.w3.org/2000/01/rdf-schema#label> "gUFO example 02: Objects and their parts (Car fleet)"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#> <http://www.w3.org/2002/07/owl#imports> <https://purl.org/nemo/gufo#> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> <http://www.w3.org/2000/01/rdf-schema#label> "Car 001"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> <https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> <https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine> <http://www.w3.org/2000/01/rdf-schema#label> "Car 001's engine"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine> <https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel> <http://www.w3.org/2000/01/rdf-schema#label> "Car 001's front-left wheel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel> <https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel> <http://www.w3.org/2000/01/rdf-schema#label> "Car 001's front-right wheel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel> <https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car001> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002> <http://www.w3.org/2000/01/rdf-schema#label> "Car 002"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002> <https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion> <http://www.w3.org/2000/01/rdf-schema#comment> "Asserted as a sub-quantity of the distillate only. Because gufo:isSubQuantityOf is transitive, a reasoner also derives that this benzene is a sub-quantity of :Car002FuelTankContents -- which is what one means by saying the fuel in the tank contains benzene."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion> <http://www.w3.org/2000/01/rdf-schema#label> "Benzene portion of Car 002's fuel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion> <https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion> <http://www.w3.org/2000/01/rdf-schema#label> "Distillate portion of Car 002's fuel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion> <https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion> <http://www.w3.org/2000/01/rdf-schema#comment> "A legitimate sub-quantity: it is a portion of a different stuff (ethanol, not gasoline), so it is a maximally self-connected quantity in its own right even while blended into the whole."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion> <http://www.w3.org/2000/01/rdf-schema#label> "Ethanol portion of Car 002's fuel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion> <https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> <http://purl.org/nemo/gufo#historicallyDependsOn> <https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> <http://www.w3.org/2000/01/rdf-schema#comment> "The gasoline in Car 002's tank: one maximally self-connected portion of stuff, whose sub-quantities are the portions of ethanol and distillate blended into it."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents> <http://www.w3.org/2000/01/rdf-schema#label> "Contents of Car 002's fuel tank"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car> <http://www.w3.org/2000/01/rdf-schema#comment> "A functional complex whose components (engine, wheels, ...) each play a different role in making the whole work."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car> <http://www.w3.org/2000/01/rdf-schema#label> "Car"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#FunctionalComplex> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet> <http://www.w3.org/2000/01/rdf-schema#label> "CityWheels fleet"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> <http://purl.org/nemo/gufo#historicallyDependsOn> <https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> <http://purl.org/nemo/gufo#historicallyDependsOn> <https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> <http://www.w3.org/2000/01/rdf-schema#comment> "Once the delivery is pumped into the tank, the two portions are in contact and hence one maximally self-connected portion of gasoline -- a new quantity. Neither input is a sub-quantity of it: they are of the same kind as the whole, and after mixing neither is a maximally self-connected portion any more. Nor did :DepotSupplyBeforeTuesday simply grow: quantities are extensional, so a change of parts is a change of whole, and their parts are essential. What links them is history, not parthood."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday> <http://www.w3.org/2000/01/rdf-schema#label> "Depot supply after Tuesday's delivery"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday> <http://www.w3.org/2000/01/rdf-schema#comment> "The gasoline sitting in the depot's underground tank up to Tuesday morning."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday> <http://www.w3.org/2000/01/rdf-schema#label> "Depot supply before Tuesday's delivery"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet> <http://purl.org/nemo/gufo#isSubCollectionOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet> <http://www.w3.org/2000/01/rdf-schema#comment> "All members of the electric sub-fleet are, by definition of isSubCollectionOf, also members of the whole fleet."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet> <http://www.w3.org/2000/01/rdf-schema#label> "CityWheels electric sub-fleet"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> <http://www.w3.org/2000/01/rdf-schema#label> "Engine"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#FunctionalComplex> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of cars with uniform structure (every member plays the same 'fleet member' role) and variable membership: cars are added when purchased and removed when retired, without the fleet losing its identity."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> <http://www.w3.org/2000/01/rdf-schema#label> "Fleet"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#VariableCollection> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2000/01/rdf-schema#comment> "A maximally self-connected portion of benzene. Present here to exercise the transitivity of gufo:isSubQuantityOf: benzene is a sub-quantity of the distillate, which is a sub-quantity of the gasoline, so the benzene is a sub-quantity of the gasoline too."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity of benzene"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#Quantity> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/2000/01/rdf-schema#comment> "A maximally self-connected portion of ethanol. Disjoint from :QuantityOfGasoline: the two are distinct kinds, obeying distinct principles of identity, and no portion of stuff is an instance of both."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity of ethanol"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#Quantity> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/2000/01/rdf-schema#comment> "A maximally self-connected portion of the blended gasoline CityWheels pumps into its cars. Everything below follows from 'maximally self-connected': any two portions of gasoline in contact are one quantity, not two, so a quantity of gasoline never has a smaller quantity of gasoline as a part. Its sub-quantities are portions of the *different* stuffs it is a blend of -- ethanol and petroleum distillate. (Named 'QuantityOfGasoline', not 'Gasoline': instances of this class are individual portions of the stuff, not the material itself.)"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity of gasoline"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#Quantity> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:riog00000001 .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:riog00000003 .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2000/01/rdf-schema#comment> "A maximally self-connected portion of the petroleum-derived distillate that is blended with ethanol to make the gasoline sold at the pump. Itself a mixture: benzene is one of the stuffs it contains."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity of petroleum distillate"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#Quantity> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:riog00000005 .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot> <http://www.w3.org/2000/01/rdf-schema#comment> "The gasoline that arrived on Tuesday's truck, while still a separate portion in the truck."@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot> <http://www.w3.org/2000/01/rdf-schema#label> "Tuesday's delivery lot"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/nemo/gufo#Kind> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> <http://www.w3.org/2000/01/rdf-schema#label> "Wheel"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/nemo/gufo#FunctionalComplex> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is benzene portion of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isSubQuantityOf> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is distillate portion of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isSubQuantityOf> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#Engine> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <http://www.w3.org/2000/01/rdf-schema#label> "is engine of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isComponentOf> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is ethanol portion of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isSubQuantityOf> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "is fleet member of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isCollectionMemberOf> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <http://www.w3.org/2000/01/rdf-schema#label> "is wheel of"@en .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/nemo/gufo-examples/objects-and-parts#Car> .
+<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/nemo/gufo#isComponentOf> .
+_:riog00000001 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:riog00000001 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol> .
+_:riog00000001 <http://www.w3.org/2002/07/owl#onProperty> _:riog00000002 .
+_:riog00000001 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:riog00000002 <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf> .
+_:riog00000003 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:riog00000003 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate> .
+_:riog00000003 <http://www.w3.org/2002/07/owl#onProperty> _:riog00000004 .
+_:riog00000003 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:riog00000004 <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf> .
+_:riog00000005 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:riog00000005 <http://www.w3.org/2002/07/owl#onClass> <https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene> .
+_:riog00000005 <http://www.w3.org/2002/07/owl#onProperty> _:riog00000006 .
+_:riog00000005 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:riog00000006 <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf> .
