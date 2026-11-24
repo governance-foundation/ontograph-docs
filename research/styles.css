@@ -769,3 +769,41 @@ footer {
 }
 
 }
+
+/* gUFO examples results page (2026-11) */
+h1 a,.lead a{color:inherit}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:34px 0 30px;padding:0}
+.stats>div{background:var(--pale);border:1px solid var(--line);border-radius:5px;padding:16px 18px}
+.stats dt{font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--muted)}
+.stats dd{margin:4px 0 0;font-family:var(--serif);font-size:30px;line-height:1.2}
+.stats dd.stat-note{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.scope-note{margin-top:30px}
+.badge.fail{background:#f6e3dc;color:#8e371f;border-color:#e2b6a6}
+.results td{vertical-align:top}
+.results .violation{font-size:13px;color:var(--muted);margin:8px 0 0;max-width:46ch}
+.results th[scope=row]{min-width:12ch}
+pre.command{background:var(--ink);color:#f3f1ea;border-radius:5px;padding:16px 18px;overflow-x:auto;font-size:14px;line-height:1.55;margin:0 0 22px}
+pre.command code{background:none;color:inherit;padding:0;font-size:inherit}
+.plain-list{padding-left:20px;max-width:80ch}
+.plain-list li{margin-bottom:12px}
+.related{margin-top:34px;max-width:80ch}
+.related p{color:var(--muted);font-size:15px}
+.own-case .callout ul{margin:8px 0 0;padding-left:20px}
+.own-case .callout li{margin-bottom:6px;font-size:15px}
+.own-case details{margin:22px 0}
+@media(max-width:1100px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr;gap:10px}.stats dd{font-size:24px}.stats>div{padding:12px}pre.command{font-size:12.5px}}
+@media(max-width:420px){.stats{grid-template-columns:1fr}}
+.results td:nth-child(2){min-width:22ch;max-width:30ch}
+.results td:last-child{min-width:36ch}
+.results .violation{max-width:none}
+@media(max-width:760px){
+  .table-wrap table.stack{min-width:0}
+  table.stack thead{display:none}
+  table.stack caption{display:block;text-align:left}
+  table.stack,table.stack tbody,table.stack tr,table.stack th,table.stack td{display:block;width:auto;max-width:none;min-width:0}
+  table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+  table.stack th[scope=row]{border:0;padding:6px 14px 2px}
+  table.stack td{border:0;padding:3px 14px}
+  table.stack td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--muted)}
+}

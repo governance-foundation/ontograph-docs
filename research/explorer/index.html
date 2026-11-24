@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Inspect one organisational source case across conceptual, organisational and OWL/gUFO viewpoints, with explicit source identities, mapping decisions and limitations.">
   <title>Viewpoint explorer · OntoGraph Research</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="explorer.js"></script>
 </head>
@@ -16,10 +17,11 @@
   </header>
   <main>
     <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">A traceable, read-only research case</p>
+      <p class="eyebrow">OntoGraph's own worked case · modelling under revision</p>
       <h1 id="page-title">One case,<br><em>three viewpoints.</em></h1>
       <p class="lead">Follow a person, an appointment or a modelling commitment across views. Inspect what the source says, how it maps, and where interpretation remains open.</p>
       <p class="boundary">The case preserves the difference between a person and a role, an appointment and a bare relationship, and recorded membership and organisational authority.</p>
+      <p class="boundary">This explorer shows OntoGraph's own appointment case, not the gUFO usage examples. Its model has <a href="../#own-case">known issues</a>, so the results here describe the current version, which will change. For the results on the gUFO examples, see the <a href="../#results">research overview</a>.</p>
       <div id="mode-note" class="callout"><strong>Loading the evidence boundary…</strong></div>
     </section>
 
@@ -49,11 +51,11 @@
             <details class="view-scope"><summary>What this view retains and reduces</summary><div id="view-limitations"></div></details>
           </section>
 
-          <aside id="inspector" class="inspector" aria-labelledby="inspection-title" tabindex="-1">
+          <section id="inspector" class="inspector" aria-labelledby="inspection-title" tabindex="-1">
             <p class="eyebrow">Shared identity inspector</p><h2 id="inspection-title">Identity &amp; evidence</h2>
             <div id="selection-state" class="selection-state" role="status" aria-live="polite"></div>
             <div id="inspection"></div>
-          </aside>
+          </section>
         </div>
       </div>
       <noscript><div class="callout"><strong>This explorer needs JavaScript for selection and filters.</strong><p>Its underlying records remain inspectable as <a href="data/case/case-dossier.json">the source identity dossier</a>, <a href="data/case/mappings.json">mapping records</a>, <a href="data/case/claims.json">claim register</a> and <a href="data/case/diagram.md">diagram text alternative</a>. These source records are fixture data, not canonical acceptance.</p></div></noscript>
@@ -66,9 +68,9 @@
         <article><h3>A projection has a purpose</h3><p>OWL/gUFO presents selected meaning. Explicit temporal facts also use composition vocabulary. Modal identity, anti-rigidity, rights and duties are not proved by a class label or a diagram.</p></article>
         <article><h3>Validation is specific</h3><p>The two mediation relations each declare a minimum of one participant. Generic SHACL’s minimum of two total <code>gufo:mediates</code> values does not independently enforce those typed minima.</p></article>
       </div>
-      <p class="small">This browser reads packaged research data only. Selection and rendering create no Assertion, Evidence, Review, Decision or Promotion. No live service mode, command execution, storage access, comprehensive C0–C7 acceptance, release or publication authority is supplied.</p>
+      <p class="small">This browser reads packaged research data only. Selection and rendering create no Assertion, Evidence, Review, Decision or Promotion. No live service, command execution, storage access, product release or publication authority is supplied.</p>
     </section>
   </main>
-  <footer><a href="../">← Research overview</a><p>Traceable source. Purpose-specific views. Explicit open questions.</p><p class="small">Preparation artifact; deployment and independent acceptance remain separately governed. <a href="data/case/LICENSE.md">Source license status</a> · <a href="README.md">Method and verification</a></p></footer>
+  <footer><a href="../">← Research overview</a><p>Traceable source. Purpose-specific views. Explicit open questions.</p><p class="small">Checked by automated agent review only; no human ontologist has reviewed this case yet. <a href="data/case/LICENSE.md">Source license status</a> · <a href="README.md">Method and verification</a></p></footer>
 </body>
 </html>

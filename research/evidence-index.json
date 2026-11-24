@@ -125,10 +125,272 @@
       "id": "explorer-manifest",
       "path": "explorer/data/manifest.json",
       "mediaType": "application/json",
-      "bytes": 9043,
-      "sha256": "28fef8e6a6c224c077f4424f7cf022b74086e6cae77a158ef0b6aafa4111a414",
-      "sourceRef": "https://github.com/governance-foundation/ontograph-docs/blob/b5dd47b99c9411dee8594892ad997b49b80eeca5/research/explorer/data/manifest.json",
-      "licenseRef": "downloads/license-notices.txt"
+      "bytes": 9189,
+      "sha256": "ea160422266d11766dad37bb368da27361db98f432686723dc379dc066bcaf98",
+      "sourceRef": "research/explorer/data/manifest.json (this repository, branch feature/research-gufo-examples-results)",
+      "licenseRef": "downloads/license-notices.txt",
+      "note": "Updated 2026-11-24: sources.json and LICENSE.md hashes changed (recipient name removed from historical paths). The explorer review receipt in downloads/reviews/explorer predates this change."
+    },
+    {
+      "id": "downloads/gufo-examples-check.zip",
+      "path": "downloads/gufo-examples-check.zip",
+      "mediaType": "application/zip",
+      "bytes": 76471,
+      "sha256": "b746e7df51dca3f3d10a2334eedbe0e2e87419180ab54586a1aab0fc8028fca4",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/check.py",
+      "path": "gufo-examples-check/check.py",
+      "mediaType": "text/x-python",
+      "bytes": 6483,
+      "sha256": "71fb9fac7fee9c730f3786fa12fd473f35bd5a2e49f6b314da6dd965cadee201",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/expected.json",
+      "path": "gufo-examples-check/expected.json",
+      "mediaType": "application/json",
+      "bytes": 11320,
+      "sha256": "19211b916cfcd2f8456db5f610d49e01ef6e0ad5dae54044d55123a0a5deb4ff",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/01-endurant-types-invalid.ttl",
+      "path": "gufo-examples-check/inputs/01-endurant-types-invalid.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2166,
+      "sha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/01-endurant-types.ttl",
+      "path": "gufo-examples-check/inputs/01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 5841,
+      "sha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/02-objects-and-parts.ttl",
+      "path": "gufo-examples-check/inputs/02-objects-and-parts.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 12747,
+      "sha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/03-qualities.ttl",
+      "path": "gufo-examples-check/inputs/03-qualities.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6040,
+      "sha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/04-relators.ttl",
+      "path": "gufo-examples-check/inputs/04-relators.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6498,
+      "sha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/05-events.ttl",
+      "path": "gufo-examples-check/inputs/05-events.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6202,
+      "sha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/06-situations.ttl",
+      "path": "gufo-examples-check/inputs/06-situations.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10101,
+      "sha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/07-higher-order-types-invalid.ttl",
+      "path": "gufo-examples-check/inputs/07-higher-order-types-invalid.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2215,
+      "sha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/07-higher-order-types.ttl",
+      "path": "gufo-examples-check/inputs/07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4689,
+      "sha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "path": "gufo-examples-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18749,
+      "sha256": "c55e51bd3c55b917429a833ddc7ccc895093c2de4bb632eb6505e860edc96d3e",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "path": "gufo-examples-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18756,
+      "sha256": "9ef5b056d86aa5b880761c20eb67902f5c040bf9e5b8ea689c62011b46b5950a",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/NOTICE.md",
+      "path": "gufo-examples-check/NOTICE.md",
+      "mediaType": "text/markdown",
+      "bytes": 1149,
+      "sha256": "f53bed3a26edcc45f6452e4d1b6186f93368c182eb62c517abad2b8063d355c4",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/01-endurant-types-invalid.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/01-endurant-types-invalid.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 3364,
+      "sha256": "f81f1da59d2043a912ff4f5a6b90cceb9542c8fde5aa975f8c548ae601e293ca",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/01-endurant-types.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/01-endurant-types.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 15561,
+      "sha256": "4b4a90212e702c65b7ad762b91f082504afebd1282bbcff2c306d914937431d3",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/02-objects-and-parts.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/02-objects-and-parts.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 28036,
+      "sha256": "5ac05bb12f025dabd1ba878215d03d4770872b1221c3b4df80e0c6b3e0c3f883",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/03-qualities.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/03-qualities.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 18212,
+      "sha256": "41b421d975928bb8adf6bb917e48711b7b6bcb5c32167235923ee6fd6ce6e7f2",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/04-relators.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/04-relators.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 16577,
+      "sha256": "4a4df9c8c9b5bfdb367e8ed9815d4653f4b9882b34935840c9396861e602efc8",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/05-events.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/05-events.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 14354,
+      "sha256": "b009543c893a6b97d0ac8bcb5d1465fa3c1558be5b0ca001bf43f26652e0c6b2",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/06-situations.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/06-situations.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 23710,
+      "sha256": "9ec6d6e9c891729f53f347c626781a6f5af5f5c388479d6572e4d472c80111aa",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/07-higher-order-types-invalid.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/07-higher-order-types-invalid.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4551,
+      "sha256": "1bba00c8cf9981cf18459dac83801961362168c580b817f2198014d0aa2b120f",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/07-higher-order-types.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/07-higher-order-types.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10845,
+      "sha256": "022c79cf1639dae8f2ec35803fc9070452553f15c4b5e028581d5bd6819a3560",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/README.md",
+      "path": "gufo-examples-check/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 3272,
+      "sha256": "dfedc0225dfdbc603ec3d6f683b4bc8077d4604ea50a3a3ad24bc4c1626b710f",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/requirements.txt",
+      "path": "gufo-examples-check/requirements.txt",
+      "mediaType": "text/plain",
+      "bytes": 26,
+      "sha256": "7910cd98ad0d6eeeb98327ab071ece9fc6d044d2c8e603cd287ec2bde661e6fe",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/SHA256SUMS",
+      "path": "gufo-examples-check/SHA256SUMS",
+      "mediaType": "text/plain",
+      "bytes": 2569,
+      "sha256": "9a36ecbcbdfc48ecd5e80955658af91282050bbd86b8b839d96568ae8202c5f6",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/vendor/gufo.ttl",
+      "path": "gufo-examples-check/vendor/gufo.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 101183,
+      "sha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/vendor/gufoshapes.ttl",
+      "path": "gufo-examples-check/vendor/gufoshapes.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 7662,
+      "sha256": "b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
     }
   ],
   "executions": [
@@ -150,9 +412,30 @@
       "exitCode": 0,
       "outcome": "passed-complete-declared-journey",
       "limitations": [
-        "220 actual operations include18 expected nonzero drift rejections; the complete journey command exits zero.",
+        "220 actual operations include 18 expected fail-closed rejections of deliberately altered inputs; the complete journey command exits zero.",
         "Only the package and declared prerequisites were used; provider/runtime distributions remain excluded.",
-        "No live publication, canonical adoption or C0-C7 credit."
+        "No canonical adoption or product acceptance is claimed."
+      ]
+    },
+    {
+      "id": "portable-gufo-examples-check",
+      "mode": "portable-recheck",
+      "date": "2026-11-24",
+      "inputRefs": [
+        "downloads/gufo-examples-check.zip"
+      ],
+      "commandRef": "gufo-examples-check/README.md",
+      "command": "python -m pip install -r requirements.txt && python check.py",
+      "exitCode": 0,
+      "outcome": "808/808 assertions preserved (output isomorphic to input); 7/7 valid examples conform to gufoshapes; invalid examples 1 and 7 give exactly 2 and 5 violations, matching the recorded oracles",
+      "toolIdentities": [
+        "rdflib 7.6.0",
+        "pySHACL 0.40.2",
+        "Python 3.13 (Linux) and Python 3.14 (Windows)"
+      ],
+      "limitations": [
+        "No OWL 2 DL reasoning (recorded run used Pellet).",
+        "Checks the published OntoGraph outputs; does not run the OntoGraph runtime, which is not publicly distributed."
       ]
     }
   ],
@@ -162,40 +445,44 @@
       "reviewedArtifactRefs": [
         "downloads/organisation-results.json"
       ],
-      "reviewerRole": "separate contract reviewer",
+      "reviewerRole": "automated agent review (AI subagent separate from the author); no human review",
       "independent": true,
       "outcome": "accepted-bounded-organisational-journey",
-      "receiptRef": "downloads/organisation-independent-review.json"
+      "receiptRef": "downloads/organisation-independent-review.json",
+      "humanReview": false
     },
     {
       "id": "note-independent",
       "reviewedArtifactRefs": [
         "downloads/technical-note.pdf"
       ],
-      "reviewerRole": "separate contract reviewer",
+      "reviewerRole": "automated agent review (AI subagent separate from the note builder); no human review",
       "independent": true,
       "outcome": "accepted-technical-note-bounded-content-and-visual-scope",
-      "receiptRef": "downloads/reviews/note/verification.json"
+      "receiptRef": "downloads/reviews/note/verification.json",
+      "humanReview": false
     },
     {
       "id": "explorer-independent",
       "reviewedArtifactRefs": [
         "explorer-manifest"
       ],
-      "reviewerRole": "separate contract reviewer",
+      "reviewerRole": "automated agent review (AI subagent separate from the explorer author); no human review",
       "independent": true,
       "outcome": "accepted-bounded-recorded-explorer-technical-scope",
-      "receiptRef": "downloads/reviews/explorer/verification.json"
+      "receiptRef": "downloads/reviews/explorer/verification.json",
+      "humanReview": false
     },
     {
       "id": "package-independent",
       "reviewedArtifactRefs": [
         "downloads/semantic-viewpoints-reproduction-v1.1.zip"
       ],
-      "reviewerRole": "independent package reviewer separate from package author",
+      "reviewerRole": "automated agent reproduction (AI agent separate from the package author); no human review",
       "independent": true,
       "outcome": "passed-complete-declared-journey",
-      "receiptRef": "downloads/reviews/package/verification.json"
+      "receiptRef": "downloads/reviews/package/verification.json",
+      "humanReview": false
     }
   ],
   "checksumExclusion": [
@@ -203,7 +490,8 @@
   ],
   "limitations": [
     "Actual execution details remain in the indexed receipts and archive.",
-    "The two held docs PRs provide the combined site and explorer; no live publication accepted.",
-    "Artifact custody and complete independent reproduction are distinct accepted checks."
+    "All review records are automated agent reviews; no human ontologist has reviewed this material.",
+    "Recorded receipts are historical and are not rewritten; current status is stated on research/index.html.",
+    "The technical note PDF predates the 2026-11-24 page and still carries a \"Review candidate\" header."
   ]
 }

@@ -77,8 +77,8 @@
       "id": "artifact:license",
       "path": "docs/research-demonstration/case/LICENSE.md",
       "mediaType": "text/markdown",
-      "bytes": 1815,
-      "sha256": "b56d4bc8639efb4108c337d0c28c21374fba19f1c7404ac4f5140927d2742f5e",
+      "bytes": 1856,
+      "sha256": "a8b93b2c851627a16f5b2e4d200fede7a74b696a5149d61821c97a3a78cc4b9c",
       "sourceRef": "source:rd2-authorship",
       "licenseRef": "license:project-data"
     },
@@ -104,8 +104,8 @@
       "id": "artifact:sources",
       "path": "docs/research-demonstration/case/sources.json",
       "mediaType": "application/json",
-      "bytes": 1117,
-      "sha256": "a62aa5dd940e32257d9cd540607783d1519d676d8454d1ad3799a93864ad2d73",
+      "bytes": 1130,
+      "sha256": "fa22224ee3eeb157cb0e9f2cb6bf496e506bc0bbb693ab9e7c14d024bb7b2ec8",
       "sourceRef": "source:rd2-authorship",
       "licenseRef": "license:project-data"
     },

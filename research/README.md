@@ -1,15 +1,49 @@
-# Research demonstration candidate
+# OntoGraph Research
 
-Issue governance-foundation/ontograph#2780; epic #2774. RDR-010/013/017.
+This folder is published at
+https://governance-foundation.github.io/ontograph-docs/research/ and is authored
+directly in this repository. Product documentation elsewhere on the site is
+generated from the ontograph repository's `website/` folder, and the
+`research/` subtree is reserved from that generator.
 
-This additive academic surface is authored in the requested ontograph-docs repository and published from develop through GitHub Pages. Merged source PR ontograph#2821 reserves the root research/ subtree from the generated product-docs publisher; ADR-2783 records this arrangement. Product documentation remains sourced from ontograph/website/. Publication follows the accepted human research-site delivery plan. Live pages and download hashes were independently verified on 10 October 2026.
+## What the page shows (updated 24 November 2026)
 
-The home page now presents the reviewed conceptual dossier, actual five-case organisational results, independently reproduced general OWL exchange, and supporting nine-source suite. The source candidate and generated projection identities remain distinct from accepted canonical state. No C0-C7 credit, normative staffing authority, general inverse, second backend or expert endorsement is asserted.
+`index.html` presents OntoGraph's results on the nine files in the
+[gUFO usage examples](https://nemo-ufes.github.io/gufo/examples/): per-example
+results, coverage by UFO area, a portable re-check, how the results were
+checked, open questions and related work. OntoGraph's own appointment case
+follows, labelled as modelling under revision with its known issues listed.
 
-Downloads include the accepted six-page PDF, exact organisational observations and independent receipt, and the checksum-bound v1.1 reproduction candidate with standalone verifier, complete instructions, prerequisite identities and license notices. The first v1 archive failed because a pinned SHACL normalization query was omitted; v1.1 adds the exact dependency and retains the failure history. Full fresh independent archive reproduction passed220operations with18expected drift rejections and0unexpected failures; the exact archive and283indexed artifacts remained unchanged. Download integrity and runtime reproduction are recorded separately.
+- `gufo-examples-check/` holds the portable check (upstream inputs, OntoGraph
+  outputs, pinned gUFO and gufoshapes, `expected.json`, `check.py`), and
+  `downloads/gufo-examples-check.zip` is the same bundle as a ZIP. Run
+  `python -m pip install -r requirements.txt && python check.py` inside it.
+- `explorer/` is the read-only viewpoint explorer for the appointment case. See
+  `explorer/README.md`.
+- `downloads/` holds the October 2026 technical note, the reproduction archive
+  (which needs the non-public OntoGraph runtime) and the recorded receipts.
+- `evidence-index.json` lists every published artifact with its byte count and
+  SHA-256 hash.
 
-research/explorer/ belongs to merged RD6 docs PR9 and is reviewed at its own exact source head. The coordinator retains a separate frozen local preview of the reviewed candidate. All substantive explorer data has source/recorded distinctions and accessible table alternatives. No browser-side runtime or live dataset is fabricated.
+## Status and provenance
 
-The pages have no external fonts or site build dependencies. Preview them as static files. Complete methods and exact licensed/prerequisite boundaries are in the download instructions; providers and executables are not redistributed. New project material has no declared general reuse grant; upstream attribution remains explicit.
+- The recorded gUFO examples run is from 9 October 2026 and lives in
+  `../evidence/gufo-nine-examples-2026-10-09/`.
+- Every review record here is an automated agent review. No human ontologist
+  has reviewed this material yet.
+- The technical note PDF predates the current page. It still carries a "Review
+  candidate" header and can only be regenerated from the ontograph repository.
+- Receipts under `downloads/reviews/` are historical and are not rewritten.
+  `downloads/reviews/explorer/asset-checks.json` predates the 24 November 2026
+  edits to `explorer/`.
 
-Coordinator checks on the combined candidate: 31 local navigation/download links resolve, keyboard skip/disclosures work, no browser errors, and no document overflow at390x844. Desktop1440x1000 and mobile screenshots inspected. Independent home review, complete archive reproduction and live publication acceptance are separately recorded. All14 indexed artifacts and22 explorer assets match their accepted hashes; the live browser review passed65 checks. This publication-status update does not change the archive, PDF, evidence index or explorer behavior.
+## Preview
+
+The pages are static and have no build step. To preview them, serve the
+repository root:
+
+```text
+python -m http.server 8769
+```
+
+Then open http://127.0.0.1:8769/research/.

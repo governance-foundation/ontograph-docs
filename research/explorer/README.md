@@ -1,5 +1,19 @@
 # Read-only research viewpoint explorer
 
+> **Status, 24 November 2026.** This explorer shows OntoGraph's own appointment
+> case, which is **modelling under revision**. Its known issues are listed on the
+> [research overview](../#own-case). The case was checked only by automated agent
+> review, and no human ontologist has reviewed it. On 24 November 2026:
+> `aside#inspector` became a `section` so that it isn't a complementary
+> landmark nested in `main`; the OWL / gUFO view now shows the gUFO typing
+> recorded for each element in `data/recorded/generated.ttl`; and a recipient
+> name was removed from historical fixture paths in `data/case/sources.json` and
+> `data/case/LICENSE.md`. Their hashes were updated in
+> `data/case/evidence-index.json`, `data/manifest.json` and
+> `../evidence-index.json`. Those two files therefore no longer match the
+> private repository's copies byte for byte, and
+> `../downloads/reviews/explorer/asset-checks.json` predates this change.
+
 Published for product issue governance-foundation/ontograph#2781 under epic
 #2774; RDR-003, RDR-014, RDR-015, RDR-016 and RDR-017. Merged docs PR9 is
 published from develop through GitHub Pages. Independent live asset and browser

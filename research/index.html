@@ -3,435 +3,221 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A research demonstration of connected conceptual identities and purpose-specific OWL and gUFO views, with explicit evidence and limitations.">
-<title>Semantic viewpoints · OntoGraph Research</title>
+<title>OntoGraph results on the gUFO usage examples · OntoGraph Research</title>
+<meta name="description" content="OntoGraph's results on the nine gUFO usage example files: 808 of 808 assertions preserved, the 7 valid examples conform to gufoshapes, and the 2 invalid ones fail with exactly 2 and 5 violations. Includes a check you can run yourself with RDFLib and pySHACL.">
+<link rel="canonical" href="https://governance-foundation.github.io/ontograph-docs/research/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OntoGraph">
+<meta property="og:title" content="OntoGraph results on the gUFO usage examples">
+<meta property="og:description" content="All nine gUFO example files: 808/808 assertions preserved; 7 valid examples conform; the 2 invalid ones fail with exactly 2 and 5 violations. Re-check it with RDFLib and pySHACL.">
+<meta property="og:url" content="https://governance-foundation.github.io/ontograph-docs/research/">
+<meta property="og:image" content="https://governance-foundation.github.io/ontograph-docs/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OntoGraph results on the gUFO usage examples">
+<meta name="twitter:description" content="808/808 assertions preserved; 7 valid examples conform; the 2 invalid ones fail with exactly 2 and 5 violations.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to research content</a>
+<a class="skip" href="#main">Skip to the results</a>
 <header class="masthead">
 <a class="brand" href="../">
 <span class="brand-mark" aria-hidden="true">O</span>OntoGraph <span>Research</span>
 </a>
 <nav aria-label="Primary">
-<a href="#case">The case</a>
-<a href="#projections">Two projections</a>
-<a href="#evidence">Evidence</a>
-<a href="#reproduce">Reproduce</a>
+<a href="#results">Results</a>
+<a href="#coverage">Coverage</a>
+<a href="#check">Check it yourself</a>
+<a href="#questions">Questions</a>
+<a href="#own-case">Own worked case</a>
 <a href="../docs/model-catalog">Model catalog</a>
 <a href="../docs/intro.html">Documentation ↗</a>
 </nav>
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="title">
-<div class="eyebrow">Research demonstration · reviewed edition</div>
-<div class="hero-grid">
-<div>
-<h1 id="title">One conceptual model.<br>
-<em>Several useful views.</em>
-</h1>
-<p class="lead">What survives when rich organisational meaning becomes an operational view or an OWL representation?</p>
-<p class="hero-intro">Follow connected identities from an OntoUML-grounded case into purpose-specific projections. Inspect what is preserved, what is reduced, and what the evidence can actually establish.</p>
+<div class="eyebrow">Test results · gUFO usage examples · updated 24 November 2026</div>
+<h1 id="title">OntoGraph on the<br><em>gUFO usage examples.</em></h1>
+<p class="lead">We ran all nine files in the <a href="https://nemo-ufes.github.io/gufo/examples/">gUFO usage examples</a> through OntoGraph: the seven example ontologies and the two deliberately invalid variants. Every assertion came back unchanged, and OntoGraph's output gets the same gufoshapes verdict as the original file in every case.</p>
+<dl class="stats" aria-label="Headline results">
+<div><dt>Assertions preserved</dt><dd>808 / 808</dd></div>
+<div><dt>Valid examples that conform</dt><dd>7 / 7</dd></div>
+<div><dt>Invalid examples caught</dt><dd>2 / 2</dd><dd class="stat-note">exactly 2 and 5 violations, as expected</dd></div>
+<div><dt>OWL 2 DL consistency</dt><dd>9 / 9</dd><dd class="stat-note">including both invalid files, as upstream expects</dd></div>
+</dl>
 <div class="hero-actions">
-<a class="button" href="#case">Explore the worked case <span aria-hidden="true">↓</span>
-</a>
-<a class="text-link" href="#claims">Read the claim boundaries →</a>
-<a class="text-link" href="explorer/">Inspect the recorded viewpoint explorer →</a>
+<a class="button" href="#results">See the results for each example <span aria-hidden="true">↓</span></a>
+<a class="text-link" href="downloads/gufo-examples-check.zip">Download the check bundle (ZIP, 76 KB) →</a>
 </div>
+<div class="callout scope-note">
+<strong>What this tests, and what it doesn't</strong>
+<p>The inputs are gUFO Turtle files. These results show that OntoGraph admits them, stores them as typed candidates and regenerates them with no semantic loss, and that its output gives the same SHACL and OWL verdicts as the originals. They don't yet show how OntoGraph projects an OntoUML model into gUFO. The recorded run is from 9 October 2026, and the checks were reproduced by automated agents. No human ontologist has reviewed the results yet. See <a href="#provenance">how this was checked</a>.</p>
 </div>
-<aside class="research-question">
-<span class="small-label">The research question</span>
-<p>Can distinct views retain the same conceptual identities without treating a projection as the limit of the model?</p>
-<div class="rule">
-</div>
-<p class="small">Identity · dependence · mediation<br>Evidence · interpretation · reduction</p>
-</aside>
-</div>
-<div class="preparation">
-<strong>Reviewed demonstration.</strong> The conceptual case, complete reproduction archive and recorded explorer have separate independent reviews. The six-page technical note is visually checked and independently rebuilt. Live pages and download hashes were verified on 10 October 2026.</div>
 </section>
 
-<section class="section" id="architecture" aria-labelledby="architecture-title">
+<section class="section" id="results" aria-labelledby="results-title">
 <div class="section-heading">
-<span class="section-number">01 / Approach</span>
-<h2 id="architecture-title">Rich meaning first.<br>Views with a declared purpose.</h2>
-<p>OntoGraph’s canonical architecture retains distinctions about identity, dependence, roles, events and provenance. A view selects what helps answer a question; it carries its source and reduction history with it.</p>
+<span class="section-number">01 / Results</span>
+<h2 id="results-title">Results for each example</h2>
+<p>For each file: whether gUFO expects it to be valid, what OntoGraph produced, and the gufoshapes result for OntoGraph's output. Assertion counts are triples in the upstream file. OntoGraph's output is isomorphic to it in every case.</p>
 </div>
-<div class="view-flow" aria-label="Proposed architecture: conceptual sources feed a rich canonical model; conceptual, organisational and OWL views are purpose-specific outputs.">
-<div class="flow-source">
-<span class="small-label">Explicit sources</span>
-<strong>Conceptual commitments<br>+ instance evidence</strong>
-<span>Keep assertion and interpretation distinct.</span>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Results for each gUFO example, horizontally scrollable">
+<table class="results stack">
+<caption>gUFO commit <code>f412254</code> · gufoshapes commit <code>b95e14b</code> · recorded 9 October 2026</caption>
+<thead>
+<tr><th scope="col">Example</th><th scope="col">UFO features it exercises</th><th scope="col">Expected</th><th scope="col">Assertions preserved</th><th scope="col">OWL (Pellet)</th><th scope="col">gufoshapes result for OntoGraph's output</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/01-endurant-types/index.html">1. Endurant types</a></th><td data-label="UFO features it exercises">Kind, SubKind, Phase, Role, Category, RoleMixin, PhaseMixin</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">89 / 89</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/02-objects-and-parts/index.html">2. Objects and their parts</a></th><td data-label="UFO features it exercises">FunctionalComplex, Collection, Quantity and their three part-whole relations</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">153 / 153</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/03-qualities/index.html">3. Qualities and quality values</a></th><td data-label="UFO features it exercises">Basic, enumerated and multidimensional quality-value patterns</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">125 / 125</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/04-relators/index.html">4. Relators and extrinsic aspects</a></th><td data-label="UFO features it exercises">Relator, mediation sub-properties, extrinsic modes (rights and duties), derived material relationship</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">104 / 104</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/05-events/index.html">5. Events</a></th><td data-label="UFO features it exercises">Participation, historical dependence, event parthood, creation, termination, manifestation</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">89 / 89</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/06-situations/index.html">6. Situations</a></th><td data-label="UFO features it exercises">All five gufo:Situation subclasses, tracking change over time</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">137 / 137</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://nemo-ufes.github.io/gufo/examples/07-higher-order-types/index.html">7. Higher-order types</a></th><td data-label="UFO features it exercises">Powertype pattern (gufo:partitions)</td><td data-label="Expected">Valid</td><td data-label="Assertions preserved">66 / 66</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge recorded">Conforms</span></td></tr>
+<tr><th scope="row"><a href="https://github.com/nemo-ufes/gufo/blob/f4122544133544eb4c6c467ba316302ab20b754a/examples/01-endurant-types/invalid-example.ttl">1. Endurant types, invalid variant</a></th><td data-label="UFO features it exercises">Rigidity and sortality: a Kind placed under a Role</td><td data-label="Expected">Invalid</td><td data-label="Assertions preserved">20 / 20</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge fail">2 violations</span><p class="violation"><code>:Manager</code> is declared a <code>gufo:Kind</code> but specialises <code>:Employee</code>, a <code>gufo:Role</code>. Both violations are on that <code>rdfs:subClassOf</code>. First, a Kind can't specialise a type that already provides an identity principle. Second, a rigid type can't specialise an anti-rigid one.</p></td></tr>
+<tr><th scope="row"><a href="https://github.com/nemo-ufes/gufo/blob/f4122544133544eb4c6c467ba316302ab20b754a/examples/07-higher-order-types/invalid-example.ttl">7. Higher-order types, invalid variant</a></th><td data-label="UFO features it exercises">Powertype partition: members must be disjoint</td><td data-label="Expected">Invalid</td><td data-label="Assertions preserved">25 / 25</td><td data-label="OWL (Pellet)">Consistent</td><td data-label="gufoshapes result for OntoGraph&#x27;s output"><span class="badge fail">5 violations</span><p class="violation"><code>:Tiger</code> is added as an instance of the partitioning type <code>:AnimalSpecies</code> with no disjointness declaration. gufoshapes reports one violation per ordered pair of species not declared disjoint. That covers Tiger and Lion and Tiger and Hyena in both directions (4). It also covers Lion→Hyena (1), because the file declares that disjointness only from Hyena to Lion.</p></td></tr>
+</tbody>
+</table>
 </div>
-<div class="flow-core">
-<span class="small-label">Canonical authority</span>
-<strong>Connected identities<br>and provenance</strong>
-<span>Preserve meaning across revisions.</span>
-</div>
-<div class="flow-views">
-<div>
-<strong>Conceptual</strong>
-<span>Identity and dependence</span>
-</div>
-<div>
-<strong>Organisational</strong>
-<span>Appointments and membership</span>
-</div>
-<div>
-<strong>OWL / gUFO</strong>
-<span>Exchange and selected reasoning</span>
-</div>
-</div>
-</div>
-<p class="caption">
-<span class="badge proposed">Proposed architecture</span> This diagram expresses the intended authority boundary. Source admission and generated outputs below do not establish canonical adoption.</p>
+<p class="source-note">Recorded evidence for each example: <a href="../evidence/gufo-nine-examples-2026-10-09/verification.json">run verification</a> · <a href="../evidence/gufo-nine-examples-2026-10-09/c08/oracle.json">invalid example 1 oracle</a> · <a href="../evidence/gufo-nine-examples-2026-10-09/c09/oracle.json">invalid example 7 oracle</a> · <a href="../evidence/gufo-nine-examples-2026-10-09/checksums.json">checksums</a> · <a href="../docs/concepts/gufo-nine-examples.html">evidence catalogue</a>. The frozen oracles also hold 35 entailment checks and 19 typed queries across the nine examples, and all of them matched in the recorded run.</p>
 </section>
 
-<section class="section case-section" id="case" aria-labelledby="case-title">
+<section class="section" id="coverage" aria-labelledby="coverage-title">
 <div class="section-heading">
-<span class="section-number">02 / Worked conceptual case</span>
-<h2 id="case-title">A person is more than<br>their appointment.</h2>
-<p>Personnel and research staffing describe the same people through different concerns. The source explicitly distinguishes a Person, a Researcher role and the Appointment that grounds participation in an organisation.</p>
+<span class="section-number">02 / Coverage</span>
+<h2 id="coverage-title">Coverage of the areas you named</h2>
+<p>You suggested relators, qualities, events, situations and higher-order types. Here is what the examples cover today, and what they don't.</p>
 </div>
-<div class="case-status">
-<span class="badge recorded">Recorded case · independently reproduced</span>
-<span>Reviewed source candidate with actual operations; canonical adoption is not established.</span>
-</div>
-<figure class="conceptual" tabindex="0" aria-label="Conceptual diagram, horizontally scrollable on small screens; complete text alternative follows">
-<svg viewBox="0 0 1040 380" role="img" aria-labelledby="model-title model-desc">
-<title id="model-title">Research appointment conceptual model</title>
-<desc id="model-desc">Person and Organization are Kinds. Researcher is a Role specializing Person. Appointment is a Relator that mediates at least one Person and at least one Organization through separate identified relations. A Person or Organization may have zero or more appointments. These source cardinalities are one to many, not exact one.</desc>
-<defs>
-<marker id="arrow" markerWidth="16" markerHeight="12" refX="12" refY="6" orient="auto">
-<path d="M1 1 L12 6 L1 11 Z" fill="#fbfaf6" stroke="#365d54" stroke-width="1.5"/>
-</marker>
-</defs>
-<g class="diagram-lines">
-<path d="M260 143 H407"/>
-<path d="M633 143 H780"/>
-<path d="M147 280 V193" marker-end="url(#arrow)"/>
-</g>
-<g class="diagram-card">
-<rect x="34" y="84" width="226" height="110" rx="8"/>
-<rect x="407" y="84" width="226" height="110" rx="8"/>
-<rect x="780" y="84" width="226" height="110" rx="8"/>
-<rect x="34" y="280" width="226" height="78" rx="8"/>
-</g>
-<g class="diagram-stereotype">
-<text x="147" y="118">«kind»</text>
-<text x="520" y="118">«relator»</text>
-<text x="893" y="118">«kind»</text>
-<text x="147" y="308">«role»</text>
-</g>
-<g class="diagram-name">
-<text x="147" y="153">Person</text>
-<text x="520" y="153">Appointment</text>
-<text x="893" y="153">Organization</text>
-<text x="147" y="337">Researcher</text>
-</g>
-<g class="diagram-label">
-<text x="334" y="113">mediates</text>
-<text x="706" y="113">mediates</text>
-<text x="283" y="170">1..*</text>
-<text x="384" y="170">0..*</text>
-<text x="656" y="170">0..*</text>
-<text x="757" y="170">1..*</text>
-<text x="227" y="243">specializes</text>
-</g>
-<text class="diagram-note" x="520" y="270">Separate participant relations preserve their own identities.</text>
-<text class="diagram-note" x="520" y="298">Labels do not supply identity, rigidity or authority.</text>
-</svg>
-<figcaption>
-<strong>Legend.</strong> «kind» declares an identity-bearing type; «role» is a dependent way a person participates; «relator» explicitly represents relational dependence. The open triangle indicates specialization. Each appointment requires at least one participant of each stated type.</figcaption>
-</figure>
-<details class="text-alternative">
-<summary>Read the complete diagram text alternative</summary>
-<p>Person and Organization are explicitly declared Kinds. Researcher is explicitly declared a Role specializing Person. Appointment is a Relator with two separately identified mediation relations: one to Person and one to Organization. Each appointment has 1..* Person participants and 1..* Organization participants. Each person and organisation may participate in 0..* appointments. These are source commitments, not a claim that generated generic SHACL enforces each typed minimum.</p>
-</details>
-<div class="case-grid">
-<article>
-<span class="small-label">Identity</span>
-<h3>Two people, one label</h3>
-<p>
-<code>person:a</code> and <code>person:b</code> share a display label. That does not merge their source identities or assert OWL inequality. Only the first has declared research membership.</p>
-</article>
-<article>
-<span class="small-label">Dependence</span>
-<h3>Two grounding records</h3>
-<p>Two overlapping appointments connect <code>person:a</code> with <code>organization:one</code>. An appointment is represented explicitly, rather than flattened into an unexplained edge.</p>
-</article>
-<article>
-<span class="small-label">Time</span>
-<h3>Membership is qualified</h3>
-<p>The actual query returns two active membership records at 10:30Z and one at noon. This comes from explicit membership intervals; an end date alone does not establish a role transition.</p>
-</article>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Coverage by UFO area, horizontally scrollable">
+<table class="stack">
+<caption>Valid and invalid cases for each area</caption>
+<thead><tr><th scope="col">Area</th><th scope="col">Covered by</th><th scope="col">Valid cases</th><th scope="col">Invalid cases</th><th scope="col">Not covered yet</th></tr></thead>
+<tbody>
+<tr><th scope="row">Relators</th><td data-label="Covered by">Example 4</td><td data-label="Valid cases">1</td><td data-label="Invalid cases">0</td><td data-label="Not covered yet">No negative case, for example a relator missing a mediated party, or mediating a Kind where a Role is expected. Derived material relations are preserved, but nothing is inferred.</td></tr>
+<tr><th scope="row">Qualities</th><td data-label="Covered by">Example 3</td><td data-label="Valid cases">1</td><td data-label="Invalid cases">0</td><td data-label="Not covered yet">No negative case, for example a quality with no bearer, or a value outside its quality space.</td></tr>
+<tr><th scope="row">Events</th><td data-label="Covered by">Example 5</td><td data-label="Valid cases">1</td><td data-label="Invalid cases">0</td><td data-label="Not covered yet">No negative case for participation or historical dependence.</td></tr>
+<tr><th scope="row">Situations</th><td data-label="Covered by">Example 6</td><td data-label="Valid cases">1</td><td data-label="Invalid cases">0</td><td data-label="Not covered yet">No negative case. Time-qualified situations are preserved, but no temporal reasoning is tested.</td></tr>
+<tr><th scope="row">Higher-order types</th><td data-label="Covered by">Examples 7 and 7 (invalid)</td><td data-label="Valid cases">1</td><td data-label="Invalid cases">1</td><td data-label="Not covered yet">Only the disjointness pitfall. No case for an incomplete partition or mixed-order types.</td></tr>
+<tr><th scope="row">Endurant types, objects and parts</th><td data-label="Covered by">Examples 1, 1 (invalid) and 2</td><td data-label="Valid cases">2</td><td data-label="Invalid cases">1</td><td data-label="Not covered yet">Parthood has no negative case.</td></tr>
+</tbody>
+</table>
 </div>
 <div class="callout">
-<strong>A validation gap worth examining</strong>
-<p>Generic generated SHACL checks a total minimum of two mediation values. It does not independently enforce one class-correct participant for each source relation. A generic pass therefore cannot establish the source’s complete grounding commitment.</p>
+<strong>The main gap is negative cases</strong>
+<p>Both invalid cases are the pitfalls that ship with the upstream examples. For relators, qualities, events and situations, OntoGraph has only been tested on valid input. A small set of invalid cases in those areas, with the violations you'd expect, would be the most useful next test.</p>
 </div>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Actual five-case results, horizontally scrollable">
-<table><caption>Actual five-case observations · independently reproduced</caption>
-<thead><tr><th scope="col">Scenario</th><th scope="col">Source validation</th><th scope="col">Active memberships</th><th scope="col">Appointment bindings</th><th scope="col">SHACL</th><th scope="col">OWL</th></tr></thead>
+</section>
+
+<section class="section reproduce" id="check" aria-labelledby="check-title">
+<div class="section-heading">
+<span class="section-number">03 / Check it yourself</span>
+<h2 id="check-title">Re-run the checks in one command</h2>
+<p>The bundle contains the nine upstream files, OntoGraph's output for each, gUFO and gufoshapes at the pinned commits, the expected results and a short Python script. It doesn't need OntoGraph.</p>
+</div>
+<pre class="command" tabindex="0"><code>python -m pip install -r requirements.txt
+python check.py</code></pre>
+<p>The script checks every file hash, checks that each output is isomorphic to its upstream input, and runs pySHACL the way the gUFO examples' own test suite does: <code>gufo.ttl</code> plus the example, no inference, with advanced features on. It then compares each violation with the recorded run. Its summary reads:</p>
+<pre class="command" tabindex="0"><code>Assertions preserved: 808/808
+Valid examples conforming: 7/7
+Invalid examples flagged: 01-endurant-types-invalid = 2 violations, 07-higher-order-types-invalid = 5 violations
+All expectations reproduced.</code></pre>
+<div class="package-grid">
+<article>
+<span class="small-label">Download</span>
+<h3>Check bundle</h3>
+<p><a href="downloads/gufo-examples-check.zip">gufo-examples-check.zip</a> (76 KB). You can also browse the files: <a href="gufo-examples-check/README.md">README</a>, <a href="gufo-examples-check/check.py">check.py</a>, <a href="gufo-examples-check/expected.json">expected.json</a>, <a href="gufo-examples-check/SHA256SUMS">SHA256SUMS</a>, <a href="gufo-examples-check/NOTICE.md">notices</a>.</p>
+<p class="small">Tested on 24 November 2026 with rdflib 7.6.0 and pySHACL 0.40.2, on Python 3.13 (Linux) and Python 3.14 (Windows).</p>
+</article>
+<article>
+<span class="small-label">Not covered by the bundle</span>
+<h3>What needs more than Python</h3>
+<p>The bundle doesn't include OWL 2 DL reasoning. The recorded run used Pellet, and the examples' own harness (owlready2 + Pellet) can repeat it. Regenerating the outputs needs the OntoGraph runtime, which isn't public yet. The bundle checks the published outputs, not the pipeline that produced them.</p>
+</article>
+</div>
+</section>
+
+<section class="section" id="provenance" aria-labelledby="provenance-title">
+<div class="section-heading">
+<span class="section-number">04 / How this was checked</span>
+<h2 id="provenance-title">Who checked what</h2>
+</div>
+<ul class="plain-list">
+<li><strong>Recorded run (9 October 2026).</strong> OntoGraph runtime at source commit <code>1c3e2f7</code> ran all nine files twice, with 146 operations each time. Both runs produced byte-identical candidates, admissions, regenerated graphs and shapes. OWL used Pellet, and SHACL used Apache Jena with gufoshapes.</li>
+<li><strong>Reproduction.</strong> A separate run repeated the complete suite with the same results. That run and the review records on this site were done by automated AI agents, separate from the agents that produced the work. Their records list no open findings.</li>
+<li><strong>Portable re-check (24 November 2026).</strong> The bundle above reproduced the SHACL and preservation results with a second toolchain, RDFLib and pySHACL.</li>
+<li><strong>Not yet done.</strong> No human ontologist has reviewed these results or the modelling below.</li>
+</ul>
+<p class="small">The upstream examples, gUFO and gufoshapes are by the NEMO/UFES authors and are used under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> at <a href="https://github.com/nemo-ufes/gufo/tree/f4122544133544eb4c6c467ba316302ab20b754a">gUFO f412254</a> and <a href="https://github.com/nemo-ufes/gufoshapes/tree/b95e14b034c93c42323e8beb8c08f697b026e553">gufoshapes b95e14b</a>. See the <a href="downloads/license-notices.txt">licence notices</a>.</p>
+</section>
+
+<section class="section" id="questions" aria-labelledby="questions-title">
+<div class="section-heading">
+<span class="section-number">05 / Questions</span>
+<h2 id="questions-title">Where your view would help most</h2>
+</div>
+<div class="feedback">
+<ol>
+<li><strong>Time-qualified grounding.</strong> When a role holds only while a relator exists, such as a researcher during an appointment, should a gUFO projection express that through the relator's own begin and end points, through situations, or through something else? What should a query asking "who held the role at time t" be allowed to conclude?</li>
+<li><strong>Identity and dependence in partial snapshots.</strong> If a graph is a partial snapshot, for example an appointment whose organisation simply isn't recorded, should a UFO-grounded system report a violation (closed world) or an unknown participant (open world)? Does that choice change how identity should be carried across snapshots?</li>
+<li><strong>Difference from the existing OntoUML-to-gUFO export.</strong> The OntoUML server and the Visual Paradigm plugin already export OntoUML models to gUFO. Where, if anywhere, should OntoGraph's projection behave differently? Which test cases would show that it stays faithful?</li>
+</ol>
+</div>
+<div class="related">
+<h3>Related work</h3>
+<p>This work builds on UFO (Guizzardi, <cite>Ontological Foundations for Structural Conceptual Models</cite>, 2005; Guizzardi et al., <cite>UFO: Unified Foundational Ontology</cite>, Applied Ontology, 2022) and on OntoUML as the language for UFO-compliant models. The target is gUFO (Almeida, Guizzardi, Sales and Fonseca, <a href="https://arxiv.org/abs/2603.20948"><cite>gUFO: A Gentle Foundational Ontology for Semantic Web Knowledge Graphs</cite></a>, 2026), validated with <a href="https://github.com/nemo-ufes/gufoshapes">gufoshapes</a>. The closest existing tool is the OntoUML-to-gUFO transformation in the <a href="https://github.com/OntoUML/ontouml-server">OntoUML server</a>, which the <a href="https://github.com/OntoUML/ontouml-vp-plugin">Visual Paradigm plugin</a> uses for "Export to gUFO". OntoGraph doesn't replace it. OntoGraph aims to keep the richer model as the authority and to carry identities and provenance into the projected views.</p>
+</div>
+</section>
+
+<section class="section own-case" id="own-case" aria-labelledby="own-case-title">
+<div class="section-heading">
+<span class="section-number">06 / OntoGraph's own worked case</span>
+<h2 id="own-case-title">Research appointments: modelling under revision</h2>
+<p>Separately from your examples, we built a small case of our own about people, organisations and research appointments, to test how OntoGraph keeps identities connected across views. Its evidence is recorded, but the model has known problems, and we'll revise it before asking for feedback on it.</p>
+</div>
+<div class="callout">
+<strong>Known issues</strong>
+<ul>
+<li>The «role» Researcher isn't connected to any mediation. Appointment mediates Person and Organization directly, whereas gUFO's <a href="https://nemo-ufes.github.io/gufo/examples/04-relators/index.html">relators example</a> mediates the roles Employee and Employer.</li>
+<li>Time uses a custom <code>comp:begin</code>/<code>comp:end</code> pair instead of gUFO's own properties, such as <code>gufo:hasBeginPointInXSDDateTimeStamp</code>.</li>
+<li>The appointment data is contrived: intervals of two to three hours, a leap day and a +14:00 offset, chosen to test edge cases rather than to look realistic.</li>
+<li>The Mass quality and the Seminar event are in the model without any explanation of why they are there.</li>
+<li>The generated graph types Appointment and Mass as <code>gufo:EndurantType</code>, as subclasses of <code>gufo:Relator</code> and <code>gufo:Quality</code>. That choice hasn't been justified.</li>
+</ul>
+</div>
+<details>
+<summary>Recorded results for the current version (five scenarios)</summary>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Recorded five-scenario results, horizontally scrollable">
+<table><caption>Recorded results for the current version of the case</caption>
+<thead><tr><th scope="col">Scenario</th><th scope="col">Source check</th><th scope="col">Active memberships</th><th scope="col">Appointment links</th><th scope="col">SHACL</th><th scope="col">OWL</th></tr></thead>
 <tbody>
 <tr><th scope="row">Valid</th><td>Selected checks satisfied</td><td>2</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
-<tr><th scope="row">Missing participant · closed world</th><td>Invalid</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
-<tr><th scope="row">Missing participant · open world</th><td>Unknown</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
+<tr><th scope="row">Missing participant, closed world</th><td>Invalid</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
+<tr><th scope="row">Missing participant, open world</th><td>Unknown</td><td>2</td><td>1</td><td>Nonconformant</td><td>Consistent</td></tr>
 <tr><th scope="row">End boundary</th><td>Selected checks satisfied</td><td>1</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
 <tr><th scope="row">Empty role</th><td>Selected checks satisfied</td><td>0</td><td>2</td><td>Conforms</td><td>Consistent</td></tr>
 </tbody></table></div>
-<p>Actual OWL checks entail the supplied mediation conclusion, but do not entail a timeless Researcher assertion or equality of the two qualities. Non-entailment is not proof of negation. Queries preserve exact typed bindings before and after source-assisted reload; source and canonical data remain unchanged.</p>
-<p class="source-note">Inspect the <a href="downloads/organisation-results.json">actual results</a> and <a href="downloads/organisation-independent-review.json">fresh independent receipt</a>. Source candidate: <a href="https://github.com/governance-foundation/ontograph/issues/2777">RD-2 modelling dossier</a>. Earlier, separate recorded journey: <a href="../docs/organisational-demonstration.html">personnel and research appointments</a>.</p>
-</section>
-
-<section class="section" id="projections" aria-labelledby="projections-title">
-<div class="section-heading">
-<span class="section-number">03 / Purpose-specific projections</span>
-<h2 id="projections-title">OWL exchange and gUFO mapping<br>answer different questions.</h2>
-<p>OWL provides an interoperability and reasoning language. gUFO adds a particular foundational vocabulary. Neither licenses reconstructing missing conceptual commitments from a class label.</p>
-</div>
-<div class="projection-grid">
-<article class="projection">
-<span class="badge recorded">Recorded · independently reproduced</span>
-<h3>General OWL exchange</h3>
-<p class="question">What structure does a narrow foreign-OWL bridge preserve?</p>
-<p>The separate non-gUFO sample contains classes, two object properties and an existential affiliation restriction. Four actual bridge operations retain an 18-triple subset from 22 original triples; the four-triple restriction is omitted. Independent reproduction matches the retained outputs.</p>
-<p>The original source remains a package responsibility. The exported subset cannot reconstruct the missing existential commitment. RDF comparison supplies neither a reasoning result nor conceptual endorsement.</p>
-<a class="text-link" href="https://github.com/governance-foundation/ontograph/issues/2778">Inspect RD-3 evidence and review state →</a>
-</article>
-<article class="projection">
-<span class="badge recorded">Demonstrated · retained independent execution</span>
-<h3>gUFO source admission</h3>
-<p class="question">Can pinned gUFO source assertions survive typed admission and regeneration?</p>
-<p>Nine Turtle examples retain 808 source assertions through the recorded candidate journey. The distinct independent receipt repeats the complete suite; seven positive inputs conform to upstream SHACL and two expected-invalid inputs produce diagnostics.</p>
-<p>This demonstrates direct Turtle admission. It does not establish a general OntoUML JSON-to-gUFO transformation or accepted canonical assertions.</p>
-<a class="text-link" href="../docs/concepts/gufo-nine-examples.html">Inspect the nine-example evidence →</a>
-</article>
-</div>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Preservation and reduction comparison, horizontally scrollable">
-<table>
-<caption>Preservation and reduction: target purpose must be explicit</caption>
-<thead>
-<tr>
-<th scope="col">View</th>
-<th scope="col">Retains or foregrounds</th>
-<th scope="col">Reduction / unresolved commitment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">Conceptual case</th>
-<td>Explicit type distinctions, mediation identities and qualified facts</td>
-<td>Reviewed source commitments remain bounded; no normative rights/duties established</td>
-</tr>
-<tr>
-<th scope="row">Organisational view</th>
-<td>People, organisations, appointments and membership intervals</td>
-<td>Declared membership alone does not establish valid grounding or staffing authority</td>
-</tr>
-<tr>
-<th scope="row">General OWL bridge</th>
-<td>Selected named class/property structure in the measured sample</td>
-<td>Existential restriction omitted; source staging is not canonical semantic lift</td>
-</tr>
-<tr>
-<th scope="row">gUFO representation</th>
-<td>Recorded source-derived assertions and selected query/validation evidence</td>
-<td>Full modal rigidity, identity provision and arbitrary inverse remain unproved</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-
-<section class="section methods" id="methods" aria-labelledby="methods-title">
-<div class="section-heading">
-<span class="section-number">04 / Interpreting results</span>
-<h2 id="methods-title">A consistent graph can still<br>describe an invalid model.</h2>
-<p>Keep the questions separate. A passing tool result has meaning only in relation to its inputs, assumptions and expected conclusion.</p>
-</div>
-<div class="method-grid">
-<article>
-<span>01</span>
-<h3>Consistency</h3>
-<p>Do the selected OWL axioms admit an interpretation? Missing recorded participants may still have unnamed witnesses under an open-world interpretation.</p>
-</article>
-<article>
-<span>02</span>
-<h3>Entailment</h3>
-<p>Does every interpretation satisfy the supplied conclusion? A conclusion that is not entailed has not thereby been disproved.</p>
-</article>
-<article>
-<span>03</span>
-<h3>Validation</h3>
-<p>Does this finite recorded graph satisfy these SHACL shapes? Diagnostic signatures point to specific facts and constraints.</p>
-</article>
-<article>
-<span>04</span>
-<h3>Query answers</h3>
-<p>Which bindings match the stated query? A timeless appointment-link query does not answer a time-qualified staffing question.</p>
-</article>
-</div>
-<p class="caption">Conceptual correctness needs independent modelling judgement and justified commitments in addition to tool outcomes.</p>
-</section>
-
-<section class="section" id="evidence" aria-labelledby="evidence-title">
-<div class="section-heading">
-<span class="section-number">05 / Supporting evidence appendix</span>
-<h2 id="evidence-title">Nine examples.<br>A bounded, inspectable result.</h2>
-<p>The supporting suite covers selected source structures and expected invalidity. These cases are evidence for the declared journey, not a denominator for all of UFO, OntoUML or gUFO.</p>
-</div>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Nine-source results, horizontally scrollable">
-<table>
-<caption>Retained independent nine-source execution</caption>
-<thead>
-<tr>
-<th scope="col">Source example</th>
-<th scope="col">Assertions</th>
-<th scope="col">OWL</th>
-<th scope="col">Upstream SHACL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">Endurant types</th>
-<td>89</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Objects and parts</th>
-<td>153</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Qualities</th>
-<td>125</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Relators</th>
-<td>104</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Events</th>
-<td>89</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Situations</th>
-<td>137</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Higher-order types</th>
-<td>66</td>
-<td>Consistent</td>
-<td>Conforms</td>
-</tr>
-<tr>
-<th scope="row">Invalid endurant types</th>
-<td>20</td>
-<td>Consistent</td>
-<td>2 expected diagnostics</td>
-</tr>
-<tr>
-<th scope="row">Invalid higher-order types</th>
-<td>25</td>
-<td>Consistent</td>
-<td>5 expected diagnostics</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="evidence-links">
-<a href="../evidence/gufo-nine-examples-2026-10-09/independent-review.json">Independent receipt <span>JSON ↗</span>
-</a>
-<a href="../evidence/gufo-nine-examples-2026-10-09/checksums.json">Artifact integrity manifest <span>JSON ↗</span>
-</a>
-<a href="../evidence/gufo-nine-examples-2026-10-09/c08/oracle.json">Expected-invalid oracle <span>JSON ↗</span>
-</a>
-</div>
-<details>
-<summary>Execution method, identities and historical counters</summary>
-<p>Each recorded run contains 146 operations, including 18 expected fail-closed drift rejections. All 36 candidate/admission/RDF/shape artifact pairs are byte-identical across author and independent runs. Frozen oracles contain 35 entailment checks and 19 typed queries.</p>
-<p>Runtime source: <code>1c3e2f7d4f1957cf6061b7f03386e3adaf9758e5</code>. The embedded descriptor’s compiler-input coverage remains partial. Original single-run and two-run receipts retain historical independent-review counters of 0/9. The separate successor receipt records 9/9 independent review; historical records are not rewritten.</p>
-<p>The sources are pinned to gUFO <code>f4122544133544eb4c6c467ba316302ab20b754a</code> and gufoshapes <code>b95e14b034c93c42323e8beb8c08f697b026e553</code>, under CC BY 4.0. Preserve <a href="https://github.com/nemo-ufes/gufo/tree/f4122544133544eb4c6c467ba316302ab20b754a">gUFO author attribution</a> and <a href="https://github.com/nemo-ufes/gufoshapes/tree/b95e14b034c93c42323e8beb8c08f697b026e553">gufoshapes author attribution</a>. Upstream licenses do not grant rights to project or provider distributions.</p>
+<p class="small">The generic generated SHACL checks a total of at least two <code>gufo:mediates</code> values. It doesn't check one correctly typed participant for each mediation relation, so a pass here doesn't establish the model's full grounding commitment. These are outputs of the current model, which will be regenerated after revision.</p>
 </details>
-</section>
-
-<section class="section" id="claims" aria-labelledby="claims-title">
-<div class="section-heading">
-<span class="section-number">06 / Claims and open research</span>
-<h2 id="claims-title">Make the boundary<br>part of the contribution.</h2>
-</div>
-<div class="claim-grid">
-<article>
-<span class="badge recorded">Demonstrated</span>
-<h3>Pinned recorded journeys</h3>
-<p>Inspect the new five-case organisational journey, separate general OWL exchange and retained nine-source suite. Each has distinct exact-input evidence and independent review.</p>
-</article>
-<article>
-<span class="badge proposed">Proposed</span>
-<h3>Rich canonical authority</h3>
-<p>Connected source identities and generated mappings are inspectable. Canonical adoption, normative rights and duties, and stronger semantic preservation remain proposed or open.</p>
-</article>
-<article>
-<span class="badge open">Open</span>
-<h3>Stronger preservation</h3>
-<p>What evidence establishes modal identity, anti-rigidity and normative meaning? What counterexamples reveal a projection’s unacceptable reductions?</p>
-</article>
-</div>
-<div class="boundary">
-<strong>Separate acceptance boundaries</strong>
-<p>No full C0–C7 acceptance, second-backend qualification, expert endorsement, general inverse reconstruction, product release or production deployment is established here. No accepted enrichment is claimed without a recorded decision and authority.</p>
-</div>
-</section>
-
-<section class="section reproduce" id="reproduce" aria-labelledby="reproduce-title">
-<div class="section-heading">
-<span class="section-number">07 / Reproduction and review</span>
-<h2 id="reproduce-title">Inspect the methods.<br>Question the reductions.</h2>
-<p>Scientific review needs the original inputs, mapping decisions, exact outputs, expected results and executable methods—not screenshots alone.</p>
-</div>
 <div class="package-grid">
 <article>
-<span class="small-label">Available recorded evidence</span>
-<h3>Source and outcome inspection</h3>
-<p>The linked public suite includes executed Turtle, typed candidates, generated RDF/SHACL, oracles, checksums and the independent receipt. These are inspection artifacts, not an installed runtime distribution.</p>
-<a class="button secondary" href="../docs/concepts/gufo-nine-examples.html">Open the evidence catalogue →</a>
+<span class="small-label">Inspect</span>
+<h3>Viewpoint explorer</h3>
+<p>The <a href="explorer/">viewpoint explorer</a> follows one identity across the conceptual, organisational and OWL/gUFO views. It shows the gUFO typing recorded for each element.</p>
 </article>
-<article class="package-pending">
-<span class="badge recorded">Six-page note reviewed</span>
-<h3>Technical note + reproduction archive</h3>
-<p>Read the conceptual case, actual results, nine-example appendix and research questions in the <a href="downloads/technical-note.pdf">six-page technical note</a>. All pages were visually checked; an independent deterministic rebuild matches the retained PDF.</p>
-<p>The <a href="downloads/semantic-viewpoints-reproduction-v1.1.zip">versioned reproduction archive</a> contains the exact sources, expectations, mappings, outputs and executable three-lane method. A fresh independent run completed all 220 operations: four OWL bridge operations, 70 across five organisational cases and 146 across all nine corpus cases. Exactly 18 expected drift rejections occurred, with no unexpected failures.</p>
-<p><a href="downloads/reproduction-README.txt">Read the complete instructions</a>, inspect the <a href="downloads/prerequisites.json">exact prerequisites</a> and <a href="downloads/license-notices.txt">license notices</a>, then obtain the <a href="downloads/package_verify.py">standalone verifier</a> and <a href="downloads/semantic-viewpoints-reproduction-v1.1.checksum.json">external archive/verifier checksums</a>. Verify before extraction.</p>
-<p class="small">The <a href="evidence-index.json">site evidence index</a> binds exact download bytes and separate <a href="downloads/reviews/note/verification.json">note review</a>, <a href="downloads/reviews/explorer/verification.json">recorded explorer review</a> and <a href="downloads/reviews/package/verification.json">complete independent archive receipt</a>. Every indexed artifact and the ZIP remained unchanged through reproduction.</p>
-<p class="small">Required prerequisites include the qualified runtime, exact provider/tool dependencies and lawful distribution terms. Public instructions will not rely on private local paths.</p>
+<article>
+<span class="small-label">Earlier material, October 2026</span>
+<h3>Note and archive</h3>
+<p>The <a href="downloads/technical-note.pdf">six-page technical note (PDF)</a> predates this page. It presents the appointment case first, and its pages still carry a "Review candidate" header. The <a href="downloads/semantic-viewpoints-reproduction-v1.1.zip">reproduction archive (ZIP, 5 MB)</a> needs the OntoGraph runtime. See its <a href="downloads/reproduction-README.txt">instructions</a>, <a href="downloads/prerequisites.json">prerequisites</a>, <a href="downloads/package_verify.py">verifier</a> and <a href="downloads/semantic-viewpoints-reproduction-v1.1.checksum.json">checksums</a>.</p>
+<p class="small">Recorded results: <a href="downloads/organisation-results.json">organisational results</a> and <a href="downloads/organisation-independent-review.json">automated agent review</a>. File hashes are in the <a href="evidence-index.json">evidence index</a>.</p>
 </article>
-</div>
-<div class="feedback">
-<h3>Questions for scholarly feedback</h3>
-<ol>
-<li>Are the separate minimum-one mediation commitments justified for this appointment case?</li>
-<li>Which reductions are acceptable for a staffing view while preserving the distinction between membership and valid grounding?</li>
-<li>What additional commitments and counterexamples would support modal or normative preservation claims?</li>
-</ol>
 </div>
 </section>
 </main>
 <footer>
-<a class="brand" href="../">OntoGraph <span>Research</span>
-</a>
-<p>Explicit meaning. Connected evidence. Purpose-specific views.</p>
-<p class="small"><a href="https://github.com/governance-foundation/ontograph/issues/2774">Research demonstration #2774</a> · <a href="../docs/published-limitations.html">Published limitations</a> · Live pages and served download hashes verified on 10 October 2026.</p>
+<a class="brand" href="../">OntoGraph <span>Research</span></a>
+<p>Results on the gUFO usage examples, with the evidence to check them.</p>
+<p class="small"><a href="https://nemo-ufes.github.io/gufo/examples/">gUFO usage examples</a> · <a href="../docs/concepts/gufo-nine-examples.html">Evidence catalogue</a> · <a href="../docs/published-limitations.html">Published limitations</a> · Updated 24 November 2026.</p>
 </footer>
 </body>
 </html>
