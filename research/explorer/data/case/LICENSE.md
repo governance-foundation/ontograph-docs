@@ -11,8 +11,8 @@ The source model's `license: null` is retained deliberately. The workspace's
 status and obtain any required owner grant separately; it must not label these
 files CC0 or CC-BY merely because upstream vocabulary has an open license.
 
-Historical derivation: `fixtures/giancarlo-demonstration/model.json` and
-`instances.json`, frozen fixture commit
+Historical derivation: `model.json` and `instances.json` from an earlier
+demonstration fixture in the private ontograph repository, frozen fixture commit
 `4ad41d737358134abfe9c30fcc202fa88a601a3d`. Those originals remain unchanged.
 The new source changes model identity/title/description/namespace, instance
 evidence identity, display labels and the two mediation target cardinalities

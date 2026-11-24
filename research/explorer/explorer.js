@@ -4,7 +4,7 @@ const titles = { conceptual: 'Explicit conceptual commitments', organisational: 
 const descriptions = {
   conceptual: 'Kinds, a role, relators, quality and event meaning come from explicit source declarations. Select a row to inspect its source and proposed mapping.',
   organisational: 'People and organisations connect through separately identified appointments. Membership and participation have their own explicit qualifications.',
-  'owl-gufo': 'Expected generated IRIs connect to source identities. Runtime observations are separately labelled; a generated representation is not an accepted canonical object.'
+  'owl-gufo': 'Each source element with the gUFO typing recorded for it in the generated graph (data/recorded/generated.ttl). Select a row to see its Turtle. A generated representation is not an accepted canonical object.'
 };
 let data, state, dataVerified = false, diagramBlobUrl = null;
 
@@ -61,6 +61,35 @@ function sourceObject(ref) {
     obj = obj[key];
   }
   return obj;
+}
+function recordedLines(iri) {
+  if (!data.recording || !data.files.has('recorded-graph')) return [];
+  return data.files.get('recorded-graph').text.split('\n').filter(line => line.startsWith(`<${iri}> `));
+}
+function recordedTyping(iris) {
+  const terms = [];
+  for (const iri of iris) for (const line of recordedLines(iri)) {
+    const m = line.match(/^<[^>]+> (a|rdfs:subClassOf|rdfs:subPropertyOf) ((?:gufo|comp):[A-Za-z]+|<[^>]+>) \.$/);
+    if (!m) continue;
+    const target = m[2].startsWith('<') ? decodeURIComponent(m[2].slice(1, -1).split('/').pop()) : m[2];
+    const term = `${m[1] === 'a' ? 'a' : m[1]} ${target}`;
+    if (!terms.includes(term)) terms.push(term);
+  }
+  return terms;
+}
+function rowTyping(row) {
+  const iris = data.mappings.mappings.filter(m => row.mappingRefs.includes(m.id)).flatMap(m => m.targetRefs);
+  if (!iris.length) return 'No own node (axiom on another element)';
+  const terms = recordedTyping(iris);
+  const gufo = terms.filter(t => t.includes('gufo:'));
+  return (gufo.length ? gufo : terms).join(' · ') || 'Not in recorded graph';
+}
+function appendRecordedTyping(card, iris) {
+  const lines = iris.flatMap(recordedLines);
+  if (!lines.length) return;
+  card.append(element('strong', 'Recorded gUFO typing (valid scenario)'), bulletList(recordedTyping(iris)));
+  const raw = element('details'); raw.append(element('summary', `Recorded Turtle for this element (${lines.length} lines)`), element('pre', lines.join('\n')));
+  card.append(raw);
 }
 function sourceFile(ref) { return data.manifest.files.find(f => f.id === (ref.startsWith('source:model') ? 'model' : 'instances')); }
 
@@ -211,7 +240,7 @@ function renderVisual() {
     }
     box.append(cards, paragraph('Source-declared links. The role-membership intervals are separately supplied. A recorded link is not a staffing entitlement.', 'visual-note'));
   } else {
-    box.append(paragraph('Expected target identity, explicit source lineage', 'visual-heading'), paragraph('Source ID → typed source declaration → proposed generated IRI', 'identity-label'), paragraph('gUFO retains selected classification, mediation and quality meaning. Composition vocabulary retains explicitly qualified role/participation records. Full modal and normative preservation is open.', 'visual-note'));
+    box.append(paragraph('Source element → recorded gUFO typing', 'visual-heading'), paragraph('Source ID → typed source declaration → generated IRI → gufo: terms in generated.ttl', 'identity-label'), paragraph('The table shows the gUFO terms the recorded graph asserts for each element. Kinds, the role, the relator, the quality and the event map to gUFO categories. Role memberships and participations use OntoGraph composition terms (comp:), with custom comp:begin/comp:end times rather than gUFO time properties. That is a known issue under revision.', 'visual-note'));
   }
 }
 function render() {
@@ -247,7 +276,7 @@ function render() {
     const th = element('th'); th.scope = 'row';
     const button = element('button', undefined, 'identity-button'); button.type = 'button'; button.dataset.identity = item.id;
     button.setAttribute('aria-pressed', String(item.id === state.id)); button.append(element('strong', sourceLabel(obj)), code(obj.id)); button.addEventListener('click', () => choose(item.id)); th.append(button);
-    const status = element('td'); status.append(badge(state.view === 'owl-gufo' ? 'Source proposal' : 'Source fixture'));
+    const status = element('td'); status.append(state.view === 'owl-gufo' && data.recording ? code(rowTyping(row)) : badge(state.view === 'owl-gufo' ? 'Source proposal' : 'Source fixture'));
     tr.append(th, element('td', kindLabel(obj)), status); body.append(tr);
   }
   $('#view-limitations').replaceChildren(bulletList(data.viewpoints[state.view].limitations), paragraph('Class-specific mediation minima and full modal/normative preservation remain explicit gaps.'));
@@ -295,11 +324,12 @@ function renderInspector(visibleRows) {
     if (mapping.targetRefs.length) {
       card.append(element('strong', 'Expected generated identity (not canonical acceptance)'), ...mapping.targetRefs.map(t => paragraph(t, 'small')));
     } else card.append(paragraph('This source record is preserved without a separately identified generated target node.'));
+    appendRecordedTyping(card, mapping.targetRefs);
     card.append(paragraph(`Enrichment decision: ${mapping.decisionRef || 'none'}.`)); root.append(card);
   }
   root.append(element('h3', 'Source claim status'));
   for (const claim of data.claims.claims.filter(c => c.id === 'claim:source-case' || c.id === (state.view === 'owl-gufo' ? 'claim:projection' : 'claim:temporal'))) {
-    const card = element('article', undefined, 'claim-card'); card.append(badge(claim.status, claim.status === 'open' ? 'open' : ''), paragraph(claim.statement), paragraph(`Review state in original source receipt: ${claim.reviewState}. Runtime observations below do not rewrite this receipt.`, 'scope-text')); root.append(card);
+    const card = element('article', undefined, 'claim-card'); card.append(badge(claim.status, claim.status === 'open' ? 'open' : ''), paragraph(claim.statement), paragraph(`Review state in original source receipt: ${claim.reviewState}. Runtime observations below do not rewrite this receipt.`, 'scope-text'), paragraph(data.recording ? 'Status today: the case has been executed (recorded observations below) and checked by automated agent review. No human ontologist has reviewed it, and the model is under revision.' : 'Status today: not yet executed.', 'small')); root.append(card);
   }
   renderRecording(root, item);
   root.append(element('h3', 'Original source gap register'));

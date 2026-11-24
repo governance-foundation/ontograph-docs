@@ -9,8 +9,8 @@
     {
       "id": "license",
       "path": "data/case/LICENSE.md",
-      "bytes": 1815,
-      "sha256": "b56d4bc8639efb4108c337d0c28c21374fba19f1c7404ac4f5140927d2742f5e",
+      "bytes": 1856,
+      "sha256": "a8b93b2c851627a16f5b2e4d200fede7a74b696a5149d61821c97a3a78cc4b9c",
       "sourcePath": "docs/research-demonstration/case/LICENSE.md",
       "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
       "licenseStatus": "UNLICENSED"
@@ -64,7 +64,7 @@
       "id": "evidence-index",
       "path": "data/case/evidence-index.json",
       "bytes": 5529,
-      "sha256": "f00631025789b6df49cf506ad90f5dfb33809ab969c0a370de6d1101b227c9a1",
+      "sha256": "cb94fae4c67898a3f60cff6913509f5e9fd048d6917dd7e0efccb5b1d23654f6",
       "sourcePath": "docs/research-demonstration/case/evidence-index.json",
       "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
       "licenseStatus": "UNLICENSED"
@@ -90,8 +90,8 @@
     {
       "id": "sources",
       "path": "data/case/sources.json",
-      "bytes": 1117,
-      "sha256": "a62aa5dd940e32257d9cd540607783d1519d676d8454d1ad3799a93864ad2d73",
+      "bytes": 1130,
+      "sha256": "fa22224ee3eeb157cb0e9f2cb6bf496e506bc0bbb693ab9e7c14d024bb7b2ec8",
       "sourcePath": "docs/research-demonstration/case/sources.json",
       "sourceCommit": "a4d01ef7503ecba2b809bb7e03e3241f8c3a7123",
       "licenseStatus": "UNLICENSED"
@@ -207,7 +207,7 @@
     }
   ],
   "limitations": [
-    "Source DTOs retain historical unreviewed/proposed state and are not rewritten by explorer observations.",
+    "Source DTOs (claims.json, gaps.json) keep their historical unreviewed/proposed state; the explorer shows current status beside them. sources.json and LICENSE.md were edited on 2026-11-24 only to remove a recipient name from historical fixture paths.",
     "No live service, accepted canonical state or canonical revision.",
     "Exact source data grant is undeclared/UNLICENSED.",
     "Manifest excludes its own digest; external preparation/review records bind this file."

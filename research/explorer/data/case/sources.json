@@ -7,7 +7,7 @@
       "artifactRef": "artifact:model",
       "origin": "project-authored synthetic adaptation",
       "licenseRef": "license:project-data",
-      "historicalPath": "fixtures/giancarlo-demonstration/model.json",
+      "historicalPath": "fixtures/(earlier demonstration fixture)/model.json",
       "historicalCommit": "4ad41d737358134abfe9c30fcc202fa88a601a3d"
     },
     {
@@ -15,12 +15,12 @@
       "artifactRef": "artifact:instances",
       "origin": "project-authored synthetic adaptation",
       "licenseRef": "license:project-data",
-      "historicalPath": "fixtures/giancarlo-demonstration/instances.json",
+      "historicalPath": "fixtures/(earlier demonstration fixture)/instances.json",
       "historicalCommit": "4ad41d737358134abfe9c30fcc202fa88a601a3d"
     },
     {
       "id": "source:rd2-authorship",
-      "origin": "new synthetic dossier authored for RD-2 #2777 under RDR-002..004",
+      "origin": "new synthetic dossier authored for the research demonstration",
       "licenseRef": "license:project-data"
     }
   ],
