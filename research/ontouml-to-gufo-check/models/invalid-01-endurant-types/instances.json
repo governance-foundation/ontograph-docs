@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-endurant-types-invalid",
+  "individuals": [],
+  "links": [],
+  "attributeValues": []
+}

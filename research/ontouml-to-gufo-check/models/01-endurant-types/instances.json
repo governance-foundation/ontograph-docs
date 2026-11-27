@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-endurant-types",
+  "individuals": [
+    {
+      "id": "individual:alice",
+      "name": "Alice",
+      "classRefs": [
+        "class:person",
+        "class:student",
+        "class:adult",
+        "class:customer",
+        "class:active-agent"
+      ]
+    },
+    {
+      "id": "individual:globex-corp",
+      "name": "GlobexCorp",
+      "classRefs": [
+        "class:organization",
+        "class:customer",
+        "class:active-agent"
+      ]
+    },
+    {
+      "id": "individual:old-town-printers",
+      "name": "OldTownPrinters",
+      "classRefs": [
+        "class:organization",
+        "class:inactive-agent"
+      ]
+    }
+  ],
+  "links": [],
+  "attributeValues": []
+}

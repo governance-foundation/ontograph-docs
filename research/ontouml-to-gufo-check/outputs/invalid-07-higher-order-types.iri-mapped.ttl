@@ -1,0 +1,83 @@
+@prefix ns1: <https://purl.org/nemo/gufo-examples/higher-order-types-invalid#> .
+@prefix ns2: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1: a owl:Ontology ;
+    owl:imports ns2: .
+
+ns1:Kesi a ns1:Lion ;
+    rdfs:label "Kesi"@en .
+
+ns1:Nia a ns1:Hyena ;
+    rdfs:label "Nia"@en .
+
+ns1:Rajah a ns1:Lion,
+        ns1:Tiger ;
+    rdfs:label "Rajah"@en .
+
+ns1:Tembo a ns1:Elephant ;
+    rdfs:label "Tembo"@en .
+
+ns1:hasConservationStatus a owl:ObjectProperty ;
+    rdfs:label "hasConservationStatus"@en ;
+    rdfs:domain ns1:AnimalSpecies ;
+    rdfs:range ns1:ConservationStatus .
+
+ns1:Tiger a ns2:SubKind,
+        owl:Class,
+        ns1:AnimalSpecies ;
+    rdfs:label "Tiger"@en ;
+    rdfs:subClassOf ns1:Animal .
+
+ns1:Elephant a ns2:SubKind,
+        owl:Class,
+        ns1:AnimalSpecies ;
+    rdfs:label "Elephant"@en ;
+    rdfs:subClassOf ns1:Animal ;
+    ns1:hasConservationStatus ns1:Vulnerable .
+
+ns1:Endangered a ns1:ConservationStatus ;
+    rdfs:label "Endangered"@en .
+
+ns1:Hyena a ns2:SubKind,
+        owl:Class,
+        ns1:AnimalSpecies ;
+    rdfs:label "Hyena"@en ;
+    rdfs:subClassOf ns1:Animal ;
+    ns1:hasConservationStatus ns1:LeastConcern .
+
+ns1:LeastConcern a ns1:ConservationStatus ;
+    rdfs:label "LeastConcern"@en .
+
+ns1:Vulnerable a ns1:ConservationStatus ;
+    rdfs:label "Vulnerable"@en .
+
+ns1:Lion a ns2:SubKind,
+        owl:Class,
+        ns1:AnimalSpecies ;
+    rdfs:label "Lion"@en ;
+    rdfs:subClassOf ns1:Animal ;
+    ns1:hasConservationStatus ns1:Endangered .
+
+ns1:ConservationStatus a owl:Class ;
+    rdfs:label "ConservationStatus"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:oneOf ( ns1:Endangered ns1:Vulnerable ns1:LeastConcern ) ] .
+
+ns1:AnimalSpecies a ns2:Type,
+        owl:Class ;
+    rdfs:label "AnimalSpecies"@en ;
+    ns2:categorizes ns1:Animal ;
+    ns2:partitions ns1:Animal ;
+    rdfs:subClassOf ns2:Type .
+
+ns1:Animal a ns2:Kind,
+        owl:Class ;
+    rdfs:label "Animal"@en ;
+    rdfs:subClassOf ns2:FunctionalComplex .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Lion ns1:Hyena ns1:Elephant ) .
+

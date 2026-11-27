@@ -1,0 +1,80 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#> a owl:Ontology ;
+    owl:imports <http://purl.org/nemo/gufo#> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Alice> a <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Adult>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Customer>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Person>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Student> ;
+    rdfs:label "Alice"@en .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Employee> a <http://purl.org/nemo/gufo#Role>,
+        owl:Class ;
+    rdfs:label "Employee"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp> a <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Customer>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Organization> ;
+    rdfs:label "GlobexCorp"@en .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters> a <https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent>,
+        <https://purl.org/nemo/gufo-examples/endurant-types#Organization> ;
+    rdfs:label "OldTownPrinters"@en .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#University> a <http://purl.org/nemo/gufo#SubKind>,
+        owl:Class ;
+    rdfs:label "University"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Organization> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Adult> a <http://purl.org/nemo/gufo#Phase>,
+        owl:Class ;
+    rdfs:label "Adult"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Person> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types#Child> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Child> a <http://purl.org/nemo/gufo#Phase>,
+        owl:Class ;
+    rdfs:label "Child"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent> a <http://purl.org/nemo/gufo#PhaseMixin>,
+        owl:Class ;
+    rdfs:label "InactiveAgent"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Agent> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Student> a <http://purl.org/nemo/gufo#Role>,
+        owl:Class ;
+    rdfs:label "Student"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Customer> a <http://purl.org/nemo/gufo#RoleMixin>,
+        owl:Class ;
+    rdfs:label "Customer"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent> a <http://purl.org/nemo/gufo#PhaseMixin>,
+        owl:Class ;
+    rdfs:label "ActiveAgent"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Organization> a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Agent> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Agent> a <http://purl.org/nemo/gufo#Category>,
+        owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types#Person> a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types#Agent> .
+

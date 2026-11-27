@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "ontograph.research.independent-review.v1",
+  "id": "ontouml-to-gufo-acceptance-2026-11-27",
+  "title": "Provenance for the OntoUML-to-gUFO acceptance evidence",
+  "appliesTo": "The OntoUML-to-gUFO projection evidence published in research/ontouml-to-gufo-check/, as described on the research page.",
+  "independent": false,
+  "humanOntologistReview": false,
+  "reviewerRole": "Self-review by the OntoGraph implementation agents that authored the OntoUML models and classified the differences. No independent human ontologist has reviewed the models, the projection, or these results.",
+  "doesNotCover": [
+    "The October 2026 organisation-independent-review.json and the 808/808 Turtle admit/regenerate results do not apply to this projection.",
+    "No third-party reproduction of the OntoGraph run is published here, because the runtime is not public. The portable check only verifies the published outputs against gufoshapes."
+  ],
+  "recordedRun": {
+    "completedAt": "2026-11-27T07:05:47+11:00",
+    "timeZone": "Australia/Sydney",
+    "binarySha256": "sha256:485faa176b2edec1000eedb9fbec0f9c51c354e787fe71d86610d867c12bbc3e",
+    "builtFromCommit": "a0f9f3e30f2fd42d056c1601819d4f008826cd86",
+    "mergedToDevelop": "ec03a119daf83e50a9dee0d6f6765238a6b9dbc8",
+    "gufoPin": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "gufoshapes": "examples/common/gufoshapes.ttl at the same gUFO pin (not the separate gufoshapes repository pin used in the October Turtle check)",
+    "tools": {
+      "pyshacl": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)",
+      "jena": "Apache Jena 6.2.0",
+      "jenaRuntime": "java version 21.0.7 2025-04-15 LTS",
+      "pellet": "Pellet via owlready2 0.51"
+    }
+  },
+  "models": {
+    "authoredBy": "OntoGraph (automated agent)",
+    "authoredOn": "2026-11-25",
+    "method": "Hand transcription of the prose and pitfall sections of each upstream example page into OntoUML JSON. The upstream ontology.ttl and invalid-example.ttl were not used as projector inputs. The case catalogue records that the Turtle was read during authoring of examples 04, 05 and 06.",
+    "instanceData": "OntoGraph-specific, because OntoUML has no instance level.",
+    "reviewStatus": "pending"
+  },
+  "pendingQuestions": [
+    {
+      "caseRef": "invalid-07-higher-order-types",
+      "status": "NEMO review pending",
+      "question": "OntoUML has no way to add a member to a generalization set while omitting only the OWL disjointness, so the pitfall is modelled as a second, non-disjoint generalization set {Tiger} with the same categorizer, which projects as gufo:categorizes in addition to the existing gufo:partitions. Is that a faithful encoding of the invalid-07 pitfall?"
+    },
+    {
+      "caseRef": "05-events",
+      "status": "NEMO review pending",
+      "question": "The reified participation in the prose is modelled as an event class MatchParticipation, of which JordanLeeParticipationInFinal is an instance. Is that an acceptable OntoUML encoding, given that OntoUML has no instance level and cannot type an individual by a gUFO class directly?"
+    },
+    {
+      "caseRef": "05-events",
+      "status": "NEMO review pending",
+      "question": "In the upstream Turtle, :participatedInMatch has rdfs:range :Match, and is used to link JordanLee to JordanLeeParticipationInFinal. Under OWL that would also classify the participation as a Match. OntoGraph instead projects gufo:participatedIn from Player to MatchParticipation. Was the upstream range intended?"
+    }
+  ],
+  "reviewedDifferences": "research/ontouml-to-gufo-check/reviewed-differences.v1.json",
+  "limitations": [
+    "The OntoGraph engine is private, so an independent reviewer cannot regenerate the outputs without it.",
+    "There is no independent human ontologist review of the models or the results yet.",
+    "No claim is made of parity with the OntoUML official validator, the OntoUML server, or the Visual Paradigm plugin.",
+    "Self-review is not independent review."
+  ]
+}

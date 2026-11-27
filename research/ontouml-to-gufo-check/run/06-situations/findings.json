@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.report.v1",
+  "status": "projected",
+  "ruleEnforcement": "enforced",
+  "ruleSet": "ontograph.ontouml.ufo-rules.v1",
+  "profileRef": "ontograph.gufo.ontouml-examples.v1",
+  "baseIri": "https://ontograph.dev/examples/gufo-examples/situations#",
+  "findings": [],
+  "modelDigest": "sha256:8f71f87a58c0b4e01773dad181b2ba308c0fa4c1fd7f5674fcdd71c82062fcb5",
+  "instanceDigest": "sha256:41b602a74088d31a241612bf6dd31bca36094d09e75eda8577e9a52a643b79c0",
+  "graphDigest": "sha256:1a981dbbf0a7b73757a512ada9df685f21b83978cf2b7f8dc86a31716508d9e2",
+  "tripleCount": 136,
+  "limits": [
+    "Instance data comes from an OntoGraph-specific file; OntoUML has no instance level.",
+    "Classifications by anti-rigid types (roles, phases, role/phase mixins) are snapshot rdf:type assertions with no temporal qualification."
+  ]
+}

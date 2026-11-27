@@ -1,0 +1,1055 @@
+{
+  "extra": 59,
+  "matched": 81,
+  "missing": 44,
+  "ontographTriples": 140,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 18,
+      "ONTOLOGY-HEADER": 1,
+      "ONTOUML-STEREOTYPE-REQUIRED": 3,
+      "STRUCTURALLY-EQUAL": 15,
+      "UFO-DERIVED-AXIOM": 22
+    },
+    "missing": {
+      "ANNOTATION": 21,
+      "ENTAILED-BY-ONTOGRAPH": 5,
+      "ONTOLOGY-HEADER": 3,
+      "STRUCTURALLY-EQUAL": 15
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A small ontology of retail products, illustrating gUFO's basic and advanced patterns for representing qualities.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 03: Qualities and quality values\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ColorValueInRGB>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A point in a three-dimensional value space (red, green, blue components), used as the value of a Color quality.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ColorValueInRGB>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Color value in RGB\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Gemstone #1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone1Mass>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Gemstone #1's mass\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Mass>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A quality inhering in exactly one gemstone, given a value directly as a literal.\"@en"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Mass>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "_:cb215a269871"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Painting #1 (\\\"Blue Monochrome\\\")\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1Color>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Painting #1's color\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1Color>",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasColorValueInRGB>",
+        "_:cb1877c6bc7e"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ShirtSize>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The value space for the Size quality of a t-shirt: a closed enumeration, not a literal range.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ShirtSize>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Shirt size\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ShirtSize>",
+        "<http://www.w3.org/2002/07/owl#equivalentClass>",
+        "_:cb68067f2b74"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"T-Shirt #1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt1Size>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"T-Shirt #1's size\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"T-Shirt\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#colorOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"color of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasBlueValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has blue value component\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasColorValueInRGB>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has color value in RGB\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasGreenValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has green value component\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasRedValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has red value component\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasSizeValue>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has size value\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#massInGrams>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"mass in grams\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#massOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"mass of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#sizeOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"size of\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#S>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb54b5ea472e"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb1877c6bc7e",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/qualities#ColorValueInRGB>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb1877c6bc7e",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasBlueValueComponent>",
+        "\"167\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb1877c6bc7e",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasGreenValueComponent>",
+        "\"47\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb1877c6bc7e",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasRedValueComponent>",
+        "\"0\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb215a269871",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Restriction>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb215a269871",
+        "<http://www.w3.org/2002/07/owl#onClass>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb215a269871",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "<http://purl.org/nemo/gufo#inheresIn>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb215a269871",
+        "<http://www.w3.org/2002/07/owl#qualifiedCardinality>",
+        "\"1\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb54b5ea472e",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cbf3e086ab8f"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb68067f2b74",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cb68067f2b74",
+        "<http://www.w3.org/2002/07/owl#oneOf>",
+        "_:cb0"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cbd7c96744b8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#XL>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cbd7c96744b8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cbf3e086ab8f",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#L>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "missing",
+      "triple": [
+        "_:cbf3e086ab8f",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cbd7c96744b8"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Color>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ColorValueInRGB>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ColorValueInRGB\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Gemstone1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone1Mass>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Gemstone1Mass\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Mass>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Mass>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "_:cb32ba0becb1"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Painting1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1Color>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Painting1Color\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting1Color>",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasColorValueInRGB>",
+        "_:cb1e2e5b5320"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ShirtSize>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ShirtSize\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#ShirtSize>",
+        "<http://www.w3.org/2002/07/owl#equivalentClass>",
+        "_:cbe450d6a1af"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#Size>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"TShirt1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt1Size>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"TShirt1Size\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"TShirt\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#colorOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"colorOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasBlueValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasBlueValueComponent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasColorValueInRGB>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasColorValueInRGB\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasGreenValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasGreenValueComponent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasRedValueComponent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasRedValueComponent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#hasSizeValue>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasSizeValue\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#massInGrams>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"massInGrams\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#massOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#FunctionalProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#massOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"massOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/qualities#sizeOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"sizeOf\"@en"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb10c10a8e54",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#L>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb10c10a8e54",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb15a06690f4"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14192c45ae",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Color>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14192c45ae",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14b5450b7c",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#TShirt>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14b5450b7c",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb1d463e10ef"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb14f6bc7596",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#S>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb14f6bc7596",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb54b5ea472e"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb15a06690f4",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#XL>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb15a06690f4",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1d463e10ef",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Painting>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1d463e10ef",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb1e2e5b5320",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/qualities#ColorValueInRGB>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb1e2e5b5320",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasBlueValueComponent>",
+        "\"167\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb1e2e5b5320",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasGreenValueComponent>",
+        "\"47\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb1e2e5b5320",
+        "<https://purl.org/nemo/gufo-examples/qualities#hasRedValueComponent>",
+        "\"0\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb32ba0becb1",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Restriction>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb32ba0becb1",
+        "<http://www.w3.org/2002/07/owl#minQualifiedCardinality>",
+        "\"1\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb32ba0becb1",
+        "<http://www.w3.org/2002/07/owl#onClass>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb32ba0becb1",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "<https://purl.org/nemo/gufo-examples/qualities#massOf>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cb54b5ea472e",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb10c10a8e54"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cbcba50f1890"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbca897744b7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Gemstone>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbca897744b7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb14b5450b7c"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbcba50f1890",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Mass>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbcba50f1890",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cbf2977c4109"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbda85f80c45",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbda85f80c45",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cbca897744b7"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cbe450d6a1af",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": "isomorphic blank-node structure on both sides",
+      "reason": "STRUCTURALLY-EQUAL",
+      "side": "extra",
+      "triple": [
+        "_:cbe450d6a1af",
+        "<http://www.w3.org/2002/07/owl#oneOf>",
+        "_:cb14f6bc7596"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbf2977c4109",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/qualities#Size>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbf2977c4109",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb14192c45ae"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 125
+}

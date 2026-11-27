@@ -1,0 +1,201 @@
+{
+  "extra": 8,
+  "matched": 56,
+  "missing": 10,
+  "ontographTriples": 64,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 4,
+      "ONTOLOGY-HEADER": 1,
+      "ONTOUML-STEREOTYPE-REQUIRED": 3
+    },
+    "missing": {
+      "ANNOTATION": 7,
+      "ONTOLOGY-HEADER": 3
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A small ontology of wildlife classification, illustrating gUFO's powertype pattern: a higher-order type whose instances are themselves subclasses of a base type.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 07: Higher-order types\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A higher-order type: its own instances (Lion, Hyena, Elephant, below) are themselves classes -- subclasses of Animal. Every animal belongs to exactly one species, so gufo:partitions -- rather than the weaker gufo:categorizes -- is the right property here. AnimalSpecies is declared a plain gufo:Type (and a specialization of gufo:Type, so its own instances count as gufo:Type too), not a gufo:SubKind or any other rigidity/sortality metatype: gufo:partitions' domain excludes gufo:ConcreteIndividualType -- which is where Kind/SubKind/Phase/Role/Category all live -- from anything that itself partitions or categorizes another type, so a genuine higher-order type like this one can never also be given one of those metatypes.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Animal species\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The (closed) value space for :hasConservationStatus, following the same enumerated-value pattern as :ShirtSize in example 3.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Conservation status\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#Kesi>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Kesi belongs to an endangered species, but :hasConservationStatus is a property of the species (:Lion), not of Kesi himself -- Kesi is not, and does not need to be, an :AnimalSpecies.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#LeastConcern>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Least concern\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#hasConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"has conservation status\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"AnimalSpecies\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#ConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ConservationStatus\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#Elephant>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#Hyena>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#LeastConcern>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"LeastConcern\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#Lion>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types#hasConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasConservationStatus\"@en"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 66
+}

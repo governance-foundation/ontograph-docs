@@ -1,0 +1,19 @@
+{
+  "caseRef": "invalid-07-higher-order-types",
+  "findings": [
+    {
+      "ruleId": "OG-UFO-PARTITION-DISJOINT",
+      "severity": "error",
+      "message": "class:tiger is an instance of class:animal-species (via generalization-set:animal-species-addition), which partitions class:animal, but it is not declared disjoint from the partition members",
+      "justification": "When a higher-order type partitions a base type (disjoint and complete categorization), every instance of the base type instantiates exactly one of its instances, so every class categorized by it under that base must be disjoint from every other partition member (gufo:partitions; gufoshapes:PartitionPairwiseDisjointnessShape).",
+      "sourceRef": "class:tiger",
+      "sourcePointer": "/elements/16",
+      "relatedRefs": [
+        "class:lion",
+        "class:hyena",
+        "class:elephant",
+        "generalization-set:animal-species-addition"
+      ]
+    }
+  ]
+}

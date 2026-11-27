@@ -1,0 +1,170 @@
+@prefix ns1: <http://purl.org/nemo/gufo#> .
+@prefix ns2: <https://purl.org/nemo/gufo-examples/situations#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2: a owl:Ontology ;
+    owl:imports ns1: .
+
+ns2:DonorHeart881 a ns2:Heart ;
+    rdfs:label "DonorHeart881"@en ;
+    ns1:standsInQualifiedParthood ns2:NoraHasDonorHeart .
+
+ns2:NoraHeartTransplant20240305 a ns2:HeartTransplantSurgery ;
+    rdfs:label "NoraHeartTransplant20240305"@en ;
+    ns1:broughtAbout ns2:NoraHasDonorHeart ;
+    ns1:hasBeginPointInXSDDate "2024-03-05"^^xsd:date .
+
+ns2:NoraNativeHeart a ns2:Heart ;
+    rdfs:label "NoraNativeHeart"@en ;
+    ns1:standsInQualifiedParthood ns2:NoraHadNativeHeart .
+
+ns2:OriginalPorcelainBatch a ns2:PorcelainQuantity ;
+    rdfs:label "OriginalPorcelainBatch"@en ;
+    ns1:standsInQualifiedConstitution ns2:NoraCrownWasPorcelain .
+
+ns2:ReplacementResinBatch a ns2:CompositeResinQuantity ;
+    rdfs:label "ReplacementResinBatch"@en ;
+    ns1:standsInQualifiedConstitution ns2:NoraCrownIsResin .
+
+ns2:concernsLighterPatient a owl:ObjectProperty ;
+    rdfs:label "concernsLighterPatient"@en ;
+    rdfs:range ns2:Patient ;
+    rdfs:subPropertyOf ns1:concernsRelatedEndurant .
+
+ns2:standsAsHeavierPatient a owl:ObjectProperty ;
+    rdfs:label "standsAsHeavierPatient"@en ;
+    rdfs:domain ns2:Patient ;
+    rdfs:subPropertyOf ns1:standsInQualifiedRelationship .
+
+ns2:CompositeResinQuantity a ns1:Kind,
+        owl:Class ;
+    rdfs:label "CompositeResinQuantity"@en ;
+    rdfs:subClassOf ns1:Quantity ;
+    owl:disjointWith ns2:PorcelainQuantity .
+
+ns2:FebrilePatient a ns1:Phase,
+        owl:Class ;
+    rdfs:label "FebrilePatient"@en ;
+    rdfs:subClassOf ns2:Patient .
+
+ns2:HeartTransplantSurgery a owl:Class ;
+    rdfs:label "HeartTransplantSurgery"@en ;
+    rdfs:subClassOf ns1:Event .
+
+ns2:Miguel a ns2:Patient ;
+    rdfs:label "Miguel"@en .
+
+ns2:NoraCrownIsResin a ns1:TemporaryConstitutionSituation ;
+    rdfs:label "NoraCrownIsResin"@en ;
+    ns1:concernsConstitutedEndurant ns2:NoraCrown ;
+    ns1:hasBeginPointInXSDDate "2022-11-21"^^xsd:date .
+
+ns2:NoraCrownWasPorcelain a ns1:TemporaryConstitutionSituation ;
+    rdfs:label "NoraCrownWasPorcelain"@en ;
+    ns1:concernsConstitutedEndurant ns2:NoraCrown ;
+    ns1:hasEndPointInXSDDate "2022-11-20"^^xsd:date .
+
+ns2:NoraHadNativeHeart a ns1:TemporaryParthoodSituation ;
+    rdfs:label "NoraHadNativeHeart"@en ;
+    ns1:concernsTemporaryWhole ns2:Nora ;
+    ns1:hasEndPointInXSDDate "2024-03-05"^^xsd:date .
+
+ns2:NoraHeavierThanMiguelOn20240115 a ns1:TemporaryRelationshipSituation ;
+    rdfs:label "NoraHeavierThanMiguelOn20240115"@en ;
+    ns1:concernsRelationshipType ns2:heavierThan ;
+    ns1:hasBeginPointInXSDDate "2024-01-15"^^xsd:date ;
+    ns1:hasEndPointInXSDDate "2024-01-15"^^xsd:date ;
+    ns2:concernsLighterPatient ns2:Miguel .
+
+ns2:NoraWasFebrileOnAdmission a ns1:TemporaryInstantiationSituation ;
+    rdfs:label "NoraWasFebrileOnAdmission"@en ;
+    ns1:concernsNonRigidType ns2:FebrilePatient ;
+    ns1:contributedToTrigger ns2:SepsisAlert20240202 ;
+    ns1:hasBeginPointInXSDDateTimeStamp "2024-02-02T08:00:00Z"^^xsd:dateTimeStamp ;
+    ns1:hasEndPointInXSDDateTimeStamp "2024-02-02T14:00:00Z"^^xsd:dateTimeStamp .
+
+ns2:NoraWasOverweightUntilJune2023 a ns1:TemporaryInstantiationSituation ;
+    rdfs:label "NoraWasOverweightUntilJune2023"@en ;
+    ns1:concernsNonRigidType ns2:OverweightPerson ;
+    ns1:hasBeginPointInXSDDate "2020-03-01"^^xsd:date ;
+    ns1:hasEndPointInXSDDate "2023-06-30"^^xsd:date .
+
+ns2:NoraWeighs75KgIn2024 a ns1:QualityValueAttributionSituation ;
+    rdfs:label "NoraWeighs75KgIn2024"@en ;
+    ns1:concernsQualityType ns2:Weight ;
+    ns1:concernsQualityValue 7.5e+01 ;
+    ns1:hasBeginPointInXSDDate "2024-01-15"^^xsd:date .
+
+ns2:NoraWeighs82KgIn2023 a ns1:QualityValueAttributionSituation ;
+    rdfs:label "NoraWeighs82KgIn2023"@en ;
+    ns1:concernsQualityType ns2:Weight ;
+    ns1:concernsQualityValue 8.2e+01 ;
+    ns1:hasBeginPointInXSDDate "2023-01-10"^^xsd:date ;
+    ns1:hasEndPointInXSDDate "2023-06-30"^^xsd:date .
+
+ns2:OverweightPerson a ns1:Phase,
+        owl:Class ;
+    rdfs:label "OverweightPerson"@en ;
+    rdfs:subClassOf ns2:Patient .
+
+ns2:SepsisAlert a owl:Class ;
+    rdfs:label "SepsisAlert"@en ;
+    rdfs:subClassOf ns1:Event .
+
+ns2:SepsisAlert20240202 a ns2:SepsisAlert ;
+    rdfs:label "SepsisAlert20240202"@en .
+
+ns2:heavierThan a ns1:ComparativeRelationshipType,
+        owl:ObjectProperty ;
+    rdfs:label "heavierThan"@en ;
+    ns1:isDerivedFrom ns2:Weight ;
+    rdfs:domain ns2:Patient ;
+    rdfs:range ns2:Patient .
+
+ns2:DentalCrown a ns1:Kind,
+        owl:Class ;
+    rdfs:label "DentalCrown"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex .
+
+ns2:Nora a ns2:Patient ;
+    rdfs:label "Nora"@en ;
+    ns1:standsInQualifiedAttribution ns2:NoraWeighs75KgIn2024,
+        ns2:NoraWeighs82KgIn2023 ;
+    ns1:standsInQualifiedInstantiation ns2:NoraWasFebrileOnAdmission,
+        ns2:NoraWasOverweightUntilJune2023 ;
+    ns2:standsAsHeavierPatient ns2:NoraHeavierThanMiguelOn20240115 .
+
+ns2:NoraCrown a ns2:DentalCrown ;
+    rdfs:label "NoraCrown"@en .
+
+ns2:NoraHasDonorHeart a ns1:TemporaryParthoodSituation ;
+    rdfs:label "NoraHasDonorHeart"@en ;
+    ns1:concernsTemporaryWhole ns2:Nora ;
+    ns1:hasBeginPointInXSDDate "2024-03-05"^^xsd:date .
+
+ns2:PorcelainQuantity a ns1:Kind,
+        owl:Class ;
+    rdfs:label "PorcelainQuantity"@en ;
+    rdfs:subClassOf ns1:Quantity .
+
+ns2:Heart a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Heart"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex .
+
+ns2:Weight a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Weight"@en ;
+    rdfs:subClassOf ns1:Quality .
+
+ns2:Patient a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Patient"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns2:Patient ns2:Heart ns2:DentalCrown ) .
+

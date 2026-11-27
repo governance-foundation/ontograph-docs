@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-relators",
+  "individuals": [
+    {
+      "id": "individual:dana",
+      "name": "Dana",
+      "classRefs": [
+        "class:person",
+        "class:employee"
+      ]
+    },
+    {
+      "id": "individual:globex-corp",
+      "name": "Globex Corp.",
+      "classRefs": [
+        "class:organization",
+        "class:employer"
+      ]
+    },
+    {
+      "id": "individual:dana-globex-employment",
+      "name": "DanaGlobexEmployment",
+      "classRefs": [
+        "class:employment"
+      ]
+    },
+    {
+      "id": "individual:danasrighttosalary",
+      "name": "DanasRightToSalary",
+      "classRefs": [
+        "class:right-to-salary"
+      ]
+    },
+    {
+      "id": "individual:globexsdutytopaysalary",
+      "name": "GlobexsDutyToPaySalary",
+      "classRefs": [
+        "class:duty-to-pay-salary"
+      ]
+    },
+    {
+      "id": "individual:danasdutytowork",
+      "name": "DanasDutyToWork",
+      "classRefs": [
+        "class:duty-to-work"
+      ]
+    },
+    {
+      "id": "individual:globexsrighttolabor",
+      "name": "GlobexsRightToLabor",
+      "classRefs": [
+        "class:right-to-labor"
+      ]
+    },
+    {
+      "id": "individual:john",
+      "name": "John",
+      "classRefs": [
+        "class:person"
+      ]
+    },
+    {
+      "id": "individual:mary",
+      "name": "Mary",
+      "classRefs": [
+        "class:person"
+      ]
+    },
+    {
+      "id": "individual:john-mary-marriage",
+      "name": "JohnMaryMarriage",
+      "classRefs": [
+        "class:marriage"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "link:001",
+      "relationRef": "relation:involves-employee",
+      "sourceRef": "individual:dana-globex-employment",
+      "targetRef": "individual:dana"
+    },
+    {
+      "id": "link:002",
+      "relationRef": "relation:involves-employer",
+      "sourceRef": "individual:dana-globex-employment",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:003",
+      "relationRef": "relation:employed-by",
+      "sourceRef": "individual:dana",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:004",
+      "relationRef": "relation:right-to-salary-inheres-in",
+      "sourceRef": "individual:danasrighttosalary",
+      "targetRef": "individual:dana"
+    },
+    {
+      "id": "link:005",
+      "relationRef": "relation:right-to-salary-depends-on",
+      "sourceRef": "individual:danasrighttosalary",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:006",
+      "relationRef": "relation:right-to-salary-part-of",
+      "sourceRef": "individual:danasrighttosalary",
+      "targetRef": "individual:dana-globex-employment"
+    },
+    {
+      "id": "link:007",
+      "relationRef": "relation:duty-to-pay-salary-inheres-in",
+      "sourceRef": "individual:globexsdutytopaysalary",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:008",
+      "relationRef": "relation:duty-to-pay-salary-depends-on",
+      "sourceRef": "individual:globexsdutytopaysalary",
+      "targetRef": "individual:dana"
+    },
+    {
+      "id": "link:009",
+      "relationRef": "relation:duty-to-pay-salary-part-of",
+      "sourceRef": "individual:globexsdutytopaysalary",
+      "targetRef": "individual:dana-globex-employment"
+    },
+    {
+      "id": "link:010",
+      "relationRef": "relation:duty-to-work-inheres-in",
+      "sourceRef": "individual:danasdutytowork",
+      "targetRef": "individual:dana"
+    },
+    {
+      "id": "link:011",
+      "relationRef": "relation:duty-to-work-depends-on",
+      "sourceRef": "individual:danasdutytowork",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:012",
+      "relationRef": "relation:duty-to-work-part-of",
+      "sourceRef": "individual:danasdutytowork",
+      "targetRef": "individual:dana-globex-employment"
+    },
+    {
+      "id": "link:013",
+      "relationRef": "relation:right-to-labor-inheres-in",
+      "sourceRef": "individual:globexsrighttolabor",
+      "targetRef": "individual:globex-corp"
+    },
+    {
+      "id": "link:014",
+      "relationRef": "relation:right-to-labor-depends-on",
+      "sourceRef": "individual:globexsrighttolabor",
+      "targetRef": "individual:dana"
+    },
+    {
+      "id": "link:015",
+      "relationRef": "relation:right-to-labor-part-of",
+      "sourceRef": "individual:globexsrighttolabor",
+      "targetRef": "individual:dana-globex-employment"
+    },
+    {
+      "id": "link:016",
+      "relationRef": "relation:marriage-mediates",
+      "sourceRef": "individual:john-mary-marriage",
+      "targetRef": "individual:john"
+    },
+    {
+      "id": "link:017",
+      "relationRef": "relation:marriage-mediates",
+      "sourceRef": "individual:john-mary-marriage",
+      "targetRef": "individual:mary"
+    }
+  ],
+  "attributeValues": [],
+  "temporalValues": [
+    {
+      "id": "point:001",
+      "subjectRef": "individual:dana-globex-employment",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2020-01-06"
+    },
+    {
+      "id": "point:002",
+      "subjectRef": "individual:john-mary-marriage",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2001-12-12"
+    }
+  ]
+}

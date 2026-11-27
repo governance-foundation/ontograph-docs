@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.extensions.v1",
+  "statement": "OntoGraph-specific extensions of the gUFO example models. They are not upstream examples, not acceptance cases, and never compared with upstream Turtle (spec GEX-EXT).",
+  "cases": [
+    {
+      "caseRef": "05-events-ordering-ext",
+      "extends": "05-events",
+      "expectedValid": true,
+      "upstreamAligned": false,
+      "summary": "Temporal order between matches (Allen before, ogx:before) and named historical dependence.",
+      "model": "05-events-ordering-ext/model.json",
+      "instances": "05-events-ordering-ext/instances.json"
+    },
+    {
+      "caseRef": "invalid-05-events-ordering-ext",
+      "extends": "05-events",
+      "expectedValid": false,
+      "upstreamAligned": false,
+      "summary": "As 05-events-ordering-ext, but semi-final 2 is dated after the final it occurs before.",
+      "model": "invalid-05-events-ordering-ext/model.json",
+      "instances": "invalid-05-events-ordering-ext/instances.json"
+    }
+  ]
+}

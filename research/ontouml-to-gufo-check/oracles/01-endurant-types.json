@@ -1,0 +1,80 @@
+{
+  "caseRef": "01-endurant-types",
+  "shaclConforms": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/endurant-types#Agent",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/endurant-types#Alice"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "http://purl.org/nemo/gufo#Sortal",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/endurant-types#Student"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/endurant-types#Organization",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/endurant-types#Alice"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "queries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 29,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Carol\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#Adult\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Carol\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#Child\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Bob\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#Employee\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Carol\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#Person\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Bob\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#Person\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#Carol\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types#University\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity\"}"
+      ],
+      "rows": 21
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 0,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 0
+    }
+  ],
+  "note": "Entailment claims were checked with Pellet via owlready2 0.51 in the recorded run. The portable check script does not rerun Pellet."
+}
