@@ -1,0 +1,139 @@
+@prefix ns1: <http://purl.org/nemo/gufo#> .
+@prefix ns2: <https://purl.org/nemo/gufo-examples/relators#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2: a owl:Ontology ;
+    owl:imports ns1: .
+
+ns2:DanasDutyToWork a ns2:DutyToWork ;
+    rdfs:label "DanasDutyToWork"@en ;
+    ns1:externallyDependsOn ns2:GlobexCorp ;
+    ns1:inheresIn ns2:Dana ;
+    ns1:isAspectProperPartOf ns2:DanaGlobexEmployment .
+
+ns2:DanasRightToSalary a ns2:RightToSalary ;
+    rdfs:label "DanasRightToSalary"@en ;
+    ns1:externallyDependsOn ns2:GlobexCorp ;
+    ns1:inheresIn ns2:Dana ;
+    ns1:isAspectProperPartOf ns2:DanaGlobexEmployment .
+
+ns2:GlobexsDutyToPaySalary a ns2:DutyToPaySalary ;
+    rdfs:label "GlobexsDutyToPaySalary"@en ;
+    ns1:externallyDependsOn ns2:Dana ;
+    ns1:inheresIn ns2:GlobexCorp ;
+    ns1:isAspectProperPartOf ns2:DanaGlobexEmployment .
+
+ns2:GlobexsRightToLabor a ns2:RightToLabor ;
+    rdfs:label "GlobexsRightToLabor"@en ;
+    ns1:externallyDependsOn ns2:Dana ;
+    ns1:inheresIn ns2:GlobexCorp ;
+    ns1:isAspectProperPartOf ns2:DanaGlobexEmployment .
+
+ns2:JohnMaryMarriage a ns2:Marriage ;
+    rdfs:label "JohnMaryMarriage"@en ;
+    ns1:hasBeginPointInXSDDate "2001-12-12"^^xsd:date ;
+    ns1:mediates ns2:John,
+        ns2:Mary .
+
+ns2:employedBy a ns1:MaterialRelationshipType,
+        owl:ObjectProperty ;
+    rdfs:label "employedBy"@en ;
+    ns1:isDerivedFrom ns2:Employment ;
+    rdfs:domain ns2:Employee ;
+    rdfs:range ns2:Employer .
+
+ns2:involvesEmployee a owl:ObjectProperty ;
+    rdfs:label "involvesEmployee"@en ;
+    rdfs:domain ns2:Employment ;
+    rdfs:range ns2:Employee ;
+    rdfs:subPropertyOf ns1:mediates .
+
+ns2:involvesEmployer a owl:ObjectProperty ;
+    rdfs:label "involvesEmployer"@en ;
+    rdfs:domain ns2:Employment ;
+    rdfs:range ns2:Employer ;
+    rdfs:subPropertyOf ns1:mediates .
+
+ns2:John a ns2:Person ;
+    rdfs:label "John"@en .
+
+ns2:Marriage a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Marriage"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ns2:Person ;
+            owl:onProperty ns1:mediates ],
+        ns1:Relator ;
+    owl:disjointWith ns2:Employment .
+
+ns2:Mary a ns2:Person ;
+    rdfs:label "Mary"@en .
+
+ns2:DutyToPaySalary a ns1:Kind,
+        owl:Class ;
+    rdfs:label "DutyToPaySalary"@en ;
+    rdfs:subClassOf ns1:ExtrinsicMode .
+
+ns2:DutyToWork a ns1:Kind,
+        owl:Class ;
+    rdfs:label "DutyToWork"@en ;
+    rdfs:subClassOf ns1:ExtrinsicMode .
+
+ns2:Organization a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex ;
+    owl:disjointWith ns2:Person .
+
+ns2:RightToLabor a ns1:Kind,
+        owl:Class ;
+    rdfs:label "RightToLabor"@en ;
+    rdfs:subClassOf ns1:ExtrinsicMode .
+
+ns2:RightToSalary a ns1:Kind,
+        owl:Class ;
+    rdfs:label "RightToSalary"@en ;
+    rdfs:subClassOf ns1:ExtrinsicMode .
+
+ns2:Employee a ns1:Role,
+        owl:Class ;
+    rdfs:label "Employee"@en ;
+    rdfs:subClassOf ns2:Person .
+
+ns2:Employer a ns1:Role,
+        owl:Class ;
+    rdfs:label "Employer"@en ;
+    rdfs:subClassOf ns2:Organization .
+
+ns2:DanaGlobexEmployment a ns2:Employment ;
+    rdfs:label "DanaGlobexEmployment"@en ;
+    ns1:hasBeginPointInXSDDate "2020-01-06"^^xsd:date ;
+    ns2:involvesEmployee ns2:Dana ;
+    ns2:involvesEmployer ns2:GlobexCorp .
+
+ns2:Dana a ns2:Employee,
+        ns2:Person ;
+    rdfs:label "Dana"@en ;
+    ns2:employedBy ns2:GlobexCorp .
+
+ns2:Employment a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Employment"@en ;
+    rdfs:subClassOf ns1:Relator .
+
+ns2:GlobexCorp a ns2:Employer,
+        ns2:Organization ;
+    rdfs:label "Globex Corp."@en .
+
+ns2:Person a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns2:RightToSalary ns2:DutyToPaySalary ns2:DutyToWork ns2:RightToLabor ) .
+

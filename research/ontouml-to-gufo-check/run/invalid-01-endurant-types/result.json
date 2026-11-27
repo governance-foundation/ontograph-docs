@@ -1,0 +1,213 @@
+{
+  "caseRef": "invalid-01-endurant-types",
+  "checks": {
+    "allDifferencesClassified": true,
+    "deterministic": true,
+    "gufoshapes": true,
+    "gufoshapesJenaAgrees": true,
+    "idPolicy": true,
+    "isolation": true,
+    "lintClean": true,
+    "oracleEntailments": true,
+    "oracleEntailmentsRun": true,
+    "oracleQueries": true,
+    "oracleShacl": true,
+    "oracleShaclSignatures": true,
+    "owlConsistent": true,
+    "owlNoUnsatisfiable": true,
+    "rename": true,
+    "rules": true
+  },
+  "deterministic": true,
+  "diff": {
+    "extra": 47,
+    "matched": 14,
+    "missing": 6,
+    "ontographTriples": 61,
+    "reasons": {
+      "extra": {
+        "ANNOTATION": 11,
+        "INVALID-CASE-SCOPE": 24,
+        "ONTOLOGY-HEADER": 1,
+        "UFO-DERIVED-AXIOM": 11
+      },
+      "missing": {
+        "ANNOTATION": 1,
+        "INSTANCE-NOT-IN-PROSE": 3,
+        "ONTOLOGY-HEADER": 2
+      }
+    },
+    "unclassified": 0,
+    "upstreamTriples": 20
+  },
+  "expectedValid": false,
+  "gufoshapes": {
+    "conforms": false,
+    "results": [
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+        "message": "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle).",
+        "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "sourceShape": "nb002a8aa2b744efeb5d3de1fc6d5085cb35",
+        "value": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#NotConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+        "message": "Rigid and semi-rigid types can't specialize anti-rigid types.",
+        "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "sourceShape": "nb002a8aa2b744efeb5d3de1fc6d5085cb1",
+        "value": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee"
+      }
+    ],
+    "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+  },
+  "gufoshapesEnginesAgree": true,
+  "gufoshapesJena": {
+    "conforms": false,
+    "executed": true,
+    "overallStatus": "nonconformant",
+    "persistence": "persisted-reloaded",
+    "resultSignatures": [
+      [
+        "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+        "http://www.w3.org/ns/shacl#NotConstraintComponent",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee",
+        "Rigid and semi-rigid types can't specialize anti-rigid types."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+        "http://www.w3.org/ns/shacl#NotConstraintComponent",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee",
+        "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle)."
+      ]
+    ],
+    "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+    "semanticStatus": "nonconformant",
+    "tool": "shacl-sparql:apache-jena-6.2.0"
+  },
+  "idPolicyMappingConsistent": true,
+  "iriMapping": {
+    "ontograph": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#",
+    "ontologyIri": [
+      "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid",
+      "https://purl.org/nemo/gufo-examples/endurant-types-invalid#"
+    ],
+    "upstream": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#"
+  },
+  "lint": [],
+  "ontographFindings": [
+    {
+      "message": "«kind» class:manager specializes sortal «role» class:employee",
+      "ruleId": "OG-UFO-KIND-SUPERTYPE",
+      "severity": "error",
+      "sourcePointer": "/elements/25",
+      "sourceRef": "generalization:manager--employee"
+    },
+    {
+      "message": "rigid/semi-rigid «kind» class:manager specializes anti-rigid «role» class:employee",
+      "ruleId": "OG-UFO-RIGID-UNDER-ANTIRIGID",
+      "severity": "error",
+      "sourcePointer": "/elements/25",
+      "sourceRef": "generalization:manager--employee"
+    }
+  ],
+  "oracleEntailments": [
+    {
+      "claim": {
+        "expected": false,
+        "object": "http://purl.org/nemo/gufo#Role",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "oracleEntailmentsOutOfScope": [
+    {
+      "expected": true,
+      "object": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+    },
+    {
+      "expected": true,
+      "object": "http://purl.org/nemo/gufo#FunctionalComplex",
+      "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "subject": "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana"
+    }
+  ],
+  "oracleQueries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 7,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Phase\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Phase\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#PhaseMixin\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#PhaseMixin\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Role\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#RoleMixin\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#University\"}"
+      ],
+      "outOfScopeMissing": [
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person\", \"subject\": \"https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana\"}"
+      ],
+      "rows": 12
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 0,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 0
+    }
+  ],
+  "oracleShaclConforms": false,
+  "owl": {
+    "consistent": true,
+    "tool": "Pellet via owlready2 0.51",
+    "unsatisfiable": [
+      "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+    ]
+  },
+  "passed": true,
+  "referenceComparison": "not-run: no --reference-dir; the Tonto cross-check is scripts/tonto_reference_gufo_examples.py",
+  "rulesReject": true,
+  "shaclSignatureComparison": {
+    "extraInScope": [],
+    "extraOutOfScope": [],
+    "missing": [],
+    "missingExplainedUpstreamShapeDirectionality": [],
+    "ontographSignatures": 2,
+    "oracleSignatures": 2,
+    "passed": true
+  },
+  "status": "rejected",
+  "unsupportedFindings": 0,
+  "isolation": {
+    "passed": true,
+    "note": "The projector ran in an empty per-call directory. Upstream Turtle was read only after projection, for comparison."
+  }
+}

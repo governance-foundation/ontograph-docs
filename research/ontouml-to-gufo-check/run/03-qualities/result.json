@@ -1,0 +1,185 @@
+{
+  "caseRef": "03-qualities",
+  "checks": {
+    "allDifferencesClassified": true,
+    "deterministic": true,
+    "gufoshapes": true,
+    "gufoshapesJenaAgrees": true,
+    "idPolicy": true,
+    "isolation": true,
+    "lintClean": true,
+    "oracleEntailments": true,
+    "oracleEntailmentsRun": true,
+    "oracleQueries": true,
+    "oracleShacl": true,
+    "oracleShaclSignatures": true,
+    "owlConsistent": true,
+    "owlNoUnsatisfiable": true,
+    "rename": true,
+    "rules": true
+  },
+  "deterministic": true,
+  "diff": {
+    "extra": 59,
+    "matched": 81,
+    "missing": 44,
+    "ontographTriples": 140,
+    "reasons": {
+      "extra": {
+        "ANNOTATION": 18,
+        "ONTOLOGY-HEADER": 1,
+        "ONTOUML-STEREOTYPE-REQUIRED": 3,
+        "STRUCTURALLY-EQUAL": 15,
+        "UFO-DERIVED-AXIOM": 22
+      },
+      "missing": {
+        "ANNOTATION": 21,
+        "ENTAILED-BY-ONTOGRAPH": 5,
+        "ONTOLOGY-HEADER": 3,
+        "STRUCTURALLY-EQUAL": 15
+      }
+    },
+    "unclassified": 0,
+    "upstreamTriples": 125
+  },
+  "expectedValid": true,
+  "gufoshapes": {
+    "conforms": true,
+    "results": [],
+    "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+  },
+  "gufoshapesEnginesAgree": true,
+  "gufoshapesJena": {
+    "conforms": true,
+    "executed": true,
+    "overallStatus": "success",
+    "persistence": "persisted-reloaded",
+    "resultSignatures": [],
+    "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+    "semanticStatus": "conformant",
+    "tool": "shacl-sparql:apache-jena-6.2.0"
+  },
+  "idPolicyMappingConsistent": true,
+  "iriMapping": {
+    "ontograph": "https://ontograph.dev/examples/gufo-examples/qualities#",
+    "ontologyIri": [
+      "https://ontograph.dev/examples/gufo-examples/qualities",
+      "https://purl.org/nemo/gufo-examples/qualities#"
+    ],
+    "upstream": "https://purl.org/nemo/gufo-examples/qualities#"
+  },
+  "lint": [],
+  "ontographFindings": [],
+  "oracleEntailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/qualities#Gemstone1",
+        "predicate": "http://purl.org/nemo/gufo#inheresIn",
+        "subject": "https://purl.org/nemo/gufo-examples/qualities#Gemstone1Mass"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "http://purl.org/nemo/gufo#Quality",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/qualities#Gemstone1Mass"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/qualities#Painting1Color",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/qualities#Gemstone1Mass"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "oracleEntailmentsOutOfScope": [],
+  "oracleQueries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 13,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Color\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Mass\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Size\"}": "ONTOUML-STEREOTYPE-REQUIRED"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Color\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Mass\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/qualities#Size\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 16
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 5,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 5
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 1,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "reified-rgb-values",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 1
+    }
+  ],
+  "oracleShaclConforms": true,
+  "owl": {
+    "consistent": true,
+    "tool": "Pellet via owlready2 0.51",
+    "unsatisfiable": []
+  },
+  "passed": true,
+  "referenceComparison": "not-run: no --reference-dir; the Tonto cross-check is scripts/tonto_reference_gufo_examples.py",
+  "rulesAccept": true,
+  "shaclSignatureComparison": {
+    "extraInScope": [],
+    "extraOutOfScope": [],
+    "missing": [],
+    "missingExplainedUpstreamShapeDirectionality": [],
+    "ontographSignatures": 0,
+    "oracleSignatures": 0,
+    "passed": true
+  },
+  "status": "projected",
+  "unsupportedFindings": 0,
+  "isolation": {
+    "passed": true,
+    "note": "The projector ran in an empty per-call directory. Upstream Turtle was read only after projection, for comparison."
+  }
+}

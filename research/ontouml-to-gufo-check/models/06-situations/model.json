@@ -1,0 +1,603 @@
+{
+  "id": "project:gufo-example-situations",
+  "created": "2026-11-25",
+  "modified": null,
+  "name": {
+    "en": "gUFO example 06: situations"
+  },
+  "alternativeNames": [],
+  "description": {
+    "en": "OntoUML model authored by OntoGraph from the prose of the gUFO usage example page (f412254); not published by NEMO; pending NEMO review."
+  },
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "type": "Project",
+  "elements": [
+    {
+      "id": "class:patient",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Patient"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:overweight-person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "OverweightPerson"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phase",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:febrile-patient",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "FebrilePatient"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phase",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "generalization:overweight-person--patient",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:patient",
+      "specific": "class:overweight-person"
+    },
+    {
+      "id": "generalization:febrile-patient--patient",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:patient",
+      "specific": "class:febrile-patient"
+    },
+    {
+      "id": "class:weight",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Weight"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quality",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "quality"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:weight-of:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:weight"
+    },
+    {
+      "id": "property:weight-of:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:patient"
+    },
+    {
+      "id": "relation:weight-of",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "characterization",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:weight-of:source",
+        "property:weight-of:target"
+      ]
+    },
+    {
+      "id": "class:double",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "double"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "datatype",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:heart",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Heart"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:heart-of:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:heart"
+    },
+    {
+      "id": "property:heart-of:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "COMPOSITE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:patient"
+    },
+    {
+      "id": "relation:heart-of",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "componentOf",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:heart-of:source",
+        "property:heart-of:target"
+      ]
+    },
+    {
+      "id": "class:heart-transplant-surgery",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "HeartTransplantSurgery"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "event",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "event"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:dental-crown",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "DentalCrown"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:porcelain-quantity",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "PorcelainQuantity"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quantity",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "quantity"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:composite-resin-quantity",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "CompositeResinQuantity"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quantity",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "quantity"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:heavier-than:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "heavierPatient"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:patient"
+    },
+    {
+      "id": "property:heavier-than:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "lighterPatient"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:patient"
+    },
+    {
+      "id": "relation:heavier-than",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "heavierThan"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "comparative",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:heavier-than:source",
+        "property:heavier-than:target"
+      ]
+    },
+    {
+      "id": "property:heavier-than-derivation:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "relation:heavier-than"
+    },
+    {
+      "id": "property:heavier-than-derivation:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:weight"
+    },
+    {
+      "id": "relation:heavier-than-derivation",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "derivation",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:heavier-than-derivation:source",
+        "property:heavier-than-derivation:target"
+      ]
+    },
+    {
+      "id": "class:sepsis-alert",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "SepsisAlert"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "event",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "event"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    }
+  ],
+  "root": null,
+  "publisher": null,
+  "designedForTasks": [],
+  "license": null,
+  "accessRights": [],
+  "themes": [],
+  "contexts": [],
+  "ontologyTypes": [],
+  "representationStyle": null,
+  "namespace": "https://ontograph.dev/examples/gufo-examples/situations#",
+  "landingPages": [],
+  "sources": [],
+  "bibliographicCitations": [],
+  "keywords": [],
+  "acronyms": [],
+  "languages": [
+    "en"
+  ]
+}

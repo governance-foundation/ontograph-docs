@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.report.v1",
+  "status": "rejected",
+  "ruleEnforcement": "enforced",
+  "ruleSet": "ontograph.ontouml.ufo-rules.v1",
+  "profileRef": "ontograph.gufo.ontouml-examples.v1",
+  "baseIri": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#",
+  "findings": [
+    {
+      "justification": "An ultimate sortal (kind) supplies the principle of identity of its instances; it cannot specialize another sortal, which would give its instances a second identity principle (Guizzardi 2005; gufoshapes:KindShape).",
+      "message": "«kind» class:manager specializes sortal «role» class:employee",
+      "relatedRefs": [
+        "class:manager",
+        "class:employee"
+      ],
+      "ruleId": "OG-UFO-KIND-SUPERTYPE",
+      "severity": "error",
+      "sourcePointer": "/elements/25",
+      "sourceRef": "generalization:manager--employee"
+    },
+    {
+      "justification": "A rigid or semi-rigid type cannot specialize an anti-rigid type: if every instance of the specific type is necessarily so, it would necessarily instantiate the contingent general type (Guizzardi 2005; gufoshapes:RigidOrSemiRigidShape).",
+      "message": "rigid/semi-rigid «kind» class:manager specializes anti-rigid «role» class:employee",
+      "relatedRefs": [
+        "class:manager",
+        "class:employee"
+      ],
+      "ruleId": "OG-UFO-RIGID-UNDER-ANTIRIGID",
+      "severity": "error",
+      "sourcePointer": "/elements/25",
+      "sourceRef": "generalization:manager--employee"
+    }
+  ],
+  "modelDigest": "sha256:a33e5aec04d622dc39c548911ac9dacda2977fa84d5ad24f9f8ef6502d8be8d5",
+  "instanceDigest": "sha256:0284624e4963e7f25ef181419306fbef8156e4cbf611b33ad8dd28810f16da65",
+  "graphDigest": null,
+  "tripleCount": 0,
+  "limits": [
+    "Instance data comes from an OntoGraph-specific file; OntoUML has no instance level.",
+    "Classifications by anti-rigid types (roles, phases, role/phase mixins) are snapshot rdf:type assertions with no temporal qualification."
+  ]
+}

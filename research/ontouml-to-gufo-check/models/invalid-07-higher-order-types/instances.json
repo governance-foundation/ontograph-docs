@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-higher-order-types-invalid",
+  "individuals": [
+    {
+      "id": "individual:kesi",
+      "name": "Kesi",
+      "classRefs": [
+        "class:lion"
+      ]
+    },
+    {
+      "id": "individual:nia",
+      "name": "Nia",
+      "classRefs": [
+        "class:hyena"
+      ]
+    },
+    {
+      "id": "individual:tembo",
+      "name": "Tembo",
+      "classRefs": [
+        "class:elephant"
+      ]
+    },
+    {
+      "id": "individual:rajah",
+      "name": "Rajah",
+      "classRefs": [
+        "class:lion",
+        "class:tiger"
+      ]
+    }
+  ],
+  "links": [],
+  "attributeValues": [
+    {
+      "id": "value:001",
+      "subjectRef": "class:lion",
+      "attributeRef": "property:has-conservation-status",
+      "valueRef": "literal:endangered"
+    },
+    {
+      "id": "value:002",
+      "subjectRef": "class:hyena",
+      "attributeRef": "property:has-conservation-status",
+      "valueRef": "literal:least-concern"
+    },
+    {
+      "id": "value:003",
+      "subjectRef": "class:elephant",
+      "attributeRef": "property:has-conservation-status",
+      "valueRef": "literal:vulnerable"
+    }
+  ]
+}

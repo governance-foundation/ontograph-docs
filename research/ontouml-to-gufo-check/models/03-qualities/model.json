@@ -1,0 +1,703 @@
+{
+  "id": "project:gufo-example-qualities",
+  "created": "2026-11-25",
+  "modified": null,
+  "name": {
+    "en": "gUFO example 03: qualities and quality values"
+  },
+  "alternativeNames": [],
+  "description": {
+    "en": "OntoUML model authored by OntoGraph from the prose of the gUFO usage example page (f412254); not published by NEMO; pending NEMO review."
+  },
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "type": "Project",
+  "elements": [
+    {
+      "id": "class:gemstone",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Gemstone"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:tshirt",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "TShirt"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:painting",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Painting"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:double",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "double"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "datatype",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:non-negative-integer",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "nonNegativeInteger"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "datatype",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:mass",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Mass"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quality",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:mass-in-grams"
+      ],
+      "literals": [],
+      "restrictedTo": [
+        "quality"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:mass-of:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:mass"
+    },
+    {
+      "id": "property:mass-of:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": "1",
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:gemstone"
+    },
+    {
+      "id": "relation:mass-of",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "massOf"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "characterization",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:mass-of:source",
+        "property:mass-of:target"
+      ]
+    },
+    {
+      "id": "property:mass-in-grams",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "massInGrams"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:double"
+    },
+    {
+      "id": "literal:s",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "S"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "literal:m",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "M"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "literal:l",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "L"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "literal:xl",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "XL"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "class:shirt-size",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "ShirtSize"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "enumeration",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [
+        "literal:s",
+        "literal:m",
+        "literal:l",
+        "literal:xl"
+      ],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:size",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Size"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quality",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:has-size-value"
+      ],
+      "literals": [],
+      "restrictedTo": [
+        "quality"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:size-of:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:size"
+    },
+    {
+      "id": "property:size-of:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:tshirt"
+    },
+    {
+      "id": "relation:size-of",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "sizeOf"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "characterization",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:size-of:source",
+        "property:size-of:target"
+      ]
+    },
+    {
+      "id": "property:has-size-value",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasSizeValue"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:shirt-size"
+    },
+    {
+      "id": "class:color-value-in-rgb",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "ColorValueInRGB"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "datatype",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:has-red-value-component",
+        "property:has-green-value-component",
+        "property:has-blue-value-component"
+      ],
+      "literals": [],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:has-red-value-component",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasRedValueComponent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:non-negative-integer"
+    },
+    {
+      "id": "property:has-green-value-component",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasGreenValueComponent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:non-negative-integer"
+    },
+    {
+      "id": "property:has-blue-value-component",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasBlueValueComponent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:non-negative-integer"
+    },
+    {
+      "id": "class:color",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Color"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "quality",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:has-color-value-in-rgb"
+      ],
+      "literals": [],
+      "restrictedTo": [
+        "quality"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:color-of:source",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:color"
+    },
+    {
+      "id": "property:color-of:target",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": "NONE",
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:painting"
+    },
+    {
+      "id": "relation:color-of",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "colorOf"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "BinaryRelation",
+      "stereotype": "characterization",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:color-of:source",
+        "property:color-of:target"
+      ]
+    },
+    {
+      "id": "property:has-color-value-in-rgb",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasColorValueInRGB"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:color-value-in-rgb"
+    }
+  ],
+  "root": null,
+  "publisher": null,
+  "designedForTasks": [],
+  "license": null,
+  "accessRights": [],
+  "themes": [],
+  "contexts": [],
+  "ontologyTypes": [],
+  "representationStyle": null,
+  "namespace": "https://ontograph.dev/examples/gufo-examples/qualities#",
+  "landingPages": [],
+  "sources": [],
+  "bibliographicCitations": [],
+  "keywords": [],
+  "acronyms": [],
+  "languages": [
+    "en"
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "extra": 47,
+  "matched": 14,
+  "missing": 6,
+  "ontographTriples": 61,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 11,
+      "INVALID-CASE-SCOPE": 24,
+      "ONTOLOGY-HEADER": 1,
+      "UFO-DERIVED-AXIOM": 11
+    },
+    "missing": {
+      "ANNOTATION": 1,
+      "INSTANCE-NOT-IN-PROSE": 3,
+      "ONTOLOGY-HEADER": 2
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Deliberately invalid variant of example 01, used by the test suite to show that OWL alone does not catch sortality mistakes that the gUFO SHACL shapes do catch.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Dana>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Dana\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#PhaseMixin>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ActiveAgent\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Phase>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Adult\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Agent\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Phase>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Child\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#RoleMixin>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Customer\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Employee\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#PhaseMixin>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"InactiveAgent\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Organization\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Person\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Role>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Student\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#University>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#University>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#University>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"University\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#University>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cbb46b4b58a7"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb17f3da55f5",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb17f3da55f5",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb46b4b58a7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb46b4b58a7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb17f3da55f5"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cb0"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 20
+}

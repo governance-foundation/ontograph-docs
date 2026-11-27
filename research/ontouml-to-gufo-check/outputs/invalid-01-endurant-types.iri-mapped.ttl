@@ -1,0 +1,73 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#> a owl:Ontology ;
+    owl:imports <http://purl.org/nemo/gufo#> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Adult> a <http://purl.org/nemo/gufo#Phase>,
+        owl:Class ;
+    rdfs:label "Adult"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Customer> a <http://purl.org/nemo/gufo#RoleMixin>,
+        owl:Class ;
+    rdfs:label "Customer"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#InactiveAgent> a <http://purl.org/nemo/gufo#PhaseMixin>,
+        owl:Class ;
+    rdfs:label "InactiveAgent"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Student> a <http://purl.org/nemo/gufo#Role>,
+        owl:Class ;
+    rdfs:label "Student"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#University> a <http://purl.org/nemo/gufo#SubKind>,
+        owl:Class ;
+    rdfs:label "University"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#ActiveAgent> a <http://purl.org/nemo/gufo#PhaseMixin>,
+        owl:Class ;
+    rdfs:label "ActiveAgent"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Child> a <http://purl.org/nemo/gufo#Phase>,
+        owl:Class ;
+    rdfs:label "Child"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee> a <http://purl.org/nemo/gufo#Role>,
+        owl:Class ;
+    rdfs:label "Employee"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager> a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Manager"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Employee> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization> a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> ;
+    owl:disjointWith <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> a <http://purl.org/nemo/gufo#Category>,
+        owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+<https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Agent> .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Person> <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Organization> <https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager> ) .
+

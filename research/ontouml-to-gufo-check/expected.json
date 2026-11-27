@@ -1,0 +1,584 @@
+{
+  "schemaVersion": "ontograph.ontouml-to-gufo-check.expected.v1",
+  "description": "Expected results for the portable re-check of OntoGraph's OntoUML-to-gUFO projection of the nine gUFO usage examples. Numbers come from the retained run completed 27 November 2026, 07:05:47 Australia/Sydney. The portable script does not run OntoGraph, Jena, or Pellet.",
+  "recordedRun": {
+    "completedAt": "2026-11-27T07:05:47+11:00",
+    "timeZone": "Australia/Sydney",
+    "binarySha256": "sha256:485faa176b2edec1000eedb9fbec0f9c51c354e787fe71d86610d867c12bbc3e",
+    "builtFromCommit": "a0f9f3e30f2fd42d056c1601819d4f008826cd86",
+    "mergedToDevelop": "ec03a119daf83e50a9dee0d6f6765238a6b9dbc8",
+    "gufoPin": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "gufoshapes": {
+      "sourceRepository": "https://github.com/nemo-ufes/gufo",
+      "commit": "f4122544133544eb4c6c467ba316302ab20b754a",
+      "pathInPin": "examples/common/gufoshapes.ttl",
+      "sha256": "84b56419cca76dd6b91ff368061706915f73ff75726b0f2a20a48a9d7b100033",
+      "note": "This is gufoshapes as shipped inside the gUFO pin, not the separate nemo-ufes/gufoshapes repository pin used in the October 2026 Turtle round-trip check."
+    },
+    "tools": {
+      "pyshacl": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)",
+      "jena": "shacl-sparql:apache-jena-6.2.0",
+      "jenaRuntime": "java version \"21.0.7\" 2025-04-15 LTS",
+      "pellet": "Pellet via owlready2 0.51"
+    }
+  },
+  "gufo": {
+    "repository": "https://github.com/nemo-ufes/gufo",
+    "commit": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "file": "vendor/gufo.ttl",
+    "sha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66"
+  },
+  "gufoshapes": {
+    "sourceRepository": "https://github.com/nemo-ufes/gufo",
+    "commit": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "pathInPin": "examples/common/gufoshapes.ttl",
+    "file": "vendor/gufoshapes.ttl",
+    "sha256": "84b56419cca76dd6b91ff368061706915f73ff75726b0f2a20a48a9d7b100033"
+  },
+  "cases": [
+    {
+      "id": "01-endurant-types",
+      "title": "Endurant types (people & organisations)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/01-endurant-types/index.html",
+      "model": "models/01-endurant-types/model.json",
+      "modelSha256": "94d702f46f0feb22a951e1b85b38276c6c8e0f1777225ded2bfacb0055efb033",
+      "instances": "models/01-endurant-types/instances.json",
+      "instancesSha256": "4be484831d3ba225183449a85db20b5d10d27dfab19d51f4323e5158b16f5329",
+      "output": "outputs/01-endurant-types.ttl",
+      "outputSha256": "060186f0e029eea0c77bbff6a6ca5546d226a310f234011e64edb36b14a06eb5",
+      "iriMappedOutput": "outputs/01-endurant-types.iri-mapped.ttl",
+      "iriMappedOutputSha256": "5d72ea43f94388855b3694d7925438cf98e70d73d2592fce320fe870147968a5",
+      "comparison": "comparison/01-endurant-types.ttl",
+      "comparisonSha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+      "diff": "diffs/01-endurant-types.diff.json",
+      "findings": "findings/01-endurant-types.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 5,
+        "matched": 57,
+        "missing": 32,
+        "ontographTriples": 62,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 4,
+            "ONTOLOGY-HEADER": 1
+          },
+          "missing": {
+            "ANNOTATION": 21,
+            "INSTANCE-NOT-IN-PROSE": 8,
+            "ONTOLOGY-HEADER": 3
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 89
+      }
+    },
+    {
+      "id": "02-objects-and-parts",
+      "title": "Objects and their parts (car fleet)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/02-objects-and-parts/index.html",
+      "model": "models/02-objects-and-parts/model.json",
+      "modelSha256": "163e48a1d8ffe08b21ebefccbdac58d29ef6d8efc3542a21f7b74ee79b29230e",
+      "instances": "models/02-objects-and-parts/instances.json",
+      "instancesSha256": "9dfa6fa5d759f4e4dcd6577e4e7a3408d49f48fb4081467dd0110cdb5186edcb",
+      "output": "outputs/02-objects-and-parts.ttl",
+      "outputSha256": "353f2dda06689ec1ff0041699414bd585c63ef46ae0dadd4f145c8a740a60b24",
+      "iriMappedOutput": "outputs/02-objects-and-parts.iri-mapped.ttl",
+      "iriMappedOutputSha256": "d24e21504b414e429ce7311230593a0d2eaee90a029a7216c8d9ff71333151f3",
+      "comparison": "comparison/02-objects-and-parts.ttl",
+      "comparisonSha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+      "diff": "diffs/02-objects-and-parts.diff.json",
+      "findings": "findings/02-objects-and-parts.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 52,
+        "matched": 95,
+        "missing": 58,
+        "ontographTriples": 147,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 21,
+            "AXIOM-FORM-DIFFERENCE": 16,
+            "ONTOLOGY-HEADER": 1,
+            "UFO-DERIVED-AXIOM": 14
+          },
+          "missing": {
+            "ANNOTATION": 37,
+            "AXIOM-FORM-DIFFERENCE": 12,
+            "INSTANCE-NOT-IN-PROSE": 6,
+            "ONTOLOGY-HEADER": 3
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 153
+      }
+    },
+    {
+      "id": "03-qualities",
+      "title": "Qualities and quality values (retail products)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/03-qualities/index.html",
+      "model": "models/03-qualities/model.json",
+      "modelSha256": "95514ad8a20368c5704701362232dd47723679cb5ea7c1c0897e38e856b192e8",
+      "instances": "models/03-qualities/instances.json",
+      "instancesSha256": "e0c77780805982de0a7cbb92cea72193898b1af299f833d9da1dfb50e726c9fd",
+      "output": "outputs/03-qualities.ttl",
+      "outputSha256": "33519d1fa0a021eee6d41697f749d4dd6ad7956b293e3a85fc969b9dc758d2cd",
+      "iriMappedOutput": "outputs/03-qualities.iri-mapped.ttl",
+      "iriMappedOutputSha256": "90084e1a8123188a62a4a5d4be5a7aadd59faa5673688517c2f016a116bb3500",
+      "comparison": "comparison/03-qualities.ttl",
+      "comparisonSha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+      "diff": "diffs/03-qualities.diff.json",
+      "findings": "findings/03-qualities.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 59,
+        "matched": 81,
+        "missing": 44,
+        "ontographTriples": 140,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 18,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 3,
+            "STRUCTURALLY-EQUAL": 15,
+            "UFO-DERIVED-AXIOM": 22
+          },
+          "missing": {
+            "ANNOTATION": 21,
+            "ENTAILED-BY-ONTOGRAPH": 5,
+            "ONTOLOGY-HEADER": 3,
+            "STRUCTURALLY-EQUAL": 15
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 125
+      }
+    },
+    {
+      "id": "04-relators",
+      "title": "Relators and extrinsic aspects (employment & marriage)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/04-relators/index.html",
+      "model": "models/04-relators/model.json",
+      "modelSha256": "6cda73a3f0193375955d654445fe73459c70b9d464ff5958faa8fa201a31a01d",
+      "instances": "models/04-relators/instances.json",
+      "instancesSha256": "0dfdca6fd5490af2188ca687379274e7603c3992e54d5b66e329e437543d89be",
+      "output": "outputs/04-relators.ttl",
+      "outputSha256": "c9241e090cd7eb0614a4cfbe988c4c1043f890938e058496e1d77409df79c45e",
+      "iriMappedOutput": "outputs/04-relators.iri-mapped.ttl",
+      "iriMappedOutputSha256": "98a842c350bc5b72aedb491cb0d85f6f7143dc4c3b6f59a38bbbdd93304ef8d8",
+      "comparison": "comparison/04-relators.ttl",
+      "comparisonSha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+      "diff": "diffs/04-relators.diff.json",
+      "findings": "findings/04-relators.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 36,
+        "matched": 80,
+        "missing": 24,
+        "ontographTriples": 116,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 13,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 6,
+            "UFO-DERIVED-AXIOM": 16
+          },
+          "missing": {
+            "ANNOTATION": 17,
+            "ENTAILED-BY-ONTOGRAPH": 4,
+            "ONTOLOGY-HEADER": 3
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 104
+      }
+    },
+    {
+      "id": "05-events",
+      "title": "Events (a football tournament)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/05-events/index.html",
+      "model": "models/05-events/model.json",
+      "modelSha256": "858a08275dd53f829d2590faf4da04bd6d7d012d6861aa9ee00b3647c1d6b95b",
+      "instances": "models/05-events/instances.json",
+      "instancesSha256": "f635bfa16d32b4276c73f98a9c4ee28a0398bb6cf8f83adb5f5616fbce103686",
+      "output": "outputs/05-events.ttl",
+      "outputSha256": "6c71b528d20a4a4da33fef240ae03cdd55f54913a7deb313f6119ee296c46e5f",
+      "iriMappedOutput": "outputs/05-events.iri-mapped.ttl",
+      "iriMappedOutputSha256": "92f0926f82df13a50becae549308b8818519ca001420772cb9761691fc0b0d3f",
+      "comparison": "comparison/05-events.ttl",
+      "comparisonSha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+      "diff": "diffs/05-events.diff.json",
+      "findings": "findings/05-events.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 25,
+        "matched": 61,
+        "missing": 28,
+        "ontographTriples": 86,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 18,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 1,
+            "REVIEWED-MODELLING-DIFFERENCE": 4,
+            "UFO-DERIVED-AXIOM": 1
+          },
+          "missing": {
+            "ANNOTATION": 23,
+            "ENTAILED-BY-ONTOGRAPH": 1,
+            "ONTOLOGY-HEADER": 3,
+            "REVIEWED-MODELLING-DIFFERENCE": 1
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 89
+      }
+    },
+    {
+      "id": "06-situations",
+      "title": "Situations (a hospital stay)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/06-situations/index.html",
+      "model": "models/06-situations/model.json",
+      "modelSha256": "8f71f87a58c0b4e01773dad181b2ba308c0fa4c1fd7f5674fcdd71c82062fcb5",
+      "instances": "models/06-situations/instances.json",
+      "instancesSha256": "41b602a74088d31a241612bf6dd31bca36094d09e75eda8577e9a52a643b79c0",
+      "output": "outputs/06-situations.ttl",
+      "outputSha256": "1a981dbbf0a7b73757a512ada9df685f21b83978cf2b7f8dc86a31716508d9e2",
+      "iriMappedOutput": "outputs/06-situations.iri-mapped.ttl",
+      "iriMappedOutputSha256": "6d13c4374b589096c395002b8f26e588c2d1f36c2027b1c0a2579528a53fb4ab",
+      "comparison": "comparison/06-situations.ttl",
+      "comparisonSha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+      "diff": "diffs/06-situations.diff.json",
+      "findings": "findings/06-situations.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 39,
+        "matched": 97,
+        "missing": 40,
+        "ontographTriples": 136,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 28,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 1,
+            "UFO-DERIVED-AXIOM": 9
+          },
+          "missing": {
+            "ANNOTATION": 36,
+            "ONTOLOGY-HEADER": 3,
+            "REVIEWED-MODELLING-DIFFERENCE": 1
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 137
+      }
+    },
+    {
+      "id": "07-higher-order-types",
+      "title": "Higher-order types (animal species)",
+      "expectedValid": true,
+      "upstreamPage": "https://nemo-ufes.github.io/gufo/examples/07-higher-order-types/index.html",
+      "model": "models/07-higher-order-types/model.json",
+      "modelSha256": "1afc227db95d278baf60f40648bb578b453bb1ade8655095f7a36981facb6bee",
+      "instances": "models/07-higher-order-types/instances.json",
+      "instancesSha256": "0553df15bcd48fc385035e65606dc005dc743179d6036f65954e6c7f9e6c9489",
+      "output": "outputs/07-higher-order-types.ttl",
+      "outputSha256": "bdd5fc57dc886ba9ea09c6f4ce814359c96d17992ba64b457fa63998bccedb5b",
+      "iriMappedOutput": "outputs/07-higher-order-types.iri-mapped.ttl",
+      "iriMappedOutputSha256": "1f84bb60a7e034c5d8c720122db58d5b2b7fa65696406eced8ffb458ded4bd07",
+      "comparison": "comparison/07-higher-order-types.ttl",
+      "comparisonSha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+      "diff": "diffs/07-higher-order-types.diff.json",
+      "findings": "findings/07-higher-order-types.json",
+      "expectedUfoFindingCount": 0,
+      "expectedUfoFindingRuleIds": [],
+      "expectedConforms": true,
+      "expectedViolations": [],
+      "recordedJenaConforms": true,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 8,
+        "matched": 56,
+        "missing": 10,
+        "ontographTriples": 64,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 4,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 3
+          },
+          "missing": {
+            "ANNOTATION": 7,
+            "ONTOLOGY-HEADER": 3
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 66
+      }
+    },
+    {
+      "id": "invalid-01-endurant-types",
+      "title": "Endurant types, invalid variant",
+      "expectedValid": false,
+      "upstreamPage": "https://github.com/nemo-ufes/gufo/blob/f4122544133544eb4c6c467ba316302ab20b754a/examples/01-endurant-types/invalid-example.ttl",
+      "model": "models/invalid-01-endurant-types/model.json",
+      "modelSha256": "a33e5aec04d622dc39c548911ac9dacda2977fa84d5ad24f9f8ef6502d8be8d5",
+      "instances": "models/invalid-01-endurant-types/instances.json",
+      "instancesSha256": "0284624e4963e7f25ef181419306fbef8156e4cbf611b33ad8dd28810f16da65",
+      "output": "outputs/invalid-01-endurant-types.ttl",
+      "outputSha256": "7c3240257d37bbc7ab3140eb0de90d0415c1db11a6d8c196631fef05f8fee367",
+      "iriMappedOutput": "outputs/invalid-01-endurant-types.iri-mapped.ttl",
+      "iriMappedOutputSha256": "7d763a15db6c79a6dd7db68c8a28537f2956c72a184e7327a8ab972ab10aedcc",
+      "comparison": "comparison/invalid-01-endurant-types.ttl",
+      "comparisonSha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+      "diff": "diffs/invalid-01-endurant-types.diff.json",
+      "findings": "findings/invalid-01-endurant-types.json",
+      "expectedUfoFindingCount": 2,
+      "expectedUfoFindingRuleIds": [
+        "OG-UFO-KIND-SUPERTYPE",
+        "OG-UFO-RIGID-UNDER-ANTIRIGID"
+      ],
+      "expectedConforms": false,
+      "expectedViolations": [
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+          "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "value": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee",
+          "message": "Kinds cannot specialize sortal types (i.e., types that already set or inherit an identity principle)."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Manager",
+          "resultPath": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "value": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#Employee",
+          "message": "Rigid and semi-rigid types can't specialize anti-rigid types."
+        }
+      ],
+      "recordedJenaConforms": false,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [
+        "https://purl.org/nemo/gufo-examples/endurant-types-invalid#Manager"
+      ],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 47,
+        "matched": 14,
+        "missing": 6,
+        "ontographTriples": 61,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 11,
+            "INVALID-CASE-SCOPE": 24,
+            "ONTOLOGY-HEADER": 1,
+            "UFO-DERIVED-AXIOM": 11
+          },
+          "missing": {
+            "ANNOTATION": 1,
+            "INSTANCE-NOT-IN-PROSE": 3,
+            "ONTOLOGY-HEADER": 2
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 20
+      }
+    },
+    {
+      "id": "invalid-07-higher-order-types",
+      "title": "Higher-order types, invalid variant",
+      "expectedValid": false,
+      "upstreamPage": "https://github.com/nemo-ufes/gufo/blob/f4122544133544eb4c6c467ba316302ab20b754a/examples/07-higher-order-types/invalid-example.ttl",
+      "model": "models/invalid-07-higher-order-types/model.json",
+      "modelSha256": "69a053a00fa547ec19ac54aad2155d5c642972d05a07b003f85d5cbb53882aeb",
+      "instances": "models/invalid-07-higher-order-types/instances.json",
+      "instancesSha256": "4cef404acebedf18d3389efbf5b6f60180f808abb8c847da87e2a7bb2b58192c",
+      "output": "outputs/invalid-07-higher-order-types.ttl",
+      "outputSha256": "11999f2d5032e20462ea7fe94686421667cf563ee159bb537795bb944789cb19",
+      "iriMappedOutput": "outputs/invalid-07-higher-order-types.iri-mapped.ttl",
+      "iriMappedOutputSha256": "88d442ab136e0b40c23d3b5837d0006e49328bfcd9f0d0d3ba954e033aaa4b53",
+      "comparison": "comparison/invalid-07-higher-order-types.ttl",
+      "comparisonSha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+      "diff": "diffs/invalid-07-higher-order-types.diff.json",
+      "findings": "findings/invalid-07-higher-order-types.json",
+      "expectedUfoFindingCount": 1,
+      "expectedUfoFindingRuleIds": [
+        "OG-UFO-PARTITION-DISJOINT"
+      ],
+      "expectedConforms": false,
+      "expectedViolations": [
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        },
+        {
+          "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "resultPath": "None",
+          "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+          "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+        }
+      ],
+      "recordedJenaConforms": false,
+      "recordedJenaAgrees": true,
+      "recordedOwlConsistent": true,
+      "recordedOwlUnsatisfiable": [],
+      "recordedOwlTool": "Pellet via owlready2 0.51",
+      "diffSummary": {
+        "extra": 52,
+        "matched": 21,
+        "missing": 4,
+        "ontographTriples": 73,
+        "reasons": {
+          "extra": {
+            "ANNOTATION": 13,
+            "INVALID-CASE-SCOPE": 26,
+            "ONTOLOGY-HEADER": 1,
+            "ONTOUML-STEREOTYPE-REQUIRED": 3,
+            "REVIEWED-MODELLING-DIFFERENCE": 1,
+            "UFO-DERIVED-AXIOM": 8
+          },
+          "missing": {
+            "ANNOTATION": 1,
+            "AXIOM-FORM-DIFFERENCE": 1,
+            "ONTOLOGY-HEADER": 2
+          }
+        },
+        "unclassified": 0,
+        "upstreamTriples": 25
+      }
+    }
+  ],
+  "extensions": {
+    "note": "Not part of the acceptance suite. An OntoGraph extension of example 05 that records temporal order as ogx:before, because gUFO has no before.",
+    "extensionShapes": {
+      "file": "vendor/ontograph-temporal-shapes.ttl",
+      "sha256": "23b9d460980837fd64aa4bf3834937def104c5af2d6338ae87c3216c45eb935d"
+    },
+    "cases": [
+      {
+        "id": "05-events-ordering-ext",
+        "expectedValid": true,
+        "extends": "05-events",
+        "model": "extensions/05-events-ordering-ext/model.json",
+        "modelSha256": "5c6211105404f436a56b4067b284533ee4d57c311c55a24ed4f8175131c1a57b",
+        "instances": "extensions/05-events-ordering-ext/instances.json",
+        "instancesSha256": "3266dc3dc3729ea21b855a0fb2f1bbf3bae09481264457cff1ef28f08092323c",
+        "output": "extensions/05-events-ordering-ext/output.ttl",
+        "outputSha256": "4d911c22868dee85fcbe232ddff62e4af64c198b9dfa7484e99cd2cec38b4cd0",
+        "expectedGufoshapesConforms": true,
+        "expectedExtensionShaclConforms": true,
+        "expectedExtensionViolations": [],
+        "recordedOwlConsistent": true,
+        "recordedShaclJenaAgrees": true,
+        "recordedAcceptanceCasePreserved": true
+      },
+      {
+        "id": "invalid-05-events-ordering-ext",
+        "expectedValid": false,
+        "extends": "05-events",
+        "model": "extensions/invalid-05-events-ordering-ext/model.json",
+        "modelSha256": "5c6211105404f436a56b4067b284533ee4d57c311c55a24ed4f8175131c1a57b",
+        "instances": "extensions/invalid-05-events-ordering-ext/instances.json",
+        "instancesSha256": "1d9472d8ba90e611335c61fadf5b29355313d0322d7a0db41adbafd7d9bdab63",
+        "output": "extensions/invalid-05-events-ordering-ext/output.ttl",
+        "outputSha256": "43d1f8d7602452d7be9cd104a31cd58b9bad30b2843aff1f445ede27da9e044d",
+        "expectedGufoshapesConforms": true,
+        "expectedExtensionShaclConforms": false,
+        "expectedExtensionViolations": [
+          {
+            "focusNode": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "resultPath": "None",
+            "value": "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "message": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2 occurs before https://ontograph.dev/examples/gufo-examples/events#Final2026, but its dates do not: it begins or ends (2026-07-21) after https://ontograph.dev/examples/gufo-examples/events#Final2026 begins (2026-07-19).",
+            "sourceShape": "https://ontograph.dev/ns/gufo-ext-shapes#BeforeDatesShape",
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          }
+        ],
+        "recordedOwlConsistent": true,
+        "recordedShaclJenaAgrees": true,
+        "recordedAcceptanceCasePreserved": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "extra": 52,
+  "matched": 21,
+  "missing": 4,
+  "ontographTriples": 73,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 13,
+      "INVALID-CASE-SCOPE": 26,
+      "ONTOLOGY-HEADER": 1,
+      "ONTOUML-STEREOTYPE-REQUIRED": 3,
+      "REVIEWED-MODELLING-DIFFERENCE": 1,
+      "UFO-DERIVED-AXIOM": 8
+    },
+    "missing": {
+      "ANNOTATION": 1,
+      "AXIOM-FORM-DIFFERENCE": 1,
+      "ONTOLOGY-HEADER": 2
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Deliberately invalid variant of example 07, used by the test suite to show that OWL alone does not catch a missing disjointness declaration between partition members that gufoshapes does catch.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Rajah>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Perfectly fine as far as OWL is concerned: an individual that is both a lion and a tiger, because nothing declares the two disjoint.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Animal\"@en"
+      ]
+    },
+    {
+      "note": "OntoUML has no way to add a member to a generalization set while omitting only the OWL disjointness, so the pitfall is modelled as a second, non-disjoint generalization set {Tiger} with the same categorizer. Under the profile rule (disjoint+complete -> gufo:partitions, otherwise gufo:categorizes) that set yields gufo:categorizes. Upstream states only gufo:partitions. The extra triple is entailment-neutral for the pitfall (gufo:partitions already implies the categorization), and it is not what the rule OG-UFO-PARTITION-DISJOINT or gufoshapes detect. Pending NEMO review of the OntoUML encoding of this pitfall.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies>",
+        "<http://purl.org/nemo/gufo#categorizes>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"AnimalSpecies\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ConservationStatus\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>",
+        "<http://www.w3.org/2002/07/owl#equivalentClass>",
+        "_:cba699859d01"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Elephant\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Vulnerable>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Endangered>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Endangered>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Endangered\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Hyena\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#LeastConcern>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Kesi>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Kesi>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Kesi\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#LeastConcern>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#LeastConcern>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"LeastConcern\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Lion\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Endangered>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Nia>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Nia>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Nia\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tembo>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tembo>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Tembo\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#SubKind>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Vulnerable>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Vulnerable>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Vulnerable\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#ObjectProperty>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#domain>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hasConservationStatus\"@en"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#hasConservationStatus>",
+        "<http://www.w3.org/2000/01/rdf-schema#range>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Vulnerable>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb17caa3f7e2"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1293420ebd",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1293420ebd",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb17caa3f7e2",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#LeastConcern>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb17caa3f7e2",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb36a76b8db4",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb36a76b8db4",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb50e0e3f71a"
+      ]
+    },
+    {
+      "note": "names a term the minimal upstream invalid excerpt does not contain",
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb4cbae1bfcb",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Endangered>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cb4cbae1bfcb",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb0"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb50e0e3f71a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb50e0e3f71a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb1293420ebd"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cba699859d01",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INVALID-CASE-SCOPE",
+      "side": "extra",
+      "triple": [
+        "_:cba699859d01",
+        "<http://www.w3.org/2002/07/owl#oneOf>",
+        "_:cb4cbae1bfcb"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cb36a76b8db4"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 25
+}

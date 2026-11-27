@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-situations",
+  "individuals": [
+    {
+      "id": "individual:nora",
+      "name": "Nora",
+      "classRefs": [
+        "class:patient"
+      ]
+    },
+    {
+      "id": "individual:miguel",
+      "name": "Miguel",
+      "classRefs": [
+        "class:patient"
+      ]
+    },
+    {
+      "id": "individual:nora-82",
+      "name": "NoraWeighs82KgIn2023",
+      "classRefs": [],
+      "situation": {
+        "kind": "qualityValueAttribution",
+        "bearerRef": "individual:nora",
+        "qualityTypeRef": "class:weight",
+        "valueLiteral": "82.0",
+        "valueDatatypeRef": "class:double"
+      }
+    },
+    {
+      "id": "individual:nora-75",
+      "name": "NoraWeighs75KgIn2024",
+      "classRefs": [],
+      "situation": {
+        "kind": "qualityValueAttribution",
+        "bearerRef": "individual:nora",
+        "qualityTypeRef": "class:weight",
+        "valueLiteral": "75.0",
+        "valueDatatypeRef": "class:double"
+      }
+    },
+    {
+      "id": "individual:nora-overweight",
+      "name": "NoraWasOverweightUntilJune2023",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryInstantiation",
+        "instanceRef": "individual:nora",
+        "typeRef": "class:overweight-person"
+      }
+    },
+    {
+      "id": "individual:sepsis-alert-20240202",
+      "name": "SepsisAlert20240202",
+      "classRefs": [
+        "class:sepsis-alert"
+      ]
+    },
+    {
+      "id": "individual:nora-febrile",
+      "name": "NoraWasFebrileOnAdmission",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryInstantiation",
+        "instanceRef": "individual:nora",
+        "typeRef": "class:febrile-patient",
+        "contributedToTriggerRefs": [
+          "individual:sepsis-alert-20240202"
+        ]
+      }
+    },
+    {
+      "id": "individual:nora-native-heart",
+      "name": "NoraNativeHeart",
+      "classRefs": [
+        "class:heart"
+      ]
+    },
+    {
+      "id": "individual:donor-heart-881",
+      "name": "DonorHeart881",
+      "classRefs": [
+        "class:heart"
+      ]
+    },
+    {
+      "id": "individual:nora-heart-transplant",
+      "name": "NoraHeartTransplant20240305",
+      "classRefs": [
+        "class:heart-transplant-surgery"
+      ]
+    },
+    {
+      "id": "individual:nora-had-native-heart",
+      "name": "NoraHadNativeHeart",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryParthood",
+        "partRef": "individual:nora-native-heart",
+        "wholeRef": "individual:nora",
+        "relationRef": "relation:heart-of"
+      }
+    },
+    {
+      "id": "individual:nora-has-donor-heart",
+      "name": "NoraHasDonorHeart",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryParthood",
+        "partRef": "individual:donor-heart-881",
+        "wholeRef": "individual:nora",
+        "relationRef": "relation:heart-of",
+        "broughtAboutByRef": "individual:nora-heart-transplant"
+      }
+    },
+    {
+      "id": "individual:nora-crown",
+      "name": "NoraCrown",
+      "classRefs": [
+        "class:dental-crown"
+      ]
+    },
+    {
+      "id": "individual:original-porcelain-batch",
+      "name": "OriginalPorcelainBatch",
+      "classRefs": [
+        "class:porcelain-quantity"
+      ]
+    },
+    {
+      "id": "individual:replacement-resin-batch",
+      "name": "ReplacementResinBatch",
+      "classRefs": [
+        "class:composite-resin-quantity"
+      ]
+    },
+    {
+      "id": "individual:nora-crown-was-porcelain",
+      "name": "NoraCrownWasPorcelain",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryConstitution",
+        "constituentRef": "individual:original-porcelain-batch",
+        "constitutedRef": "individual:nora-crown"
+      }
+    },
+    {
+      "id": "individual:nora-crown-is-resin",
+      "name": "NoraCrownIsResin",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryConstitution",
+        "constituentRef": "individual:replacement-resin-batch",
+        "constitutedRef": "individual:nora-crown"
+      }
+    },
+    {
+      "id": "individual:nora-heavier-than-miguel",
+      "name": "NoraHeavierThanMiguelOn20240115",
+      "classRefs": [],
+      "situation": {
+        "kind": "temporaryRelationship",
+        "relationRef": "relation:heavier-than",
+        "sourceRef": "individual:nora",
+        "targetRef": "individual:miguel"
+      }
+    }
+  ],
+  "links": [],
+  "attributeValues": [],
+  "temporalValues": [
+    {
+      "id": "point:001",
+      "subjectRef": "individual:nora-82",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2023-01-10"
+    },
+    {
+      "id": "point:002",
+      "subjectRef": "individual:nora-82",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2023-06-30"
+    },
+    {
+      "id": "point:003",
+      "subjectRef": "individual:nora-75",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2024-01-15"
+    },
+    {
+      "id": "point:004",
+      "subjectRef": "individual:nora-overweight",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2020-03-01"
+    },
+    {
+      "id": "point:005",
+      "subjectRef": "individual:nora-overweight",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2023-06-30"
+    },
+    {
+      "id": "point:006",
+      "subjectRef": "individual:nora-febrile",
+      "property": "hasBeginPointInXSDDateTimeStamp",
+      "valueLiteral": "2024-02-02T08:00:00Z"
+    },
+    {
+      "id": "point:007",
+      "subjectRef": "individual:nora-febrile",
+      "property": "hasEndPointInXSDDateTimeStamp",
+      "valueLiteral": "2024-02-02T14:00:00Z"
+    },
+    {
+      "id": "point:008",
+      "subjectRef": "individual:nora-heart-transplant",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2024-03-05"
+    },
+    {
+      "id": "point:009",
+      "subjectRef": "individual:nora-had-native-heart",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2024-03-05"
+    },
+    {
+      "id": "point:010",
+      "subjectRef": "individual:nora-has-donor-heart",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2024-03-05"
+    },
+    {
+      "id": "point:011",
+      "subjectRef": "individual:nora-crown-was-porcelain",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2022-11-20"
+    },
+    {
+      "id": "point:012",
+      "subjectRef": "individual:nora-crown-is-resin",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2022-11-21"
+    },
+    {
+      "id": "point:013",
+      "subjectRef": "individual:nora-heavier-than-miguel",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2024-01-15"
+    },
+    {
+      "id": "point:014",
+      "subjectRef": "individual:nora-heavier-than-miguel",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2024-01-15"
+    }
+  ]
+}

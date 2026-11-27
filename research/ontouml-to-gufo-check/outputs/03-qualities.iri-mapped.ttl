@@ -1,0 +1,153 @@
+@prefix ns1: <https://purl.org/nemo/gufo-examples/qualities#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1: a owl:Ontology ;
+    owl:imports <http://purl.org/nemo/gufo#> .
+
+ns1:Gemstone1Mass a ns1:Mass ;
+    rdfs:label "Gemstone1Mass"@en ;
+    ns1:massInGrams 4.5e+00 ;
+    ns1:massOf ns1:Gemstone1 .
+
+ns1:Painting1Color a ns1:Color ;
+    rdfs:label "Painting1Color"@en ;
+    ns1:colorOf ns1:Painting1 ;
+    ns1:hasColorValueInRGB [ a ns1:ColorValueInRGB ;
+            ns1:hasBlueValueComponent "167"^^xsd:nonNegativeInteger ;
+            ns1:hasGreenValueComponent "47"^^xsd:nonNegativeInteger ;
+            ns1:hasRedValueComponent "0"^^xsd:nonNegativeInteger ] .
+
+ns1:TShirt1Size a ns1:Size ;
+    rdfs:label "TShirt1Size"@en ;
+    ns1:hasSizeValue ns1:M ;
+    ns1:sizeOf ns1:TShirt1 .
+
+ns1:colorOf a owl:ObjectProperty ;
+    rdfs:label "colorOf"@en ;
+    rdfs:domain ns1:Color ;
+    rdfs:range ns1:Painting ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> .
+
+ns1:hasBlueValueComponent a owl:DatatypeProperty ;
+    rdfs:label "hasBlueValueComponent"@en ;
+    rdfs:domain ns1:ColorValueInRGB ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasValueComponent> .
+
+ns1:hasColorValueInRGB a owl:ObjectProperty ;
+    rdfs:label "hasColorValueInRGB"@en ;
+    rdfs:domain ns1:Color ;
+    rdfs:range ns1:ColorValueInRGB ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasReifiedQualityValue> .
+
+ns1:hasGreenValueComponent a owl:DatatypeProperty ;
+    rdfs:label "hasGreenValueComponent"@en ;
+    rdfs:domain ns1:ColorValueInRGB ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasValueComponent> .
+
+ns1:hasRedValueComponent a owl:DatatypeProperty ;
+    rdfs:label "hasRedValueComponent"@en ;
+    rdfs:domain ns1:ColorValueInRGB ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasValueComponent> .
+
+ns1:hasSizeValue a owl:ObjectProperty ;
+    rdfs:label "hasSizeValue"@en ;
+    rdfs:domain ns1:Size ;
+    rdfs:range ns1:ShirtSize ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasReifiedQualityValue> .
+
+ns1:massInGrams a owl:DatatypeProperty ;
+    rdfs:label "massInGrams"@en ;
+    rdfs:domain ns1:Mass ;
+    rdfs:range xsd:double ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> .
+
+ns1:sizeOf a owl:ObjectProperty ;
+    rdfs:label "sizeOf"@en ;
+    rdfs:domain ns1:Size ;
+    rdfs:range ns1:TShirt ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> .
+
+ns1:Gemstone1 a ns1:Gemstone ;
+    rdfs:label "Gemstone1"@en .
+
+ns1:L a ns1:ShirtSize ;
+    rdfs:label "L"@en .
+
+ns1:Painting1 a ns1:Painting ;
+    rdfs:label "Painting1"@en .
+
+ns1:S a ns1:ShirtSize ;
+    rdfs:label "S"@en .
+
+ns1:TShirt1 a ns1:TShirt ;
+    rdfs:label "TShirt1"@en .
+
+ns1:XL a ns1:ShirtSize ;
+    rdfs:label "XL"@en .
+
+ns1:massOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "massOf"@en ;
+    rdfs:domain ns1:Mass ;
+    rdfs:range ns1:Gemstone ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> .
+
+ns1:M a ns1:ShirtSize ;
+    rdfs:label "M"@en .
+
+ns1:Painting a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Painting"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+ns1:TShirt a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "TShirt"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+ns1:Color a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Color"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> .
+
+ns1:Gemstone a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Gemstone"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+ns1:Mass a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Mass"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ns1:Gemstone ;
+            owl:onProperty ns1:massOf ],
+        <http://purl.org/nemo/gufo#Quality> .
+
+ns1:Size a <http://purl.org/nemo/gufo#Kind>,
+        owl:Class ;
+    rdfs:label "Size"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> .
+
+ns1:ColorValueInRGB a owl:Class ;
+    rdfs:label "ColorValueInRGB"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#QualityValue> .
+
+ns1:ShirtSize a owl:Class ;
+    rdfs:label "ShirtSize"@en ;
+    rdfs:subClassOf <http://purl.org/nemo/gufo#QualityValue> ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:oneOf ( ns1:S ns1:M ns1:L ns1:XL ) ] .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Gemstone ns1:TShirt ns1:Painting ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Mass ns1:Size ns1:Color ) .
+

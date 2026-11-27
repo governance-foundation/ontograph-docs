@@ -1,0 +1,555 @@
+{
+  "extra": 25,
+  "matched": 61,
+  "missing": 28,
+  "ontographTriples": 86,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 18,
+      "ONTOLOGY-HEADER": 1,
+      "ONTOUML-STEREOTYPE-REQUIRED": 1,
+      "REVIEWED-MODELLING-DIFFERENCE": 4,
+      "UFO-DERIVED-AXIOM": 1
+    },
+    "missing": {
+      "ANNOTATION": 23,
+      "ENTAILED-BY-ONTOGRAPH": 1,
+      "ONTOLOGY-HEADER": 3,
+      "REVIEWED-MODELLING-DIFFERENCE": 1
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A small ontology of a football tournament, illustrating gUFO's representation of events, their parts, and their relations to the endurants that participate in, are created or terminated in, or manifest aspects in them.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 05: Events\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#AlexRivera>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Alex Rivera\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#Final2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Historically depends on both semi-finals: it could not have taken place, with these two finalists, without them.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#Final2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"2026 World Championship final\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLee>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Jordan Lee\"@en"
+      ]
+    },
+    {
+      "note": "Upstream links JordanLee to the reified participation with :participatedInMatch, whose rdfs:range is :Match; under OWL semantics that classifies :JordanLeeParticipationInFinal as a :Match as well as a gufo:Participation, i.e. the participation would be a match. OntoGraph checks link endpoints against the relation's end classes (OG-GUFO-INSTANCE-LINK-TYPE), so the OntoUML model uses a separate unnamed «participation» relation Player -> MatchParticipation, projected as gufo:participatedIn. Reported to NEMO as a possible modelling slip in the upstream example; pending review.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLee>",
+        "<https://purl.org/nemo/gufo-examples/events#participatedInMatch>",
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeKneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The injury is a standing intrinsic mode of Jordan Lee; it flared up (manifested) specifically during semi-final 1, which is why Jordan Lee did not take part in the final.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeKneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Jordan Lee's knee injury\"@en"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Participation>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The alternative, reified pattern for participation: rather than asserting :JordanLee :participatedInMatch :Final2026 directly, the participation itself is a sub-event of the final, which is useful when the participation needs its own properties (e.g. minutes played).\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Jordan Lee's participation in the 2026 final\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#KneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A lasting intrinsic mode of a player, which may manifest itself in specific matches (see gufo:manifestedIn below) without that manifestation being the injury's only occurrence.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#KneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Knee injury\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"2026 World Championship opening ceremony\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#OpeningCeremony>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Opening ceremony\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportCityFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The rebranded successor, brought into existence in the same ceremony that terminated Riverport United FC.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportCityFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Riverport City FC\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportUnitedFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The host club, rebranded at the opening ceremony: this organization ceases to exist there.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportUnitedFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Riverport United FC\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SamOkafor>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Sam Okafor\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"2026 World Championship, semi-final 1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal2>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"2026 World Championship, semi-final 2\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Semi-final\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#WorldChampionship2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"2026 World Championship\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#hadKneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"knee injury of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#participatedInMatch>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"participated in match\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#AlexRivera>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"AlexRivera\"@en"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#Club>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/events#Player>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#Final2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Final2026\"@en"
+      ]
+    },
+    {
+      "note": "Upstream links JordanLee to the reified participation with :participatedInMatch, whose rdfs:range is :Match; under OWL semantics that classifies :JordanLeeParticipationInFinal as a :Match as well as a gufo:Participation, i.e. the participation would be a match. OntoGraph checks link endpoints against the relation's end classes (OG-GUFO-INSTANCE-LINK-TYPE), so the OntoUML model uses a separate unnamed «participation» relation Player -> MatchParticipation, projected as gufo:participatedIn. Reported to NEMO as a possible modelling slip in the upstream example; pending review.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLee>",
+        "<http://purl.org/nemo/gufo#participatedIn>",
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLee>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"JordanLee\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeKneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"JordanLeeKneeInjury\"@en"
+      ]
+    },
+    {
+      "note": "OntoUML has no instance level and cannot type an individual by a gUFO class directly, so the reified participation of the prose (':JordanLeeParticipationInFinal a gufo:Participation ; gufo:isEventProperPartOf :Final2026') is modelled as an «event» class MatchParticipation that is the part end of a «participational» relation to Match; GEX-MAP-014 makes it rdfs:subClassOf gufo:Participation. The individual is typed :MatchParticipation, from which Pellet derives the upstream ':JordanLeeParticipationInFinal a gufo:Participation' (ENTAILED-BY-ONTOGRAPH). The class itself is extra.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/events#MatchParticipation>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"JordanLeeParticipationInFinal\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#KneeInjury>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#KneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"KneeInjury\"@en"
+      ]
+    },
+    {
+      "note": "OntoUML has no instance level and cannot type an individual by a gUFO class directly, so the reified participation of the prose (':JordanLeeParticipationInFinal a gufo:Participation ; gufo:isEventProperPartOf :Final2026') is modelled as an «event» class MatchParticipation that is the part end of a «participational» relation to Match; GEX-MAP-014 makes it rdfs:subClassOf gufo:Participation. The individual is typed :MatchParticipation, from which Pellet derives the upstream ':JordanLeeParticipationInFinal a gufo:Participation' (ENTAILED-BY-ONTOGRAPH). The class itself is extra.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#MatchParticipation>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Class>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#MatchParticipation>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"MatchParticipation\"@en"
+      ]
+    },
+    {
+      "note": "OntoUML has no instance level and cannot type an individual by a gUFO class directly, so the reified participation of the prose (':JordanLeeParticipationInFinal a gufo:Participation ; gufo:isEventProperPartOf :Final2026') is modelled as an «event» class MatchParticipation that is the part end of a «participational» relation to Match; GEX-MAP-014 makes it rdfs:subClassOf gufo:Participation. The individual is typed :MatchParticipation, from which Pellet derives the upstream ':JordanLeeParticipationInFinal a gufo:Participation' (ENTAILED-BY-ONTOGRAPH). The class itself is extra.",
+      "reason": "REVIEWED-MODELLING-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#MatchParticipation>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "<http://purl.org/nemo/gufo#Participation>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"OpeningCeremony2026\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#OpeningCeremony>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"OpeningCeremony\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportCityFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"RiverportCityFC\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#RiverportUnitedFC>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"RiverportUnitedFC\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SamOkafor>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"SamOkafor\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal1>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"SemiFinal1\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal2>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"SemiFinal2\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#SemiFinal>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"SemiFinal\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#WorldChampionship2026>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"WorldChampionship2026\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#hadKneeInjury>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"hadKneeInjury\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/events#participatedInMatch>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"participatedInMatch\"@en"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 89
+}

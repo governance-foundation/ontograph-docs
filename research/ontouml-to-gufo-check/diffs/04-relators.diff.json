@@ -1,0 +1,623 @@
+{
+  "extra": 36,
+  "matched": 80,
+  "missing": 24,
+  "ontographTriples": 116,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 13,
+      "ONTOLOGY-HEADER": 1,
+      "ONTOUML-STEREOTYPE-REQUIRED": 6,
+      "UFO-DERIVED-AXIOM": 16
+    },
+    "missing": {
+      "ANNOTATION": 17,
+      "ENTAILED-BY-ONTOGRAPH": 4,
+      "ONTOLOGY-HEADER": 3
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An ontology of employment and marriage, illustrating gUFO's representation of relators, the roles they connect, and the rights and duties they are composed of.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 04: Relators and extrinsic aspects\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Dana's employment at Globex Corp.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Inheres in the employer; the reciprocal of RightToSalary.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Duty to pay salary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToWork>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Inheres in the employee; externally depends on the employer.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToWork>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Duty to work\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Employee>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Applies to a person in virtue of an employment relationship -- see :Employment below.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Employment>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A relator mediating an employee and an employer. Being a gufo:Relator, it exists in its own right (it has a begin date, and could have others of its own qualities), rather than being a bare fact about the two parties.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#JohnMaryMarriage>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"John and Mary's marriage\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Marriage>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A simpler relator pattern: no sub-properties of gufo:mediates for each spouse's role, at the cost of not being able to distinguish the parties' roles in the data alone.\"@en"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Marriage>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "_:cb0"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToLabor>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Inheres in the employer; the reciprocal of DutyToWork.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToLabor>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Right to labor\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToSalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Inheres in the employee; externally depends on the employer; part of the employment.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToSalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Right to salary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#employedBy>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A shortcut binary relation standing for 'there exists an Employment relator mediating these two'. Declaring it a gufo:MaterialRelationshipType and linking it with gufo:isDerivedFrom records that provenance explicitly, rather than leaving it an unexplained plain object property.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#employedBy>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"employed by\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#involvesEmployee>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"involves employee\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#involvesEmployer>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"involves employer\"@en"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Restriction>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "<http://purl.org/nemo/gufo#mediates>"
+      ]
+    },
+    {
+      "note": "Pellet: OntoGraph output + gufo.ttl entails this upstream statement",
+      "reason": "ENTAILED-BY-ONTOGRAPH",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/2002/07/owl#someValuesFrom>",
+        "<https://purl.org/nemo/gufo-examples/relators#Person>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DanaGlobexEmployment\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DanasDutyToWork>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DanasDutyToWork\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DanasRightToSalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DanasRightToSalary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DutyToPaySalary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToWork>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToWork>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DutyToWork\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Employment>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#GlobexsDutyToPaySalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"GlobexsDutyToPaySalary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#GlobexsRightToLabor>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"GlobexsRightToLabor\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#JohnMaryMarriage>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"JohnMaryMarriage\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Marriage>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Marriage>",
+        "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+        "_:cb1f7afdb38b"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#Marriage>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/relators#Employment>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToLabor>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToLabor>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"RightToLabor\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOUML-STEREOTYPE-REQUIRED",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToSalary>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://purl.org/nemo/gufo#Kind>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#RightToSalary>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"RightToSalary\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#employedBy>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"employedBy\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#involvesEmployee>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"involvesEmployee\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/relators#involvesEmployer>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"involvesEmployer\"@en"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/relators#RightToSalary>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb744b6cd8ed"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1f7afdb38b",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#Restriction>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1f7afdb38b",
+        "<http://www.w3.org/2002/07/owl#minQualifiedCardinality>",
+        "\"1\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1f7afdb38b",
+        "<http://www.w3.org/2002/07/owl#onClass>",
+        "<https://purl.org/nemo/gufo-examples/relators#Person>"
+      ]
+    },
+    {
+      "note": "multiplicity restriction from OntoUML cardinality",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1f7afdb38b",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "<http://purl.org/nemo/gufo#mediates>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb2821651f0f",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToWork>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb2821651f0f",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cbd7c96744b8"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb744b6cd8ed",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb744b6cd8ed",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb2821651f0f"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cb0"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbd7c96744b8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/relators#RightToLabor>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cbd7c96744b8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 104
+}

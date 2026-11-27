@@ -1,0 +1,91 @@
+{
+  "caseRef": "06-situations",
+  "shaclConforms": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "http://purl.org/nemo/gufo#Situation",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/situations#NoraWasFebrileOnAdmission",
+        "predicate": "http://purl.org/nemo/gufo#standsInQualifiedInstantiation",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/situations#FebrilePatient",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/situations#Miguel",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/situations#Nora"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "queries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 26,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/situations#Weight\"}": "ONTOUML-STEREOTYPE-REQUIRED"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/situations#Weight\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 27
+    },
+    {
+      "exactlyEqual": false,
+      "expectedRows": 39,
+      "explainedByDiff": {
+        "{\"property\": \"http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp\", \"subject\": \"https://purl.org/nemo/gufo-examples/situations#SepsisAlert20240202\", \"value\": \"2024-02-02T14:05:00Z\"}": "REVIEWED-MODELLING-DIFFERENCE"
+      },
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [
+        "{\"property\": \"http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp\", \"subject\": \"https://purl.org/nemo/gufo-examples/situations#SepsisAlert20240202\", \"value\": \"2024-02-02T14:05:00Z\"}"
+      ],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 38
+    }
+  ],
+  "note": "Entailment claims were checked with Pellet via owlready2 0.51 in the recorded run. The portable check script does not rerun Pellet."
+}

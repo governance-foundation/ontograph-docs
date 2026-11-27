@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.report.v1",
+  "status": "projected",
+  "ruleEnforcement": "enforced",
+  "ruleSet": "ontograph.ontouml.ufo-rules.v1",
+  "profileRef": "ontograph.gufo.ontouml-examples.v1",
+  "baseIri": "https://ontograph.dev/examples/gufo-examples/endurant-types#",
+  "findings": [],
+  "modelDigest": "sha256:94d702f46f0feb22a951e1b85b38276c6c8e0f1777225ded2bfacb0055efb033",
+  "instanceDigest": "sha256:4be484831d3ba225183449a85db20b5d10d27dfab19d51f4323e5158b16f5329",
+  "graphDigest": "sha256:060186f0e029eea0c77bbff6a6ca5546d226a310f234011e64edb36b14a06eb5",
+  "tripleCount": 62,
+  "limits": [
+    "Instance data comes from an OntoGraph-specific file; OntoUML has no instance level.",
+    "Classifications by anti-rigid types (roles, phases, role/phase mixins) are snapshot rdf:type assertions with no temporal qualification."
+  ]
+}

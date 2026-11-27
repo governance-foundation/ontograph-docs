@@ -1,0 +1,162 @@
+@prefix ns1: <https://purl.org/nemo/gufo-examples/objects-and-parts#> .
+@prefix ns2: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1: a owl:Ontology ;
+    owl:imports ns2: .
+
+ns1:Car001Engine a ns1:Engine ;
+    rdfs:label "Car001Engine"@en ;
+    ns1:isEngineOf ns1:Car001 .
+
+ns1:Car002BenzenePortion a ns1:QuantityOfBenzene ;
+    rdfs:label "Car002BenzenePortion"@en ;
+    ns1:isBenzenePortionOf ns1:Car002DistillatePortion .
+
+ns1:Car002EthanolPortion a ns1:QuantityOfEthanol ;
+    rdfs:label "Car002EthanolPortion"@en ;
+    ns1:isEthanolPortionOf ns1:Car002FuelTankContents .
+
+ns1:isEngineOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isEngineOf"@en ;
+    rdfs:domain ns1:Engine ;
+    rdfs:range ns1:Car ;
+    rdfs:subPropertyOf ns2:isComponentOf .
+
+ns1:isFleetMemberOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isFleetMemberOf"@en ;
+    rdfs:domain ns1:Car ;
+    rdfs:range ns1:Fleet ;
+    rdfs:subPropertyOf ns2:isCollectionMemberOf .
+
+ns1:isWheelOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isWheelOf"@en ;
+    rdfs:domain ns1:Wheel ;
+    rdfs:range ns1:Car ;
+    rdfs:subPropertyOf ns2:isComponentOf .
+
+ns1:Car001 a ns1:Car ;
+    rdfs:label "Car001"@en ;
+    ns1:isFleetMemberOf ns1:CityWheelsFleet,
+        ns1:ElectricSubfleet .
+
+ns1:Car002DistillatePortion a ns1:QuantityOfPetroleumDistillate ;
+    rdfs:label "Car002DistillatePortion"@en ;
+    ns1:isDistillatePortionOf ns1:Car002FuelTankContents .
+
+ns1:DepotSupplyAfterTuesday a ns1:QuantityOfGasoline ;
+    rdfs:label "DepotSupplyAfterTuesday"@en ;
+    ns2:historicallyDependsOn ns1:DepotSupplyBeforeTuesday,
+        ns1:TuesdayDeliveryLot .
+
+ns1:DepotSupplyBeforeTuesday a ns1:QuantityOfGasoline ;
+    rdfs:label "DepotSupplyBeforeTuesday"@en .
+
+ns1:ElectricSubfleet a ns1:Fleet ;
+    rdfs:label "ElectricSubfleet"@en ;
+    ns2:isSubCollectionOf ns1:CityWheelsFleet .
+
+ns1:TuesdayDeliveryLot a ns1:QuantityOfGasoline ;
+    rdfs:label "TuesdayDeliveryLot"@en .
+
+ns1:isBenzenePortionOf a owl:AsymmetricProperty,
+        owl:FunctionalProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isBenzenePortionOf"@en ;
+    rdfs:domain ns1:QuantityOfBenzene ;
+    rdfs:range ns1:QuantityOfPetroleumDistillate ;
+    rdfs:subPropertyOf ns2:isSubQuantityOf .
+
+ns1:isDistillatePortionOf a owl:AsymmetricProperty,
+        owl:FunctionalProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isDistillatePortionOf"@en ;
+    rdfs:domain ns1:QuantityOfPetroleumDistillate ;
+    rdfs:range ns1:QuantityOfGasoline ;
+    rdfs:subPropertyOf ns2:isSubQuantityOf .
+
+ns1:isEthanolPortionOf a owl:AsymmetricProperty,
+        owl:FunctionalProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isEthanolPortionOf"@en ;
+    rdfs:domain ns1:QuantityOfEthanol ;
+    rdfs:range ns1:QuantityOfGasoline ;
+    rdfs:subPropertyOf ns2:isSubQuantityOf .
+
+ns1:Car002FuelTankContents a ns1:QuantityOfGasoline ;
+    rdfs:label "Car002FuelTankContents"@en ;
+    ns2:historicallyDependsOn ns1:DepotSupplyAfterTuesday .
+
+ns1:CityWheelsFleet a ns1:Fleet ;
+    rdfs:label "CityWheelsFleet"@en .
+
+ns1:Wheel a ns2:Kind,
+        owl:Class ;
+    rdfs:label "Wheel"@en ;
+    rdfs:subClassOf ns2:FunctionalComplex .
+
+ns1:Engine a ns2:Kind,
+        owl:Class ;
+    rdfs:label "Engine"@en ;
+    rdfs:subClassOf ns2:FunctionalComplex .
+
+ns1:Fleet a ns2:Kind,
+        owl:Class ;
+    rdfs:label "Fleet"@en ;
+    rdfs:subClassOf ns2:VariableCollection .
+
+ns1:QuantityOfBenzene a ns2:Kind,
+        owl:Class ;
+    rdfs:label "QuantityOfBenzene"@en ;
+    rdfs:subClassOf ns2:Quantity .
+
+ns1:QuantityOfEthanol a ns2:Kind,
+        owl:Class ;
+    rdfs:label "QuantityOfEthanol"@en ;
+    rdfs:subClassOf ns2:Quantity .
+
+ns1:Car a ns2:Kind,
+        owl:Class ;
+    rdfs:label "Car"@en ;
+    rdfs:subClassOf ns2:FunctionalComplex .
+
+ns1:QuantityOfPetroleumDistillate a ns2:Kind,
+        owl:Class ;
+    rdfs:label "QuantityOfPetroleumDistillate"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass ns1:QuantityOfBenzene ;
+            owl:onProperty [ owl:inverseOf ns1:isBenzenePortionOf ] ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        ns2:Quantity .
+
+ns1:QuantityOfGasoline a ns2:Kind,
+        owl:Class ;
+    rdfs:label "QuantityOfGasoline"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass ns1:QuantityOfEthanol ;
+            owl:onProperty [ owl:inverseOf ns1:isEthanolPortionOf ] ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass ns1:QuantityOfPetroleumDistillate ;
+            owl:onProperty [ owl:inverseOf ns1:isDistillatePortionOf ] ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        ns2:Quantity .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:QuantityOfGasoline ns1:QuantityOfEthanol ns1:QuantityOfPetroleumDistillate ns1:QuantityOfBenzene ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Car ns1:Engine ns1:Wheel ) .
+

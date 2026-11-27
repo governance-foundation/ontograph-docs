@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-qualities",
+  "individuals": [
+    {
+      "id": "individual:gemstone1",
+      "name": "Gemstone1",
+      "classRefs": [
+        "class:gemstone"
+      ]
+    },
+    {
+      "id": "individual:gemstone1-mass",
+      "name": "Gemstone1Mass",
+      "classRefs": [
+        "class:mass"
+      ]
+    },
+    {
+      "id": "individual:tshirt1",
+      "name": "TShirt1",
+      "classRefs": [
+        "class:tshirt"
+      ]
+    },
+    {
+      "id": "individual:tshirt1-size",
+      "name": "TShirt1Size",
+      "classRefs": [
+        "class:size"
+      ]
+    },
+    {
+      "id": "individual:painting1",
+      "name": "Painting1",
+      "classRefs": [
+        "class:painting"
+      ]
+    },
+    {
+      "id": "individual:painting1-color",
+      "name": "Painting1Color",
+      "classRefs": [
+        "class:color"
+      ]
+    },
+    {
+      "id": "individual:painting1-color-value",
+      "name": "Painting1ColorValue",
+      "classRefs": [
+        "class:color-value-in-rgb"
+      ],
+      "anonymous": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link:001",
+      "relationRef": "relation:mass-of",
+      "sourceRef": "individual:gemstone1-mass",
+      "targetRef": "individual:gemstone1"
+    },
+    {
+      "id": "link:002",
+      "relationRef": "relation:size-of",
+      "sourceRef": "individual:tshirt1-size",
+      "targetRef": "individual:tshirt1"
+    },
+    {
+      "id": "link:003",
+      "relationRef": "relation:color-of",
+      "sourceRef": "individual:painting1-color",
+      "targetRef": "individual:painting1"
+    }
+  ],
+  "attributeValues": [
+    {
+      "id": "value:001",
+      "subjectRef": "individual:gemstone1-mass",
+      "attributeRef": "property:mass-in-grams",
+      "valueLiteral": "4.5"
+    },
+    {
+      "id": "value:002",
+      "subjectRef": "individual:tshirt1-size",
+      "attributeRef": "property:has-size-value",
+      "valueRef": "literal:m"
+    },
+    {
+      "id": "value:003",
+      "subjectRef": "individual:painting1-color",
+      "attributeRef": "property:has-color-value-in-rgb",
+      "valueRef": "individual:painting1-color-value"
+    },
+    {
+      "id": "value:004",
+      "subjectRef": "individual:painting1-color-value",
+      "attributeRef": "property:has-red-value-component",
+      "valueLiteral": "0"
+    },
+    {
+      "id": "value:005",
+      "subjectRef": "individual:painting1-color-value",
+      "attributeRef": "property:has-green-value-component",
+      "valueLiteral": "47"
+    },
+    {
+      "id": "value:006",
+      "subjectRef": "individual:painting1-color-value",
+      "attributeRef": "property:has-blue-value-component",
+      "valueLiteral": "167"
+    }
+  ]
+}

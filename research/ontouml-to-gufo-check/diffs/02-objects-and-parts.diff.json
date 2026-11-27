@@ -1,0 +1,1124 @@
+{
+  "extra": 52,
+  "matched": 95,
+  "missing": 58,
+  "ontographTriples": 147,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 21,
+      "AXIOM-FORM-DIFFERENCE": 16,
+      "ONTOLOGY-HEADER": 1,
+      "UFO-DERIVED-AXIOM": 14
+    },
+    "missing": {
+      "ANNOTATION": 37,
+      "AXIOM-FORM-DIFFERENCE": 12,
+      "INSTANCE-NOT-IN-PROSE": 6,
+      "ONTOLOGY-HEADER": 3
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A small ontology of cars, their components, a fleet, and fuel, illustrating gUFO's classification of complex objects and its part-whole properties.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 02: Objects and their parts (Car fleet)\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car 001\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car 001's engine\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car 001's front-left wheel\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car 001's front-right wheel\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car 002\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Asserted as a sub-quantity of the distillate only. Because gufo:isSubQuantityOf is transitive, a reasoner also derives that this benzene is a sub-quantity of :Car002FuelTankContents -- which is what one means by saying the fuel in the tank contains benzene.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Benzene portion of Car 002's fuel\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Distillate portion of Car 002's fuel\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A legitimate sub-quantity: it is a portion of a different stuff (ethanol, not gasoline), so it is a maximally self-connected quantity in its own right even while blended into the whole.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Ethanol portion of Car 002's fuel\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The gasoline in Car 002's tank: one maximally self-connected portion of stuff, whose sub-quantities are the portions of ethanol and distillate blended into it.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Contents of Car 002's fuel tank\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A functional complex whose components (engine, wheels, ...) each play a different role in making the whole work.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"CityWheels fleet\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Once the delivery is pumped into the tank, the two portions are in contact and hence one maximally self-connected portion of gasoline -- a new quantity. Neither input is a sub-quantity of it: they are of the same kind as the whole, and after mixing neither is a maximally self-connected portion any more. Nor did :DepotSupplyBeforeTuesday simply grow: quantities are extensional, so a change of parts is a change of whole, and their parts are essential. What links them is history, not parthood.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Depot supply after Tuesday's delivery\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The gasoline sitting in the depot's underground tank up to Tuesday morning.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Depot supply before Tuesday's delivery\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"All members of the electric sub-fleet are, by definition of isSubCollectionOf, also members of the whole fleet.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"CityWheels electric sub-fleet\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Fleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A collection of cars with uniform structure (every member plays the same 'fleet member' role) and variable membership: cars are added when purchased and removed when retired, without the fleet losing its identity.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A maximally self-connected portion of benzene. Present here to exercise the transitivity of gufo:isSubQuantityOf: benzene is a sub-quantity of the distillate, which is a sub-quantity of the gasoline, so the benzene is a sub-quantity of the gasoline too.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Quantity of benzene\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A maximally self-connected portion of ethanol. Disjoint from :QuantityOfGasoline: the two are distinct kinds, obeying distinct principles of identity, and no portion of stuff is an instance of both.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Quantity of ethanol\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A maximally self-connected portion of the blended gasoline CityWheels pumps into its cars. Everything below follows from 'maximally self-connected': any two portions of gasoline in contact are one quantity, not two, so a quantity of gasoline never has a smaller quantity of gasoline as a part. Its sub-quantities are portions of the *different* stuffs it is a blend of -- ethanol and petroleum distillate. (Named 'QuantityOfGasoline', not 'Gasoline': instances of this class are individual portions of the stuff, not the material itself.)\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Quantity of gasoline\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A maximally self-connected portion of the petroleum-derived distillate that is blended with ethanol to make the gasoline sold at the pump. Itself a mixture: benzene is one of the stuffs it contains.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Quantity of petroleum distillate\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>",
+        "<http://www.w3.org/2002/07/owl#disjointWith>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The gasoline that arrived on Tuesday's truck, while still a separate portion in the truck.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Tuesday's delivery lot\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is benzene portion of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is distillate portion of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is engine of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is ethanol portion of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is fleet member of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"is wheel of\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cb0",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cb22c5bcaa65",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cbf0365aa224"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cb27be7432d3",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cb0"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cb2a205a2922",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cbc382b7d04b"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cbc382b7d04b",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "missing",
+      "triple": [
+        "_:cbf0365aa224",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car001\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car001Engine\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002BenzenePortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car002BenzenePortion\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002DistillatePortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car002DistillatePortion\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002EthanolPortion>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car002EthanolPortion\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car002FuelTankContents>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Car002FuelTankContents\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"CityWheelsFleet\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyAfterTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DepotSupplyAfterTuesday\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#DepotSupplyBeforeTuesday>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"DepotSupplyBeforeTuesday\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#ElectricSubfleet>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ElectricSubfleet\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"QuantityOfBenzene\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"QuantityOfEthanol\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"QuantityOfGasoline\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"QuantityOfPetroleumDistillate\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#TuesdayDeliveryLot>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"TuesdayDeliveryLot\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isBenzenePortionOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isDistillatePortionOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AsymmetricProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#IrreflexiveProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEngineOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isEngineOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isEthanolPortionOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AsymmetricProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#IrreflexiveProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isFleetMemberOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AsymmetricProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#IrreflexiveProperty>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"isWheelOf\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb1076ea1394",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfPetroleumDistillate>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb1076ea1394",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb12859a852a"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb11a37181a2",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isBenzenePortionOf>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb12859a852a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfBenzene>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb12859a852a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb12c51cc334",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isDistillatePortionOf>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14873697a9",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb14873697a9",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cb1984accb0a"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb167e8640d8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Engine>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb167e8640d8",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb18817f6cbd"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb18817f6cbd",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb18817f6cbd",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1984accb0a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#Car>"
+      ]
+    },
+    {
+      "note": "disjointness not stated upstream (UFO kind disjointness or generalization-set disjointness)",
+      "reason": "UFO-DERIVED-AXIOM",
+      "side": "extra",
+      "triple": [
+        "_:cb1984accb0a",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb167e8640d8"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb22c5bcaa65",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cb12c51cc334"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb27be7432d3",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cbcfdf6f2ccb"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb2a205a2922",
+        "<http://www.w3.org/2002/07/owl#onProperty>",
+        "_:cb11a37181a2"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb3d0bcf6ef7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfGasoline>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb3d0bcf6ef7",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb517d1e7630"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb517d1e7630",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#QuantityOfEthanol>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cb517d1e7630",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",
+        "_:cb1076ea1394"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<http://www.w3.org/2002/07/owl#AllDisjointClasses>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cbb56c7c9b07",
+        "<http://www.w3.org/2002/07/owl#members>",
+        "_:cb3d0bcf6ef7"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "AXIOM-FORM-DIFFERENCE",
+      "side": "extra",
+      "triple": [
+        "_:cbcfdf6f2ccb",
+        "<http://www.w3.org/2002/07/owl#inverseOf>",
+        "<https://purl.org/nemo/gufo-examples/objects-and-parts#isEthanolPortionOf>"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 153
+}

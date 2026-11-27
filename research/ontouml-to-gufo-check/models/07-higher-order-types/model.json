@@ -1,0 +1,329 @@
+{
+  "id": "project:gufo-example-higher-order-types",
+  "created": "2026-11-25",
+  "modified": null,
+  "name": {
+    "en": "gUFO example 7: higher-order types"
+  },
+  "alternativeNames": [],
+  "description": {
+    "en": "OntoUML model authored by OntoGraph from the prose of the gUFO usage example page (f412254); not published by NEMO; pending NEMO review."
+  },
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "type": "Project",
+  "elements": [
+    {
+      "id": "class:animal",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Animal"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:animal-species",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "AnimalSpecies"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "type",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [
+        "property:has-conservation-status"
+      ],
+      "literals": [],
+      "restrictedTo": [
+        "type"
+      ],
+      "isPowertype": false,
+      "order": "2"
+    },
+    {
+      "id": "class:lion",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Lion"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "subkind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:hyena",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Hyena"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "subkind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:elephant",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Elephant"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "subkind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "generalization:lion--animal",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:animal",
+      "specific": "class:lion"
+    },
+    {
+      "id": "generalization:hyena--animal",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:animal",
+      "specific": "class:hyena"
+    },
+    {
+      "id": "generalization:elephant--animal",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:animal",
+      "specific": "class:elephant"
+    },
+    {
+      "id": "generalization-set:animal-species",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Animal by species"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "GeneralizationSet",
+      "isDisjoint": true,
+      "isComplete": true,
+      "generalizations": [
+        "generalization:lion--animal",
+        "generalization:hyena--animal",
+        "generalization:elephant--animal"
+      ],
+      "categorizer": "class:animal-species"
+    },
+    {
+      "id": "literal:endangered",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Endangered"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "literal:vulnerable",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Vulnerable"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "literal:least-concern",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "LeastConcern"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Literal"
+    },
+    {
+      "id": "class:conservation-status",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "ConservationStatus"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "enumeration",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [
+        "literal:endangered",
+        "literal:vulnerable",
+        "literal:least-concern"
+      ],
+      "restrictedTo": [
+        "abstract"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "property:has-conservation-status",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "hasConservationStatus"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Property",
+      "stereotype": null,
+      "isDerived": false,
+      "subsettedProperties": [],
+      "redefinedProperties": [],
+      "aggregationKind": null,
+      "cardinality": null,
+      "isOrdered": false,
+      "isReadOnly": false,
+      "propertyType": "class:conservation-status"
+    }
+  ],
+  "root": null,
+  "publisher": null,
+  "designedForTasks": [],
+  "license": null,
+  "accessRights": [],
+  "themes": [],
+  "contexts": [],
+  "ontologyTypes": [],
+  "representationStyle": null,
+  "namespace": "https://ontograph.dev/examples/gufo-examples/higher-order-types#",
+  "landingPages": [],
+  "sources": [],
+  "bibliographicCitations": [],
+  "keywords": [],
+  "acronyms": [],
+  "languages": [
+    "en"
+  ]
+}
