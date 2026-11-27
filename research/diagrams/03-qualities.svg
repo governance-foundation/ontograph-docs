@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984.2 282.0" width="984" height="282" role="img">
+<title>3. Qualities and quality values</title>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<defs><marker id="gen-03-qualities" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="agg-03-qualities" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="comp-03-qualities" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#18362f" stroke="#18362f" stroke-width="1.2"/></marker></defs>
+<line x1="836.2" y1="64.0" x2="148.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="492.1" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization» massOf</text>
+<text x="164.0" y="60.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1</text>
+<line x1="397.0" y1="182.0" x2="236.0" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="320.5" y="129.1" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization» sizeOf</text>
+<line x1="735.2" y1="182.0" x2="384.0" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="561.6" y="128.3" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization» colorOf</text>
+<rect x="28.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="88.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="88.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Gemstone</text>
+<rect x="176.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="236.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="236.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">TShirt</text>
+<rect x="324.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="384.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="384.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Painting</text>
+<rect x="472.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="532.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«datatype»</text>
+<text x="532.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">double</text>
+<rect x="620.0" y="38.0" width="188.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="714.1" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«datatype»</text>
+<text x="714.1" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">nonNegativeInteger</text>
+<rect x="836.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="896.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quality»</text>
+<text x="896.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Mass</text>
+<rect x="189.0" y="182.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="249.0" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«enumeration»</text>
+<text x="249.0" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">ShirtSize</text>
+<rect x="337.0" y="182.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="397.0" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quality»</text>
+<text x="397.0" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Size</text>
+<rect x="485.0" y="182.0" width="162.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="566.1" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«datatype»</text>
+<text x="566.1" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">ColorValueInRGB</text>
+<rect x="675.2" y="182.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="735.2" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quality»</text>
+<text x="735.2" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Color</text>
+</svg>

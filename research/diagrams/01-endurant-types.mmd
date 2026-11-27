@@ -1,0 +1,33 @@
+classDiagram
+  class Agent["Agent"]
+  Agent : <<category>>
+  class Person["Person"]
+  Person : <<kind>>
+  class Organization["Organization"]
+  Organization : <<kind>>
+  class University["University"]
+  University : <<subkind>>
+  class Child["Child"]
+  Child : <<phase>>
+  class Adult["Adult"]
+  Adult : <<phase>>
+  class Student["Student"]
+  Student : <<role>>
+  class Employee["Employee"]
+  Employee : <<role>>
+  class Customer["Customer"]
+  Customer : <<roleMixin>>
+  class ActiveAgent["ActiveAgent"]
+  ActiveAgent : <<phaseMixin>>
+  class InactiveAgent["InactiveAgent"]
+  InactiveAgent : <<phaseMixin>>
+  Person --|> Agent
+  Organization --|> Agent
+  University --|> Organization
+  Child --|> Person
+  Adult --|> Person
+  Student --|> Person
+  Employee --|> Person
+  Customer --|> Agent
+  ActiveAgent --|> Agent
+  InactiveAgent --|> Agent

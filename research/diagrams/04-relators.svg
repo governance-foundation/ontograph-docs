@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999.2 482.0" width="999" height="482" role="img">
+<title>4. Relators and extrinsic aspects</title>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<defs><marker id="gen-04-relators" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="agg-04-relators" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="comp-04-relators" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#18362f" stroke="#18362f" stroke-width="1.2"/></marker></defs>
+<line x1="400.2" y1="90.0" x2="425.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="404.9" y="236.7" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«mediation» involvesEmployee</text>
+<line x1="400.2" y1="90.0" x2="573.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="480.0" y="240.1" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«mediation» involvesEmployer</text>
+<line x1="560.6" y1="90.0" x2="425.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="485.8" y="232.6" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization»</text>
+<line x1="560.6" y1="90.0" x2="573.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="559.1" y="236.4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«externalDependence»</text>
+<line x1="488.2" y1="64.0" x2="460.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="460.2,64.0 466.2,68.2 472.2,64.0 466.2,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="742.1" y1="90.0" x2="573.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="650.9" y="232.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization»</text>
+<line x1="742.1" y1="90.0" x2="425.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="578.4" y="230.1" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«externalDependence»</text>
+<line x1="661.0" y1="64.0" x2="460.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="460.2,64.0 466.2,68.2 472.2,64.0 466.2,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="911.2" y1="90.0" x2="425.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="664.3" y="229.1" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization»</text>
+<line x1="911.2" y1="90.0" x2="573.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="737.2" y="229.9" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«externalDependence»</text>
+<line x1="851.2" y1="64.0" x2="460.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="460.2,64.0 466.2,68.2 472.2,64.0 466.2,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="425.6" y1="262.0" x2="573.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="494.6" y="328.2" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization»</text>
+<line x1="425.6" y1="262.0" x2="425.6" y2="382.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="417.6" y="322.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«externalDependence»</text>
+<line x1="425.6" y1="210.0" x2="400.2" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="400.2,90.0 397.3,96.7 402.6,101.7 405.5,95.0" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="485.6" y1="408.0" x2="513.6" y2="408.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="499.6" y="416.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«material» employedBy</text>
+<line x1="581.7" y1="210.0" x2="88.0" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="336.7" y="142.2" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«mediation»</text>
+<text x="103.5" y="89.8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1..*</text>
+<line x1="425.6" y1="382.0" x2="89.5" y2="91.3" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-04-relators)"/>
+<line x1="573.6" y1="382.0" x2="245.6" y2="91.3" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-04-relators)"/>
+<rect x="28.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="88.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="88.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Person</text>
+<rect x="176.0" y="38.0" width="136.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="244.1" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="244.1" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Organization</text>
+<rect x="365.6" y="382.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="425.6" y="402.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«role»</text>
+<text x="425.6" y="420.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Employee</text>
+<rect x="513.6" y="382.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="573.6" y="402.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«role»</text>
+<text x="573.6" y="420.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Employer</text>
+<rect x="340.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="400.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«relator»</text>
+<text x="400.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Employment</text>
+<rect x="488.2" y="38.0" width="144.8" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="560.6" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«mode»</text>
+<text x="560.6" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">RightToSalary</text>
+<rect x="661.0" y="38.0" width="162.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="742.1" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«mode»</text>
+<text x="742.1" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">DutyToPaySalary</text>
+<rect x="851.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="911.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«mode»</text>
+<text x="911.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">DutyToWork</text>
+<rect x="357.5" y="210.0" width="136.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="425.6" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«mode»</text>
+<text x="425.6" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">RightToLabor</text>
+<rect x="521.7" y="210.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="581.7" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«relator»</text>
+<text x="581.7" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Marriage</text>
+</svg>

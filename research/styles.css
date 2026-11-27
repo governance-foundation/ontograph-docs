@@ -821,3 +821,12 @@ pre.command code{background:none;color:inherit;padding:0;font-size:inherit}
 .walkthrough h3{font-family:var(--serif);font-size:22px;margin:28px 0 10px}
 .example-play{margin:0 0 22px}
 .example-play p{margin:0 0 14px}
+
+/* Per-example OntoUML diagrams */
+.model-diagrams .diagram-card{margin:0 0 32px}
+.model-diagrams figure{margin:0;border:1px solid var(--line);border-radius:6px;background:var(--paper);padding:12px}
+.model-diagrams figure img{display:block;width:100%;height:auto;background:var(--paper)}
+.model-diagrams figcaption{font-size:14px;color:var(--muted);margin:10px 4px 0}
+.model-diagrams details{margin:8px 4px 0}
+.model-diagrams details summary{cursor:pointer;color:var(--muted);font-size:14px}
+.model-diagrams details pre{margin:8px 0 0}
