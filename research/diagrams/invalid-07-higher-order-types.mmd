@@ -1,0 +1,19 @@
+classDiagram
+  class Animal["Animal"]
+  Animal : <<kind>>
+  class AnimalSpecies["AnimalSpecies"]
+  AnimalSpecies : <<type>>
+  class Lion["Lion"]
+  Lion : <<subkind>>
+  class Hyena["Hyena"]
+  Hyena : <<subkind>>
+  class Elephant["Elephant"]
+  Elephant : <<subkind>>
+  class ConservationStatus["ConservationStatus"]
+  ConservationStatus : <<enumeration>>
+  class Tiger["Tiger"]
+  Tiger : <<subkind>>
+  Lion --|> Animal
+  Hyena --|> Animal
+  Elephant --|> Animal
+  Tiger --|> Animal

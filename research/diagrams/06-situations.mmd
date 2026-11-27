@@ -1,0 +1,28 @@
+classDiagram
+  class Patient["Patient"]
+  Patient : <<kind>>
+  class OverweightPerson["OverweightPerson"]
+  OverweightPerson : <<phase>>
+  class FebrilePatient["FebrilePatient"]
+  FebrilePatient : <<phase>>
+  class Weight["Weight"]
+  Weight : <<quality>>
+  class double["double"]
+  double : <<datatype>>
+  class Heart["Heart"]
+  Heart : <<kind>>
+  class HeartTransplantSurgery["HeartTransplantSurgery"]
+  HeartTransplantSurgery : <<event>>
+  class DentalCrown["DentalCrown"]
+  DentalCrown : <<kind>>
+  class PorcelainQuantity["PorcelainQuantity"]
+  PorcelainQuantity : <<quantity>>
+  class CompositeResinQuantity["CompositeResinQuantity"]
+  CompositeResinQuantity : <<quantity>>
+  class SepsisAlert["SepsisAlert"]
+  SepsisAlert : <<event>>
+  OverweightPerson --|> Patient
+  FebrilePatient --|> Patient
+  Weight -- Patient : characterization
+  Heart *-- Patient : componentOf
+  Patient -- Patient : comparative

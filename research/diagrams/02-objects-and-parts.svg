@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836.2 310.0" width="836" height="310" role="img">
+<title>2. Objects and their parts</title>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<defs><marker id="gen-02-objects-and-parts" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="agg-02-objects-and-parts" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="comp-02-objects-and-parts" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#18362f" stroke="#18362f" stroke-width="1.2"/></marker></defs>
+<line x1="176.0" y1="64.0" x2="148.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="148.0,64.0 154.0,68.2 160.0,64.0 154.0,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="162.0" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«componentOf» isEngineOf</text>
+<line x1="324.0" y1="64.0" x2="148.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="148.0,64.0 154.0,68.2 160.0,64.0 154.0,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="236.0" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«componentOf» isWheelOf</text>
+<line x1="148.0" y1="64.0" x2="472.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="472.0,64.0 466.0,59.8 460.0,64.0 466.0,68.2" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="310.0" y="72.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«memberOf» isFleetMemberOf</text>
+<line x1="592.0" y1="64.0" x2="472.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="592.0,64.0 586.0,59.8 580.0,64.0 586.0,68.2" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="532.0" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«subCollectionOf»</text>
+<line x1="190.3" y1="210.0" x2="714.1" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="714.1,90.0 707.3,87.2 702.4,92.7 709.2,95.4" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="454.0" y="157.8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«subQuantityOf» isEthanolPortionOf</text>
+<text x="205.9" y="202.4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1</text>
+<text x="698.5" y="89.6" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">0..1</text>
+<line x1="418.1" y1="210.0" x2="714.1" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="714.1,90.0 707.0,88.4 703.0,94.5 710.1,96.1" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="569.1" y="157.4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«subQuantityOf» isDistillatePortionOf</text>
+<text x="432.9" y="200.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1</text>
+<text x="699.3" y="92.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">0..1</text>
+<line x1="556.1" y1="236.0" x2="528.1" y2="236.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="528.1,236.0 534.1,240.2 540.1,236.0 534.1,231.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="542.1" y="228.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«subQuantityOf» isBenzenePortionOf</text>
+<text x="540.1" y="232.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1</text>
+<text x="544.1" y="232.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">0..1</text>
+<line x1="808.2" y1="64.0" x2="620.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="714.1" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«historicalDependence»</text>
+<rect x="28.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="88.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="88.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Car</text>
+<rect x="176.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="236.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="236.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Engine</text>
+<rect x="324.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="384.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="384.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Wheel</text>
+<rect x="472.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="532.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«collective»</text>
+<text x="532.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Fleet</text>
+<rect x="620.0" y="38.0" width="188.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="714.1" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quantity»</text>
+<text x="714.1" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">QuantityOfGasoline</text>
+<rect x="100.6" y="210.0" width="179.6" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="190.3" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quantity»</text>
+<text x="190.3" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">QuantityOfEthanol</text>
+<rect x="308.1" y="210.0" width="220.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="418.1" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quantity»</text>
+<text x="418.1" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">QuantityOfPetroleumDistillate</text>
+<rect x="556.1" y="210.0" width="179.6" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="645.9" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«quantity»</text>
+<text x="645.9" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">QuantityOfBenzene</text>
+</svg>

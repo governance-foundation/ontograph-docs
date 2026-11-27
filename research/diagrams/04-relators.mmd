@@ -1,0 +1,39 @@
+classDiagram
+  class Person["Person"]
+  Person : <<kind>>
+  class Organization["Organization"]
+  Organization : <<kind>>
+  class Employee["Employee"]
+  Employee : <<role>>
+  class Employer["Employer"]
+  Employer : <<role>>
+  class Employment["Employment"]
+  Employment : <<relator>>
+  class RightToSalary["RightToSalary"]
+  RightToSalary : <<mode>>
+  class DutyToPaySalary["DutyToPaySalary"]
+  DutyToPaySalary : <<mode>>
+  class DutyToWork["DutyToWork"]
+  DutyToWork : <<mode>>
+  class RightToLabor["RightToLabor"]
+  RightToLabor : <<mode>>
+  class Marriage["Marriage"]
+  Marriage : <<relator>>
+  Employee --|> Person
+  Employer --|> Organization
+  Employment -- Employee : mediation
+  Employment -- Employer : mediation
+  RightToSalary -- Employee : characterization
+  RightToSalary -- Employer : externalDependence
+  RightToSalary *-- Employment
+  DutyToPaySalary -- Employer : characterization
+  DutyToPaySalary -- Employee : externalDependence
+  DutyToPaySalary *-- Employment
+  DutyToWork -- Employee : characterization
+  DutyToWork -- Employer : externalDependence
+  DutyToWork *-- Employment
+  RightToLabor -- Employer : characterization
+  RightToLabor -- Employee : externalDependence
+  RightToLabor *-- Employment
+  Employee -- Employer : material
+  Marriage -- "1..*" Person : mediation

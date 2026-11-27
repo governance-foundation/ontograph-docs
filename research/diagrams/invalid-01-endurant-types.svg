@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816.5 570.0" width="816" height="570" role="img">
+<title>1, invalid variant</title>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<defs><marker id="gen-invalid-01-endurant-types" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="agg-invalid-01-endurant-types" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="comp-invalid-01-endurant-types" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#18362f" stroke="#18362f" stroke-width="1.2"/></marker></defs>
+<text x="28" y="18" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#b94d30">Invalid variant — drawn from the authored OntoUML JSON</text>
+<line x1="88.0" y1="182.0" x2="406.3" y2="90.6" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="244.1" y1="182.0" x2="406.5" y2="91.0" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="112.2" y1="326.0" x2="242.4" y2="235.1" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="260.2" y1="326.0" x2="89.8" y2="234.9" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="408.2" y1="326.0" x2="89.9" y2="234.6" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="556.2" y1="326.0" x2="90.0" y2="234.4" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="704.2" y1="326.0" x2="90.0" y2="234.3" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="400.2" y1="182.0" x2="408.1" y2="92.0" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="551.9" y1="182.0" x2="409.9" y2="91.1" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="716.1" y1="182.0" x2="410.2" y2="90.6" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<line x1="408.2" y1="470.0" x2="702.3" y2="378.6" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-invalid-01-endurant-types)"/>
+<rect x="348.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="408.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«category»</text>
+<text x="408.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Agent</text>
+<rect x="28.0" y="182.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="88.0" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="88.0" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Person</text>
+<rect x="176.0" y="182.0" width="136.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="244.1" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="244.1" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Organization</text>
+<rect x="52.2" y="326.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="112.2" y="346.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«subkind»</text>
+<text x="112.2" y="364.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">University</text>
+<rect x="200.2" y="326.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="260.2" y="346.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«phase»</text>
+<text x="260.2" y="364.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Child</text>
+<rect x="348.2" y="326.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="408.2" y="346.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«phase»</text>
+<text x="408.2" y="364.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Adult</text>
+<rect x="496.2" y="326.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="556.2" y="346.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«role»</text>
+<text x="556.2" y="364.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Student</text>
+<rect x="644.2" y="326.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="704.2" y="346.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«role»</text>
+<text x="704.2" y="364.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Employee</text>
+<rect x="340.2" y="182.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="400.2" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«roleMixin»</text>
+<text x="400.2" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Customer</text>
+<rect x="488.2" y="182.0" width="127.5" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="551.9" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«phaseMixin»</text>
+<text x="551.9" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">ActiveAgent</text>
+<rect x="643.6" y="182.0" width="144.8" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="716.1" y="202.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«phaseMixin»</text>
+<text x="716.1" y="220.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">InactiveAgent</text>
+<rect x="348.2" y="470.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="408.2" y="490.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="408.2" y="508.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Manager</text>
+</svg>

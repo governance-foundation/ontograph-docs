@@ -1,0 +1,25 @@
+classDiagram
+  class Car["Car"]
+  Car : <<kind>>
+  class Engine["Engine"]
+  Engine : <<kind>>
+  class Wheel["Wheel"]
+  Wheel : <<kind>>
+  class Fleet["Fleet"]
+  Fleet : <<collective>>
+  class QuantityOfGasoline["QuantityOfGasoline"]
+  QuantityOfGasoline : <<quantity>>
+  class QuantityOfEthanol["QuantityOfEthanol"]
+  QuantityOfEthanol : <<quantity>>
+  class QuantityOfPetroleumDistillate["QuantityOfPetroleumDistillate"]
+  QuantityOfPetroleumDistillate : <<quantity>>
+  class QuantityOfBenzene["QuantityOfBenzene"]
+  QuantityOfBenzene : <<quantity>>
+  Engine *-- Car : componentOf
+  Wheel *-- Car : componentOf
+  Car *-- Fleet : memberOf
+  Fleet *-- Fleet : subCollectionOf
+  QuantityOfEthanol "1" *-- "0..1" QuantityOfGasoline : subQuantityOf
+  QuantityOfPetroleumDistillate "1" *-- "0..1" QuantityOfGasoline : subQuantityOf
+  QuantityOfBenzene "1" *-- "0..1" QuantityOfPetroleumDistillate : subQuantityOf
+  QuantityOfGasoline -- QuantityOfGasoline : historicalDependence

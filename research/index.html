@@ -26,8 +26,10 @@
 </a>
 <nav aria-label="Primary">
 <a href="#examples">Examples</a>
+<a href="#model-diagrams">Diagrams</a>
 <a href="#findings">Findings</a>
 <a href="#how-it-works">How it works</a>
+<a href="#existing-demos">Existing demos</a>
 <a href="#results">Results</a>
 <a href="#check">Check it yourself</a>
 <a href="#tonto">Tonto</a>
@@ -74,6 +76,355 @@
 <p><strong>7. Higher-order types</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto accepts the valid model.</p>
 <p><strong>1, invalid variant</strong> — caught. OntoGraph reports two UFO-rule errors (a «kind» Manager specialising a «role» Employee, which also places a rigid type under an anti-rigid one). gufoshapes reports the same two violations in both engines. Pellet remains consistent, as with the upstream file. Tonto also rejects this model; that is not a Tonto issue, because the model is invalid on purpose.</p>
 <p><strong>7, invalid variant</strong> — caught. OntoGraph reports one UFO-rule error: Tiger is in the AnimalSpecies partition without being declared disjoint from the other members. gufoshapes reports six violations (Tiger against Lion, Hyena and Elephant, in both directions) because our invalid case extends the full valid model, which already includes Elephant; the upstream invalid file is a minimal excerpt without Elephant. Tonto is right to reject the overlapping generalisation set with an «instantiation» upper bound of 1; it can still miss the partition pitfall when it only sees a categorizer and not <code>@instantiation</code>. How we encoded the pitfall in OntoUML is a question for NEMO.</p>
+</div>
+</section>
+
+<section class="section model-diagrams" id="model-diagrams" aria-labelledby="diagrams-title">
+<div class="section-heading">
+<span class="section-number">The models</span>
+<h2 id="diagrams-title">Class diagrams from the OntoUML JSON</h2>
+<p>Each diagram is generated from the authored OntoUML JSON published in the <a href="ontouml-to-gufo-check/README.md">check bundle</a>. Classes show their OntoUML stereotype; hollow triangles are generalisations; diamonds mark composition or collection wholes. They are a reading aid for the cases above, not figures from the upstream examples, and OntoGraph does not yet ship a diagram command.</p>
+</div>
+<div class="diagram-card" id="diagram-01-endurant-types">
+<figure>
+<img src="diagrams/01-endurant-types.svg" alt="Class diagram of 1. Endurant types, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/01-endurant-types/index.html">1. Endurant types</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Agent["Agent"]
+  Agent : &lt;&lt;category&gt;&gt;
+  class Person["Person"]
+  Person : &lt;&lt;kind&gt;&gt;
+  class Organization["Organization"]
+  Organization : &lt;&lt;kind&gt;&gt;
+  class University["University"]
+  University : &lt;&lt;subkind&gt;&gt;
+  class Child["Child"]
+  Child : &lt;&lt;phase&gt;&gt;
+  class Adult["Adult"]
+  Adult : &lt;&lt;phase&gt;&gt;
+  class Student["Student"]
+  Student : &lt;&lt;role&gt;&gt;
+  class Employee["Employee"]
+  Employee : &lt;&lt;role&gt;&gt;
+  class Customer["Customer"]
+  Customer : &lt;&lt;roleMixin&gt;&gt;
+  class ActiveAgent["ActiveAgent"]
+  ActiveAgent : &lt;&lt;phaseMixin&gt;&gt;
+  class InactiveAgent["InactiveAgent"]
+  InactiveAgent : &lt;&lt;phaseMixin&gt;&gt;
+  Person --|&gt; Agent
+  Organization --|&gt; Agent
+  University --|&gt; Organization
+  Child --|&gt; Person
+  Adult --|&gt; Person
+  Student --|&gt; Person
+  Employee --|&gt; Person
+  Customer --|&gt; Agent
+  ActiveAgent --|&gt; Agent
+  InactiveAgent --|&gt; Agent</code></pre>
+<p class="small"><a href="diagrams/01-endurant-types.mmd">diagrams/01-endurant-types.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-02-objects-and-parts">
+<figure>
+<img src="diagrams/02-objects-and-parts.svg" alt="Class diagram of 2. Objects and their parts, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/02-objects-and-parts/index.html">2. Objects and their parts</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Car["Car"]
+  Car : &lt;&lt;kind&gt;&gt;
+  class Engine["Engine"]
+  Engine : &lt;&lt;kind&gt;&gt;
+  class Wheel["Wheel"]
+  Wheel : &lt;&lt;kind&gt;&gt;
+  class Fleet["Fleet"]
+  Fleet : &lt;&lt;collective&gt;&gt;
+  class QuantityOfGasoline["QuantityOfGasoline"]
+  QuantityOfGasoline : &lt;&lt;quantity&gt;&gt;
+  class QuantityOfEthanol["QuantityOfEthanol"]
+  QuantityOfEthanol : &lt;&lt;quantity&gt;&gt;
+  class QuantityOfPetroleumDistillate["QuantityOfPetroleumDistillate"]
+  QuantityOfPetroleumDistillate : &lt;&lt;quantity&gt;&gt;
+  class QuantityOfBenzene["QuantityOfBenzene"]
+  QuantityOfBenzene : &lt;&lt;quantity&gt;&gt;
+  Engine *-- Car : componentOf
+  Wheel *-- Car : componentOf
+  Car *-- Fleet : memberOf
+  Fleet *-- Fleet : subCollectionOf
+  QuantityOfEthanol "1" *-- "0..1" QuantityOfGasoline : subQuantityOf
+  QuantityOfPetroleumDistillate "1" *-- "0..1" QuantityOfGasoline : subQuantityOf
+  QuantityOfBenzene "1" *-- "0..1" QuantityOfPetroleumDistillate : subQuantityOf
+  QuantityOfGasoline -- QuantityOfGasoline : historicalDependence</code></pre>
+<p class="small"><a href="diagrams/02-objects-and-parts.mmd">diagrams/02-objects-and-parts.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-03-qualities">
+<figure>
+<img src="diagrams/03-qualities.svg" alt="Class diagram of 3. Qualities and quality values, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/03-qualities/index.html">3. Qualities and quality values</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Gemstone["Gemstone"]
+  Gemstone : &lt;&lt;kind&gt;&gt;
+  class TShirt["TShirt"]
+  TShirt : &lt;&lt;kind&gt;&gt;
+  class Painting["Painting"]
+  Painting : &lt;&lt;kind&gt;&gt;
+  class double["double"]
+  double : &lt;&lt;datatype&gt;&gt;
+  class nonNegativeInteger["nonNegativeInteger"]
+  nonNegativeInteger : &lt;&lt;datatype&gt;&gt;
+  class Mass["Mass"]
+  Mass : &lt;&lt;quality&gt;&gt;
+  class ShirtSize["ShirtSize"]
+  ShirtSize : &lt;&lt;enumeration&gt;&gt;
+  class Size["Size"]
+  Size : &lt;&lt;quality&gt;&gt;
+  class ColorValueInRGB["ColorValueInRGB"]
+  ColorValueInRGB : &lt;&lt;datatype&gt;&gt;
+  class Color["Color"]
+  Color : &lt;&lt;quality&gt;&gt;
+  Mass -- "1" Gemstone : characterization
+  Size -- TShirt : characterization
+  Color -- Painting : characterization</code></pre>
+<p class="small"><a href="diagrams/03-qualities.mmd">diagrams/03-qualities.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-04-relators">
+<figure>
+<img src="diagrams/04-relators.svg" alt="Class diagram of 4. Relators and extrinsic aspects, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/04-relators/index.html">4. Relators and extrinsic aspects</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Person["Person"]
+  Person : &lt;&lt;kind&gt;&gt;
+  class Organization["Organization"]
+  Organization : &lt;&lt;kind&gt;&gt;
+  class Employee["Employee"]
+  Employee : &lt;&lt;role&gt;&gt;
+  class Employer["Employer"]
+  Employer : &lt;&lt;role&gt;&gt;
+  class Employment["Employment"]
+  Employment : &lt;&lt;relator&gt;&gt;
+  class RightToSalary["RightToSalary"]
+  RightToSalary : &lt;&lt;mode&gt;&gt;
+  class DutyToPaySalary["DutyToPaySalary"]
+  DutyToPaySalary : &lt;&lt;mode&gt;&gt;
+  class DutyToWork["DutyToWork"]
+  DutyToWork : &lt;&lt;mode&gt;&gt;
+  class RightToLabor["RightToLabor"]
+  RightToLabor : &lt;&lt;mode&gt;&gt;
+  class Marriage["Marriage"]
+  Marriage : &lt;&lt;relator&gt;&gt;
+  Employee --|&gt; Person
+  Employer --|&gt; Organization
+  Employment -- Employee : mediation
+  Employment -- Employer : mediation
+  RightToSalary -- Employee : characterization
+  RightToSalary -- Employer : externalDependence
+  RightToSalary *-- Employment
+  DutyToPaySalary -- Employer : characterization
+  DutyToPaySalary -- Employee : externalDependence
+  DutyToPaySalary *-- Employment
+  DutyToWork -- Employee : characterization
+  DutyToWork -- Employer : externalDependence
+  DutyToWork *-- Employment
+  RightToLabor -- Employer : characterization
+  RightToLabor -- Employee : externalDependence
+  RightToLabor *-- Employment
+  Employee -- Employer : material
+  Marriage -- "1..*" Person : mediation</code></pre>
+<p class="small"><a href="diagrams/04-relators.mmd">diagrams/04-relators.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-05-events">
+<figure>
+<img src="diagrams/05-events.svg" alt="Class diagram of 5. Events, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/05-events/index.html">5. Events</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Tournament["Tournament"]
+  Tournament : &lt;&lt;event&gt;&gt;
+  class Match["Match"]
+  Match : &lt;&lt;event&gt;&gt;
+  class SemiFinal["SemiFinal"]
+  SemiFinal : &lt;&lt;event&gt;&gt;
+  class Final["Final"]
+  Final : &lt;&lt;event&gt;&gt;
+  class OpeningCeremony["OpeningCeremony"]
+  OpeningCeremony : &lt;&lt;event&gt;&gt;
+  class Player["Player"]
+  Player : &lt;&lt;kind&gt;&gt;
+  class Club["Club"]
+  Club : &lt;&lt;kind&gt;&gt;
+  class MatchParticipation["MatchParticipation"]
+  MatchParticipation : &lt;&lt;event&gt;&gt;
+  class KneeInjury["KneeInjury"]
+  KneeInjury : &lt;&lt;mode&gt;&gt;
+  SemiFinal --|&gt; Match
+  Final --|&gt; Match
+  Match *-- Tournament
+  OpeningCeremony *-- Tournament
+  Final -- SemiFinal : historicalDependence
+  Player -- Match : participation
+  MatchParticipation *-- Match : participational
+  Player "1" -- MatchParticipation : participation
+  KneeInjury -- Player : characterization
+  KneeInjury -- Match : manifestation
+  Club -- OpeningCeremony : creation
+  Club -- OpeningCeremony : termination</code></pre>
+<p class="small"><a href="diagrams/05-events.mmd">diagrams/05-events.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-06-situations">
+<figure>
+<img src="diagrams/06-situations.svg" alt="Class diagram of 6. Situations, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/06-situations/index.html">6. Situations</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Patient["Patient"]
+  Patient : &lt;&lt;kind&gt;&gt;
+  class OverweightPerson["OverweightPerson"]
+  OverweightPerson : &lt;&lt;phase&gt;&gt;
+  class FebrilePatient["FebrilePatient"]
+  FebrilePatient : &lt;&lt;phase&gt;&gt;
+  class Weight["Weight"]
+  Weight : &lt;&lt;quality&gt;&gt;
+  class double["double"]
+  double : &lt;&lt;datatype&gt;&gt;
+  class Heart["Heart"]
+  Heart : &lt;&lt;kind&gt;&gt;
+  class HeartTransplantSurgery["HeartTransplantSurgery"]
+  HeartTransplantSurgery : &lt;&lt;event&gt;&gt;
+  class DentalCrown["DentalCrown"]
+  DentalCrown : &lt;&lt;kind&gt;&gt;
+  class PorcelainQuantity["PorcelainQuantity"]
+  PorcelainQuantity : &lt;&lt;quantity&gt;&gt;
+  class CompositeResinQuantity["CompositeResinQuantity"]
+  CompositeResinQuantity : &lt;&lt;quantity&gt;&gt;
+  class SepsisAlert["SepsisAlert"]
+  SepsisAlert : &lt;&lt;event&gt;&gt;
+  OverweightPerson --|&gt; Patient
+  FebrilePatient --|&gt; Patient
+  Weight -- Patient : characterization
+  Heart *-- Patient : componentOf
+  Patient -- Patient : comparative</code></pre>
+<p class="small"><a href="diagrams/06-situations.mmd">diagrams/06-situations.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-07-higher-order-types">
+<figure>
+<img src="diagrams/07-higher-order-types.svg" alt="Class diagram of 7. Higher-order types, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/07-higher-order-types/index.html">7. Higher-order types</a>. Drawn from the authored OntoUML JSON in the check bundle. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Animal["Animal"]
+  Animal : &lt;&lt;kind&gt;&gt;
+  class AnimalSpecies["AnimalSpecies"]
+  AnimalSpecies : &lt;&lt;type&gt;&gt;
+  class Lion["Lion"]
+  Lion : &lt;&lt;subkind&gt;&gt;
+  class Hyena["Hyena"]
+  Hyena : &lt;&lt;subkind&gt;&gt;
+  class Elephant["Elephant"]
+  Elephant : &lt;&lt;subkind&gt;&gt;
+  class ConservationStatus["ConservationStatus"]
+  ConservationStatus : &lt;&lt;enumeration&gt;&gt;
+  Lion --|&gt; Animal
+  Hyena --|&gt; Animal
+  Elephant --|&gt; Animal</code></pre>
+<p class="small"><a href="diagrams/07-higher-order-types.mmd">diagrams/07-higher-order-types.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-invalid-01-endurant-types">
+<figure>
+<img src="diagrams/invalid-01-endurant-types.svg" alt="Class diagram of 1, invalid variant, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/01-endurant-types/index.html">1, invalid variant</a>. Drawn from the authored OntoUML JSON in the check bundle. Invalid variant. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Agent["Agent"]
+  Agent : &lt;&lt;category&gt;&gt;
+  class Person["Person"]
+  Person : &lt;&lt;kind&gt;&gt;
+  class Organization["Organization"]
+  Organization : &lt;&lt;kind&gt;&gt;
+  class University["University"]
+  University : &lt;&lt;subkind&gt;&gt;
+  class Child["Child"]
+  Child : &lt;&lt;phase&gt;&gt;
+  class Adult["Adult"]
+  Adult : &lt;&lt;phase&gt;&gt;
+  class Student["Student"]
+  Student : &lt;&lt;role&gt;&gt;
+  class Employee["Employee"]
+  Employee : &lt;&lt;role&gt;&gt;
+  class Customer["Customer"]
+  Customer : &lt;&lt;roleMixin&gt;&gt;
+  class ActiveAgent["ActiveAgent"]
+  ActiveAgent : &lt;&lt;phaseMixin&gt;&gt;
+  class InactiveAgent["InactiveAgent"]
+  InactiveAgent : &lt;&lt;phaseMixin&gt;&gt;
+  class Manager["Manager"]
+  Manager : &lt;&lt;kind&gt;&gt;
+  Person --|&gt; Agent
+  Organization --|&gt; Agent
+  University --|&gt; Organization
+  Child --|&gt; Person
+  Adult --|&gt; Person
+  Student --|&gt; Person
+  Employee --|&gt; Person
+  Customer --|&gt; Agent
+  ActiveAgent --|&gt; Agent
+  InactiveAgent --|&gt; Agent
+  Manager --|&gt; Employee</code></pre>
+<p class="small"><a href="diagrams/invalid-01-endurant-types.mmd">diagrams/invalid-01-endurant-types.mmd</a></p>
+</details>
+</div>
+<div class="diagram-card" id="diagram-invalid-07-higher-order-types">
+<figure>
+<img src="diagrams/invalid-07-higher-order-types.svg" alt="Class diagram of 7, invalid variant, generated from the authored OntoUML JSON.">
+<figcaption><a href="https://nemo-ufes.github.io/gufo/examples/07-higher-order-types/index.html">7, invalid variant</a>. Drawn from the authored OntoUML JSON in the check bundle. Invalid variant. This is a reading aid, not an upstream figure.</figcaption>
+</figure>
+<details>
+<summary>Mermaid source</summary>
+<pre class="command" tabindex="0"><code>classDiagram
+  class Animal["Animal"]
+  Animal : &lt;&lt;kind&gt;&gt;
+  class AnimalSpecies["AnimalSpecies"]
+  AnimalSpecies : &lt;&lt;type&gt;&gt;
+  class Lion["Lion"]
+  Lion : &lt;&lt;subkind&gt;&gt;
+  class Hyena["Hyena"]
+  Hyena : &lt;&lt;subkind&gt;&gt;
+  class Elephant["Elephant"]
+  Elephant : &lt;&lt;subkind&gt;&gt;
+  class ConservationStatus["ConservationStatus"]
+  ConservationStatus : &lt;&lt;enumeration&gt;&gt;
+  class Tiger["Tiger"]
+  Tiger : &lt;&lt;subkind&gt;&gt;
+  Lion --|&gt; Animal
+  Hyena --|&gt; Animal
+  Elephant --|&gt; Animal
+  Tiger --|&gt; Animal</code></pre>
+<p class="small"><a href="diagrams/invalid-07-higher-order-types.mmd">diagrams/invalid-07-higher-order-types.mmd</a></p>
+</details>
 </div>
 </section>
 
@@ -234,6 +585,20 @@ ontograph --json tonto-gufo-project request.json</code></pre>
 <p>A second verdict of the same correction is reported for Final under Match. The written Tonto still contains <code>event SemiFinal specializes Match</code>. The model is not rewritten to make <code>tonto check</code> happy.</p>
 </div>
 <p>The portable re-check of the published outputs is in <a href="#check">Check it yourself</a>. It does not rerun OntoGraph, Jena or Pellet.</p>
+</section>
+
+<section class="section" id="existing-demos" aria-labelledby="demos-title">
+<div class="section-heading">
+<span class="section-number">What already exists</span>
+<h2 id="demos-title">Existing demonstrations, and a shared-workspace query</h2>
+<p>There is already executable demonstration material, but it is not yet a single workspace in which several of these nine models are loaded as cartridges and queried together.</p>
+</div>
+<p>The organisational appointment journey — this site's <a href="#own-case">own worked case</a> and <a href="explorer/">viewpoint explorer</a>, and the product repository's giancarlo-demonstration and research-demonstration runners — loads <em>one</em> OntoUML model, feeds instance data through the source-composition profile, and runs typed SPARQL checks (appointments, qualities, participations) plus OWL and SHACL. The OntoUML canon first-run kit pins <em>one</em> rule cartridge (<code>ontouml-canon</code>) to a workspace and imports one model for validation and review. The walkthrough earlier on this page projects one Tonto input (example 01) to gUFO and shows retained query answers on that graph.</p>
+<p>The engine can stage several of the nine models in one workspace. With the same binary as the retained acceptance run, <code>tonto-import</code> lowered example 01, <code>ontograph init</code> created a workspace, and <code>ontouml-import</code> staged that model together with examples 02 and 05. All three imports succeeded and remain as separate records under <code>imports/ontouml/</code>. <code>model inventory --workspace … --import-ref …</code> can read one of those records at a time (24 source elements on 01; 42 on 05). The records stay noncanonical: they do not populate a workspace canonical graph.</p>
+<div class="callout scope-note">
+<strong>What is not a shipped command yet</strong>
+<p><code>query-id</code>, <code>search</code> and <code>build-index</code> operate on the workspace canonical graph. After these imports, that graph is absent, so those commands cannot see Student, Match or Alice. Instance data for the nine examples is fed through <code>ontouml-gufo-project</code> / <code>tonto-gufo-project</code>, one model per request, not into a shared workspace query surface. Workspace composition (<code>--composition</code> with <code>ontograph.gufo.source-composition.v1</code>) is the appointment-demo path, a different profile. <code>cartridge activate</code> pins one rule or brain package to a workspace; it does not register each domain model as a cartridge. A query that answers across several of these models' types and instances in one workspace is therefore not something we can demonstrate without inventing a command. That is a product gap, not a missing screenshot.</p>
+</div>
 </section>
 
 <section class="section" id="results" aria-labelledby="results-title">

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026.4 482.0" width="1026" height="482" role="img">
+<title>5. Events</title>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<defs><marker id="gen-05-events" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="agg-05-events" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#fbfaf6" stroke="#18362f" stroke-width="1.2"/></marker>
+<marker id="comp-05-events" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto"><path d="M0,5 L6,0 L12,5 L6,10 Z" fill="#18362f" stroke="#18362f" stroke-width="1.2"/></marker></defs>
+<line x1="176.0" y1="64.0" x2="148.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="148.0,64.0 154.0,68.2 160.0,64.0 154.0,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="324.0" y1="64.0" x2="148.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="148.0,64.0 154.0,68.2 160.0,64.0 154.0,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<line x1="527.2" y1="408.0" x2="499.2" y2="408.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="513.2" y="400.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«historicalDependence»</text>
+<line x1="514.2" y1="64.0" x2="296.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="405.1" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«participation» participatedInMatch</text>
+<line x1="810.2" y1="64.0" x2="296.0" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<polygon points="296.0,64.0 302.0,68.2 308.0,64.0 302.0,59.8" fill="#18362f" stroke="#18362f" stroke-width="1.1"/>
+<text x="553.1" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«participational»</text>
+<line x1="634.2" y1="64.0" x2="810.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="722.2" y="72.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«participation»</text>
+<text x="650.2" y="60.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#53675f">1</text>
+<line x1="513.2" y1="210.0" x2="574.2" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="550.8" y="153.6" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«characterization» hadKneeInjury</text>
+<line x1="513.2" y1="210.0" x2="236.0" y2="90.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="377.8" y="142.7" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«manifestation»</text>
+<line x1="662.2" y1="64.0" x2="486.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="574.2" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«creation»</text>
+<line x1="662.2" y1="64.0" x2="486.2" y2="64.0" stroke="#18362f" stroke-width="1.1"/>
+<text x="574.2" y="56.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#53675f">«termination»</text>
+<line x1="439.2" y1="382.0" x2="237.1" y2="91.6" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-05-events)"/>
+<line x1="587.2" y1="382.0" x2="237.5" y2="91.3" stroke="#18362f" stroke-width="1.2" marker-end="url(#gen-05-events)"/>
+<rect x="28.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="88.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="88.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Tournament</text>
+<rect x="176.0" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="236.0" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="236.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Match</text>
+<rect x="379.2" y="382.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="439.2" y="402.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="439.2" y="420.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">SemiFinal</text>
+<rect x="527.2" y="382.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="587.2" y="402.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="587.2" y="420.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Final</text>
+<rect x="324.0" y="38.0" width="162.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="405.1" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="405.1" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">OpeningCeremony</text>
+<rect x="514.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="574.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="574.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Player</text>
+<rect x="662.2" y="38.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="722.2" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«kind»</text>
+<text x="722.2" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">Club</text>
+<rect x="810.2" y="38.0" width="188.2" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="904.3" y="58.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«event»</text>
+<text x="904.3" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">MatchParticipation</text>
+<rect x="453.2" y="210.0" width="120.0" height="52.0" rx="5" fill="#edf1e9" stroke="#18362f" stroke-width="1.2"/>
+<text x="513.2" y="230.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#53675f">«mode»</text>
+<text x="513.2" y="248.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#18362f">KneeInjury</text>
+</svg>
