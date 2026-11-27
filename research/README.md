@@ -8,17 +8,29 @@ generated from the ontograph repository's `website/` folder, and the
 
 ## What the page shows (updated 27 November 2026)
 
-`index.html` leads with OntoGraph's genuine OntoUML-to-gUFO projection of the
-nine files in the [gUFO usage examples](https://nemo-ufes.github.io/gufo/examples/):
-OntoUML models authored from the example prose, UFO-rule findings, gufoshapes
-results in pySHACL and Apache Jena 6.2.0, Pellet consistency, and classified
-differences from the upstream Turtle (a comparison target only). It then
-covers Tonto 0.9.4 as a cross-check, an OntoGraph-only temporal extension of
-example 05, a portable re-check, and open questions. The October 2026 Turtle
-admit-and-regenerate result (808/808 assertions preserved) is kept on the
-page and clearly labelled as a separate Turtle round-trip, not the headline.
-OntoGraph's own appointment case follows, labelled as modelling under revision
-with its known issues listed.
+`index.html` leads with the product frame: OntoGraph productises OntoUML into
+one engine you load models (cartridges) into, feed data, and query. The
+direction is a utility that drives grounded context for AI and can act as a
+second brain; that assistant layer is marked as direction, not a shipped
+capability. What the engine already does is load OntoUML (from authored JSON
+or from Tonto via `ontograph-dsl-tonto`), apply UFO rules, project gUFO, merge
+instance data, store the result, and answer checks and queries. The nine
+[gUFO usage examples](https://nemo-ufes.github.io/gufo/examples/) are the
+acceptance suite for that semantic core.
+
+The page then takes three things in order: how each of the nine examples
+played out, what we found (including Tonto 0.9.4 as a cross-check and the
+three questions pending NEMO review), and how we executed it (architecture, a
+walkthrough of example 01 from Tonto into a query on the projected graph, and
+the dual-verdict format on example 05). The recorded evidence stays beneath:
+UFO-rule findings, gufoshapes in pySHACL and Apache Jena 6.2.0, Pellet
+consistency, classified differences from the upstream Turtle (a comparison
+target only), the portable re-check, the OntoGraph-only temporal extension of
+example 05, and open questions. The October 2026 Turtle admit-and-regenerate
+result (808/808 assertions preserved) is kept on the page and clearly labelled
+as a separate Turtle round-trip, not the headline. OntoGraph's own appointment
+case follows, labelled as modelling under revision with its known issues
+listed.
 
 - `ontouml-to-gufo-check/` holds the projection evidence (models, instance
   files, outputs, diffs, findings, oracles, the retained run record, pinned

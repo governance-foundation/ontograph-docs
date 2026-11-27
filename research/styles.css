@@ -807,3 +807,17 @@ pre.command code{background:none;color:inherit;padding:0;font-size:inherit}
   table.stack td{border:0;padding:3px 14px}
   table.stack td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--muted)}
 }
+
+/* How it works — architecture and product framing */
+.callout.direction{border-color:var(--ink)}
+.callout.direction strong{display:block;margin-bottom:6px}
+.summary-steps{display:grid;gap:16px;margin:0 0 28px;padding:0;list-style:none}
+.summary-steps>li{background:var(--pale);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
+.summary-steps strong{display:block;margin-bottom:4px}
+.arch{margin:8px 0 28px;overflow-x:auto}
+.arch svg{display:block;width:100%;min-width:720px;height:auto}
+.arch-legend{font-size:14px;color:var(--muted);margin:8px 0 0;max-width:70ch}
+.walkthrough pre.command{font-size:13px}
+.walkthrough h3{font-family:var(--serif);font-size:22px;margin:28px 0 10px}
+.example-play{margin:0 0 22px}
+.example-play p{margin:0 0 14px}

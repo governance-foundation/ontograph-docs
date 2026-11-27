@@ -3,34 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OntoUML to gUFO on the gUFO usage examples · OntoGraph Research</title>
-<meta name="description" content="OntoGraph projects OntoUML models of the nine gUFO usage examples to gUFO. The seven valid examples have no UFO-rule findings and conform to gufoshapes in both pySHACL and Apache Jena 6.2.0. The two invalid variants are rejected by OntoGraph's rules and fail gufoshapes. A portable re-check is included.">
+<title>OntoGraph: one engine for OntoUML · gUFO examples research</title>
+<meta name="description" content="OntoGraph productises OntoUML into one engine you load models into, feed data, and query. The nine gUFO usage examples are the acceptance suite for that semantic core. Today the engine loads OntoUML, applies UFO rules, projects gUFO, and answers checks and queries; a grounded AI-context utility is the product direction.">
 <link rel="canonical" href="https://governance-foundation.github.io/ontograph-docs/research/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="OntoGraph">
-<meta property="og:title" content="OntoUML to gUFO on the gUFO usage examples">
-<meta property="og:description" content="Seven valid OntoUML models project to gUFO with no UFO-rule findings and conform in pySHACL and Jena 6.2.0. The two invalid variants are rejected by OntoGraph's rules and fail gufoshapes.">
+<meta property="og:title" content="OntoGraph: one engine for OntoUML">
+<meta property="og:description" content="One engine for OntoUML: load models, feed data, and query. The nine gUFO examples are the acceptance suite. Grounded AI context is the product direction, not a shipped assistant.">
 <meta property="og:url" content="https://governance-foundation.github.io/ontograph-docs/research/">
 <meta property="og:image" content="https://governance-foundation.github.io/ontograph-docs/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="OntoUML to gUFO on the gUFO usage examples">
-<meta name="twitter:description" content="Seven valid examples project with no UFO-rule findings and conform in pySHACL and Jena 6.2.0. The two invalid variants are caught.">
+<meta name="twitter:title" content="OntoGraph: one engine for OntoUML">
+<meta name="twitter:description" content="One engine for OntoUML: load models, feed data, and query. The nine gUFO examples prove the semantic core. Grounded AI context is the product direction.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the results</a>
+<a class="skip" href="#main">Skip to the content</a>
 <header class="masthead">
 <a class="brand" href="../">
 <span class="brand-mark" aria-hidden="true">O</span>OntoGraph <span>Research</span>
 </a>
 <nav aria-label="Primary">
+<a href="#examples">Examples</a>
+<a href="#findings">Findings</a>
+<a href="#how-it-works">How it works</a>
 <a href="#results">Results</a>
-<a href="#differences">Differences</a>
 <a href="#check">Check it yourself</a>
 <a href="#tonto">Tonto</a>
-<a href="#extension">Extension</a>
-<a href="#turtle-round-trip">Turtle round-trip</a>
 <a href="#questions">Questions</a>
 <a href="#own-case">Own worked case</a>
 <a href="../docs/model-catalog.html">Model catalog</a>
@@ -39,30 +39,219 @@
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="title">
-<div class="eyebrow">Acceptance results · OntoUML to gUFO · updated 27 November 2026</div>
-<h1 id="title">OntoGraph projects the<br><em>gUFO usage examples</em><br>from OntoUML to gUFO.</h1>
-<p class="lead">We authored OntoUML models from the prose of the nine <a href="https://nemo-ufes.github.io/gufo/examples/">gUFO usage examples</a> — the seven example ontologies and the two deliberately invalid variants — applied OntoGraph's UFO rules, and wrote gUFO. The published Turtle at gUFO commit <code>f412254</code> is a comparison target only. It was not the input to the projection. Instance data is an OntoGraph-specific file, because OntoUML has no instance level.</p>
+<div class="eyebrow">OntoGraph research · gUFO usage examples · updated 27 November 2026</div>
+<h1 id="title">One engine for OntoUML:<br>load models, feed data, and query.</h1>
+<p class="lead">OntoGraph productises OntoUML into a single engine: you load many models, as cartridges, feed them instance data, and query the result. The nine <a href="https://nemo-ufes.github.io/gufo/examples/">gUFO usage examples</a> are the acceptance suite for that semantic core — proof that the engine stays faithful to UFO, OntoUML and gUFO. <code>ontograph-dsl-tonto</code> is the side-channel that takes Tonto, NEMO's text DSL for OntoUML, and lowers it into the same engine without changing a model to satisfy Tonto.</p>
+<div class="callout direction">
+<strong>Product direction</strong>
+<p>The aim is a utility that drives grounded context for AI and can act as a second brain: many OntoUML models and their data, queried as a stable semantic core. This edition does not ship an AI assistant or a prompt layer. What the engine already does today is load OntoUML (from authored JSON or from Tonto), apply UFO rules, project gUFO, merge instance data, store the result, and answer checks and queries against it.</p>
+</div>
+<p>This page is written so the acceptance evidence can be read in one pass. It takes three things in order:</p>
+<ol class="summary-steps">
+<li><strong>How each of the nine examples played out.</strong> Seven valid models project with no UFO-rule findings and conform to gufoshapes in both pySHACL and Apache Jena 6.2.0. The two invalid variants are caught by OntoGraph's rules and by gufoshapes. Pellet finds all nine consistent, including the invalid ones.</li>
+<li><strong>What we found.</strong> Every difference from the upstream Turtle is classified. Three genuine modelling differences are pending NEMO review. Tonto 0.9.4 was a cross-check, not an authority: we record where it diverges from published OntoUML/UFO, and where it is right — including an objection we withdrew.</li>
+<li><strong>How we executed it.</strong> The architecture, a walkthrough of a model Tonto gives us into OntoGraph and a query on the projected graph, and the recorded checks. The numbered evidence — tables, diffs, the portable re-check, the retained run — follows underneath, unchanged in substance.</li>
+</ol>
+<div class="hero-actions">
+<a class="button" href="#examples">How each example played out <span aria-hidden="true">↓</span></a>
+<a class="text-link" href="#how-it-works">Architecture and walkthrough →</a>
+</div>
+</section>
+
+<section class="section" id="examples" aria-labelledby="examples-title">
+<div class="section-heading">
+<span class="section-number">01 / The nine examples</span>
+<h2 id="examples-title">How each example played out</h2>
+<p>Each case started from the example prose, as an OntoUML model we authored, plus an OntoGraph instance file. The upstream Turtle at gUFO commit <code>f412254</code> was a comparison target only. The numbers are from the retained run of 27 November 2026, 07:05:47 Australia/Sydney; the table immediately below is the recorded evidence.</p>
+</div>
+<div class="example-play">
+<p><strong>1. Endurant types</strong> — valid. No UFO-rule findings. gufoshapes conforms in pySHACL and Jena 6.2.0; Pellet is consistent. Tonto 0.9.4 accepts this model. Used below as the worked walkthrough of a Tonto input into OntoGraph.</p>
+<p><strong>2. Objects and their parts</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto cannot accept an optional same-type sub-collection (a fleet within a fleet). OntoGraph kept the model and recorded a dual verdict: Tonto error, OntoGraph accepted.</p>
+<p><strong>3. Qualities and quality values</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto accepts the model. (When the Rust writer emits Tonto, unspecified cardinalities become <code>[0..*]</code>, which is an expressivity gap, not a Tonto error in the literature sense.)</p>
+<p><strong>4. Relators and extrinsic aspects</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto accepts the model. The authoring record notes that the Turtle was read; it was still not used as the projector input.</p>
+<p><strong>5. Events</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto rejects «event» specialising «event» (SemiFinal and Final under Match). OntoGraph kept the specialisation and recorded a dual verdict. Two genuine differences from the upstream Turtle — a <code>MatchParticipation</code> class, and <code>gufo:participatedIn</code> instead of <code>:participatedInMatch</code> with range <code>:Match</code> — are pending NEMO review, as questions, not as corrections of the example.</p>
+<p><strong>6. Situations</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. One reviewed difference is not a disagreement: the prose names the sepsis alert but does not state the time it fired, so a begin timestamp that appears only in the Turtle was omitted. The Turtle was read during authoring; it was not the projector input.</p>
+<p><strong>7. Higher-order types</strong> — valid. No UFO-rule findings; both SHACL engines conform; Pellet is consistent. Tonto accepts the valid model.</p>
+<p><strong>1, invalid variant</strong> — caught. OntoGraph reports two UFO-rule errors (a «kind» Manager specialising a «role» Employee, which also places a rigid type under an anti-rigid one). gufoshapes reports the same two violations in both engines. Pellet remains consistent, as with the upstream file. Tonto also rejects this model; that is not a Tonto issue, because the model is invalid on purpose.</p>
+<p><strong>7, invalid variant</strong> — caught. OntoGraph reports one UFO-rule error: Tiger is in the AnimalSpecies partition without being declared disjoint from the other members. gufoshapes reports six violations (Tiger against Lion, Hyena and Elephant, in both directions) because our invalid case extends the full valid model, which already includes Elephant; the upstream invalid file is a minimal excerpt without Elephant. Tonto is right to reject the overlapping generalisation set with an «instantiation» upper bound of 1; it can still miss the partition pitfall when it only sees a categorizer and not <code>@instantiation</code>. How we encoded the pitfall in OntoUML is a question for NEMO.</p>
+</div>
+</section>
+
+<section class="section" id="findings" aria-labelledby="findings-title">
+<div class="section-heading">
+<span class="section-number">02 / Findings</span>
+<h2 id="findings-title">What we found</h2>
+<p>The full classified diffs, reviewed notes and Tonto discussion remain in the evidence sections below. This is the short account.</p>
+</div>
+<p>Every unmatched triple against the upstream Turtle is classified (0 unclassified on all nine cases). Most differences are annotations and ontology headers, individuals that appear only in the Turtle, extra axioms OntoGraph derives from UFO, equivalent OWL forms, or stereotypes OntoUML requires and upstream sometimes leaves untyped. The genuine content differences, recorded in <a href="ontouml-to-gufo-check/reviewed-differences.v1.json">reviewed-differences.v1.json</a>, have had a self-review only. We would value a view on three of them:</p>
+<ol>
+<li><strong>Invalid 07, encoding of the pitfall.</strong> OntoUML has no way to add a member to a generalization set while omitting only the OWL disjointness, so the pitfall is modelled as a second, non-disjoint set {Tiger} with the same categorizer, which projects as <code>gufo:categorizes</code> alongside <code>gufo:partitions</code>. Is that faithful?</li>
+<li><strong>Example 05, <code>MatchParticipation</code>.</strong> OntoUML has no instance level, so the reified participation in the prose is an «event» class, of which <code>JordanLeeParticipationInFinal</code> is an instance. Is that an acceptable encoding?</li>
+<li><strong>Example 05, range of <code>:participatedInMatch</code>.</strong> Upstream, that property has range <code>:Match</code> and is used to link a player to a participation. Under OWL the participation would also be a Match. OntoGraph projects <code>gufo:participatedIn</code> instead. Was the upstream range intended?</li>
+</ol>
+<p>Tonto 0.9.4 was a cross-check, not a modelling authority, and no model was changed to satisfy it. <code>ontograph-dsl-tonto</code> lowers and writes Tonto with dual verdicts. It diverges from published OntoUML/UFO in rejecting «event» specialising «event» (example 05) and in being unable to accept an optional same-type sub-collection (example 02). It reads a partition only from <code>@instantiation</code> and <code>(instanceOf …)</code>, so it can miss the invalid-07 pitfall when only a generalisation-set categorizer is written. The 0.9.4 CLI has no OntoUML JSON export, and <code>tonto ast</code> can exit 0 on a file that does not parse.</p>
+<p>Where Tonto is right, we say so. Its rejection of invalid 07 under <code>genset-contradicts-instantiation</code> matches UML 2.5.1 and Carvalho, Almeida and Guizzardi (CAiSE 2016). We had earlier read <code>isDisjoint</code> as merely leaving disjointness unasserted, and we have withdrawn that objection. Tonto is also right to require a single participant on a «participational» portion, in line with UFO-B. The gap that remains on our side is that OntoGraph's UFO rules do not yet check the Table 3 combination from the 2016 paper.</p>
+</section>
+
+<section class="section" id="how-it-works" aria-labelledby="how-title">
+<div class="section-heading">
+<span class="section-number">03 / How we executed it</span>
+<h2 id="how-title">Engine, cartridges, and a model Tonto gives us</h2>
+<p>OntoGraph is the engine. A cartridge, in this setting, is a model you load into it — an OntoUML project, with optional instance data — so several can sit in one workspace and be queried together. <code>ontograph-dsl-tonto</code> is not a second engine: it is the library that turns a <code>.tonto</code> file into that same OntoUML project, then hands it to OntoGraph unchanged.</p>
+</div>
+
+<div class="arch" role="img" aria-labelledby="arch-title" aria-describedby="arch-desc">
+<p class="small" id="arch-title">Architecture of the acceptance path</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" aria-hidden="true">
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#18362f"/></marker>
+</defs>
+<rect x="0" y="0" width="900" height="520" fill="#fbfaf6"/>
+<text x="16" y="28" fill="#53675f" font-family="Georgia, serif" font-size="13">Inputs</text>
+<rect x="16" y="44" width="200" height="56" rx="5" fill="#edf1e9" stroke="#18362f"/>
+<text x="116" y="68" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Example prose</text>
+<text x="116" y="86" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">gUFO usage examples</text>
+<line x1="216" y1="72" x2="250" y2="72" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="258" y="44" width="220" height="56" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="368" y="68" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Authored OntoUML JSON</text>
+<text x="368" y="86" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">model + instance file</text>
+
+<rect x="16" y="120" width="200" height="56" rx="5" fill="#edf1e9" stroke="#18362f"/>
+<text x="116" y="144" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Tonto source</text>
+<text x="116" y="162" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">.tonto  (0.9.4 grammar)</text>
+<line x1="216" y1="148" x2="250" y2="148" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="258" y="120" width="220" height="56" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="368" y="140" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">ontograph-dsl-tonto</text>
+<text x="368" y="156" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">parse · lower · corrections</text>
+<text x="368" y="170" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">dual verdicts, model unchanged</text>
+<line x1="478" y1="148" x2="512" y2="148" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="520" y="120" width="200" height="56" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="620" y="144" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">OntoUML model</text>
+<text x="620" y="162" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">same project as authored JSON</text>
+
+<line x1="368" y1="100" x2="368" y2="210" stroke="#18362f" marker-end="url(#arrow)"/>
+<line x1="620" y1="176" x2="620" y2="200" stroke="#18362f"/>
+<line x1="368" y1="200" x2="620" y2="200" stroke="#18362f"/>
+<line x1="494" y1="200" x2="494" y2="210" stroke="#18362f" marker-end="url(#arrow)"/>
+
+<text x="16" y="236" fill="#53675f" font-family="Georgia, serif" font-size="13">OntoGraph engine</text>
+<rect x="16" y="252" width="170" height="64" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="101" y="276" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Import /</text>
+<text x="101" y="294" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">normalisation</text>
+<line x1="186" y1="284" x2="214" y2="284" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="222" y="252" width="160" height="64" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="302" y="276" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">UFO rule engine</text>
+<text x="302" y="294" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">findings can block</text>
+<line x1="382" y1="284" x2="410" y2="284" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="418" y="252" width="200" height="64" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="518" y="276" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">gUFO projector</text>
+<text x="518" y="294" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">+ instance file merge</text>
+<line x1="618" y1="284" x2="646" y2="284" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="654" y="252" width="230" height="64" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="769" y="276" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Storage / query</text>
+<text x="769" y="294" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">workspace, query engine</text>
+
+<text x="16" y="348" fill="#53675f" font-family="Georgia, serif" font-size="13">Outputs and checks</text>
+<line x1="518" y1="316" x2="518" y2="364" stroke="#18362f" marker-end="url(#arrow)"/>
+<rect x="16" y="372" width="200" height="56" rx="5" fill="#edf1e9" stroke="#18362f"/>
+<text x="116" y="396" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">gUFO Turtle</text>
+<text x="116" y="414" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="11">projected output</text>
+<rect x="258" y="364" width="626" height="72" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="571" y="390" text-anchor="middle" fill="#18362f" font-family="Segoe UI, Arial, sans-serif" font-size="13">Checks on the output</text>
+<text x="571" y="410" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="12">pySHACL  ·  Apache Jena 6.2.0 (gufo-shacl-sparql)  ·  Pellet</text>
+<text x="571" y="426" text-anchor="middle" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="12">upstream Turtle comparison  ·  frozen oracles</text>
+<text x="16" y="500" fill="#53675f" font-family="Segoe UI, Arial, sans-serif" font-size="12">The upstream Turtle is comparison only. It is not an input to the projector.</text>
+</svg>
+<p class="arch-legend" id="arch-desc">Two ways in — authored OntoUML JSON from the example prose, or a Tonto file lowered by ontograph-dsl-tonto — meet as an OntoUML model. OntoGraph imports and normalises it, evaluates UFO rules, projects gUFO (merging the instance file), and stores the result so it can be queried. The projected Turtle is then checked with pySHACL, Jena, Pellet, a classified comparison with the upstream Turtle, and the frozen oracles.</p>
+</div>
+
+<div class="walkthrough">
+<h3>A worked path: example 01, from Tonto into a query</h3>
+<p>Example 01 is a case Tonto 0.9.4 accepts. The Tonto below is the published fixture for that example (an excerpt of the types and generalisation sets). Instance data is supplied separately, because OntoUML has no instance level.</p>
+<pre class="command" tabindex="0"><code>ontology gufo-examples-01-endurant-types
+
+category Agent of functional-complexes
+kind Person specializes Agent
+kind Organization specializes Agent
+subkind University specializes Organization
+phase Child specializes Person
+phase Adult specializes Person
+role Student specializes Person
+role Employee specializes Person
+roleMixin Customer of functional-complexes specializes Agent
+phaseMixin ActiveAgent of functional-complexes specializes Agent
+phaseMixin InactiveAgent of functional-complexes specializes Agent
+
+disjoint genset AgentKinds {
+    general Agent
+    specifics Person, Organization
+}</code></pre>
+<p>The installed CLI lowers that file to an OntoUML project, then projects it to gUFO. These are the real command names and flags:</p>
+<pre class="command" tabindex="0"><code>ontograph --json tonto-import 01-endurant-types.tonto --output model.json
+
+ontograph --json tonto-gufo-project request.json</code></pre>
+<p><code>tonto-import</code> also accepts <code>--project-id</code>, <code>--namespace</code> and <code>--created</code>. <code>tonto-gufo-project</code> takes one request file, with the Tonto text as <code>modelSource</code>, the instance file as <code>instanceSource</code>, and the same projector options used for the acceptance suite:</p>
+<pre class="command" tabindex="0"><code>{
+  "modelSource": "…contents of 01-endurant-types.tonto…",
+  "instanceSource": "…contents of instances.json…",
+  "options": {
+    "profileRef": "ontograph.gufo.ontouml-examples.v1",
+    "iriPolicy": "name",
+    "enforceRules": true
+  },
+  "lowering": { "projectId": "…optional; pins the OntoUML project id…" }
+}</code></pre>
+<p>The same projector is also available as <code>ontograph --json ontouml-gufo-project request.json</code> when the model is already OntoUML JSON. A test of the installed CLI locks that the two paths produce identical Turtle and the same graph digest for example 01. A Tonto round-trip of all nine examples, run with the same binary as the retained acceptance run, likewise produced identical gUFO on every case.</p>
+<p>The query answers below are from that retained run (27 November 2026, 07:05:47 Australia/Sydney; Pellet via owlready2 0.51). They are entailment checks on the projected graph of example 01. Because the Tonto path yields the same graph, they are the answers on the model Tonto gives us. The binary was not re-run for this page.</p>
+<pre class="command" tabindex="0"><code># Pellet entailments on the projected graph of example 01
+# prefixes: : = https://purl.org/nemo/gufo-examples/endurant-types#
+#           gufo: = http://purl.org/nemo/gufo#
+
+:Alice    rdf:type :Agent          expected true   entailed true
+:Student  rdf:type gufo:Sortal     expected true   entailed true
+:Alice    rdf:type :Organization   expected false  entailed false</code></pre>
+<p>The engine also has a general query surface on a stored workspace — <code>query-id</code>, <code>query-type</code>, <code>query-traverse</code>, <code>search</code>, and <code>gufo-shacl-sparql</code> for a read-only SPARQL SELECT through Jena. The acceptance evidence for these nine examples is the projection oracles above, not a workspace search.</p>
+
+<h3>Dual verdicts, on example 05</h3>
+<p>Tonto 0.9.4 rejects <code>event SemiFinal specializes Match</code> and the matching generalisation set, <code>MatchSpecializations</code>. OntoGraph keeps both. The JSON reports from <code>tonto-import</code>, <code>tonto-export</code> and <code>tonto-gufo-project</code> each include a <code>corrections</code> array with both verdicts. The diagnostic line and the JSON fields below are locked by tests on the 05-events model. This is not a fresh capture of the binary.</p>
+<pre class="command" tabindex="0"><code>info TONTO-CORRECTION: [event-specializes-event] event SemiFinal specializes event Match: Tonto 0.9.4 verdict: error stereotype-cannot-specialize, and genset-stereotype-cannot-specialize through MatchSpecializations; OntoGraph verdict: accepted, written unchanged (gUFO usage examples, examples/05-events (nemo-ufes/gufo f412254); …)
+
+{
+  "schemaVersion": "ontograph.dsl-tonto.correction-verdict.v1",
+  "correction": "event-specializes-event",
+  "status": "settled",
+  "subject": "event SemiFinal specializes event Match",
+  "tonto": {
+    "version": "0.9.4",
+    "severity": "error",
+    "rules": ["stereotype-cannot-specialize", "genset-stereotype-cannot-specialize"]
+  },
+  "ontograph": {
+    "outcome": "accepted",
+    "severity": "info"
+  }
+}</code></pre>
+<p>A second verdict of the same correction is reported for Final under Match. The written Tonto still contains <code>event SemiFinal specializes Match</code>. The model is not rewritten to make <code>tonto check</code> happy.</p>
+</div>
+<p>The portable re-check of the published outputs is in <a href="#check">Check it yourself</a>. It does not rerun OntoGraph, Jena or Pellet.</p>
+</section>
+
+<section class="section" id="results" aria-labelledby="results-title">
+<div class="section-heading">
+<span class="section-number">04 / Results</span>
+<h2 id="results-title">Results for each example</h2>
+<p>All numbers below come from the retained run completed at 27 November 2026, 07:05:47 Australia/Sydney, published in the <a href="ontouml-to-gufo-check/README.md">check bundle</a>. For each case: OntoGraph's UFO-rule findings, gufoshapes on the projected output (pySHACL and Apache Jena 6.2.0), Pellet consistency, and the classified comparison with the upstream Turtle. The short account of each case is in <a href="#examples">How each example played out</a>.</p>
+</div>
 <dl class="stats" aria-label="Headline results">
 <div><dt>Valid examples, no UFO findings, gufoshapes conform</dt><dd>7 / 7</dd><dd class="stat-note">pySHACL and Apache Jena 6.2.0 agree</dd></div>
 <div><dt>Invalid examples caught</dt><dd>2 / 2</dd><dd class="stat-note">OntoGraph rules and gufoshapes; 2 and 6 violations</dd></div>
 <div><dt>Unclassified differences vs upstream Turtle</dt><dd>0</dd><dd class="stat-note">every difference has a recorded reason</dd></div>
 <div><dt>OWL 2 DL consistency (Pellet)</dt><dd>9 / 9</dd><dd class="stat-note">including both invalid models, as with the upstream files</dd></div>
 </dl>
-<div class="hero-actions">
-<a class="button" href="#results">See the results for each example <span aria-hidden="true">↓</span></a>
-<a class="text-link" href="downloads/ontouml-to-gufo-check.zip">Download the check bundle (ZIP, 190 KB) →</a>
-</div>
+<p><a class="text-link" href="downloads/ontouml-to-gufo-check.zip">Download the check bundle (ZIP, 190 KB) →</a></p>
 <div class="callout scope-note">
 <strong>What this tests, and what it doesn't</strong>
 <p>These results show a genuine OntoUML-to-gUFO projection: OntoUML JSON, then UFO rules, then gUFO. They do not show that OntoGraph merely admits and regenerates the upstream Turtle. That earlier check, from 9 October 2026, preserved 808 of 808 assertions and is documented separately in <a href="#turtle-round-trip">the Turtle round-trip section</a>. It is not the headline result on this page. No human ontologist has reviewed the models or these results yet. See <a href="#provenance">how this was checked</a>.</p>
-</div>
-</section>
-
-<section class="section" id="results" aria-labelledby="results-title">
-<div class="section-heading">
-<span class="section-number">01 / Results</span>
-<h2 id="results-title">Results for each example</h2>
-<p>All numbers below come from the retained run completed at 27 November 2026, 07:05:47 Australia/Sydney, published in the <a href="ontouml-to-gufo-check/README.md">check bundle</a>. For each case: OntoGraph's UFO-rule findings, gufoshapes on the projected output (pySHACL and Apache Jena 6.2.0), Pellet consistency, and the classified comparison with the upstream Turtle.</p>
 </div>
 <div class="table-wrap" tabindex="0" role="region" aria-label="OntoUML-to-gUFO results for each gUFO example, horizontally scrollable">
 <table class="results stack">
@@ -168,7 +357,7 @@
 
 <section class="section" id="differences" aria-labelledby="differences-title">
 <div class="section-heading">
-<span class="section-number">02 / Differences</span>
+<span class="section-number">05 / Differences</span>
 <h2 id="differences-title">Differences from the upstream Turtle</h2>
 <p>Because the models were authored from the example prose, the projected gUFO is not identical to the published Turtle. Every unmatched triple in the retained run was classified. The ordinary categories are annotations and ontology headers, individuals that appear only in the Turtle and not in the prose, extra axioms that OntoGraph derives from UFO, equivalent OWL forms, and stereotypes that OntoUML requires and upstream sometimes leaves untyped. The genuine content differences are recorded in <a href="ontouml-to-gufo-check/reviewed-differences.v1.json">reviewed-differences.v1.json</a>. They have had a self-review only. NEMO review is still pending, and the following are offered as questions, not as corrections of the upstream examples.</p>
 </div>
@@ -185,7 +374,7 @@
 
 <section class="section reproduce" id="check" aria-labelledby="check-title">
 <div class="section-heading">
-<span class="section-number">03 / Check it yourself</span>
+<span class="section-number">06 / Check it yourself</span>
 <h2 id="check-title">Re-run the checks in one command</h2>
 <p>The bundle contains the nine OntoUML models and instance files, OntoGraph's gUFO output for each, the upstream Turtle for comparison, classified diffs, recorded findings and oracles, gUFO and gufoshapes at the pinned commit, the expected results and a short Python script. It doesn't need OntoGraph.</p>
 </div>
@@ -212,7 +401,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="tonto" aria-labelledby="tonto-title">
 <div class="section-heading">
-<span class="section-number">04 / Tonto 0.9.4</span>
+<span class="section-number">07 / Tonto 0.9.4</span>
 <h2 id="tonto-title">A cross-check, not a modelling authority</h2>
 <p>Tonto 0.9.4, NEMO's text DSL for OntoUML, was used as a cross-check. It is not the authority for these models, and no model was changed to satisfy it. OntoGraph provides an OntoUML-faithful Tonto conversion, <code>ontograph-dsl-tonto</code>, with dual verdicts: Tonto's own check, and OntoGraph's correction where Tonto diverges from published OntoUML/UFO. A Tonto round-trip of the nine projected graphs, run with the same binary as the retained acceptance run, produced identical gUFO on all nine cases. That test needs the private runtime and is not in the portable bundle.</p>
 </div>
@@ -229,7 +418,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="extension" aria-labelledby="extension-title">
 <div class="section-heading">
-<span class="section-number">05 / Extension</span>
+<span class="section-number">08 / Extension</span>
 <h2 id="extension-title">Temporal order on example 05, not an acceptance case</h2>
 <p>Separately from the acceptance suite, an OntoGraph extension of example 05 records that the semi-final is before the final. gUFO has no <code>before</code> property, so the extension uses <code>ogx:before</code> (<code>https://ontograph.dev/ns/gufo-ext#before</code>). These two cases are not compared with the upstream Turtle and are not part of the nine-example acceptance result.</p>
 </div>
@@ -250,7 +439,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="turtle-round-trip" aria-labelledby="turtle-title">
 <div class="section-heading">
-<span class="section-number">06 / Earlier Turtle check</span>
+<span class="section-number">09 / Earlier Turtle check</span>
 <h2 id="turtle-title">A separate Turtle admit-and-regenerate result, not the headline</h2>
 <p>On 9 October 2026 we ran the nine upstream Turtle files themselves through OntoGraph: admit, store, and regenerate. Every assertion came back unchanged (808 / 808), the seven valid files still conformed to gufoshapes, and the two invalid files failed with exactly 2 and 5 violations, matching the upstream files. OWL 2 DL consistency was 9 / 9, including both invalid files. That result is a Turtle round-trip. It is not evidence that OntoGraph projects OntoUML into gUFO, and it is not the result this page now leads with.</p>
 </div>
@@ -259,7 +448,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="provenance" aria-labelledby="provenance-title">
 <div class="section-heading">
-<span class="section-number">07 / How this was checked</span>
+<span class="section-number">10 / How this was checked</span>
 <h2 id="provenance-title">Who checked what</h2>
 </div>
 <ul class="plain-list">
@@ -274,7 +463,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="limits" aria-labelledby="limits-title">
 <div class="section-heading">
-<span class="section-number">08 / Limits</span>
+<span class="section-number">11 / Limits</span>
 <h2 id="limits-title">What this edition does not claim</h2>
 </div>
 <ul class="plain-list">
@@ -287,7 +476,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section" id="questions" aria-labelledby="questions-title">
 <div class="section-heading">
-<span class="section-number">09 / Questions</span>
+<span class="section-number">12 / Questions</span>
 <h2 id="questions-title">Where a review would help most</h2>
 </div>
 <div class="feedback">
@@ -305,7 +494,7 @@ All expectations reproduced.</code></pre>
 
 <section class="section own-case" id="own-case" aria-labelledby="own-case-title">
 <div class="section-heading">
-<span class="section-number">10 / OntoGraph's own worked case</span>
+<span class="section-number">13 / OntoGraph's own worked case</span>
 <h2 id="own-case-title">Research appointments: modelling under revision</h2>
 <p>Separately from the gUFO usage examples, we built a small case of our own about people, organisations and research appointments, to test how OntoGraph keeps identities connected across views. Its evidence is recorded, but the model has known problems, and we'll revise it before asking for feedback on it.</p>
 </div>
