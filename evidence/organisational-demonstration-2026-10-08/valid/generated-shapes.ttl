@@ -1,0 +1,10 @@
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix comp: <https://ontograph.dev/vocab/composition#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+comp:RelatorShape a sh:NodeShape; sh:targetClass gufo:Relator; sh:property [ sh:path gufo:mediates; sh:minCount 2 ] .
+comp:QualityShape a sh:NodeShape; sh:targetClass gufo:Quality; sh:property [ sh:path gufo:inheresIn; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path gufo:hasQualityValue; sh:minCount 1 ] .
+comp:ParticipationShape a sh:NodeShape; sh:targetClass comp:QualifiedParticipation; sh:property [ sh:path comp:participant; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:event; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:begin; sh:minCount 1; sh:maxCount 1; sh:datatype xsd:dateTime ]; sh:property [ sh:path comp:end; sh:minCount 1; sh:maxCount 1; sh:datatype xsd:dateTime ] .
+comp:RoleShape a sh:NodeShape; sh:targetClass comp:RoleMembership; sh:property [ sh:path comp:individual; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:role; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:relator; sh:minCount 1; sh:maxCount 1 ]; sh:property [ sh:path comp:begin; sh:minCount 1; sh:datatype xsd:dateTime ]; sh:property [ sh:path comp:end; sh:minCount 1; sh:datatype xsd:dateTime ] .

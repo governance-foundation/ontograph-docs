@@ -1,0 +1,171 @@
+{
+  "caseRef": "02-objects-and-parts",
+  "checks": {
+    "allDifferencesClassified": true,
+    "deterministic": true,
+    "gufoshapes": true,
+    "gufoshapesJenaAgrees": true,
+    "idPolicy": true,
+    "isolation": true,
+    "lintClean": true,
+    "oracleEntailments": true,
+    "oracleEntailmentsRun": true,
+    "oracleQueries": true,
+    "oracleShacl": true,
+    "oracleShaclSignatures": true,
+    "owlConsistent": true,
+    "owlNoUnsatisfiable": true,
+    "rename": true,
+    "rules": true
+  },
+  "deterministic": true,
+  "diff": {
+    "extra": 52,
+    "matched": 95,
+    "missing": 58,
+    "ontographTriples": 147,
+    "reasons": {
+      "extra": {
+        "ANNOTATION": 21,
+        "AXIOM-FORM-DIFFERENCE": 16,
+        "ONTOLOGY-HEADER": 1,
+        "UFO-DERIVED-AXIOM": 14
+      },
+      "missing": {
+        "ANNOTATION": 37,
+        "AXIOM-FORM-DIFFERENCE": 12,
+        "INSTANCE-NOT-IN-PROSE": 6,
+        "ONTOLOGY-HEADER": 3
+      }
+    },
+    "unclassified": 0,
+    "upstreamTriples": 153
+  },
+  "expectedValid": true,
+  "gufoshapes": {
+    "conforms": true,
+    "results": [],
+    "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+  },
+  "gufoshapesEnginesAgree": true,
+  "gufoshapesJena": {
+    "conforms": true,
+    "executed": true,
+    "overallStatus": "success",
+    "persistence": "persisted-reloaded",
+    "resultSignatures": [],
+    "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+    "semanticStatus": "conformant",
+    "tool": "shacl-sparql:apache-jena-6.2.0"
+  },
+  "idPolicyMappingConsistent": true,
+  "iriMapping": {
+    "ontograph": "https://ontograph.dev/examples/gufo-examples/objects-and-parts#",
+    "ontologyIri": [
+      "https://ontograph.dev/examples/gufo-examples/objects-and-parts",
+      "https://purl.org/nemo/gufo-examples/objects-and-parts#"
+    ],
+    "upstream": "https://purl.org/nemo/gufo-examples/objects-and-parts#"
+  },
+  "lint": [],
+  "ontographFindings": [],
+  "oracleEntailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001",
+        "predicate": "http://purl.org/nemo/gufo#isComponentOf",
+        "subject": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine",
+        "predicate": "http://purl.org/nemo/gufo#isComponentOf",
+        "subject": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/objects-and-parts#Car001Engine"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "oracleEntailmentsOutOfScope": [],
+  "oracleQueries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 22,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car002\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Wheel\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel\"}"
+      ],
+      "rows": 19
+    },
+    {
+      "exactlyEqual": false,
+      "expectedRows": 13,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [
+        "{\"property\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#isFleetMemberOf\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car002\", \"value\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#CityWheelsFleet\"}",
+        "{\"property\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontLeftWheel\", \"value\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001\"}",
+        "{\"property\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#isWheelOf\", \"subject\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001FrontRightWheel\", \"value\": \"https://purl.org/nemo/gufo-examples/objects-and-parts#Car001\"}"
+      ],
+      "rows": 10
+    }
+  ],
+  "oracleShaclConforms": true,
+  "owl": {
+    "consistent": true,
+    "tool": "Pellet via owlready2 0.51",
+    "unsatisfiable": []
+  },
+  "passed": true,
+  "referenceComparison": "not-run: no --reference-dir; the Tonto cross-check is scripts/tonto_reference_gufo_examples.py",
+  "rulesAccept": true,
+  "shaclSignatureComparison": {
+    "extraInScope": [],
+    "extraOutOfScope": [],
+    "missing": [],
+    "missingExplainedUpstreamShapeDirectionality": [],
+    "ontographSignatures": 0,
+    "oracleSignatures": 0,
+    "passed": true
+  },
+  "status": "projected",
+  "unsupportedFindings": 0,
+  "isolation": {
+    "passed": true,
+    "note": "The projector ran in an empty per-call directory. Upstream Turtle was read only after projection, for comparison."
+  }
+}

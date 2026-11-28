@@ -1,0 +1,37 @@
+# OntoGraph extension shapes (spec GEX-EXT-002). Not part of gUFO or gufoshapes.
+# Allen's before (ogx:before): the subject ends before the object begins. At
+# xsd:date granularity a violation is reported only when the stated dates
+# contradict the order: the subject begins or ends after the object begins.
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix ogx:  <https://ontograph.dev/ns/gufo-ext#> .
+@prefix ogxs: <https://ontograph.dev/ns/gufo-ext-shapes#> .
+
+ogxs: sh:declare [
+    sh:prefix "gufo" ; sh:namespace "http://purl.org/nemo/gufo#"^^xsd:anyURI
+  ] , [
+    sh:prefix "ogx" ; sh:namespace "https://ontograph.dev/ns/gufo-ext#"^^xsd:anyURI
+  ] , [
+    sh:prefix "rdfs" ; sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI
+  ] .
+
+ogxs:BeforeDatesShape
+    a sh:NodeShape ;
+    sh:targetClass gufo:Event ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes ogxs: ;
+        sh:message "{$this} occurs before {?value}, but its dates do not: it begins or ends ({?point}) after {?value} begins ({?begin})." ;
+        sh:select """
+            SELECT DISTINCT $this ?value ?point ?begin
+            WHERE {
+                $this ?p ?value .
+                ?p rdfs:subPropertyOf* ogx:before .
+                ?value gufo:hasBeginPointInXSDDate ?begin .
+                $this gufo:hasBeginPointInXSDDate|gufo:hasEndPointInXSDDate ?point .
+                FILTER (?point > ?begin)
+            }
+        """ ;
+    ] .

@@ -1,0 +1,24 @@
+classDiagram
+  class Gemstone["Gemstone"]
+  Gemstone : <<kind>>
+  class TShirt["TShirt"]
+  TShirt : <<kind>>
+  class Painting["Painting"]
+  Painting : <<kind>>
+  class double["double"]
+  double : <<datatype>>
+  class nonNegativeInteger["nonNegativeInteger"]
+  nonNegativeInteger : <<datatype>>
+  class Mass["Mass"]
+  Mass : <<quality>>
+  class ShirtSize["ShirtSize"]
+  ShirtSize : <<enumeration>>
+  class Size["Size"]
+  Size : <<quality>>
+  class ColorValueInRGB["ColorValueInRGB"]
+  ColorValueInRGB : <<datatype>>
+  class Color["Color"]
+  Color : <<quality>>
+  Mass -- "1" Gemstone : characterization
+  Size -- TShirt : characterization
+  Color -- Painting : characterization

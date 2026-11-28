@@ -1,0 +1,91 @@
+{
+  "caseRef": "07-higher-order-types",
+  "shaclConforms": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Animal",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Kesi"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#AnimalSpecies",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Lion"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types#Hyena",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types#Kesi"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "queries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 11,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Elephant\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Hyena\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Lion\"}": "ONTOUML-STEREOTYPE-REQUIRED"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Elephant\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Hyena\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types#Lion\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 14
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 4,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 4
+    }
+  ],
+  "note": "Entailment claims were checked with Pellet via owlready2 0.51 in the recorded run. The portable check script does not rerun Pellet."
+}

@@ -1,0 +1,189 @@
+{
+  "caseRef": "05-events",
+  "checks": {
+    "allDifferencesClassified": true,
+    "deterministic": true,
+    "gufoshapes": true,
+    "gufoshapesJenaAgrees": true,
+    "idPolicy": true,
+    "isolation": true,
+    "lintClean": true,
+    "oracleEntailments": true,
+    "oracleEntailmentsRun": true,
+    "oracleQueries": true,
+    "oracleShacl": true,
+    "oracleShaclSignatures": true,
+    "owlConsistent": true,
+    "owlNoUnsatisfiable": true,
+    "rename": true,
+    "rules": true
+  },
+  "deterministic": true,
+  "diff": {
+    "extra": 25,
+    "matched": 61,
+    "missing": 28,
+    "ontographTriples": 86,
+    "reasons": {
+      "extra": {
+        "ANNOTATION": 18,
+        "ONTOLOGY-HEADER": 1,
+        "ONTOUML-STEREOTYPE-REQUIRED": 1,
+        "REVIEWED-MODELLING-DIFFERENCE": 4,
+        "UFO-DERIVED-AXIOM": 1
+      },
+      "missing": {
+        "ANNOTATION": 23,
+        "ENTAILED-BY-ONTOGRAPH": 1,
+        "ONTOLOGY-HEADER": 3,
+        "REVIEWED-MODELLING-DIFFERENCE": 1
+      }
+    },
+    "unclassified": 0,
+    "upstreamTriples": 89
+  },
+  "expectedValid": true,
+  "gufoshapes": {
+    "conforms": true,
+    "results": [],
+    "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+  },
+  "gufoshapesEnginesAgree": true,
+  "gufoshapesJena": {
+    "conforms": true,
+    "executed": true,
+    "overallStatus": "success",
+    "persistence": "persisted-reloaded",
+    "resultSignatures": [],
+    "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+    "semanticStatus": "conformant",
+    "tool": "shacl-sparql:apache-jena-6.2.0"
+  },
+  "idPolicyMappingConsistent": true,
+  "iriMapping": {
+    "ontograph": "https://ontograph.dev/examples/gufo-examples/events#",
+    "ontologyIri": [
+      "https://ontograph.dev/examples/gufo-examples/events",
+      "https://purl.org/nemo/gufo-examples/events#"
+    ],
+    "upstream": "https://purl.org/nemo/gufo-examples/events#"
+  },
+  "lint": [],
+  "ontographFindings": [],
+  "oracleEntailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/events#Match",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/events#Final2026"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/events#SemiFinal1",
+        "predicate": "http://purl.org/nemo/gufo#participatedIn",
+        "subject": "https://purl.org/nemo/gufo-examples/events#JordanLee"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/events#SemiFinal1",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/events#Final2026"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/events#OpeningCeremony2026",
+        "predicate": "http://purl.org/nemo/gufo#participatedIn",
+        "subject": "https://purl.org/nemo/gufo-examples/events#JordanLee"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "oracleEntailmentsOutOfScope": [],
+  "oracleQueries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 14,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#KneeInjury\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Participation\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal\"}": "ENTAILED-BY-ONTOGRAPH"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#KneeInjury\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Participation\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal\"}"
+      ],
+      "name": "classifications",
+      "outOfScopeExtra": [
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/events#MatchParticipation\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal\"}"
+      ],
+      "outOfScopeMissing": [],
+      "rows": 15
+    },
+    {
+      "exactlyEqual": false,
+      "expectedRows": 18,
+      "explainedByDiff": {
+        "{\"property\": \"https://purl.org/nemo/gufo-examples/events#participatedInMatch\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#JordanLee\", \"value\": \"https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal\"}": "REVIEWED-MODELLING-DIFFERENCE"
+      },
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [
+        "{\"property\": \"https://purl.org/nemo/gufo-examples/events#participatedInMatch\", \"subject\": \"https://purl.org/nemo/gufo-examples/events#JordanLee\", \"value\": \"https://purl.org/nemo/gufo-examples/events#JordanLeeParticipationInFinal\"}"
+      ],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 17
+    }
+  ],
+  "oracleShaclConforms": true,
+  "owl": {
+    "consistent": true,
+    "tool": "Pellet via owlready2 0.51",
+    "unsatisfiable": []
+  },
+  "passed": true,
+  "referenceComparison": "not-run: no --reference-dir; the Tonto cross-check is scripts/tonto_reference_gufo_examples.py",
+  "rulesAccept": true,
+  "shaclSignatureComparison": {
+    "extraInScope": [],
+    "extraOutOfScope": [],
+    "missing": [],
+    "missingExplainedUpstreamShapeDirectionality": [],
+    "ontographSignatures": 0,
+    "oracleSignatures": 0,
+    "passed": true
+  },
+  "status": "projected",
+  "unsupportedFindings": 0,
+  "isolation": {
+    "passed": true,
+    "note": "The projector ran in an empty per-call directory. Upstream Turtle was read only after projection, for comparison."
+  }
+}

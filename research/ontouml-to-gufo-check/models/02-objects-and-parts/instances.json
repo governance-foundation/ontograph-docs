@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-objects-and-parts",
+  "individuals": [
+    {
+      "id": "individual:car001",
+      "name": "Car001",
+      "classRefs": [
+        "class:car"
+      ]
+    },
+    {
+      "id": "individual:car001-engine",
+      "name": "Car001Engine",
+      "classRefs": [
+        "class:engine"
+      ]
+    },
+    {
+      "id": "individual:city-wheels-fleet",
+      "name": "CityWheelsFleet",
+      "classRefs": [
+        "class:fleet"
+      ]
+    },
+    {
+      "id": "individual:electric-subfleet",
+      "name": "ElectricSubfleet",
+      "classRefs": [
+        "class:fleet"
+      ]
+    },
+    {
+      "id": "individual:car002-fuel-tank-contents",
+      "name": "Car002FuelTankContents",
+      "classRefs": [
+        "class:quantity-of-gasoline"
+      ]
+    },
+    {
+      "id": "individual:car002-ethanol-portion",
+      "name": "Car002EthanolPortion",
+      "classRefs": [
+        "class:quantity-of-ethanol"
+      ]
+    },
+    {
+      "id": "individual:car002-distillate-portion",
+      "name": "Car002DistillatePortion",
+      "classRefs": [
+        "class:quantity-of-petroleum-distillate"
+      ]
+    },
+    {
+      "id": "individual:car002-benzene-portion",
+      "name": "Car002BenzenePortion",
+      "classRefs": [
+        "class:quantity-of-benzene"
+      ]
+    },
+    {
+      "id": "individual:depot-supply-before-tuesday",
+      "name": "DepotSupplyBeforeTuesday",
+      "classRefs": [
+        "class:quantity-of-gasoline"
+      ]
+    },
+    {
+      "id": "individual:tuesday-delivery-lot",
+      "name": "TuesdayDeliveryLot",
+      "classRefs": [
+        "class:quantity-of-gasoline"
+      ]
+    },
+    {
+      "id": "individual:depot-supply-after-tuesday",
+      "name": "DepotSupplyAfterTuesday",
+      "classRefs": [
+        "class:quantity-of-gasoline"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "link:001",
+      "relationRef": "relation:is-engine-of",
+      "sourceRef": "individual:car001-engine",
+      "targetRef": "individual:car001"
+    },
+    {
+      "id": "link:002",
+      "relationRef": "relation:is-fleet-member-of",
+      "sourceRef": "individual:car001",
+      "targetRef": "individual:city-wheels-fleet"
+    },
+    {
+      "id": "link:003",
+      "relationRef": "relation:sub-collection-of",
+      "sourceRef": "individual:electric-subfleet",
+      "targetRef": "individual:city-wheels-fleet"
+    },
+    {
+      "id": "link:004",
+      "relationRef": "relation:is-fleet-member-of",
+      "sourceRef": "individual:car001",
+      "targetRef": "individual:electric-subfleet"
+    },
+    {
+      "id": "link:005",
+      "relationRef": "relation:is-ethanol-portion-of",
+      "sourceRef": "individual:car002-ethanol-portion",
+      "targetRef": "individual:car002-fuel-tank-contents"
+    },
+    {
+      "id": "link:006",
+      "relationRef": "relation:is-distillate-portion-of",
+      "sourceRef": "individual:car002-distillate-portion",
+      "targetRef": "individual:car002-fuel-tank-contents"
+    },
+    {
+      "id": "link:007",
+      "relationRef": "relation:is-benzene-portion-of",
+      "sourceRef": "individual:car002-benzene-portion",
+      "targetRef": "individual:car002-distillate-portion"
+    },
+    {
+      "id": "link:008",
+      "relationRef": "relation:historically-depends-on",
+      "sourceRef": "individual:depot-supply-after-tuesday",
+      "targetRef": "individual:depot-supply-before-tuesday"
+    },
+    {
+      "id": "link:009",
+      "relationRef": "relation:historically-depends-on",
+      "sourceRef": "individual:depot-supply-after-tuesday",
+      "targetRef": "individual:tuesday-delivery-lot"
+    },
+    {
+      "id": "link:010",
+      "relationRef": "relation:historically-depends-on",
+      "sourceRef": "individual:car002-fuel-tank-contents",
+      "targetRef": "individual:depot-supply-after-tuesday"
+    }
+  ],
+  "attributeValues": []
+}

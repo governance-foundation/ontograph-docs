@@ -1,0 +1,97 @@
+{
+  "caseRef": "04-relators",
+  "shaclConforms": true,
+  "entailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/relators#Dana",
+        "predicate": "http://purl.org/nemo/gufo#mediates",
+        "subject": "https://purl.org/nemo/gufo-examples/relators#DanaGlobexEmployment"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/relators#Dana",
+        "predicate": "http://purl.org/nemo/gufo#inheresIn",
+        "subject": "https://purl.org/nemo/gufo-examples/relators#DanasDutyToWork"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/relators#GlobexCorp",
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "subject": "https://purl.org/nemo/gufo-examples/relators#Dana"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/relators#Mary",
+        "predicate": "https://purl.org/nemo/gufo-examples/relators#employedBy",
+        "subject": "https://purl.org/nemo/gufo-examples/relators#Dana"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "queries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 17,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#DutyToWork\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#Employment\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#Marriage\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#RightToLabor\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#RightToSalary\"}": "ONTOUML-STEREOTYPE-REQUIRED"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#DutyToPaySalary\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#DutyToWork\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#Employment\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#Marriage\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#RightToLabor\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#Kind\", \"subject\": \"https://purl.org/nemo/gufo-examples/relators#RightToSalary\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 23
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 20,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 20
+    }
+  ],
+  "note": "Entailment claims were checked with Pellet via owlready2 0.51 in the recorded run. The portable check script does not rerun Pellet."
+}

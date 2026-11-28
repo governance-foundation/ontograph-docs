@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "ontograph.research.organisation-expectations.v1",
+  "caseRef": "case:research-appointments-v1",
+  "status": "frozen-before-runtime-execution",
+  "method": "Calculated from explicit source IDs, declared intervals and independently intended cardinalities; generated output is not the oracle.",
+  "inputDigests": {
+    "model.json": "b4d83f97ffb5f13d42cde732b99279293198c99dd290bf42c2c856350eb5c9bf",
+    "instances.json": "ae360805cfaee1ea90565f2a8f4a7b7d411f4963369697ab9c6b2b7253e2196e"
+  },
+  "conceptualCardinality": [
+    {
+      "relationRef": "relation:mediation",
+      "ownerClassRef": "class:appointment",
+      "targetClassRef": "class:person",
+      "lower": 1,
+      "upper": null,
+      "sourcePropertyRef": "property:mediation-target",
+      "requirement": "At least one explicitly recorded class-correct Person per appointment on this relation; not exact-one."
+    },
+    {
+      "relationRef": "relation:organization-mediation",
+      "ownerClassRef": "class:appointment",
+      "targetClassRef": "class:organization",
+      "lower": 1,
+      "upper": null,
+      "sourcePropertyRef": "property:organization-target",
+      "requirement": "At least one explicitly recorded class-correct Organization per appointment on this relation; not exact-one."
+    }
+  ],
+  "intervalConvention": "half-open [begin,end); explicit source profile only",
+  "cases": [
+    {
+      "id": "valid",
+      "assumption": "cwa",
+      "at": "2024-02-29T10:30:00Z",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "shacl": true,
+      "activeRoles": 2,
+      "organisationAppointments": 2,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "queryRows": {
+        "organisationAppointments": [
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          },
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          }
+        ],
+        "qualities": [
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-a",
+            "bearer": "https://example.org/composition/individual/person%3Aa",
+            "value": "70.0"
+          },
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-b",
+            "bearer": "https://example.org/composition/individual/person%3Ab",
+            "value": "70.00"
+          }
+        ],
+        "participations": [
+          {
+            "fact": "https://example.org/composition/fact/participation%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          },
+          {
+            "fact": "https://example.org/composition/fact/participation%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Ab",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-cwa",
+      "assumption": "cwa",
+      "at": "2024-02-29T10:30:00Z",
+      "mutation": "remove first organisation participant",
+      "sourceOutcome": "invalid",
+      "shacl": false,
+      "activeRoles": 2,
+      "organisationAppointments": 1,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "queryRows": {
+        "organisationAppointments": [
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          }
+        ],
+        "qualities": [
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-a",
+            "bearer": "https://example.org/composition/individual/person%3Aa",
+            "value": "70.0"
+          },
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-b",
+            "bearer": "https://example.org/composition/individual/person%3Ab",
+            "value": "70.00"
+          }
+        ],
+        "participations": [
+          {
+            "fact": "https://example.org/composition/fact/participation%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          },
+          {
+            "fact": "https://example.org/composition/fact/participation%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Ab",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-owa",
+      "assumption": "owa",
+      "at": "2024-02-29T10:30:00Z",
+      "mutation": "remove first organisation participant",
+      "sourceOutcome": "unknown",
+      "shacl": false,
+      "activeRoles": 2,
+      "organisationAppointments": 1,
+      "activeRoleIds": [
+        "membership:one",
+        "membership:two"
+      ],
+      "queryRows": {
+        "organisationAppointments": [
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          }
+        ],
+        "qualities": [
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-a",
+            "bearer": "https://example.org/composition/individual/person%3Aa",
+            "value": "70.0"
+          },
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-b",
+            "bearer": "https://example.org/composition/individual/person%3Ab",
+            "value": "70.00"
+          }
+        ],
+        "participations": [
+          {
+            "fact": "https://example.org/composition/fact/participation%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          },
+          {
+            "fact": "https://example.org/composition/fact/participation%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Ab",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "end-boundary",
+      "assumption": "cwa",
+      "at": "2024-02-29T12:00:00Z",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "shacl": true,
+      "activeRoles": 1,
+      "organisationAppointments": 2,
+      "activeRoleIds": [
+        "membership:two"
+      ],
+      "queryRows": {
+        "organisationAppointments": [
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          },
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          }
+        ],
+        "qualities": [
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-a",
+            "bearer": "https://example.org/composition/individual/person%3Aa",
+            "value": "70.0"
+          },
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-b",
+            "bearer": "https://example.org/composition/individual/person%3Ab",
+            "value": "70.00"
+          }
+        ],
+        "participations": [
+          {
+            "fact": "https://example.org/composition/fact/participation%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          },
+          {
+            "fact": "https://example.org/composition/fact/participation%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Ab",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "empty-role",
+      "assumption": "cwa",
+      "at": "2024-02-29T10:30:00Z",
+      "mutation": "remove role memberships",
+      "sourceOutcome": "selected-constraints-satisfied",
+      "shacl": true,
+      "activeRoles": 0,
+      "organisationAppointments": 2,
+      "activeRoleIds": [],
+      "queryRows": {
+        "organisationAppointments": [
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          },
+          {
+            "appointment": "https://example.org/composition/individual/appointment%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "organisation": "https://example.org/composition/individual/organization%3Aone"
+          }
+        ],
+        "qualities": [
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-a",
+            "bearer": "https://example.org/composition/individual/person%3Aa",
+            "value": "70.0"
+          },
+          {
+            "quality": "https://example.org/composition/individual/quality%3Amass-b",
+            "bearer": "https://example.org/composition/individual/person%3Ab",
+            "value": "70.00"
+          }
+        ],
+        "participations": [
+          {
+            "fact": "https://example.org/composition/fact/participation%3Aone",
+            "person": "https://example.org/composition/individual/person%3Aa",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          },
+          {
+            "fact": "https://example.org/composition/fact/participation%3Atwo",
+            "person": "https://example.org/composition/individual/person%3Ab",
+            "event": "https://example.org/composition/individual/event%3Aseminar"
+          }
+        ]
+      }
+    }
+  ],
+  "sourceQueries": {
+    "appointmentRows": [
+      [
+        "appointment:one",
+        "person:a",
+        "organization:one"
+      ],
+      [
+        "appointment:two",
+        "person:a",
+        "organization:one"
+      ]
+    ],
+    "qualityRows": [
+      {
+        "qualityRef": "quality:mass-a",
+        "bearerRef": "person:a",
+        "lexical": "70.0",
+        "datatype": "http://www.w3.org/2001/XMLSchema#decimal"
+      },
+      {
+        "qualityRef": "quality:mass-b",
+        "bearerRef": "person:b",
+        "lexical": "70.00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "participationRows": [
+      [
+        "participation:one",
+        "person:a",
+        "event:seminar"
+      ],
+      [
+        "participation:two",
+        "person:b",
+        "event:seminar"
+      ]
+    ]
+  },
+  "owlExpectations": {
+    "positive": [
+      "appointment:two gufo:mediates person:a",
+      "appointment:two gufo:mediates organization:one"
+    ],
+    "forbiddenEntailments": [
+      "person:a rdf:type class:researcher",
+      "quality:mass-a owl:sameAs quality:mass-b",
+      "person:a owl:sameAs person:b"
+    ],
+    "caution": "Non-entailment is not negation. Distinct source IDs do not assert OWL inequality."
+  },
+  "expectedGeneratedRestrictions": [
+    {
+      "ownerRef": "class:appointment",
+      "propertyRef": "relation:mediation",
+      "targetRef": "class:person",
+      "minQualifiedCardinality": 1,
+      "maxQualifiedCardinality": null
+    },
+    {
+      "ownerRef": "class:appointment",
+      "propertyRef": "relation:organization-mediation",
+      "targetRef": "class:organization",
+      "minQualifiedCardinality": 1,
+      "maxQualifiedCardinality": null
+    }
+  ],
+  "validationGap": "Generic generated SHACL requires two total gufo:mediates values; it does not independently enforce the class-specific minimum on each source relation. Source conceptual correctness is checked separately.",
+  "executionState": "not-executed",
+  "nonclaims": [
+    "canonical adoption",
+    "normative staffing authority",
+    "full modal identity or rigidity",
+    "general inverse transformation",
+    "C0-C7 gate credit"
+  ],
+  "owlConsistent": true,
+  "entailedMediation": true,
+  "forbiddenTimelessRole": false,
+  "forbiddenEqualQualities": false,
+  "qualityCount": 2,
+  "participationCount": 2,
+  "comparison": "identical importer report and generated bytes after source-assisted reimport; RDF isomorphism and selected query answers after persisted reload; no target-only inverse",
+  "entailmentClaims": [
+    {
+      "name": "mediation",
+      "text": "<https://example.org/composition/individual/appointment%3Atwo> <http://purl.org/nemo/gufo#mediates> <https://example.org/composition/individual/organization%3Aone> .\n<http://purl.org/nemo/gufo#mediates> a <http://www.w3.org/2002/07/owl#ObjectProperty> .",
+      "entailed": true
+    },
+    {
+      "name": "timeless-role",
+      "text": "<https://example.org/composition/individual/person%3Aa> a <https://example.org/composition/class/class%3Aresearcher> .\n<https://example.org/composition/class/class%3Aresearcher> a <http://www.w3.org/2002/07/owl#Class> .",
+      "entailed": false
+    },
+    {
+      "name": "quality-equality",
+      "text": "<https://example.org/composition/individual/quality%3Amass-a> <http://www.w3.org/2002/07/owl#sameAs> <https://example.org/composition/individual/quality%3Amass-b> .",
+      "entailed": false
+    }
+  ],
+  "independentOfRuntime": true,
+  "heldOut": false,
+  "baseIri": "https://example.org/composition/",
+  "queryTermContract": {
+    "uriVariables": [
+      "appointment",
+      "person",
+      "organisation",
+      "quality",
+      "bearer",
+      "fact",
+      "event"
+    ],
+    "literalVariables": {
+      "value": {
+        "kind": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+        "language": null,
+        "preserveLexicalForms": [
+          "70.0",
+          "70.00"
+        ]
+      }
+    },
+    "uriDatatype": null,
+    "uriLanguage": null,
+    "compareOrderedVariables": true
+  },
+  "oracleLineage": "New source-side cardinality expectations; query/interval rows independently checked against explicit source facts and retained historical frozen expectations. No current runtime output consumed."
+}

@@ -1,0 +1,116 @@
+@prefix ns1: <http://purl.org/nemo/gufo#> .
+@prefix ns2: <https://purl.org/nemo/gufo-examples/events#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2: a owl:Ontology ;
+    owl:imports ns1: .
+
+ns2:AlexRivera a ns2:Player ;
+    rdfs:label "AlexRivera"@en ;
+    ns2:participatedInMatch ns2:Final2026,
+        ns2:SemiFinal1 .
+
+ns2:JordanLeeKneeInjury a ns2:KneeInjury ;
+    rdfs:label "JordanLeeKneeInjury"@en ;
+    ns1:manifestedIn ns2:SemiFinal1 ;
+    ns2:hadKneeInjury ns2:JordanLee .
+
+ns2:RiverportCityFC a ns2:Club ;
+    rdfs:label "RiverportCityFC"@en ;
+    ns1:wasCreatedIn ns2:OpeningCeremony2026 .
+
+ns2:RiverportUnitedFC a ns2:Club ;
+    rdfs:label "RiverportUnitedFC"@en ;
+    ns1:wasTerminatedIn ns2:OpeningCeremony2026 .
+
+ns2:SamOkafor a ns2:Player ;
+    rdfs:label "SamOkafor"@en ;
+    ns2:participatedInMatch ns2:Final2026,
+        ns2:SemiFinal2 .
+
+ns2:hadKneeInjury a owl:ObjectProperty ;
+    rdfs:label "hadKneeInjury"@en ;
+    rdfs:domain ns2:KneeInjury ;
+    rdfs:range ns2:Player ;
+    rdfs:subPropertyOf ns1:inheresIn .
+
+ns2:participatedInMatch a owl:ObjectProperty ;
+    rdfs:label "participatedInMatch"@en ;
+    rdfs:domain ns2:Player ;
+    rdfs:range ns2:Match ;
+    rdfs:subPropertyOf ns1:participatedIn .
+
+ns2:Final a owl:Class ;
+    rdfs:label "Final"@en ;
+    rdfs:subClassOf ns2:Match ;
+    owl:disjointWith ns2:SemiFinal .
+
+ns2:JordanLee a ns2:Player ;
+    rdfs:label "JordanLee"@en ;
+    ns1:participatedIn ns2:JordanLeeParticipationInFinal ;
+    ns2:participatedInMatch ns2:SemiFinal1 .
+
+ns2:JordanLeeParticipationInFinal a ns2:MatchParticipation ;
+    rdfs:label "JordanLeeParticipationInFinal"@en ;
+    ns1:isEventProperPartOf ns2:Final2026 .
+
+ns2:MatchParticipation a owl:Class ;
+    rdfs:label "MatchParticipation"@en ;
+    rdfs:subClassOf ns1:Participation .
+
+ns2:OpeningCeremony a owl:Class ;
+    rdfs:label "OpeningCeremony"@en ;
+    rdfs:subClassOf ns1:Event .
+
+ns2:Tournament a owl:Class ;
+    rdfs:label "Tournament"@en ;
+    rdfs:subClassOf ns1:Event .
+
+ns2:Club a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Club"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex ;
+    owl:disjointWith ns2:Player .
+
+ns2:KneeInjury a ns1:Kind,
+        owl:Class ;
+    rdfs:label "KneeInjury"@en ;
+    rdfs:subClassOf ns1:IntrinsicMode .
+
+ns2:OpeningCeremony2026 a ns2:OpeningCeremony ;
+    rdfs:label "OpeningCeremony2026"@en ;
+    ns1:isEventProperPartOf ns2:WorldChampionship2026 .
+
+ns2:SemiFinal2 a ns2:SemiFinal ;
+    rdfs:label "SemiFinal2"@en ;
+    ns1:isEventProperPartOf ns2:WorldChampionship2026 .
+
+ns2:Final2026 a ns2:Final ;
+    rdfs:label "Final2026"@en ;
+    ns1:hasBeginPointInXSDDate "2026-07-19"^^xsd:date ;
+    ns1:historicallyDependsOn ns2:SemiFinal1,
+        ns2:SemiFinal2 ;
+    ns1:isEventProperPartOf ns2:WorldChampionship2026 .
+
+ns2:Match a owl:Class ;
+    rdfs:label "Match"@en ;
+    rdfs:subClassOf ns1:Event .
+
+ns2:SemiFinal a owl:Class ;
+    rdfs:label "SemiFinal"@en ;
+    rdfs:subClassOf ns2:Match .
+
+ns2:SemiFinal1 a ns2:SemiFinal ;
+    rdfs:label "SemiFinal1"@en ;
+    ns1:isEventProperPartOf ns2:WorldChampionship2026 .
+
+ns2:WorldChampionship2026 a ns2:Tournament ;
+    rdfs:label "WorldChampionship2026"@en .
+
+ns2:Player a ns1:Kind,
+        owl:Class ;
+    rdfs:label "Player"@en ;
+    rdfs:subClassOf ns1:FunctionalComplex .
+

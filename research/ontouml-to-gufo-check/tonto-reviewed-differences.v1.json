@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "ontograph.gufo-examples.tonto-reviewed-differences.v1",
+  "tool": "tonto-language 0.9.4",
+  "policy": "OntoGraph's OntoUML models follow published OntoUML/UFO constraints only. A Tonto diagnostic that goes beyond them is recorded here as a Tonto interpretation, with the Tonto source and the published basis, and is never adopted in a model. A model changes only where published OntoUML/UFO itself requires it.",
+  "description": "Tonto diagnostics on the gUFO example OntoUML models that were reviewed. A reviewed error is reported as reviewed, never hidden; Tonto still writes no gUFO for a model with any error. Warning entries document interpretations and match nothing.",
+  "tontoSourceBase": "tonto-language 0.9.4 (nemo-ufes/tonto 0465291), packages/language/src/",
+  "entries": [
+    {
+      "caseRef": "05-events",
+      "severity": "error",
+      "codes": [
+        "stereotype-cannot-specialize",
+        "genset-stereotype-cannot-specialize"
+      ],
+      "subjects": [
+        "SemiFinal",
+        "Final"
+      ],
+      "decision": "keep-ontouml-model",
+      "decidedBy": "Max Barrass",
+      "decidedOn": "2026-11-25",
+      "tontoSource": [
+        "validation/stereotype-model.ts:215 (perdurants as ultimate sortals; only a subkind specializes an event)",
+        "validation/classifier-checks.ts:209 (checkSupertypeStereotype)",
+        "validation/genset-checks.ts:147 (checkGeneralizationSetSortalityAndRigidity)"
+      ],
+      "tontoInterpretation": "Tonto reads «event» as an ultimate sortal that only a «subkind» may specialize. This is a deliberate Tonto choice that diverges from the OntoUML Visual Paradigm plugin's stereotype table (rule trace, 2026-11-25).",
+      "publishedBasis": "«subkind» is an endurant sortal stereotype in OntoUML/UFO; OntoUML schema 1.0.2 allows «event» to specialize «event»; upstream gUFO example 05 (examples/05-events, f412254) models SemiFinal and Final as event types under Match.",
+      "rationale": "SemiFinal and Final stay «event» specializing Match «event»; Tonto's rejection is a tool interpretation."
+    },
+    {
+      "caseRef": "02-objects-and-parts",
+      "severity": "error",
+      "codes": [
+        "sub-collection-multiplicity"
+      ],
+      "subjects": [],
+      "decision": "keep-ontouml-model",
+      "decidedBy": "Max Barrass",
+      "decidedOn": "2026-11-25",
+      "tontoSource": [
+        "validation/parthood-meta-checks.ts:156 (checkSubCollectionMultiplicity: part end exactly [1], citing Guizzardi 2005 section 8.3)",
+        "validation/ufo-checks.ts:193 (checkParthoodIsAcyclic: parthood-descends-forever on a mandatory part of the same type)"
+      ],
+      "tontoInterpretation": "Tonto requires the part end of every sub-collection relation to be exactly [1], and separately rejects a mandatory part of the whole's own type. On a sub-collection relation from a collective to itself the two rules are jointly unsatisfiable: [1] raises parthood-descends-forever, anything else raises sub-collection-multiplicity.",
+      "publishedBasis": "Upstream gUFO example 02 (examples/02-objects-and-parts/ontology.ttl, f412254) has ElectricSubfleet as an individual: ':ElectricSubfleet a :Fleet ; gufo:isSubCollectionOf :CityWheelsFleet', so the sub-collection relation is Fleet to Fleet and a fleet need not have a sub-fleet. The OntoUML model keeps the part end optional (unspecified).",
+      "rationale": "Keep the Fleet-to-Fleet sub-collection optional; no OntoUML model satisfies both Tonto rules."
+    },
+    {
+      "caseRef": "invalid-07-higher-order-types",
+      "severity": "error",
+      "codes": [
+        "genset-contradicts-instantiation"
+      ],
+      "subjects": [
+        "TigerAddedLater"
+      ],
+      "decision": "expected-rejection-tonto-correct",
+      "decidedBy": "Max Barrass",
+      "decidedOn": "2026-11-25",
+      "tontoSource": [
+        "validation/mlt-checks.ts:301 (checkGensetAgreesWithInstantiation)",
+        "validation/mlt-checks.ts:338-351 (genset-contradicts-instantiation: 'an overlapping set asserts is possible')",
+        "cli/rules.ts:375 (catalogue entry citing Carvalho, Almeida & Guizzardi 2016, Table 3)"
+      ],
+      "tontoInterpretation": "Tonto reads a generalization set that is not disjoint as overlapping, which contradicts the [1] upper bound of the partition. Re-checked 2026-11-27: this is the published reading, not a Tonto interpretation.",
+      "publishedBasis": "OMG Unified Modeling Language 2.5.1 (formal/17-12-05, December 2017): section 9.7.3 (p. 119) \"The isDisjoint property specifies whether the specific Classifiers of the Generalizations in that set may overlap, in the following sense: if isDisjoint is true, then no instance of any of the specific Classifiers may also be an instance of any other of the specific Classifiers. By default, both properties are false.\"; Table 9.1 (p. 120) \"{incomplete, overlapping} Indicates the generalization set is not covering and its specific Classifiers do share common instances.\" ... \"The default values are {incomplete, overlapping}.\"; section 9.9.8.4 (p. 139) \"If isDisjoint is false, the specific Classifiers in a particular GeneralizationSet have one or more members in common; that is, their intersection is not empty.\" Carvalho, V. A., Almeida, J. P. A., Guizzardi, G.: Using a Well-Founded Multi-Level Theory to Support the Analysis and Representation of the Powertype Pattern in Conceptual Modeling. CAiSE 2016, LNCS 9694, pp. 309-324 (doi:10.1007/978-3-319-39696-5_19), section 4: \"Since the upper bound multiplicity of an «instantiation» association set to one means that each instance of the base type is instance of at most one instance of the higher-order type, a model combining it in a pattern with an overlapping generalization set is inconsistent, and thus, deemed syntactically invalid.\" Table 3 marks [1..1] and [0..1] with {overlapping} invalid. The case is also the upstream pitfall (a new partition member without the disjointness).",
+      "rationale": "The case is invalid by design and Tonto rejects it for a published reason. The earlier note (2026-11-25) that isDisjoint false only leaves disjointness unasserted was wrong and is withdrawn.",
+      "revisedOn": "2026-11-27"
+    },
+    {
+      "caseRef": "07-higher-order-types",
+      "severity": "warning",
+      "codes": [
+        "partition-instances-not-disjoint"
+      ],
+      "subjects": [],
+      "decision": "adapter-restates-categorizer",
+      "decidedBy": "Max Barrass",
+      "decidedOn": "2026-11-25",
+      "tontoSource": [
+        "validation/mlt-checks.ts:440 (checkPartitionInstancesAreDisjoint)",
+        "utils/mlt-graph.ts:46, 125, 153, 162 (crossLevelsFrom, instancesOf, isCharacterizationLink, partitionsBase)"
+      ],
+      "tontoInterpretation": "Tonto reads a partition only from an @instantiation [1] and the instanceOf declarations, not from a generalization set's categorizer.",
+      "publishedBasis": "In OntoUML a categorizer makes the specifics instances of the categorizer, and a disjoint, complete categorized set is MLT partitions. scripts/ontouml_to_tonto.py restates the categorizer in Tonto's form (as Tonto's own higher-order-types fixture writes it); the model is unchanged.",
+      "rationale": "With the restated form Tonto warns on invalid 07 and not on valid 07."
+    }
+  ]
+}

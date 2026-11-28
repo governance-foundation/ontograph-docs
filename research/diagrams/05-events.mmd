@@ -1,0 +1,31 @@
+classDiagram
+  class Tournament["Tournament"]
+  Tournament : <<event>>
+  class Match["Match"]
+  Match : <<event>>
+  class SemiFinal["SemiFinal"]
+  SemiFinal : <<event>>
+  class Final["Final"]
+  Final : <<event>>
+  class OpeningCeremony["OpeningCeremony"]
+  OpeningCeremony : <<event>>
+  class Player["Player"]
+  Player : <<kind>>
+  class Club["Club"]
+  Club : <<kind>>
+  class MatchParticipation["MatchParticipation"]
+  MatchParticipation : <<event>>
+  class KneeInjury["KneeInjury"]
+  KneeInjury : <<mode>>
+  SemiFinal --|> Match
+  Final --|> Match
+  Match *-- Tournament
+  OpeningCeremony *-- Tournament
+  Final -- SemiFinal : historicalDependence
+  Player -- Match : participation
+  MatchParticipation *-- Match : participational
+  Player "1" -- MatchParticipation : participation
+  KneeInjury -- Player : characterization
+  KneeInjury -- Match : manifestation
+  Club -- OpeningCeremony : creation
+  Club -- OpeningCeremony : termination

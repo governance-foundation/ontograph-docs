@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "ontograph.gufo.local-product-proof-index.v1",
+  "status": "bounded-local-product-proof-pass",
+  "productCommit": "aabd3c61b5bff159b4d908ef7e919897e841a9f6",
+  "installedBinaryDigest": "sha256:15c9239129f5e83aa5aac980d752dcb452888fbae4d59842d147a19aa2081ef5",
+  "components": {
+    "semanticAndProvenance": {
+      "evidenceDigest": "sha256:694503491ea2552eb004f1bd4efa6b6556726d3ec58cd74e38046232904544c3",
+      "semanticVerticals": 4,
+      "validatorRowsProcessed": 366,
+      "validatorCapabilityGaps": 366,
+      "catalogBundles": 3,
+      "catalogArtifactsPersistedReloaded": 32,
+      "vocabulariesVerified": 2
+    },
+    "hermit": {
+      "evidenceDigest": "sha256:c34000ef041e3ba9fb259e39c1e3872bedbc0a8260c25bc46f9bb85d7d03ad4b",
+      "actualStandardsExecution": true,
+      "sourceLocalCases": 9,
+      "consistent": 9,
+      "installedCliApiParity": 9,
+      "owlConsistentShaclInvalid": 2,
+      "fullImportCapability": "unsupported",
+      "fullImportDiagnostic": "OWL-REASONER-DATATYPE-UNSUPPORTED"
+    },
+    "jena": {
+      "evidenceDigest": "sha256:80d11ea549beae6ae086b1c62afc68a92d63c18b80a99285aa6252d64ec8549e",
+      "actualStandardsExecution": true,
+      "cases": 9,
+      "shaclConformant": 7,
+      "shaclNonconformant": 2,
+      "sparqlExecutions": 9,
+      "persistedReloaded": 18,
+      "roundTripEqual": 18
+    }
+  },
+  "productAssessment": {
+    "canInterpretGiancarloExamples": "yes-bounded-source-local-projection",
+    "canValidateShapeExamples": "yes-pinned-jena",
+    "canReasonFullGufoImportClosureWithPinnedHermit": "no-unsupported-xsd-date",
+    "validatorCompatibility": "inventory-complete-rules-not-adopted",
+    "catalogRoundTrip": "content-and-provenance-identity-only"
+  },
+  "remainingProductWork": [
+    "adopt or implement selected OntoUML Validator rules before claiming rule compatibility",
+    "select a reasoner with xsd:date support or define a reviewed temporal reasoning profile for full gUFO import closure",
+    "implement semantic conversion for selected catalog distributions before claiming cross-format semantic round trip",
+    "repeat installed acceptance on Linux before making the original cross-platform #2067 claim"
+  ],
+  "boundary": {
+    "localWindowsEvidenceOnly": true,
+    "ciEvidenceUsed": false,
+    "sourceMutated": false,
+    "canonicalStateMutated": false,
+    "unsupportedResidueRetained": true,
+    "comprehensiveConformanceClaimed": false,
+    "releasePublicationOrPromotionCreated": false
+  }
+}

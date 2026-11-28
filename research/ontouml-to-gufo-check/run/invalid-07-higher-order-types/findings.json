@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.report.v1",
+  "status": "rejected",
+  "ruleEnforcement": "enforced",
+  "ruleSet": "ontograph.ontouml.ufo-rules.v1",
+  "profileRef": "ontograph.gufo.ontouml-examples.v1",
+  "baseIri": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#",
+  "findings": [
+    {
+      "justification": "When a higher-order type partitions a base type (disjoint and complete categorization), every instance of the base type instantiates exactly one of its instances, so every class categorized by it under that base must be disjoint from every other partition member (gufo:partitions; gufoshapes:PartitionPairwiseDisjointnessShape).",
+      "message": "class:tiger is an instance of class:animal-species (via generalization-set:animal-species-addition), which partitions class:animal, but it is not declared disjoint from the partition members",
+      "relatedRefs": [
+        "class:lion",
+        "class:hyena",
+        "class:elephant",
+        "generalization-set:animal-species-addition"
+      ],
+      "ruleId": "OG-UFO-PARTITION-DISJOINT",
+      "severity": "error",
+      "sourcePointer": "/elements/16",
+      "sourceRef": "class:tiger"
+    }
+  ],
+  "modelDigest": "sha256:69a053a00fa547ec19ac54aad2155d5c642972d05a07b003f85d5cbb53882aeb",
+  "instanceDigest": "sha256:4cef404acebedf18d3389efbf5b6f60180f808abb8c847da87e2a7bb2b58192c",
+  "graphDigest": null,
+  "tripleCount": 0,
+  "limits": [
+    "Instance data comes from an OntoGraph-specific file; OntoUML has no instance level.",
+    "Classifications by anti-rigid types (roles, phases, role/phase mixins) are snapshot rdf:type assertions with no temporal qualification."
+  ]
+}

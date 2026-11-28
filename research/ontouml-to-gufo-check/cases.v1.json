@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.cases.v1",
+  "upstream": {
+    "repository": "https://github.com/nemo-ufes/gufo",
+    "commit": "f412254"
+  },
+  "authoringMethod": "Hand transcription of the prose and pitfall sections of each upstream examples/<case>/index.html into OntoUML; upstream ontology.ttl / invalid-example.ttl were not used as inputs.",
+  "review": {
+    "status": "pending",
+    "note": "Models are OntoGraph-authored; NEMO review requested after results."
+  },
+  "cases": [
+    {
+      "caseRef": "01-endurant-types",
+      "expectedValid": true,
+      "model": "01-endurant-types/model.json",
+      "instances": "01-endurant-types/instances.json",
+      "upstream": {
+        "page": "examples/01-endurant-types/index.html",
+        "comparisonOnly": "examples/01-endurant-types/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "What you'll learn",
+          "Step by step",
+          "Instantiating it"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    },
+    {
+      "caseRef": "02-objects-and-parts",
+      "expectedValid": true,
+      "model": "02-objects-and-parts/model.json",
+      "instances": "02-objects-and-parts/instances.json",
+      "upstream": {
+        "page": "examples/02-objects-and-parts/index.html",
+        "comparisonOnly": "examples/02-objects-and-parts/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "Functional complex",
+          "Collection",
+          "Quantity",
+          "The mistake to avoid",
+          "Mixing and splitting"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    },
+    {
+      "caseRef": "03-qualities",
+      "expectedValid": true,
+      "model": "03-qualities/model.json",
+      "instances": "03-qualities/instances.json",
+      "upstream": {
+        "page": "examples/03-qualities/index.html",
+        "comparisonOnly": "examples/03-qualities/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "The domain",
+          "Step by step",
+          "Choosing a pattern"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    },
+    {
+      "caseRef": "04-relators",
+      "expectedValid": true,
+      "model": "04-relators/model.json",
+      "instances": "04-relators/instances.json",
+      "upstream": {
+        "page": "examples/04-relators/index.html",
+        "comparisonOnly": "examples/04-relators/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "The domain",
+          "Step by step"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": true
+      }
+    },
+    {
+      "caseRef": "05-events",
+      "expectedValid": true,
+      "model": "05-events/model.json",
+      "instances": "05-events/instances.json",
+      "upstream": {
+        "page": "examples/05-events/index.html",
+        "comparisonOnly": "examples/05-events/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "The domain",
+          "Step by step"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": true
+      }
+    },
+    {
+      "caseRef": "06-situations",
+      "expectedValid": true,
+      "model": "06-situations/model.json",
+      "instances": "06-situations/instances.json",
+      "upstream": {
+        "page": "examples/06-situations/index.html",
+        "comparisonOnly": "examples/06-situations/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "The domain",
+          "The common shape",
+          "Step by step"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": true
+      }
+    },
+    {
+      "caseRef": "07-higher-order-types",
+      "expectedValid": true,
+      "model": "07-higher-order-types/model.json",
+      "instances": "07-higher-order-types/instances.json",
+      "upstream": {
+        "page": "examples/07-higher-order-types/index.html",
+        "comparisonOnly": "examples/07-higher-order-types/ontology.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "The base type",
+          "gufo:partitions",
+          "Conservation status",
+          "Individuals stay one level down"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    },
+    {
+      "caseRef": "invalid-01-endurant-types",
+      "expectedValid": false,
+      "model": "invalid-01-endurant-types/model.json",
+      "instances": "invalid-01-endurant-types/instances.json",
+      "upstream": {
+        "page": "examples/01-endurant-types/index.html",
+        "comparisonOnly": "examples/01-endurant-types/invalid-example.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "Step by step",
+          "Common pitfall: a rigid type \"under\" a role"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    },
+    {
+      "caseRef": "invalid-07-higher-order-types",
+      "expectedValid": false,
+      "model": "invalid-07-higher-order-types/model.json",
+      "instances": "invalid-07-higher-order-types/instances.json",
+      "upstream": {
+        "page": "examples/07-higher-order-types/index.html",
+        "comparisonOnly": "examples/07-higher-order-types/invalid-example.ttl"
+      },
+      "provenance": {
+        "sourceSections": [
+          "gufo:partitions",
+          "Common pitfall: a new partition member, minus the disjointness"
+        ],
+        "author": "OntoGraph (automated agent)",
+        "authoredOn": "2026-11-25",
+        "readUpstreamTurtle": false
+      }
+    }
+  ]
+}

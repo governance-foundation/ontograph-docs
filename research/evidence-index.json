@@ -1,0 +1,1404 @@
+{
+  "schemaVersion": "ontograph.research.evidence.v1",
+  "artifacts": [
+    {
+      "id": "downloads/license-notices.txt",
+      "path": "downloads/license-notices.txt",
+      "mediaType": "text/plain",
+      "bytes": 3341,
+      "sha256": "a1c2f10212fce0ee4a31b78671c0ac9eadbb464a7ea233feeea5b5304bdab78c",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "LICENSE-NOTICES.md"
+    },
+    {
+      "id": "downloads/organisation-independent-review.json",
+      "path": "downloads/organisation-independent-review.json",
+      "mediaType": "application/json",
+      "bytes": 4249,
+      "sha256": "3b91849e1392fc5f21dc63dc30cbcd67a110a46f9c5c9f86e9289c8bdb7470a3",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/rd4/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/organisation-results.json",
+      "path": "downloads/organisation-results.json",
+      "mediaType": "application/json",
+      "bytes": 46862,
+      "sha256": "04b97da83189e6451222084a215c016cf4b0d157af40c5455a7a763f9e8ae3d0",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/72aa9806b8450f8ab9eeaca2c0e9b0b0bafd688c/docs/acceptance/research-demonstration/organisation/results.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/package_verify.py",
+      "path": "downloads/package_verify.py",
+      "mediaType": "text/x-python",
+      "bytes": 5738,
+      "sha256": "467a2f1453aaeb68ededbaf3745dcd08b08f4fa9d98e8499864a8a294bb96fb5",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/package_verify.py",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/prerequisites.json",
+      "path": "downloads/prerequisites.json",
+      "mediaType": "application/json",
+      "bytes": 15980,
+      "sha256": "9acc89552e01b69b5091ac66be7b941c770056b920ab1020e71055c54486b81d",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "prerequisites/tool-identities.json"
+    },
+    {
+      "id": "downloads/reproduction-README.txt",
+      "path": "downloads/reproduction-README.txt",
+      "mediaType": "text/plain",
+      "bytes": 5632,
+      "sha256": "e7cc68f421f104e3826632a37546607dbbc058058880ef6d5729309c80dfa30e",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt",
+      "containerMember": "README.md"
+    },
+    {
+      "id": "downloads/reviews/explorer/asset-checks.json",
+      "path": "downloads/reviews/explorer/asset-checks.json",
+      "mediaType": "application/json",
+      "bytes": 6623,
+      "sha256": "a3ac98e5e72ade83c085b9a85731f97753ffc3a9cb04232ff234c947a3309719",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/explorer/asset-checks.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/reviews/explorer/verification.json",
+      "path": "downloads/reviews/explorer/verification.json",
+      "mediaType": "application/json",
+      "bytes": 3167,
+      "sha256": "0b36adf62da772cfe9270639b974d9469f93c833d9fb8c99b8dc46bcc84d5b84",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/explorer/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/reviews/note/verification.json",
+      "path": "downloads/reviews/note/verification.json",
+      "mediaType": "application/json",
+      "bytes": 3612,
+      "sha256": "1ed730c93c7b64d704057df540667292a7cc4083bc2600acbae0a7086432d20a",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/2db00b066ad604ee731f758ba34894377c2efdc4/docs/acceptance/research-demonstration/integration/note/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/reviews/package/verification.json",
+      "path": "downloads/reviews/package/verification.json",
+      "mediaType": "application/json",
+      "bytes": 10144,
+      "sha256": "0c022cb61b5447483ad2e8bbb4fe23abb92e6b2b7ff078387066be61a13d7e9f",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/62f89131650efd65ce53a891f9dbed571ad06fa9/docs/acceptance/research-demonstration/integration/package/verification.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "path": "downloads/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "mediaType": "application/json",
+      "bytes": 401,
+      "sha256": "bd79f296140ba480823f67a7913152a59c284258888bf4cb7855fe6b5226c7bf",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.checksum.json",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/semantic-viewpoints-reproduction-v1.1.zip",
+      "path": "downloads/semantic-viewpoints-reproduction-v1.1.zip",
+      "mediaType": "application/zip",
+      "bytes": 5053947,
+      "sha256": "309129345b9df2f77a40ab358330bd23f73586a6a187cbd8f297e29c09aba9f7",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/17326955910581892fba0363b7447fb17faeeee7/docs/acceptance/research-demonstration/package/v1.1/semantic-viewpoints-reproduction-v1.1.zip",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "downloads/technical-note.pdf",
+      "path": "downloads/technical-note.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19017,
+      "sha256": "5c6f496bc48b425fc5361a847a684b1e8e3336ea8598a143cdd09e96b61fae9f",
+      "sourceRef": "https://github.com/governance-foundation/ontograph/blob/a1a4a25a9071fd8e5d0964ca084b859586a2d795/docs/research-demonstration/technical-note/technical-note.pdf",
+      "licenseRef": "downloads/license-notices.txt"
+    },
+    {
+      "id": "explorer-manifest",
+      "path": "explorer/data/manifest.json",
+      "mediaType": "application/json",
+      "bytes": 9189,
+      "sha256": "ea160422266d11766dad37bb368da27361db98f432686723dc379dc066bcaf98",
+      "sourceRef": "research/explorer/data/manifest.json (this repository, branch feature/research-gufo-examples-results)",
+      "licenseRef": "downloads/license-notices.txt",
+      "note": "Updated 2026-11-24: sources.json and LICENSE.md hashes changed (recipient name removed from historical paths). The explorer review receipt in downloads/reviews/explorer predates this change."
+    },
+    {
+      "id": "downloads/gufo-examples-check.zip",
+      "path": "downloads/gufo-examples-check.zip",
+      "mediaType": "application/zip",
+      "bytes": 76471,
+      "sha256": "b746e7df51dca3f3d10a2334eedbe0e2e87419180ab54586a1aab0fc8028fca4",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/check.py",
+      "path": "gufo-examples-check/check.py",
+      "mediaType": "text/x-python",
+      "bytes": 6483,
+      "sha256": "71fb9fac7fee9c730f3786fa12fd473f35bd5a2e49f6b314da6dd965cadee201",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/expected.json",
+      "path": "gufo-examples-check/expected.json",
+      "mediaType": "application/json",
+      "bytes": 11320,
+      "sha256": "19211b916cfcd2f8456db5f610d49e01ef6e0ad5dae54044d55123a0a5deb4ff",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/01-endurant-types-invalid.ttl",
+      "path": "gufo-examples-check/inputs/01-endurant-types-invalid.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2166,
+      "sha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/01-endurant-types.ttl",
+      "path": "gufo-examples-check/inputs/01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 5841,
+      "sha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/02-objects-and-parts.ttl",
+      "path": "gufo-examples-check/inputs/02-objects-and-parts.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 12747,
+      "sha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/03-qualities.ttl",
+      "path": "gufo-examples-check/inputs/03-qualities.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6040,
+      "sha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/04-relators.ttl",
+      "path": "gufo-examples-check/inputs/04-relators.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6498,
+      "sha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/05-events.ttl",
+      "path": "gufo-examples-check/inputs/05-events.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6202,
+      "sha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/06-situations.ttl",
+      "path": "gufo-examples-check/inputs/06-situations.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10101,
+      "sha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/07-higher-order-types-invalid.ttl",
+      "path": "gufo-examples-check/inputs/07-higher-order-types-invalid.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2215,
+      "sha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/inputs/07-higher-order-types.ttl",
+      "path": "gufo-examples-check/inputs/07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4689,
+      "sha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "path": "gufo-examples-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18749,
+      "sha256": "c55e51bd3c55b917429a833ddc7ccc895093c2de4bb632eb6505e860edc96d3e",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "path": "gufo-examples-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18756,
+      "sha256": "9ef5b056d86aa5b880761c20eb67902f5c040bf9e5b8ea689c62011b46b5950a",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/NOTICE.md",
+      "path": "gufo-examples-check/NOTICE.md",
+      "mediaType": "text/markdown",
+      "bytes": 1149,
+      "sha256": "f53bed3a26edcc45f6452e4d1b6186f93368c182eb62c517abad2b8063d355c4",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/01-endurant-types-invalid.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/01-endurant-types-invalid.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 3364,
+      "sha256": "f81f1da59d2043a912ff4f5a6b90cceb9542c8fde5aa975f8c548ae601e293ca",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/01-endurant-types.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/01-endurant-types.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 15561,
+      "sha256": "4b4a90212e702c65b7ad762b91f082504afebd1282bbcff2c306d914937431d3",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/02-objects-and-parts.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/02-objects-and-parts.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 28036,
+      "sha256": "5ac05bb12f025dabd1ba878215d03d4770872b1221c3b4df80e0c6b3e0c3f883",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/03-qualities.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/03-qualities.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 18212,
+      "sha256": "41b421d975928bb8adf6bb917e48711b7b6bcb5c32167235923ee6fd6ce6e7f2",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/04-relators.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/04-relators.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 16577,
+      "sha256": "4a4df9c8c9b5bfdb367e8ed9815d4653f4b9882b34935840c9396861e602efc8",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/05-events.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/05-events.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 14354,
+      "sha256": "b009543c893a6b97d0ac8bcb5d1465fa3c1558be5b0ca001bf43f26652e0c6b2",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/06-situations.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/06-situations.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 23710,
+      "sha256": "9ec6d6e9c891729f53f347c626781a6f5af5f5c388479d6572e4d472c80111aa",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/07-higher-order-types-invalid.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/07-higher-order-types-invalid.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4551,
+      "sha256": "1bba00c8cf9981cf18459dac83801961362168c580b817f2198014d0aa2b120f",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/outputs/07-higher-order-types.ontograph.ttl",
+      "path": "gufo-examples-check/outputs/07-higher-order-types.ontograph.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10845,
+      "sha256": "022c79cf1639dae8f2ec35803fc9070452553f15c4b5e028581d5bd6819a3560",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/README.md",
+      "path": "gufo-examples-check/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 3272,
+      "sha256": "dfedc0225dfdbc603ec3d6f683b4bc8077d4604ea50a3a3ad24bc4c1626b710f",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/requirements.txt",
+      "path": "gufo-examples-check/requirements.txt",
+      "mediaType": "text/plain",
+      "bytes": 26,
+      "sha256": "7910cd98ad0d6eeeb98327ab071ece9fc6d044d2c8e603cd287ec2bde661e6fe",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/SHA256SUMS",
+      "path": "gufo-examples-check/SHA256SUMS",
+      "mediaType": "text/plain",
+      "bytes": 2569,
+      "sha256": "9a36ecbcbdfc48ecd5e80955658af91282050bbd86b8b839d96568ae8202c5f6",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/vendor/gufo.ttl",
+      "path": "gufo-examples-check/vendor/gufo.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 101183,
+      "sha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "gufo-examples-check/vendor/gufoshapes.ttl",
+      "path": "gufo-examples-check/vendor/gufoshapes.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 7662,
+      "sha256": "b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3",
+      "sourceRef": "authored 2026-11-24 for the gUFO examples results page; upstream files from nemo-ufes/gufo@f4122544133544eb4c6c467ba316302ab20b754a and nemo-ufes/gufoshapes@b95e14b034c93c42323e8beb8c08f697b026e553; outputs from evidence/gufo-nine-examples-2026-10-09",
+      "licenseRef": "gufo-examples-check/NOTICE.md"
+    },
+    {
+      "id": "ontouml-to-gufo-check/cases.v1.json",
+      "path": "ontouml-to-gufo-check/cases.v1.json",
+      "mediaType": "application/json",
+      "bytes": 6058,
+      "sha256": "67779bd4fbe19a598d31e099a77e8421493a66a1fe0cee924c0fd6188efe56e1"
+    },
+    {
+      "id": "ontouml-to-gufo-check/check.py",
+      "path": "ontouml-to-gufo-check/check.py",
+      "mediaType": "text/x-python",
+      "bytes": 11386,
+      "sha256": "f1f8f495c7d1a463987bba95f6ea5e63521b757126278294266f048da2554465"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/01-endurant-types.ttl",
+      "path": "ontouml-to-gufo-check/comparison/01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 5841,
+      "sha256": "cdb35fe7bbabd106dd93f80c896494feccf98984e14de6b88fdbfb5a746de616"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/02-objects-and-parts.ttl",
+      "path": "ontouml-to-gufo-check/comparison/02-objects-and-parts.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 12747,
+      "sha256": "e52d62105fca80dece016706444532bbe43430841785556ba0e0e45a9b2731b0"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/03-qualities.ttl",
+      "path": "ontouml-to-gufo-check/comparison/03-qualities.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6040,
+      "sha256": "debe9e6a87f8bb49e586d4cdb2112caad82afb54bb0761752c09f6b67eb05b83"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/04-relators.ttl",
+      "path": "ontouml-to-gufo-check/comparison/04-relators.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6498,
+      "sha256": "bc1a0647fae3a2453ddfaaa6ebe5faa068ca0c7bb324bbd4d74739680723c64e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/05-events.ttl",
+      "path": "ontouml-to-gufo-check/comparison/05-events.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6202,
+      "sha256": "638576bccd669938c885f1430c140063ceac4763e4da4086bba450bcfd272212"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/06-situations.ttl",
+      "path": "ontouml-to-gufo-check/comparison/06-situations.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10101,
+      "sha256": "3c55284119272ad88d42fad84e0c3ce2264a263f11a83339a4558e29c9f49235"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/07-higher-order-types.ttl",
+      "path": "ontouml-to-gufo-check/comparison/07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4689,
+      "sha256": "edadb42beb25ba28390c0bd6cd05e9b2ac27a8a3fe842e98426974bccd6d8b96"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/invalid-01-endurant-types.ttl",
+      "path": "ontouml-to-gufo-check/comparison/invalid-01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2166,
+      "sha256": "8d72ddfb3228a5c06a6dfc571e75c35c24bb49f9949fd51f24b4d58c52bd7463"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/invalid-07-higher-order-types.ttl",
+      "path": "ontouml-to-gufo-check/comparison/invalid-07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2215,
+      "sha256": "6363d815e6d110580ecf436bd8b320b762a12a676629bfa11b7db66184d5a417"
+    },
+    {
+      "id": "ontouml-to-gufo-check/comparison/README.md",
+      "path": "ontouml-to-gufo-check/comparison/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 402,
+      "sha256": "60a272fd2e19eae40a9228607b87c226df513bc033f5a78fc1a2015bf6e3f144"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/01-endurant-types.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/01-endurant-types.diff.json",
+      "mediaType": "application/json",
+      "bytes": 13155,
+      "sha256": "ff37f0e28ae52cd99116874830403e366759c17d254199e1ab80d3b1a76b477e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/02-objects-and-parts.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/02-objects-and-parts.diff.json",
+      "mediaType": "application/json",
+      "bytes": 36077,
+      "sha256": "235804b9e17aee30e87c6281648861553dd6dc8487ace385d85dcf2e2d45b168"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/03-qualities.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/03-qualities.diff.json",
+      "mediaType": "application/json",
+      "bytes": 31777,
+      "sha256": "7ed2ef2c0373b1ff31a1a071041960fb2af663ced09761c6f955d8eafaa13212"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/04-relators.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/04-relators.diff.json",
+      "mediaType": "application/json",
+      "bytes": 19330,
+      "sha256": "d298fdcd7ef22b1c0f4449d9ae343ae4b49ca1c64ae88fc327fda8e664f5026c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/05-events.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/05-events.diff.json",
+      "mediaType": "application/json",
+      "bytes": 19615,
+      "sha256": "5e2218894b539dbe132bdcb3366aface1f008b71e059791ef0ca37beff9317ad"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/06-situations.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/06-situations.diff.json",
+      "mediaType": "application/json",
+      "bytes": 25343,
+      "sha256": "a2aebb1d13c04886b2d2f6e97513d37c8519391fac32ba58998dbe22505186ef"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/07-higher-order-types.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/07-higher-order-types.diff.json",
+      "mediaType": "application/json",
+      "bytes": 6706,
+      "sha256": "6b81474d321ba88920bac061dfdadfa6e69554efb3774962384e1fc878efbe73"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/invalid-01-endurant-types.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/invalid-01-endurant-types.diff.json",
+      "mediaType": "application/json",
+      "bytes": 18979,
+      "sha256": "b4b25304faf5fd9e1fbcb950e45b99e4631e84fecf6529582d4d0e717f5eb4d5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/diffs/invalid-07-higher-order-types.diff.json",
+      "path": "ontouml-to-gufo-check/diffs/invalid-07-higher-order-types.diff.json",
+      "mediaType": "application/json",
+      "bytes": 20343,
+      "sha256": "9e454f2683e45646cc500ea7d961ceaabeb320e3710da4cc60d5fbe816b646c8"
+    },
+    {
+      "id": "ontouml-to-gufo-check/expected.json",
+      "path": "ontouml-to-gufo-check/expected.json",
+      "mediaType": "application/json",
+      "bytes": 27475,
+      "sha256": "c93a59c3cd242d3e8d6b87a903ed5a75761edc2ef6ef53f81452a2cc18ce3763"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions.v1.json",
+      "path": "ontouml-to-gufo-check/extensions.v1.json",
+      "mediaType": "application/json",
+      "bytes": 1033,
+      "sha256": "146eacaa48aec1642dc99006f0ee6b9ac9a25727d20bb4ca3d5ef72d1632f2e7"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/instances.json",
+      "path": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/instances.json",
+      "mediaType": "application/json",
+      "bytes": 6405,
+      "sha256": "3266dc3dc3729ea21b855a0fb2f1bbf3bae09481264457cff1ef28f08092323c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/model.json",
+      "path": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/model.json",
+      "mediaType": "application/json",
+      "bytes": 26365,
+      "sha256": "5c6211105404f436a56b4067b284533ee4d57c311c55a24ed4f8175131c1a57b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/output.ttl",
+      "path": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/output.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 18319,
+      "sha256": "4d911c22868dee85fcbe232ddff62e4af64c198b9dfa7484e99cd2cec38b4cd0"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/result.json",
+      "path": "ontouml-to-gufo-check/extensions/05-events-ordering-ext/result.json",
+      "mediaType": "application/json",
+      "bytes": 3881,
+      "sha256": "724bd5a632365902852b5b6f4d440a74f3534f05dc440222cc2ea08dcf0c6df1"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/instances.json",
+      "path": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/instances.json",
+      "mediaType": "application/json",
+      "bytes": 6405,
+      "sha256": "1d9472d8ba90e611335c61fadf5b29355313d0322d7a0db41adbafd7d9bdab63"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/model.json",
+      "path": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/model.json",
+      "mediaType": "application/json",
+      "bytes": 26365,
+      "sha256": "5c6211105404f436a56b4067b284533ee4d57c311c55a24ed4f8175131c1a57b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/output.ttl",
+      "path": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/output.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 18319,
+      "sha256": "43d1f8d7602452d7be9cd104a31cd58b9bad30b2843aff1f445ede27da9e044d"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/result.json",
+      "path": "ontouml-to-gufo-check/extensions/invalid-05-events-ordering-ext/result.json",
+      "mediaType": "application/json",
+      "bytes": 5473,
+      "sha256": "a2e2ff5c113bb35b111c00bb956ef31a13ff3f331fb873eae6ba9e2a9fa86893"
+    },
+    {
+      "id": "ontouml-to-gufo-check/extensions/README.md",
+      "path": "ontouml-to-gufo-check/extensions/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 767,
+      "sha256": "493fbc9495509f1adde614f4a58c652b008a4e2a3659ea3bf855f42cab5f982c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/01-endurant-types.json",
+      "path": "ontouml-to-gufo-check/findings/01-endurant-types.json",
+      "mediaType": "application/json",
+      "bytes": 55,
+      "sha256": "f889203df90e69159ce64e7f875da5d16e5e6bd159bca5dee2c1fc46fa157a63"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/02-objects-and-parts.json",
+      "path": "ontouml-to-gufo-check/findings/02-objects-and-parts.json",
+      "mediaType": "application/json",
+      "bytes": 58,
+      "sha256": "971c0c4db029faf0f830e691240cbd3de0f78730e644f06f048c0da5bd0870c4"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/03-qualities.json",
+      "path": "ontouml-to-gufo-check/findings/03-qualities.json",
+      "mediaType": "application/json",
+      "bytes": 50,
+      "sha256": "c8f79028c97ee21db67adf927e4387da7fb1c6ebf4dbf698f9985772e396b46e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/04-relators.json",
+      "path": "ontouml-to-gufo-check/findings/04-relators.json",
+      "mediaType": "application/json",
+      "bytes": 49,
+      "sha256": "9bd69237251fde74137d3ecf7e88dfd30cb5a9b6543c7e8e3ac764aada6e30da"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/05-events.json",
+      "path": "ontouml-to-gufo-check/findings/05-events.json",
+      "mediaType": "application/json",
+      "bytes": 47,
+      "sha256": "235c99cb91fd6dcd5d3246531e966f6daf154274df17e4a0c4331a7b7c1d7a1e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/06-situations.json",
+      "path": "ontouml-to-gufo-check/findings/06-situations.json",
+      "mediaType": "application/json",
+      "bytes": 51,
+      "sha256": "897067e8c9734c0d2637dc3175c2389aebebca52aa5d3daf48dba3cb69221373"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/07-higher-order-types.json",
+      "path": "ontouml-to-gufo-check/findings/07-higher-order-types.json",
+      "mediaType": "application/json",
+      "bytes": 59,
+      "sha256": "5320103e75ddc89291ec721a1fc0fd319158f5487cb6b6e6437058e2aecef8cf"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/invalid-01-endurant-types.json",
+      "path": "ontouml-to-gufo-check/findings/invalid-01-endurant-types.json",
+      "mediaType": "application/json",
+      "bytes": 1280,
+      "sha256": "16bec8541db7e0a40effe855249de1657e126aec75385947e7342f90bbfd3587"
+    },
+    {
+      "id": "ontouml-to-gufo-check/findings/invalid-07-higher-order-types.json",
+      "path": "ontouml-to-gufo-check/findings/invalid-07-higher-order-types.json",
+      "mediaType": "application/json",
+      "bytes": 948,
+      "sha256": "ca33673f7add41c2834c65058ac24dab4334017044a439b9167127de282d707b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/independent-review.json",
+      "path": "ontouml-to-gufo-check/independent-review.json",
+      "mediaType": "application/json",
+      "bytes": 4033,
+      "sha256": "7bc60541d05f76746479fb76a8e085a7ad89819ae0f5673e0ce70f5a6fe431b2"
+    },
+    {
+      "id": "ontouml-to-gufo-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "path": "ontouml-to-gufo-check/LICENSE-gufo-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18749,
+      "sha256": "c55e51bd3c55b917429a833ddc7ccc895093c2de4bb632eb6505e860edc96d3e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "path": "ontouml-to-gufo-check/LICENSE-gufoshapes-CC-BY-4.0.txt",
+      "mediaType": "text/plain",
+      "bytes": 18756,
+      "sha256": "9ef5b056d86aa5b880761c20eb67902f5c040bf9e5b8ea689c62011b46b5950a"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/01-endurant-types/instances.json",
+      "path": "ontouml-to-gufo-check/models/01-endurant-types/instances.json",
+      "mediaType": "application/json",
+      "bytes": 925,
+      "sha256": "4be484831d3ba225183449a85db20b5d10d27dfab19d51f4323e5158b16f5329"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/01-endurant-types/model.json",
+      "path": "ontouml-to-gufo-check/models/01-endurant-types/model.json",
+      "mediaType": "application/json",
+      "bytes": 12880,
+      "sha256": "94d702f46f0feb22a951e1b85b38276c6c8e0f1777225ded2bfacb0055efb033"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/02-objects-and-parts/instances.json",
+      "path": "ontouml-to-gufo-check/models/02-objects-and-parts/instances.json",
+      "mediaType": "application/json",
+      "bytes": 4038,
+      "sha256": "9dfa6fa5d759f4e4dcd6577e4e7a3408d49f48fb4081467dd0110cdb5186edcb"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/02-objects-and-parts/model.json",
+      "path": "ontouml-to-gufo-check/models/02-objects-and-parts/model.json",
+      "mediaType": "application/json",
+      "bytes": 19742,
+      "sha256": "163e48a1d8ffe08b21ebefccbdac58d29ef6d8efc3542a21f7b74ee79b29230e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/03-qualities/instances.json",
+      "path": "ontouml-to-gufo-check/models/03-qualities/instances.json",
+      "mediaType": "application/json",
+      "bytes": 2869,
+      "sha256": "e0c77780805982de0a7cbb92cea72193898b1af299f833d9da1dfb50e726c9fd"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/03-qualities/model.json",
+      "path": "ontouml-to-gufo-check/models/03-qualities/model.json",
+      "mediaType": "application/json",
+      "bytes": 17134,
+      "sha256": "95514ad8a20368c5704701362232dd47723679cb5ea7c1c0897e38e856b192e8"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/04-relators/instances.json",
+      "path": "ontouml-to-gufo-check/models/04-relators/instances.json",
+      "mediaType": "application/json",
+      "bytes": 5374,
+      "sha256": "0dfdca6fd5490af2188ca687379274e7603c3992e54d5b66e329e437543d89be"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/04-relators/model.json",
+      "path": "ontouml-to-gufo-check/models/04-relators/model.json",
+      "mediaType": "application/json",
+      "bytes": 37403,
+      "sha256": "6cda73a3f0193375955d654445fe73459c70b9d464ff5958faa8fa201a31a01d"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/05-events/instances.json",
+      "path": "ontouml-to-gufo-check/models/05-events/instances.json",
+      "mediaType": "application/json",
+      "bytes": 5395,
+      "sha256": "f635bfa16d32b4276c73f98a9c4ee28a0398bb6cf8f83adb5f5616fbce103686"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/05-events/model.json",
+      "path": "ontouml-to-gufo-check/models/05-events/model.json",
+      "mediaType": "application/json",
+      "bytes": 24515,
+      "sha256": "858a08275dd53f829d2590faf4da04bd6d7d012d6861aa9ee00b3647c1d6b95b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/06-situations/instances.json",
+      "path": "ontouml-to-gufo-check/models/06-situations/instances.json",
+      "mediaType": "application/json",
+      "bytes": 7030,
+      "sha256": "41b602a74088d31a241612bf6dd31bca36094d09e75eda8577e9a52a643b79c0"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/06-situations/model.json",
+      "path": "ontouml-to-gufo-check/models/06-situations/model.json",
+      "mediaType": "application/json",
+      "bytes": 14946,
+      "sha256": "8f71f87a58c0b4e01773dad181b2ba308c0fa4c1fd7f5674fcdd71c82062fcb5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/07-higher-order-types/instances.json",
+      "path": "ontouml-to-gufo-check/models/07-higher-order-types/instances.json",
+      "mediaType": "application/json",
+      "bytes": 1202,
+      "sha256": "0553df15bcd48fc385035e65606dc005dc743179d6036f65954e6c7f9e6c9489"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/07-higher-order-types/model.json",
+      "path": "ontouml-to-gufo-check/models/07-higher-order-types/model.json",
+      "mediaType": "application/json",
+      "bytes": 7939,
+      "sha256": "1afc227db95d278baf60f40648bb578b453bb1ade8655095f7a36981facb6bee"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/invalid-01-endurant-types/instances.json",
+      "path": "ontouml-to-gufo-check/models/invalid-01-endurant-types/instances.json",
+      "mediaType": "application/json",
+      "bytes": 334,
+      "sha256": "0284624e4963e7f25ef181419306fbef8156e4cbf611b33ad8dd28810f16da65"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/invalid-01-endurant-types/model.json",
+      "path": "ontouml-to-gufo-check/models/invalid-01-endurant-types/model.json",
+      "mediaType": "application/json",
+      "bytes": 13874,
+      "sha256": "a33e5aec04d622dc39c548911ac9dacda2977fa84d5ad24f9f8ef6502d8be8d5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/invalid-07-higher-order-types/instances.json",
+      "path": "ontouml-to-gufo-check/models/invalid-07-higher-order-types/instances.json",
+      "mediaType": "application/json",
+      "bytes": 1351,
+      "sha256": "4cef404acebedf18d3389efbf5b6f60180f808abb8c847da87e2a7bb2b58192c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/models/invalid-07-higher-order-types/model.json",
+      "path": "ontouml-to-gufo-check/models/invalid-07-higher-order-types/model.json",
+      "mediaType": "application/json",
+      "bytes": 9480,
+      "sha256": "69a053a00fa547ec19ac54aad2155d5c642972d05a07b003f85d5cbb53882aeb"
+    },
+    {
+      "id": "ontouml-to-gufo-check/NOTICE.md",
+      "path": "ontouml-to-gufo-check/NOTICE.md",
+      "mediaType": "text/markdown",
+      "bytes": 1663,
+      "sha256": "9691caca50195c48f0a29d479adfb4888cec4563770e34bf508a0e2ba5d3813f"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/01-endurant-types.json",
+      "path": "ontouml-to-gufo-check/oracles/01-endurant-types.json",
+      "mediaType": "application/json",
+      "bytes": 3347,
+      "sha256": "99c980d288bfd9ad030ef0c5ac3870080840b25fb7c31614ca41653f8310af5b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/02-objects-and-parts.json",
+      "path": "ontouml-to-gufo-check/oracles/02-objects-and-parts.json",
+      "mediaType": "application/json",
+      "bytes": 3400,
+      "sha256": "2017557cd0fc64f33e764b2d67d87af31d7a33d56a0aa03e733c8f7e6a8f1fa5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/03-qualities.json",
+      "path": "ontouml-to-gufo-check/oracles/03-qualities.json",
+      "mediaType": "application/json",
+      "bytes": 3195,
+      "sha256": "8070ca9482d05741dc52d69a0b1bfdb3cb18e5ed7b3a31c37ce546c9e3b012da"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/04-relators.json",
+      "path": "ontouml-to-gufo-check/oracles/04-relators.json",
+      "mediaType": "application/json",
+      "bytes": 4184,
+      "sha256": "412780bb866a6dfe20f323e2b87faadc0b8a6227433d31e90995db9d84c26b21"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/05-events.json",
+      "path": "ontouml-to-gufo-check/oracles/05-events.json",
+      "mediaType": "application/json",
+      "bytes": 3770,
+      "sha256": "5d408a6dc2357a4eb6481683042217609c47a7e79ffd855215ee6e97465a3151"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/06-situations.json",
+      "path": "ontouml-to-gufo-check/oracles/06-situations.json",
+      "mediaType": "application/json",
+      "bytes": 3197,
+      "sha256": "cf462b8dee05e32c1406bc0b2579d4ed98f016bd242645fbaa34f748613d2ee1"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/07-higher-order-types.json",
+      "path": "ontouml-to-gufo-check/oracles/07-higher-order-types.json",
+      "mediaType": "application/json",
+      "bytes": 3414,
+      "sha256": "dcedaba3716fefddfa5fddee8848c170792d55ee0d687b5c3330a70ce25ebf00"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/invalid-01-endurant-types.json",
+      "path": "ontouml-to-gufo-check/oracles/invalid-01-endurant-types.json",
+      "mediaType": "application/json",
+      "bytes": 2992,
+      "sha256": "d6cd83ff6ff37f234e2d177ba4f7a301858ca797722af480f56a259d729a4da7"
+    },
+    {
+      "id": "ontouml-to-gufo-check/oracles/invalid-07-higher-order-types.json",
+      "path": "ontouml-to-gufo-check/oracles/invalid-07-higher-order-types.json",
+      "mediaType": "application/json",
+      "bytes": 5039,
+      "sha256": "014095a056831aa8ad37922fe09c1de6f90b7d7d1c9ddc10ce6c8941bbda4ac4"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/01-endurant-types.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/01-endurant-types.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4128,
+      "sha256": "5d72ea43f94388855b3694d7925438cf98e70d73d2592fce320fe870147968a5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/01-endurant-types.ttl",
+      "path": "ontouml-to-gufo-check/outputs/01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10395,
+      "sha256": "060186f0e029eea0c77bbff6a6ca5546d226a310f234011e64edb36b14a06eb5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/02-objects-and-parts.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/02-objects-and-parts.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 5570,
+      "sha256": "d24e21504b414e429ce7311230593a0d2eaee90a029a7216c8d9ff71333151f3"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/02-objects-and-parts.ttl",
+      "path": "ontouml-to-gufo-check/outputs/02-objects-and-parts.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 24269,
+      "sha256": "353f2dda06689ec1ff0041699414bd585c63ef46ae0dadd4f145c8a740a60b24"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/03-qualities.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/03-qualities.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 5127,
+      "sha256": "90084e1a8123188a62a4a5d4be5a7aadd59faa5673688517c2f016a116bb3500"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/03-qualities.ttl",
+      "path": "ontouml-to-gufo-check/outputs/03-qualities.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 20487,
+      "sha256": "33519d1fa0a021eee6d41697f749d4dd6ad7956b293e3a85fc969b9dc758d2cd"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/04-relators.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/04-relators.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 4246,
+      "sha256": "98a842c350bc5b72aedb491cb0d85f6f7143dc4c3b6f59a38bbbdd93304ef8d8"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/04-relators.ttl",
+      "path": "ontouml-to-gufo-check/outputs/04-relators.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 18253,
+      "sha256": "c9241e090cd7eb0614a4cfbe988c4c1043f890938e058496e1d77409df79c45e"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/05-events.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/05-events.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 3515,
+      "sha256": "92f0926f82df13a50becae549308b8818519ca001420772cb9761691fc0b0d3f"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/05-events.ttl",
+      "path": "ontouml-to-gufo-check/outputs/05-events.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 14158,
+      "sha256": "6c71b528d20a4a4da33fef240ae03cdd55f54913a7deb313f6119ee296c46e5f"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/06-situations.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/06-situations.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 6182,
+      "sha256": "6d13c4374b589096c395002b8f26e588c2d1f36c2027b1c0a2579528a53fb4ab"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/06-situations.ttl",
+      "path": "ontouml-to-gufo-check/outputs/06-situations.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 23389,
+      "sha256": "1a981dbbf0a7b73757a512ada9df685f21b83978cf2b7f8dc86a31716508d9e2"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/07-higher-order-types.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/07-higher-order-types.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2055,
+      "sha256": "1f84bb60a7e034c5d8c720122db58d5b2b7fa65696406eced8ffb458ded4bd07"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/07-higher-order-types.ttl",
+      "path": "ontouml-to-gufo-check/outputs/07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10016,
+      "sha256": "bdd5fc57dc886ba9ea09c6f4ce814359c96d17992ba64b457fa63998bccedb5b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/invalid-01-endurant-types.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/invalid-01-endurant-types.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 3892,
+      "sha256": "7d763a15db6c79a6dd7db68c8a28537f2956c72a184e7327a8ab972ab10aedcc"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/invalid-01-endurant-types.ttl",
+      "path": "ontouml-to-gufo-check/outputs/invalid-01-endurant-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 10005,
+      "sha256": "7c3240257d37bbc7ab3140eb0de90d0415c1db11a6d8c196631fef05f8fee367"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/invalid-07-higher-order-types.iri-mapped.ttl",
+      "path": "ontouml-to-gufo-check/outputs/invalid-07-higher-order-types.iri-mapped.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 2312,
+      "sha256": "88d442ab136e0b40c23d3b5837d0006e49328bfcd9f0d0d3ba954e033aaa4b53"
+    },
+    {
+      "id": "ontouml-to-gufo-check/outputs/invalid-07-higher-order-types.ttl",
+      "path": "ontouml-to-gufo-check/outputs/invalid-07-higher-order-types.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 12297,
+      "sha256": "11999f2d5032e20462ea7fe94686421667cf563ee159bb537795bb944789cb19"
+    },
+    {
+      "id": "ontouml-to-gufo-check/README.md",
+      "path": "ontouml-to-gufo-check/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 3068,
+      "sha256": "671699c90e290f6ddd815b4f44373a56029f36c81ad108b5b97bc8773c9696f1"
+    },
+    {
+      "id": "ontouml-to-gufo-check/requirements.txt",
+      "path": "ontouml-to-gufo-check/requirements.txt",
+      "mediaType": "text/plain",
+      "bytes": 26,
+      "sha256": "7910cd98ad0d6eeeb98327ab071ece9fc6d044d2c8e603cd287ec2bde661e6fe"
+    },
+    {
+      "id": "ontouml-to-gufo-check/reviewed-differences.v1.json",
+      "path": "ontouml-to-gufo-check/reviewed-differences.v1.json",
+      "mediaType": "application/json",
+      "bytes": 7242,
+      "sha256": "8b835402fe72ee2845eef4f839dfff976c297905602f6c4d91675da0000fd3b5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/01-endurant-types/findings.json",
+      "path": "ontouml-to-gufo-check/run/01-endurant-types/findings.json",
+      "mediaType": "application/json",
+      "bytes": 873,
+      "sha256": "56e6dbf2d29340ec177b48e4283c9611eebc50a9b254cc2e5b1bf7b1d1123dea"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/01-endurant-types/result.json",
+      "path": "ontouml-to-gufo-check/run/01-endurant-types/result.json",
+      "mediaType": "application/json",
+      "bytes": 6551,
+      "sha256": "fb821c3e3ffd8efd32459236982c28f6c68b9853d19f4e67306df9317d642533"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/02-objects-and-parts/findings.json",
+      "path": "ontouml-to-gufo-check/run/02-objects-and-parts/findings.json",
+      "mediaType": "application/json",
+      "bytes": 877,
+      "sha256": "6ee927d06151b187a3870e933d68eb709e5058ac88816239d56f9223e0598c92"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/02-objects-and-parts/result.json",
+      "path": "ontouml-to-gufo-check/run/02-objects-and-parts/result.json",
+      "mediaType": "application/json",
+      "bytes": 5941,
+      "sha256": "ec3afd20a47e9fa6d815a072674e47854a214617ce0f9982eaa67a54b759d1fc"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/03-qualities/findings.json",
+      "path": "ontouml-to-gufo-check/run/03-qualities/findings.json",
+      "mediaType": "application/json",
+      "bytes": 869,
+      "sha256": "5aa1ae31b2c5948eb64566c89d7d34e2f0d60eb9a65a54612cc677b4222ae0d9"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/03-qualities/result.json",
+      "path": "ontouml-to-gufo-check/run/03-qualities/result.json",
+      "mediaType": "application/json",
+      "bytes": 5740,
+      "sha256": "479c3e8a716bf880486bdc1b87ed3f935003a4bd8717e77762a9bb44cc4afe47"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/04-relators/findings.json",
+      "path": "ontouml-to-gufo-check/run/04-relators/findings.json",
+      "mediaType": "application/json",
+      "bytes": 868,
+      "sha256": "90ba59741152c0bb3723334db5668a70219405f5c2e1cebbe49443daf65bf370"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/04-relators/result.json",
+      "path": "ontouml-to-gufo-check/run/04-relators/result.json",
+      "mediaType": "application/json",
+      "bytes": 6657,
+      "sha256": "7ead5b49b8f7741ff2a4c785882070b7acdcb7446a57da4ab1e4706c626e3b0c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/05-events/findings.json",
+      "path": "ontouml-to-gufo-check/run/05-events/findings.json",
+      "mediaType": "application/json",
+      "bytes": 865,
+      "sha256": "443bf85ea3133163d6b9e9ca8d182db8763504ef72979509df762494e069eec8"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/05-events/result.json",
+      "path": "ontouml-to-gufo-check/run/05-events/result.json",
+      "mediaType": "application/json",
+      "bytes": 6320,
+      "sha256": "b4ac05fa3725ce5be929ca0a3a38fef7b5cf2d67b8a47e6b2d2ba5c1ae4ee76b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/06-situations/findings.json",
+      "path": "ontouml-to-gufo-check/run/06-situations/findings.json",
+      "mediaType": "application/json",
+      "bytes": 870,
+      "sha256": "a5442c529f9b6c21a9934b66b9a1d20d7651952500d69c2bbd85c935316408c5"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/06-situations/result.json",
+      "path": "ontouml-to-gufo-check/run/06-situations/result.json",
+      "mediaType": "application/json",
+      "bytes": 5685,
+      "sha256": "3dfb111d7abc7161fe13d96f90bb6fe0740038a43b1132e4690505535ad52658"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/07-higher-order-types/findings.json",
+      "path": "ontouml-to-gufo-check/run/07-higher-order-types/findings.json",
+      "mediaType": "application/json",
+      "bytes": 877,
+      "sha256": "20b4b013343df3f790378e0bbc12752fcf6d357a766be50eb287f7816497af1c"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/07-higher-order-types/result.json",
+      "path": "ontouml-to-gufo-check/run/07-higher-order-types/result.json",
+      "mediaType": "application/json",
+      "bytes": 5853,
+      "sha256": "d6e7c8f82c0f5ba5c144c9d4e05db30b6fcc3fec5ee2480b26bfa511748993f4"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/extensions-summary.json",
+      "path": "ontouml-to-gufo-check/run/extensions-summary.json",
+      "mediaType": "application/json",
+      "bytes": 12047,
+      "sha256": "58edae5bd03a90d2fe203414b3a7c65ef55ffdacb2c903428fad4f155c814adc"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/invalid-01-endurant-types/findings.json",
+      "path": "ontouml-to-gufo-check/run/invalid-01-endurant-types/findings.json",
+      "mediaType": "application/json",
+      "bytes": 2027,
+      "sha256": "9d82de6426239ef114a1892ab06fabff77e58181cd0a25e0049707aed586205b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/invalid-01-endurant-types/result.json",
+      "path": "ontouml-to-gufo-check/run/invalid-01-endurant-types/result.json",
+      "mediaType": "application/json",
+      "bytes": 8570,
+      "sha256": "4af150efc2391d3733615f1cd48a522f271015b4803a80df438b2e748d08f88b"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/invalid-07-higher-order-types/findings.json",
+      "path": "ontouml-to-gufo-check/run/invalid-07-higher-order-types/findings.json",
+      "mediaType": "application/json",
+      "bytes": 1695,
+      "sha256": "ca667be9067265df117a50e7a124133a4f78bece9f5d56d1fd3f33798e5427bd"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/invalid-07-higher-order-types/result.json",
+      "path": "ontouml-to-gufo-check/run/invalid-07-higher-order-types/result.json",
+      "mediaType": "application/json",
+      "bytes": 18069,
+      "sha256": "48c9ac4029295ce7f0feea3d622489acd65b7920e93ff740c4ba81c3a2f59cf8"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/README.md",
+      "path": "ontouml-to-gufo-check/run/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 853,
+      "sha256": "3b0c2acc2d3352799bd0ba3c713482bab0f2bf1f0d316f2bc766fecd57f1d9a7"
+    },
+    {
+      "id": "ontouml-to-gufo-check/run/summary.json",
+      "path": "ontouml-to-gufo-check/run/summary.json",
+      "mediaType": "application/json",
+      "bytes": 83640,
+      "sha256": "8dba2fc26a38fe296071403c8af422e1bdc78921fab84758d603267812934870"
+    },
+    {
+      "id": "ontouml-to-gufo-check/SHA256SUMS",
+      "path": "ontouml-to-gufo-check/SHA256SUMS",
+      "mediaType": "application/octet-stream",
+      "bytes": 11770,
+      "sha256": "bdf71cd74318daf405d1cb3fea91a666648ed4de4a746c120d8f2e88cd3cee59"
+    },
+    {
+      "id": "ontouml-to-gufo-check/tonto-reviewed-differences.v1.json",
+      "path": "ontouml-to-gufo-check/tonto-reviewed-differences.v1.json",
+      "mediaType": "application/json",
+      "bytes": 7349,
+      "sha256": "be0436bb56f39daab04440797b3281858e86a43277e14a33ac7a581515f0b448"
+    },
+    {
+      "id": "ontouml-to-gufo-check/vendor/gufo.ttl",
+      "path": "ontouml-to-gufo-check/vendor/gufo.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 101183,
+      "sha256": "0eb67c085a9ebf3bd559b1f19ca32cc9be1f4fd2d7f604eb7dfd92843f8dcc66"
+    },
+    {
+      "id": "ontouml-to-gufo-check/vendor/gufoshapes.ttl",
+      "path": "ontouml-to-gufo-check/vendor/gufoshapes.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 8149,
+      "sha256": "84b56419cca76dd6b91ff368061706915f73ff75726b0f2a20a48a9d7b100033"
+    },
+    {
+      "id": "ontouml-to-gufo-check/vendor/ontograph-temporal-shapes.ttl",
+      "path": "ontouml-to-gufo-check/vendor/ontograph-temporal-shapes.ttl",
+      "mediaType": "text/turtle",
+      "bytes": 1608,
+      "sha256": "23b9d460980837fd64aa4bf3834937def104c5af2d6338ae87c3216c45eb935d"
+    },
+    {
+      "id": "downloads/ontouml-to-gufo-check.zip",
+      "path": "downloads/ontouml-to-gufo-check.zip",
+      "mediaType": "application/zip",
+      "bytes": 194920,
+      "sha256": "47e4631129603b74bd151cbaa30514b6de4436d45c293a3af9adb1e66fb5b73f"
+    }
+  ],
+  "executions": [
+    {
+      "id": "independent-complete-v1.1",
+      "mode": "recorded",
+      "inputRefs": [
+        "downloads/semantic-viewpoints-reproduction-v1.1.zip"
+      ],
+      "outputRefs": [
+        "downloads/reviews/package/verification.json"
+      ],
+      "sourceCommit": "3e67a10ec450fd58bccf5cf7a328690b0b749fd2",
+      "runtimeIdentityRef": "downloads/prerequisites.json",
+      "toolIdentityRefs": [
+        "downloads/prerequisites.json"
+      ],
+      "commandRef": "downloads/reproduction-README.txt",
+      "exitCode": 0,
+      "outcome": "passed-complete-declared-journey",
+      "limitations": [
+        "220 actual operations include 18 expected fail-closed rejections of deliberately altered inputs; the complete journey command exits zero.",
+        "Only the package and declared prerequisites were used; provider/runtime distributions remain excluded.",
+        "No canonical adoption or product acceptance is claimed."
+      ]
+    },
+    {
+      "id": "portable-gufo-examples-check",
+      "mode": "portable-recheck",
+      "date": "2026-11-24",
+      "inputRefs": [
+        "downloads/gufo-examples-check.zip"
+      ],
+      "commandRef": "gufo-examples-check/README.md",
+      "command": "python -m pip install -r requirements.txt && python check.py",
+      "exitCode": 0,
+      "outcome": "808/808 assertions preserved (output isomorphic to input); 7/7 valid examples conform to gufoshapes; invalid examples 1 and 7 give exactly 2 and 5 violations, matching the recorded oracles",
+      "toolIdentities": [
+        "rdflib 7.6.0",
+        "pySHACL 0.40.2",
+        "Python 3.13 (Linux) and Python 3.14 (Windows)"
+      ],
+      "limitations": [
+        "No OWL 2 DL reasoning (recorded run used Pellet).",
+        "Checks the published OntoGraph outputs; does not run the OntoGraph runtime, which is not publicly distributed."
+      ]
+    },
+    {
+      "id": "ontouml-to-gufo-acceptance-2026-11-27",
+      "mode": "recorded",
+      "completedAt": "2026-11-27T07:05:47+11:00",
+      "timeZone": "Australia/Sydney",
+      "inputRefs": [
+        "ontouml-to-gufo-check/cases.v1.json",
+        "ontouml-to-gufo-check/expected.json"
+      ],
+      "outputRefs": [
+        "ontouml-to-gufo-check/run/summary.json",
+        "ontouml-to-gufo-check/run/extensions-summary.json",
+        "downloads/ontouml-to-gufo-check.zip"
+      ],
+      "binarySha256": "sha256:485faa176b2edec1000eedb9fbec0f9c51c354e787fe71d86610d867c12bbc3e",
+      "builtFromCommit": "a0f9f3e30f2fd42d056c1601819d4f008826cd86",
+      "mergedToDevelop": "ec03a119daf83e50a9dee0d6f6765238a6b9dbc8",
+      "gufoPin": "f4122544133544eb4c6c467ba316302ab20b754a",
+      "tools": [
+        "pyshacl 0.40.2",
+        "Apache Jena 6.2.0",
+        "Pellet via owlready2 0.51"
+      ],
+      "outcome": "7/7 valid examples: no UFO-rule findings, gufoshapes conform in pySHACL and Jena 6.2.0, Pellet consistent; invalid-01: 2 rule findings and 2 gufoshapes violations; invalid-07: 1 rule finding and 6 gufoshapes violations; 0 unclassified differences; Jena agreed with pySHACL on all nine cases.",
+      "limitations": [
+        "This is a retained OntoGraph run. Regenerating the outputs needs the OntoGraph runtime, which is not public.",
+        "The portable bundle checks published outputs against gufoshapes. It does not rerun OntoGraph, Jena or Pellet.",
+        "No independent human ontologist has reviewed the models or these results.",
+        "No parity is claimed with the official OntoUML validator, the OntoUML server, or the Visual Paradigm plugin."
+      ]
+    },
+    {
+      "id": "portable-ontouml-to-gufo-check",
+      "mode": "portable-recheck",
+      "completedAt": "2026-11-27",
+      "inputRefs": [
+        "ontouml-to-gufo-check/expected.json",
+        "downloads/ontouml-to-gufo-check.zip"
+      ],
+      "outputRefs": [
+        "ontouml-to-gufo-check/expected.json"
+      ],
+      "tools": [
+        "rdflib 7.6.0",
+        "pyshacl 0.40.2",
+        "Python 3.14"
+      ],
+      "outcome": "All published hashes, UFO-rule finding counts, classified-diff counts and pySHACL verdicts reproduced, including the two non-acceptance extension cases.",
+      "limitations": [
+        "The portable re-check does not run OntoGraph, Jena or Pellet."
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "organisational-independent",
+      "reviewedArtifactRefs": [
+        "downloads/organisation-results.json"
+      ],
+      "reviewerRole": "automated agent review (AI subagent separate from the author); no human review",
+      "independent": true,
+      "outcome": "accepted-bounded-organisational-journey",
+      "receiptRef": "downloads/organisation-independent-review.json",
+      "humanReview": false
+    },
+    {
+      "id": "note-independent",
+      "reviewedArtifactRefs": [
+        "downloads/technical-note.pdf"
+      ],
+      "reviewerRole": "automated agent review (AI subagent separate from the note builder); no human review",
+      "independent": true,
+      "outcome": "accepted-technical-note-bounded-content-and-visual-scope",
+      "receiptRef": "downloads/reviews/note/verification.json",
+      "humanReview": false
+    },
+    {
+      "id": "explorer-independent",
+      "reviewedArtifactRefs": [
+        "explorer-manifest"
+      ],
+      "reviewerRole": "automated agent review (AI subagent separate from the explorer author); no human review",
+      "independent": true,
+      "outcome": "accepted-bounded-recorded-explorer-technical-scope",
+      "receiptRef": "downloads/reviews/explorer/verification.json",
+      "humanReview": false
+    },
+    {
+      "id": "package-independent",
+      "reviewedArtifactRefs": [
+        "downloads/semantic-viewpoints-reproduction-v1.1.zip"
+      ],
+      "reviewerRole": "automated agent reproduction (AI agent separate from the package author); no human review",
+      "independent": true,
+      "outcome": "passed-complete-declared-journey",
+      "receiptRef": "downloads/reviews/package/verification.json",
+      "humanReview": false
+    },
+    {
+      "id": "ontouml-to-gufo-self-review",
+      "reviewedArtifactRefs": [
+        "ontouml-to-gufo-check/run/summary.json",
+        "ontouml-to-gufo-check/reviewed-differences.v1.json",
+        "ontouml-to-gufo-check/independent-review.json"
+      ],
+      "reviewerRole": "Self-review by the OntoGraph implementation agents that authored the models and classified the differences; no human ontologist review",
+      "independent": false,
+      "humanReview": false,
+      "outcome": "recorded-results-self-reviewed-pending-independent-review",
+      "receiptRef": "ontouml-to-gufo-check/independent-review.json"
+    }
+  ],
+  "checksumExclusion": [
+    "evidence-index.json"
+  ],
+  "limitations": [
+    "Actual execution details remain in the indexed receipts and archive.",
+    "All review records are automated agent reviews; no human ontologist has reviewed this material.",
+    "Recorded receipts are historical and are not rewritten; current status is stated on research/index.html.",
+    "The technical note PDF predates the 2026-11-24 page and still carries a \"Review candidate\" header.",
+    "The October 2026 organisation-independent-review.json and the 808/808 Turtle admit/regenerate result do not cover the OntoUML-to-gUFO projection published in ontouml-to-gufo-check/.",
+    "independent-review.json for the 27 November 2026 projection is an honest self-review record: it is not an independent review, and no human ontologist has reviewed that material."
+  ]
+}

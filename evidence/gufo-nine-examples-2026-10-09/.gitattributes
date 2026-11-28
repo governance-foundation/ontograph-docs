@@ -1,0 +1,2 @@
+*.json -text whitespace=cr-at-eol
+*.ttl -text whitespace=cr-at-eol

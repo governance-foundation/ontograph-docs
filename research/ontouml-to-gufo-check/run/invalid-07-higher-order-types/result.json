@@ -1,0 +1,316 @@
+{
+  "caseRef": "invalid-07-higher-order-types",
+  "checks": {
+    "allDifferencesClassified": true,
+    "deterministic": true,
+    "gufoshapes": true,
+    "gufoshapesJenaAgrees": true,
+    "idPolicy": true,
+    "isolation": true,
+    "lintClean": true,
+    "oracleEntailments": true,
+    "oracleEntailmentsRun": true,
+    "oracleQueries": true,
+    "oracleShacl": true,
+    "oracleShaclSignatures": true,
+    "owlConsistent": true,
+    "owlNoUnsatisfiable": true,
+    "rename": true,
+    "rules": true
+  },
+  "deterministic": true,
+  "diff": {
+    "extra": 52,
+    "matched": 21,
+    "missing": 4,
+    "ontographTriples": 73,
+    "reasons": {
+      "extra": {
+        "ANNOTATION": 13,
+        "INVALID-CASE-SCOPE": 26,
+        "ONTOLOGY-HEADER": 1,
+        "ONTOUML-STEREOTYPE-REQUIRED": 3,
+        "REVIEWED-MODELLING-DIFFERENCE": 1,
+        "UFO-DERIVED-AXIOM": 8
+      },
+      "missing": {
+        "ANNOTATION": 1,
+        "AXIOM-FORM-DIFFERENCE": 1,
+        "ONTOLOGY-HEADER": 2
+      }
+    },
+    "unclassified": 0,
+    "upstreamTriples": 25
+  },
+  "expectedValid": false,
+  "gufoshapes": {
+    "conforms": false,
+    "results": [
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      {
+        "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        "focusNode": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "message": "Instances https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger and https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion of the partitioning type https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint.",
+        "resultPath": "None",
+        "sourceShape": "https://w3id.org/nemo/gufoshapes#PartitionPairwiseDisjointnessShape",
+        "value": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      }
+    ],
+    "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+  },
+  "gufoshapesEnginesAgree": true,
+  "gufoshapesJena": {
+    "conforms": false,
+    "executed": true,
+    "overallStatus": "nonconformant",
+    "persistence": "persisted-reloaded",
+    "resultSignatures": [
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Elephant> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Hyena> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ],
+      [
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Tiger> and <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#Lion> of the partitioning type <https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#AnimalSpecies> are not declared disjoint."
+      ]
+    ],
+    "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+    "semanticStatus": "nonconformant",
+    "tool": "shacl-sparql:apache-jena-6.2.0"
+  },
+  "idPolicyMappingConsistent": true,
+  "iriMapping": {
+    "ontograph": "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid#",
+    "ontologyIri": [
+      "https://ontograph.dev/examples/gufo-examples/higher-order-types-invalid",
+      "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#"
+    ],
+    "upstream": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#"
+  },
+  "lint": [],
+  "ontographFindings": [
+    {
+      "message": "class:tiger is an instance of class:animal-species (via generalization-set:animal-species-addition), which partitions class:animal, but it is not declared disjoint from the partition members",
+      "ruleId": "OG-UFO-PARTITION-DISJOINT",
+      "severity": "error",
+      "sourcePointer": "/elements/16",
+      "sourceRef": "class:tiger"
+    }
+  ],
+  "oracleEntailments": [
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Rajah"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": true,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Animal",
+        "predicate": "http://purl.org/nemo/gufo#partitions",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies"
+      },
+      "entailed": true,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion",
+        "predicate": "http://www.w3.org/2002/07/owl#disjointWith",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    },
+    {
+      "claim": {
+        "expected": false,
+        "object": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena",
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "subject": "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Rajah"
+      },
+      "entailed": false,
+      "exitCode": 0,
+      "matchesOracle": true,
+      "stderr": ""
+    }
+  ],
+  "oracleEntailmentsOutOfScope": [],
+  "oracleQueries": [
+    {
+      "exactlyEqual": false,
+      "expectedRows": 7,
+      "explainedByDiff": {
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion\"}": "ONTOUML-STEREOTYPE-REQUIRED",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger\"}": "ONTOUML-STEREOTYPE-REQUIRED"
+      },
+      "extraRows": [
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion\"}",
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger\"}"
+      ],
+      "inScopeAllExplained": true,
+      "inScopeEqual": false,
+      "missingRows": [],
+      "name": "classifications",
+      "outOfScopeExtra": [
+        "{\"class\": \"http://purl.org/nemo/gufo#SubKind\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Endangered\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#LeastConcern\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#ConservationStatus\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Vulnerable\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tembo\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Nia\"}",
+        "{\"class\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion\", \"subject\": \"https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Kesi\"}"
+      ],
+      "outOfScopeMissing": [],
+      "rows": 18
+    },
+    {
+      "exactlyEqual": true,
+      "expectedRows": 1,
+      "explainedByDiff": {},
+      "extraRows": [],
+      "inScopeAllExplained": true,
+      "inScopeEqual": true,
+      "missingRows": [],
+      "name": "feature-facts",
+      "outOfScopeExtra": [],
+      "outOfScopeMissing": [],
+      "rows": 1
+    }
+  ],
+  "oracleShaclConforms": false,
+  "owl": {
+    "consistent": true,
+    "tool": "Pellet via owlready2 0.51",
+    "unsatisfiable": []
+  },
+  "passed": true,
+  "referenceComparison": "not-run: no --reference-dir; the Tonto cross-check is scripts/tonto_reference_gufo_examples.py",
+  "rulesReject": true,
+  "shaclSignatureComparison": {
+    "extraInScope": [],
+    "extraOutOfScope": [
+      [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant and https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger of the partitioning type https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+      ],
+      [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Tiger and https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Elephant of the partitioning type https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+      ]
+    ],
+    "missing": [],
+    "missingExplainedUpstreamShapeDirectionality": [
+      [
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+        null,
+        "https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies",
+        "Instances https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Lion and https://purl.org/nemo/gufo-examples/higher-order-types-invalid#Hyena of the partitioning type https://purl.org/nemo/gufo-examples/higher-order-types-invalid#AnimalSpecies are not declared disjoint."
+      ]
+    ],
+    "ontographSignatures": 6,
+    "oracleSignatures": 5,
+    "passed": true
+  },
+  "status": "rejected",
+  "unsupportedFindings": 0,
+  "isolation": {
+    "passed": true,
+    "note": "The projector ran in an empty per-call directory. Upstream Turtle was read only after projection, for comparison."
+  }
+}

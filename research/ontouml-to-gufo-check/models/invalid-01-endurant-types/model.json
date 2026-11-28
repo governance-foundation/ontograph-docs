@@ -1,0 +1,567 @@
+{
+  "id": "project:gufo-example-endurant-types-invalid",
+  "created": "2026-11-25",
+  "modified": null,
+  "name": {
+    "en": "gUFO example 1: endurant types (pitfall)"
+  },
+  "alternativeNames": [],
+  "description": {
+    "en": "OntoUML model authored by OntoGraph from the prose of the gUFO usage example page (f412254); not published by NEMO; pending NEMO review."
+  },
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "type": "Project",
+  "elements": [
+    {
+      "id": "class:agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Agent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "category",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Person"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:organization",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Organization"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:university",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "University"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "subkind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:child",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Child"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phase",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:adult",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Adult"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phase",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:student",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Student"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "role",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:employee",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Employee"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "role",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:customer",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Customer"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "roleMixin",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:active-agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "ActiveAgent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phaseMixin",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "class:inactive-agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "InactiveAgent"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "phaseMixin",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "generalization:person--agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:agent",
+      "specific": "class:person"
+    },
+    {
+      "id": "generalization:organization--agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:agent",
+      "specific": "class:organization"
+    },
+    {
+      "id": "generalization:university--organization",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:organization",
+      "specific": "class:university"
+    },
+    {
+      "id": "generalization:child--person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:person",
+      "specific": "class:child"
+    },
+    {
+      "id": "generalization:adult--person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:person",
+      "specific": "class:adult"
+    },
+    {
+      "id": "generalization:student--person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:person",
+      "specific": "class:student"
+    },
+    {
+      "id": "generalization:employee--person",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:person",
+      "specific": "class:employee"
+    },
+    {
+      "id": "generalization:customer--agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:agent",
+      "specific": "class:customer"
+    },
+    {
+      "id": "generalization:active-agent--agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:agent",
+      "specific": "class:active-agent"
+    },
+    {
+      "id": "generalization:inactive-agent--agent",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:agent",
+      "specific": "class:inactive-agent"
+    },
+    {
+      "id": "generalization-set:agent-kinds",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Agent kinds"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "GeneralizationSet",
+      "isDisjoint": true,
+      "isComplete": null,
+      "generalizations": [
+        "generalization:person--agent",
+        "generalization:organization--agent"
+      ],
+      "categorizer": null
+    },
+    {
+      "id": "generalization-set:person-age-phases",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Person age phases"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "GeneralizationSet",
+      "isDisjoint": true,
+      "isComplete": null,
+      "generalizations": [
+        "generalization:child--person",
+        "generalization:adult--person"
+      ],
+      "categorizer": null
+    },
+    {
+      "id": "generalization-set:agent-activity",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Agent activity"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "GeneralizationSet",
+      "isDisjoint": true,
+      "isComplete": null,
+      "generalizations": [
+        "generalization:active-agent--agent",
+        "generalization:inactive-agent--agent"
+      ],
+      "categorizer": null
+    },
+    {
+      "id": "class:manager",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": {
+        "en": "Manager"
+      },
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Class",
+      "stereotype": "kind",
+      "isDerived": false,
+      "isAbstract": false,
+      "properties": [],
+      "literals": [],
+      "restrictedTo": [
+        "functional-complex"
+      ],
+      "isPowertype": false,
+      "order": "1"
+    },
+    {
+      "id": "generalization:manager--employee",
+      "created": "2026-11-25",
+      "modified": null,
+      "name": null,
+      "alternativeNames": [],
+      "description": null,
+      "editorialNotes": [],
+      "creators": [],
+      "contributors": [],
+      "customProperties": {},
+      "type": "Generalization",
+      "general": "class:employee",
+      "specific": "class:manager"
+    }
+  ],
+  "root": null,
+  "publisher": null,
+  "designedForTasks": [],
+  "license": null,
+  "accessRights": [],
+  "themes": [],
+  "contexts": [],
+  "ontologyTypes": [],
+  "representationStyle": null,
+  "namespace": "https://ontograph.dev/examples/gufo-examples/endurant-types-invalid#",
+  "landingPages": [],
+  "sources": [],
+  "bibliographicCitations": [],
+  "keywords": [],
+  "acronyms": [],
+  "languages": [
+    "en"
+  ]
+}

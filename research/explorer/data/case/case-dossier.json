@@ -1,0 +1,654 @@
+{
+  "schemaVersion": "ontograph.research.case.v1",
+  "caseRef": "case:research-appointments-v1",
+  "title": "Research appointments and shared personnel identity",
+  "sourceRefs": [
+    "source:model",
+    "source:instances"
+  ],
+  "modelArtifactRef": "artifact:model",
+  "instanceArtifactRef": "artifact:instances",
+  "identityMap": [
+    {
+      "id": "identity:class:person",
+      "sourceElementRef": "source:model#/elements/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Aperson"
+      ],
+      "displayRefs": [
+        "display:class:person"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:class:researcher",
+      "sourceElementRef": "source:model#/elements/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Aresearcher"
+      ],
+      "displayRefs": [
+        "display:class:researcher"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:class:appointment",
+      "sourceElementRef": "source:model#/elements/2",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Aappointment"
+      ],
+      "displayRefs": [
+        "display:class:appointment"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:class:mass",
+      "sourceElementRef": "source:model#/elements/3",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Amass"
+      ],
+      "displayRefs": [
+        "display:class:mass"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:class:seminar",
+      "sourceElementRef": "source:model#/elements/4",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Aseminar"
+      ],
+      "displayRefs": [
+        "display:class:seminar"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:generalization:researcher-person",
+      "sourceElementRef": "source:model#/elements/5",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:generalization:researcher-person"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:mediation-source",
+      "sourceElementRef": "source:model#/elements/6",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:mediation-source"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:mediation-target",
+      "sourceElementRef": "source:model#/elements/7",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:mediation-target"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:relation:mediation",
+      "sourceElementRef": "source:model#/elements/8",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/relation/relation%3Amediation"
+      ],
+      "displayRefs": [
+        "display:relation:mediation"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:characterization-source",
+      "sourceElementRef": "source:model#/elements/9",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:characterization-source"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:characterization-target",
+      "sourceElementRef": "source:model#/elements/10",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:characterization-target"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:relation:characterization",
+      "sourceElementRef": "source:model#/elements/11",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/relation/relation%3Acharacterization"
+      ],
+      "displayRefs": [
+        "display:relation:characterization"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:participation-source",
+      "sourceElementRef": "source:model#/elements/12",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:participation-source"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:participation-target",
+      "sourceElementRef": "source:model#/elements/13",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:participation-target"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:relation:participation",
+      "sourceElementRef": "source:model#/elements/14",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/relation/relation%3Aparticipation"
+      ],
+      "displayRefs": [
+        "display:relation:participation"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:class:organization",
+      "sourceElementRef": "source:model#/elements/15",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/class/class%3Aorganization"
+      ],
+      "displayRefs": [
+        "display:class:organization"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:organization-source",
+      "sourceElementRef": "source:model#/elements/16",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:organization-source"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:property:organization-target",
+      "sourceElementRef": "source:model#/elements/17",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [],
+      "displayRefs": [
+        "display:property:organization-target"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:relation:organization-mediation",
+      "sourceElementRef": "source:model#/elements/18",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/relation/relation%3Aorganization-mediation"
+      ],
+      "displayRefs": [
+        "display:relation:organization-mediation"
+      ],
+      "identityDomain": "source-model",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:model"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:person:a",
+      "sourceElementRef": "source:instances#/individuals/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/person%3Aa"
+      ],
+      "displayRefs": [
+        "display:person:a"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:person:b",
+      "sourceElementRef": "source:instances#/individuals/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/person%3Ab"
+      ],
+      "displayRefs": [
+        "display:person:b"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:event:seminar",
+      "sourceElementRef": "source:instances#/individuals/2",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/event%3Aseminar"
+      ],
+      "displayRefs": [
+        "display:event:seminar"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:organization:one",
+      "sourceElementRef": "source:instances#/individuals/3",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/organization%3Aone"
+      ],
+      "displayRefs": [
+        "display:organization:one"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:quality:mass-a",
+      "sourceElementRef": "source:instances#/qualities/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/quality%3Amass-a"
+      ],
+      "displayRefs": [
+        "display:quality:mass-a"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:quality:mass-b",
+      "sourceElementRef": "source:instances#/qualities/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/quality%3Amass-b"
+      ],
+      "displayRefs": [
+        "display:quality:mass-b"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:appointment:one",
+      "sourceElementRef": "source:instances#/relators/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/appointment%3Aone"
+      ],
+      "displayRefs": [
+        "display:appointment:one"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:appointment:two",
+      "sourceElementRef": "source:instances#/relators/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/individual/appointment%3Atwo"
+      ],
+      "displayRefs": [
+        "display:appointment:two"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:membership:one",
+      "sourceElementRef": "source:instances#/roleMemberships/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/fact/membership%3Aone"
+      ],
+      "displayRefs": [
+        "display:membership:one"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:membership:two",
+      "sourceElementRef": "source:instances#/roleMemberships/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/fact/membership%3Atwo"
+      ],
+      "displayRefs": [
+        "display:membership:two"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:participation:one",
+      "sourceElementRef": "source:instances#/participations/0",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/fact/participation%3Aone"
+      ],
+      "displayRefs": [
+        "display:participation:one"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    },
+    {
+      "id": "identity:participation:two",
+      "sourceElementRef": "source:instances#/participations/1",
+      "candidateRef": null,
+      "canonicalRef": null,
+      "projectionRefs": [
+        "https://example.org/composition/fact/participation%3Atwo"
+      ],
+      "displayRefs": [
+        "display:participation:two"
+      ],
+      "identityDomain": "source-instance",
+      "interpretationState": "source-candidate; projection refs are pre-execution expectations",
+      "evidenceRefs": [
+        "artifact:instances"
+      ],
+      "gapRefs": [
+        "gap:canonical-adoption",
+        "gap:runtime-unexecuted"
+      ]
+    }
+  ],
+  "mappingArtifactRef": "artifact:mappings",
+  "claimArtifactRef": "artifact:claims",
+  "evidenceIndexRef": "artifact:evidence-index",
+  "viewpointArtifactRefs": [
+    "artifact:viewpoint-conceptual",
+    "artifact:viewpoint-organisational",
+    "artifact:viewpoint-owl-gufo"
+  ]
+}

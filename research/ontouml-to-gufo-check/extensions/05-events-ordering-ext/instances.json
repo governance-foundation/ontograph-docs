@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.instances.v1",
+  "statement": "OntoGraph-specific instance data. OntoUML (schema 1.0.2) has no instance level; this file is not part of the OntoUML model.",
+  "modelRef": "project:gufo-example-events",
+  "individuals": [
+    {
+      "id": "individual:world-championship-2026",
+      "name": "WorldChampionship2026",
+      "classRefs": [
+        "class:tournament"
+      ]
+    },
+    {
+      "id": "individual:opening-ceremony-2026",
+      "name": "OpeningCeremony2026",
+      "classRefs": [
+        "class:opening-ceremony"
+      ]
+    },
+    {
+      "id": "individual:semi-final-1",
+      "name": "SemiFinal1",
+      "classRefs": [
+        "class:semi-final"
+      ]
+    },
+    {
+      "id": "individual:semi-final-2",
+      "name": "SemiFinal2",
+      "classRefs": [
+        "class:semi-final"
+      ]
+    },
+    {
+      "id": "individual:final-2026",
+      "name": "Final2026",
+      "classRefs": [
+        "class:final"
+      ]
+    },
+    {
+      "id": "individual:alex-rivera",
+      "name": "AlexRivera",
+      "classRefs": [
+        "class:player"
+      ]
+    },
+    {
+      "id": "individual:sam-okafor",
+      "name": "SamOkafor",
+      "classRefs": [
+        "class:player"
+      ]
+    },
+    {
+      "id": "individual:jordan-lee",
+      "name": "JordanLee",
+      "classRefs": [
+        "class:player"
+      ]
+    },
+    {
+      "id": "individual:jordan-lee-participation-in-final",
+      "name": "JordanLeeParticipationInFinal",
+      "classRefs": [
+        "class:match-participation"
+      ]
+    },
+    {
+      "id": "individual:jordan-lee-knee-injury",
+      "name": "JordanLeeKneeInjury",
+      "classRefs": [
+        "class:knee-injury"
+      ]
+    },
+    {
+      "id": "individual:riverport-united-fc",
+      "name": "RiverportUnitedFC",
+      "classRefs": [
+        "class:club"
+      ]
+    },
+    {
+      "id": "individual:riverport-city-fc",
+      "name": "RiverportCityFC",
+      "classRefs": [
+        "class:club"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "link:001",
+      "relationRef": "relation:ceremony-part-of",
+      "sourceRef": "individual:opening-ceremony-2026",
+      "targetRef": "individual:world-championship-2026"
+    },
+    {
+      "id": "link:002",
+      "relationRef": "relation:match-part-of",
+      "sourceRef": "individual:semi-final-1",
+      "targetRef": "individual:world-championship-2026"
+    },
+    {
+      "id": "link:003",
+      "relationRef": "relation:match-part-of",
+      "sourceRef": "individual:semi-final-2",
+      "targetRef": "individual:world-championship-2026"
+    },
+    {
+      "id": "link:004",
+      "relationRef": "relation:match-part-of",
+      "sourceRef": "individual:final-2026",
+      "targetRef": "individual:world-championship-2026"
+    },
+    {
+      "id": "link:005",
+      "relationRef": "relation:final-depends-on",
+      "sourceRef": "individual:final-2026",
+      "targetRef": "individual:semi-final-1"
+    },
+    {
+      "id": "link:006",
+      "relationRef": "relation:final-depends-on",
+      "sourceRef": "individual:final-2026",
+      "targetRef": "individual:semi-final-2"
+    },
+    {
+      "id": "link:007",
+      "relationRef": "relation:occurs-before-final",
+      "sourceRef": "individual:semi-final-1",
+      "targetRef": "individual:final-2026"
+    },
+    {
+      "id": "link:008",
+      "relationRef": "relation:occurs-before-final",
+      "sourceRef": "individual:semi-final-2",
+      "targetRef": "individual:final-2026"
+    },
+    {
+      "id": "link:009",
+      "relationRef": "relation:participated-in-match",
+      "sourceRef": "individual:alex-rivera",
+      "targetRef": "individual:semi-final-1"
+    },
+    {
+      "id": "link:010",
+      "relationRef": "relation:participated-in-match",
+      "sourceRef": "individual:alex-rivera",
+      "targetRef": "individual:final-2026"
+    },
+    {
+      "id": "link:011",
+      "relationRef": "relation:participated-in-match",
+      "sourceRef": "individual:sam-okafor",
+      "targetRef": "individual:semi-final-2"
+    },
+    {
+      "id": "link:012",
+      "relationRef": "relation:participated-in-match",
+      "sourceRef": "individual:sam-okafor",
+      "targetRef": "individual:final-2026"
+    },
+    {
+      "id": "link:013",
+      "relationRef": "relation:participated-in-match",
+      "sourceRef": "individual:jordan-lee",
+      "targetRef": "individual:semi-final-1"
+    },
+    {
+      "id": "link:014",
+      "relationRef": "relation:participation-part-of",
+      "sourceRef": "individual:jordan-lee-participation-in-final",
+      "targetRef": "individual:final-2026"
+    },
+    {
+      "id": "link:015",
+      "relationRef": "relation:participant-of",
+      "sourceRef": "individual:jordan-lee",
+      "targetRef": "individual:jordan-lee-participation-in-final"
+    },
+    {
+      "id": "link:016",
+      "relationRef": "relation:had-knee-injury",
+      "sourceRef": "individual:jordan-lee-knee-injury",
+      "targetRef": "individual:jordan-lee"
+    },
+    {
+      "id": "link:017",
+      "relationRef": "relation:manifested-in",
+      "sourceRef": "individual:jordan-lee-knee-injury",
+      "targetRef": "individual:semi-final-1"
+    },
+    {
+      "id": "link:018",
+      "relationRef": "relation:terminated-in",
+      "sourceRef": "individual:riverport-united-fc",
+      "targetRef": "individual:opening-ceremony-2026"
+    },
+    {
+      "id": "link:019",
+      "relationRef": "relation:created-in",
+      "sourceRef": "individual:riverport-city-fc",
+      "targetRef": "individual:opening-ceremony-2026"
+    }
+  ],
+  "attributeValues": [],
+  "temporalValues": [
+    {
+      "id": "point:001",
+      "subjectRef": "individual:final-2026",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2026-07-19"
+    },
+    {
+      "id": "point:002",
+      "subjectRef": "individual:semi-final-1",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2026-07-14"
+    },
+    {
+      "id": "point:003",
+      "subjectRef": "individual:semi-final-1",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2026-07-14"
+    },
+    {
+      "id": "point:004",
+      "subjectRef": "individual:semi-final-2",
+      "property": "hasBeginPointInXSDDate",
+      "valueLiteral": "2026-07-15"
+    },
+    {
+      "id": "point:005",
+      "subjectRef": "individual:semi-final-2",
+      "property": "hasEndPointInXSDDate",
+      "valueLiteral": "2026-07-15"
+    }
+  ]
+}

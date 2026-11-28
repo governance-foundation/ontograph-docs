@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "ontograph.gufo.ontouml-examples.extensions-run.v1",
+  "recordedRun": {
+    "completedAt": "2026-11-27T07:05:47+11:00",
+    "timeZone": "Australia/Sydney",
+    "binarySha256": "sha256:485faa176b2edec1000eedb9fbec0f9c51c354e787fe71d86610d867c12bbc3e",
+    "builtFromCommit": "a0f9f3e30f2fd42d056c1601819d4f008826cd86",
+    "mergedToDevelop": "ec03a119daf83e50a9dee0d6f6765238a6b9dbc8",
+    "gufoPin": "f4122544133544eb4c6c467ba316302ab20b754a",
+    "gufoshapes": {
+      "sourceRepository": "https://github.com/nemo-ufes/gufo",
+      "commit": "f4122544133544eb4c6c467ba316302ab20b754a",
+      "pathInPin": "examples/common/gufoshapes.ttl",
+      "sha256": "84b56419cca76dd6b91ff368061706915f73ff75726b0f2a20a48a9d7b100033",
+      "note": "This is gufoshapes as shipped inside the gUFO pin, not the separate nemo-ufes/gufoshapes repository pin used in the October 2026 Turtle round-trip check."
+    },
+    "tools": {
+      "pyshacl": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)",
+      "jena": "shacl-sparql:apache-jena-6.2.0",
+      "jenaRuntime": "java version \"21.0.7\" 2025-04-15 LTS",
+      "pellet": "Pellet via owlready2 0.51"
+    }
+  },
+  "failures": [],
+  "binarySha256": "sha256:485faa176b2edec1000eedb9fbec0f9c51c354e787fe71d86610d867c12bbc3e",
+  "gufoPin": "f4122544133544eb4c6c467ba316302ab20b754a",
+  "cases": [
+    {
+      "acceptanceCase": {
+        "addedTriples": 27,
+        "lostNonBlank": [],
+        "restated": [
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2"
+          ]
+        ],
+        "triples": 86
+      },
+      "caseRef": "05-events-ordering-ext",
+      "checks": {
+        "acceptanceCasePreserved": true,
+        "deterministic": true,
+        "entailments": true,
+        "extensionViolationsExact": true,
+        "gufoshapesConforms": true,
+        "owlConsistent": true,
+        "owlNoUnsatisfiable": true,
+        "pelletProbes": true,
+        "requiredStatements": true,
+        "rulesAccept": true,
+        "shaclJenaAgrees": true,
+        "shaclVerdict": true
+      },
+      "deterministic": true,
+      "entailments": [
+        {
+          "claim": {
+            "expected": true,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1",
+            "predicate": "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#Final2026"
+          },
+          "entailed": true,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        },
+        {
+          "claim": {
+            "expected": true,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "predicate": "https://ontograph.dev/ns/gufo-ext#before",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          },
+          "entailed": true,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        },
+        {
+          "claim": {
+            "expected": false,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "predicate": "https://ontograph.dev/ns/gufo-ext#before",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          },
+          "entailed": false,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        }
+      ],
+      "expectedValid": true,
+      "extends": "05-events",
+      "extensionViolations": {
+        "expected": [],
+        "got": []
+      },
+      "findings": [],
+      "gufoshapesOnly": {
+        "conforms": true,
+        "results": [],
+        "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+      },
+      "owl": {
+        "consistent": true,
+        "tool": "Pellet via owlready2 0.51",
+        "unsatisfiable": []
+      },
+      "passed": true,
+      "probes": [
+        {
+          "added": [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "https://ontograph.dev/ns/gufo-ext#before",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          "consistent": false,
+          "passed": true,
+          "probe": "asymmetry"
+        },
+        {
+          "added": [
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1",
+            "https://ontograph.dev/ns/gufo-ext#before",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          "consistent": false,
+          "passed": true,
+          "probe": "irreflexivity"
+        }
+      ],
+      "requiredStatements": {
+        "expected": 16,
+        "missing": []
+      },
+      "shacl": {
+        "conforms": true,
+        "results": [],
+        "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+      },
+      "shaclEnginesAgree": true,
+      "shaclJena": {
+        "conforms": true,
+        "executed": true,
+        "overallStatus": "success",
+        "persistence": "persisted-reloaded",
+        "resultSignatures": [],
+        "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+        "semanticStatus": "conformant",
+        "tool": "shacl-sparql:apache-jena-6.2.0"
+      },
+      "status": "projected",
+      "tripleCount": 113,
+      "upstreamAligned": false
+    },
+    {
+      "acceptanceCase": {
+        "addedTriples": 27,
+        "lostNonBlank": [],
+        "restated": [
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2"
+          ]
+        ],
+        "triples": 86
+      },
+      "caseRef": "invalid-05-events-ordering-ext",
+      "checks": {
+        "acceptanceCasePreserved": true,
+        "deterministic": true,
+        "entailments": true,
+        "extensionViolationsExact": true,
+        "gufoshapesConforms": true,
+        "owlConsistent": true,
+        "owlNoUnsatisfiable": true,
+        "pelletProbes": true,
+        "requiredStatements": true,
+        "rulesAccept": true,
+        "shaclJenaAgrees": true,
+        "shaclVerdict": true
+      },
+      "deterministic": true,
+      "entailments": [
+        {
+          "claim": {
+            "expected": true,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1",
+            "predicate": "http://purl.org/nemo/gufo#historicallyDependsOn",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#Final2026"
+          },
+          "entailed": true,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        },
+        {
+          "claim": {
+            "expected": true,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "predicate": "https://ontograph.dev/ns/gufo-ext#before",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          },
+          "entailed": true,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        },
+        {
+          "claim": {
+            "expected": false,
+            "object": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "predicate": "https://ontograph.dev/ns/gufo-ext#before",
+            "subject": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          },
+          "entailed": false,
+          "exitCode": 0,
+          "matchesOracle": true,
+          "stderr": ""
+        }
+      ],
+      "expectedValid": false,
+      "extends": "05-events",
+      "extensionViolations": {
+        "expected": [
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026"
+          ]
+        ],
+        "got": [
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026"
+          ]
+        ]
+      },
+      "findings": [],
+      "gufoshapesOnly": {
+        "conforms": true,
+        "results": [],
+        "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+      },
+      "owl": {
+        "consistent": true,
+        "tool": "Pellet via owlready2 0.51",
+        "unsatisfiable": []
+      },
+      "passed": true,
+      "probes": [
+        {
+          "added": [
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "https://ontograph.dev/ns/gufo-ext#before",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          "consistent": false,
+          "passed": true,
+          "probe": "asymmetry"
+        },
+        {
+          "added": [
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1",
+            "https://ontograph.dev/ns/gufo-ext#before",
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal1"
+          ],
+          "consistent": false,
+          "passed": true,
+          "probe": "irreflexivity"
+        }
+      ],
+      "requiredStatements": {
+        "expected": 16,
+        "missing": []
+      },
+      "shacl": {
+        "conforms": false,
+        "results": [
+          {
+            "constraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            "focusNode": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "message": "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2 occurs before https://ontograph.dev/examples/gufo-examples/events#Final2026, but its dates do not: it begins or ends (2026-07-21) after https://ontograph.dev/examples/gufo-examples/events#Final2026 begins (2026-07-19).",
+            "resultPath": "None",
+            "sourceShape": "https://ontograph.dev/ns/gufo-ext-shapes#BeforeDatesShape",
+            "value": "https://ontograph.dev/examples/gufo-examples/events#Final2026"
+          }
+        ],
+        "tool": "pyshacl 0.40.2 (advanced, inference none; data = gufo.ttl + output)"
+      },
+      "shaclEnginesAgree": true,
+      "shaclJena": {
+        "conforms": false,
+        "executed": true,
+        "overallStatus": "nonconformant",
+        "persistence": "persisted-reloaded",
+        "resultSignatures": [
+          [
+            "https://ontograph.dev/examples/gufo-examples/events#SemiFinal2",
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+            null,
+            "https://ontograph.dev/examples/gufo-examples/events#Final2026",
+            "<https://ontograph.dev/examples/gufo-examples/events#SemiFinal2> occurs before <https://ontograph.dev/examples/gufo-examples/events#Final2026>, but its dates do not: it begins or ends (2026-07-21) after <https://ontograph.dev/examples/gufo-examples/events#Final2026> begins (2026-07-19)."
+          ]
+        ],
+        "runtime": "java version \"21.0.7\" 2025-04-15 LTS",
+        "semanticStatus": "nonconformant",
+        "tool": "shacl-sparql:apache-jena-6.2.0"
+      },
+      "status": "projected",
+      "tripleCount": 113,
+      "upstreamAligned": false
+    }
+  ],
+  "note": "These two cases are an OntoGraph extension of example 05, not part of the nine-example acceptance suite."
+}

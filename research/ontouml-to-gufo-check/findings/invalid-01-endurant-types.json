@@ -1,0 +1,29 @@
+{
+  "caseRef": "invalid-01-endurant-types",
+  "findings": [
+    {
+      "ruleId": "OG-UFO-KIND-SUPERTYPE",
+      "severity": "error",
+      "message": "«kind» class:manager specializes sortal «role» class:employee",
+      "justification": "An ultimate sortal (kind) supplies the principle of identity of its instances; it cannot specialize another sortal, which would give its instances a second identity principle (Guizzardi 2005; gufoshapes:KindShape).",
+      "sourceRef": "generalization:manager--employee",
+      "sourcePointer": "/elements/25",
+      "relatedRefs": [
+        "class:manager",
+        "class:employee"
+      ]
+    },
+    {
+      "ruleId": "OG-UFO-RIGID-UNDER-ANTIRIGID",
+      "severity": "error",
+      "message": "rigid/semi-rigid «kind» class:manager specializes anti-rigid «role» class:employee",
+      "justification": "A rigid or semi-rigid type cannot specialize an anti-rigid type: if every instance of the specific type is necessarily so, it would necessarily instantiate the contingent general type (Guizzardi 2005; gufoshapes:RigidOrSemiRigidShape).",
+      "sourceRef": "generalization:manager--employee",
+      "sourcePointer": "/elements/25",
+      "relatedRefs": [
+        "class:manager",
+        "class:employee"
+      ]
+    }
+  ]
+}

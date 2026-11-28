@@ -1,0 +1,391 @@
+{
+  "extra": 5,
+  "matched": 57,
+  "missing": 32,
+  "ontographTriples": 62,
+  "reasons": {
+    "extra": {
+      "ANNOTATION": 4,
+      "ONTOLOGY-HEADER": 1
+    },
+    "missing": {
+      "ANNOTATION": 21,
+      "INSTANCE-NOT-IN-PROSE": 8,
+      "ONTOLOGY-HEADER": 3
+    }
+  },
+  "rows": [
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A small ontology of people and organizations, illustrating gUFO's taxonomy of endurant types (sortals and non-sortals, rigid and anti-rigid types).\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"gUFO example 01: Endurant types (People & Organizations)\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<https://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#University>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#AcmeUniversity>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Acme University\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An anti-rigid phase, applicable in virtue of an intrinsic condition (being currently operative), that both persons and organizations may go through. Cuts across Person and Organization, hence specializes the non-sortal Agent.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Active Agent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Adult>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The complementary phase to Child.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Agent>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A non-sortal that captures what is common to persons and organizations (both can, e.g., own property or be party to a contract) without itself providing a principle of identity. Persons and organizations obtain their identity from their own kinds, not from Agent.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Bob>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Child>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Bob>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Person>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Bob>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"Bob is a person and, currently, a child; he is neither a student nor an employee yet.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Bob>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Bob\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Carol>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Carol>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Adult>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Carol>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Employee>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "INSTANCE-NOT-IN-PROSE",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Carol>",
+        "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Person>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Carol>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Carol\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Child>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An anti-rigid phase of Person: a given person may be a child at one time and stop being one later, without ceasing to be that person. Applies in virtue of an intrinsic property (age).\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Customer>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An anti-rigid, relationally-dependent role that both persons and organizations may play (in the scope of a purchase); it cuts across the Person and Organization kinds, which is why it specializes the non-sortal Agent rather than either kind directly. See example 04 for the relator (Purchase) that would substantiate this role.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Employee>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An anti-rigid role of Person, applicable in virtue of an employment relationship. See example 04, which reifies that relationship as a gufo:Relator.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An organization playing the Customer role -- demonstrating that gufo:RoleMixin, unlike gufo:Role, applies across more than one kind.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Globex Corp.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"The complementary phase to Active Agent (e.g., a deceased person or a dissolved organization).\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Inactive Agent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A dissolved organization: inactive, but still an instance of Organization, since organizations do not lose their kind when they cease operating.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"Old Town Printers\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Organization>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A rigid sortal, disjoint from Person: no individual is both a person and an organization.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Person>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A rigid sortal: every person is necessarily a person, and Person supplies the principle of identity for persons.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#Student>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"An anti-rigid role of Person, applicable in virtue of a relational (extrinsic) property -- here, enrollment at a university. A person is a student only relative to some university.\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "missing",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#University>",
+        "<http://www.w3.org/2000/01/rdf-schema#comment>",
+        "\"A rigid specialization of Organization: every organization that is a university is necessarily so, but University does not supply a new principle of identity (it inherits Organization's).\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ONTOLOGY-HEADER",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#>",
+        "<http://www.w3.org/2002/07/owl#imports>",
+        "<http://purl.org/nemo/gufo#>"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#ActiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"ActiveAgent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#GlobexCorp>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"GlobexCorp\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#InactiveAgent>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"InactiveAgent\"@en"
+      ]
+    },
+    {
+      "note": null,
+      "reason": "ANNOTATION",
+      "side": "extra",
+      "triple": [
+        "<https://purl.org/nemo/gufo-examples/endurant-types#OldTownPrinters>",
+        "<http://www.w3.org/2000/01/rdf-schema#label>",
+        "\"OldTownPrinters\"@en"
+      ]
+    }
+  ],
+  "unclassified": 0,
+  "upstreamTriples": 89
+}
