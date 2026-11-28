@@ -561,7 +561,7 @@ ontograph --json tonto-gufo-project request.json</code></pre>
 :Alice    rdf:type :Agent          expected true   entailed true
 :Student  rdf:type gufo:Sortal     expected true   entailed true
 :Alice    rdf:type :Organization   expected false  entailed false</code></pre>
-<p>The engine also has a general query surface on a stored workspace — <code>query-id</code>, <code>query-type</code>, <code>query-traverse</code>, <code>search</code>, and <code>gufo-shacl-sparql</code> for a read-only SPARQL SELECT through Jena. The acceptance evidence for these nine examples is the projection oracles above, not a workspace search.</p>
+<p>The engine also has a general query surface on a stored workspace — <code>query-id</code>, <code>query-type</code>, <code>query-traverse</code>, <code>search</code>, and <code>gufo-shacl-sparql</code> for a read-only SPARQL SELECT through Jena. The acceptance evidence for these nine examples is the projection oracles above. A shared workspace with three of them loaded, fed data and queried together is shown in <a href="#existing-demos">a later section</a>.</p>
 
 <h3>Dual verdicts, on example 05</h3>
 <p>Tonto 0.9.4 rejects <code>event SemiFinal specializes Match</code> and the matching generalisation set, <code>MatchSpecializations</code>. OntoGraph keeps both. The JSON reports from <code>tonto-import</code>, <code>tonto-export</code> and <code>tonto-gufo-project</code> each include a <code>corrections</code> array with both verdicts. The diagnostic line and the JSON fields below are locked by tests on the 05-events model. This is not a fresh capture of the binary.</p>
@@ -591,14 +591,128 @@ ontograph --json tonto-gufo-project request.json</code></pre>
 <div class="section-heading">
 <span class="section-number">What already exists</span>
 <h2 id="demos-title">Existing demonstrations, and a shared-workspace query</h2>
-<p>There is already executable demonstration material, but it is not yet a single workspace in which several of these nine models are loaded as cartridges and queried together.</p>
+<p>There is already executable demonstration material for one model at a time. Since OntoGraph <code>develop@c15bf4f2c</code>, several of these nine models can also be loaded into <em>one</em> workspace, fed instance data, and indexed, searched and queried together. The run below is real: every command and output is copied from it.</p>
 </div>
 <p>The organisational appointment journey — this site's <a href="#own-case">own worked case</a> and <a href="explorer/">viewpoint explorer</a>, and the product repository's giancarlo-demonstration and research-demonstration runners — loads <em>one</em> OntoUML model, feeds instance data through the source-composition profile, and runs typed SPARQL checks (appointments, qualities, participations) plus OWL and SHACL. The OntoUML canon first-run kit pins <em>one</em> rule cartridge (<code>ontouml-canon</code>) to a workspace and imports one model for validation and review. The walkthrough earlier on this page projects one Tonto input (example 01) to gUFO and shows retained query answers on that graph.</p>
-<p>The engine can stage several of the nine models in one workspace. With the same binary as the retained acceptance run, <code>tonto-import</code> lowered example 01, <code>ontograph init</code> created a workspace, and <code>ontouml-import</code> staged that model together with examples 02 and 05. All three imports succeeded and remain as separate records under <code>imports/ontouml/</code>. <code>model inventory --workspace … --import-ref …</code> can read one of those records at a time (24 source elements on 01; 42 on 05). The records stay noncanonical: they do not populate a workspace canonical graph.</p>
-<div class="callout scope-note">
-<strong>What is not a shipped command yet</strong>
-<p><code>query-id</code>, <code>search</code> and <code>build-index</code> operate on the workspace canonical graph. After these imports, that graph is absent, so those commands cannot see Student, Match or Alice. Instance data for the nine examples is fed through <code>ontouml-gufo-project</code> / <code>tonto-gufo-project</code>, one model per request, not into a shared workspace query surface. Workspace composition (<code>--composition</code> with <code>ontograph.gufo.source-composition.v1</code>) is the appointment-demo path, a different profile. <code>cartridge activate</code> pins one rule or brain package to a workspace; it does not register each domain model as a cartridge. A query that answers across several of these models' types and instances in one workspace is therefore not something we can demonstrate without inventing a command. That is a product gap, not a missing screenshot.</p>
+
+<h3>One engine, three models: the recorded run</h3>
+<div class="arch" role="img" aria-labelledby="mm-title" aria-describedby="mm-desc">
+<p class="small" id="mm-title">Three gUFO examples in one OntoGraph workspace</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" aria-hidden="true">
+<defs><marker id="mm-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#18362f"/></marker></defs>
+<rect x="0" y="0" width="900" height="380" fill="#fbfaf6"/>
+<g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+<text x="16" y="26" text-anchor="start" fill="#53675f" font-family="Georgia, serif" font-size="13">Models and data in</text>
+<rect x="16" y="40" width="190" height="50" rx="5" fill="#edf1e9" stroke="#18362f"/><text x="111" y="61" fill="#18362f" font-size="13">01 Endurant types</text><text x="111" y="78" fill="#53675f" font-size="11">.tonto → tonto-import</text>
+<rect x="16" y="104" width="190" height="50" rx="5" fill="#edf1e9" stroke="#18362f"/><text x="111" y="125" fill="#18362f" font-size="13">02 Objects and parts</text><text x="111" y="142" fill="#53675f" font-size="11">authored OntoUML JSON</text>
+<rect x="16" y="168" width="190" height="50" rx="5" fill="#edf1e9" stroke="#18362f"/><text x="111" y="189" fill="#18362f" font-size="13">05 Events</text><text x="111" y="206" fill="#53675f" font-size="11">authored OntoUML JSON</text>
+<rect x="16" y="252" width="190" height="62" rx="5" fill="#fff" stroke="#18362f" stroke-dasharray="4 3"/><text x="111" y="275" fill="#18362f" font-size="13">Instance files</text><text x="111" y="292" fill="#53675f" font-size="11">individuals · links · values</text><text x="111" y="306" fill="#53675f" font-size="11">not part of the OntoUML model</text>
+<line x1="206" y1="65" x2="252" y2="120" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<line x1="206" y1="129" x2="252" y2="129" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<line x1="206" y1="193" x2="252" y2="138" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<rect x="258" y="96" width="170" height="66" rx="5" fill="#fff" stroke="#18362f"/><text x="343" y="120" fill="#18362f" font-size="13">ontouml-import</text><text x="343" y="137" fill="#53675f" font-size="11">validate, stage one record</text><text x="343" y="152" fill="#53675f" font-size="11">per model (noncanonical)</text>
+<line x1="428" y1="129" x2="474" y2="129" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<line x1="206" y1="283" x2="474" y2="160" stroke="#18362f" stroke-dasharray="4 3" marker-end="url(#mm-arrow)"/>
+<rect x="480" y="96" width="170" height="66" rx="5" fill="#fff" stroke="#18362f"/><text x="565" y="120" fill="#18362f" font-size="13">ontouml-load</text><text x="565" y="137" fill="#53675f" font-size="11">model + --instances feeds</text><text x="565" y="152" fill="#53675f" font-size="11">extracted, evidence-grounded</text>
+<line x1="650" y1="129" x2="690" y2="129" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<rect x="696" y="40" width="190" height="186" rx="5" fill="#edf1e9" stroke="#18362f"/>
+<text x="791" y="62" fill="#18362f" font-size="13">One canonical graph</text>
+<rect x="710" y="74" width="162" height="34" rx="4" fill="#fff" stroke="#53675f"/><text x="791" y="96" fill="#18362f" font-size="11">package 01 · source · artifacts</text>
+<rect x="710" y="114" width="162" height="34" rx="4" fill="#fff" stroke="#53675f"/><text x="791" y="136" fill="#18362f" font-size="11">package 02 · source · artifacts</text>
+<rect x="710" y="154" width="162" height="34" rx="4" fill="#fff" stroke="#53675f"/><text x="791" y="176" fill="#18362f" font-size="11">package 05 · source · artifacts</text>
+<text x="791" y="210" fill="#53675f" font-size="11">shared terms, e.g. stereotype kind</text>
+<line x1="791" y1="226" x2="791" y2="262" stroke="#18362f" marker-end="url(#mm-arrow)"/>
+<rect x="480" y="268" width="406" height="62" rx="5" fill="#fff" stroke="#18362f"/>
+<text x="683" y="291" fill="#18362f" font-size="13">status · build-index · search · query-id / type / traverse / neighborhood / filter</text>
+<text x="683" y="310" fill="#53675f" font-size="11">one query surface across all loaded models; per-model provenance kept on every record</text>
+</g>
+</svg>
+<p class="arch-legend" id="mm-desc">Example 01 comes in as Tonto and is lowered by ontograph-dsl-tonto; examples 02 and 05 are authored OntoUML JSON. Each is imported as a staged record, then loaded with its instance data into one canonical graph, where each model keeps its own package, source and artifacts. The existing status, index, search and query commands then work across all of them.</p>
 </div>
+
+<p>These are the commands, in order, as run from the product repository root (exit code shown only where it is not 0). Example 01 is loaded from the Tonto file, not from authored JSON.</p>
+<pre class="command" tabindex="0"><code>ontograph tonto-import fixtures/tonto-dsl/gufo-examples/01-endurant-types.tonto --output demo/01-endurant-types.model.json
+ontograph init demo/workspace
+ontograph ontouml-import demo/workspace demo/01-endurant-types.model.json --serialization-profile ontouml-schema@1.0.2
+ontograph ontouml-import demo/workspace fixtures/gufo-examples-ontouml/02-objects-and-parts/model.json --serialization-profile ontouml-schema@1.0.2
+ontograph ontouml-import demo/workspace fixtures/gufo-examples-ontouml/05-events/model.json --serialization-profile ontouml-schema@1.0.2
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-examples-01-endurant-types --instances fixtures/workspace-multi-model/01-endurant-types-tonto.instances.json
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-example-objects-and-parts --instances fixtures/gufo-examples-ontouml/02-objects-and-parts/instances.json
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-example-events --instances fixtures/gufo-examples-ontouml/05-events/instances.json
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-example-objects-and-parts --instances fixtures/workspace-multi-model/02-objects-and-parts-second-feed.instances.json
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-example-objects-and-parts --instances fixtures/workspace-multi-model/02-objects-and-parts-second-feed.instances.json
+ontograph ontouml-load demo/workspace ontouml-import:project-gufo-examples-01-endurant-types --instances fixtures/gufo-examples-ontouml/01-endurant-types/instances.json   # exit 66
+ontograph status demo/workspace
+ontograph build-index demo/workspace
+ontograph search demo/workspace stereotype:kind
+ontograph --json query-filter demo/workspace assertions objectRef ontouml-stereotype:kind
+ontograph --json query-filter demo/workspace assertions predicate rdf:type
+ontograph --json query-filter demo/workspace assertions subjectRef ontouml:project-gufo-example-events:individual:jordan-lee
+ontograph --json query-type demo/workspace Package
+ontograph --json query-id demo/workspace assertion:ontouml-project-gufo-example-events:feed-f635bfa16d32:link:013
+ontograph --json query-traverse demo/workspace assertion:ontouml-project-gufo-example-events:feed-f635bfa16d32:link:013
+ontograph --json query-neighborhood demo/workspace assertion:ontouml-project-gufo-example-events:feed-f635bfa16d32:link:013 1</code></pre>
+
+<p><code>ontouml-load</code> turns a staged import record into records of the workspace's canonical graph. Each model gets its own package, source and model artifact; each class, generalisation, relation, attribute and name becomes an assertion, and each instance file adds its own artifact plus assertions for individuals, their classes, links and values. Every assertion carries one evidence record that points at the source element or instance record it came from. The assertions are <em>extracted</em>, not accepted: no proposal, review, decision or promotion is created, and the instance data is never written into the OntoUML model.</p>
+<pre class="command" tabindex="0"><code>ontouml load ontouml-import:project-gufo-example-events: model loaded (42 assertions added), package=package:ontouml-project-gufo-example-events
+  instances fixtures/gufo-examples-ontouml/05-events/instances.json: loaded individuals=12 links=17 values=1 assertions_added=42 artifact=artifact:ontouml-project-gufo-example-events-instances-f635bfa16d32
+workspace models=3 objects=430
+  package:ontouml-project-gufo-examples-01-endurant-types (gufo-examples-01-endurant-types): 54 assertions
+  package:ontouml-project-gufo-example-objects-and-parts (gUFO example 2: objects and parts): 70 assertions
+  package:ontouml-project-gufo-example-events (gUFO example 05: events): 84 assertions
+boundary: assertions are extracted, not accepted; no proposal, review, decision or promotion is created</code></pre>
+
+<p>Data can be fed into a model that is already loaded. The second feed for example 02 adds a car and its engine and links the car to a fleet loaded by the first feed. Feeding the same file again changes nothing, and an instance file written for a different model is refused with nothing written:</p>
+<pre class="command" tabindex="0"><code>ontouml load ontouml-import:project-gufo-example-objects-and-parts: model unchanged (0 assertions added), package=package:ontouml-project-gufo-example-objects-and-parts
+  instances fixtures/workspace-multi-model/02-objects-and-parts-second-feed.instances.json: loaded individuals=2 links=2 values=0 assertions_added=6 artifact=artifact:ontouml-project-gufo-example-objects-and-parts-instances-b1baaddee264
+  instances fixtures/workspace-multi-model/02-objects-and-parts-second-feed.instances.json: unchanged individuals=2 links=2 values=0 assertions_added=0 artifact=artifact:ontouml-project-gufo-example-objects-and-parts-instances-b1baaddee264
+
+error[ONTOGRAPH_VALIDATION] category=validation exit_code=66
+instance file fixtures/gufo-examples-ontouml/01-endurant-types/instances.json is for project:gufo-example-endurant-types, not the loaded model project:gufo-examples-01-endurant-types</code></pre>
+<p>That refusal is real and expected: the upstream instance file for example 01 names the hand-authored model, <code>project:gufo-example-endurant-types</code>, while the Tonto lowering produces <code>project:gufo-examples-01-endurant-types</code>. The run therefore feeds example 01 from its own instance file, with the same three individuals.</p>
+
+<div class="table-wrap" tabindex="0" role="region" aria-label="Models loaded into the shared workspace">
+<table class="results">
+<caption>The shared workspace after loading and feeding</caption>
+<thead><tr><th scope="col">Model</th><th scope="col">Package</th><th scope="col">Assertions</th><th scope="col">Instance classifications</th></tr></thead>
+<tbody>
+<tr><th scope="row">01 Endurant types (via Tonto)</th><td><code>package:ontouml-project-gufo-examples-01-endurant-types</code></td><td>54</td><td>10</td></tr>
+<tr><th scope="row">02 Objects and parts</th><td><code>package:ontouml-project-gufo-example-objects-and-parts</code></td><td>76</td><td>13</td></tr>
+<tr><th scope="row">05 Events</th><td><code>package:ontouml-project-gufo-example-events</code></td><td>84</td><td>12</td></tr>
+</tbody>
+</table>
+</div>
+<pre class="command" tabindex="0"><code>workspace status demo/workspace: status=usable, graph_loaded=true, objects=443, sources=3, artifacts=7, evidence=214, assertions=214, provenance_gaps=1, semantic_gaps=0, caveat_refs=1, blockers=0, manual_review=false, validation_artifact=true, exports=0, artifacts=0, commits=0, branches=0, active_versions=0, promotions=0
+built search index demo/workspace/indexes/search-index.json: entries=443, digest=sha256:851994143d6c72eacc33913838ecdb3bf3b6f9ea6bf7eef3d9814fd856318b79</code></pre>
+
+<h3>Queries across the three models</h3>
+<p>One search over the shared index finds every class stereotyped kind, in all three models:</p>
+<pre class="command" tabindex="0"><code>search demo/workspace: 7 results: assertion:ontouml-project-gufo-example-events:class:club:stereotype, assertion:ontouml-project-gufo-example-events:class:player:stereotype, assertion:ontouml-project-gufo-example-objects-and-parts:class:car:stereotype, assertion:ontouml-project-gufo-example-objects-and-parts:class:engine:stereotype, assertion:ontouml-project-gufo-example-objects-and-parts:class:wheel:stereotype, assertion:ontouml-project-gufo-examples-01-endurant-types:class:organization:stereotype, assertion:ontouml-project-gufo-examples-01-endurant-types:class:person:stereotype</code></pre>
+<p>The same question through the query engine (<code>query-filter … assertions objectRef ontouml-stereotype:kind</code>) returns 7 records, grouped here by model:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Kinds across models">
+<table class="results"><thead><tr><th scope="col">Model</th><th scope="col">Classes stereotyped kind</th></tr></thead>
+<tbody>
+<tr><th scope="row">01 Endurant types (via Tonto)</th><td>01:class:organization, 01:class:person</td></tr>
+<tr><th scope="row">02 Objects and parts</th><td>02:class:car, 02:class:engine, 02:class:wheel</td></tr>
+<tr><th scope="row">05 Events</th><td>05:class:club, 05:class:player</td></tr>
+</tbody></table>
+</div>
+<p><code>query-filter … assertions predicate rdf:type</code> returns all 35 instance classifications at once, from all three models. Everything recorded about one individual is one filter on its term; for Jordan Lee from example 05:</p>
+<pre class="command" tabindex="0"><code>ontouml:name                               &quot;JordanLee&quot;
+rdf:type                                   05:class:player
+05:relation:participated-in-match          05:individual:semi-final-1
+05:relation:participant-of                 05:individual:jordan-lee-participation-in-final</code></pre>
+<p><code>query-type … Package</code> lists the 3 model packages; <code>query-id</code> and <code>query-traverse</code> read one assertion and its edges, and a depth-1 <code>query-neighborhood</code> on the link "Jordan Lee participant-of his participation in the final" returns:</p>
+<pre class="command" tabindex="0"><code>evidenceRefs -&gt; evidence:ontouml-project-gufo-example-events:feed-f635bfa16d32:link:013
+objectRef    -&gt; 05:individual:jordan-lee-participation-in-final
+scopeRefs    -&gt; package:ontouml-project-gufo-example-events
+subjectRef   -&gt; 05:individual:jordan-lee</code></pre>
+
+<div class="callout scope-note">
+<strong>What this does not do yet</strong>
+<p>The models coexist; they are not aligned. Nothing states that a person in example 01 and a player in example 05 are the same individual, and instance links stay inside one model, so cross-model answers come from shared terms (such as the stereotype <code>kind</code>) and from one index, not from cross-model links. Classes and individuals are terms inside assertions rather than records of their own, so <code>query-id</code> and <code>query-neighborhood</code> start from an assertion, and neighbourhoods deeper than 1 fan out through the package and evidence records. A changed model is refused rather than re-loaded in place; it goes into a fresh workspace. N-ary relations would be listed as not loaded (these three models have none). The shared graph is OntoGraph's canonical graph, not gUFO: the gUFO projection and its checks above remain one model per request.</p>
+</div>
+<p class="small">Recorded 29 Nov 2026 with the OntoGraph binary built from <code>develop@c15bf4f2c</code>. Commands and outputs are published; the runtime code is not.</p>
 </section>
 
 <section class="section" id="results" aria-labelledby="results-title">
